@@ -1,3 +1,7 @@
+"""
+File to convert our old blog from atom format to Markdown
+"""
+
 from __future__ import unicode_literals
 
 FILE = 'blogger-backup-blog-02-19-2013.xml'
@@ -11,10 +15,12 @@ from unidecode import unidecode
 import dateutil.parser
 from datetime import datetime
 
+# load xml dump as tree
 with open(FILE) as f:
     tree = etree.parse(f,base_url='http://www.w3.org/2005/Atom')
     root = tree.getroot()
 
+# template for post
 md_template = u"""Title: {title}
 Date: {date}
 Tags: {tags}
@@ -26,10 +32,13 @@ Author: {author}
 """
 # note: missing summary and tags
 
+# get all of the entries
 entries = root.findall(begin+'entry')
+# includes all comments and junk, must filter
 posts = [ z for z in entries if any('post' in x.get('term') for x in z.findall(begin+'category')) ]
 # posts = [ z for z in entries if z.find('{http://purl.org/syndication/thread/1.0}in-reply-to') is not None and z.find('{http://purl.org/syndication/thread/1.0}in-reply-to') is not None ]
 
+# custom namedtuple
 post_tuple = namedtuple('post','title author date slug tags content')
 
 def process_post(post):
