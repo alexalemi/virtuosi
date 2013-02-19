@@ -47,6 +47,18 @@
 <p>tags: <a href="../tag/.html"></a></p>
 </footer><!-- /.post-info -->      <p>There is a very fast converging algorithm for computing pi that you can do on a desktop calculator.<br /><ul><li>Set x = 3</li><li>Now set x = x + sin(x)</li><li>Repeat</li></ul><div>This converges ridiculously fast, after 1 step you get 4 digits right, after 2 steps you get 11 correct, in general we find:<br /><br /><a name='more'></a><br /></div><div><br /><center><table border="0"><tbody><tr><td># steps </td><td>Digits right </td></tr><tr><td>1 </td><td>4 </td></tr><tr><td>2 </td><td>11 </td></tr><tr><td>3 </td><td>33 </td></tr><tr><td>4 </td><td>100 </td></tr><tr><td>5 </td><td>301 </td></tr><tr><td>6 </td><td>903  </td></tr><tr><td>7 </td><td>2708 </td></tr><tr><td>8 </td><td>8124</td></tr></tbody></table></center><br /><br />of course on a pocket calculator, you only need to do 2 steps to have an accuracy greater than the calculator can display. &nbsp;To make this chart I had to trick a computer into doing high precision arithmetic, the code is&nbsp;<a href="https://gist.github.com/2038329">here</a>.<br /><br />Granted, this approximation is really cheating, since sin is a hard function to compute, and basically being able to compute sin means you know what pi is already. &nbsp;Really, this is just <a href="http://en.wikipedia.org/wiki/Newton's_method">Newton's method</a> for computing the root of sin(x) in disguise</div></p>
     </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "posts/calculator-pi.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://thephysicvirtuosi.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
     
   </article>
 </section>
@@ -89,5 +101,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+<script type="text/javascript">
+    var disqus_shortname = 'thephysicvirtuosi';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>

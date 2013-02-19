@@ -43,7 +43,7 @@
 <p>tags: <a href="../tag/buffons-needle.html">buffon's needle</a><a href="../tag/toothpicks.html">toothpicks</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
 </footer><!-- /.post-info --><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TQ0mf2YO5II/AAAAAAAAAHo/WMor9trnTnM/s1600/P1010471.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TQ0mf2YO5II/AAAAAAAAAHo/WMor9trnTnM/s320/P1010471.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 1: Two of the thousands of toothpicks on my floor</td></tr></tbody></table>
 
-<p>You're sitting at a bar, bored out of your mind. &nbsp;You've got an unlimited supply of pretzel rods and a lot of time to kill. &nbsp;The floor is made of thin wooden planks. &nbsp;How can you calculate pi? <br /><br />This is how the problem of Buffon's needle was first presented to me. &nbsp;Stated more formally the problem is this: &nbsp;given a needle of length <i>l</i>&nbsp;and a floor of parallel lines separated by a distance <i>d</i>, what is the probability of a randomly dropped needle crossing a line? <br /><br /><a name='more'></a><br />Working this all out (see a derivation <a href="http://en.wikipedia.org/wiki/Buffon's_needle">here</a>, for example), we find that the probability a needle crosses a line is<br /><br />[ P = \frac{2l}{d\pi} ]<br /><br />So now we have a nice way of experimentally coming up with a value for pi. &nbsp;Simply by tossing a bunch of needles of length <i>l</i>&nbsp;on a striped surface with lines separated by a distance <i>d</i>&nbsp;and counting the total number of times a needle crosses a line and the total number of throws, we can approximate the probability (and thus, pi). &nbsp;I say "approximate" because it will only be true in the limit of an infinite number of throws. &nbsp;Anyway, we have that<br /><br />[ \frac{\mbox{Number of crosses}}{\mbox{Number of throws}} \approx P = \frac{2l}{\pi d} ]<br /><br />so, rearranging a bit, we have that<br /><br />[ \pi \approx \left( \frac{2l}{d} \right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right) ]<br /><br />Now we have something that we can go about measuring. &nbsp;I am going to define the following value to be the experimental quantity we aim to measure:<br /><br />[ \tilde{\pi} = \left( \frac{2l}{d} \right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right) ]<br /><br />So now that we know what we are measuring, let's get to it! &nbsp;Since I'm not allowed to use needles in my home experiments anymore, I decided to use toothpicks. &nbsp;For my striped surface, I just used the wooden floor in our house (see Figure 1). &nbsp;The toothpick length was almost exactly the same as the distance between lines on the floor, so we see that that the <i>l </i>and <i>d</i>&nbsp;terms cancel in our expression above.<br /><br />To make the measurements, I threw ten toothpicks at a time onto the floor and counted how many crossed the lines. &nbsp;I chose ten because it seemed like a nice number. &nbsp;It was small enough that I shouldn't expect too much clumping of the toothpicks (and unwanted correlations in the data), but large enough that I didn't have to drop and pick up a single toothpick a thousand times. &nbsp;I threw the groups of ten toothpicks 100 times and tallied the results. &nbsp;Thus, I have 1000 throws of a single needle.<br /><br />It took the entirety the movie <a href="http://en.wikipedia.org/wiki/Undercover_Brother" style="font-style: italic;">Undercover Brother</a>&nbsp;to throw and pick up all those toothpicks, but when all was said and done I found that out of 1000 thrown toothpicks, 618 crossed the line. <br /><br />Plugging this back into our equation above (and remembering <i>l</i>&nbsp;= <i>d</i>), we get<br /><br />[ \tilde{\pi}=\left(\frac{2l}{d}\right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right)=2 \left(\frac{1000}{618}\right)=3.23]<br /><br />Well that's not too far off I guess. &nbsp;But it's certainly not the pi that I know and love. &nbsp;What went wrong?<br /><br />As I mentioned before, since I am only doing a finite number of runs here I am not finding the exact probability. &nbsp;So is there anyway to gauge our uncertainty? &nbsp;Sure. &nbsp;Since we are doing a counting experiment with a lot of events, we can approximate our error using Poisson statistics. &nbsp;For a Poisson distribution, the standard deviation is just the square root of the number of events (in this case, crosses). &nbsp;So we have that our total number of crosses is<br /><br />[ \mbox{Number of crosses} = 618 \pm \sqrt{618} = 618 \pm 24.9 ]<br /><br />So now if we want to find the uncertainty in our final measurement, we'll have to propagate the error through. &nbsp;This gives us a final value of<br /><br />[ \tilde{\pi} = 3.23 \pm 0.13 ]<br /><br />and we see that the exact value of pi falls within there. &nbsp;We can see that this value gets better and better if we plot our value of pi as a function of the number of throws. &nbsp;Figure 2 shows the measured value of pi (with error bars) over a wide range of throw numbers. &nbsp;The actual value of pi is plotted as a green line.<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TQ0rGuJSDQI/AAAAAAAAAHs/Sllf1A-h1tw/s1600/buffonpi.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TQ0rGuJSDQI/AAAAAAAAAHs/Sllf1A-h1tw/s400/buffonpi.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 2: Measured pi value in blue, actual in<br />green, click for bigger version</td></tr></tbody></table>So we see that the more toothpicks we drop, the closer and closer we get to pi. &nbsp;Hot dog! &nbsp;Certainly an evening well spent.</p>                </article>
+<p>You're sitting at a bar, bored out of your mind. &nbsp;You've got an unlimited supply of pretzel rods and a lot of time to kill. &nbsp;The floor is made of thin wooden planks. &nbsp;How can you calculate pi? <br /><br />This is how the problem of Buffon's needle was first presented to me. &nbsp;Stated more formally the problem is this: &nbsp;given a needle of length <i>l</i>&nbsp;and a floor of parallel lines separated by a distance <i>d</i>, what is the probability of a randomly dropped needle crossing a line? <br /><br /><a name='more'></a><br />Working this all out (see a derivation <a href="http://en.wikipedia.org/wiki/Buffon's_needle">here</a>, for example), we find that the probability a needle crosses a line is<br /><br />[ P = \frac{2l}{d\pi} ]<br /><br />So now we have a nice way of experimentally coming up with a value for pi. &nbsp;Simply by tossing a bunch of needles of length <i>l</i>&nbsp;on a striped surface with lines separated by a distance <i>d</i>&nbsp;and counting the total number of times a needle crosses a line and the total number of throws, we can approximate the probability (and thus, pi). &nbsp;I say "approximate" because it will only be true in the limit of an infinite number of throws. &nbsp;Anyway, we have that<br /><br />[ \frac{\mbox{Number of crosses}}{\mbox{Number of throws}} \approx P = \frac{2l}{\pi d} ]<br /><br />so, rearranging a bit, we have that<br /><br />[ \pi \approx \left( \frac{2l}{d} \right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right) ]<br /><br />Now we have something that we can go about measuring. &nbsp;I am going to define the following value to be the experimental quantity we aim to measure:<br /><br />[ \tilde{\pi} = \left( \frac{2l}{d} \right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right) ]<br /><br />So now that we know what we are measuring, let's get to it! &nbsp;Since I'm not allowed to use needles in my home experiments anymore, I decided to use toothpicks. &nbsp;For my striped surface, I just used the wooden floor in our house (see Figure 1). &nbsp;The toothpick length was almost exactly the same as the distance between lines on the floor, so we see that that the <i>l </i>and <i>d</i>&nbsp;terms cancel in our expression above.<br /><br />To make the measurements, I threw ten toothpicks at a time onto the floor and counted how many crossed the lines. &nbsp;I chose ten because it seemed like a nice number. &nbsp;It was small enough that I shouldn't expect too much clumping of the toothpicks (and unwanted correlations in the data), but large enough that I didn't have to drop and pick up a single toothpick a thousand times. &nbsp;I threw the groups of ten toothpicks 100 times and tallied the results. &nbsp;Thus, I have 1000 throws of a single needle.<br /><br />It took the entirety the movie <a href="http://en.wikipedia.org/wiki/Undercover_Brother" style="font-style: italic;">Undercover Brother</a>&nbsp;to throw and pick up all those toothpicks, but when all was said and done I found that out of 1000 thrown toothpicks, 618 crossed the line. <br /><br />Plugging this back into our equation above (and remembering <i>l</i>&nbsp;= <i>d</i>), we get<br /><br />[ \tilde{\pi}=\left(\frac{2l}{d}\right) \left(\frac{\mbox{Number of throws}}{\mbox{Number of crosses}} \right)=2 \left(\frac{1000}{618}\right)=3.23]<br /><br />Well that's not too far off I guess. &nbsp;But it's certainly not the pi that I know and love. &nbsp;What went wrong?<br /><br />As I mentioned before, since I am only doing a finite number of runs here I am not finding the exact probability. &nbsp;So is there anyway to gauge our uncertainty? &nbsp;Sure. &nbsp;Since we are doing a counting experiment with a lot of events, we can approximate our error using Poisson statistics. &nbsp;For a Poisson distribution, the standard deviation is just the square root of the number of events (in this case, crosses). &nbsp;So we have that our total number of crosses is<br /><br />[ \mbox{Number of crosses} = 618 \pm \sqrt{618} = 618 \pm 24.9 ]<br /><br />So now if we want to find the uncertainty in our final measurement, we'll have to propagate the error through. &nbsp;This gives us a final value of<br /><br />[ \tilde{\pi} = 3.23 \pm 0.13 ]<br /><br />and we see that the exact value of pi falls within there. &nbsp;We can see that this value gets better and better if we plot our value of pi as a function of the number of throws. &nbsp;Figure 2 shows the measured value of pi (with error bars) over a wide range of throw numbers. &nbsp;The actual value of pi is plotted as a green line.<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TQ0rGuJSDQI/AAAAAAAAAHs/Sllf1A-h1tw/s1600/buffonpi.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TQ0rGuJSDQI/AAAAAAAAAHs/Sllf1A-h1tw/s400/buffonpi.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 2: Measured pi value in blue, actual in<br />green, click for bigger version</td></tr></tbody></table>So we see that the more toothpicks we drop, the closer and closer we get to pi. &nbsp;Hot dog! &nbsp;Certainly an evening well spent.</p><p>There are <a href="../posts/a-buffoon-s-toothpicks.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -73,7 +73,7 @@
 
 <p>In less than two days, NASA's Mars Science Laboratory (MSL) /&nbsp;<i>Curiosity</i>&nbsp;rover will begin its harrowing descent to the Martian surface. &nbsp;If everything goes according to the kind-of-crazy-what-the-heck-is-a-sky-crane plan, this process will be referred to as "landing" (otherwise, more crashy/explodey gerunds will no doubt ...</p>
                 <a class="readmore" href="../posts/a-curious-footprint.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/a-curious-footprint.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -97,7 +97,7 @@
 <p>tags: <a href="../tag/.html"></a></p>
 </footer><!-- /.post-info -->                <p>None</p>
                 <a class="readmore" href="../posts/a-matter-of-perspective.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/a-matter-of-perspective.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -121,7 +121,7 @@
 <p>tags: <a href="../tag/large-numbers.html">large numbers</a><a href="../tag/scott-bakula.html">scott bakula</a><a href="../tag/politics.html">politics</a></p>
 </footer><!-- /.post-info -->                <p>I hate politics, but for some reason I obsessively read about it. &nbsp;I don't know why I do this, but I assume it's the same reason people slow down for car wrecks and pay to see the geek [1]. &nbsp;Anyway, the big thing in political news now is ...</p>
                 <a class="readmore" href="../posts/a-sense-of-scale-in-dollars-and-cents-.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/a-sense-of-scale-in-dollars-and-cents-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -147,7 +147,7 @@
 
 <p>Some people know a <i>suspiciously</i>&nbsp;large number of the digits of pi. &nbsp;Perhaps you have met one of these people. &nbsp;They can typically be found hiding behind bushes and under the counters at pastry shops, just...&nbsp;<i>waiting</i>.<br /><br />At the slightest hint of a mention of pi ...</p>
                 <a class="readmore" href="../posts/a-very-small-slice-of-pi.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/a-very-small-slice-of-pi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -171,7 +171,7 @@
 <p>tags: <a href="../tag/apologies.html">apologies</a><a href="../tag/saturn.html">saturn</a></p>
 </footer><!-- /.post-info -->                <p>Hello, again! &nbsp;Remember us? &nbsp;I don't. &nbsp;Anyway, apologies for the lack of activity here. &nbsp;There are plenty of people<em> to blame for this lack of activity, but I don't want to name names. &nbsp;The real purpose of this pseudo-update is to SUPER DUPER promise that the winners of ...</em></p>
                 <a class="readmore" href="../posts/apologies-saturn-.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/apologies-saturn-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -195,7 +195,7 @@
 <p>tags: <a href="../tag/.html"></a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;">I found it easier to find the probability that I will not win after a given number of caps. &nbsp;In order to not win the game, we can have at most two caps of the same team from a pool of thirty possible teams. &nbsp;So let's first define a ...</div>
                 <a class="readmore" href="../posts/backup-for-pepsi.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/backup-for-pepsi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -221,7 +221,7 @@
 
 <p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">A few weeks ago I was on a bus going through Scranton and I read a super-awesome fun fact regarding the Hulse-Taylor binary pulsar in </span><i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Black Holes, White Dwarfs and Neutron Stars</span></i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">. &nbsp;Sadly, I have since forgotten it and left the book a few thousand ...</span></p>
                 <a class="readmore" href="../posts/beards-and-pulsars.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/beards-and-pulsars.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -245,7 +245,7 @@
 <p>tags: <a href="../tag/statistics.html">statistics</a><a href="../tag/benford.html">benford</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
 </footer><!-- /.post-info -->                <p>Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one? &nbsp;My first thought was that it would be 1/9. &nbsp;There are nine non-zero numbers to choose from and they should be uniformly distributed, right? <br /><br />Turns ...</p>
                 <a class="readmore" href="../posts/benford-s-law.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/benford-s-law.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -271,7 +271,7 @@
 
 <p><i>Betelgeuse is a massive star at the very end of its life and could explode any second now!</i>&nbsp; Every time I hear that I get really <i>really</i> excited. &nbsp;Like a kid in a candy store that's about to see a star blow ...</p>
                 <a class="readmore" href="../posts/betelgeuse-betelgeuse-betelgeuse-.html">read more</a>
-                                </div><!-- /.entry-content -->
+                <p>There are <a href="../posts/betelgeuse-betelgeuse-betelgeuse-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
@@ -318,5 +318,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+<script type="text/javascript">
+    var disqus_shortname = 'thephysicvirtuosi';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>

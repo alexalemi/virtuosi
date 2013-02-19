@@ -49,6 +49,18 @@
 
 <p>It is traditional here at The Virtuosi to <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html">plot</a> <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html">the</a> <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html">destruction</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-iv-shocking-destruction.html">of</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-v-there-goes-sun.html">the</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-vi-nanobot-destruction.html">earth</a>.  We also are making secret plans for our volcano lair and death ray.  However, since it is earth day, we will only share with you the plans for the total doom of the earth, not the cybernetically enhanced guard dogs we're building for our <a href="http://thevirtuosi.blogspot.com/2012/04/earth-day-2012-escape-to-moon.html">moon base</a>.  The plan I reveal today is elegant in its simplicity.  I intend to alter the orbit of the earth enough to cause the earth to freeze, thus ending life as we know it. <br /><br /><a name='more'></a>According to the internet at large, the average surface temperature of the earth is ~15 C. &nbsp;This average surface temperature is directly related to the power output of the sun. &nbsp;More precisely, it is directly related to the radiated power from the sun that the earth absorbs. &nbsp;Assuming that the earth's temperature is not changing (true enough for our purposes), the then power radiated by the earth must be equal to the power absorbed from the sun. &nbsp;More precisely<br /><br />[ P_{rad,earth}=P_{abs,sun}]<br /><br />Now, the radiated power goes as<br /><br />[P_{rad}=\epsilon \sigma A_{earth} T^4 ]<br /><br />where A_earth is the surface area of the earth, T is the temperature of the earth, and epsilon and sigma are constants. &nbsp;I'll be conservative and say that I want to cool the temperature of the earth down to 0 C. &nbsp;The ratio of the power the earth will emit is<br /><br />[\frac{P_{new}}{P_{old}}=\frac{T_{new}^4}{T_{old}^4} \approx .81]<br /><br />Note that the temperature ratio must be done in Kelvin.<br /><br />The power radiated by the sun (or any star) drops off as the inverse square of the distance from the sun to the point of interest:<br /><br />[P_{sun} \sim \frac{1}{r^2} ]<br /><br />To reduce the power the earth receives from the sun to 81% of the current value would require<br /><br />[\frac{P_{sun,new}}{P_{sun,old}}=\frac{r_{old}^2}{r_{new}^2}=.81 ]<br /><br />This tells us that the new earth-sun distance must be larger than the old (a good sanity check). &nbsp;In fact, it gives<br /><br />[r_{new}=1.11 r_{old} ]<br /><br />So I'll need to move the earth by 11% of the current distance from the earth to the sun. &nbsp;No small task!<br /><br />The earth is in a circular orbit (or close enough). &nbsp;To change to a circular orbit of larger radius requires two applications of thrust at opposite points &nbsp;in the orbit &nbsp;It turns out that the required boost in speed (the ratio of the speeds just before and after applying thrust) for the first boost of an object changing orbits is given by<br /><br />[\frac{v_{f}}{v_{i}}=\sqrt{\frac{2R_{f}}{R_i+R_f}}=1.026]<br /><br />To move from the transfer orbit to the final circular orbit requires<br /><br /><br />[\frac{v_{f}}{v_{i}}=\sqrt{\frac{R_{i}+R_f}{2R_i}}=1.027]<br /><br />Note that despite the fact that we boost the velocity at both points, the velocity of the final orbit is less than that of the initial.<br /><br />Now, how could we apply that much thrust? &nbsp;Well, the change in momentum for the earth from each stage is roughly (ignoring the slight velocity increase of the transfer orbit)<br /><br />[\Delta p = .03M_E v_E ]<br /><br />The mass of the earth is ~6<em>10^24 kg, the orbital velocity is ~30 km/s, so<br /><br />[\Delta p = 5\cdot 10^{27} kg</em>m/s]<br /><br />A solid rocket booster (the booster rocket used for shuttle launches, when those still happened) can apply about 12 MN of force for 75 s (thank you wikipedia). &nbsp;That's a net momentum change of ~900 <em>10^9 kg</em>m/s (900 billion!). &nbsp;So we would only need<br /><br />[\frac{2*5\cdot 10^{27}}{9\cdot 10^{11}}=12 \cdot 10^{15}]<br /><br />That's right, only 12 million billion booster rockets! &nbsp;With those I can freeze the earth. &nbsp;I assure you that this plan is proceeding on schedule, and will be ready shortly after we have constructed our volcano lair.<br /></p>
     </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "posts/end-of-the-earth-vii-the-big-freeze.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://thephysicvirtuosi.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
     
   </article>
 </section>
@@ -91,5 +103,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+<script type="text/javascript">
+    var disqus_shortname = 'thephysicvirtuosi';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>

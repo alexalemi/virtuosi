@@ -47,6 +47,18 @@
 <p>tags: <a href="../tag/.html"></a></p>
 </footer><!-- /.post-info -->      <p>This is the schematic version, if you just wanted hints. &nbsp;The full solution is given in <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-addendum-i.html">Solar Sails Addendum I</a>.<br /><br /><a name='more'></a>Here we present a schematic solution of the differential equation:<br /><br />[ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} ]<br /><br />This is just a separable equation, so we rearrange to get an integral equation:<br /><br />[ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} = \int_{0}^{t}dt]<br /><br />From here it's nice to non-dimensionalize, so our integration variable is just a number (with no units attached). &nbsp;This allows us to get the integral into a form like<br /><br />[ k\int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = t]<br /><br />for appropriate values of k and u. Now we are ready to get started! &nbsp;Typically, when I see something with a square root in the denominator that's giving me trouble, I just blindly try trig substitutions. &nbsp;After an appropriate trig substitution, we get something of the form<br /><br />[ \int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = \int_{x_0}^{x_f} -2\csc^3x dx],<br /><br />So now how do we solve this "easier" problem? &nbsp;As a wise man once said, "When in doubt, integrate by parts." &nbsp;So let's try that.<br /><br />[ \left[ \mbox{HINT:} -\int_{x_0}^{x_f} \csc^3x dx = \int_{x_0}^{x_f}\csc x \left(-\csc^2x \right)dx \right]]<br /><br />Remembering that integration by parts goes like<br /><br />[ \int u dv = uv - \int v du ]<br /><br />we can pick appropriate values of u and v to get something nice, which eventually leads to<br /><br />[ -\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |<em x_0="x_0">{x_0}^{x_f} - \int</em>^{x_f} \csc x dx + \int_{x_0}^{x_f} \csc^3 x dx]<br /><br />But this is just what we want! &nbsp;Rearranging we now have that<br /><br />[ -2\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |<em x_0="x_0">{x_0}^{x_f} - \int</em>^{x_f} \csc x dx]<br /><br />Evaluating our integrals, we see that<br /><br />[ -2\int_{x_0}^{x_f}\csc^3x dx = \sqrt{u}\sqrt{u-1} + \ln{ | \sqrt{u} + \sqrt{u-1}|} ]<br /><br />And this is what we have sought from the beginning. &nbsp;Plugging back in to our earlier equations and rearranging gives<br /><br /><br />[ t = \left(\frac{m{r_0}^3}{2\alpha} \right)^{1/2}\left[\sqrt{u(u-1)} + \ln{\left( \sqrt{u} + \sqrt{u-1}\right)} \right] ]<br /><br />where u = r / r_0 is our non-dimensional distance measurement. &nbsp;And this is (up to some algebra) exactly what we get in the initial post. <br /><br /><div><br /></div></p>
     </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "posts/solar-sails-addendum-ii.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://thephysicvirtuosi.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
     
   </article>
 </section>
@@ -89,5 +101,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+<script type="text/javascript">
+    var disqus_shortname = 'thephysicvirtuosi';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>

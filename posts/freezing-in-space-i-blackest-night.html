@@ -47,6 +47,18 @@
 <p>tags: <a href="../tag/power.html">power</a><a href="../tag/space.html">space</a><a href="../tag/freeze.html">freeze</a><a href="../tag/blackbody.html">blackbody</a><a href="../tag/radiation.html">radiation</a><a href="../tag/human.html">human</a></p>
 </footer><!-- /.post-info -->      <p>In the last post I made, I discussed the fact that <a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html">humans radiate energy</a>. &nbsp;In that post I calculated that we actually radiate quite a lot of power. &nbsp;This immediately raises a few questions, the most obvious one being: How long would it take you to freeze in space? &nbsp;This question is multifaceted, and I'm going to split it between two parts. &nbsp;This first part, 'Blackest Night' is how quickly we'd freeze if we were completely lost in space, nothing anywhere near. &nbsp;The second part, 'Turn On The Sun!' will address what would happen in near earth orbit.<br /><br /><br /><a name='more'></a><br />We need to clarify what we mean when we say freezing in space. &nbsp;The fatal temperature change for a human is (according to the all knowing internet), roughly a drop of 7C. &nbsp;If you remember my previous post, we calculated that we would radiate about 860 W. &nbsp;Now, we have to ask how much energy it takes to change our temperature by 7 C. &nbsp;Well, as I've discussed a <a href="http://thevirtuosi.blogspot.com/2010/04/beer-diet.html#more">few</a>&nbsp;<a href="http://thevirtuosi.blogspot.com/2010/04/falling-water-hot-or-cold.html">times</a>, the energy it takes to change the temperature is given by<br />[Q=mc\Delta T]<br />The mass of a human is ~75 kg. &nbsp;We're mostly water, so let's just assume that we are all water. &nbsp;This gives us a specific heat of 4.2 kJ/kg<em>K. &nbsp;The energy needed for our 7 C temperature change is then<br />[Q=(75kg)(4.2kJ/kg</em>K)(7K)=2.2 MJ]<br /><br />By the time we have dropped to 30 C, we are only radiating a power of<br />[P=eA\sigma T^4\=(.97)(1.7m^2)(5.67\cdot10^{-8}W/m^2K^4)(303K)^4=790W]<br />Let us assume that the average power radiated is the geometric average of these two powers,<br />[P_{avg}=\sqrt{(860W)(790W)}\approx825W]<br />This gives us a time to freeze of<br />[t=\frac{2.2MJ}{825W}\approx2700s]<br />This is ~45 minutes. &nbsp;So you've got 45 minutes until a deadly freeze in deep space. &nbsp;Seems a rather long time, does it not? &nbsp;I'm fairly certain that you'd freeze much faster in antarctica than deep space. &nbsp;Why? &nbsp;Because in Antarctica you have more cooling mechanisms that just radiation, you have conduction in the air around you and convection of that warmer air away from your skin. &nbsp;If you're adrift in space, for all that it is rather cold, the good news is that you'll asphyxiate before you freeze!<br /><br />All of this was done assuming that there's no energy gain from anywhere. &nbsp;That is, that we're stuck somewhere in the deepest space, the blackest night. &nbsp;Tomorrow we'll consider what would happen if you were in near earth orbit, with all of these lovely energy sources around, particularly the sun.</p>
     </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "posts/freezing-in-space-i-blackest-night.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://thephysicvirtuosi.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
     
   </article>
 </section>
@@ -89,5 +101,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+<script type="text/javascript">
+    var disqus_shortname = 'thephysicvirtuosi';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>
