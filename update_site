@@ -1,6 +1,8 @@
 #! /bin/bash
 
-pelican -D -v -s site/pelicanconf.py site
-ghp-import site/output
+cd site
+pelican -D -v -s pelicanconf.py 
+ghp-import output
 git push origin gh-pages
+cd ..
 
