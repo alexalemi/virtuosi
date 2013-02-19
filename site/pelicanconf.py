@@ -36,3 +36,5 @@ TWITTER_USERNAME = 'thevirtuosi'
 GOOGLE_ANALYTICS = 'UA-15719155-6'
 DISQUS_SITENAME = 'thephysicsvirtuosi'
 
+FILES_TO_COPY = ( ('../extra/CNAME','CNAME' ), )
+
