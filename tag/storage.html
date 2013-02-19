@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>The Physics Virtuosi - storage</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
+                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
+                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">The Physics Virtuosi </a></h1>
+                <nav><ul>
+                                                                                                    <li ><a href="../category/old.html">old</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+                
+            
+
+                            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../posts/pi-storage.html">Pi storage</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-03-14T15:13:00">
+                Wed 14 March 2012
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/alemi.html">Alemi</a>
+        </address>
+        <p>In <a href="../category/old.html">old</a>. </p>
+<p>tags: <a href="../tag/pi-day.html">pi day</a><a href="../tag/fun.html">fun</a><a href="../tag/probability.html">probability</a><a href="../tag/storage.html">storage</a></p>
+</footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg" width="320" /></a></div>
+
+<p>Let me share my worst "best idea ever" moment. &nbsp;Sometime during my undergraduate I thought I had solved all the world's problems.<br /><br />You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff. &nbsp;I hate getting rid of my stuff. &nbsp;But what can someone do?<br /><br />And then it hit me, I had the bright idea:<br /><blockquote class="tr_bq">What if we didn't have to <i>store</i>&nbsp;things, what if we could just <i>compute</i>&nbsp;files whenever we wanted them back?</blockquote>Sounds like an awesome idea, right? &nbsp;I know. &nbsp;But how could we compute our files? &nbsp;Well, as you may know pi is conjectured to be a <a href="http://en.wikipedia.org/wiki/Normal_number">normal number</a>, meaning its digits are probably random. &nbsp;We also know that it is irrational, meaning pi never ends....<br /><br /><a name='more'></a><br />Since its digits are random, and they never end, in principle any sequence you could ever imagine should show up in pi eventually. &nbsp;In fact there is a nifty website&nbsp;<a href="http://pi.nersc.gov/">here</a>&nbsp;that will let you search for arbitrary strings (using a 5-bit format) in first 4 billion digits, for example "alemi" <a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;format=char">seems to show up</a> at around digit&nbsp;3149096356.<br /><br />So in principle, I could send you just an index, and a length, and you could compute the resulting file.<br /><br />But wait you cry, isn't computing digits of pi hard, don't people work really hard to compute pi farther and farther? &nbsp;Hold on I claim, first of all, I'm imagining a future where computation is cheap. &nbsp;Secondly, there is a really neat algorithm, the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula">BBP algorithm</a>, that enables you to compute the kth binary digit of pi without knowing any of the preceding digits. &nbsp;In other words, in principle if you wanted to know the 4 billionth digit of pi, you can compute it without having to first compute the first 4 billion other digits.<br /><br />Cool, this is beginning to sound like a really good idea. &nbsp;What's the catch?<br /><br />Perhaps you've already gotten a taste of it. &nbsp;Let's try to estimate just how far along in pi we would have to look before our message of interest shows up. <br /><br />Let's assume we have written our file in binary, and are computing pi in binary e.g.<br /><br /><blockquote>11.<br />00100100 00111111 01101010 10001000 10000101 10100011 00001000 11010011</blockquote>etc. &nbsp;So, if the sequence is random, there is a 1/2 chance that at any point we get the right starting bit of our file, and then a 1/2 chance we get the next one, etc. &nbsp;So the chance that we would create our file if we were randomly flipping coins would be<br />[ P = \left( \frac{1}{2} \right)^N = 2^{-N} ]<br />if our file was N bits long.<br /><br />So where do we expect this sequence to first show up in the digits of pi? &nbsp;Well, this turns out to be a <a href="http://mathworld.wolfram.com/CoinTossing.html">subtle problem</a>, but we can get a feel for it by assuming that we compute N digits of pi at a time and see if its right or not. &nbsp;If its not, we move on to the next group of N digits, if its right, we're done. &nbsp;If this were the case, we should expect to have to draw about<br />[ \frac{1}{P} = 2^N ]<br />times until we have a success, and since each trial ate up N digits, we should expect to see our file show up after about<br />[ N 2^N ]<br />digits of pi.<br /><br />Great, so instead of handing you the file, I could just hand you the index the file is located. &nbsp;But how many bits would I need to tell you that index. &nbsp;Well, just like we know that 10^3 takes 4 digits to express in decimal, and 6 x 10^7 takes 8 digits to express, in general it takes<br />[ d = \log_b x + 1 ]<br />digits to express a number in base b, in this case it takes<br />[ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N + \log_2 N + 1 ]<br />digits to express this index in binary.<br /><br />And there's the rub. &nbsp;Instead of sending you N bits of information contained in the file, all my genius compression algorithm has manged to do is replace N bits of information in the file, with a number that takes ( ~ N + \log_2 N ) bits to express. &nbsp;I've actually managed to make the files larger not smaller!<br /><br />You may have noticed above, that even for the simple case of "alemi", all I managed to do was swap the binary message<br /><br /><blockquote class="tr_bq">alemi -&gt;&nbsp;0000101100001010110101001<br />with the index&nbsp;3149096356 -&gt;&nbsp;10111011101100110110010110100100</blockquote>which is longer in binary!<br /><br />As an aside, you may have felt uncomfortable with my estimation for how long we have to wait to see our message, and you would be right. &nbsp;Just because all N digits I draw at a time don't match up doesn't mean that the second half isn't useful. &nbsp;For instance if I was looking for 010, lets say some of the digits are 101,010. &nbsp;While both of those sequences didn't match, if I was looking at every digit at a time, I would have found a match. &nbsp;And you'd be right. &nbsp;<a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf">Smarter people than I</a> have computed just how long you should have to wait, and end up with the better estimation<br />[ \text{wait time} \sim 2^N N \log 2 ]<br />which is pretty darn close to our silly estimate. <br /><br /><br /></p>                </article>
+                                    <p class="paginator">
+        Page 1 / 1
+    </p>
+                            </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
+                        <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
+                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
+                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
+                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
+                                                </ul>
+                </div><!-- /.blogroll -->
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-15719155-6']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>

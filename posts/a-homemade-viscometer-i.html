@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>A Homemade Viscometer I</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
+                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
+                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">The Physics Virtuosi </a></h1>
+                <nav><ul>
+                                                                                                    <li class="active"><a href="../category/old.html">old</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../posts/a-homemade-viscometer-i.html" rel="bookmark"
+           title="Permalink to A Homemade Viscometer I">A Homemade Viscometer I</a></h1>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="thevirtuosi">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2012-07-24T22:32:00">
+                Tue 24 July 2012
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/brian.html">Brian</a>
+        </address>
+        <p>In <a href="../category/old.html">old</a>. </p>
+<p>tags: <a href="../tag/.html"></a></p>
+</footer><!-- /.post-info -->      <p>Stirring a bowl of honey is much more difficult than stirring a bowl of water. But why? The mass density of the honey is about the same as that of water, so we aren't moving more material. If we were to write out Newton's equation, <i>ma</i> would be about the same, but yet we still need to put in much more force. Why? And can we measure it?<br /><br /><a name='more'></a><br />The reason that honey is harder to stir is of course that the drag on our spoon depends on more than just the density of the fluid. The drag also depends on the viscosity of the fluid -- loosely speaking, how thick it is -- and the viscosity of honey is about 400 times that of water, depending on the conditions. In fact, a quick perusal of the Wikipedia article on <a href="http://en.wikipedia.org/wiki/Viscosity">viscosity</a> shows that viscosities can vary by a fantastic amount -- some 13 orders of magnitude, from easy-to-move gases to <a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment">thick pitch that behaves like a solid except</a> on long time scales. The situation is even more complicated than this, as some fluids can have a <a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid">viscosity that changes depending on the flow</a>.<br /><br />I wanted to find a way to measure the viscosities of the stuff around me, so I made the <a href="http://en.wikipedia.org/wiki/Viscometer">viscometer </a> pictured below for about $1.75 (the vending machines in Clark Hall are pretty expensive). How? Well, I <br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s1600/DSCF4438.JPG" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="400" src="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s400/DSCF4438.JPG" width="300" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">My homemade viscometer, taking data on the viscosity of water. </td></tr></tbody></table><br /><ol><li>Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz bottle (come on, sponsorships).&nbsp;</li><li>Cut the top and bottom off the bottle, so all that was left was a straight tube.&nbsp;</li><li>Mounted the bottle with on top of a small piece of flat plastic.&nbsp;</li><li>Mounted a single-tubed coffee stirrer horizontally out of the bottle (I placed the end towards the middle of the bottle to avoid end effects).&nbsp;</li><li>Epoxied or glued the entire edge shut.&nbsp;</li><li>Marked evenly-spaced lines on the side of the bottle.&nbsp;</li></ol><br />&nbsp;I can load my "sample" fluid in the top of the Pepsi bottle, and time how long it takes for the sample level to drop to a certain point. A more viscous fluid will take more time to leave the bottle, with the time directly proportional to the viscosity. (This is a consequence of Stokes flow and the equation for flow in a pipe. It will always be true, as long as my fluid is viscous enough and my apparatus isn't too big.)<br /><br />&nbsp;So we're done! All we need to do is calibrate our viscometer with one sample, measure the times, and then we can go out and measure stuff in the world! No need to stick around for the boring calculations! We can do some fun science over the next few blog posts!<br /><br />But this is a physics blog written by a bunch of grad students, so I'm assuming that a few of you want to see the details. (I won't judge you if you don't though.) If we think about the problem for a bit, we basically have flow of a liquid through a pipe (i.e. the coffee stirrer), plus a bunch of other crap which hopefully doesn't matter much.<br /><br />We first need to think about how the fluid moves. We want to find the velocity of the fluid at every position. This is best cast in the language of vector calculus -- we have a (vector) velocity field <b><i>u</i></b> at a (vector) position <b><i>x</i></b>. There are two things we know: 1) We don't (globally) gain or lose any fluid, and 2) Newton's laws <i>F=ma</i> hold. We can write these equations as the Navier-Stokes equations: [ \vec{\nabla}\cdot \vec{u} = 0 \quad (1) ] [  \ \rho \left( \frac {\partial \vec{u}} {\partial t} + (\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p + \eta \nabla^2 \vec{u} \quad (2) ] The first equation basically says that we don't have any fluid appearing or disappearing out of nowhere, and the second is basically <i>m<b>a</b>=<b>F</b></i>, except written per unit volume. (The fluid's mass-per-unit-volume is <i>rho</i>, the rate of change of our velocity is <i>d<b>u</b>/dt</i>, and our force per unit volume is <i><b>grad</b>(p)</i>, plus a viscous term <i>laplacian(<b>u</b>)</i>. The only complication is that <i>d<b>u</b>/dt</i> is a total derivative, which we need to write as <i>d<b>u</b>/dt + d<b>u</b>/d<b>x</b><em>d<b>x</b>/dt</i>.)<br /><br />I won't drag you through the <a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory details</a>, unless you want to see them, but it turns out that for my system the height of the fluid <i>h</i> (measured from the coffee stirrer) versus time <i>t</i> is  [ h(t) = h(0)e^{- t/T}, \quad T= 60.7 \textrm{sec} \times [\eta / \textrm{1 mPa</em>s}] \times [\textrm{ 1 g/cc} / \rho]  ] [For my viscometer, the coffee stirrer has length 13.34 cm and inside diameter 2.4 mm, and the Pepsi bottle has a cross-sectional area of 36.3 square centimeters (3.4 cm inner radius). You can see how the timescale scales with these properties in the <a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory details section</a>.]<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s1600/5.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s400/5.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A run with measured heights vs times &amp; error bars. The majority of the uncertainty turns out to come from not knowing the exact proportions of the viscometer. I don't know exactly why the heights are systematically deviating from the fit, but I suspect it's that my gridlines aren't perfectly lined up with the bottom of my viscometer (it looks like ~5 mm off would do it, which I can totally believe looking at the picture of my viscometer). However, because of the linearity of the equations for steady flow in a pipe, we know that the time scales linearly with the viscosity, so we should be able to accurately measure relative viscosities. </td></tr></tbody></table>Well, how well does it work? Above is a plot of the height of water in my viscometer versus time, with a best-fit value from the equations above. To get a sense of my random errors (such as how good I am at timing the flow), I measured this curve 5 separate times. If I take into account the uncertainties in my apparatus setup as systematic errors, I find a value for my viscosity as  [ \eta \approx 1.429 \textrm{mPa<em> s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} ] The actual value of the viscosity of water at room temperature (T=25 C) is about 0.86 mPa</em>s, which is more-or-less within my systematic errors. So it looks like I won't be able to measure absolute values of viscosity accurately without a more precise apparatus. But if I look at the variation of my measured viscosity, I see that I should probably be able to measure changes in viscosity to 0.5% !! That's pretty good!<br /><br />Hopefully over the next couple weeks I'll try to use my viscometer to measure some interesting physics in the viscosity of fluids.</p>
+    </div><!-- /.entry-content -->
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+                        <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
+                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
+                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
+                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
+                                                </ul>
+                </div><!-- /.blogroll -->
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-15719155-6']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>

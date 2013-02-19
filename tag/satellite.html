@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>The Physics Virtuosi - satellite</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
+                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
+                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">The Physics Virtuosi </a></h1>
+                <nav><ul>
+                                                                                                    <li ><a href="../category/old.html">old</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+                
+            
+
+                            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../posts/laser-launching.html">Laser Launching</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-04-21T22:22:00">
+                Wed 21 April 2010
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/jesse.html">Jesse</a>
+        </address>
+        <p>In <a href="../category/old.html">old</a>. </p>
+<p>tags: <a href="../tag/laser.html">laser</a><a href="../tag/launch.html">launch</a><a href="../tag/satellite.html">satellite</a><a href="../tag/physics.html">physics</a></p>
+</footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"></div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s1600/space-war-laser.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="156" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s200/space-war-laser.jpg" width="200" /></a></div>
+
+<p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Lasers seem to be on my mind recently. &nbsp;Just yesterday, the class I TA for (E&amp;M for engineers) talked about the momentum carried by E&amp;M waves. &nbsp;This called to mind a discussion I had with a housemate a few weeks back. &nbsp;He had heard somewhere that 'they' were thinking of launching satellites with lasers. &nbsp;</span><i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">No way</span></i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">, I thought to myself. &nbsp;</span><i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Satellites are too heavy</span></i><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">. &nbsp;However, his question has been hovering around in my mind, so I've decided to try and answer it: can we use a laser to launch a satellite into orbit?</span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span><br /><a name='more'></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Let us begin with a few simplifying assumptions. &nbsp;I'm going to assume that we want our launched satellite to reach the escape velocity of the earth. &nbsp;Of course, we don't want a satellite to escape orbit, but escape velocity is calculated without considering any kind of drag forces on our launched object. &nbsp;To first order then, I expect achieving escape velocity will get our satellite into a relatively high orbit without actually escaping earth's gravity well. &nbsp;Second, I'm going to assume our laser is on the ground (reusable launching device!), and that our satellite is perfectly reflective, so we're not going to be melting it. &nbsp;Finally, I'm going to assume that the laser will remain effective at targeting our object up to 15 km above the surface, around the effective range for lasers used as guides for&nbsp;</span><a href="http://en.wikipedia.org/wiki/Adaptive_optics"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">adaptive optics</span></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;in telescopes.</span><br /><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Now, to the meat of the problem. &nbsp;First, we need to find the escape velocity from the earth. &nbsp;This is defined as the velocity we would need to give an object to overcome the gravitational energy of the earth upon the object. &nbsp;This is found by setting the kinetic energy of the object equal to the change in gravitational potential energy from the earth's surface to infinity:</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[ KE=\Delta PE ]</span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">so </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[\tfrac{1}{2}mv_{esc}^2 = \frac{GM_{earth}m}{R_{earth}}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">(for those interested, the gravitational potential energy at infinity is defined to be zero). &nbsp;We can easily solve this for v,</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[ v_{esc}=\sqrt{\frac{2GM_{earth}}{R_{earth}}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">To me, the most remarkable feature of the escape velocity is that it is independent of the mass of the object! &nbsp;We can now plug in numbers, and find an escape velocity if ~11.2 km/s.</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">We now make use of our constraint, that we have to achieve this escape velocity over 15 km. &nbsp;We assume the laser outputs a constant number of photons per second, n. &nbsp;The force the laser provides the satellite is the change in momentum with time,</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[F=\frac{dp}{dt}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-family: Times;"></span></span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-family: Times;"></span></span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-family: Times;"><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">How is our laser imparting momentum to our system? &nbsp;Well, light is composed of photons, tiny packets of light. &nbsp;Each photon has momentum. &nbsp;Assume each photon reflects perfectly, that is, straight backwards and with no energy loss. &nbsp;Then the photon has reversed its momentum. &nbsp;Since momentum is conserved, the satellite has gained a momentum of 2p. &nbsp;The momentum of a photon is</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[p=\frac{h}{\lambda}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">where h is Planck's constant. &nbsp;This gives</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[F=\frac{2nh}{\lambda}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span></div></span></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Given a constant force, the time taken to reach some velocity is just&nbsp;</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[t=mv/F]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">In our case the v is the escape velocity. &nbsp;Now, given a constant force, and no initial velocity, an object of mass m travels a distance d in a time t given by</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[d=\frac{F}{2m}t^2]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">We can substitute our expression for t into this expression, giving</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[d=\left(\frac{F}{2m}\right)\left(\frac{mv}{F}\right)^2]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[d=\frac{mv^2}{2F}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">What we are really interested in is n, the number of photons per second this process takes, so we substitute our expression for the force, and solve for n:</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[d=\frac{mv^2\lambda}{4nh}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">s0</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[n=\frac{mv^2\lambda}{4hd}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Now that we have the number of photons per second our laser supplies, all that is left is to find the power of laser this would take. &nbsp;The power of a laser will be given by the number of photons per second times the energy per photon. &nbsp;The energy per photon is given by E=hf where f is the frequency of our light. &nbsp;So, the power, P, of our laser is</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[P=nE]</span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">or </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[P=\frac{mv_{esc}^2\lambda f}{4d}]</span><br /><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">so </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">[P=\frac{mv_{esc}^2 c}{4d}]</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Where we have recognized that the frequency times the wavelength of a photon is just the speed of light, c. &nbsp;</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><br /></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">All that remains is to plug in numbers. &nbsp;A medium sized satellite might be about 750kg, giving a laser power of 4.7<em>10^14W. &nbsp;This is .5 PW. &nbsp;According to wikipedia, the greatest power output of a continuous operation laser is on the order of 1 kW, or ~10^12 times less than our necessary power! &nbsp;There's no way we're getting a normal sized satellite into orbit with a laser. &nbsp;What about a smaller satellite? &nbsp;In recent years picosatellites have proposed, with masses of ~.1kg. &nbsp;This gives a necessary power of 6.2</em>10^10, or 620 TW. &nbsp;This is still ~10^8 times greater than our most powerful continuous laser. &nbsp;In fact, reversing the calculation, our laser could launch a satellite with a mass of ~1.6 mg. &nbsp;A little googling reveals this is the same order of magnitude as a grain of rice! &nbsp;Simply put, we're not going to be launching satellites with lasers anytime soon.</span></div></p>                </article>
+                                    <p class="paginator">
+        Page 1 / 1
+    </p>
+                            </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
+                        <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
+                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
+                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
+                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
+                                                </ul>
+                </div><!-- /.blogroll -->
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-15719155-6']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>
