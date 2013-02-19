@@ -1,0 +1,3 @@
+#! /bin/bash
+
+source virt_env/virt/bin/activate
