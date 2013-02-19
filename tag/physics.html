@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -43,7 +47,19 @@
 <p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/fun.html">fun</a><a href="../tag/water.html">water</a><a href="../tag/physics.html">physics</a></p>
 </footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /></a></div>
 
-<p>Apologies for the hiatus recently, it's been a busy time (when isn't it). &nbsp;I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back. &nbsp;The question is this: how long does a molecule of H2O on earth remain in the liquid state, on average?<br /><br /><a name='more'></a>I'm going to treat this purely as an order of magnitude problem. &nbsp;I'm also going to have to start with one assumption that is almost certainly inaccurate, but makes things a lot easier. &nbsp;I'm going to assume perfect mixing of all of the water on earth.<br /><br />Given that assumption, I really only need to figure out two things. &nbsp;The first is how much liquid water there is on earth. &nbsp;The second is now much liquid water leaves the liquid phase each year. &nbsp;Let's start with the total amount of liquid water on earth. &nbsp;This is relatively easy to estimate. &nbsp;I happen to know that about 70% of the earth's surface is covered in water. &nbsp;Most all of that is ocean. &nbsp;To an order of magnitude, the average depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km [1]. &nbsp;For a thin spherically shell, the volume of the shell is roughly<br /><br />[ 4 \pi r_e^2 \Delta r ]<br /><br />where r_e is the radius of the earth. &nbsp;Thus, the total volume of water on the earth is<br /><br />[.7<em>4 \pi r_e^2 (1 km)]<br /><br />Now, we need to figure out how much H20 leaves the liquid phase every year. &nbsp;To an order of magnitude, it rains 1 m everywhere on earth each year, it's not .1 m or 10 m [2]. &nbsp;I'm going to ignore any freezing/melting in the ice caps, assuming that is small fraction of the water that leaves the liquid phase each year. &nbsp;Since we have a closed system, all the water that rains must have left the liquid phase. &nbsp;So, on average, the total volume of water that leaves the liquid phase is<br /><br />[4 \pi r_e^2 (1 m) ]<br /><br />Thus, the fraction of liquid water that changes phase per year is<br /><br />[ \frac{4 \pi r_e^2 (1m)}{.7</em>4\pi r_e^2 (1 km)} = .0014 ]<br /><br />This means that, given my assumption of perfect mixing, &nbsp;in somewhere around 1/.0014 = 700 yr all of the water on earth will have cycled through the vapor phase. &nbsp;Since we're only operating to an order of magnitude, I'll call this 1000 years. &nbsp;This is the answer to our question if every molecule has been in the vapor phase once in 1000 years, then we expect a molecule to stay in the liquid phase for 1000 years<br /><br /><br /><br /><br />[1] According to wikipedia, this is really about 4 km, so we're underestimating a bit.<br /><br />[2] According to wikipedia, this is spot on (.99 m on average).</p><p>There are <a href="../posts/lifetime-of-liquid-water.html#disqus_thread">comments</a>.</p>                </article>
+<p>Apologies for the hiatus recently, it's been a busy time (when isn't it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a molecule of H2O on earth remain in the liquid state, on average?</p>
+<p><a name='more'></a>I'm going to treat this purely as an order of magnitude problem.  I'm also going to have to start with one assumption that is almost certainly inaccurate, but makes things a lot easier.  I'm going to assume perfect mixing of all of the water on earth.</p>
+<p>Given that assumption, I really only need to figure out two things.  The first is how much liquid water there is on earth.  The second is now much liquid water leaves the liquid phase each year.  Let's start with the total amount of liquid water on earth.  This is relatively easy to estimate.  I happen to know that about 70% of the earth's surface is covered in water.  Most all of that is ocean.  To an order of magnitude, the average depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km [1].  For a thin spherically shell, the volume of the shell is roughly</p>
+<p><mathjax>$$ 4 \pi r_e^2 \Delta r $$</mathjax></p>
+<p>where r_e is the radius of the earth.  Thus, the total volume of water on the earth is</p>
+<p><mathjax>$$.7*4 \pi r_e^2 (1 km)$$</mathjax></p>
+<p>Now, we need to figure out how much H20 leaves the liquid phase every year.  To an order of magnitude, it rains 1 m everywhere on earth each year, it's not .1 m or 10 m [2].  I'm going to ignore any freezing/melting in the ice caps, assuming that is small fraction of the water that leaves the liquid phase each year.  Since we have a closed system, all the water that rains must have left the liquid phase.  So, on average, the total volume of water that leaves the liquid phase is</p>
+<p><mathjax>$$4 \pi r_e^2 (1 m) $$</mathjax></p>
+<p>Thus, the fraction of liquid water that changes phase per year is</p>
+<p><mathjax>$$ \frac{4 \pi r_e^2 (1m)}{.7*4\pi r_e^2 (1 km)} = .0014 $$</mathjax></p>
+<p>This means that, given my assumption of perfect mixing,  in somewhere around 1/.0014 = 700 yr all of the water on earth will have cycled through the vapor phase.  Since we're only operating to an order of magnitude, I'll call this 1000 years.  This is the answer to our question if every molecule has been in the vapor phase once in 1000 years, then we expect a molecule to stay in the liquid phase for 1000 years</p>
+<p>[1] According to wikipedia, this is really about 4 km, so we're underestimating a bit.</p>
+<p>[2] According to wikipedia, this is spot on (.99 m on average).</p><p>There are <a href="../posts/lifetime-of-liquid-water.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -71,7 +87,7 @@
 <p>tags: <a href="../tag/question.html">question</a><a href="../tag/cryopreservation.html">cryopreservation</a><a href="../tag/physics.html">physics</a><a href="../tag/experiment.html">experiment</a></p>
 </footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s1600/installation_of_world_largest_silicon_tracking_detector.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="204" src="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s320/installation_of_world_largest_silicon_tracking_detector.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Warning: picture has little or no relation to this post.</td></tr></tbody></table>
 
-<p>I realized the other day that I've seen a lot of people talk about research results, but it is much more rare that I see someone talk about how we do research. &nbsp;I think that may be because, to ...</p>
+<p>I realized the other day that I've seen a lot of people talk about research results, but it is much more rare that I see someone talk about how we do research.  I think that may be because, to ...</p>
                 <a class="readmore" href="../posts/anatomy-of-an-experiment-i-the-question.html">read more</a>
                 <p>There are <a href="../posts/anatomy-of-an-experiment-i-the-question.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -121,7 +137,7 @@
 <p>tags: <a href="../tag/ice.html">ice</a><a href="../tag/air-resistance.html">air resistance</a><a href="../tag/physics.html">physics</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s1600/shattered_windshield.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="191" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s320/shattered_windshield.jpg" width="320" /></a></div>
 
-<p>It's been a while since I posted anything, much to my shame. &nbsp;Hopefully this post marks a change in that streak. &nbsp;Today I'm going to consider a very practical application of all this physics stuff. &nbsp;One of my housemates parks his car on the side of the house ...</p>
+<p>It's been a while since I posted anything, much to my shame.  Hopefully this post marks a change in that streak.  Today I'm going to consider a very practical application of all this physics stuff.  One of my housemates parks his car on the side of the house ...</p>
                 <a class="readmore" href="../posts/falling-ice.html">read more</a>
                 <p>There are <a href="../posts/falling-ice.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -145,7 +161,7 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/why.html">why</a><a href="../tag/physics.html">physics</a></p>
-</footer><!-- /.post-info -->                <p>So I think we've all been rather busy here. &nbsp;Hence the lack of posts. &nbsp;I'm going to try to keep this one short but sweet. &nbsp;A lot of people think that physics tells us why things happen. &nbsp;Why is the sky blue? &nbsp;Why does the earth orbit the ...</p>
+</footer><!-- /.post-info -->                <p>So I think we've all been rather busy here.  Hence the lack of posts.  I'm going to try to keep this one short but sweet.  A lot of people think that physics tells us why things happen.  Why is the sky blue?  Why does the earth orbit the ...</p>
                 <a class="readmore" href="../posts/the-impossibility-of-why.html">read more</a>
                 <p>There are <a href="../posts/the-impossibility-of-why.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -193,7 +209,8 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/magic.html">magic</a><a href="../tag/physics.html">physics</a></p>
-</footer><!-- /.post-info -->                <p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">There's a </span><a href="http://physicsbuzz.physicscentral.com/2010/05/iron-man-2-and-myth-of-physicist.html"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">nice post</span></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"> over at Physics Buzz that I thought I might draw your attention to. &nbsp;The central quote for me is:</span><br /><br /><span class="Apple-style-span" style="color: #333333; font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; line-height: 18px;"><span class="Apple-style-span" style="font-size: x-large;">"</span></span><span class="Apple-style-span" style="color: #333333; font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">Speaking strictly about technology - which is often the knowledge attained by physicists put into practical use by engineers - physics has created some pretty amazing things. Cars ...</span></p>
+</footer><!-- /.post-info -->                <p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">There's a </span><a href="http://physicsbuzz.physicscentral.com/2010/05/iron-man-2-and-myth-of-physicist.html"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">nice post</span></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"> over at Physics Buzz that I thought I might draw your attention to.  The central quote for me is:</span></p>
+<p><span class="Apple-style-span" style="color: #333333; font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; line-height: 18px;"><span class="Apple-style-span" style="font-size: x-large;">"</span></span><span class="Apple-style-span" style="color: #333333; font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; font-size: 13px; line-height: 18px;">Speaking strictly about technology - which is often the knowledge attained by physicists put into practical use by engineers - physics has created some pretty amazing things. Cars ...</span></p>
                 <a class="readmore" href="../posts/physics-as-magic-.html">read more</a>
                 <p>There are <a href="../posts/physics-as-magic-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -221,7 +238,7 @@
 
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s1600/space-war-laser.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="156" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s200/space-war-laser.jpg" width="200" /></a></div>
 
-<p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Lasers seem to be on my mind recently. &nbsp;Just yesterday, the class I TA for (E&amp;M for engineers) talked about the momentum carried by E&amp;M waves. &nbsp;This called to mind a discussion I had with a housemate a few weeks back. &nbsp;He had heard somewhere that 'they' were ...</span></p>
+<p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Lasers seem to be on my mind recently.  Just yesterday, the class I TA for (E&amp;M for engineers) talked about the momentum carried by E&amp;M waves.  This called to mind a discussion I had with a housemate a few weeks back.  He had heard somewhere that 'they' were ...</span></p>
                 <a class="readmore" href="../posts/laser-launching.html">read more</a>
                 <p>There are <a href="../posts/laser-launching.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

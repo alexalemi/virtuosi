@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -43,7 +47,42 @@
 <p>tags: <a href="../tag/pi-day.html">pi day</a><a href="../tag/fun.html">fun</a><a href="../tag/probability.html">probability</a><a href="../tag/storage.html">storage</a></p>
 </footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg" width="320" /></a></div>
 
-<p>Let me share my worst "best idea ever" moment. &nbsp;Sometime during my undergraduate I thought I had solved all the world's problems.<br /><br />You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff. &nbsp;I hate getting rid of my stuff. &nbsp;But what can someone do?<br /><br />And then it hit me, I had the bright idea:<br /><blockquote class="tr_bq">What if we didn't have to <i>store</i>&nbsp;things, what if we could just <i>compute</i>&nbsp;files whenever we wanted them back?</blockquote>Sounds like an awesome idea, right? &nbsp;I know. &nbsp;But how could we compute our files? &nbsp;Well, as you may know pi is conjectured to be a <a href="http://en.wikipedia.org/wiki/Normal_number">normal number</a>, meaning its digits are probably random. &nbsp;We also know that it is irrational, meaning pi never ends....<br /><br /><a name='more'></a><br />Since its digits are random, and they never end, in principle any sequence you could ever imagine should show up in pi eventually. &nbsp;In fact there is a nifty website&nbsp;<a href="http://pi.nersc.gov/">here</a>&nbsp;that will let you search for arbitrary strings (using a 5-bit format) in first 4 billion digits, for example "alemi" <a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;format=char">seems to show up</a> at around digit&nbsp;3149096356.<br /><br />So in principle, I could send you just an index, and a length, and you could compute the resulting file.<br /><br />But wait you cry, isn't computing digits of pi hard, don't people work really hard to compute pi farther and farther? &nbsp;Hold on I claim, first of all, I'm imagining a future where computation is cheap. &nbsp;Secondly, there is a really neat algorithm, the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula">BBP algorithm</a>, that enables you to compute the kth binary digit of pi without knowing any of the preceding digits. &nbsp;In other words, in principle if you wanted to know the 4 billionth digit of pi, you can compute it without having to first compute the first 4 billion other digits.<br /><br />Cool, this is beginning to sound like a really good idea. &nbsp;What's the catch?<br /><br />Perhaps you've already gotten a taste of it. &nbsp;Let's try to estimate just how far along in pi we would have to look before our message of interest shows up. <br /><br />Let's assume we have written our file in binary, and are computing pi in binary e.g.<br /><br /><blockquote>11.<br />00100100 00111111 01101010 10001000 10000101 10100011 00001000 11010011</blockquote>etc. &nbsp;So, if the sequence is random, there is a 1/2 chance that at any point we get the right starting bit of our file, and then a 1/2 chance we get the next one, etc. &nbsp;So the chance that we would create our file if we were randomly flipping coins would be<br />[ P = \left( \frac{1}{2} \right)^N = 2^{-N} ]<br />if our file was N bits long.<br /><br />So where do we expect this sequence to first show up in the digits of pi? &nbsp;Well, this turns out to be a <a href="http://mathworld.wolfram.com/CoinTossing.html">subtle problem</a>, but we can get a feel for it by assuming that we compute N digits of pi at a time and see if its right or not. &nbsp;If its not, we move on to the next group of N digits, if its right, we're done. &nbsp;If this were the case, we should expect to have to draw about<br />[ \frac{1}{P} = 2^N ]<br />times until we have a success, and since each trial ate up N digits, we should expect to see our file show up after about<br />[ N 2^N ]<br />digits of pi.<br /><br />Great, so instead of handing you the file, I could just hand you the index the file is located. &nbsp;But how many bits would I need to tell you that index. &nbsp;Well, just like we know that 10^3 takes 4 digits to express in decimal, and 6 x 10^7 takes 8 digits to express, in general it takes<br />[ d = \log_b x + 1 ]<br />digits to express a number in base b, in this case it takes<br />[ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N + \log_2 N + 1 ]<br />digits to express this index in binary.<br /><br />And there's the rub. &nbsp;Instead of sending you N bits of information contained in the file, all my genius compression algorithm has manged to do is replace N bits of information in the file, with a number that takes ( ~ N + \log_2 N ) bits to express. &nbsp;I've actually managed to make the files larger not smaller!<br /><br />You may have noticed above, that even for the simple case of "alemi", all I managed to do was swap the binary message<br /><br /><blockquote class="tr_bq">alemi -&gt;&nbsp;0000101100001010110101001<br />with the index&nbsp;3149096356 -&gt;&nbsp;10111011101100110110010110100100</blockquote>which is longer in binary!<br /><br />As an aside, you may have felt uncomfortable with my estimation for how long we have to wait to see our message, and you would be right. &nbsp;Just because all N digits I draw at a time don't match up doesn't mean that the second half isn't useful. &nbsp;For instance if I was looking for 010, lets say some of the digits are 101,010. &nbsp;While both of those sequences didn't match, if I was looking at every digit at a time, I would have found a match. &nbsp;And you'd be right. &nbsp;<a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf">Smarter people than I</a> have computed just how long you should have to wait, and end up with the better estimation<br />[ \text{wait time} \sim 2^N N \log 2 ]<br />which is pretty darn close to our silly estimate. <br /><br /><br /></p><p>There are <a href="../posts/pi-storage.html#disqus_thread">comments</a>.</p>                </article>
+<p>Let me share my worst "best idea ever" moment.  Sometime during my undergraduate I thought I had solved all the world's problems.</p>
+<p>You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff.  I hate getting rid of my stuff.  But what can someone do?</p>
+<p>And then it hit me, I had the bright idea:
+<blockquote class="tr_bq">What if we didn't have to <i>store</i> things, what if we could just <i>compute</i> files whenever we wanted them back?</blockquote>Sounds like an awesome idea, right?  I know.  But how could we compute our files?  Well, as you may know pi is conjectured to be a <a href="http://en.wikipedia.org/wiki/Normal_number">normal number</a>, meaning its digits are probably random.  We also know that it is irrational, meaning pi never ends....</p>
+<p><a name='more'></a>
+Since its digits are random, and they never end, in principle any sequence you could ever imagine should show up in pi eventually.  In fact there is a nifty website <a href="http://pi.nersc.gov/">here</a> that will let you search for arbitrary strings (using a 5-bit format) in first 4 billion digits, for example "alemi" <a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;format=char">seems to show up</a> at around digit 3149096356.</p>
+<p>So in principle, I could send you just an index, and a length, and you could compute the resulting file.</p>
+<p>But wait you cry, isn't computing digits of pi hard, don't people work really hard to compute pi farther and farther?  Hold on I claim, first of all, I'm imagining a future where computation is cheap.  Secondly, there is a really neat algorithm, the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula">BBP algorithm</a>, that enables you to compute the kth binary digit of pi without knowing any of the preceding digits.  In other words, in principle if you wanted to know the 4 billionth digit of pi, you can compute it without having to first compute the first 4 billion other digits.</p>
+<p>Cool, this is beginning to sound like a really good idea.  What's the catch?</p>
+<p>Perhaps you've already gotten a taste of it.  Let's try to estimate just how far along in pi we would have to look before our message of interest shows up. </p>
+<p>Let's assume we have written our file in binary, and are computing pi in binary e.g.</p>
+<blockquote>11.
+00100100 00111111 01101010 10001000 10000101 10100011 00001000 11010011</blockquote>
+
+<p>etc.  So, if the sequence is random, there is a 1/2 chance that at any point we get the right starting bit of our file, and then a 1/2 chance we get the next one, etc.  So the chance that we would create our file if we were randomly flipping coins would be
+<mathjax>$$ P = \left( \frac{1}{2} \right)^N = 2^{-N} $$</mathjax>
+if our file was N bits long.</p>
+<p>So where do we expect this sequence to first show up in the digits of pi?  Well, this turns out to be a <a href="http://mathworld.wolfram.com/CoinTossing.html">subtle problem</a>, but we can get a feel for it by assuming that we compute N digits of pi at a time and see if its right or not.  If its not, we move on to the next group of N digits, if its right, we're done.  If this were the case, we should expect to have to draw about
+<mathjax>$$ \frac{1}{P} = 2^N $$</mathjax>
+times until we have a success, and since each trial ate up N digits, we should expect to see our file show up after about
+<mathjax>$$ N 2^N $$</mathjax>
+digits of pi.</p>
+<p>Great, so instead of handing you the file, I could just hand you the index the file is located.  But how many bits would I need to tell you that index.  Well, just like we know that 10^3 takes 4 digits to express in decimal, and 6 x 10^7 takes 8 digits to express, in general it takes
+<mathjax>$$ d = \log_b x + 1 $$</mathjax>
+digits to express a number in base b, in this case it takes
+<mathjax>$$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N + \log_2 N + 1 $$</mathjax>
+digits to express this index in binary.</p>
+<p>And there's the rub.  Instead of sending you N bits of information contained in the file, all my genius compression algorithm has manged to do is replace N bits of information in the file, with a number that takes ( ~ N + \log_2 N ) bits to express.  I've actually managed to make the files larger not smaller!</p>
+<p>You may have noticed above, that even for the simple case of "alemi", all I managed to do was swap the binary message</p>
+<blockquote class="tr_bq">alemi -&gt; 0000101100001010110101001
+with the index 3149096356 -&gt; 10111011101100110110010110100100</blockquote>
+
+<p>which is longer in binary!</p>
+<p>As an aside, you may have felt uncomfortable with my estimation for how long we have to wait to see our message, and you would be right.  Just because all N digits I draw at a time don't match up doesn't mean that the second half isn't useful.  For instance if I was looking for 010, lets say some of the digits are 101,010.  While both of those sequences didn't match, if I was looking at every digit at a time, I would have found a match.  And you'd be right.  <a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf">Smarter people than I</a> have computed just how long you should have to wait, and end up with the better estimation
+<mathjax>$$ \text{wait time} \sim 2^N N \log 2 $$</mathjax>
+which is pretty darn close to our silly estimate. </p><p>There are <a href="../posts/pi-storage.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -69,7 +108,8 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/eurocentrism.html">Eurocentrism</a><a href="../tag/pi-day.html">pi day</a><a href="../tag/day-month-year.html">day-month-year</a></p>
-</footer><!-- /.post-info -->                <p>As there seems to be some <a href="http://en.wikipedia.org/wiki/Date_format#Date_format">confusion</a> among my fellow Virtuosi, I wanted to point out that Pi day occurs on July 22nd or, in the year 4159, on January 3rd.<br /><br />Today is in fact <a href="http://en.wikipedia.org/wiki/Waring%27s_problem">Seventh Power Day</a>.</p>
+</footer><!-- /.post-info -->                <p>As there seems to be some <a href="http://en.wikipedia.org/wiki/Date_format#Date_format">confusion</a> among my fellow Virtuosi, I wanted to point out that Pi day occurs on July 22nd or, in the year 4159, on January 3rd.</p>
+<p>Today is in fact <a href="http://en.wikipedia.org/wiki/Waring%27s_problem">Seventh Power Day</a>.</p>
                 <a class="readmore" href="../posts/a-clarification.html">read more</a>
                 <p>There are <a href="../posts/a-clarification.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -99,7 +139,9 @@
 
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="188" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg" width="320" /></a></div>
 
-<p>Fun fact: &nbsp;pi squared is very close to 10. &nbsp;How close? &nbsp;Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram Alpha</a> tells me that it is only about 1% off.<br /><br />I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome.<br /><br />It ...</p>
+<p>Fun fact:  pi squared is very close to 10.  How close?  Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram Alpha</a> tells me that it is only about 1% off.</p>
+<p>I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome.</p>
+<p>It ...</p>
                 <a class="readmore" href="../posts/pi-rithmetic.html">read more</a>
                 <p>There are <a href="../posts/pi-rithmetic.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -125,7 +167,8 @@
 <p>tags: <a href="../tag/pineapple.html">pineapple</a><a href="../tag/pi-day.html">pi day</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
 </footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s1600/tv_pi.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s320/tv_pi.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">My TV celebrates without me.</td></tr></tbody></table>
 
-<p>Today, as I'm sure you're aware, is Pi Day - a day for the festive consumption of pies and quiet self-reflection. &nbsp;In the spirit of the holiday, I'd like to present a point for discussion:<br /><br /><i>Everyone has a great talent for at least ...</i></p>
+<p>Today, as I'm sure you're aware, is Pi Day - a day for the festive consumption of pies and quiet self-reflection.  In the spirit of the holiday, I'd like to present a point for discussion:</p>
+<p><i>Everyone has a great talent for at least ...</i></p>
                 <a class="readmore" href="../posts/moving-pi-ctures.html">read more</a>
                 <p>There are <a href="../posts/moving-pi-ctures.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -151,7 +194,8 @@
 <p>tags: <a href="../tag/pi-day.html">pi day</a><a href="../tag/42.html">42</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
 </footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s1600/rhubarb.JPG" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s320/rhubarb.JPG" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Rhubarb pie (Source: Wikipedia)</td></tr></tbody></table>
 
-<p>Some people know a <i>suspiciously</i>&nbsp;large number of the digits of pi. &nbsp;Perhaps you have met one of these people. &nbsp;They can typically be found hiding behind bushes and under the counters at pastry shops, just...&nbsp;<i>waiting</i>.<br /><br />At the slightest hint of a mention of pi ...</p>
+<p>Some people know a <i>suspiciously</i> large number of the digits of pi.  Perhaps you have met one of these people.  They can typically be found hiding behind bushes and under the counters at pastry shops, just... <i>waiting</i>.</p>
+<p>At the slightest hint of a mention of pi ...</p>
                 <a class="readmore" href="../posts/a-very-small-slice-of-pi.html">read more</a>
                 <p>There are <a href="../posts/a-very-small-slice-of-pi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -177,7 +221,8 @@
 <p>tags: <a href="../tag/pi-day.html">pi day</a><a href="../tag/primes.html">primes</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s1600/repunit.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s320/repunit.png" width="320" /></a></div>
 
-<p><br />Recently, I've been concerned with the fact that I don't know many large primes. &nbsp;Why? &nbsp;I don't know. &nbsp;This has led to a search for easy to remember prime numbers. &nbsp;I've found a few goods ones, namely<br /><br /><br /><div><ul><li>867-5309 &nbsp;- <a href="http://en.wikipedia.org/wiki/867-5309/Jenny">Jenny's number</a></li><li>&nbsp;the digit 1 - 1031 times ...</li></ul></div></p>
+<p>Recently, I've been concerned with the fact that I don't know many large primes.  Why?  I don't know.  This has led to a search for easy to remember prime numbers.  I've found a few goods ones, namely</p>
+<div><ul><li>867-5309  - <a href="http://en.wikipedia.org/wiki/867-5309/Jenny">Jenny's number</a></li><li> the digit 1 - 1031 times ...</li></ul></div>
                 <a class="readmore" href="../posts/primes-in-pi.html">read more</a>
                 <p>There are <a href="../posts/primes-in-pi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

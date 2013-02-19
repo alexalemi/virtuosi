@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -48,7 +52,15 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>Scattering Recap<br />Articles from Sethna<br />Zombies<br />Estimating Sigma<br />Nomographs<br />Slide Rule<br />Feynman Diagrams<br />How Magnets work<br />Challenge Problems.</p>
+</footer><!-- /.post-info -->                <p>Scattering Recap
+Articles from Sethna
+Zombies
+Estimating Sigma
+Nomographs
+Slide Rule
+Feynman Diagrams
+How Magnets work
+Challenge Problems.</p>
                 <a class="readmore" href="../posts/blog-post-ideas.html">read more</a>
                 <p>There are <a href="../posts/blog-post-ideas.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

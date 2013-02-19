@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -41,59 +45,34 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/bohn.html">Bohn</a><a href="../tag/sports.html">sports</a><a href="../tag/high-jump.html">high jump</a><a href="../tag/fosbury-flop.html">Fosbury flop</a><a href="../tag/physics-in-sports.html">physics in sports</a></p>
-</footer><!-- /.post-info --><p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s1600/Fosbury.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 216px; height: 154px;" src="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s320/Fosbury.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635664665471023682" /></a>Physics has greatly influenced the progress of most sports.  There have been continual improvements in equipment for safety or performance as well as improvements in technique.  I'd like to talk about some physics in sports over a series of posts.  Here I'll talk about a technique improvement in High Jumping, the Fosbury Flop.
-<br />
-<br /><a name='more'></a>
-<br />
-<br />The Fosbury Flop came into the High Jumping scene in the 1968 Olympics, where <a href="http://en.wikipedia.org/wiki/Dick_Fosbury">Dick Fosbury</a> used the technique to win the gold medal.  The biggest difference between the Flop and previous methods is that the jumper goes over the bar upside down (facing the sky).   This allows the jumper to bend their back so that their arms and legs drape below the bar which lowers the center of mass (See the picture above).  Here is a video of the <a href="http://www.youtube.com/watch?v=_bgVgFwoQVE">Fosbury Flop</a> executed very well.
-<br />
-<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s1600/flopdiagram.jpg"><img style="float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 268px; height: 174px;" src="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s320/flopdiagram.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635737175355439890" /></a>Let’s assume Dick Fosbury is shaped like a semi-circle as he moves over the bar.  The bar is indicated as a red circle, as this is a side view.  From this diagram, we can guess his center of mass is probably near the marked 'x', since most of his mass is below the bar.<br />
-<br />
-<br />It is important to recall the definition of center of mass, which is the average location of all of the mass in an object.<br />
-<br />
-<br />[ \vec{R} = \frac{1}{M} \int \vec{r} dm ]
-<br />Note that this is a vector equation, and the integral should be over all of the mass elements.  This integral gets easier because I'm going to assume that Dick Fosbury is a constant density semi-circle.  This means that 
-<br />
-<br />[ M = C*h ]<br />
-<br />where C is a constant equal to the ratio of the mass to the height, and 
-<br />
-<br />[dm = C * dh ].
-<br />This is a vector equation, so in principle we need to solve the x integral and the y integral; however, due to the symmetry about the y-axis, the x integral is zero.  Finally we'll convert to polar coordinates, leaving us with:
-<br />
-<br />[ y = \frac{1}{C \pi R} \int_0^\pi R\sin{\theta} C R d\theta = \frac{1}{C \pi R} R (-\cos{\theta}) C R \bigg|_0^\pi = \frac{2R}{\pi} ]
-<br />Ok, so this is the y-coordinate of the center of mass of our jumper relative to the bottom of the semi-circle.  Now we need to calculate relative to the top of the bar, which is roughly the location of the top of the circle.  We just need to subtract from R:
-<br />
-<br />[ R - \frac{2}{\pi} R = R * (1 - \frac{2}{\pi}) = \frac{h}{\pi} * (1 - \frac{2}{\pi}) ]
-<br />Now Dick Fosbury was 1.95m tall, which gives us a distance of 22.6 cm BELOW the bar!  Of course he's not a semi-circle, but this isn't a terrible approximation, as you can see from the video linked above.  Further, wikipedia mentions that some proficient jumpers can get their center of mass 20 cm below the bar, which matches pretty well with our guess.
-<br />
-<br />
-<br />
-<br />
-<br />A nifty technique in physics is looking at the point-particle system, which allows us to see the underlying motion of a system.  If you’re not familiar with this method, you collect any given number of objects and replace them with a single point at the center of mass of the object.  We can use energy conservation now for our point-mass instead of the entire body of the jumper.<a href='#note1'><sup>note</sup></a>
-<br />
-<br />In this case, we can simply deal with the center of mass motion of the jumper.  All of my kinetic energy will be converted to gravitational potential energy.  Again this is an approximation because some energy is spent on forward motion, as well as the slight twisting motion which I'll ignore.
-<br />
-<br />[E = \frac{1}{2} mv^2 = mgh] 
-<br />Now let’s look at some data.  Here is a plot of each world record in the high jump.  <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s1600/worldrecords.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 400px; height: 272px;" src="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s400/worldrecords.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5635761052751061570" /></a>The blue data show jumps before the Flop, and the red data show records after the Flop.  <strong>Note: In 1978, the straddle technique broke the world record, being the only non-flop technique to do so since 1968.  Thanks Janne!</strong>  The Flop was revealed in 1968, so I’ll assume that all jumps before this year used a method where the center of mass of the jumper was roughly even with the bar, while all jumps after this year used the flop (see the previous note).  Clearly something happened just before the Flop came out, and this is something called <a href="http://en.wikipedia.org/wiki/Straddle_technique">the Straddle technique</a>.
-<br />
-<br />I want to know the percent difference in the initial energies required, so I will calculate
-<br />
-<br />[ 100\% * \frac{E_0-E_f}{E_0} = 100\% * \frac{mgh_0-mgh_f}{mgh_0} = 100\% * \frac{h_0-h_f}{h_0} ]
-<br />where 
-<br />[E_0] is the initial energy without the force, err the flop, and 
-<br />[ E_f ] is the initial energy using the flop.
-<br />
-<br />Since we are using the point-particle system, the gravitational potential energy only cares about the center of mass of the flopper, and we need to know the height of the center of mass for a 2.45m flop, which is the current world record.
-<br />
-<br />This corresponds to a flop center of mass height of 2.25m, which gives us an 8.2% decrease in energy using the flop (versus a method where the center of mass is even with the bar)!  The current world record is roughly 20 cm higher than it was when the flop came out.  This could be due to athletes getting stronger, but this physics tells us that some of the height increase could have been from the technique change.<br />
-<br />
-<br />To sum up, the high jump competition, along with many other sports, is being exploited by physics!
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /><a name='note1'></a>[note] Here we're relying on the center of mass being equal to something called the center of gravity of the jumper.  The center of mass is as defined above.  The center of gravity is the average location of the gravitational force on the body.  This happens to be the same as the center of mass if you assume we are in a uniform gravitational field, which is essentially true on the surface of the Earth.</p><p>There are <a href="../posts/physics-in-sports-the-fosbury-flop.html#disqus_thread">comments</a>.</p>                </article>
+</footer><!-- /.post-info --><p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s1600/Fosbury.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 216px; height: 154px;" src="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s320/Fosbury.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635664665471023682" /></a>Physics has greatly influenced the progress of most sports.  There have been continual improvements in equipment for safety or performance as well as improvements in technique.  I'd like to talk about some physics in sports over a series of posts.  Here I'll talk about a technique improvement in High Jumping, the Fosbury Flop.</p>
+<p><a name='more'></a></p>
+<p>The Fosbury Flop came into the High Jumping scene in the 1968 Olympics, where <a href="http://en.wikipedia.org/wiki/Dick_Fosbury">Dick Fosbury</a> used the technique to win the gold medal.  The biggest difference between the Flop and previous methods is that the jumper goes over the bar upside down (facing the sky).   This allows the jumper to bend their back so that their arms and legs drape below the bar which lowers the center of mass (See the picture above).  Here is a video of the <a href="http://www.youtube.com/watch?v=_bgVgFwoQVE">Fosbury Flop</a> executed very well.</p>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s1600/flopdiagram.jpg"><img style="float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 268px; height: 174px;" src="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s320/flopdiagram.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635737175355439890" /></a>Let’s assume Dick Fosbury is shaped like a semi-circle as he moves over the bar.  The bar is indicated as a red circle, as this is a side view.  From this diagram, we can guess his center of mass is probably near the marked 'x', since most of his mass is below the bar.  </p>
+<p>It is important to recall the definition of center of mass, which is the average location of all of the mass in an object.  </p>
+<p><mathjax>$$ \vec{R} = \frac{1}{M} \int \vec{r} dm $$</mathjax></p>
+<p>Note that this is a vector equation, and the integral should be over all of the mass elements.  This integral gets easier because I'm going to assume that Dick Fosbury is a constant density semi-circle.  This means that </p>
+<p><mathjax>$$ M = C*h $$</mathjax>  </p>
+<p>where C is a constant equal to the ratio of the mass to the height, and </p>
+<p><mathjax>$$dm = C * dh $$</mathjax>.</p>
+<p>This is a vector equation, so in principle we need to solve the x integral and the y integral; however, due to the symmetry about the y-axis, the x integral is zero.  Finally we'll convert to polar coordinates, leaving us with:</p>
+<p><mathjax>$$ y = \frac{1}{C \pi R} \int_0^\pi R\sin{\theta} C R d\theta = \frac{1}{C \pi R} R (-\cos{\theta}) C R \bigg|_0^\pi = \frac{2R}{\pi} $$</mathjax></p>
+<p>Ok, so this is the y-coordinate of the center of mass of our jumper relative to the bottom of the semi-circle.  Now we need to calculate relative to the top of the bar, which is roughly the location of the top of the circle.  We just need to subtract from R:</p>
+<p><mathjax>$$ R - \frac{2}{\pi} R = R * (1 - \frac{2}{\pi}) = \frac{h}{\pi} * (1 - \frac{2}{\pi}) $$</mathjax></p>
+<p>Now Dick Fosbury was 1.95m tall, which gives us a distance of 22.6 cm BELOW the bar!  Of course he's not a semi-circle, but this isn't a terrible approximation, as you can see from the video linked above.  Further, wikipedia mentions that some proficient jumpers can get their center of mass 20 cm below the bar, which matches pretty well with our guess.</p>
+<p>A nifty technique in physics is looking at the point-particle system, which allows us to see the underlying motion of a system.  If you’re not familiar with this method, you collect any given number of objects and replace them with a single point at the center of mass of the object.  We can use energy conservation now for our point-mass instead of the entire body of the jumper.<a href='#note1'><sup>note</sup></a></p>
+<p>In this case, we can simply deal with the center of mass motion of the jumper.  All of my kinetic energy will be converted to gravitational potential energy.  Again this is an approximation because some energy is spent on forward motion, as well as the slight twisting motion which I'll ignore.</p>
+<p><mathjax>$$E = \frac{1}{2} mv^2 = mgh$$</mathjax> </p>
+<p>Now let’s look at some data.  Here is a plot of each world record in the high jump.  <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s1600/worldrecords.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 400px; height: 272px;" src="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s400/worldrecords.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5635761052751061570" /></a>The blue data show jumps before the Flop, and the red data show records after the Flop.  <strong>Note: In 1978, the straddle technique broke the world record, being the only non-flop technique to do so since 1968.  Thanks Janne!</strong>  The Flop was revealed in 1968, so I’ll assume that all jumps before this year used a method where the center of mass of the jumper was roughly even with the bar, while all jumps after this year used the flop (see the previous note).  Clearly something happened just before the Flop came out, and this is something called <a href="http://en.wikipedia.org/wiki/Straddle_technique">the Straddle technique</a>.</p>
+<p>I want to know the percent difference in the initial energies required, so I will calculate</p>
+<p><mathjax>$$ 100\% * \frac{E_0-E_f}{E_0} = 100\% * \frac{mgh_0-mgh_f}{mgh_0} = 100\% * \frac{h_0-h_f}{h_0} $$</mathjax></p>
+<p>where </p>
+<p><mathjax>$$E_0$$</mathjax> is the initial energy without the force, err the flop, and </p>
+<p><mathjax>$$ E_f $$</mathjax> is the initial energy using the flop.</p>
+<p>Since we are using the point-particle system, the gravitational potential energy only cares about the center of mass of the flopper, and we need to know the height of the center of mass for a 2.45m flop, which is the current world record.</p>
+<p>This corresponds to a flop center of mass height of 2.25m, which gives us an 8.2% decrease in energy using the flop (versus a method where the center of mass is even with the bar)!  The current world record is roughly 20 cm higher than it was when the flop came out.  This could be due to athletes getting stronger, but this physics tells us that some of the height increase could have been from the technique change.  </p>
+<p>To sum up, the high jump competition, along with many other sports, is being exploited by physics!</p>
+<p><a name='note1'></a>[note] Here we're relying on the center of mass being equal to something called the center of gravity of the jumper.  The center of mass is as defined above.  The center of gravity is the average location of the gravitational force on the body.  This happens to be the same as the center of mass if you assume we are in a uniform gravitational field, which is essentially true on the surface of the Earth.</p><p>There are <a href="../posts/physics-in-sports-the-fosbury-flop.html#disqus_thread">comments</a>.</p>                </article>
                                     <p class="paginator">
         Page 1 / 1
     </p>

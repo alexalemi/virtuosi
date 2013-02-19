@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -47,7 +51,49 @@
 
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="188" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg" width="320" /></a></div>
 
-<p>Fun fact: &nbsp;pi squared is very close to 10. &nbsp;How close? &nbsp;Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram Alpha</a> tells me that it is only about 1% off.<br /><br />I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome.<br /><br />It turns out I use this fact all of the time. &nbsp;How's that you ask? &nbsp;Well, I use this fast to enable me to do very quick mental arithmetic. <br /><a name='more'></a><br /><br />It goes like this. &nbsp;For every number you come across in a calculation, drop all of the information save two parts, first, what's its order of magnitude, that is, how many digits does it have, and second, is it closest to 1, pi, or 10?<br /><br />The first part amounts to thinking of every number you come across as it looks in scientific notation, so a number like 2342 turns into 2.342 x 10^3, so that I've captured its magnitude in a power of 10. &nbsp;As for the next part, the rules I usually use are:<br /><br /><ul><li>If the remaining bit is between 1 and 2, make it 1</li><li>If its between 2 and 6.5 make it pi</li><li>if its bigger than 6.5, make it another 10</li></ul><div>Another way to think of this is to estimate every number to be a power of ten, and then either 1, a few, or 10. &nbsp;The reason I choose pi is because if I use pi, I know how the rest of the arithmetic should work, namely, I only need to know a few rules, plus when I use this to estimate answers of physics formulae, making a bunch of pis show up tends to help me cancel other natural pis that are in the formulae.</div><div><br /></div><div>[ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim \frac{\pi}{10} \qquad \sqrt{10} \sim \pi ]</div><div>Which you might notice is just the same approximation written in 3 different ways.</div><div><br /></div><div>Let's work an example</div><div>&nbsp; &nbsp;[ &nbsp;\begin{align<em>} &nbsp;23 \times 78 / 13 \times 2133 &nbsp;&amp;= ? \ \pi \times 10 \times 100 / 10 \times \pi \times 10^3 &amp;= ? \ \pi^2 \times 10^5 &amp;\sim 10^6 \ \end{align</em>}]</div><div><br /></div><div>of course the <a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133">real answer</a> is 294,354, so you'll notice I got the answer wrong, but I only got it wrong by a factor of 3, which is pretty good for mental arithmetic, and in particular mental arithmetic that takes no time flat.</div><div><br /></div><div>In fact, the average error I introduce by using this approximation is just 30% or so for each number, which I've shown below [the script that produced this plot for those interested is <a href="https://gist.github.com/2037431">here</a>].</div><div><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="231" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png" width="320" /></a></div><div><br /></div><div>So, there you go, now you can impress all of your friends with a simple mental arithmetic that gets you within a factor of 3 or so on average.</div></p><p>There are <a href="../posts/pi-rithmetic.html#disqus_thread">comments</a>.</p>                </article>
+<p>Fun fact:  pi squared is very close to 10.  How close?  Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram Alpha</a> tells me that it is only about 1% off.</p>
+<p>I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome.</p>
+<p>It turns out I use this fact all of the time.  How's that you ask?  Well, I use this fast to enable me to do very quick mental arithmetic. 
+<a name='more'></a></p>
+<p>It goes like this.  For every number you come across in a calculation, drop all of the information save two parts, first, what's its order of magnitude, that is, how many digits does it have, and second, is it closest to 1, pi, or 10?</p>
+<p>The first part amounts to thinking of every number you come across as it looks in scientific notation, so a number like 2342 turns into 2.342 x 10^3, so that I've captured its magnitude in a power of 10.  As for the next part, the rules I usually use are:</p>
+<ul><li>If the remaining bit is between 1 and 2, make it 1</li><li>If its between 2 and 6.5 make it pi</li><li>if its bigger than 6.5, make it another 10</li></ul>
+
+<div>Another way to think of this is to estimate every number to be a power of ten, and then either 1, a few, or 10.  The reason I choose pi is because if I use pi, I know how the rest of the arithmetic should work, namely, I only need to know a few rules, plus when I use this to estimate answers of physics formulae, making a bunch of pis show up tends to help me cancel other natural pis that are in the formulae.</div>
+
+<div>
+</div>
+
+<div>$$ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim \frac{\pi}{10} \qquad \sqrt{10} \sim \pi $$</div>
+
+<div>Which you might notice is just the same approximation written in 3 different ways.</div>
+
+<div>
+</div>
+
+<div>Let's work an example</div>
+
+<div>   $$  \begin{align*}  23 \times 78 / 13 \times 2133  &amp;= ? \\ \pi \times 10 \times 100 / 10 \times \pi \times 10^3 &amp;= ? \\ \pi^2 \times 10^5 &amp;\sim 10^6 \\ \end{align*}$$</div>
+
+<div>
+</div>
+
+<div>of course the <a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133">real answer</a> is 294,354, so you'll notice I got the answer wrong, but I only got it wrong by a factor of 3, which is pretty good for mental arithmetic, and in particular mental arithmetic that takes no time flat.</div>
+
+<div>
+</div>
+
+<div>In fact, the average error I introduce by using this approximation is just 30% or so for each number, which I've shown below [the script that produced this plot for those interested is <a href="https://gist.github.com/2037431">here</a>].</div>
+
+<div>
+</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="231" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png" width="320" /></a></div>
+
+<div>
+</div>
+
+<div>So, there you go, now you can impress all of your friends with a simple mental arithmetic that gets you within a factor of 3 or so on average.</div><p>There are <a href="../posts/pi-rithmetic.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -75,7 +121,7 @@
 <p>tags: <a href="../tag/sand.html">sand</a><a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/carl-sagan.html">carl sagan</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s1600/SandUDunesUSoft.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="256" src="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s320/SandUDunesUSoft.jpg" width="320" /></a></div>
 
-<p>Have you ever sat on a beach and wondered how many grains of sand there were? &nbsp;I have, but I may be a special case. &nbsp;Today we're going to take that a step further, and figure out how many grains of sand there are on the entire earth. &nbsp;(Caveat ...</p>
+<p>Have you ever sat on a beach and wondered how many grains of sand there were?  I have, but I may be a special case.  Today we're going to take that a step further, and figure out how many grains of sand there are on the entire earth.  (Caveat ...</p>
                 <a class="readmore" href="../posts/grains-of-sand.html">read more</a>
                 <p>There are <a href="../posts/grains-of-sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -101,7 +147,7 @@
 <p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/fun.html">fun</a><a href="../tag/water.html">water</a><a href="../tag/physics.html">physics</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /></a></div>
 
-<p>Apologies for the hiatus recently, it's been a busy time (when isn't it). &nbsp;I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back. &nbsp;The question is this: how long does a ...</p>
+<p>Apologies for the hiatus recently, it's been a busy time (when isn't it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a ...</p>
                 <a class="readmore" href="../posts/lifetime-of-liquid-water.html">read more</a>
                 <p>There are <a href="../posts/lifetime-of-liquid-water.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -127,7 +173,8 @@
 <p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/wind.html">wind</a><a href="../tag/green-power.html">green power</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s1600/wind-turbine-2.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s200/wind-turbine-2.jpg" width="200" /></a></div>
 
-<p><br />I was reading a discussion on green energy recently, in particular wind power, where the following claim was made<br /><blockquote><i>enough wind turbines to power the world would cover the surface of the world.</i></blockquote>Now, this was quickly decried by supporters of wind power, but the claim has stuck with me ...</p>
+<p>I was reading a discussion on green energy recently, in particular wind power, where the following claim was made
+<blockquote><i>enough wind turbines to power the world would cover the surface of the world.</i></blockquote>Now, this was quickly decried by supporters of wind power, but the claim has stuck with me ...</p>
                 <a class="readmore" href="../posts/blown-away.html">read more</a>
                 <p>There are <a href="../posts/blown-away.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -153,7 +200,8 @@
 <p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/fermi-problem.html">fermi problem</a><a href="../tag/fish.html">fish</a><a href="../tag/contest.html">contest</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s1600/hamster.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="154" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s200/hamster.jpg" width="200" /></a></div>
 
-<p>So, some you may remember when I attempted to calculate how much the oceans would lower if you took out all of the fish in an <a href="http://thevirtuosi.blogspot.com/2010/04/fishy-calculation.html">earlier post</a>.<br /><br />Well, the results came in a while ago, but I forgot to mention that <a href="http://diaryofnumbers.blogspot.com/2010/05/we-have-winner.html">I lost</a> the contest.  I was about two ...</p>
+<p>So, some you may remember when I attempted to calculate how much the oceans would lower if you took out all of the fish in an <a href="http://thevirtuosi.blogspot.com/2010/04/fishy-calculation.html">earlier post</a>.</p>
+<p>Well, the results came in a while ago, but I forgot to mention that <a href="http://diaryofnumbers.blogspot.com/2010/05/we-have-winner.html">I lost</a> the contest.  I was about two ...</p>
                 <a class="readmore" href="../posts/fishy-calculation-followup-new-contest.html">read more</a>
                 <p>There are <a href="../posts/fishy-calculation-followup-new-contest.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -179,7 +227,8 @@
 <p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/fun.html">fun</a><a href="../tag/baseball.html">baseball</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s1600/baseball.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s320/baseball.jpg" /></a></div>
 
-<p>Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be.<br /><br />We were interested in just how hard it is to hit a ...</p>
+<p>Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be.</p>
+<p>We were interested in just how hard it is to hit a ...</p>
                 <a class="readmore" href="../posts/physics-of-baseball-batting.html">read more</a>
                 <p>There are <a href="../posts/physics-of-baseball-batting.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -205,7 +254,8 @@
 <p>tags: <a href="../tag/the-core.html">the core</a><a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/magnetism.html">magnetism</a><a href="../tag/fun.html">fun</a><a href="../tag/fermi-problem.html">fermi problem</a><a href="../tag/sci-fi.html">sci-fi</a><a href="../tag/bad-physics.html">bad physics</a><a href="../tag/movie.html">movie</a></p>
 </footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /></a></div>
 
-<p>I assume everyone has heard of <a href="http://en.wikipedia.org/wiki/The_core">The Core</a>, the terrible scifi movie from 2003.  <br /><br />If you haven't you're missing out on what appears to be, according to Discover magazine, <a href="http://discovermagazine.com/2007/nov/none-found">the worst sci-fi film ever</a>.  There are already numerous sites that discuss the bad science in the core (<a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm">here ...</a></p>
+<p>I assume everyone has heard of <a href="http://en.wikipedia.org/wiki/The_core">The Core</a>, the terrible scifi movie from 2003.  </p>
+<p>If you haven't you're missing out on what appears to be, according to Discover magazine, <a href="http://discovermagazine.com/2007/nov/none-found">the worst sci-fi film ever</a>.  There are already numerous sites that discuss the bad science in the core (<a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm">here ...</a></p>
                 <a class="readmore" href="../posts/another-reason-why-the-core-is-stupid.html">read more</a>
                 <p>There are <a href="../posts/another-reason-why-the-core-is-stupid.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

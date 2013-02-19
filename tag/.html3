@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -50,7 +54,8 @@
 <p>tags: <a href="../tag/.html"></a></p>
 </footer><!-- /.post-info -->                <div style="text-align: left;">In the next posts, I'd like to attempt to make a camera from 'scratch.'  And by that, I mean explore the creation of cameras from their components and then create a very primitive one from readily available materials. </div>
 
-<div style="text-align: left;"><br /></div>
+<div style="text-align: left;">
+</div>
 
 <div style="text-align: left;"><a name='more'></a></div>
 
@@ -78,7 +83,7 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>donman bradald<br /></p>
+</footer><!-- /.post-info -->                <p>donman bradald</p>
                 <a class="readmore" href="../posts/physics-in-sports-hardest-slapshot-competition.html">read more</a>
                 <p>There are <a href="../posts/physics-in-sports-hardest-slapshot-competition.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -126,7 +131,10 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>Good Monday evening all, and welcome to another edition of Your Week in Seminars. Last week was a half week here in Cornell, but we still managed two talks, the general colloquium and the Wednseday-talk-on-Tuesday.<br /><br /><a name='more'></a><br /><br />Monday we had <span style="font-weight: bold;"> Charles Marcus</span> of Harvard talk about <span style="font-style: italic;">Building Schrödinger's Chip</span>.<br /><br />This was ...</p>
+</footer><!-- /.post-info -->                <p>Good Monday evening all, and welcome to another edition of Your Week in Seminars. Last week was a half week here in Cornell, but we still managed two talks, the general colloquium and the Wednseday-talk-on-Tuesday.</p>
+<p><a name='more'></a></p>
+<p>Monday we had <span style="font-weight: bold;"> Charles Marcus</span> of Harvard talk about <span style="font-style: italic;">Building Schrödinger's Chip</span>.</p>
+<p>This was ...</p>
                 <a class="readmore" href="../posts/your-week-in-seminars-short-thanksgiving-edition.html">read more</a>
                 <p>There are <a href="../posts/your-week-in-seminars-short-thanksgiving-edition.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -270,7 +278,7 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>The last shift I wanted to present is best explained at <a href="http://tauday.com/">http://tauday.com/</a> . There you will find a manifesto (yes, a manifesto) about why we should change from using [ \pi  = \text{180 degrees} ] as the circle constant to [ \tau = 2 \pi = \text{360 degrees} ] It's quite a convincing ...</p>
+</footer><!-- /.post-info -->                <p>The last shift I wanted to present is best explained at <a href="http://tauday.com/">http://tauday.com/</a> . There you will find a manifesto (yes, a manifesto) about why we should change from using <mathjax>$$ \pi  = \text{180 degrees} $$</mathjax> as the circle constant to <mathjax>$$ \tau = 2 \pi = \text{360 degrees} $$</mathjax> It's quite a convincing ...</p>
                 <a class="readmore" href="../posts/paradigm-shifts-3-with-a-vengence.html">read more</a>
                 <p>There are <a href="../posts/paradigm-shifts-3-with-a-vengence.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

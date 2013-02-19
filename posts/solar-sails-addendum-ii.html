@@ -16,6 +16,10 @@
         <!--[if lt IE 7]>
                 <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body id="index" class="home">
@@ -45,7 +49,30 @@
         </address>
         <p>In <a href="../category/old.html">old</a>. </p>
 <p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->      <p>This is the schematic version, if you just wanted hints. &nbsp;The full solution is given in <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-addendum-i.html">Solar Sails Addendum I</a>.<br /><br /><a name='more'></a>Here we present a schematic solution of the differential equation:<br /><br />[ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} ]<br /><br />This is just a separable equation, so we rearrange to get an integral equation:<br /><br />[ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} = \int_{0}^{t}dt]<br /><br />From here it's nice to non-dimensionalize, so our integration variable is just a number (with no units attached). &nbsp;This allows us to get the integral into a form like<br /><br />[ k\int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = t]<br /><br />for appropriate values of k and u. Now we are ready to get started! &nbsp;Typically, when I see something with a square root in the denominator that's giving me trouble, I just blindly try trig substitutions. &nbsp;After an appropriate trig substitution, we get something of the form<br /><br />[ \int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = \int_{x_0}^{x_f} -2\csc^3x dx],<br /><br />So now how do we solve this "easier" problem? &nbsp;As a wise man once said, "When in doubt, integrate by parts." &nbsp;So let's try that.<br /><br />[ \left[ \mbox{HINT:} -\int_{x_0}^{x_f} \csc^3x dx = \int_{x_0}^{x_f}\csc x \left(-\csc^2x \right)dx \right]]<br /><br />Remembering that integration by parts goes like<br /><br />[ \int u dv = uv - \int v du ]<br /><br />we can pick appropriate values of u and v to get something nice, which eventually leads to<br /><br />[ -\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |<em x_0="x_0">{x_0}^{x_f} - \int</em>^{x_f} \csc x dx + \int_{x_0}^{x_f} \csc^3 x dx]<br /><br />But this is just what we want! &nbsp;Rearranging we now have that<br /><br />[ -2\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |<em x_0="x_0">{x_0}^{x_f} - \int</em>^{x_f} \csc x dx]<br /><br />Evaluating our integrals, we see that<br /><br />[ -2\int_{x_0}^{x_f}\csc^3x dx = \sqrt{u}\sqrt{u-1} + \ln{ | \sqrt{u} + \sqrt{u-1}|} ]<br /><br />And this is what we have sought from the beginning. &nbsp;Plugging back in to our earlier equations and rearranging gives<br /><br /><br />[ t = \left(\frac{m{r_0}^3}{2\alpha} \right)^{1/2}\left[\sqrt{u(u-1)} + \ln{\left( \sqrt{u} + \sqrt{u-1}\right)} \right] ]<br /><br />where u = r / r_0 is our non-dimensional distance measurement. &nbsp;And this is (up to some algebra) exactly what we get in the initial post. <br /><br /><div><br /></div></p>
+</footer><!-- /.post-info -->      <p>This is the schematic version, if you just wanted hints.  The full solution is given in <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-addendum-i.html">Solar Sails Addendum I</a>.</p>
+<p><a name='more'></a>Here we present a schematic solution of the differential equation:</p>
+<p><mathjax>$$ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} $$</mathjax></p>
+<p>This is just a separable equation, so we rearrange to get an integral equation:</p>
+<p><mathjax>$$ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} = \int_{0}^{t}dt$$</mathjax></p>
+<p>From here it's nice to non-dimensionalize, so our integration variable is just a number (with no units attached).  This allows us to get the integral into a form like</p>
+<p><mathjax>$$ k\int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = t$$</mathjax></p>
+<p>for appropriate values of k and u. Now we are ready to get started!  Typically, when I see something with a square root in the denominator that's giving me trouble, I just blindly try trig substitutions.  After an appropriate trig substitution, we get something of the form</p>
+<p><mathjax>$$ \int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = \int_{x_0}^{x_f} -2\csc^3x dx$$</mathjax>,</p>
+<p>So now how do we solve this "easier" problem?  As a wise man once said, "When in doubt, integrate by parts."  So let's try that.</p>
+<p><mathjax>$$ \left[ \mbox{HINT:} -\int_{x_0}^{x_f} \csc^3x dx = \int_{x_0}^{x_f}\csc x \left(-\csc^2x \right)dx \right]$$</mathjax></p>
+<p>Remembering that integration by parts goes like</p>
+<p><mathjax>$$ \int u dv = uv - \int v du $$</mathjax></p>
+<p>we can pick appropriate values of u and v to get something nice, which eventually leads to</p>
+<p><mathjax>$$ -\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |_{x_0}^{x_f} - \int_{x_0}^{x_f} \csc x dx + \int_{x_0}^{x_f} \csc^3 x dx$$</mathjax></p>
+<p>But this is just what we want!  Rearranging we now have that</p>
+<p><mathjax>$$ -2\int_{x_0}^{x_f}\csc^3x dx = \csc x \cot x \Big |_{x_0}^{x_f} - \int_{x_0}^{x_f} \csc x dx$$</mathjax></p>
+<p>Evaluating our integrals, we see that</p>
+<p><mathjax>$$ -2\int_{x_0}^{x_f}\csc^3x dx = \sqrt{u}\sqrt{u-1} + \ln{ | \sqrt{u} + \sqrt{u-1}|} $$</mathjax></p>
+<p>And this is what we have sought from the beginning.  Plugging back in to our earlier equations and rearranging gives</p>
+<p><mathjax>$$ t = \left(\frac{m{r_0}^3}{2\alpha} \right)^{1/2}\left[\sqrt{u(u-1)} + \ln{\left( \sqrt{u} + \sqrt{u-1}\right)} \right] $$</mathjax></p>
+<p>where u = r / r_0 is our non-dimensional distance measurement.  And this is (up to some algebra) exactly what we get in the initial post. </p>
+<div>
+</div>
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
