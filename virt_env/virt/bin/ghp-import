@@ -1,0 +1,5 @@
+#!/home/alemi/Dropbox/virtuosi/virt_env/virt/bin/python
+# EASY-INSTALL-SCRIPT: 'ghp-import==0.2.2','ghp-import'
+__requires__ = 'ghp-import==0.2.2'
+import pkg_resources
+pkg_resources.run_script('ghp-import==0.2.2', 'ghp-import')

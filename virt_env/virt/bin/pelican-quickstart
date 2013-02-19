@@ -1,0 +1,9 @@
+#!/home/alemi/Dropbox/virtuosi/virt_env/virt/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'pelican==3.1.1','console_scripts','pelican-quickstart'
+__requires__ = 'pelican==3.1.1'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('pelican==3.1.1', 'console_scripts', 'pelican-quickstart')()
+)

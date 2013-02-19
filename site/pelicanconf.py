@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u'The Virtuosi'
-SITENAME = u'The Virtuosi'
-SITEURL = ''
+SITENAME = u'The Physics Virtuosi'
+SITEURL = 'http://thephysicsvirtuosi.com'
 TIMEZONE = "America/New_York"
 
 DEFAULT_LANG = u'en'
@@ -28,3 +28,10 @@ SOCIAL = (('twitter','https://twitter.com/thevirtuosi'),
         )
 
 DEFAULT_PAGINATION = 10
+
+ARTICLE_URL = 'posts/{slug}.html'
+ARTICLE_SAVE_AS = 'posts/{slug}.html'
+
+TWITTER_USERNAME = 'thevirtuosi'
+GOOGLE_ANALYTICS = 'UA-15719155-6'
+

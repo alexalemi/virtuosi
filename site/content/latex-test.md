@@ -1,0 +1,8 @@
+Title: LaTeX Test
+Date: 2010-04-06 10:37:00
+Tags: site news, features
+Category: old
+Slug: latex-test
+Author: Alemi
+
+Hopefully \[ \LaTeX \] is now enabled thanks to the tip at: <a href="http://watchmath.com/vlog/?p=438">WatchMath</a>.<br /><br />This is a test.<br /><br />\[ E = mc^2 \]<br /><br />\[ \frac{1}{\sqrt{2 \pi \sigma^2} } \int_{-\infty}^\infty dx\  \exp \left( -\frac{ (x-\mu)^2 }{ 2 \sigma^2 } \right) = 1 \]<br /><br />Continue about your day.<br /><br />EDIT: Fixed dx
