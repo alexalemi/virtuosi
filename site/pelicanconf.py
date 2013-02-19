@@ -10,7 +10,7 @@ DEFAULT_LANG = u'en'
 DEFAULT_DATE='fs'
 FALLBACK_ON_FS_DATE = True
 
-# MD_EXTENSIONS = (['codehilite','mathjax'])
+MD_EXTENSIONS = (['mathjax'])
 
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
@@ -37,4 +37,6 @@ GOOGLE_ANALYTICS = 'UA-15719155-6'
 DISQUS_SITENAME = 'thephysicsvirtuosi'
 
 FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
+
+THEME = 'virtuosi_theme'
 

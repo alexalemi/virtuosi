@@ -5,4 +5,6 @@ Category: old
 Slug: ask-a-physicist
 Author: Alemi
 
-We've added a new feature here at the Virtuosi. &nbsp;Ask a Physicist. &nbsp;To the right in the sidebar you will see a link to our shared email account. &nbsp;Feel free to send us email asking any question you desire. &nbsp;We will do our best as starting PhD Graduate students to answer. <br /><br />Wondering about some physics principle? &nbsp;Want to know what life as a grad student is like? &nbsp;Want to know our favorite music? &nbsp;Ask away.
+We've added a new feature here at the Virtuosi.  Ask a Physicist.  To the right in the sidebar you will see a link to our shared email account.  Feel free to send us email asking any question you desire.  We will do our best as starting PhD Graduate students to answer. 
+
+Wondering about some physics principle?  Want to know what life as a grad student is like?  Want to know our favorite music?  Ask away.

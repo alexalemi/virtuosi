@@ -5,4 +5,12 @@ Category: old
 Slug: blog-post-ideas
 Author: Alemi
 
-Scattering Recap<br />Articles from Sethna<br />Zombies<br />Estimating Sigma<br />Nomographs<br />Slide Rule<br />Feynman Diagrams<br />How Magnets work<br />Challenge Problems.
+Scattering Recap
+Articles from Sethna
+Zombies
+Estimating Sigma
+Nomographs
+Slide Rule
+Feynman Diagrams
+How Magnets work
+Challenge Problems.

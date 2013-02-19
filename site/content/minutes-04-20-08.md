@@ -5,4 +5,13 @@ Category: old
 Slug: minutes-04-20-08
 Author: Alemi
 
-We had our first meeting of the term.  We decided that we were going to work some problems from <a href="http://books.google.com/books?id=gnTk2coIh3YC">The Quantum Mechanics Solver</a> for next week.  Four of us agreed to solve a chapter each and present it next week.  Topics to be covered:<br /><ul><li> Forbesy: Neutrino Oscillations <br /><li> Max: Ideal Quantum Measurement<br /><li> Todd: Hydrogen Atom in Crossed Fields<br /><li> Alemi: EPR and Bell's Inequality<br /></ul><br /><br />You should all come next week to learn some cool physics.  Also, if anyone thinks of some other interesting problem and makes some headway on it, present that as well.<br /><br />I'll try and remember to bring snacks / beverages for the next meeting.
+We had our first meeting of the term.  We decided that we were going to work some problems from <a href="http://books.google.com/books?id=gnTk2coIh3YC">The Quantum Mechanics Solver</a> for next week.  Four of us agreed to solve a chapter each and present it next week.  Topics to be covered:
+<ul><li> Forbesy: Neutrino Oscillations 
+<li> Max: Ideal Quantum Measurement
+<li> Todd: Hydrogen Atom in Crossed Fields
+<li> Alemi: EPR and Bell's Inequality
+</ul>
+
+You should all come next week to learn some cool physics.  Also, if anyone thinks of some other interesting problem and makes some headway on it, present that as well.
+
+I'll try and remember to bring snacks / beverages for the next meeting.

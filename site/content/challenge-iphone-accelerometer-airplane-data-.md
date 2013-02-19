@@ -5,4 +5,26 @@ Category: old
 Slug: challenge-iphone-accelerometer-airplane-data-
 Author: Bohn
 
-HYPOTHETICAL: I left my accelerometer running during a flight from ithaca to Detroit<br /><br />reference last post<br /><br />mention noise estimates and resolution<br /><br />three part challenge:<br />analyze take-off<br />--lift-off speed<br />--acceleration<br />--noise levels<br />--relation between vibration and velocity?<br />analyze total flight duration<br />--find v(t)<br />--find x(t)<br />--does total flight distance match ithaca to detroit?<br />--is velocity reasonable?<br />analyze landing<br />--landing speed<br />--braking pattern<br />--noise levels<br /><br />2 weeks?
+HYPOTHETICAL: I left my accelerometer running during a flight from ithaca to Detroit
+
+reference last post
+
+mention noise estimates and resolution
+
+three part challenge:
+analyze take-off
+--lift-off speed
+--acceleration
+--noise levels
+--relation between vibration and velocity?
+analyze total flight duration
+--find v(t)
+--find x(t)
+--does total flight distance match ithaca to detroit?
+--is velocity reasonable?
+analyze landing
+--landing speed
+--braking pattern
+--noise levels
+
+2 weeks?

@@ -14,6 +14,7 @@ from collections import namedtuple
 from unidecode import unidecode
 import dateutil.parser
 from datetime import datetime
+from html2text import html2text
 
 # load xml dump as tree
 with open(FILE) as f:
@@ -45,12 +46,29 @@ def process_post(post):
     title = post.find(begin+'title').text
     author = post.find(begin+'author').find(begin+'name').text
     date = datetime.strftime(dateutil.parser.parse(post.find(begin+'published').text),'%Y-%m-%d %H:%M:%S')
-    if title:
+    try:
         slug = re.sub(r'\W+','-',unidecode(title.lower()))
-    else:
+    except AttributeError:
         slug = 'blank'
     tags = u", ".join( x.get('term') for x in post.findall(begin+'category') if 'post' not in x.get('term') )
     content = post.find(begin+'content').text
+
+    # try to handle mathjax
+    try:
+        content = content.replace('&nbsp;',' ')
+        content = content.replace('\]','$$')
+        content = content.replace('\[','$$')
+        content = content.replace('<br />','\n')
+    except AttributeError:
+        pass
+    # try:
+    #     content = html2text(content)
+    # except AttributeError:
+    #     pass
+    try:
+        content = content.replace('<br />','\n')
+    except AttributeError:
+        pass
 
     return post_tuple(title,author,date,slug,tags,content)
 

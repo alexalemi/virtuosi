@@ -5,4 +5,6 @@ Category: old
 Slug: test
 Author: Jesse
 
-\( 10^{10}+\alpha_0 \) This is a test of inline tex.<br /><br />\[10^{10}+\alpha_0\]
+\( 10^{10}+\alpha_0 \) This is a test of inline tex.
+
+$$10^{10}+\alpha_0$$

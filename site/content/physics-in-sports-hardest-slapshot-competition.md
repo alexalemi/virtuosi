@@ -5,4 +5,5 @@ Category: old
 Slug: physics-in-sports-hardest-slapshot-competition
 Author: Bohn
 
-donman bradald<br />
+donman bradald
+
