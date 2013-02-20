@@ -14,7 +14,6 @@ from collections import namedtuple
 from unidecode import unidecode
 import dateutil.parser
 from datetime import datetime
-from html2text import html2text
 
 # load xml dump as tree
 with open(FILE) as f:
@@ -61,10 +60,6 @@ def process_post(post):
         content = content.replace('<br />','\n')
     except AttributeError:
         pass
-    # try:
-    #     content = html2text(content)
-    # except AttributeError:
-    #     pass
     try:
         content = content.replace('<br />','\n')
     except AttributeError:
