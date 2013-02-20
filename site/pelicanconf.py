@@ -40,3 +40,5 @@ FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
 THEME = 'virtuosi_theme'
 
+TAG_CLOUD_STEPS = 4
+TAG_CLOUD_MAX_ITEMS = 100
