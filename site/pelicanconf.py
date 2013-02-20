@@ -38,7 +38,9 @@ DISQUS_SITENAME = 'thephysicsvirtuosi'
 
 FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
-THEME = 'bootstrap2'
+THEME = 'themes/bootstrap2'
+
+ARTICLE_EXCLUDES = ('themes',)
 
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
