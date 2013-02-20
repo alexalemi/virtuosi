@@ -5,6 +5,7 @@ Category: old
 Slug: money-for-almost-nothing
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s1600/mega_millions.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="120" src="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s320/mega_millions.png" width="258" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Five Hundred Mega Dollars, to be precise.
 (Image from Wikipedia)</td></tr></tbody></table>I am not typically interested in lotteries.  They seem silly and I am seriously beginning to question their usefulness in bringing about a <a href="http://en.wikipedia.org/wiki/The_Lottery">good harvest</a>.  But this morning I read in the news that the Mega Millions lottery currently has a <a href="http://en.wikipedia.org/wiki/Mega_Millions#Record_jackpots_.28listed_by_cash_value.29">world record</a> jackpot up for grabs.  In fact, the jackpot is so big...
 <div>

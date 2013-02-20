@@ -5,6 +5,7 @@ Category: old
 Slug: my-pepsi-challenge
 Author: Corky
 
+
 <div class="" style="clear: both; text-align: left;"><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz2-SbRtAI/AAAAAAAAAFY/eaUWEFQHTDs/s1600/bottles.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="192" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz2-SbRtAI/AAAAAAAAAFY/eaUWEFQHTDs/s200/bottles.png" width="200" /></a><span class="Apple-style-span"><span class="Apple-style-span" style="font-family: inherit;">The basement of the Physics building has a Pepsi machine.  Over the course of two semesters Alemi and I have deposited roughly the equivalent of the GDP of, say, Monaco to this very same Pepsi machine (see left, with most of Landau and Lifshitz to scale).  It just so happens that Pepsi is now having a contest, called "Caps for Caps," in which it is possible to win a baseball hat.  There are several nice things about this contest.  Firstly, I drink a lot of soda.  Secondly, I like baseball hats.  So far so good.  Lastly (and most important for this post), is that it is fairly straightforward to calculate the statistics of winning (or at least simulate them).</span></span>
 <span class="Apple-style-span"><span class="Apple-style-span" style="font-family: inherit;"></span></span>
 <span class="Apple-style-span"><span class="Apple-style-span" style="font-family: inherit;"></span></span>

@@ -1,0 +1,10 @@
+div .article .summary img {
+    display: none;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+div .article .summary table {
+    display: none;
+}

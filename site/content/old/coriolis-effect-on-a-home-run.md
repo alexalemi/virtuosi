@@ -5,6 +5,7 @@ Category: old
 Slug: coriolis-effect-on-a-home-run
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s1600/phillies_stadium.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="212" src="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s320/phillies_stadium.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Citizen's Bank Park</td></tr></tbody></table>I like baseball.  Well, technically, I like <strike>laying</strike>[3] lying on the couch for three hours half-awake eating potato chips and mumbling obscenities at the television.  But let's not split hairs here.
 <div>
 </div><div>Anyway, out of curiosity and in partial atonement for the sins of my past [1] I would now like to do a quick calculation to see how much effect the Coriolis force has on a home-run ball.</div><div>

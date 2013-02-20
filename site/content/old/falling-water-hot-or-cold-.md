@@ -5,6 +5,7 @@ Category: old
 Slug: falling-water-hot-or-cold-
 Author: Jesse
 
+
 Hello everyone!  Since this is my first post as one of the virtuosi, I should probably introduce myself a little.  I'm a first year graduate student in physics at Cornell university.  I did my undergraduate work at Oberlin college (I know, you've never heard of it), and I'm currently just trying to keep my head above water and take in as much physics as I can.  Additionally, I'm trying to find work for the summer, I might post more on that later.
 
 Today, the question that is on my mind is: How much does a water droplet heat up when it goes over niagara falls?

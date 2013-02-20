@@ -5,6 +5,7 @@ Category: old
 Slug: on-the-nature-of-many-penny-systems
 Author: Corky
 
+
 The other day I was on my way through ye olde internets to the Quantum Leap episode index at Wikipedia, but stumbled over a quote by Feynman by accident:<div>
 </div><div><span class="Apple-style-span"   style="  color: rgb(69, 69, 69); line-height: 19px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; font-family:'Times New Roman', Times, serif;font-size:17px;">"There are 10^11 stars in the galaxy. That used to be a huge number. But it's only a hundred billion. It's less than the national deficit! We used to call them astronomical numbers. Now we should call them economical numbers"</span></div><div><span class="Apple-style-span"    style="font-family:'Times New Roman', Times, serif;font-size:180%;color:#454545;"><span class="Apple-style-span"  style=" line-height: 19px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;font-size:17px;">
 </span></span></div><div>So this got me thinking.  What if we decided to pay the national debt...in pennies?  Seems fair enough, we don't really want to pay it and when you don't want to pay something but you have to you pay it in pennies.  Hooray!

@@ -5,6 +5,7 @@ Category: old
 Slug: special-virtuosi-book-announcement-
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-R1-a_FlO6sA/TZVXVvoqvcI/AAAAAAAAALA/nNu7S12Sliw/s1600/kindle.jpeg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-R1-a_FlO6sA/TZVXVvoqvcI/AAAAAAAAALA/nNu7S12Sliw/s1600/kindle.jpeg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Coming soon to a Kindle near you!</td></tr></tbody></table>We've been at this whole blogging thing for about a year now and I think we've amassed a large and dedicated enough fanbase to finally release a book!  The track record so far for physicist-writers has been <a href="http://www.amazon.com/Spiral-Novel-Paul-McEuen/dp/038534211X/ref=sr_1_1?ie=UTF8&amp;qid=1301633241&amp;sr=8-1">quite good</a> of late, so we figured why not us?
 
 Well, lots of reasons actually.  For one thing, it's <i>really hard</i>.  Books are, like, <i>hundreds</i> of pages long.  I barely stay coherent and on-topic in a one page blog post.  For another thing, it takes lots of time.  I hardly have enough time to do my laundry in time scales deemed "socially acceptable."  How could I ever find the time to write a book? 

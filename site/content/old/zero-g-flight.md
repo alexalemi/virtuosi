@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: zero-g-flight
 Author: Bohn
+Status: draft
 
 what is zero-g
 how is it attained with a plane

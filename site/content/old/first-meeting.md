@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: first-meeting
 Author: Alemi
+Status: draft
 
 I suggest we meet sometime at night, preferably later in the week, perhaps Thursday, Friday, Saturday or Sunday night.  I think the War Room would make a good location.
 

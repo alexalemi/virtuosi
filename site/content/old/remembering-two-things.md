@@ -5,6 +5,7 @@ Category: old
 Slug: remembering-two-things
 Author: Yariv
 
+
 One of my professors, <a href="http://www.physics.cornell.edu/people/faculty/?page=website/faculty&amp;action=show/id=80" title="who is now mentioned in two blogs in this context">Yuval Grossman</a>, was talking about the zoology of particle physics in class the other day. Trying to get us to remember such trivia as the mass of the <span style="font-style: italic;">B</span> meson, he noted that it's easier to remember two things than it is to remember one - and as it happens, the mass of the B meson is about 5280 MeV, which is also the length of a mile in feet (an equally obscure piece of trivia, if you ask me).
 
 This reminded of one of my first calculus classes  back home where another professor (Mikhail Sodin) chided us for not knowing the value of <span style="font-style: italic;">e</span>, 2.71828. This is easy to remember, he said because 1828 is the year Lev Tolstoy was born.

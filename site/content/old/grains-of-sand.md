@@ -5,6 +5,7 @@ Category: old
 Slug: grains-of-sand
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s1600/SandUDunesUSoft.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="256" src="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s320/SandUDunesUSoft.jpg" width="320" /></a></div>Have you ever sat on a beach and wondered how many grains of sand there were?  I have, but I may be a special case.  Today we're going to take that a step further, and figure out how many grains of sand there are on the entire earth.  (Caveat: I'm only going to consider sand above the water level, since I don't have any idea what the composition of the ocean floor is).
 
 <a name='more'></a>I'm going to start by figuring out how much beach there is in the world.  If you look at a map of the world, there are four main coasts that run, essentially, a half circumference of the world.  We'll say the total length of coast the world has is roughly two circumferences.  As an order of magnitude, I would say that the average beach width is 100 m, and the average depth is 10 m.  This gives a total beach volume of

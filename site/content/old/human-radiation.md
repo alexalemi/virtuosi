@@ -5,6 +5,7 @@ Category: old
 Slug: human-radiation
 Author: Jesse
 
+
 Things are still busy here at the Virutosi.  Hopefully in a week or so we'll be back to normal, and much more active than we've been recently  Anyways, today I'd like to consider human radiation.  It is well known that any object will radiate energy based on its temperature.  Even more interesting, we radiate at all wavelengths, though at the human body temperature our radiation is sharply peaked in the infrared.  Even so, we still put out some x-ray radiation.  As a professor of mine once said, consider that next time you sleep with someone!  Given all this, the question on my mind today is:  how does the energy we radiate daily compare to the energy we consume?  That is, why don't I lose weight sitting here typing on the computer?
 
 <a name='more'></a>We physicists call perfect radiators black bodies (something that radiates perfectly also must absorb perfectly).  For perfect radiators, the power radiated is given by

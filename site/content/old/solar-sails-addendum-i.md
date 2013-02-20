@@ -5,6 +5,7 @@ Category: old
 Slug: solar-sails-addendum-i
 Author: Corky
 
+
 As requested, below is an explicit evaluation of the silly looking integral in <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-i.html">Solar Sails I</a>.  If you just want some hints to do the integral, see <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-addendum-ii.html">Solar Sails Addendum II</a>.
 
 <a name='more'></a>

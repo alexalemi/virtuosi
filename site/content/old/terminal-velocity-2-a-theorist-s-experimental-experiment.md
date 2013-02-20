@@ -5,6 +5,7 @@ Category: old
 Slug: terminal-velocity-2-a-theorist-s-experimental-experiment
 Author: Yariv
 
+
 Yesterday we rode down Ithaca's hills in an attempt to estimate the terminal velocity of a bike rider braving the city's potholes. But estimations are easy, and we relied on a number of factors - the drag coefficient and area of the bicyclist, in particular - to get them. To see how well we did, it's time to move on to the experimental portion this exercise. Our tools? My bike (figure 1), and my beloved accelerometer (figure 2), with Google's <a href="http://mytracks.appspot.com/">My Tracks</a> app installed.
 
 <div style="text-align: center;"><a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s1600/bike.jpg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5504651746862872386" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s200/bike.jpg" style="cursor: pointer; display: block; height: 143px; margin: 0px auto 10px; text-align: center; width: 200px;" /></a><span style="font-size: 85%;">Figure 1: Our vehicle</span>

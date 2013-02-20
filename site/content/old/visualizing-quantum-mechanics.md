@@ -5,6 +5,7 @@ Category: old
 Slug: visualizing-quantum-mechanics
 Author: Alemi
 
+
 Or how I learned to stop worrying and love the computer.
 
 [Note:  There's a neat video below the fold. ]

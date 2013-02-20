@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: challenge-iphone-accelerometer-airplane-data-
 Author: Bohn
+Status: draft
 
 HYPOTHETICAL: I left my accelerometer running during a flight from ithaca to Detroit
 

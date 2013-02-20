@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: statement-of-purpose
 Author: Alemi
+Status: draft
 
 In England during the 17th century, a new group of thinkers emerged.  These "natural philosophers" took it upon themselves to ponder the workings of the world around them.  As more of these like-minded men emerged they formed a society, the Royal Society where they would meet periodically to discuss the work and questions that interested them.  These men went by the title of <span style="font-style:italic;">virtuosi</span> 
 <blockquote>virtuoso <span style="font-style:italic;">noun plural</span> virtuosi

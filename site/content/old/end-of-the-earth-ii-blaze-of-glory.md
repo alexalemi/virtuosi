@@ -5,6 +5,7 @@ Category: old
 Slug: end-of-the-earth-ii-blaze-of-glory
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/S9CFFAkGooI/AAAAAAAAABM/2SpaTtw4ivI/s1600/Marvin_the_Martian.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="100" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/S9CFFAkGooI/AAAAAAAAABM/2SpaTtw4ivI/s200/Marvin_the_Martian.jpg" width="73" /></a></div>In honor of earth day today, many bloggers are posting things about how to save the earth, or retrospectives on earth days past.  We here at The Virtuosi decided, what better way to celebrate the earth than to figure out how to destroy it?  So that is exactly what we intend to do.  This post will focus on the destruction of the earth by a laser beam.  This is a familiar concept.  Whether it is Marvin the Martian or the Death Star, destroying planets with lasers (or threatening to) is a common theme.
 
 <object height="200" width="249"><param name="movie" value="http://www.youtube.com/v/djZFHTa6TfA&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/djZFHTa6TfA&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>

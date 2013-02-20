@@ -5,6 +5,7 @@ Category: old
 Slug: solar-sails-addendum-ii
 Author: Corky
 
+
 This is the schematic version, if you just wanted hints.  The full solution is given in <a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-addendum-i.html">Solar Sails Addendum I</a>.
 
 <a name='more'></a>Here we present a schematic solution of the differential equation:

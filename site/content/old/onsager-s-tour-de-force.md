@@ -5,6 +5,7 @@ Category: old
 Slug: onsager-s-tour-de-force
 Author: Alemi
 
+
 In 1943 in a <i>tour de force</i> of mathematical physics, Lars Onsager <a href="http://prola.aps.org/abstract/PR/v65/i3-4/p117_1">solved</a> the 2D <a href="http://en.wikipedia.org/wiki/Ising_model">Ising Model</a>.  
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/S8esZ-lw1aI/AAAAAAAAAJw/2UTC_JAHg1Q/s1600/onsager.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_YOjDhtygcuA/S8esZ-lw1aI/AAAAAAAAAJw/2UTC_JAHg1Q/s320/onsager.jpg" /></a></div>
 

@@ -5,6 +5,7 @@ Category: old
 Slug: solar-sails-ii
 Author: Corky
 
+
 <div style="text-align: left;">[NOTE: In my hurry to make up for weeks of non-posts, I managed to almost immediately knock Nic's <a href="http://thevirtuosi.blogspot.com/2010/05/why-black-holes-from-large-hadron.html">first post</a> from the top of the page.   It's got the LHC, black holes, and about 3 full cups of metric awesome, so make sure you check it out (after reading this one, of course).]  </div><div style="text-align: left;">
 </div><div style="text-align: left;">Last time we did some calculations on how fast and far our solar sails can go, but those calculations were just for the sail itself.   If you are going to do any science with it, you're going to need a payload.  Let's take it a step further and make it an actual spaceship (with people and everything!)<a name='more'></a>.</div><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_fa6AZDCsHnY/S_DXvcSsDXI/AAAAAAAAACg/jK_N-B4mOME/s1600/ssradius.png"></a><div>
 </div><div>Comparing it with a typical people-carrying space hotel (the International Space Station), let's give our payload a mass of 300,000 kg.   Remembering from the last post that a sigma of less that about 10^-4 g/cm^2 gave fairly nice results, we can make an effective sigma of our payload carrying sail as</div><div>

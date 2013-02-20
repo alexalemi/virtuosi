@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: project-avogadro
 Author: Alemi
+Status: draft
 
 We have a new summer project.  The goal is to create an N-body simulation of a pendulum on a string in a box containing a gas.  The idea is to model the system as a collection of particles, hopefully in the thousands.  I think it would be an interesting challenge, and one that is within our reach.  Many of us have programming experience, some with parallel computing experience.
 

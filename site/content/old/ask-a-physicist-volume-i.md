@@ -5,6 +5,7 @@ Category: old
 Slug: ask-a-physicist-volume-i
 Author: Jared
 
+
 <a href="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}">
 </a>We have received our first <i>Ask a Physicist</i> e-query!  An entity known only to us as "Hungry" writes:
 <div>

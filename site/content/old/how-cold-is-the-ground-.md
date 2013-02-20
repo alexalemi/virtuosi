@@ -5,6 +5,7 @@ Category: old
 Slug: how-cold-is-the-ground-
 Author: Brian
 
+
 It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it had been warm for the previous few days, and the ground was still warm so the snow melted fast. Aside from letting me enjoy the absurd arguments against global warming that snow in April birthed, this got me thinking: How cold is the ground throughout the year? At night vs. during the day? And the corollary: How cold is my basement? If I dig a deeper basement, can I save on heating and cooling? (I'm very cheap.)
 
 <a name='more'></a>

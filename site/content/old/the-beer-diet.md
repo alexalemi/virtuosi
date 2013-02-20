@@ -5,6 +5,7 @@ Category: old
 Slug: the-beer-diet
 Author: Jesse
 
+
 I know it's been pretty quiet over here this week.  The semester is winding down (a week of classes left), and that means that things have been kicked up into another gear.  We've got four or five ideas bouncing around at the moment, so hopefully we'll get some up soon.  Today I'd like to talk about the beer diet.  A while back, there was a rumor going around that if you drank ice cold beer your body would burn more calories heating the beer than the beer contained.  It turns out that this false, and I think the claim relied on a lack of knowledge that the American food Calorie is actually one thousand calories (note the difference in capitalization).  Let's prove this to ourselves.
 
 <a name='more'></a>Let us consider 12 fluid oz of beer.  To any good approximation we can treat this as 12 oz of water.  Let us assume that the beer starts at 0C and our body raises it to body temperature, 37C.  This takes energy Q given by

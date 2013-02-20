@@ -5,6 +5,7 @@ Category: old
 Slug: a-buffoon-s-toothpicks
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TQ0mf2YO5II/AAAAAAAAAHo/WMor9trnTnM/s1600/P1010471.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TQ0mf2YO5II/AAAAAAAAAHo/WMor9trnTnM/s320/P1010471.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 1: Two of the thousands of toothpicks on my floor</td></tr></tbody></table>You're sitting at a bar, bored out of your mind.  You've got an unlimited supply of pretzel rods and a lot of time to kill.  The floor is made of thin wooden planks.  How can you calculate pi? 
 
 This is how the problem of Buffon's needle was first presented to me.  Stated more formally the problem is this:  given a needle of length <i>l</i> and a floor of parallel lines separated by a distance <i>d</i>, what is the probability of a randomly dropped needle crossing a line? 

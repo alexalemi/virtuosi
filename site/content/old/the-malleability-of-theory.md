@@ -5,6 +5,7 @@ Category: old
 Slug: the-malleability-of-theory
 Author: Yariv
 
+
 There were some undergrads in my office for office hours the other day, asking questions for the  midterm. I'm teaching  the engineering course on optics and waves (also known as <span style="font-style: italic;">Things that go Sine</span>) and the students were looking at a problem dealing with  quarter-wave plates.
 
 A quarter-wave plate, the question goes, is a kind of optical  instrument that turns light with linear polarization into circular polarization. Show, it continues, that it also turns light with circular polarization linear.

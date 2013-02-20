@@ -5,6 +5,7 @@ Category: old
 Slug: clicky-data-v1-0
 Author: Matt
 
+
 <a href="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s1600/snap.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 277px;" src="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s400/snap.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5612906920062767650" /></a>
 <div style="text-align: center;"><span class="Apple-style-span"><u>
 </u></span></div><div>As we sift through the Clicky data Corky presented yesterday, let us not forget the Clicky that came before.</div><a name='more'></a>

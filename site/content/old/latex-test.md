@@ -5,6 +5,7 @@ Category: old
 Slug: latex-test
 Author: Alemi
 
+
 Hopefully $$ \LaTeX $$ is now enabled thanks to the tip at: <a href="http://watchmath.com/vlog/?p=438">WatchMath</a>.
 
 This is a test.

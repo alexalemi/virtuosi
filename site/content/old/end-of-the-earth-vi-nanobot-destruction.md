@@ -5,6 +5,7 @@ Category: old
 Slug: end-of-the-earth-vi-nanobot-destruction
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="314" width="320" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /></a></div>
 Let's destroy the earth with technology.
 

@@ -5,6 +5,7 @@ Category: old
 Slug: the-impossibility-of-why
 Author: Jesse
 
+
 So I think we've all been rather busy here.  Hence the lack of posts.  I'm going to try to keep this one short but sweet.  A lot of people think that physics tells us why things happen.  Why is the sky blue?  Why does the earth orbit the sun?  Why does copper transmit electricity so well?  These all seem like perfectly reasonable questions to ask.  Questions that we, as physicists can answer.  Yet, I entitled this post the impossibility of why.
 
 In general, questions about why are not good questions for physicists   More accurately we answer questions about how.  Or what.  What phenomena causes use to see the sky as blue?  What forces cause the earth to orbit the sun?  How does copper transmit electricity so well?  In general, we can't answer a question of why.

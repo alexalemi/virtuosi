@@ -5,6 +5,7 @@ Category: old
 Slug: your-week-in-seminars-one-for-two-edition
 Author: Yariv
 
+
 Hello everyone and welcome to another week of talks here at the physics department. I was out of Ithaca for a bit this past week, so in this very special edition I'm going to present a full week's worth of seminars (one from last week and two from the previous week) in one post covering two weeks.
 
 <a name='more'></a>

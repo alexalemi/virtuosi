@@ -5,6 +5,7 @@ Category: old
 Slug: the-law-and-large-numbers
 Author: Alemi
 
+
 Human beings are not equipped for dealing with large numbers.  Honestly, 7 thousand, 7 million, 7 billion and 7 trillion all register about the same in my mind, namely 7 big.  Unfortunately, there is a world a different between each of these, three whole orders of magnitude, a thousand, the difference between lifting me and a US quarter.
 
 This lack of respect for orders of magnitude has really been rearing its head recently with most of the political discussions surrounding the US budget.  

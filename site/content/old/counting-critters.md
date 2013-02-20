@@ -5,6 +5,7 @@ Category: old
 Slug: counting-critters
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s1600/marx_horse.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="254" src="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s320/marx_horse.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This picture allows us to set a lower bound on the number
 of <a href="http://www.youtube.com/watch?v=9IrCgCKrv8U">creatures</a> that ever lived of ~4.</td></tr></tbody></table>We recently had a big book sale [1] here in town where books were being sold for about a quarter.  Needless to say, I bought far more than I'll probably ever need or read.  One of the books I bought was called <i>General Paleontology</i> by A. Brouwer [2].
 

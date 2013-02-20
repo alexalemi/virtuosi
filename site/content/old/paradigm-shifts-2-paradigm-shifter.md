@@ -5,6 +5,7 @@ Category: old
 Slug: paradigm-shifts-2-paradigm-shifter
 Author: Sam
 
+
 Last time, I  presented reasons why it would be economically infeasible for the US to  switch to the metric system. This time, I'd like to talk about a change  that could relatively easily be brought about soon. A change that would  barely cost a thing, but could improve efficiency dramatically in many  jobs and in every day life for many people.
 
 A change of this type would be very handy. Puns aside though, what I'm talking about is this:

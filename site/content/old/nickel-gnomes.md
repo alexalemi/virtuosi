@@ -5,6 +5,7 @@ Category: old
 Slug: nickel-gnomes
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-i8ltaoDuLpI/TZQPlf1wbaI/AAAAAAAAAK4/svtKmQjxBsE/s1600/underpants-gnomes.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://4.bp.blogspot.com/-i8ltaoDuLpI/TZQPlf1wbaI/AAAAAAAAAK4/svtKmQjxBsE/s320/underpants-gnomes.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Perhaps Step 2 was to steal copper?</td></tr></tbody></table>While flipping through a CRC Handbook whose days in the United States are dwindling, I came across a section that described the naming conventions of each chemical element.  Most of the names made sense to me.  For example, Nobelium is named after Alfred Nobel (surprise!).  However, the Nickel entry was the following:
 
 Nickel: Named after <i>Satan </i>or <i>Old Nick</i>

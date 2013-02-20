@@ -5,6 +5,7 @@ Category: old
 Slug: batman-helicopters-and-center-of-mass
 Author: DTC
 
+
 <div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" width="320" /></a></div>
 
 A couple weeks ago, I came home after a long day at work looking for a break.  I thought to myself, “What’s more fun than physics? Batman*.”  I sat down to play the <a href="http://en.wikipedia.org/wiki/Arkham_City" target="_blank">latest Batman videogame</a>, in which Batman’s current objective was to use his grappling hook to jump onto an enemy helicopter to steal an electronic MacGuffin.  As awesome as this was, it occurred to me that something was very wrong about the way the helicopter moved while Batman zipped through the air.

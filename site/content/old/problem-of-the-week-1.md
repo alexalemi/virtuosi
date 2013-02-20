@@ -5,6 +5,7 @@ Category: old
 Slug: problem-of-the-week-1
 Author: Holmes
 
+
 <div class="MsoNormal"><i>I thought we could spice things up a bit with a more interactive post on The Virtuosi. Starting this week, a new problem of the week will be posted each week. Solutions will be posted the following week. These problems will be a collection of physics and math problems and riddles, and although hopefully challenging enough to be fun and interesting, they should mostly be solvable using concepts from introductory undergraduate physics and math classes.
 
 </i></div><div class="MsoNormal"><i>We welcome you to ponder these problems, and send in solutions, or even any ideas you have about how to solve the problems to </i><a href="mailto:the.physics.virtuosi@gmail.com"><i>the.physics.virtuosi@gmail.com</i></a><i> with “problem of the week” in the subject line. We will keep track of the top Virtuosi problem solvers.

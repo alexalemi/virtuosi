@@ -5,6 +5,7 @@ Category: old
 Slug: moving-pi-ctures
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s1600/tv_pi.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s320/tv_pi.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">My TV celebrates without me.</td></tr></tbody></table>Today, as I'm sure you're aware, is Pi Day - a day for the festive consumption of pies and quiet self-reflection.  In the spirit of the holiday, I'd like to present a point for discussion:
 
 <i>Everyone has a great talent for at least one thing.</i>

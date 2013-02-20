@@ -5,6 +5,7 @@ Category: old
 Slug: earth-day-special-post-apocalyptic-literature
 Author: Alex
 
+
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://upload.wikimedia.org/wikipedia/en/2/23/Emergence_cover_first_edition.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 309px; height: 507px;" src="http://upload.wikimedia.org/wikipedia/en/2/23/Emergence_cover_first_edition.jpg" alt="" border="0" /></a>
 At some point in elementary school I got into the habit of reading Franz Kafka's <a href="http://en.wikipedia.org/wiki/The_Metamorphosis"><span style="font-style: italic;">The Metamorphosis</span></a> every time that I got sick.  I found it strangely comforting to be reminded that while I might have <a href="http://en.wikipedia.org/wiki/Scarlet_fever">scarlet fever</a> and be intermittently hallucinating about Mickey Mouse, at least I had not been (spoiler alert!) turned into a giant cockroach and disowned by my family.
 

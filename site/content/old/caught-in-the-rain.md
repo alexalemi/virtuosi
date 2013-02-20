@@ -5,6 +5,7 @@ Category: old
 Slug: caught-in-the-rain
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s1600/boy+rain.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="131" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s200/boy+rain.gif" width="200" /></a></div><div style="text-align: left;"></div>There's an age old question that mankind has pondered.  I'm sure that noble heads such as Aristotle, Newton, and Einstein have pondered it. I myself have raised it a few times.  The question is: do you get more wet running or walking through the rain?  Now, I know that this question was <a href="http://mythbustersresults.com/episode38">mythbusted</a> a while back.  So this is one of those situations where I know the result I want to get to with my calculation: according to mythbusters running is better.  Still, I think formulating the question mathematically will be fun, plus if I fail to agree with experiment everyone can mock me mercilessly.
 
 <a name='more'></a>I'll begin by stating a few assumptions.  I'm going to assuming that the rain is falling straight down, at a constant rate.  I'm also going to assume that if we are standing still, only our head and shoulders get wet, not our front or back.  With those in place, lets start by formulating the expression for how wet we would get if we stood still.  Well, take

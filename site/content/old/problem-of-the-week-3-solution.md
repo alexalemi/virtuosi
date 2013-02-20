@@ -5,6 +5,7 @@ Category: old
 Slug: problem-of-the-week-3-solution
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s1600/koala.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="183" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s200/koala.jpg" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Cold-Blooded Killer</td></tr></tbody></table>Hello all and welcome to to another roundup of Problem of the Week.  If the time intervals don't seem to be adding up, just remember that "week" is an illusion here at Virtuosi headquarters.  "Problem of the Week," doubly so.  But enough with the excuses, let's see if Mr. Bond lives to Die Another Day. 
 
 The situation presented in the problem was one of a glass of water filled all the way to the top with a single ice cube in it.  The goal is to see if any water falls to the floor as the ice cube melts.

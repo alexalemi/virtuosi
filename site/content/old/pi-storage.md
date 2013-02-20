@@ -5,6 +5,7 @@ Category: old
 Slug: pi-storage
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg" width="320" /></a></div>Let me share my worst "best idea ever" moment.  Sometime during my undergraduate I thought I had solved all the world's problems.
 
 You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff.  I hate getting rid of my stuff.  But what can someone do?

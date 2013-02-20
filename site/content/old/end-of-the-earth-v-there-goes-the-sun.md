@@ -5,6 +5,7 @@ Category: old
 Slug: end-of-the-earth-v-there-goes-the-sun
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-LtXsyHxxSi0/TbDfL6l4tnI/AAAAAAAAAMg/l_12lafg6LQ/s1600/creepy_sun.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="224" src="http://4.bp.blogspot.com/-LtXsyHxxSi0/TbDfL6l4tnI/AAAAAAAAAMg/l_12lafg6LQ/s320/creepy_sun.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The Sun [photo courtesy of NASA]</td></tr></tbody></table>People that know me well know that I have a lot in common with Robert Frost.  We both were born in March and we both employ rural New England settings to explore complex social and philosophical themes in our poetry.  We also like the same rap groups.
 
 In honor of my literary doppelganger, I will now, having already had the world end in <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html">fire</a>, try my hand at ice.

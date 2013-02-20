@@ -5,6 +5,7 @@ Category: old
 Slug: paradigm-shifts-1
 Author: Sam
 
+
 <div class="im"><div>Hi everybody, I'm Sam, and this will be my first contribution to the  blog! (cue applause) It will not be a physical modeling exercise;  instead I will be writing a little bit about about paradigm shifts in a  series of a few posts. I hope it will provoke some interesting discussion.
 
 "But Sam," you ask, "Isn't 'paradigm shift' just a buzzword that people use to sound important?"  Well, maybe, but it's also useful phrase used to describe a  substantial change in the way something is done. Consider, for example,

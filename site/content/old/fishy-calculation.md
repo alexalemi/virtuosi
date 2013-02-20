@@ -5,6 +5,7 @@ Category: old
 Slug: fishy-calculation
 Author: Alemi
 
+
 Aaron Santos over at <a href="http://diaryofnumbers.blogspot.com/">A Diary of Numbers</a>, author of <a href="http://www.amazon.com/How-Many-Licks-Estimate-Anything/dp/0762435607">How Many Licks?</a>, has posted a <a href="http://diaryofnumbers.blogspot.com/2010/04/fermi-contest-3.html">Fermi Contest</a>.  
 
 For the uninitiated, a <a href="http://en.wikipedia.org/wiki/Fermi_problem">Fermi Problem</a> is a seemingly unanswerable problem, which you can actually estimate reasonable by breaking the problem down into smaller parts.  They're really fun, and I intend to post more in the future.  

@@ -5,6 +5,7 @@ Category: old
 Slug: problem-of-the-week-2
 Author: Holmes
 
+
 <div class="MsoNormal"><i>As always, we welcome you to send in solutions, or even any ideas you have about how to solve the problems to </i><a href="mailto:the.physics.virtuosi@gmail.com"><i>the.physics.virtuosi@gmail.com</i></a><i> with “problem of the week” in the subject line. We will keep track of the top Virtuosi problem solvers.
 
 </i><span style="font-weight: bold;">Why did the ant cross the rubber band?</span><i>

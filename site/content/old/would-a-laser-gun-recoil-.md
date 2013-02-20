@@ -5,6 +5,7 @@ Category: old
 Slug: would-a-laser-gun-recoil-
 Author: Jesse
 
+
 Today I'd like to approach a question near and dear to many a geek heart: do laser guns have recoil?
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s1600/19990814dogfight.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s200/19990814dogfight.jpg" width="200" /></a></div>
 Let's motivate our question a little bit.  I've wondered about this question since I saw star wars.  Though I'm no firearms expert, the recoil in guns must come from conservation of momentum principles.  Momentum is conserved in a system.  The gun starts with zero momentum.  We fire, give the bullet momentum, and so to keep the system at zero momentum, the gun must gain equal and opposite momentum.  That is, the gun will move backwards.

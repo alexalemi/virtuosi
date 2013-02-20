@@ -5,6 +5,7 @@ Category: old
 Slug: betelgeuse-betelgeuse-betelgeuse-
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s1600/betelgeuse.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="212" src="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s320/betelgeuse.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A very cold person points out Betelgeuse</td></tr></tbody></table><i>Betelgeuse is a massive star at the very end of its life and could explode any second now!</i>  Every time I hear that I get really <i>really</i> excited.  Like a kid in a candy store that's about to see a star blow up like nobody's business.  This giddiness will last for a solid minute before I realize that "any second now" is taken on astronomical timescales and roughly translates to "sometime in the next million years maybe possibly."  Then I feel sad.
 
 But you know what always cheers me up?  Calculating things!  Hooray!  So let's take a look at the ways Betelgeuse could end its life (even if it's not going to happen tomorrow) and how these would affect Earth.

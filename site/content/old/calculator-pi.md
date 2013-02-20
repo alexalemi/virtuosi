@@ -5,6 +5,7 @@ Category: old
 Slug: calculator-pi
 Author: Alemi
 
+
 There is a very fast converging algorithm for computing pi that you can do on a desktop calculator.
 <ul><li>Set x = 3</li><li>Now set x = x + sin(x)</li><li>Repeat</li></ul><div>This converges ridiculously fast, after 1 step you get 4 digits right, after 2 steps you get 11 correct, in general we find:
 

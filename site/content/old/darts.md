@@ -5,6 +5,7 @@ Category: old
 Slug: darts
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="295" width="293" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg" /></a></div>
     Over break I went out with a buddy of mine and played some darts.  This got me to thinking, where exactly should someone aim in order to get the largest expected number of points?
 <a name='more'></a>

@@ -5,6 +5,7 @@ Category: old
 Slug: physics-challenge-award-show
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="https://lh5.googleusercontent.com/-pyHug0rZ0X0/TYGM0O4fznI/AAAAAAAAAK0/ZTrk9NSTYuw/s1600/macgyver.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="236" src="https://lh5.googleusercontent.com/-pyHug0rZ0X0/TYGM0O4fznI/AAAAAAAAAK0/ZTrk9NSTYuw/s320/macgyver.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">In an emergency, Richard Dean Anderson's mullet can
 be used as a flotation device and/or standard kilogram.</td></tr></tbody></table>Welcome to the First Physics Challenge Problem Award Show!  We received an integer number of solutions to our challenge problem and at long last and after much deliberation, we have chosen our winner. 
 

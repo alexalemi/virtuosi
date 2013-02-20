@@ -5,6 +5,7 @@ Category: old
 Slug: earth-day-2012-escape-to-the-moon
 Author: Brian
 
+
 It is now Earth Day 2012, and, according to the Mayan predictions, <a href="http://thevirtuosi.blogspot.com/search/label/end%20of%20the%20earth">The Virtuosi will destroy the earth</a>. In a futile attempt to fight my own mortality, I decided to send something to the Moon. It seems, for a poor graduate student trying to get to the Moon, the most difficult part is the Earth holding me back. So first I'll focus on escaping the Earth's gravitational potential well, and if that's possible, then I'll worry about more technical problems, such as actually hitting the moon. Moreover, in honor of the destructive spirit of The Virtuosi near Earth Day, I'll try to do this in the most Wiley-Coyote-esque way possible. <span class="fullpost">
 </span>
 <a name='more'></a><span class="fullpost">

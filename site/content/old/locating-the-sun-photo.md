@@ -5,6 +5,7 @@ Category: old
 Slug: locating-the-sun-photo
 Author: Alemi
 
+
 This photo has been making the rounds on the internet lately:
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S8VQNEo7GUI/AAAAAAAAAJA/mHcIfKfPleM/s1600/pinholecamerajd09.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="342" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S8VQNEo7GUI/AAAAAAAAAJA/mHcIfKfPleM/s400/pinholecamerajd09.jpg" width="400" /></a></div>Originally from <a href="http://helpmyphysics.co.uk/wordpress/?p=276">here</a>.
 

@@ -5,6 +5,7 @@ Category: old
 Slug: blown-away
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s1600/wind-turbine-2.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s200/wind-turbine-2.jpg" width="200" /></a></div>
 I was reading a discussion on green energy recently, in particular wind power, where the following claim was made
 <blockquote><i>enough wind turbines to power the world would cover the surface of the world.</i></blockquote>Now, this was quickly decried by supporters of wind power, but the claim has stuck with me.  The question on my mind today is: How much of the earth's surface would have to be covered to power the earth with wind turbines?

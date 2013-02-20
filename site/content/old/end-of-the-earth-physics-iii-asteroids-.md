@@ -5,6 +5,7 @@ Category: old
 Slug: end-of-the-earth-physics-iii-asteroids-
 Author: Corky
 
+
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s1600/armageddon.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 157px; height: 200px;" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s200/armageddon.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5463175511274374418" /></a>No day of earth destroying celebration would be complete without that apocalyptic all-time favorite: the asteroid.  And to be fair, it deserves to be the favorite.  Of all the doomsday predictions out there (nuclear holocaust for the cynics, death by snoo-snoo for the optimists) it is the only one that is just about certain to occur at some point in the geological near future. On top of that, it's one that we could potentially avoid with enough time and some <a href="http://en.wikipedia.org/wiki/Asteroid_deflection_strategies">neat ideas</a> .<div>
 Let's model an asteroid impact on the earth.  We will assume an asteroid starting from rest at infinity and falling to the surface of the earth due to earth's gravity only. Now obviously these assumptions are not exactly correct.  We can imagine our asteroid not starting from rest or feeling some force due to the sun.  Each of these would certainly change our answer, but should still be within an order of magnitude of our result.
 

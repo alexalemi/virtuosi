@@ -27,7 +27,7 @@ SOCIAL = (('twitter','https://twitter.com/thevirtuosi'),
         ('facebook','https://www.facebook.com/thevirtuosi'),
         )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 25
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
@@ -38,7 +38,9 @@ DISQUS_SITENAME = 'thephysicsvirtuosi'
 
 FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
-THEME = 'virtuosi_theme'
+THEME = 'bootstrap2'
 
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
+
+SUMMARY_MAX_LENGTH = 150

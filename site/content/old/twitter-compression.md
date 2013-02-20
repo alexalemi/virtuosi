@@ -4,5 +4,6 @@ Tags:
 Category: old
 Slug: twitter-compression
 Author: Alemi
+Status: draft
 
 None

@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: minutes-04-17-08
 Author: Alemi
+Status: draft
 
 We had our second meeting.  Nobody had really done a whole lot since our meeting on Thursday.
 

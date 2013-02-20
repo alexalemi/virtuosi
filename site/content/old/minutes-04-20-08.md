@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: minutes-04-20-08
 Author: Alemi
+Status: draft
 
 We had our first meeting of the term.  We decided that we were going to work some problems from <a href="http://books.google.com/books?id=gnTk2coIh3YC">The Quantum Mechanics Solver</a> for next week.  Four of us agreed to solve a chapter each and present it next week.  Topics to be covered:
 <ul><li> Forbesy: Neutrino Oscillations 

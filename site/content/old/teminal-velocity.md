@@ -5,6 +5,7 @@ Category: old
 Slug: teminal-velocity
 Author: Yariv
 
+
 The impetus for this post lies with three facts. First, I like to bike to work. Second, Cornell sits on a <a href="http://www.cornell.edu/search/index.cfm?tab=facts&amp;q=&amp;id=272">hill</a>. And finally, I'm not very brave.
 
 As a result of all of these, along with Ithaca's less-than-optimal road maintenance, my semi-daily rides home tend to produce a lot of wear on my brakes as I cruise downhill at what appears to me to be very high speeds. I began to ponder just how high this speed really is, and if I could reduce my use of the brakes or if I'm going to end up using them anyway at the bottom of the hill.

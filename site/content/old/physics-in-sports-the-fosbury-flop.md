@@ -5,6 +5,7 @@ Category: old
 Slug: physics-in-sports-the-fosbury-flop
 Author: Bohn
 
+
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s1600/Fosbury.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 216px; height: 154px;" src="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s320/Fosbury.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635664665471023682" /></a>Physics has greatly influenced the progress of most sports.  There have been continual improvements in equipment for safety or performance as well as improvements in technique.  I'd like to talk about some physics in sports over a series of posts.  Here I'll talk about a technique improvement in High Jumping, the Fosbury Flop.
 
 

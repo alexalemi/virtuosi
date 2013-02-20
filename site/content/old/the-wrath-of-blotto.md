@@ -5,6 +5,7 @@ Category: old
 Slug: the-wrath-of-blotto
 Author: Alemi
 
+
 You may remember <a href="http://thevirtuosi.blogspot.com/2010/05/memorial-day-distractions.html">when I invited</a> everyone to play <a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php">my webform</a> version of <a href="http://en.wikipedia.org/wiki/Colonel_Blotto">Colonel Blotto</a>.  Well, its still up and has been up for some time, but hasn't seen any action for a while so I thought it might be time to take a look at the results.  
 
 Colonel Blotto is an interesting game.  It seems to me, that much of this interest derives from the fact that how well your strategy performs is very much a function of which strategies exist in the pool.  There is not a clear cut winning strategy, you need to feel out the existing pool and adapt accordingly.

@@ -5,6 +5,7 @@ Category: old
 Slug: a-tweet-is-worth-at-least-140-words
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s1600/twittercompression.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="207" src="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s400/twittercompression.png" width="243" /></a></div>So, I recently read <a href="http://books.google.com/books?id=fXxde44_0zsC&amp;printsec=frontcover&amp;dq=An+Introduction+to+Information+Theory&amp;hl=en&amp;ei=7opdTrjhMMXrOarHmdIC&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CC0Q6AEwAA#v=onepage&amp;q&amp;f=false">An Introduction to Information Theory: Symbols, Signals and Noise</a>. 
 
 It is a very nice popular introduction to <a href="http://en.wikipedia.org/wiki/Information_Theory">Information Theory</a>, a modern scientific pursuit to quantify information started by <a href="http://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a> in 1948.  

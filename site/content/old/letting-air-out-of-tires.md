@@ -5,6 +5,7 @@ Category: old
 Slug: letting-air-out-of-tires
 Author: Jesse
 
+
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Have you ever noticed how when you let air out of a bike tire (or, I suppose, a car tire) it feels rather cold?  Today we're going to explore why that is, and just how cold it is.  Many people consider the air escaping from a tire as a classic example of an adiabatic process.  What is an adiabatic process?  It is a process that happens so quickly there is no time for heat flow to occur.  For our air in the bike tire this means we're letting it out of the tire so quickly that no energy can move into it from the surrounding air.</span>
 
 <a name='more'></a>

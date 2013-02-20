@@ -5,6 +5,7 @@ Category: old
 Slug: lifetime-of-liquid-water
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /></a></div>Apologies for the hiatus recently, it's been a busy time (when isn't it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a molecule of H2O on earth remain in the liquid state, on average?
 
 <a name='more'></a>I'm going to treat this purely as an order of magnitude problem.  I'm also going to have to start with one assumption that is almost certainly inaccurate, but makes things a lot easier.  I'm going to assume perfect mixing of all of the water on earth.

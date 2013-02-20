@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: test
 Author: Jesse
+Status: draft
 
 \( 10^{10}+\alpha_0 \) This is a test of inline tex.
 

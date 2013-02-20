@@ -5,6 +5,7 @@ Category: old
 Slug: cell-phone-brain-damage-or-not-
 Author: Js
 
+
 For better or worse, cell phones are a part of our lives.  I say this because they can be convenient when needed, but there's nothing more annoying than a dropped call or an inconveniently timed ring tone.  Since many people carry their phones with them daily, there has been a number of studies which ask what are the long-term health effects of cell phone usage.  While the <a href="http://www.google.com/search?q=cell+phone+tumor&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">controversy rages</a> among medical researchers, I decided to find my own answers by doing a calculation based on the power output of a simple hand set.
 <a name='more'></a>
 

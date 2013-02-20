@@ -5,6 +5,7 @@ Category: old
 Slug: caught-in-the-rain-ii
 Author: Jesse
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TLIIqVYyp-I/AAAAAAAAADo/KOuEncc3zFo/s1600/Rain.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="133" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TLIIqVYyp-I/AAAAAAAAADo/KOuEncc3zFo/s200/Rain.jpg" width="200" /></a></div>I was rather proud of my last post about being <a href="http://thevirtuosi.blogspot.com/2010/09/caught-in-rain.html">caught in the rain</a>.  In that post, I concluded that you were better off running in the rain, but that the net effect wasn't incredibly great.  However, when I told people about it, the question I inevitably got asked was:  What if the rain isn't vertical?  That's what I'd like to look at today, and it turns out to be a much more challenging question.
 <a name='more'></a>
 I'm still going to assume that the rain is falling at a constant rate.  Furthermore, I'm going to assume that the angle of the rain doesn't change.  With those two assumptions stated, let me remind you of the definitions we used last time.

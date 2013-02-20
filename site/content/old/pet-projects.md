@@ -5,6 +5,7 @@ Category: old
 Slug: pet-projects
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s1600/cat+drink+straw.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s320/cat+drink+straw.jpg" width="233" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">You're doing it wrong!</td></tr></tbody></table>Here at the Virtuosi, we have a very specific way of asking a very specific type of question that sounds anything but specific.  These are the "How come [blank]?" questions [1].  These are very simple questions that just about every four year old asks, but likely never get sufficiently answered.  To  get a feel for what I mean by these questions I provide the following translations of problems we have either considered or will consider:
 <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
 </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Q:  How come trees?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Translation:  How tall can trees be?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">

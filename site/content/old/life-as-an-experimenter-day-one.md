@@ -5,6 +5,7 @@ Category: old
 Slug: life-as-an-experimenter-day-one
 Author: Jesse
 
+
 I'm an experimental physicist.  If you think this sounds like a job second in glamour only to rock star you would be right.  Just like being a rock star, you have to deal with the people, the shows, the lights, the groupies . . . okay, maybe I'm lying about the groupies.  Unless you're <a href="http://groups.myspace.com/index.cfm?fuseaction=groups.groupprofile&amp;groupID=103575126">Brian Greene</a>.  Also similar to a rock star, no one really knows what it is we do behind the scenes (when we're not touring the nation or publishing papers).  I'd like to pull back that curtain a little bit.
 
 <a name='more'></a>A bit of background.  For this data run we're looking at the structure of protein crystals.  The basic idea is that if you have a bunch of proteins, you can create a crystal out of them using various synthesis techniques.  If they're formed right, they look similar to the crystals you are more familiar with, quartz, diamond, emerald, etc.  We're interested in how the proteins are held in the crystal, that is, what kind of structure the protein crystal has.  I'll talk more about this at some other point.  Our method for examining this is using x rays.  Similar to a medical x-ray, we shoot x-rays at our sample, and look at the transmitted images.  Of course, instead of something like this:

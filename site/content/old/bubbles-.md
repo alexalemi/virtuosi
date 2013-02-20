@@ -5,6 +5,7 @@ Category: old
 Slug: bubbles-
 Author: Matt
 
+
 <a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s1600/good-small.jpg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5459713766600368034" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s320/good-small.jpg" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" /></a>
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Ever wonder why don't you see a standard rainbow when looking at a thin film such as soap stretched across a membrane ready for bubble making?  Well, I encountered this problem when I presented my intro physics section with a quiz question today.  Properly stated, the question was...</span>
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">

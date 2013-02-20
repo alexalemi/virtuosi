@@ -5,6 +5,7 @@ Category: old
 Slug: another-reason-why-the-core-is-stupid
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /></a></div>I assume everyone has heard of <a href="http://en.wikipedia.org/wiki/The_core">The Core</a>, the terrible scifi movie from 2003.  
 
 If you haven't you're missing out on what appears to be, according to Discover magazine, <a href="http://discovermagazine.com/2007/nov/none-found">the worst sci-fi film ever</a>.  There are already numerous sites that discuss the bad science in the core (<a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm">here</a>, or over at <a href="http://www.badastronomy.com/bad/movies/thecore_review.html">Bad Astronomy</a>), but they all seem to ignore another fundamental problem with the plot.

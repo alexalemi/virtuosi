@@ -14,6 +14,11 @@ from collections import namedtuple
 from unidecode import unidecode
 import dateutil.parser
 from datetime import datetime
+import pandoc
+import tempfile
+from subprocess import check_output
+
+pandoc.PANDOC_PATH = '/usr/bin/pandoc'
 
 # load xml dump as tree
 with open(FILE) as f:
@@ -27,6 +32,7 @@ Tags: {tags}
 Category: old
 Slug: {slug}
 Author: {author}
+{draft}
 
 {content}
 """
@@ -39,7 +45,7 @@ posts = [ z for z in entries if any('post' in x.get('term') for x in z.findall(b
 # posts = [ z for z in entries if z.find('{http://purl.org/syndication/thread/1.0}in-reply-to') is not None and z.find('{http://purl.org/syndication/thread/1.0}in-reply-to') is not None ]
 
 # custom namedtuple
-post_tuple = namedtuple('post','title author date slug tags content')
+post_tuple = namedtuple('post','title author date slug tags content draft')
 
 def process_post(post):
     title = post.find(begin+'title').text
@@ -52,6 +58,11 @@ def process_post(post):
     tags = u", ".join( x.get('term') for x in post.findall(begin+'category') if 'post' not in x.get('term') )
     content = post.find(begin+'content').text
 
+    if post.find('{http://purl.org/atom/app#}control') is not None:
+        draft = "Status: draft"
+    else:
+        draft = ''
+
     # try to handle mathjax
     try:
         content = content.replace('&nbsp;',' ')
@@ -60,18 +71,35 @@ def process_post(post):
         content = content.replace('<br />','\n')
     except AttributeError:
         pass
-    try:
-        content = content.replace('<br />','\n')
-    except AttributeError:
-        pass
+    # try:
+    #     # content = content.replace('<br />','\n')
+    # except AttributeError:
+    #     pass
 
-    return post_tuple(title,author,date,slug,tags,content)
+    # newcontent = content
+    # try:
+    #     with tempfile.NamedTemporaryFile() as f:
+    #         f.file.write(content.encode('utf-8'))
+    #         newcontent = check_output('pandoc -f html -t markdown ' + f.name, shell=True).decode('utf-8')
+    #         newcontent = newcontent.replace('\\^','^')
+    #         newcontent = newcontent.replace('\\_','_')
+    # except AttributeError:
+    #     pass
 
-processed_posts = map(process_post, posts)
-processed_posts = [ p for p in processed_posts if p.title ]
+    # doc = pandoc.Document()
+    # doc.html = content
+    # content = doc.markdown
+
+    return post_tuple(title,author,date,slug,tags,content,draft)
+
+from itertools import imap,islice
+processed_posts = imap(process_post, posts)
+processed_posts = ( p for p in processed_posts if p.title )
+
 
 
 if __name__ == "__main__":
+    pass
     for pp in processed_posts:
         print "Converting: ", pp.title
         with open(os.path.join(OUTPUT_DIR,pp.slug+'.md'),'w') as f:

@@ -5,6 +5,7 @@ Category: old
 Slug: physics-challenge-ii-marty-mcphysics
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
  <tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-cuT_VPl_Yd8/TmQbG_7B5DI/AAAAAAAAAOs/DA9sTNI-nGk/s1600/greatscott.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-cuT_VPl_Yd8/TmQbG_7B5DI/AAAAAAAAAOs/DA9sTNI-nGk/s1600/greatscott.jpg" /></a></td></tr>
  <tr><td class="tr-caption" style="text-align: center;">Doc Brown didn't have a time-travel backup plan.</td></tr>

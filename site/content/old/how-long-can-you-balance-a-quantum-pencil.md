@@ -5,6 +5,7 @@ Category: old
 Slug: how-long-can-you-balance-a-quantum-pencil
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TBhmR0BI7oI/AAAAAAAAALw/tqkQP717AX4/s1600/pencil37.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="182" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TBhmR0BI7oI/AAAAAAAAALw/tqkQP717AX4/s200/pencil37.png" width="200" /></a></div>Sorry for the delay between posts.  Here in Virtuosi-land, we've all begun our summer research projects and I think we've just become a little bogged down in the rush that is starting a summer research project.  You feel as though you have no idea what the heck is going on, and just try desperately to keep your head up as you hit the ground running, but thats a topic for another post.  
 
 In this post I'd like to address a fun physics problem.

@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: blog-post-ideas
 Author: Alemi
+Status: draft
 
 Scattering Recap
 Articles from Sethna

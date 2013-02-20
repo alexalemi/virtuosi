@@ -5,6 +5,7 @@ Category: old
 Slug: life-as-an-experimenter-reflections
 Author: Jesse
 
+
 I've been doing experimental physics for about three years.  I started during my sophomore year in college, went straight to graduate school, and continued here (albeit not quite immediately).  There are people out there who have been doing this for a lot longer than I have, but I've gained a few insights, by working with said people, and through my own experiences in the lab.  I thought I'd try to share a few of these, to help illuminate the past few days I blogged about.
 
 <a name='more'></a><b>Something Always Goes Wrong</b>

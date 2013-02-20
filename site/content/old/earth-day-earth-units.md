@@ -5,6 +5,7 @@ Category: old
 Slug: earth-day-earth-units
 Author: Alemi
 
+
 In honor of Earth day, I thought I would take a look at what it would mean to do physics in 'Earth' units.  What do I mean by that?  Well lets be anti-Copernican here, in fact lets assume the opposite of the 
 <a href="http://en.wikipedia.org/wiki/Copernican_principle">Copernican principle</a>, and state that the Earth is privileged in the universe and define all of our units around the Earth.  
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S9Cu1nxGXDI/AAAAAAAAAKU/JTtr_QKqdR8/s1600/50px-Earth_symbol.svg.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S9Cu1nxGXDI/AAAAAAAAAKU/JTtr_QKqdR8/s320/50px-Earth_symbol.svg.png" /></a></div>

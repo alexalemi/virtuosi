@@ -5,6 +5,7 @@ Category: old
 Slug: tales-from-the-transit-of-venus
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s1600/sad_transit.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="199" src="http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s200/sad_transit.png" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Sad Old Sun</td></tr></tbody></table>Today is the transit of Venus, which, aside from being a totally rad astronomical event, is also the perfect excuse to tell my favorite story of an unlucky Frenchman (I have many). 
 
 This is by no means new and, if you've ever taken an astronomy course, you've probably already heard it.  It is perhaps the closest thing Astronomy has to a ghost story, told though the glow of a flashlight on moonless nights to scare the children. 

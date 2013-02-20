@@ -4,5 +4,6 @@ Tags: gravity assist, scott bakula
 Category: old
 Slug: the-john-stockton-of-planets
 Author: Corky
+Status: draft
 
 None

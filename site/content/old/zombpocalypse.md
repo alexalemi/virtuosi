@@ -5,6 +5,7 @@ Category: old
 Slug: zombpocalypse
 Author: Matt
 
+
 Here at the Virtuosi, we're concerned. We are concerned that perhaps the world is really not ready for a zombie apocalypse. You know, the kind of zombie apocalypse that you may have seen in such classics as "Night of the Living Dead", "Shaun of the Dead", or perhaps the even more recent "Zombieland" (sweet cameo by the way). The kind of zombpocalypse that could leave major cities void of life and the country plagued with the undead.<div>
 </div><div>Well, Alemi and I were curious as to how likely such a pandemic was to occur and what it would look like in the simplest of models.  In typical Virtuosi fashion, we threw some physics at it and this is what we came up with.</div>
 <a name='more'></a>

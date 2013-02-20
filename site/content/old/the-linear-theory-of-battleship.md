@@ -5,6 +5,7 @@ Category: old
 Slug: the-linear-theory-of-battleship
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="250" width="249" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png" /></a></div>
 Recently I set out to hold a <a href="http://en.wikipedia.org/wiki/Battleship_(game)">Battleship</a> programming tournament here among some of the undergraduates.  Naturally, I myself wanted to win.  So, I got to thinking about the game, and developed what I like to call "the linear theory of battleship".  
 

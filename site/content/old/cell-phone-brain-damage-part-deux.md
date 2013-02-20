@@ -5,6 +5,7 @@ Category: old
 Slug: cell-phone-brain-damage-part-deux
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_RDhF0ciII/AAAAAAAAAKg/XexPpWRmpg4/s1600/cell-phone-21.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_RDhF0ciII/AAAAAAAAAKg/XexPpWRmpg4/s320/cell-phone-21.jpg" /></a></div>I thought I'd take another look at cell phone damage, coming at it from a different direction than my colleague.  Mostly I just want to consider the energy of the radiation that cell phones produce, and compare that with the other relevant energy scales for molecules.
 <h3>Cell Phone Energy</h3>So, lets start with cell phones.  I looked at my cell phone battery, and it looks like it is rated for 1 A, at 3.5 V.  So when it is running at its peak it should put out about 3.5 W of power in electromagnetic waves (assuming it reaches its rating and all of that energy is fully converted into radiation).  But what form does this energy take?  Well, its electromagnetic radiation, so its in the form of a bunch of photons.  In order to determine the energy of each photon, we need to know the frequency of the radiation.  Surfing around a bit on wikipedia, I discovered that most cell phones operate in the 33 cm radio band, or somewhere between about 800 - 900 Mhz.
 

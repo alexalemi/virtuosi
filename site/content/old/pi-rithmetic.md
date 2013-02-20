@@ -5,6 +5,7 @@ Category: old
 Slug: pi-rithmetic
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="188" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg" width="320" /></a></div>Fun fact:  pi squared is very close to 10.  How close?  Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram Alpha</a> tells me that it is only about 1% off.
 
 I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome.

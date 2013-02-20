@@ -5,6 +5,7 @@ Category: old
 Slug: four-fantastic-books-3-of-which-are-free-
 Author: Alemi
 
+
 <a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248" /></a>Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
 <h3>Street Fighting Mathematics - Sanjoy Mahajan </h3><h4>The art of educated guessing and opportunistic problem solving </h4><div><a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=12156">Link to MIT Press Site</a>
 

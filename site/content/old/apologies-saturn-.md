@@ -5,6 +5,7 @@ Category: old
 Slug: apologies-saturn-
 Author: Corky
 
+
 Hello, again!  Remember us?  I don't.  Anyway, apologies for the lack of activity here.  There are plenty of people* to blame for this lack of activity, but I don't want to name names.  The real purpose of this pseudo-update is to SUPER DUPER promise that the winners of our first Monthly Physics Challenge problem will be announced tomorrow.  Thanks for your patience!
 <div>
 </div><div>In the meantime, there's a totally rad video-ification of photos of Saturn (and moons) taken by the Cassini spacecraft that was Astronomy Picture of the Day yesterday and will (presumably) be part of an IMAX <a href="http://www.outsideinthemovie.com/">movie</a> in the future.  You can check it out <a href="http://apod.nasa.gov/apod/ap110315.html">here</a>. 

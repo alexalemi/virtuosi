@@ -5,6 +5,7 @@ Category: old
 Slug: report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs
 Author: Nic Eggert
 
+
 <img alt="Mmmm run172822 evt2554393033 3d" border="0" height="288" src="http://lh6.ggpht.com/-hPHBh1UVJic/TuvD-aa1MYI/AAAAAAAAAX4/BQgsVZulLkw/mmmm-run172822-evt2554393033-3d.jpg?imgmax=800" style="display: block; margin-left: auto; margin-right: auto;" title="mmmm-run172822-evt2554393033-3d.jpg" width="400" />
 
 Hi folks. It's been an embarrassingly long time since I last posted, but today's news on the Higgs boson has brought me out of hiding. I want to share my thoughts on today's announcement from the CMS and ATLAS collaborations on their searches for the Higgs boson. I'm a member of the CMS collaboration, but these are my views and don't represent those of the collaboration.

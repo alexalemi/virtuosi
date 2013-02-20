@@ -5,6 +5,7 @@ Category: old
 Slug: a-sense-of-scale-in-dollars-and-cents-
 Author: Corky
 
+
 I hate politics, but for some reason I obsessively read about it.  I don't know why I do this, but I assume it's the same reason people slow down for car wrecks and pay to see the geek [1].  Anyway, the big thing in political news now is that if Congress can't pass a budget [2] by the end of the day Friday, the government will shut down. 
 
 Shutting down the government means that 800,000 federal employees will go without pay [3], lots of services will be put on hold and you won't be able to go to the Smithsonian or the Grand Canyon.  So it's kind of a big deal.  Since the ramifications of a government shutdown are so serious, there must be some really important disagreements holding it up, right?  Right?

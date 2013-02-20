@@ -5,6 +5,7 @@ Category: old
 Slug: your-week-in-seminars-short-thanksgiving-edition
 Author: Yariv
 
+
 Good Monday evening all, and welcome to another edition of Your Week in Seminars. Last week was a half week here in Cornell, but we still managed two talks, the general colloquium and the Wednseday-talk-on-Tuesday.
 
 <a name='more'></a>

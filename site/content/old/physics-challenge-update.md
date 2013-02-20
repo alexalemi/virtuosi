@@ -5,6 +5,7 @@ Category: old
 Slug: physics-challenge-update
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-mQtqC-5MmYk/Tq9MkU56O9I/AAAAAAAAAPE/iaFRwtMKwJ0/s1600/mary_mcwatch.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-mQtqC-5MmYk/Tq9MkU56O9I/AAAAAAAAAPE/iaFRwtMKwJ0/s320/mary_mcwatch.jpg" width="221" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Marty McFly realizes he is running out
 of time to submit his solution</td></tr></tbody></table>Did you know that our <a href="http://pages.physics.cornell.edu/~aalemi/challenge/timemachine.php">Physics Challenge</a> problem contest thingy is still up and going?  It is!  The contest will be open until the end of the day this <b>Friday, November 4th</b>.  And, unlike last time, the winning solution will be chosen and posted by the end of the weekend.  So even if you don't submit your own solution (though you <i>totally</i> should), check back here Monday morning for the winning entry.
 

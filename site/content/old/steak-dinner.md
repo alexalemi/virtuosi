@@ -5,6 +5,7 @@ Category: old
 Slug: steak-dinner
 Author: Alemi
 
+
 Sorry about the blog hiatus.  During the summer, without teaching classes, inspiration is harder to come by.  But, tonight I cooked a steak.  I recently got a new digital meat thermometer.  My plan was to slowly cook the steak until the internal temperature got to be about 140 degrees Fahrenheit with the oven at 200 degrees, take it out, wrap in tin foil, crank the oven to 500 degrees, stick it back in, and give it a nice exterior, reaching an internal temperature of about 150 degrees which would put it at about medium.
 
 After I put the steak into the oven though, I started to watch the temperature go up on my digital thermometer and thought, why not take data.  And so I did.  Here are the results.

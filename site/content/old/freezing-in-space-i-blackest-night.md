@@ -5,6 +5,7 @@ Category: old
 Slug: freezing-in-space-i-blackest-night
 Author: Jesse
 
+
 In the last post I made, I discussed the fact that <a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html">humans radiate energy</a>.  In that post I calculated that we actually radiate quite a lot of power.  This immediately raises a few questions, the most obvious one being: How long would it take you to freeze in space?  This question is multifaceted, and I'm going to split it between two parts.  This first part, 'Blackest Night' is how quickly we'd freeze if we were completely lost in space, nothing anywhere near.  The second part, 'Turn On The Sun!' will address what would happen in near earth orbit.
 
 

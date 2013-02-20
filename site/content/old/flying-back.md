@@ -5,6 +5,7 @@ Category: old
 Slug: flying-back
 Author: Yariv
 
+
 Those of us originating on the right side of the <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Atlantic+Ocean&amp;sll=39.368279,-9.316406&amp;sspn=57.758311,144.316406&amp;dirflg=w&amp;ie=UTF8&amp;hq=&amp;hnear=Atlantic+Ocean&amp;ll=37.857507,-22.675781&amp;spn=62.051619,144.316406&amp;z=3">atlantic ocean</a> are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way around.
 
 This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane's movement?

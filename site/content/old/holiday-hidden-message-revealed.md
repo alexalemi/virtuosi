@@ -5,6 +5,7 @@ Category: old
 Slug: holiday-hidden-message-revealed
 Author: Corky
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TSDGkyEUkPI/AAAAAAAAAIc/4rTQYB9jyNE/s1600/longfellow.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TSDGkyEUkPI/AAAAAAAAAIc/4rTQYB9jyNE/s320/longfellow.jpg" width="240" /></a></div>Here we present the solution to the Holiday Code (original post <a href="http://thevirtuosi.blogspot.com/2010/12/holiday-hidden-message.html">here</a>).  The content of the message is from the creepy looking gentleman to the left, Henry Wadsworth Longfellow.  He is perhaps most famous for writing the poem, "Paul Revere's Ride." 
 
 I have taken another one of his popular poems, "<a href="http://www.potw.org/archive/potw118.html">Christmas Bells</a>," and hidden its first verse in a huge mess of random letters.  The message:

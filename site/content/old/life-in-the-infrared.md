@@ -5,6 +5,7 @@ Category: old
 Slug: life-in-the-infrared
 Author: Jared
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4egR75ENI/AAAAAAAAAJU/eEFirBEL2xY/s1600/authors.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4egR75ENI/AAAAAAAAAJU/eEFirBEL2xY/s320/authors.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Corky, Matt, and Jared, with the experimental apparatus.</td></tr></tbody></table>There's a place where TV remotes are flashlights, Wii's are torches, and Snuggies are translucent. It's our kitchen. We modified a 3 dollar webcam to view in the infrared portion of the electromagnetic spectrum. We'll show you how, and what you can do with it.
 
 <a name='more'></a>

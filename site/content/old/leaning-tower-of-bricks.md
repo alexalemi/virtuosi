@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: leaning-tower-of-bricks
 Author: Bohn
+Status: draft
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/-hjWp5RM9HqE/TkhIopG_61I/AAAAAAAAAEg/SCHsvf_LrVE/s1600/Untitleddrawing%2B%25281%2529.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 320px; height: 134px;" src="http://4.bp.blogspot.com/-hjWp5RM9HqE/TkhIopG_61I/AAAAAAAAAEg/SCHsvf_LrVE/s320/Untitleddrawing%2B%25281%2529.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5640838396348722002" /></a>Some of the most interesting physics comes from answering questions which are straightforward to ask.  Here's a simple question with a counterintuitive answer:  How far away from a table can one stack bricks without the stack falling over?
 

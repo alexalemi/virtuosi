@@ -5,6 +5,7 @@ Category: old
 Slug: benford-s-law
 Author: Corky
 
+
 Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one?  My first thought was that it would be 1/9.  There are nine non-zero numbers to choose from and they should be uniformly distributed, right? 
 
 Turns out that for almost all data sets naturally collected, this is not the case.  In most cases, one occurs as the first digit most frequently, then two, then three, etc.  That this seemingly paradoxical result should be the case is the essence of Benford's Law.

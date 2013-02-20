@@ -5,6 +5,7 @@ Category: old
 Slug: fishy-calculation-followup-new-contest
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s1600/hamster.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="154" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s200/hamster.jpg" width="200" /></a></div>So, some you may remember when I attempted to calculate how much the oceans would lower if you took out all of the fish in an <a href="http://thevirtuosi.blogspot.com/2010/04/fishy-calculation.html">earlier post</a>.
 
 Well, the results came in a while ago, but I forgot to mention that <a href="http://diaryofnumbers.blogspot.com/2010/05/we-have-winner.html">I lost</a> the contest.  I was about two orders of magnitude off from the winning answer.

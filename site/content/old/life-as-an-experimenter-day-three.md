@@ -5,6 +5,7 @@ Category: old
 Slug: life-as-an-experimenter-day-three
 Author: Jesse
 
+
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Today marks the third and final day in our beam time at CHESS.  I think the circles under all of our eyes may take away from the glamor a bit, but the right makeup specialist could fix that.  If they ever make a movie about us, which they should, I want to be played by some really awesome british actor.  I think that would be about right.  Someone with a strong jaw.  In case it's not obvious, lack of sleep is getting to me a little bit.  Read on for the final few hours of our experiment.</span>
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"></span>
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><a name='more'></a></span>

@@ -5,6 +5,7 @@ Category: old
 Slug: a-homemade-viscometer-i
 Author: Brian
 
+
 Stirring a bowl of honey is much more difficult than stirring a bowl of water. But why? The mass density of the honey is about the same as that of water, so we aren't moving more material. If we were to write out Newton's equation, <i>ma</i> would be about the same, but yet we still need to put in much more force. Why? And can we measure it?
 
 <a name='more'></a>

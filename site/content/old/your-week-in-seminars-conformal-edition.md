@@ -5,6 +5,7 @@ Category: old
 Slug: your-week-in-seminars-conformal-edition
 Author: Yariv
 
+
 Another week has gone by here in Cornell. The last leaves are turning red, a hint of snow passed us on the weekend, and the undergrads have hit the streets and parties in minimal clothing, then did the same again next day wearing a set of cat ears. And in the physics department, we had the usual three talks.
 
 <a name='more'></a>

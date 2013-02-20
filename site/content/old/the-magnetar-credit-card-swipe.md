@@ -5,6 +5,7 @@ Category: old
 Slug: the-magnetar-credit-card-swipe
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s1600/nedflanderscredit.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="214" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s320/nedflanderscredit.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Ned Flanders' credit card doesn't satisfy the <a href="http://en.wikipedia.org/wiki/Luhn_algorithm">Luhn</a> checksum, 
 but could probably still be erased by a magnetar. </td></tr></tbody></table>Hello, Internet!  Today I'd like to talk about the Magnetar Credit Card Swipe.  Sounds like some sinister short on a derivatives deal, doesn't it?  Well, no need to worry, we don't deal with scary things like that here.  Instead, we are going to talk about a super-magnetized neutron star speeding past Earth. 
 

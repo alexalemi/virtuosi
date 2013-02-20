@@ -4,6 +4,7 @@ Tags: sad face, magic, scott bakula
 Category: old
 Slug: newton-vs-magic
 Author: Corky
+Status: draft
 
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TUZXo7b7IdI/AAAAAAAAAJM/BMYAAAkV29k/s1600/gnomes.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TUZXo7b7IdI/AAAAAAAAAJM/BMYAAAkV29k/s320/gnomes.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Gnomes responsible for planetary orbits? [Note: gnomes
 have been made visible for illustration purposes.]</td></tr></tbody></table>Newton's laws of motion, first set down by Sir Isaac Newton in the 17th century, were mankind's first step towards an analytical understanding of the physical world.  The laws describe the motion of all kinds of objects, from the flight of a head-seeking apple to the motion of the stars in the heavens.  The laws have made an uncountable number of predictions about our universe that have been experimentally verified. 

@@ -5,6 +5,7 @@ Category: old
 Slug: physics-of-baseball-batting
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s1600/baseball.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s320/baseball.jpg" /></a></div>Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be.
 
 We were interested in just how hard it is to hit a pitch with the bat.  So we thought we'd model hitting the ball with a rather simple approximation of a robot swinging a cylindrical bat, horizontally with some rotational speed and at a random height.  The question then becomes, if the robot chooses a random height and a random time to swing, what are the chances that it gets a hit?

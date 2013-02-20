@@ -5,6 +5,7 @@ Category: old
 Slug: life-as-an-experimenter-day-two
 Author: Jesse
 
+
 Today I'm continuing my series on the life of an experimenter.  Today is the longest day, since we have beam time for all 24 hours.  And after the setbacks of yesterday, we feel compelled to use it to the utmost bit.  Read on for more tantalizing glimpses of the grit behind the glamor of the rock-star-like lifestyle of an experimental physicist.
 
 <a name='more'></a>Today had a very different feel.  Things were working, and that meant a lot of down time waiting for data to collect.  Despite the excitement of data coming in, I was a little bored at points.  Lots of internet use.

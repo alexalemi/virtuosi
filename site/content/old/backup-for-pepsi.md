@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: backup-for-pepsi
 Author: Corky
+Status: draft
 
 <div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;">I found it easier to find the probability that I will not win after a given number of caps.  In order to not win the game, we can have at most two caps of the same team from a pool of thirty possible teams.  So let's first define a few terms.  </div><div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;">
 </div><div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;">$$ n = \text{Total Number of Caps} $$</div><div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;">

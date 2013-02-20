@@ -5,6 +5,7 @@ Category: old
 Slug: some-of-the-best-advice-you-ll-ever-receive
 Author: Alemi
 
+
 I came across what might be the best advice any student (nay any human being) could possibly ever receive reading a book today...
 <a name='more'></a>
 <blockquote>Now there are two ways in which you can increase your understanding of these issues.  One way is to remember the general ideas and then go home and try to figure out what commands you need and make sure you don't leave one out.  Make the set shorter or longer for convidence and try to understand the tradeoffs by trying to do problems with your choice.  This is the way I would do it because I have that kind of personality!  It's the way I study -- to understand somethingby trying to work it out or, in other words, to understand something by creating it.  Not creating it one hundred percent, of course; but taking a hint as to which direction to go but not remembering the details.  These you work out for yourself.

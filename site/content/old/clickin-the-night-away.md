@@ -5,6 +5,7 @@ Category: old
 Slug: clickin-the-night-away
 Author: Corky
 
+
 Hey, everybody!  Do you remember <a href="http://thevirtuosi.blogspot.com/2011/04/collective-wanderings.html">Clicky</a> [1]?  Well, we finally got around to analyzing data, so here goes.  But first, a brief summary.
 <div>
 </div><div>Matt, Alemi and I came up with the idea for Clicky in the beginning of April.  Perhaps "idea" is a bit too generous... it was really just a passing thought:  "Hey wouldn't it be cool if we had an internet Ouija board?"  It was just a stupid lunch-time discussion that wouldn't have gone anywhere had Alemi and Matt not taken it as some sort of challenge.  So after a few hours that night we had Clicky.</div><div>

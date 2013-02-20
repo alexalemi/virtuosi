@@ -5,6 +5,7 @@ Category: old
 Slug: breaking-intuition
 Author: Bohn
 
+
 <span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298"></span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">When  I walked into my first day of physics class in high school, I carried  with me a set of ideas which I learned from simply observing and  interacting with the world.  In fact everyone builds up what they  believe to be intuitive concepts, whether it be in science, math, or any  other field.  Without any scientific training whatsoever, we begin to  build intuition.</span>
 
 <span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span>

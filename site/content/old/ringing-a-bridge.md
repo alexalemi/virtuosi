@@ -5,6 +5,7 @@ Category: old
 Slug: ringing-a-bridge
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TGc4zKuS4oI/AAAAAAAAAGw/dQHhvZBgASQ/s1600/bridgepic.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TGc4zKuS4oI/AAAAAAAAAGw/dQHhvZBgASQ/s320/bridgepic.png" width="212" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Matt and Jared standing on 
 our experiment</td></tr></tbody></table><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;">When you strike a bell, it rings at a given frequency.  This frequency is called the resonant frequency and is the natural frequency at which the bell likes to ring.  Just about anything that can shake, rattle, or oscillate will have a resonant frequency.  Things like quartz crystals, wine glasses, and suspension bridges all have a resonant frequency.  The quartz crystals oscillate at frequencies high enough for accurate timekeeping in watches, the wine glasses at audible frequencies to make boring dinners more interesting, and bridges at low enough frequencies that you can feel it when you walk.  It is the resonant frequency of bridges that we decided to measure.</span>
 <span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"></span>

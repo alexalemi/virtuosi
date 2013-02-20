@@ -5,6 +5,7 @@ Category: old
 Slug: i-was-born-on-wednesday
 Author: Alemi
 
+
 Probability is a tricky thing.  There are a lot of nonsensical answers to be had.  I just read <a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true">an article</a> about the recent <a href="http://www.g4g4.com/">Gathering for Gardner</a> meeting that took place.  Gathering for Gardner is a unique meeting for mathematicians, magicians and puzzle makers where they get together and talk about interesting things.  The meetings were inspired by <a href="http://en.wikipedia.org/wiki/Martin_Gardner">Martin Gardner</a>, one of the awesomest dudes of our time, who unfortunately just passed away.
 
 The question put to the floor was the following:

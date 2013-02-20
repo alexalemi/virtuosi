@@ -5,6 +5,7 @@ Category: old
 Slug: how-cold-is-the-ground-ii
 Author: Brian
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s1600/mainImage.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s200/mainImage.png" width="90" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Images <a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG">from </a><a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg">Wikipedia</a></td><td class="tr-caption" style="text-align: center;">
 </td><td class="tr-caption" style="text-align: center;">
 </td></tr></tbody></table>Last week (ok, it was a little more than a few days ago....) I used dimensional analysis to figure out how the ground's temperature changes with time. But although dimensional analysis can give us information about the length scales in the problem, it doesn't tell us what the solution looks like. From dimensional analysis, we don't even know what the solution does at large times and distances. (Although we can usually see the asymptotic behavior directly from the equation.) So let's go ahead and solve the the heat equation exactly:

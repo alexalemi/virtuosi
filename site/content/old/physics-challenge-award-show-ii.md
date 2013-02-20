@@ -5,6 +5,7 @@ Category: old
 Slug: physics-challenge-award-show-ii
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-KNDW4alRDDI/Tra8NaWqlcI/AAAAAAAAAQo/6REV_1iTv2o/s1600/time_machine.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://3.bp.blogspot.com/-KNDW4alRDDI/Tra8NaWqlcI/AAAAAAAAAQo/6REV_1iTv2o/s320/time_machine.jpg" width="218" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Not a DeLorean.  You're doing it wrong.</td></tr></tbody></table>[<i>Update:  Prize Update / Added link to full solutions</i>]
 
 Welcome to the second Physics Challenge Award show!

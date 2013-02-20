@@ -5,6 +5,7 @@ Category: old
 Slug: why-is-the-grass-green-
 Author: Corky
 
+
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">I was outside talking with Alemi last week and we were both startled to realize that the frozen white tundras of Ithaca had somehow transformed into fields of green.  Apparently the snow was a temporary fixture that covered real live grass.  Neato, gang!  </span>
 <span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
 The joy at seeing green grass led quickly to surprise, confusion and then anger.  Why the heck is grass green?  Well, things look a color when they reflect back that color.  So grass is green because its pigments (chlorophyll) absorb only a certain range of the visible spectrum, reflecting back the greenish bits.  But if I know anything about approximating the sun as a blackbody, I know that it has a peak output of around 550 nm (i.e. green) light.  So what's going on?  Why are plants blatantly rejecting the most abundant kind of light?</span>

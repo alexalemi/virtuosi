@@ -5,6 +5,7 @@ Category: old
 Slug: primes-in-pi
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s1600/repunit.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s320/repunit.png" width="320" /></a></div>
 Recently, I've been concerned with the fact that I don't know many large primes.  Why?  I don't know.  This has led to a search for easy to remember prime numbers.  I've found a few goods ones, namely
 

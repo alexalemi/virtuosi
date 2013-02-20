@@ -5,6 +5,7 @@ Category: old
 Slug: a-very-small-slice-of-pi
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s1600/rhubarb.JPG" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s320/rhubarb.JPG" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Rhubarb pie (Source: Wikipedia)</td></tr></tbody></table>Some people know a <i>suspiciously</i> large number of the digits of pi.  Perhaps you have met one of these people.  They can typically be found hiding behind bushes and under the counters at pastry shops, just... <i>waiting</i>.
 
 At the slightest hint of a mention of pi, they will jump out and start reciting the digits like there's a prize at the end.  After rattling off numbers for a few minutes they abruptly come to an end, grin like an idiot, and walk away.  It is an unpleasant encounter.

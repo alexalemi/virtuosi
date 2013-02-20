@@ -4,6 +4,7 @@ Tags:
 Category: old
 Slug: through-the-looking-glass
 Author: Alemi
+Status: draft
 
 Now that the semester is over, I'd like to look back and reflect on my first year teaching.  
 

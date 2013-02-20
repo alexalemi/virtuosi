@@ -5,6 +5,7 @@ Category: old
 Slug: creating-an-earth
 Author: Brian
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s1600/116.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="200" src="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s200/116.png" width="200" /></a></div>
 A while ago I decided I wanted to create something that looks like the surface of a planet, complete with continents &amp; oceans and all. Since I've only been on a small handful of planets, I decided that I'd approximate this by creating something like the Earth on the computer (without cheating and just copying the real Earth).  
 

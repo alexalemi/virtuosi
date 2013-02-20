@@ -5,6 +5,7 @@ Category: old
 Slug: fun-with-an-iphone-accelerometer
 Author: Bohn
 
+
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/-f7mSv8QGLGs/Tj9_a2qp1SI/AAAAAAAAAEY/Ax5EEw8Cjmg/s1600/accelerometer.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 320px; height: 275px;" src="http://2.bp.blogspot.com/-f7mSv8QGLGs/Tj9_a2qp1SI/AAAAAAAAAEY/Ax5EEw8Cjmg/s320/accelerometer.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5638365357818893602" /></a>
 
 The iPhone 3GS has a built-in <a href="http://pdf1.alldatasheet.com/datasheet-pdf/view/236640/STMICROELECTRONICS/LIS302DL.html">accelerometer, the LIS302DL</a>, which is primarily used for detecting device orientation.  I wanted to come up with something interesting to do with it, but first I had to see how it did on some basic tests.  It turns out that the tests gave really interesting results themselves!  A drop test gave clean results and a spring test gave fantastic data; however a pendulum test gave some problems.

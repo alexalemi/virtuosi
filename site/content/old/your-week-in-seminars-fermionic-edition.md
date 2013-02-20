@@ -5,6 +5,7 @@ Category: old
 Slug: your-week-in-seminars-fermionic-edition
 Author: Yariv
 
+
 Good evening, and welcome to the second edition of YWiS. Last week I took in the full range of seminars, from colloquium to Friday lunch. I don't know if I can say I took in the full content of these talks as well, but let's see what I  learned
 
 <a name='more'></a>

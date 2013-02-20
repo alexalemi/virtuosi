@@ -4,6 +4,7 @@ Tags: i got better
 Category: old
 Slug: futile-feudal-experiments-and-the-importance-of-a-scientific-education
 Author: Corky
+Status: draft
 
 It's that time of year again.  The leaves have turned, the nights come sooner and in a few days hordes of monsters will descend upon the homes of America making demands and thinly veiled threats.  That's right, ladies and gentlemen, it's election season.  And like any good campaign season, this one has been full of lies, distortions, and half-truths offered in the form of slogans, minute long tv ads and 30 second long "debate" responses that do little more than insult the voter's intelligence and make George Washington roll over in his grave.  Don't worry, this is not a political blog [1] and we offer no suggestions on how to vote (early and often?).  However, we do see in this inane politicking a great motivation for an improvement to the way we do science education in this country.
 

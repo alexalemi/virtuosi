@@ -5,6 +5,7 @@ Category: old
 Slug: entropy-and-the-arrow-of-time
 Author: Nik Zhelev
 
+
 <div><span class="Apple-style-span" style="font-family: georgia;"></span>
 <span class="Apple-style-span" style="font-family: georgia;">Somebody I talked to yesterday about what should the topic of my post be suggested that I should write something about cosmology, in particular the Big Bang and the ultimate fate of the universe. Being mostly interested in condensed matter, I am by no means an expert in cosmology (I’ll leave that to Corky). However, I will not abandon the request, but instead, spin it in a more condensed matter direction, by talking about Entropy.
 <a name='more'></a></span></div><div><span class="Apple-style-span" style="font-family: georgia;"></span>

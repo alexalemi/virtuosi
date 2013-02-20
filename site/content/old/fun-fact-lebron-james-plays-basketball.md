@@ -5,6 +5,7 @@ Category: old
 Slug: fun-fact-lebron-james-plays-basketball
 Author: Bohn
 
+
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg"><img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 332px; height: 329px;" src="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg" alt="" border="0" /></a>
 
 Between building airplanes and playfully destroying everyone else in my apartment at Super Smash Brothers, my roommate Nathan brought up an interesting recent fact about LeBron James.  He told me that LeBron scored 11 consecutive field goals (not in football... you know who you are) in one game.  Apparently this was a pretty special event, but how rare is it for a player of LeBron's caliber?  TO THE SCIENCE-MOBILE!

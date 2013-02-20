@@ -5,6 +5,7 @@ Category: old
 Slug: the-end-of-earth-physics-i
 Author: Corky
 
+
 I was reading the Wikipedia page for the Hitchhiker's Guide books the other day and found that it started as a series of radio shows called "The Ends of Earth."  At the end of each episode, the Earth would be destroyed.  Since I feel like this is the best way to end any TV show/movie/book/news broadcast/Mayan calendar, I will shamelessly steal the idea.  <div>
 </div><div>Since this is the first End of the Earth post, we will start small and just consider the boiling off of all the world's oceans.  To be precise, we will consider how much energy it would take to turn all the world's water at 0 degrees Celsius to water vapor at 100 degrees Celsius.</div><div>
 <a name='more'></a>

@@ -5,6 +5,7 @@ Category: old
 Slug: memorial-day-distractions
 Author: Alemi
 
+
 <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s1600/manufactoria.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s200/manufactoria.png" width="195" /></a></div>Summer is upon us.  That means summer research, and online games.  In order to help you through this three day weekend and beyond, I thought I'd share some of the more physics inspired games I've been playing lately to pass the time.
 
 I really enjoy physics based games.  When done right, I think they can not only be fun and engaging but have the opportunity to teach you something.

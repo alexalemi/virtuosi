@@ -5,6 +5,7 @@ Category: old
 Slug: problem-of-the-week-2-solution
 Author: Holmes
 
+
 Thanks to all who sent in solutions! We are very happy with the vast number of responses, and we will put up a leader board shortly!
 
 <span style="font-weight: bold;">Solution</span>

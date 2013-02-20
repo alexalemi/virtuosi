@@ -5,6 +5,7 @@ Category: old
 Slug: proofiness-a-look-into-how-mathematics-relates-to-american-political-life
 Author: DTC
 
+
 <div dir="ltr" style="text-align: left;" trbidi="on"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
 </div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Dearest readers,</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 100%;">
 </span></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 100%;">This is my first post on The Virtuosi, so I thought I’d take a moment to introduce myself.  I’m a first year physics graduate student at Cornell, recently joined after 2 years working as an engineer first at a private firm and then at a national lab.  I myself have had lots of fun following the exploits of my estimable colleagues here on The Virtuosi, and I thought I could bring a new angle to the content here.   I would like to use this space to discuss how science interacts with everyday life in a cultural sense.  How does science appear in popular culture?   How do political or social issues relate back to science?  Those sorts of questions.  (I understand that there are plenty of other resources elsewhere that offer far more intelligent insight into these matters than I can, but in the very least this will give people a chance point them out to me as they yell at me in the forum below.)</span></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">

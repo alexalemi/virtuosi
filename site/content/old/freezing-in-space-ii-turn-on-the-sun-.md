@@ -5,6 +5,7 @@ Category: old
 Slug: freezing-in-space-ii-turn-on-the-sun-
 Author: Jesse
 
+
 Yesterday I considered how long it would take a human to <a href="http://thevirtuosi.blogspot.com/2010/05/freezing-in-space-i-blackest-night.html">freeze in space</a>.  However, I considered only what would happen if you were not absorbing any radiation from nearby sources.  Today we consider what happens if you do have hot objects nearby.  Namely, the sun.  The sun provides a lot of energy, even as far away from it as we are.  It keeps the earth at a comfortable ~20 C, good for us humans, and provides the energy for life on earth, also good for us humans.  That's a lot of energy.  So maybe the sun can keep you alive when you're adrift in space.  Or at least keep you warm.  I still think you'll asphyxiate.
 
 <a name='more'></a>From here on out we're going to assume that we are adrift in space near earth.  You were out for a joyride in that new spaceship of yours and something went horribly wrong.  We could go through a whole song and dance of calculating how much power the sun delivers to the earth, but we won't (if you're interested, let me know, an I can do that later).  Instead, we'll quote the known result, that the sun delivers ~1370W/m^2 in the vicinity of the earth.  To find out what temperature we would cool to we set the power we absorb from the sun equal to the power we radiate

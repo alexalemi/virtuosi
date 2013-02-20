@@ -4,6 +4,7 @@ Tags: old
 Category: old
 Slug: minutes-04-15-08
 Author: Alemi
+Status: draft
 
 We had our first meeting.  It seems like Sunday at 8:00 pm is the best time to meet for those present, starting this Sunday.  Also we threw around an initial set of problems to discuss.
 

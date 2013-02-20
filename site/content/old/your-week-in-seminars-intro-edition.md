@@ -5,6 +5,7 @@ Category: old
 Slug: your-week-in-seminars-intro-edition
 Author: Yariv
 
+
 We've done a lot of talking over the past few months here on the Virtuosi, but one important subject has not come up so far. An issue that is central to the day to day life of the average grad student. The subject of free food.
 
 The average graduate student in an American university shops for food 0.7 times per semester, paying a total of $13.22. He eats an average of three vegetables and one fruit, all at home during Thanksgiving. He turns his oven on once per year while trying to ascertain if the power is out or the light bulb in the kitchen needs to be replaced. The rest of his nutrition is made up entirely of free donuts, bagels and pizza.

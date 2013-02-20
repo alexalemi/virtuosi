@@ -5,6 +5,7 @@ Category: old
 Slug: f-91-revisited
 Author: Corky
 
+
 <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-05FSvjIalzs/T11JuY0apyI/AAAAAAAAAVI/hHndDNPO5CE/s1600/dst_sam.jpeg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="400" src="http://3.bp.blogspot.com/-05FSvjIalzs/T11JuY0apyI/AAAAAAAAAVI/hHndDNPO5CE/s400/dst_sam.jpeg" width="225" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Farmer Uncle Sam...with a rifle.
 (Image Credit: Wikipedia)</td></tr></tbody></table>Today was a sunny exception to the grey overcast rule of weather in Ithaca.  I <i>should</i> be overjoyed by this anomaly, spending the day outside flying a kite or playing frisbee with a border collie in a bandanna. 
 
