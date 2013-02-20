@@ -1,145 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - long day</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - long day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/life-as-an-experimenter-day-one.html">Life as an Experimenter - Day One</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2010-06-17T13:53:00">
-                Thu 17 June 2010
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/life-as-an-experimenter-day-one.html">Life as an Experimenter - Day One</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-17T13:53:00">
+        <i class="icon-calendar"></i>Thu 17 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/chess.html">CHESS</a><a href="../tag/long-day.html">long day</a><a href="../tag/experiment.html">experiment</a></p>
-</footer><!-- /.post-info --><p>I'm an experimental physicist.  If you think this sounds like a job second in glamour only to rock star you would be right.  Just like being a rock star, you have to deal with the people, the shows, the lights, the groupies . . . okay, maybe I'm lying about the groupies.  Unless you're <a href="http://groups.myspace.com/index.cfm?fuseaction=groups.groupprofile&amp;groupID=103575126">Brian Greene</a>.  Also similar to a rock star, no one really knows what it is we do behind the scenes (when we're not touring the nation or publishing papers).  I'd like to pull back that curtain a little bit.</p>
-<p><a name='more'></a>A bit of background.  For this data run we're looking at the structure of protein crystals.  The basic idea is that if you have a bunch of proteins, you can create a crystal out of them using various synthesis techniques.  If they're formed right, they look similar to the crystals you are more familiar with, quartz, diamond, emerald, etc.  We're interested in how the proteins are held in the crystal, that is, what kind of structure the protein crystal has.  I'll talk more about this at some other point.  Our method for examining this is using x rays.  Similar to a medical x-ray, we shoot x-rays at our sample, and look at the transmitted images.  Of course, instead of something like this:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/TBpWZFChfhI/AAAAAAAAABs/Cp-4Rf5ca5Y/s1600/X-ray-hands.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/TBpWZFChfhI/AAAAAAAAABs/Cp-4Rf5ca5Y/s320/X-ray-hands.jpg" width="320" /></a></div>we see something like this:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_SYZpxZOlcb0/TBpWqG2OqLI/AAAAAAAAAB0/SncRJvsz1Uk/s1600/20071104200851!X-ray_diffraction_pattern_3clpro.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_SYZpxZOlcb0/TBpWqG2OqLI/AAAAAAAAAB0/SncRJvsz1Uk/s320/20071104200851!X-ray_diffraction_pattern_3clpro.jpg" /></a></div>which is a little bit harder to interpret.  Nevertheless, we've got some pretty nifty software that will do the job for us.  The unfortunate part about using x-rays is that to produce research grade x-rays takes really big expensive facilities, so we have a limited amount of time we get to use them for.  Right now, we've got 48 hours of beam time, so we want to take data for as many of those 48 hours as possible.  For those interested, we're using CHESS at Cornell, station F1.</p>
-<p>Wednesday, 6/16
-<b>9:30am </b>- Get up.  I was warned by the postdoc in my group to sleep in as much as I could.  Our data run starts at noon, and goes for 48 hours.  Who knows how much sleep we'll get in those 48 hours.  Our beam time starts at noon today.  I eat breakfast, and realize that I've left my lab notebook in the lab.  I need to swing by there and pick it up.</p>
-<p><b>10:52</b> - Out of the house.  My goal is to be at CHESS by 11.  As this is my first time using the facility,  I need to get a safety tour before I can use the beam line.  I hope on my bike and speed towards to the physics building.</p>
-<p><b>10:54</b> - Downpour.  I get soaked.  I'm wearing a rain jacket, but my jeans and shoes are soaked through.</p>
-<p><b>10:55 </b>- A pocket on my backpack comes unzipped, dumping my water bottle (and, as I find out later, my bike lock) into the road.  I stop and retrieve the water bottle.</p>
-<p><b>11:02</b> - Arrive at physics building.  Hasten to the lab, dripping water.  Grab notebook.  Receive call from Ryan, another graduate student in the lab, saying he's at CHESS, and ready to take the safety tour when I am.</p>
-<p><b>11:12 </b> - Arrive at CHESS.  Realize I don't have my bike lock anymore.  Call Ryan and tell him to take the tour without me, I'll get to it later.  Hop on bike, ride route in reverse.  Find lock right where water bottle fell out.</p>
-<p><b>11:25</b> - Back at CHESS.  Check in.  Get given safety tour, radiation badge.  Meet up with Ryan.  Good times.</p>
-<p><b>11:59</b> - Matt, the postdoc in my lab, with experience at CHESS and the samples and equipment, arrives.</p>
-<p><b>12:00pm</b> - Beam time starts.  We're not ready.  For this run, we're using liquid helium to cool our sample.  We have to get that set up first.</p>
-<p><b>1:45</b> - With the aid of Ulrich, one of the Research Associates at CHESS, we have the liquid helium stream set up to cool our sample.</p>
-<p><b>2:00 </b>- Matt trains Ryan and myself how to mount samples for the beam.</p>
-<p><b>2:15</b> - Matt mounts a sample, and trains Ryan and myself how to operate beam controls.</p>
-<p><b>2:30 </b>- Start taking data.</p>
-<p><b>2:45 </b>- Crystal turns out to be not very crystalline.  Rinse and repeat.</p>
-<p><b>4:00</b> - After 7 increasingly frustrating attempts with bad crystals, the 8th turns out to give us a good signal.  Looks like we're back in business.</p>
-<p><b>4:15</b> - Getting anomalous signals from our sample.  Every 5th image has about have the intensity of the others.  Also getting some weird tiling in the image.  No one knows what's going on.  We call in Ulrich and the beam operator.</p>
-<p><b>4:30 </b>- In the midst of trying to resolve the anomalous signals, the computer we're running the experimental control software on goes down.  Requires calling in more tech support.</p>
-<p><b>4:50 </b>- I take a break to eat.  First food since breakfast.  Two sandwiches and a half-frozen banana (kept it near the back of the fridge in the CHESS lounge.  I learned my lesson).</p>
-<p><b>5:10</b> - Food eaten.  Computer back up.  Data taking ready.  Still no resolution for the anomalous signal.  While the experts continue to trouble shoot, Matt attempts to figure out if we can run any of our experiments with the data as bad as it currently is.</p>
-<p><b>5:45</b> - Still no solution.  Matt has determined that none of our planned experiments will work with the data as bad as it is.  Suspicion of a bad detector (a million dollar piece of equipment).  Morale is low.</p>
-<p><b>8:00</b> - After continued trouble shooting, Ulrich is convinced that the problem is a bad shutter for the x ray beam (just like a camera, you achieve a certain image exposure by letting the beam hit the sample/detector for a certain amount of time).</p>
-<p><b>8:30</b> - Technician arrives to swap shutters.  Operation successful!  Data looks good.</p>
-<p><b>9:00</b> - After some test runs, we start taking real data.  Morale is high.</p>
-<p><b>11:15</b> - Data coming in with no sign of stopping.  Ryan and I head home.  Matt has the night shift, we're to relieve him at 8 the next morning.</p>
-<p><b>11:20 </b>- Discover that my bike has somehow broken while sitting on the bike rack.  The collar that keeps the handlebars in the frame is loose, and the handlebars no longer connect with the front wheel.  Bike is unrideable.</p>
-<p><b>11:25</b> - Decide bike is unfixable with current tools.  I have to walk it home.</p>
-<p><b>11:40</b> - Home.  Attempt to fix bike. Discover none of my wrenches are quite large enough.</p>
-<p><b>11:45 </b>- Food.  Microwave leftovers.  Discover one of my housemates has left fresh chocolate chip cookies on the counter for the rest of the house.  Bless her a thousand times over and eat two.</p>
-<p><b>
-</b>
-Thursday 6/17
-<b>12:15am</b> - Set alarm for 7:15am, and hop into bed.</p><p>There are <a href="../posts/life-as-an-experimenter-day-one.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<span class="label">Tags</span>
+	<a href="../tag/chess.html"><i class="icon-tag"></i>CHESS</a>
+	<a href="../tag/long-day.html"><i class="icon-tag"></i>long day</a>
+	<a href="../tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I'm an experimental physicist. If you think this sounds like a job second in glamour only to rock star you would be right. Just like being a rock star, you have to deal with the people, the shows, the lights, the groupies . . . okay, maybe I'm lying about the groupies. Unless you're Brian Greene. Also similar to a rock star, no one really knows what it is we do behind the scenes (when we're not touring the nation or publishing papers). I'd like to pull back that curtain a little bit. A bit of background. For this data run we're looking at the structure of protein crystals. The basic idea is that if you have a bunch of proteins, you can create a crystal out of them using various synthesis techniques. If they're formed right, they look similar to the crystals you are more ...
+                        <a class="btn primary xsmall" href="../posts/life-as-an-experimenter-day-one.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -148,5 +724,10 @@ Thursday 6/17
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,135 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - manufactoria</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - manufactoria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/memorial-day-distractions.html">Memorial Day Distractions</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2010-05-31T13:12:00">
-                Mon 31 May 2010
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/memorial-day-distractions.html">Memorial Day Distractions</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-31T13:12:00">
+        <i class="icon-calendar"></i>Mon 31 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/manufactoria.html">manufactoria</a><a href="../tag/games.html">games</a><a href="../tag/fantastic-contraption.html">fantastic contraption</a><a href="../tag/blotto.html">blotto</a><a href="../tag/memorial-day.html">memorial day</a></p>
-</footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s1600/manufactoria.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s200/manufactoria.png" width="195" /></a></div>
 
-<p>Summer is upon us.  That means summer research, and online games.  In order to help you through this three day weekend and beyond, I thought I'd share some of the more physics inspired games I've been playing lately to pass the time.</p>
-<p>I really enjoy physics based games.  When done right, I think they can not only be fun and engaging but have the opportunity to teach you something.</p>
-<p><a name='more'></a></p>
-<h3>Colonel Blotto </h3>
+<span class="label">Tags</span>
+	<a href="../tag/manufactoria.html"><i class="icon-tag"></i>manufactoria</a>
+	<a href="../tag/games.html"><i class="icon-tag"></i>games</a>
+	<a href="../tag/fantastic-contraption.html"><i class="icon-tag"></i>fantastic contraption</a>
+	<a href="../tag/blotto.html"><i class="icon-tag"></i>blotto</a>
+	<a href="../tag/memorial-day.html"><i class="icon-tag"></i>memorial day</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Summer is upon us. That means summer research, and online games. In order to help you through this three day weekend and beyond, I thought I'd share some of the more physics inspired games I've been playing lately to pass the time. I really enjoy physics based games. When done right, I think they can not only be fun and engaging but have the opportunity to teach you something. Colonel Blotto First up is a web Colonel Blotto tournament that I coded up, which you can find here. Colonel Blotto is a silly little game theoretic game where you try and assign one hundred soldiers between 10 different fields. Opponents do the same. Neither side knows what the other side is going to do. The game turns out to have some very interesting dynamics. Apparently for more than 12 soldiers, the game does not have a deterministic optimal ...
+                        <a class="btn primary xsmall" href="../posts/memorial-day-distractions.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-<p>First up is a web Colonel Blotto tournament that I coded up, which you can find <a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php">here</a>.  <a href="http://en.wikipedia.org/wiki/Colonel_Blotto">Colonel Blotto</a> is a silly little game theoretic game where you try and assign one hundred soldiers between 10 different fields.  Opponents do the same.  Neither side knows what the other side is going to do.  The game turns out to have some very interesting dynamics.  Apparently for more than 12 soldiers, the game does not have a deterministic optimal strategy, so you're guess is as best as mine for how to beat the other players in the pool.  Its worth checking out.  Feel free to try your hand at the pool.  Once the participation has settled down, I want to try and analyze the strategies that people employ and see if I can do any interesting statistical physics with it.</p>
-<p>I spent a good chunk of this weekend working out the bugs, so it should run smoothly now, but be sure to let me know if you discover any errors.</p>
-<h3>Manufactoria</h3>
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
 
-<p>This game has been sucking up a lot of my evenings lately.  <a href="http://pleasingfungus.com/">Manufactoria</a> is one of the most pleasing puzzle games I've played in a long time.  It pretends to be about selecting robots that meat specification, but really its about programming finite state machines.  I've really enjoyed this game a lot.  It has a real engineering type bent, but unlike a lot of games that require critical thinking to solve a puzzle, once you know how to solve it, it isn't tedious to do so.  A great game, and I highly recommend it.  One of the best games I've played in a while, although maybe I'm so into it because I'm reading through <a href="http://books.google.com/books?id=-olQAAAAMAAJ&amp;q=feynman+lectures+on+computation&amp;dq=feynman+lectures+on+computation&amp;ei=qOoDTIntCqCszQSc-cyODA&amp;cd=1">The Feynman Lectures on Computation</a> right now.  He gives as exercises very similar problems to the ones in the game.  Its also in regards to these types of problems specifically that he gives <a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html">this quote</a>.</p>
-<p>A few tips. (1) You can use asdf or the arrow keys to rotate the pieces. (2) Space bar switches the chirality of the gates (swaps red for blue). (3) In order to round corners, you just make the conveyors meet at a T (4) You don't have to enter the gates on the open side.  (5) During tests, move the slider in the bottom left to the right to speed up time.</p>
-<p>If you manage to solve all of the puzzles, three bonus ones will appear at the bottom.</p>
-<h3>Fantastic Contraption</h3>
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
 
-<p>This one is old.  Its been on the internet for a while now, but if you haven't seen 
-<a href="http://www.kongregate.com/games/inXile_Ent/fantastic-contraption?acomplete=fantastic">Fantastic Contraption</a> you should check it out.  Its a very free form game.  You need to get the pink block into the goal, but in order to do so, you can build any contraption you desire out of wheels and sticks.  Its a great time.  Most impressive of course is the level that some kids have taken it to.  Once you've played with the game a bit, be sure to search <a href="http://www.youtube.com/results?search_query=fantastic+contraption&amp;page=&amp;utm_source=opensearch">youtube for fantastic contraption</a>, and marvel at the engineering insight some of these kids show.</p>
-<p>I like this game a lot, but it can get a bit tedious to get your design to work out just right.</p>
-<h3>Splitter 2</h3>
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
 
-<p>This one is neat.  As a kid I read the <a href="http://en.wikipedia.org/wiki/His_Dark_Materials">His Dark Materials</a> trilogy (which started with <a href="http://en.wikipedia.org/wiki/Golden_Compass">The Golden Compass</a>).  Anyway the second book in the series is <a href="http://en.wikipedia.org/wiki/The_Subtle_Knife">The Subtle Knife</a> which stars a knife, the subtle knife in fact, which can cut through anything like butter, and I mean anything, including the fabric between worlds.  </p>
-<p>This led to many day dreams as a kid, and I've spent a lot of time thinking about what a knife like that could actually do.  Anyway, <a href="http://www.kongregate.com/games/CasualCollective/splitter-2">Splitter 2</a> is a puzzle game that works along those lines.  You have to get a ball do the goal, but do so by cutting through pieces of wood on the stage.  A neat game.  Worth a look.</p>
-<h3>Phun</h3>
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
 
-<p>While I'm hear, I can't help but mention <a href="http://www.phunland.com/wiki/Home">Phun</a>.  While not strictly a game. Phun is a physics sandbox similar in style to Fantastic Contraption, but with a whole lot more features.   This one is loads of fun to play with, and I think could really serve as a learning tool for some classes.  Worth the download.</p>
-<p>If you know of any other physics type games, drop them in the comments.  I'm always on the look out for good ones.</p><p>There are <a href="../posts/memorial-day-distractions.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+</ul>        </div><!--/.well -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+      </div><!--/row-->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -138,5 +726,10 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

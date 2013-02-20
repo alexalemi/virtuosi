@@ -1,150 +1,748 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - math</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html">Proofiness: A look into how mathematics relates to American political life</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2012-03-06T14:37:00">
-                Tue 06 March 2012
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html">Proofiness: A look into how mathematics relates to American political life</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-06T14:37:00">
+        <i class="icon-calendar"></i>Tue 06 March 2012
+</abbr>
+<span class="label">By</span>
+<a href="../author/dtc.html"><i class="icon-user"></i>DTC</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/dtc.html">DTC</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/census.html">Census</a><a href="../tag/culture.html">culture</a><a href="../tag/elections.html">elections</a><a href="../tag/proofiness.html">Proofiness</a><a href="../tag/math.html">math</a><a href="../tag/politics.html">politics</a></p>
-</footer><!-- /.post-info --><div dir="ltr" style="text-align: left;" trbidi="on"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Dearest readers,</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 100%;">
-</span></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 100%;">This is my first post on The Virtuosi, so I thought I’d take a moment to introduce myself.  I’m a first year physics graduate student at Cornell, recently joined after 2 years working as an engineer first at a private firm and then at a national lab.  I myself have had lots of fun following the exploits of my estimable colleagues here on The Virtuosi, and I thought I could bring a new angle to the content here.   I would like to use this space to discuss how science interacts with everyday life in a cultural sense.  How does science appear in popular culture?   How do political or social issues relate back to science?  Those sorts of questions.  (I understand that there are plenty of other resources elsewhere that offer far more intelligent insight into these matters than I can, but in the very least this will give people a chance point them out to me as they yell at me in the forum below.)</span></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Enough intro, here begins my very first blog post:</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Being interested in how science is communicated to the public, I am an avid reader of popular science.   While academic types sometimes dismiss this kind of writing as shallow or otherwise uninteresting, I think science writers perform a very important function serving as a way to convey information about conceptually challenging topics to a general audience.   At their best, I find that these books serve as examples for how I can communicate my own ideas better, and in addition challenge my understanding of how science relates back to society in general.</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"></div><a name='more'></a>
-<div class="MsoNormal" style="margin-bottom: 0.0001pt;">This being said, I cannot recommend Charles Seife’s <i>Proofiness</i> enough.  The basic premise of this book is to explore the way that good mathematics is hijacked, twisted, or ignored in everyday life, and the ugly consequences of the tendency to misunderstand numbers and measurements.</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Seife gives a number of fascinating examples of the ways in which numbers and math connect to American democracy.   American government functions through representation, and so the “<a href="http://www.archives.gov/exhibits/charters/constitution_transcript.html">enumeration</a>” of citizens and their opinions through the Census and elections is an essential part of the democratic process.  This “enumeration” is a counting measurement, subject to errors like any other.   And yet, the laws that govern how Censuses and elections are run ignore this fact.  Seife’s discussion of elections (and in particular <i>Bush v. Gore</i>) is fascinating, but I won’t spoil that here.   Here’s my take on the discussion of the Census that appears in <i>Proofiness</i>:</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">Consider a (vague) physics experiment.   I want to know how many particles are inside a box.  To figure this out, I have a detector that goes *ping* every time a particle passes through it.  I set up my detector inside the box and count the number of times that it goes *ping* in a certain amount of time.  I can then use that count to guess at the number of particles that I have in my box.   My measurement will let me estimate N to within some margin of error.  This process is perhaps unnecessary if I have only five particles in my box (in which case, I might just open the box and count what I see inside), but if I have 300 million particles in my box, it would be totally impractical for me to reach into the box 300 million times and count each one individually.</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">We can consider the Census to be just like this physics experiment.   I have N inhabitants (particles) living in my country (box), and I can use my detector (census replies) to count a certain number of people.  In principle, using well-understood statistical techniques of regression and error analysis, I can estimate to within a very good margin of error how many people live in each region of the country.   Instead, what the Census requires is that we reach inside the box (send representatives to every household that doesn’t reply by mail) and count every single person.   The whole process ignores the fact that even if we send a representative to every single household there will still be some margin of error in our counting measurements.   No such measurement can be made without errors.  </div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">The consequences of ignoring these errors, says Seife, can be that we waste money in attempting the impossible and trying to count everybody.  From a civic-minded perspective, this attitude towards the perfection of the Census can backfire.  For example, if undercounting occurs (i.e., certain households do not respond for some reason), the Census has no mechanism for correcting that miscount.   Counter-intuitively, the Census laws actually prohibit the use of any statistical techniques to correct miscounting.   The result is that those slow to respond are ignored and not taken into account when allotting seats in the legislature to represent them.</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-</div><div class="MsoNormal" style="margin-bottom: 0.0001pt;"><o:p> </o:p></div><i>Proofiness</i> is a fascinating book and a fun read, and I recommend you all look it up.  In addition, it serves as an excellent example of science writing that helped me to rethink how scientific ideas relate to everyday life.  I hope to invite consideration of these topics here and in future posts.
 
-If you want to know more about the inspiration for this post, go <a href="http://journalism.nyu.edu/faculty/charles-seife/">here</a>.</div><p>There are <a href="../posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<span class="label">Tags</span>
+	<a href="../tag/census.html"><i class="icon-tag"></i>Census</a>
+	<a href="../tag/culture.html"><i class="icon-tag"></i>culture</a>
+	<a href="../tag/elections.html"><i class="icon-tag"></i>elections</a>
+	<a href="../tag/proofiness.html"><i class="icon-tag"></i>Proofiness</a>
+	<a href="../tag/math.html"><i class="icon-tag"></i>math</a>
+	<a href="../tag/politics.html"><i class="icon-tag"></i>politics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Dearest readers, This is my first post on The Virtuosi, so I thought I’d take a moment to introduce myself. I’m a first year physics graduate student at Cornell, recently joined after 2 years working as an engineer first at a private firm and then at a national lab. I myself have had lots of fun following the exploits of my estimable colleagues here on The Virtuosi, and I thought I could bring a new angle to the content here. I would like to use this space to discuss how science interacts with everyday life in a cultural sense. How does science appear in popular culture? How do political or social issues relate back to science? Those sorts of questions. (I understand that there are plenty of other resources elsewhere that offer far more intelligent insight into these matters than I can, but in the very least this ...
+                        <a class="btn primary xsmall" href="../posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/four-fantastic-books-3-of-which-are-free-.html">Four Fantastic Books (3 of which are free)</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-10-16T00:50:00">
+        <i class="icon-calendar"></i>Sat 16 October 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/four-fantastic-books-3-of-which-are-free-.html" rel="bookmark"
-                           title="Permalink to Four Fantastic Books (3 of which are free)">Four Fantastic Books (3 of which are free)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2010-10-16T00:50:00">
-                Sat 16 October 2010
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/book-review.html">book review</a><a href="../tag/fun.html">fun</a><a href="../tag/math.html">math</a><a href="../tag/bad-physics.html">bad physics</a></p>
-</footer><!-- /.post-info -->                <p><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248" /></a>Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
-<h3>Street Fighting Mathematics - Sanjoy ...</h3></p>
-                <a class="readmore" href="../posts/four-fantastic-books-3-of-which-are-free-.html">read more</a>
-                <p>There are <a href="../posts/four-fantastic-books-3-of-which-are-free-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
-        Page 1 / 1
-    </p>
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+<span class="label">Tags</span>
+	<a href="../tag/book-review.html"><i class="icon-tag"></i>book review</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/math.html"><i class="icon-tag"></i>math</a>
+	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Well, we just had our fall break, which means I get a bit of a break, coincidently enough. Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them. Street Fighting Mathematics - Sanjoy Mahajan The art of educated guessing and opportunistic problem solving Link to MIT Press Site You know that feeling you get when it's the second half of January and you put on new clothes that have just come out of the dryer? This book is like a cross between that and a kick in the face. The warm fuzzy-clothes-out-of-the-dryer feeling will come from the realization that you can wield unsurmountable power. The kick in the face will come when you realize you're not doing it yet. The premise of the book is something along the lines of: We ...
+                        <a class="btn primary xsmall" href="../posts/four-fantastic-books-3-of-which-are-free-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -153,5 +751,10 @@ If you want to know more about the inspiration for this post, go <a href="http:/
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

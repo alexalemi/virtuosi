@@ -1,136 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - Fosbury flop</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - Fosbury flop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/physics-in-sports-the-fosbury-flop.html">Physics in Sports: The Fosbury Flop</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2011-08-01T01:30:00">
-                Mon 01 August 2011
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/physics-in-sports-the-fosbury-flop.html">Physics in Sports: The Fosbury Flop</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-08-01T01:30:00">
+        <i class="icon-calendar"></i>Mon 01 August 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/bohn.html"><i class="icon-user"></i>Bohn</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/bohn.html">Bohn</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/bohn.html">Bohn</a><a href="../tag/sports.html">sports</a><a href="../tag/high-jump.html">high jump</a><a href="../tag/fosbury-flop.html">Fosbury flop</a><a href="../tag/physics-in-sports.html">physics in sports</a></p>
-</footer><!-- /.post-info --><p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s1600/Fosbury.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 216px; height: 154px;" src="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s320/Fosbury.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635664665471023682" /></a>Physics has greatly influenced the progress of most sports.  There have been continual improvements in equipment for safety or performance as well as improvements in technique.  I'd like to talk about some physics in sports over a series of posts.  Here I'll talk about a technique improvement in High Jumping, the Fosbury Flop.</p>
-<p><a name='more'></a></p>
-<p>The Fosbury Flop came into the High Jumping scene in the 1968 Olympics, where <a href="http://en.wikipedia.org/wiki/Dick_Fosbury">Dick Fosbury</a> used the technique to win the gold medal.  The biggest difference between the Flop and previous methods is that the jumper goes over the bar upside down (facing the sky).   This allows the jumper to bend their back so that their arms and legs drape below the bar which lowers the center of mass (See the picture above).  Here is a video of the <a href="http://www.youtube.com/watch?v=_bgVgFwoQVE">Fosbury Flop</a> executed very well.</p>
-<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s1600/flopdiagram.jpg"><img style="float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 268px; height: 174px;" src="http://1.bp.blogspot.com/-UYbUVO1G8JM/TjYpGgCGOxI/AAAAAAAAADQ/wKjdCsuwLB0/s320/flopdiagram.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635737175355439890" /></a>Let’s assume Dick Fosbury is shaped like a semi-circle as he moves over the bar.  The bar is indicated as a red circle, as this is a side view.  From this diagram, we can guess his center of mass is probably near the marked 'x', since most of his mass is below the bar.  </p>
-<p>It is important to recall the definition of center of mass, which is the average location of all of the mass in an object.  </p>
-<p><mathjax>$$ \vec{R} = \frac{1}{M} \int \vec{r} dm $$</mathjax></p>
-<p>Note that this is a vector equation, and the integral should be over all of the mass elements.  This integral gets easier because I'm going to assume that Dick Fosbury is a constant density semi-circle.  This means that </p>
-<p><mathjax>$$ M = C*h $$</mathjax>  </p>
-<p>where C is a constant equal to the ratio of the mass to the height, and </p>
-<p><mathjax>$$dm = C * dh $$</mathjax>.</p>
-<p>This is a vector equation, so in principle we need to solve the x integral and the y integral; however, due to the symmetry about the y-axis, the x integral is zero.  Finally we'll convert to polar coordinates, leaving us with:</p>
-<p><mathjax>$$ y = \frac{1}{C \pi R} \int_0^\pi R\sin{\theta} C R d\theta = \frac{1}{C \pi R} R (-\cos{\theta}) C R \bigg|_0^\pi = \frac{2R}{\pi} $$</mathjax></p>
-<p>Ok, so this is the y-coordinate of the center of mass of our jumper relative to the bottom of the semi-circle.  Now we need to calculate relative to the top of the bar, which is roughly the location of the top of the circle.  We just need to subtract from R:</p>
-<p><mathjax>$$ R - \frac{2}{\pi} R = R * (1 - \frac{2}{\pi}) = \frac{h}{\pi} * (1 - \frac{2}{\pi}) $$</mathjax></p>
-<p>Now Dick Fosbury was 1.95m tall, which gives us a distance of 22.6 cm BELOW the bar!  Of course he's not a semi-circle, but this isn't a terrible approximation, as you can see from the video linked above.  Further, wikipedia mentions that some proficient jumpers can get their center of mass 20 cm below the bar, which matches pretty well with our guess.</p>
-<p>A nifty technique in physics is looking at the point-particle system, which allows us to see the underlying motion of a system.  If you’re not familiar with this method, you collect any given number of objects and replace them with a single point at the center of mass of the object.  We can use energy conservation now for our point-mass instead of the entire body of the jumper.<a href='#note1'><sup>note</sup></a></p>
-<p>In this case, we can simply deal with the center of mass motion of the jumper.  All of my kinetic energy will be converted to gravitational potential energy.  Again this is an approximation because some energy is spent on forward motion, as well as the slight twisting motion which I'll ignore.</p>
-<p><mathjax>$$E = \frac{1}{2} mv^2 = mgh$$</mathjax> </p>
-<p>Now let’s look at some data.  Here is a plot of each world record in the high jump.  <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s1600/worldrecords.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 400px; height: 272px;" src="http://3.bp.blogspot.com/-DVfHxJG5b-U/TjY-0WQ1YkI/AAAAAAAAADg/GDFfNr0KiBo/s400/worldrecords.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5635761052751061570" /></a>The blue data show jumps before the Flop, and the red data show records after the Flop.  <strong>Note: In 1978, the straddle technique broke the world record, being the only non-flop technique to do so since 1968.  Thanks Janne!</strong>  The Flop was revealed in 1968, so I’ll assume that all jumps before this year used a method where the center of mass of the jumper was roughly even with the bar, while all jumps after this year used the flop (see the previous note).  Clearly something happened just before the Flop came out, and this is something called <a href="http://en.wikipedia.org/wiki/Straddle_technique">the Straddle technique</a>.</p>
-<p>I want to know the percent difference in the initial energies required, so I will calculate</p>
-<p><mathjax>$$ 100\% * \frac{E_0-E_f}{E_0} = 100\% * \frac{mgh_0-mgh_f}{mgh_0} = 100\% * \frac{h_0-h_f}{h_0} $$</mathjax></p>
-<p>where </p>
-<p><mathjax>$$E_0$$</mathjax> is the initial energy without the force, err the flop, and </p>
-<p><mathjax>$$ E_f $$</mathjax> is the initial energy using the flop.</p>
-<p>Since we are using the point-particle system, the gravitational potential energy only cares about the center of mass of the flopper, and we need to know the height of the center of mass for a 2.45m flop, which is the current world record.</p>
-<p>This corresponds to a flop center of mass height of 2.25m, which gives us an 8.2% decrease in energy using the flop (versus a method where the center of mass is even with the bar)!  The current world record is roughly 20 cm higher than it was when the flop came out.  This could be due to athletes getting stronger, but this physics tells us that some of the height increase could have been from the technique change.  </p>
-<p>To sum up, the high jump competition, along with many other sports, is being exploited by physics!</p>
-<p><a name='note1'></a>[note] Here we're relying on the center of mass being equal to something called the center of gravity of the jumper.  The center of mass is as defined above.  The center of gravity is the average location of the gravitational force on the body.  This happens to be the same as the center of mass if you assume we are in a uniform gravitational field, which is essentially true on the surface of the Earth.</p><p>There are <a href="../posts/physics-in-sports-the-fosbury-flop.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<span class="label">Tags</span>
+	<a href="../tag/bohn.html"><i class="icon-tag"></i>Bohn</a>
+	<a href="../tag/sports.html"><i class="icon-tag"></i>sports</a>
+	<a href="../tag/high-jump.html"><i class="icon-tag"></i>high jump</a>
+	<a href="../tag/fosbury-flop.html"><i class="icon-tag"></i>Fosbury flop</a>
+	<a href="../tag/physics-in-sports.html"><i class="icon-tag"></i>physics in sports</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Physics has greatly influenced the progress of most sports. There have been continual improvements in equipment for safety or performance as well as improvements in technique. I'd like to talk about some physics in sports over a series of posts. Here I'll talk about a technique improvement in High Jumping, the Fosbury Flop. The Fosbury Flop came into the High Jumping scene in the 1968 Olympics, where Dick Fosbury used the technique to win the gold medal. The biggest difference between the Flop and previous methods is that the jumper goes over the bar upside down (facing the sky). This allows the jumper to bend their back so that their arms and legs drape below the bar which lowers the center of mass (See the picture above). Here is a video of the Fosbury Flop executed very well. Let’s assume Dick Fosbury is shaped like a semi-circle ...
+                        <a class="btn primary xsmall" href="../posts/physics-in-sports-the-fosbury-flop.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -139,5 +726,10 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

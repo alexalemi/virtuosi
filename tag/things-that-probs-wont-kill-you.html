@@ -1,166 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - things that probs wont kill you</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - things that probs wont kill you</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/betelgeuse-betelgeuse-betelgeuse-.html">Betelgeuse, Betelgeuse, Betelgeuse!</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2011-11-05T01:25:00">
-                Sat 05 November 2011
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/betelgeuse-betelgeuse-betelgeuse-.html">Betelgeuse, Betelgeuse, Betelgeuse!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-11-05T01:25:00">
+        <i class="icon-calendar"></i>Sat 05 November 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/things-that-probs-wont-kill-you.html">things that probs wont kill you</a><a href="../tag/betelgeuse.html">betelgeuse</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
-</footer><!-- /.post-info --><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s1600/betelgeuse.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="212" src="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s320/betelgeuse.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A very cold person points out Betelgeuse</td></tr></tbody></table>
 
-<p><i>Betelgeuse is a massive star at the very end of its life and could explode any second now!</i>  Every time I hear that I get really <i>really</i> excited.  Like a kid in a candy store that's about to see a star blow up like nobody's business.  This giddiness will last for a solid minute before I realize that "any second now" is taken on astronomical timescales and roughly translates to "sometime in the next million years maybe possibly."  Then I feel sad.</p>
-<p>But you know what always cheers me up?  Calculating things!  Hooray!  So let's take a look at the ways Betelgeuse could end its life (even if it's not going to happen tomorrow) and how these would affect Earth.</p>
-<p><a name='more'></a>First, a little background.  Betelgeuse is the bright orangey-red star that sits at the head/armpit of Orion.  It is one of the <a href="http://en.wikipedia.org/wiki/List_of_brightest_stars">brightest</a> stars in the night sky.  Its distance has been measured by the <i><a href="http://en.wikipedia.org/wiki/Hipparcos">Hipparcos</a> </i>satellite to be about 200 parsecs [1] from Earth (about 600 light years).  Betelgeuse is at least 10 times as massive as our Sun and has a diameter that would easily accomodate the orbit of Mars.  In fact, the star is big enough and close enough that it can actually be spatially resolved by the Hubble Space Telescope!  Being so big and bright, Betelgeuse is destined to die young, going out with a bang as a <a href="http://en.wikipedia.org/wiki/Supernova#Core_collapse">core-collapse</a> supernova.  This massive explosion ejects a good deal of "star stuff" into interstellar space [2] and leaves behind either a <a href="http://en.wikipedia.org/wiki/Neutron_star">neutron star</a> or a <a href="http://en.wikipedia.org/wiki/Black_hole">black hole</a>. </p>
-<p>Alright, now that we're all caught up, let's turn our focus on this "massive explosion" bit.  What kind of energy scale are we talking about if Betelgeuse blows up?  Well, a pretty good upper bound would be if all of the star's mass (10 solar masses worth!) were converted directly to energy, so</p>
-<p><mathjax>$$ E_{max} = mc^2 = 10M_{\odot}\times\left(\frac{2\times10^{30}~\mbox{kg}}{1~M_{\odot}}\right)\times \left(3\times10^8~\mbox{m/s}\right)^2 $$</mathjax></p>
-<p>which is about</p>
-<p><mathjax>$$ E_{max} \sim 10^{48}~\mbox{J} $$</mathjax></p>
-<p>and that's nothing to shake a stick at.  But remember, this is if the <i>entire star</i> were converted directly to energy, and that would be hard to do.  Typical fusion efficiencies are about ~1% [3], so let's say a reasonable estimate for the total nuclear energy available is</p>
-<p><mathjax>$$ E_{nuc} \sim \eta_{f} \times E_{max} \sim 10^{-2} \times 10^{48}~\mbox{J} \sim 10^{46}~\mbox{J}. $$</mathjax></p>
-<p>This is the total energy released by a typical supernova.  As it turns out though, 99% of this energy is carried away in the form of neutrinos and only about 1% is carried away in photons.  Since we are mainly concerned with how this explosion will affect Earth, and the neutrinos will just pass on by, we will only consider the 1% of energy released in photons that would reasonably interact with Earth.  That gives us</p>
-<p><mathjax>$$ E_{ph} \sim 0.01 \times E_{nuc} \sim 10^{44}~\mbox{J}. $$</mathjax></p>
-<p>Neato, so that's the total amount of energy released in a supernova in the form of photons.  How much of this energy would be deposited at the Earth if Betelgeuse exploded?  Well, if the energy is deposited isotropically (that is, the same in all directions), then the fluence (or time integrated energy flux) is given by</p>
-<p><mathjax>$$ F_{ph} = \frac{E_{ph}}{4\pi d^2}. $$</mathjax></p>
-<p>All this is saying is that the total energy release by the supernova spreads out uniformly over a sphere of radius d, so the fluence will give us the amount of energy deposited in each square meter of that sphere (the units of fluence here are J/m^2).  The total energy deposited on Earth is then</p>
-<p><mathjax>$$ E_{\oplus} = F_{ph} \times \pi R^2_{\oplus}. $$</mathjax></p>
-<p>Hot dog!  Let's plug in some numbers, already.  The total energy deposited on the Earth by a symmetrically exploding Betelgeuse at a distance of d = 200 pc (where 1 pc = 3 * 10^16 m) is</p>
-<p><mathjax>$$E_{\oplus}=\frac{E_{ph}}{4\pi d^2}\times\pi R^2_{\oplus}\sim 10^{19}~\mbox{J}\left(\frac{E_{ph}}{10^{44}~\mbox{J}}\right)\left(\frac{d}{200~\mbox{pc}}\right)^{-2}.$$</mathjax></p>
-<p>Well, 10^19 J certainly <i>seems</i> like a lot of energy.  In fact, it is roughly the amount of energy contained in the entire nuclear arsenal of the United States [4].  But it is spread over the entire atmosphere.  Is there a way to gauge how this would affect life on Earth?  We could see how much it would heat up the atmosphere using specific heats:</p>
-<p><mathjax>$$ E = m_{atm}c_{air}\Delta T $$</mathjax></p>
-<p>where c is the specific heat of air (~10^3 J per kg per K).  Oops, looks like we need to know the mass of the atmosphere.  But we can figure this out, the answer is pushing right down on our heads!</p>
-<p>We know the pressure at the surface of the Earth (1 atm = 101 kPa) and that pressure is just the result of the weight of the atmosphere pushing down on us.  Since pressure is just force / area, we have</p>
-<p><mathjax>$$ P = F/A = m_{atm}g / A_{\oplus} $$</mathjax></p>
-<p>So</p>
-<p><mathjax>$$ m_{atm} = \frac{P\times4\pi R^2_{\oplus}}{g}=\frac{10^5~\mbox{Pa}\times4\pi (6\times10^6~\mbox{m})^2}{9.8~\mbox{m/s}^2}\approx4\times10^{18}~\mbox{kg}.$$</mathjax></p>
-<p>Neato, gang.  So we could see a temperature rise of about</p>
-<p><mathjax>$$ \Delta T = \frac{E_{ph}}{m_{atm}c_{air}}=\frac{10^{19}~\mbox{J}}{4\times10^{18}~\mbox{kg}\times10^3~\mbox{J/ kg K}}\approx0.003~\mbox{K}, $$</mathjax></p>
-<p>or three one-thousandths of a degree.  Remember, too, that this will be an upper bound since we are assuming that all this energy is deposited into the atmosphere before it has a chance to cool.  In fact, if the energy is deposited over the course of hours or days, this value will be much less. </p>
-<p>So it looks like we've wrapped this thing up:  Betelgeuse exploding will most certainly not put the Earth in any danger.  Or did we?  We have considered the case of a symmetric supernova, but there's more than one way to blow up a star.  Massive stars can also end their lives in a fantastic explosion called a <a href="http://en.wikipedia.org/wiki/Gamma-ray_burst">gamma-ray burst</a> (GRBs to the hep cats that study them, some fun facts relegated to [5]).  GRBs are still an intense area of current study, but the current picture (for one type of GRB, at least) is that they are the result of a star blowing up with the energy of the explosion focussed into two narrow beams (see picture below).  Since the flux isn't distributed over the whole sphere, GRBs can be seen at much greater distances than a typical supernova. </p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-siXXiFnQWHY/TrITJA8z_sI/AAAAAAAAAPU/qStD4_9qLBI/s1600/grb.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="312" src="http://2.bp.blogspot.com/-siXXiFnQWHY/TrITJA8z_sI/AAAAAAAAAPU/qStD4_9qLBI/s320/grb.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Example of a gamma-ray burst, with the explosion
-in two beams.</td></tr></tbody></table>
+<span class="label">Tags</span>
+	<a href="../tag/things-that-probs-wont-kill-you.html"><i class="icon-tag"></i>things that probs wont kill you</a>
+	<a href="../tag/betelgeuse.html"><i class="icon-tag"></i>betelgeuse</a>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">A very cold person points out Betelgeuse Betelgeuse is a massive star at the very end of its life and could explode any second now! Every time I hear that I get really really excited. Like a kid in a candy store that's about to see a star blow up like nobody's business. This giddiness will last for a solid minute before I realize that "any second now" is taken on astronomical timescales and roughly translates to "sometime in the next million years maybe possibly." Then I feel sad. But you know what always cheers me up? Calculating things! Hooray! So let's take a look at the ways Betelgeuse could end its life (even if it's not going to happen tomorrow) and how these would affect Earth. First, a little background. Betelgeuse is the bright orangey-red star that sits at the head/armpit of Orion. It ...
+                        <a class="btn primary xsmall" href="../posts/betelgeuse-betelgeuse-betelgeuse-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-<p>So how will this change our answer?  Well, it's going to change the fluence we calculated above.  Instead of spreading the energy out over the whole sphere, it's only going to go to some fraction of the 4pi steradians.  So we get</p>
-<p><mathjax>$$ F_{ph} = \frac{E_{ph}}{4\pi f_{\Omega} d^2}, $$</mathjax></p>
-<p>where f_{omega} is called the "beaming fraction" and tells us what fraction of the sphere the energy goes through.  Typical GRB beams range from 1 to 10 degrees in radius.  Converting this to radians, we can find the beaming fraction as</p>
-<p><mathjax>$$ f_{\Omega} = \frac{2 \times \pi \theta^2}{4\pi} \approx 10^{-4}\left(\frac{\theta}{1^\circ}\right)^2,$$</mathjax></p>
-<p>so the beaming fraction is 10^-4 and 10^-2 for a beam angle of 1 degree and 10 degrees, respectively.  Alright, so now we can redo the calculations we did for the supernova case, but keeping this beaming fraction around.  The total amount of energy that would hit Earth is then about</p>
-<p><mathjax>$$E_{\oplus}=\frac{E_{ph}}{4\pi f_{\Omega} d^2}\times\pi R^2_{\oplus}\sim 10^{23}~\mbox{J}\left(\frac{E_{ph}}{10^{44}~\mbox{J}}\right)\left(\frac{d}{200~\mbox{pc}}\right)^{-2}\left(\frac{\theta}{1^\circ}\right)^{-2}.$$</mathjax></p>
-<p>Holy sixth-of-a-moley!  Continuing as we did above, we find that this could potentially heat up the atmosphere by</p>
-<p><mathjax>$$ \Delta T = \frac{E_{ph}}{m_{atm}c_{air}}=\frac{10^{23}~\mbox{J}}{4\times10^{18}~\mbox{kg}\times10^3~\mbox{J/ kg K}}\approx3~\mbox{K}\left(\frac{\theta}{1^\circ}\right)^{-2}, $$</mathjax></p>
-<p>which is certainly non-negligible.  Now, this won't destroy the planet [6], but it could make things really uncomfortable.  This will be especially true when you realize that a fair amount of the energy carried away from a gamma-ray burst is in the form of (wait for it...) gamma-rays, which will wreck havoc on your DNA.  Remember, though, that this is an absolute worst-case scenario since we have assumed the smallest beaming angle.  But this may still make us a little nervous, so is there anyway to figure out if Betelgeuse could, in fact, beam a gamma-ray burst towards Earth?</p>
-<p>Yes, yes there is.   </p>
-<p>Jets and beams like those in GRBs typically point along the rotation axis of the star [7].  If we could determine the rotational axis of Betelgeuse, then we could say whether or not there's a chance it's pointed towards us.  It just so happens that Betelgeuse is the only star (aside from our Sun) that is spatially resolved.  If you could measure spectra along the star, you could look for Doppler shifting of absorption lines and say something about the velocity at the surface of the star. </p>
-<p>Luckily, this has already been done for us (see, for example <a href="http://adsabs.harvard.edu/abs/1998AJ....116.2501U">Uitenbroek et al. 1998</a>).  These measurements are hard to do since the star is only a few pixels wide, but it appears as though the rotation axis is inclined to the line-of-sight by about 20 degrees (see figure below).  That means this would require a beam with at least a 20 degree radius to hit the Earth.  This appears to be outside the typical ranges observed.   So even if Betelgeuse were to explode in a gamma-ray burst, the beam would miss Earth and hit some dumb other planet nobody cares about.</p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-xYILwh0eLEM/TrSTBxflbxI/AAAAAAAAAPc/Amma1aQtmPU/s1600/rotation.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="342" src="http://2.bp.blogspot.com/-xYILwh0eLEM/TrSTBxflbxI/AAAAAAAAAPc/Amma1aQtmPU/s400/rotation.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure reproduced from Uitenbroek et al. (1998)</td></tr></tbody></table>
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
 
-<p>Alright, so the moral of the story is that Betelgeuse is completely harmless to people on Earth.  When it does explode, it will be a brilliant supernova that would likely be visible at least a little bit during the day.  It will be the coolest thing that anyone alive (if there are people...) will ever see.  Sadly, this explosion could take place at just about any time during the next million years.  Assuming a uniform distribution over this time period and a human lifetime of order 100 years, there is something like a 1 in 10,000 chance you'll see this in your life. </p>
-<p>Feel free to hope for a spectacular astronomical sight, but don't lose sleep worrying about being hurt by Betelgeuse!</p>
-<p><b>Semi-excessive Footnotes:</b></p>
-<p>[1]  This has nothing to do with the Kessel Run.  For a description of the actual distance unit see <a href="http://en.wikipedia.org/wiki/Parsec">Wikipedia</a>.  For a circuitous retconning to correct for one throwaway line in <i>Star Wars</i>, see <a href="http://starwars.wikia.com/wiki/Kessel_Run">Wookieepedia</a>. </p>
-<p>[2]  This is how anything heavier than helium gets distributed throughout the universe.  The hydrogen and helium formed after the Big Bang gets fused into heavier elements in stars and then dispersed out through supernovae.  In fact, most things heavier than Iron actually <i>require</i> supernovae to even exist.  If you have any gold on you right now (I'm looking at you Mr. T), that only exists <i>because a star exploded!</i></p>
-<p>[3]  Let's consider the case of turning 4 protons into a Helium nucleus.  <a href="http://en.wikipedia.org/wiki/Helium-4">Helium-4</a> has a binding energy of about 28 MeV, which means that the total energy of a bound He-4 nucleus is 28 MeV less than its free protons and neutrons (in other words, we need to put in 28 MeV to break it up).  So the process of turning 4 protons into a Helium nucleus gives off 28 MeV worth of energy.  But we had a total of 4 times 1000 MeV worth of matter we could have turned into energy.  Thus, the process was 28 MeV/4000 MeV ~ 0.7% efficient at turning matter into energy. </p>
-<p>[4]  Sometime last year, the United States <a href="http://www.defense.gov/npr/docs/10-05-03_Fact_Sheet_US_Nuclear_Transparency__FINAL_w_Date.pdf">disclosed</a> that its nuclear arsenal as of Sept 2009 was something like 5000 warheads.  Assume these to be Megaton warheads.  A Megaton is about 4 * 10^15 J, so the total energy in the US arsenal is about 5000 * 4 * 10^15 J  = 2 * 10^19 J. </p>
-<p>[5]  A fun fact about GRBs:  They were discovered by a <a href="http://en.wikipedia.org/wiki/Vela_(satellite)">military satellite</a> looking for illegal nuclear tests, which would emit some gamma-rays.  Instead of seeing a signal on Earth, they saw bursts coming from space.  I really really hope that someone's first thought was that the Russians were testing nukes on the Moon or something.  <i>We must not allow a moon-nuke gap!</i></p>
-<p>[6]  We here at the Virtuosi are contractually obligated to only destroy the Earth in our posts on Earth day.  I apologize for any inconvenience this may cause.</p>
-<p>[7]  I am not exactly sure why this is the case.  It is certainly observed to be the case and I thought there was a straightforward explanation for why this was the case, but I don't really have a good explanation.  Although, maybe there just <a href="http://en.wikipedia.org/wiki/Polar_jet">isn't a good one yet.</a></p>
-<p>[8]  For comparison, there is about a 1 in 3000 <a href="http://www.lightningsafety.com/nlsi_pls/probability.html">chance</a> you'll be struck by lightning in your lifetime.</p><p>There are <a href="../posts/betelgeuse-betelgeuse-betelgeuse-.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -169,5 +724,10 @@ in two beams.</td></tr></tbody></table>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

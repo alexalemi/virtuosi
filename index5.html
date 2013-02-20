@@ -1,365 +1,1297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
-                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="./theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="./theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+    <link href="./theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png">
+
+    <link href="./" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="./feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="./">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="./category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="./category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="./category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="./archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                 
-                            <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed" start="9">
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/challenge-iphone-accelerometer-airplane-data-.html" rel="bookmark"
-                           title="Permalink to Challenge: iPhone Accelerometer airplane "data"">Challenge:  iPhone Accelerometer airplane "data"</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-08-03T03:36:00">
-                Wed 03 August 2011
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="./posts/zombpocalypse.html">Zombpocalypse</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-07-01T23:48:00">
+        <i class="icon-calendar"></i>Thu 01 July 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/matt.html"><i class="icon-user"></i>Matt</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/bohn.html">Bohn</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>HYPOTHETICAL: I left my accelerometer running during a flight from ithaca to Detroit</p>
-<p>reference last post</p>
-<p>mention noise estimates and resolution</p>
-<p>three part challenge:
-analyze take-off
---lift-off speed
---acceleration
---noise levels
---relation between vibration and velocity?
-analyze total flight duration
---find v(t)
---find x(t)
---does total flight distance ...</p>
-                <a class="readmore" href="./posts/challenge-iphone-accelerometer-airplane-data-.html">read more</a>
-                <p>There are <a href="./posts/challenge-iphone-accelerometer-airplane-data-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/fun-with-an-iphone-accelerometer.html" rel="bookmark"
-                           title="Permalink to Fun with an iPhone Accelerometer">Fun with an iPhone Accelerometer</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-08-03T03:24:00">
-                Wed 03 August 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/video.html"><i class="icon-tag"></i>video</a>
+	<a href="./tag/monte-carlo.html"><i class="icon-tag"></i>monte carlo</a>
+	<a href="./tag/simulation.html"><i class="icon-tag"></i>simulation</a>
+	<a href="./tag/zombies.html"><i class="icon-tag"></i>zombies</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Here at the Virtuosi, we're concerned. We are concerned that perhaps the world is really not ready for a zombie apocalypse. You know, the kind of zombie apocalypse that you may have seen in such classics as "Night of the Living Dead", "Shaun of the Dead", or perhaps the even more recent "Zombieland" (sweet cameo by the way). The kind of zombpocalypse that could leave major cities void of life and the country plagued with the undead. Well, Alemi and I were curious as to how likely such a pandemic was to occur and what it would look like in the simplest of models. In typical Virtuosi fashion, we threw some physics at it and this is what we came up with. The Model: Taking cues from the epidemiologists, we feel that the spread of zombie-ism might fall into a compartmental model that is much like the heavily studied ...
+                        <a class="btn primary xsmall" href="./posts/zombpocalypse.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/the-impossibility-of-why.html">The Impossibility of Why</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-07-01T23:44:00">
+        <i class="icon-calendar"></i>Thu 01 July 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/bohn.html">Bohn</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/free-fall.html">free fall</a><a href="./tag/bohn.html">Bohn</a><a href="./tag/sho.html">SHO</a><a href="./tag/accelerometer.html">accelerometer</a><a href="./tag/iphone.html">iphone</a><a href="./tag/pendulum.html">pendulum</a></p>
-</footer><!-- /.post-info -->                <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/-f7mSv8QGLGs/Tj9_a2qp1SI/AAAAAAAAAEY/Ax5EEw8Cjmg/s1600/accelerometer.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 320px; height: 275px;" src="http://2.bp.blogspot.com/-f7mSv8QGLGs/Tj9_a2qp1SI/AAAAAAAAAEY/Ax5EEw8Cjmg/s320/accelerometer.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5638365357818893602" /></a></p>
-<p>The iPhone 3GS has a built-in <a href="http://pdf1.alldatasheet.com/datasheet-pdf/view/236640/STMICROELECTRONICS/LIS302DL.html">accelerometer, the LIS302DL</a>, which is primarily used for detecting device orientation.  I wanted to come up with something interesting to do with it, but first I had to see how it did on some basic tests.  It turns out that the tests gave really ...</p>
-                <a class="readmore" href="./posts/fun-with-an-iphone-accelerometer.html">read more</a>
-                <p>There are <a href="./posts/fun-with-an-iphone-accelerometer.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/physics-in-sports-the-fosbury-flop.html" rel="bookmark"
-                           title="Permalink to Physics in Sports: The Fosbury Flop">Physics in Sports: The Fosbury Flop</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-08-01T01:30:00">
-                Mon 01 August 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/why.html"><i class="icon-tag"></i>why</a>
+	<a href="./tag/physics.html"><i class="icon-tag"></i>physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">So I think we've all been rather busy here. Hence the lack of posts. I'm going to try to keep this one short but sweet. A lot of people think that physics tells us why things happen. Why is the sky blue? Why does the earth orbit the sun? Why does copper transmit electricity so well? These all seem like perfectly reasonable questions to ask. Questions that we, as physicists can answer. Yet, I entitled this post the impossibility of why. In general, questions about why are not good questions for physicists More accurately we answer questions about how. Or what. What phenomena causes use to see the sky as blue? What forces cause the earth to orbit the sun? How does copper transmit electricity so well? In general, we can't answer a question of why. A friend once asked me (at the end of a talk ...
+                        <a class="btn primary xsmall" href="./posts/the-impossibility-of-why.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/life-as-an-experimenter-reflections.html">Life as an Experimenter - Reflections</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-19T15:50:00">
+        <i class="icon-calendar"></i>Sat 19 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/bohn.html">Bohn</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/bohn.html">Bohn</a><a href="./tag/sports.html">sports</a><a href="./tag/high-jump.html">high jump</a><a href="./tag/fosbury-flop.html">Fosbury flop</a><a href="./tag/physics-in-sports.html">physics in sports</a></p>
-</footer><!-- /.post-info -->                <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s1600/Fosbury.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 216px; height: 154px;" src="http://1.bp.blogspot.com/-slmXXaMCcMI/TjXnJ3qe-kI/AAAAAAAAADI/PdIuocXmC5w/s320/Fosbury.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5635664665471023682" /></a>Physics has greatly influenced the progress of most sports.  There have been continual improvements in equipment for safety or performance as well as improvements in technique.  I'd like to talk about some physics in sports over a series of posts.  Here I'll talk about a technique improvement in ...</p>
-                <a class="readmore" href="./posts/physics-in-sports-the-fosbury-flop.html">read more</a>
-                <p>There are <a href="./posts/physics-in-sports-the-fosbury-flop.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/grains-of-sand.html" rel="bookmark"
-                           title="Permalink to Grains of Sand">Grains of Sand</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-07-18T11:33:00">
-                Mon 18 July 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/reflection.html"><i class="icon-tag"></i>reflection</a>
+	<a href="./tag/chess.html"><i class="icon-tag"></i>CHESS</a>
+	<a href="./tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I've been doing experimental physics for about three years. I started during my sophomore year in college, went straight to graduate school, and continued here (albeit not quite immediately). There are people out there who have been doing this for a lot longer than I have, but I've gained a few insights, by working with said people, and through my own experiences in the lab. I thought I'd try to share a few of these, to help illuminate the past few days I blogged about. Something Always Goes Wrong It's the nature of experimental science. Something always goes wrong. It might be your equipment, it might be your sample, hell, it might be something personal. But something will go wrong. Wednesday was a prime example. Not only did I get soaked by rain and temporarily lose my bike lock, but it took us 9 hours to ...
+                        <a class="btn primary xsmall" href="./posts/life-as-an-experimenter-reflections.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/life-as-an-experimenter-day-three.html">Life as an Experimenter - Day Three</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-18T13:49:00">
+        <i class="icon-calendar"></i>Fri 18 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/sand.html">sand</a><a href="./tag/order-of-magnitude.html">order of magnitude</a><a href="./tag/carl-sagan.html">carl sagan</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s1600/SandUDunesUSoft.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="256" src="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s320/SandUDunesUSoft.jpg" width="320" /></a></div>
 
-<p>Have you ever sat on a beach and wondered how many grains of sand there were?  I have, but I may be a special case.  Today we're going to take that a step further, and figure out how many grains of sand there are on the entire earth.  (Caveat ...</p>
-                <a class="readmore" href="./posts/grains-of-sand.html">read more</a>
-                <p>There are <a href="./posts/grains-of-sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="./tag/chess.html"><i class="icon-tag"></i>CHESS</a>
+	<a href="./tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Today marks the third and final day in our beam time at CHESS. I think the circles under all of our eyes may take away from the glamor a bit, but the right makeup specialist could fix that. If they ever make a movie about us, which they should, I want to be played by some really awesome british actor. I think that would be about right. Someone with a strong jaw. In case it's not obvious, lack of sleep is getting to me a little bit. Read on for the final few hours of our experiment. Friday 6/189:07am - Not sure if I didn't turn on my alarm, or turned it off without noticing. But somehow I manage to jerk awake not too much later than planned. Dragging a little bit. Get some food. No time for shower, do that in a few hours. Only ...
+                        <a class="btn primary xsmall" href="./posts/life-as-an-experimenter-day-three.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/life-as-an-experimenter-day-two.html">Life as an Experimenter - Day Two</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-18T01:57:00">
+        <i class="icon-calendar"></i>Fri 18 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/lifetime-of-liquid-water.html" rel="bookmark"
-                           title="Permalink to Lifetime of Liquid Water">Lifetime of Liquid Water</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-07-10T22:07:00">
-                Sun 10 July 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/order-of-magnitude.html">order of magnitude</a><a href="./tag/fun.html">fun</a><a href="./tag/water.html">water</a><a href="./tag/physics.html">physics</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /></a></div>
+<span class="label">Tags</span>
+	<a href="./tag/long.html"><i class="icon-tag"></i>long</a>
+	<a href="./tag/chess.html"><i class="icon-tag"></i>CHESS</a>
+	<a href="./tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Today I'm continuing my series on the life of an experimenter. Today is the longest day, since we have beam time for all 24 hours. And after the setbacks of yesterday, we feel compelled to use it to the utmost bit. Read on for more tantalizing glimpses of the grit behind the glamor of the rock-star-like lifestyle of an experimental physicist. Today had a very different feel. Things were working, and that meant a lot of down time waiting for data to collect. Despite the excitement of data coming in, I was a little bored at points. Lots of internet use. Thursday 6/17 7:15am - Alarm goes off. 6.5 hours of sleep? Up quickly, and eat and shower. Run into a couple of my housemates that I normally don't. I don't feel to tired. Which is good, because I don't usually do caffeine, if ...
+                        <a class="btn primary xsmall" href="./posts/life-as-an-experimenter-day-two.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/life-as-an-experimenter-day-one.html">Life as an Experimenter - Day One</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-17T13:53:00">
+        <i class="icon-calendar"></i>Thu 17 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>Apologies for the hiatus recently, it's been a busy time (when isn't it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a ...</p>
-                <a class="readmore" href="./posts/lifetime-of-liquid-water.html">read more</a>
-                <p>There are <a href="./posts/lifetime-of-liquid-water.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/coriolis-effect-on-a-home-run.html" rel="bookmark"
-                           title="Permalink to Coriolis Effect on a Home Run">Coriolis Effect on a Home Run</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-07-03T11:52:00">
-                Sun 03 July 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/chess.html"><i class="icon-tag"></i>CHESS</a>
+	<a href="./tag/long-day.html"><i class="icon-tag"></i>long day</a>
+	<a href="./tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I'm an experimental physicist. If you think this sounds like a job second in glamour only to rock star you would be right. Just like being a rock star, you have to deal with the people, the shows, the lights, the groupies . . . okay, maybe I'm lying about the groupies. Unless you're Brian Greene. Also similar to a rock star, no one really knows what it is we do behind the scenes (when we're not touring the nation or publishing papers). I'd like to pull back that curtain a little bit. A bit of background. For this data run we're looking at the structure of protein crystals. The basic idea is that if you have a bunch of proteins, you can create a crystal out of them using various synthesis techniques. If they're formed right, they look similar to the crystals you are more ...
+                        <a class="btn primary xsmall" href="./posts/life-as-an-experimenter-day-one.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/how-long-can-you-balance-a-quantum-pencil.html">How Long Can You Balance A (Quantum) Pencil</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-16T03:20:00">
+        <i class="icon-calendar"></i>Wed 16 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/scott-bakula.html">scott bakula</a><a href="./tag/baseball.html">baseball</a><a href="./tag/coriolis.html">coriolis</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s1600/phillies_stadium.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="212" src="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s320/phillies_stadium.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Citizen's Bank Park</td></tr></tbody></table>
 
-<p>I like baseball.  Well, technically, I like <strike>laying</strike>[3] lying on the couch for three hours half-awake eating potato chips and mumbling obscenities at the television.  But let's not split hairs here.
-<div>
-</div><div>Anyway, out of curiosity and in partial atonement for the sins of my ...</div></p>
-                <a class="readmore" href="./posts/coriolis-effect-on-a-home-run.html">read more</a>
-                <p>There are <a href="./posts/coriolis-effect-on-a-home-run.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="./tag/quantum.html"><i class="icon-tag"></i>quantum</a>
+	<a href="./tag/pencil-balancing.html"><i class="icon-tag"></i>pencil balancing</a>
+	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="./tag/numerics.html"><i class="icon-tag"></i>numerics</a>
+	<a href="./tag/equations.html"><i class="icon-tag"></i>equations</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Sorry for the delay between posts. Here in Virtuosi-land, we've all begun our summer research projects and I think we've just become a little bogged down in the rush that is starting a summer research project. You feel as though you have no idea what the heck is going on, and just try desperately to keep your head up as you hit the ground running, but thats a topic for another post. In this post I'd like to address a fun physics problem. How long can you balance a pencil on its tip? I mean in a perfect world, how long? No really. Think about it a second. Try and come up with an answer before your proceed. What this question will become by the end of this post is something like the following: Given that Quantum Mechanics exists, what is the longest time you could conceivably ...
+                        <a class="btn primary xsmall" href="./posts/how-long-can-you-balance-a-quantum-pencil.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/my-pepsi-challenge.html">My Pepsi* Challenge</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-08T01:30:00">
+        <i class="icon-calendar"></i>Tue 08 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/counting-critters.html" rel="bookmark"
-                           title="Permalink to Counting Critters">Counting Critters</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-06-28T00:19:00">
-                Tue 28 June 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/circle-of-life.html">circle of life</a><a href="./tag/scott-bakula.html">scott bakula</a><a href="./tag/jimmy-johns.html">jimmy johns</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s1600/marx_horse.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="254" src="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s320/marx_horse.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This picture allows us to set a lower bound on the number
-of <a href="http://www.youtube.com/watch?v=9IrCgCKrv8U">creatures</a> that ever lived of ~4.</td></tr></tbody></table>
+<span class="label">Tags</span>
+	<a href="./tag/pepsi.html"><i class="icon-tag"></i>pepsi</a>
+	<a href="./tag/how-do-i-get-free-stuff.html"><i class="icon-tag"></i>how do i get free stuff?</a>
+	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="./tag/baseball.html"><i class="icon-tag"></i>baseball</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">The basement of the Physics building has a Pepsi machine. Over the course of two semesters Alemi and I have deposited roughly the equivalent of the GDP of, say, Monaco to this very same Pepsi machine (see left, with most of Landau and Lifshitz to scale). It just so happens that Pepsi is now having a contest, called "Caps for Caps," in which it is possible to win a baseball hat. There are several nice things about this contest. Firstly, I drink a lot of soda. Secondly, I like baseball hats. So far so good. Lastly (and most important for this post), is that it is fairly straightforward to calculate the statistics of winning (or at least simulate them). So how does the game work? Well, on each soda cap the name of a Major League Baseball team is printed. All thirty teams are (supposedly) printed with the same frequency ...
+                        <a class="btn primary xsmall" href="./posts/my-pepsi-challenge.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/memorial-day-distractions.html">Memorial Day Distractions</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-31T13:12:00">
+        <i class="icon-calendar"></i>Mon 31 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>We recently had a big book sale [1] here in town where books were being sold for about a quarter.  Needless to say, I bought far more than I'll probably ...</p>
-                <a class="readmore" href="./posts/counting-critters.html">read more</a>
-                <p>There are <a href="./posts/counting-critters.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/day-in-the-life-of-clicky.html" rel="bookmark"
-                           title="Permalink to Day in the life of Clicky">Day in the life of Clicky</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-06-01T16:34:00">
-                Wed 01 June 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/manufactoria.html"><i class="icon-tag"></i>manufactoria</a>
+	<a href="./tag/games.html"><i class="icon-tag"></i>games</a>
+	<a href="./tag/fantastic-contraption.html"><i class="icon-tag"></i>fantastic contraption</a>
+	<a href="./tag/blotto.html"><i class="icon-tag"></i>blotto</a>
+	<a href="./tag/memorial-day.html"><i class="icon-tag"></i>memorial day</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Summer is upon us. That means summer research, and online games. In order to help you through this three day weekend and beyond, I thought I'd share some of the more physics inspired games I've been playing lately to pass the time. I really enjoy physics based games. When done right, I think they can not only be fun and engaging but have the opportunity to teach you something. Colonel Blotto First up is a web Colonel Blotto tournament that I coded up, which you can find here. Colonel Blotto is a silly little game theoretic game where you try and assign one hundred soldiers between 10 different fields. Opponents do the same. Neither side knows what the other side is going to do. The game turns out to have some very interesting dynamics. Apparently for more than 12 soldiers, the game does not have a deterministic optimal ...
+                        <a class="btn primary xsmall" href="./posts/memorial-day-distractions.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/cryopreservation.html">Cryopreservation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-30T13:42:00">
+        <i class="icon-calendar"></i>Sun 30 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/matt.html">Matt</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/clicky.html">clicky</a><a href="./tag/autocorrelation.html">autocorrelation</a><a href="./tag/fourier.html">fourier</a></p>
-</footer><!-- /.post-info -->                <p><a href="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s1600/soslow.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 345px;" src="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s400/soslow.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613641295068101490" /></a>Remember when you first learned about other planets and their many fun facts?  You were probably bombarded by such truisms as: "Jupiter is approximately the mass of 318 Earths, has a orbital period that is 4,300 Earth days, is made out of pure love, and is mostly transparent." Well ...</p>
-                <a class="readmore" href="./posts/day-in-the-life-of-clicky.html">read more</a>
-                <p>There are <a href="./posts/day-in-the-life-of-clicky.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/clicky-data-v1-0.html" rel="bookmark"
-                           title="Permalink to Clicky Data v1.0">Clicky Data v1.0</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-05-31T11:36:00">
-                Tue 31 May 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/ice.html"><i class="icon-tag"></i>ice</a>
+	<a href="./tag/glass.html"><i class="icon-tag"></i>glass</a>
+	<a href="./tag/cryopreservation.html"><i class="icon-tag"></i>cryopreservation</a>
+	<a href="./tag/summer-research.html"><i class="icon-tag"></i>summer research</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I'd like to start a short series of posts on what I'm doing this summer. Like most all of the first year physics graduate students, I've found a research group at Cornell for the summer, and if everything goes well, I'll continue working with them after the summer is done. This is good for three reasons. First, I'm getting paid, so I can do things like pay rent. I'm not all about the money, but having a place to live is a big deal to me. Second, I'm getting a chance to explore a new area of research, with limited expectation of commitment on my part. Third, if everything works out, I've found the group I'll be working with the for the next 4-6 years. I'd like to spend a few posts here on The Virtuosi discussing first the physics ...
+                        <a class="btn primary xsmall" href="./posts/cryopreservation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/i-was-born-on-wednesday.html">I was born on Wednesday</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-26T03:17:00">
+        <i class="icon-calendar"></i>Wed 26 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/matt.html">Matt</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/clicky.html">clicky</a><a href="./tag/not-absurdly-large-images.html">not absurdly large images</a><a href="./tag/picopixels.html">picopixels</a></p>
-</footer><!-- /.post-info -->                <p><a href="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s1600/snap.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 277px;" src="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s400/snap.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5612906920062767650" /></a>
-<div style="text-align: center;"><span class="Apple-style-span"><u>
-</u></span></div><div>As we sift through the Clicky data Corky presented yesterday, let us not forget the Clicky that came before.</div><a name='more'></a>
-Let us not forget the Great Server Move of 2011 and the great pains we felt while waiting for Clicky to come back to us: Corky sat in his room crying ...</p>
-                <a class="readmore" href="./posts/clicky-data-v1-0.html">read more</a>
-                <p>There are <a href="./posts/clicky-data-v1-0.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./posts/clickin-the-night-away.html" rel="bookmark"
-                           title="Permalink to Clickin' the Night Away">Clickin' the Night Away</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-05-31T00:07:00">
-                Tue 31 May 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="./tag/odds.html"><i class="icon-tag"></i>odds</a>
+	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="./tag/cards.html"><i class="icon-tag"></i>cards</a>
+	<a href="./tag/probability.html"><i class="icon-tag"></i>probability</a>
+	<a href="./tag/birthday.html"><i class="icon-tag"></i>birthday</a>
+	<a href="./tag/monty-hall.html"><i class="icon-tag"></i>monty hall</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Probability is a tricky thing. There are a lot of nonsensical answers to be had. I just read an article about the recent Gathering for Gardner meeting that took place. Gathering for Gardner is a unique meeting for mathematicians, magicians and puzzle makers where they get together and talk about interesting things. The meetings were inspired by Martin Gardner, one of the awesomest dudes of our time, who unfortunately just passed away. The question put to the floor was the following: "I have two children. One is a boy born on a Tuesday. What is the probability I have two boys?" Think about that for a moment. Not too hard though. The answer turns out to be surprising. Upon reading the question, I thought about it for a long time and managed to confused myself entirely. Thinking I had gone crazy, I wrote a little python script to test the ...
+                        <a class="btn primary xsmall" href="./posts/i-was-born-on-wednesday.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/why-is-the-grass-green-.html">Why is the Grass Green?</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-25T23:29:00">
+        <i class="icon-calendar"></i>Tue 25 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="./author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="./category/old.html">old</a>. </p>
-<p>tags: <a href="./tag/ungodly-large-images.html">ungodly large images</a><a href="./tag/clicky.html">clicky</a><a href="./tag/megapixels-srsly.html">MEGAPIXELS (srsly)</a></p>
-</footer><!-- /.post-info -->                <p>Hey, everybody!  Do you remember <a href="http://thevirtuosi.blogspot.com/2011/04/collective-wanderings.html">Clicky</a> [1]?  Well, we finally got around to analyzing data, so here goes.  But first, a brief summary.
-<div>
-</div><div>Matt, Alemi and I came up with the idea for Clicky in the beginning of April.  Perhaps "idea" is a bit too generous... it was really just ...</div></p>
-                <a class="readmore" href="./posts/clickin-the-night-away.html">read more</a>
-                <p>There are <a href="./posts/clickin-the-night-away.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
-                        <a href="./index4.html">&laquo;</a>
-                Page 5 / 19
-            <a href="./index6.html">&raquo;</a>
-    </p>
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<span class="label">Tags</span>
+	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="./tag/chlorophyll-more-like-borophyll.html"><i class="icon-tag"></i>chlorophyll more like borophyll</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I was outside talking with Alemi last week and we were both startled to realize that the frozen white tundras of Ithaca had somehow transformed into fields of green. Apparently the snow was a temporary fixture that covered real live grass. Neato, gang! The joy at seeing green grass led quickly to surprise, confusion and then anger. Why the heck is grass green? Well, things look a color when they reflect back that color. So grass is green because its pigments (chlorophyll) absorb only a certain range of the visible spectrum, reflecting back the greenish bits. But if I know anything about approximating the sun as a blackbody, I know that it has a peak output of around 550 nm (i.e. green) light. So what's going on? Why are plants blatantly rejecting the most abundant kind of light? Since my initial confusion rested on the assumption of the ...
+                        <a class="btn primary xsmall" href="./posts/why-is-the-grass-green-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/flying-back.html">Flying back</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-25T09:04:00">
+        <i class="icon-calendar"></i>Tue 25 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/yariv.html"><i class="icon-user"></i>Yariv</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+<span class="label">Tags</span>
+	<a href="./tag/units.html"><i class="icon-tag"></i>units</a>
+	<a href="./tag/flying.html"><i class="icon-tag"></i>flying</a>
+	<a href="./tag/esoteric.html"><i class="icon-tag"></i>esoteric</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Those of us originating on the right side of the atlantic ocean are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way around. This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane's movement? This gives us a perfect chance to use the Earth Units we introduced a few weeks ago. Specifically I'll use the Earth meter (equal to the radius of the ...
+                        <a class="btn primary xsmall" href="./posts/flying-back.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/fishy-calculation-followup-new-contest.html">Fishy Calculation Followup & New Contest</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-25T03:03:00">
+        <i class="icon-calendar"></i>Tue 25 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="./tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="./tag/fish.html"><i class="icon-tag"></i>fish</a>
+	<a href="./tag/contest.html"><i class="icon-tag"></i>contest</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">So, some you may remember when I attempted to calculate how much the oceans would lower if you took out all of the fish in an earlier post. Well, the results came in a while ago, but I forgot to mention that I lost the contest. I was about two orders of magnitude off from the winning answer. In light of my failure, I'm going to try again in the newest contest. This time the question is a bit stranger: How many buff hamsters would it take to completely power a mansion? I encourage all of The Virtuosi readers to enter as well, it only takes a minute to come up with some number. Good luck one and all.
+                        <a class="btn primary xsmall" href="./posts/fishy-calculation-followup-new-contest.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/esoteric-physics-i-the-hall-effect.html">Esoteric Physics I - The Hall Effect</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-23T23:31:00">
+        <i class="icon-calendar"></i>Sun 23 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/magnetism.html"><i class="icon-tag"></i>magnetism</a>
+	<a href="./tag/hall-effect.html"><i class="icon-tag"></i>hall effect</a>
+	<a href="./tag/current.html"><i class="icon-tag"></i>current</a>
+	<a href="./tag/esoteric.html"><i class="icon-tag"></i>esoteric</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">What we usually do here at the The Virtuosi is take an interesting problem, and work out the physical principles behind what we're seeing. Or pose a question and try to answer it. Now, I'm a big fan of this kind of thing, which is why I've done so much of it. But I worry that it might give a slightly skewed view of physics. Sure, physics explains things. That's why we do it. But not everything in physics is laser guns and solar sails. There are a lot of interesting physics phenomena that the general public will never hear about, because they're just too, well, esoteric. What I'm going to do is occasionally talk about such effects, and, for some of them, give you applications for these strange effects you might see on a day-to-day basis. Today I'm going to examine the ...
+                        <a class="btn primary xsmall" href="./posts/esoteric-physics-i-the-hall-effect.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/physics-of-baseball-batting.html">Physics of Baseball: Batting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-19T18:21:00">
+        <i class="icon-calendar"></i>Wed 19 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="./tag/baseball.html"><i class="icon-tag"></i>baseball</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be. We were interested in just how hard it is to hit a pitch with the bat. So we thought we'd model hitting the ball with a rather simple approximation of a robot swinging a cylindrical bat, horizontally with some rotational speed and at a random height. The question then becomes, if the robot chooses a random height and a random time to swing, what are the chances that it gets a hit? Spatial Resolution So the first thing to consider is how much of the strike zone the bat takes up. In order to be a strike, the ball needs to be over home plate, which is 17 inches wide, and ...
+                        <a class="btn primary xsmall" href="./posts/physics-of-baseball-batting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/cell-phone-brain-damage-part-deux.html">Cell Phone Brain Damage: Part Deux</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-19T16:03:00">
+        <i class="icon-calendar"></i>Wed 19 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/molecules.html"><i class="icon-tag"></i>molecules</a>
+	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="./tag/dimensional-analysis.html"><i class="icon-tag"></i>dimensional analysis</a>
+	<a href="./tag/cell-phone.html"><i class="icon-tag"></i>cell phone</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I thought I'd take another look at cell phone damage, coming at it from a different direction than my colleague. Mostly I just want to consider the energy of the radiation that cell phones produce, and compare that with the other relevant energy scales for molecules. Cell Phone EnergySo, lets start with cell phones. I looked at my cell phone battery, and it looks like it is rated for 1 A, at 3.5 V. So when it is running at its peak it should put out about 3.5 W of power in electromagnetic waves (assuming it reaches its rating and all of that energy is fully converted into radiation). But what form does this energy take? Well, its electromagnetic radiation, so its in the form of a bunch of photons. In order to determine the energy of each photon, we need to know the frequency of ...
+                        <a class="btn primary xsmall" href="./posts/cell-phone-brain-damage-part-deux.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/solar-sails-iii-because-two-just-isn-t-enough-.html">Solar Sails III (because two just isn't enough)</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-17T22:24:00">
+        <i class="icon-calendar"></i>Mon 17 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/exogenesis.html"><i class="icon-tag"></i>exogenesis</a>
+	<a href="./tag/solar-sails.html"><i class="icon-tag"></i>solar sails</a>
+	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="./tag/do-the-dew.html"><i class="icon-tag"></i>do the dew</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">One thing that I've wanted to quantify since reading Intelligent Life in the Universe, an outstanding book by Carl Sagan and I.S. Shklovskii, is the idea of exogenesis. Exogenesis is the hypothesis that life formed elsewhere in the universe and was somehow transferred to earth in the form of some small seed or spore. Now since E.T. E. coli presumably do not have little tiny jetpacks or other means of active transport, they would need to traverse the cosmos in some passive way. One such way would be solar sailing. Way back in Solar Sails I, we derived equations describing the maximum speeds and time-of-travel for various distances for a given solar sail. Each of these equations was a function of the surface mass density of the sail, which is just the amount of mass per unit cross-sectional area. All we need to know is the cross-sectional ...
+                        <a class="btn primary xsmall" href="./posts/solar-sails-iii-because-two-just-isn-t-enough-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/ask-a-physicist-volume-i.html">Ask a Physicist: Volume I</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-17T11:56:00">
+        <i class="icon-calendar"></i>Mon 17 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jared.html"><i class="icon-user"></i>Jared</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/ask-a-physicist.html"><i class="icon-tag"></i>ask a physicist</a>
+	<a href="./tag/potato.html"><i class="icon-tag"></i>potato</a>
+	<a href="./tag/conduction.html"><i class="icon-tag"></i>conduction</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">We have received our first Ask a Physicist e-query! An entity known only to us as "Hungry" writes: "We had a dispute at a dinner party about whether blowing on hot food actually makes it cool down faster, or only gives you something to do while you wait for your food to cool." While it is questionable whether or not I am indeed a physicist (but people do pay me to do physics) and whether I will answer definitively (there'll be some hand-waving), I'll give it my darndest. Let's imagine a hot baked potato you just sliced open. The mass of potato is capable of transferring energy as heat to the surrounding air (and therefore cooling down) via a number of mechanisms. The most common we hear about are conduction, radiation, and convection. Conduction is the process by which two objects in intimate contact exchange heat. Radiation ...
+                        <a class="btn primary xsmall" href="./posts/ask-a-physicist-volume-i.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/solar-sails-ii.html">Solar Sails II</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-17T01:15:00">
+        <i class="icon-calendar"></i>Mon 17 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/solar-sails.html"><i class="icon-tag"></i>solar sails</a>
+	<a href="./tag/nic-shout-outs.html"><i class="icon-tag"></i>Nic shout outs</a>
+	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">[NOTE: In my hurry to make up for weeks of non-posts, I managed to almost immediately knock Nic's first post from the top of the page. It's got the LHC, black holes, and about 3 full cups of metric awesome, so make sure you check it out (after reading this one, of course).] Last time we did some calculations on how fast and far our solar sails can go, but those calculations were just for the sail itself. If you are going to do any science with it, you're going to need a payload. Let's take it a step further and make it an actual spaceship (with people and everything!). Comparing it with a typical people-carrying space hotel (the International Space Station), let's give our payload a mass of 300,000 kg. Remembering from the last post that a sigma of less that about 10 ...
+                        <a class="btn primary xsmall" href="./posts/solar-sails-ii.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/solar-sails-i.html">Solar Sails I</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-16T23:29:00">
+        <i class="icon-calendar"></i>Sun 16 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/geonosian-solar-sailer.html"><i class="icon-tag"></i>Geonosian solar sailer</a>
+	<a href="./tag/solar-sails.html"><i class="icon-tag"></i>solar sails</a>
+	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Solar sails are in the news again, and this time not just for blowing up. The Japanese space agency is launching what they hope to be the first successful solar sail tomorrow. In honor of that, we will be discussing the physics of solar sails. First of all, what the heck are solar sails? Solar sails are a means of propulsion based on the simple observation that "Hey, sails work on boats. Therefore, they should work on interplanetary spacecraft (in space)." Boat sails work when air molecules hit into the sail and bounce back. By conservation of momentum, this gives the boat sail an itty bitty boost in momentum. Summing over the large number of air molecules moving as wind, the boat gets pushed along in the water. A similar process works with solar sails, but instead of air molecules doing the hitting, it's photons. Since each photon of ...
+                        <a class="btn primary xsmall" href="./posts/solar-sails-i.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/solar-sails-addendum-i.html">Solar Sails Addendum I</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-16T23:28:00">
+        <i class="icon-calendar"></i>Sun 16 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/.html"><i class="icon-tag"></i></a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">As requested, below is an explicit evaluation of the silly looking integral in Solar Sails I. If you just want some hints to do the integral, see Solar Sails Addendum II. Here we present a step-by-step solution of the differential equation: $$ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} $$ This is just a separable equation, so we rearrange to get an integral equation: $$ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} =\int_{0}^{t}dt$$ We see that the right hand side here will just evaluate to t. Let's rearrange the left hand side to get the integration variable to be dimensionless. This is important because it allows the integral to just be a number, with all the unit-dependent terms pulled outside. So we have ...
+                        <a class="btn primary xsmall" href="./posts/solar-sails-addendum-i.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/solar-sails-addendum-ii.html">Solar Sails Addendum II</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-16T23:27:00">
+        <i class="icon-calendar"></i>Sun 16 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/.html"><i class="icon-tag"></i></a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">This is the schematic version, if you just wanted hints. The full solution is given in Solar Sails Addendum I. Here we present a schematic solution of the differential equation: $$ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} $$ This is just a separable equation, so we rearrange to get an integral equation: $$ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} = \int_{0}^{t}dt$$ From here it's nice to non-dimensionalize, so our integration variable is just a number (with no units attached). This allows us to get the integral into a form like $$ k\int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = t$$ for appropriate values of k and u. Now we are ready to get started! Typically ...
+                        <a class="btn primary xsmall" href="./posts/solar-sails-addendum-ii.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world.html">Why Black Holes from the Large Hadron Collider Won't Destroy the World</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-16T19:53:00">
+        <i class="icon-calendar"></i>Sun 16 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/nic-eggert.html"><i class="icon-user"></i>Nic Eggert</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/lhc.html"><i class="icon-tag"></i>LHC</a>
+	<a href="./tag/physics.html"><i class="icon-tag"></i>physics</a>
+	<a href="./tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Hi everyone. As this is my first post, I thought I'd introduce myself. Like the rest of the Virtuosi, I'm a graduate student in physics at Cornell University. I work in experimental particle physics, in particular on the Compact Muon Solenoid, one of the detectors at the Large Hadron Collider. I'll post more on what I actually do at some point in the future, but I thought I'd start with a post in the spirit of some of the other fun calculations that we've done. My goal is to convince you that black holes created by the LHC cannot possibly destroy the world. To start with, the main reason no one working on the LHC is too concerned about black holes is because of Hawking radiation. While we usually think of black holes as objects that nothing can escape from, Stephen Hawking predicted that black ...
+                        <a class="btn primary xsmall" href="./posts/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="./posts/freezing-in-space-ii-turn-on-the-sun-.html">Freezing in Space II - Turn On The Sun!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-13T23:38:00">
+        <i class="icon-calendar"></i>Thu 13 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/power.html"><i class="icon-tag"></i>power</a>
+	<a href="./tag/space.html"><i class="icon-tag"></i>space</a>
+	<a href="./tag/freeze.html"><i class="icon-tag"></i>freeze</a>
+	<a href="./tag/blackbody.html"><i class="icon-tag"></i>blackbody</a>
+	<a href="./tag/radiation.html"><i class="icon-tag"></i>radiation</a>
+	<a href="./tag/human.html"><i class="icon-tag"></i>human</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Yesterday I considered how long it would take a human to freeze in space. However, I considered only what would happen if you were not absorbing any radiation from nearby sources. Today we consider what happens if you do have hot objects nearby. Namely, the sun. The sun provides a lot of energy, even as far away from it as we are. It keeps the earth at a comfortable ~20 C, good for us humans, and provides the energy for life on earth, also good for us humans. That's a lot of energy. So maybe the sun can keep you alive when you're adrift in space. Or at least keep you warm. I still think you'll asphyxiate. From here on out we're going to assume that we are adrift in space near earth. You were out for a joyride in that new spaceship of yours and ...
+                        <a class="btn primary xsmall" href="./posts/freezing-in-space-ii-turn-on-the-sun-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                <div class="pagination">
+        <ul>
+                                                                <li class="prev"><a href="./index4.html">&larr; Previous</a></li>
+                                                        <li class=""><a href="./index.html">1</a></li>
+                                        <li class=""><a href="./index2.html">2</a></li>
+                                        <li class=""><a href="./index3.html">3</a></li>
+                                        <li class=""><a href="./index4.html">4</a></li>
+                                        <li class="active"><a href="./index5.html">5</a></li>
+                                        <li class=""><a href="./index6.html">6</a></li>
+                                        <li class=""><a href="./index7.html">7</a></li>
+                                                        <li class="next"><a href="./index6.html">Next &rarr;</a></li>
+                        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="./" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="./feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="./category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="./category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="./tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="./tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="./tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="./tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="./tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -368,5 +1300,10 @@ Let us not forget the Great Server Move of 2011 and the great pains we felt whil
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./theme/js/jquery-1.7.2.min.js"></script>
+    <script src="./theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

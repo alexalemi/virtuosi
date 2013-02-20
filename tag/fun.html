@@ -1,428 +1,1279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - fun</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - fun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html">Re-evaluating the values of the tiles in Scrabble™</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2013-01-20T22:52:00">
-                Sun 20 January 2013
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html">Re-evaluating the values of the tiles in Scrabble™</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-20T22:52:00">
+        <i class="icon-calendar"></i>Sun 20 January 2013
+</abbr>
+<span class="label">By</span>
+<a href="../author/dtc.html"><i class="icon-user"></i>DTC</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/dtc.html">DTC</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/scrabble.html">Scrabble</a><a href="../tag/fun.html">fun</a><a href="../tag/monte-carlo.html">monte carlo</a></p>
-</footer><!-- /.post-info --><div dir="ltr" style="text-align: left;" trbidi="on"><!--[if gte mso 9]><xml> <o:DocumentProperties>  <o:Revision>0</o:Revision>  <o:TotalTime>0</o:TotalTime>  <o:Pages>1</o:Pages>  <o:Words>1435</o:Words>  <o:Characters>8182</o:Characters>  <o:Company>Cornell University</o:Company>  <o:Lines>68</o:Lines>  <o:Paragraphs>19</o:Paragraphs>  <o:CharactersWithSpaces>9598</o:CharactersWithSpaces>  <o:Version>14.0</o:Version> </o:DocumentProperties> <o:OfficeDocumentSettings>  <o:AllowPNG/> </o:OfficeDocumentSettings></xml><![endif]--> <!--[if gte mso 9]><xml> <w:WordDocument>  <w:View>Normal</w:View>  <w:Zoom>0</w:Zoom>  <w:TrackMoves/>  <w:TrackFormatting/>  <w:PunctuationKerning/>  <w:ValidateAgainstSchemas/>  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>  <w:DoNotPromoteQF/>  <w:LidThemeOther>EN-US</w:LidThemeOther>  <w:LidThemeAsian>JA</w:LidThemeAsian>  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>  <w:Compatibility>   <w:BreakWrappedTables/>   <w:SnapToGridInCell/>   <w:WrapTextWithPunct/>   <w:UseAsianBreakRules/>   <w:DontGrowAutofit/>   <w:SplitPgBreakAndParaMark/>   <w:EnableOpenTypeKerning/>   <w:DontFlipMirrorIndents/>   <w:OverrideTableStyleHps/>   <w:UseFELayout/>  </w:Compatibility>  <m:mathPr>   <m:mathFont m:val="Cambria Math"/>   <m:brkBin m:val="before"/>   <m:brkBinSub m:val="&#45;-"/>   <m:smallFrac m:val="off"/>   <m:dispDef/>   <m:lMargin m:val="0"/>   <m:rMargin m:val="0"/>   <m:defJc m:val="centerGroup"/>   <m:wrapIndent m:val="1440"/>   <m:intLim m:val="subSup"/>   <m:naryLim m:val="undOvr"/>  </m:mathPr></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="276">  <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal"/>  <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>  <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title"/>  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>  <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>  <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong"/>  <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>  <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid"/>  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>  <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>  <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>  <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote"/>  <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>  <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6"/>  <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6"/>  <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6"/>  <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>  <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>  <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>  <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>  <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>  <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>  <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>  <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6"/>  <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>  <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6"/>  <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>  <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>  <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>  <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>  <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>  <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/> </w:LatentStyles></xml><![endif]--> <!--[if gte mso 10]><style> /* Style Definitions */ table.MsoNormalTable  {mso-style-name:"Table Normal";  mso-tstyle-rowband-size:0;  mso-tstyle-colband-size:0;  mso-style-noshow:yes;  mso-style-priority:99;  mso-style-parent:"";  mso-padding-alt:0in 5.4pt 0in 5.4pt;  mso-para-margin:0in;  mso-para-margin-bottom:.0001pt;  mso-pagination:widow-orphan;  font-size:12.0pt;  font-family:Cambria;  mso-ascii-font-family:Cambria;  mso-ascii-theme-font:minor-latin;  mso-hansi-font-family:Cambria;  mso-hansi-theme-font:minor-latin;} </style><![endif]-->   <!--StartFragment--> 
-<div class="separator" style="clear: both; text-align: center;">
-</div><div class="separator" style="clear: both; text-align: center;"><a href="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="424" src="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG" width="640" />   </a></div><div class="MsoNormal">Recently I have seen quite a few blog posts written about re-evaluating the points values assigned to the different letter tiles in the Scrabble™ brand Crossword Game.  The premise behind these posts is that the creator and designer of the game assigned point values to the different tiles according to their relative frequencies of occurrence in words in English text, supplemented by information gathered while playtesting the game.  The points assigned to different letters reflected how difficult it was to play those letters: common letters like E, A, and R were assigned 1 point, while rarer letters like J and Q were assigned 8 and 10 points, respectively.  These point values were based on the English lexicon of the late 1930’s.  Now, some 70 years later, that lexicon has changed considerably, having gained many new words (e.g.: EMAIL) and lost a few old ones.  So, if one were to repeat the analysis of the game designer in the present day, would one come to different conclusions regarding how points should be assigned to various letters?</div><a name='more'></a>
-<div class="MsoNormal">I’ve decided to add my own analysis to the recent development because I have found most of the other blog posts to be unsatisfactory for a variety of reasons.*  <a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system">One article</a> calculated letters’ relative frequencies by counting the number of times each letter appeared in each word in the Scrabble™ dictionary.  But this analysis is faulty, since it ignores the probability with which different words actually appear in the game.  One is far less likely to draw QI than AE during a Scrabble™ game (since there’s only one Q in the bag, but many A's and E's).  Similarly, very long words like ZOOGEOGRAPHICAL have a vanishingly small probability of appearing in the game: the A’s in the long words and the A’s in the short words cannot be treated equally.  <a href="http://blog.useost.com/2012/12/30/valett/">A second article</a> I saw calculated letter frequencies based on their occurrence in the Scrabble™ dictionary and did attempt to weight frequencies based on word length.  The author of this second article also claimed to have quantified the extent to which a letter could “fit well” with the other tiles given to a player.  Unfortunately, some of the steps in the analysis of this second article were only vaguely explained, so it isn’t clear how one could replicate the article’s conclusions.  In addition, as far as I can tell, neither of these articles explicitly included the distribution of letters (how many A’s, how many B’s, etc) included in a Scrabble™ game.  Also, neither of these articles accounted for the fact that there are blank tiles (that act as wild cards and can stand in for any letter) that appear in the game.</div><div class="MsoNormal"><o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">So, what does one need to do to improve upon the analyses already performed?  We’re given the Scrabble™ dictionary and bag of <a href="http://upload.wikimedia.org/wikipedia/commons/b/b8/Scrabble_tiles_en.jpg">100 tiles</a> with a set distribution, and we’re going to try to determine what a good pointing system would be for each letter in the alphabet.  We’re also armed with the knowledge that each player is given 7 letters at a time in the game, making words longer than 8 letters very rare indeed.  Let’s say for the sake of simplicity that words 9 letters long or shorter account for the vast majority of words that are possible to play in a normal game.  <o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">Based on these constraints, how can one best decide what points to assign the different tiles?  As stated above, the game is designed to reward players for playing words that include letters that are more difficult to use.  So, what makes an easy letter easy, and what makes a difficult letter difficult?  Sure, the number of times the letter appears in the <a href="http://scrabblehelper2.googlecode.com/svn-history/r3/trunk/src/scrabble/dictionary.txt">dictionary</a> is important, but this does not account for whether or not, on a given rack of tiles (a rack of tiles is to Scrabble™ as a hand of cards is to poker), that letter actually can be used.  The letter needs to combine with other tiles available either on the rack or on the board in order to form words.  The letter Q is difficult to play not only because it is used relatively few times in the dictionary, but also because the majority of Q-words require the player to use the letter U in conjunction with it.<o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">So, what criterion can one use to say how useful a particular tile is?  Let’s say that letters that are useful have more potential to be used in the game: they provide more options for the players who draw them.  Given a rack of tiles, one can generate a list of all of the words that are possible for the player to play.  Then, one can count the number of times that each letter appears in that list.  Useful letters, by this criterion, will combine more readily with other letters to form words and so appear more often in the list than un-useful letters.<o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">(I would also like to take a moment to preempt <a href="http://scrabbleplayers.org/w/Valett">criticism from the competitive Scrabble™ community</a> by saying that strategic decisions made by the players need not be brought into consideration here.  The point values of tiles are an engineering constraint of the game.  Strategic decisions are made by the players, given the engineering constraints of the game.  Words that are “available to be played” are different from “words that actually do get played.”  The potential usefulness of individual letter tiles should reflect whether or not it is even possible to play them, not whether or not a player decides that using a particular group of tiles constitutes an optimal move.)</div><div class="MsoNormal"><o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">To give an example, suppose I draw the rack BEHIWXY.  I can generate** the full list of words available to be played given this rack: BE, BEY, BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY, WHY, WYE, XI, YE, YEH, YEW.  Counting the number of occurrences of each letter, I see that the letter E appears 18 times, while the letter W only appears 7 times.  This example tells me that the letter E is probably much more potentially useful than the letter W.<o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">The example above is only one of the many, many possible racks that one can see in a game of Scrabble™.  I can use a <a href="http://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo</a>-type simulation to estimate the average usefulness of the different letters by drawing many example racks.  Monte Carlo is a technique used to estimate numerical properties of complicated things without explicit calculation.  For example, suppose I want to know the probability of drawing a straight flush in poker.***  I can calculate that probability explicitly by using combinatorics, or I can use a Monte Carlo method to deal a large number of hypothetical possible poker hands and count the number of straight flushes that appear.  If I deal a large enough number of hands, the fraction of hands that are straight flushes will converge upon the correct analytic value.  Similarly here, instead of explicitly calculating the usefulness of each letter, I use Monte Carlo to draw a large number of hypothetical racks and use them to count the number of times each letter can be used.  Comparing the number of times that each tile is used over many, many possible racks will give a good approximation of how relatively useful each tile is on average.  Note that this process accounts for the words acceptable in the Scrabble™ dictionary, the number of available tiles in the bag, as well as the probability of any given word appearing.</div><div class="MsoNormal"><o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">In my simulation, I draw 10,000,000 racks, each with 9 tiles (representing the 7 letters the player actually draws plus two tiles available to be played through to form longer words).  I perform the calculation two different ways: once with a 98-tile pool with no blanks, and once with a 100-tile pool that does include blanks.  In the latter case, I make sure to not count the blanks used to stand in for different letters as instances of those letters appearing in the game.  The results are summarized in the table below.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s1600/scrabble+tiles+table+small+3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s400/scrabble+tiles+table+small+3.jpg" width="372" /></a></div></div><div class="separator" style="clear: both; text-align: center;"></div><div class="MsoNormal"><div class="separator" style="clear: both; text-align: center;"></div></div><div class="MsoNormal">There are two key observations to be made here.  First, it does not seem to matter whether or not there are blanks in the bag!  The results are very similar in both cases.  Second, it would be completely reasonable to keep the tile point values as they are.  Only the Z, H, and U appear out of order.  It’s only if one looks very carefully at the differences between the usefulness of these different tiles that one might reasonably justify re-pointing the different letters.  <o:p></o:p></div><div class="MsoNormal">
-</div><div class="MsoNormal">For fun, I have included in the table my own suggestions for what these tiles’ values might be changed to based on the simulation results.  (<b>Note</b>: here's where any pretensions of scientific rigor go out the window.)  I have kept the scale of points between 1 and 10, as in the current pointing system.  I have assigned groups of letters the same number of points based on whether they have a similar usefulness score.
 
-Here are the significant changes:  L and U, which are significantly less useful than the other 1-point tiles may be bumped up to 2 points, comparable to the D and G.  The letter V is clearly less useful than any of the other three 4-point tiles (W, Y, and F, all of which may be used to form 2-letter words while the V forms no 2-letter words), and so is undervalued.  The H is comparable to the 3-point tiles, and so is currently overvalued.  Similarly, the Z is overvalued when one considers how close to the J it is.  Unlike in the previous two articles that I mentioned, I don't find any strong reason to change the value of the letter X compared to the other 8 point tiles.  I suppose one could lower its value from 8 points to 7, but I have (somewhat arbitrarily) chosen not to do so.</div>
+<span class="label">Tags</span>
+	<a href="../tag/scrabble.html"><i class="icon-tag"></i>Scrabble</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/monte-carlo.html"><i class="icon-tag"></i>monte carlo</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Recently I have seen quite a few blog posts written about re-evaluating the points values assigned to the different letter tiles in the Scrabble™ brand Crossword Game. The premise behind these posts is that the creator and designer of the game assigned point values to the different tiles according to their relative frequencies of occurrence in words in English text, supplemented by information gathered while playtesting the game. The points assigned to different letters reflected how difficult it was to play those letters: common letters like E, A ...
+                        <a class="btn primary xsmall" href="../posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/pi-storage.html">Pi storage</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-14T15:13:00">
+        <i class="icon-calendar"></i>Wed 14 March 2012
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal"><o:p></o:p></div>
 
-<div class="MsoNormal">
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/probability.html"><i class="icon-tag"></i>probability</a>
+	<a href="../tag/storage.html"><i class="icon-tag"></i>storage</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Let me share my worst "best idea ever" moment. Sometime during my undergraduate I thought I had solved all the world's problems. You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff. I hate getting rid of my stuff. But what can someone do? And then it hit me, I had the bright idea: What if we didn't have to store things, what if we could just compute files whenever we wanted them back?Sounds like an awesome idea, right? I know. But how could we compute our files? Well, as you may know pi is conjectured to be a normal number, meaning its digits are probably random. We also know that it is irrational, meaning pi never ends.... Since its digits are random ...
+                        <a class="btn primary xsmall" href="../posts/pi-storage.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/the-linear-theory-of-battleship.html">The Linear Theory of Battleship</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-10-03T00:48:00">
+        <i class="icon-calendar"></i>Mon 03 October 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">One may also ask the question whether or not the fact that a letter forms 2- or 3-letter words is unfairly biasing that letter.  In particular, is the low usefulness of the C and V compared to comparably-pointed tiles due to the fact that they form no 2-letter words?  Performing the simulation again without 2-letter words, I found no changes in the results in any of the letters except for C, which increased in usefulness above the B and the H.  The letter V's ranking, however, did not change at all, indicating that unlike the C the V is difficult to use even when combining with letters to make longer words.  Repeating the simulation yet again without 2- or 3-letter words yielded the same results.<o:p></o:p></div>
 
-<div class="MsoNormal">
-As a final note, I would like to respond directly to to Stefan Fatsis's <a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html">excellent article</a> about the so-called controversy surrounding re-calculating tile values and say that I am fully aware that this is indeed a "statistical exercise," motivated mostly by my desire to do the calculation made by others in a way that made sense in the context of the game of Scrabble.  Similarly, I realize that these recommendations are unlikely to actually change anything.  Given that the original points values of the tiles are still justifiably appropriate by my analysis, it's not like anybody at Hasbro is going to jump to "fix" the game.  Lastly, my calculations have nothing to do with the strategy of the game whatsoever, and cannot be used to learn how to play the game any better.  (If anything, I've only confirmed some things that many experienced Scrabble players already know about the game, such as that the V is a tricky tile, or that the H, X, and Z tiles, in spite of their high point values, are quite flexible.)</div>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/battleship.html"><i class="icon-tag"></i>battleship</a>
+	<a href="../tag/linear-algebra.html"><i class="icon-tag"></i>linear algebra</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Recently I set out to hold a Battleship programming tournament here among some of the undergraduates. Naturally, I myself wanted to win. So, I got to thinking about the game, and developed what I like to call "the linear theory of battleship". A demonstration of the fruits of my efforts can be found here. Below, my aim is to guide you through how I developed this theory, as an exercise in using physics to solve an interesting unknown problem. This is one of the things I really love about physics, the fact that obtaining an education in physics is essentially an education in reasoning and thinking through complicated problems, along with an honestly short list of tips and tricks that have proven successful for tackling a wide range of problems. So, how do we develop the linear theory of battleship? First we need to quantify what we know, and what ...
+                        <a class="btn primary xsmall" href="../posts/the-linear-theory-of-battleship.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/lifetime-of-liquid-water.html">Lifetime of Liquid Water</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-10T22:07:00">
+        <i class="icon-calendar"></i>Sun 10 July 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">
-</div>
 
-<div class="MsoNormal">
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/water.html"><i class="icon-tag"></i>water</a>
+	<a href="../tag/physics.html"><i class="icon-tag"></i>physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Apologies for the hiatus recently, it's been a busy time (when isn't it). I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back. The question is this: how long does a molecule of H2O on earth remain in the liquid state, on average? I'm going to treat this purely as an order of magnitude problem. I'm also going to have to start with one assumption that is almost certainly inaccurate, but makes things a lot easier. I'm going to assume perfect mixing of all of the water on earth. Given that assumption, I really only need to figure out two things. The first is how much liquid water there is on earth. The second is now much liquid water leaves the liquid phase each year. Let's start ...
+                        <a class="btn primary xsmall" href="../posts/lifetime-of-liquid-water.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/end-of-the-earth-vi-nanobot-destruction.html">End of the Earth VI: Nanobot destruction</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-22T13:11:00">
+        <i class="icon-calendar"></i>Fri 22 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">
-* To state my own credentials, I have played Scrabble™competitively for 4 years, and am quite familiar with the mechanics of the game, as well as contemporary strategy.
 
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/nanobots.html"><i class="icon-tag"></i>nanobots</a>
+	<a href="../tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
+	<a href="../tag/earth-day.html"><i class="icon-tag"></i>earth day</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Let's destroy the earth with technology. A while ago, I read the novel Postsingular by Rudy Rucker, and in the first chapter the Earth gets destroyed, and then undestroyed, and then the novel unfolds and the Earth's likelihood is threatened again, and it looks like the Earth will be destroyed, but it isn't. How does all of this craziness happen you might ask: nanobots! The story revolves around little self-replicating robots. The story explores what it would be like to live in a world where every surface on Earth was coated in little computers, all of which were networked together. It's certainly a neat idea, but whenever you have self-replicating things, you need to worry a bit about what might happen if they get out of control. So, let's assume we, evil scientists that we are, have managed to create a little self-replicating nanobot. This ...
+                        <a class="btn primary xsmall" href="../posts/end-of-the-earth-vi-nanobot-destruction.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/collective-wanderings.html">Collective Wanderings</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-04T22:39:00">
+        <i class="icon-calendar"></i>Mon 04 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">** Credit where credit is due: Alemi provided the code used to generate the list of available words given any set of tiles.  Thanks Alemi!</div>
 
-<div class="MsoNormal">
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/clicky.html"><i class="icon-tag"></i>clicky</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Update [04/04/11]: It seems Clicky got too popular for our bandwidth limits on the physics servers. Hopefully we'll be able to fix this sometime soon... Update [04/02/11]: We made the code faster, so check out the new and improved Clicky! Hey, kids! Would you like to be a bit player in a grand experiment with poorly thought out objectives? If so, then check this out. It's a little interactive "game" [1] that Alemi and Matt coded up. When you click on the link, you will be redirected to a page showing something like this: Using the arrow keys on your keyboard or by clicking on the arrow buttons on the screen, you can move the dot around. Sound fun yet? Well, the interesting bit comes in with the fact that anyone who wants to can move the same dot at the same time. The ...
+                        <a class="btn primary xsmall" href="../posts/collective-wanderings.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/problem-of-the-month-gilligan-physics.html">Problem of the Month: Gilligan Physics</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-06T12:55:00">
+        <i class="icon-calendar"></i>Sun 06 February 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">*** Monte Carlo has a long history of being used to estimate the properties of games.  As recounted by George Dyson in <i>Turing’s Cathedral</i>, in 1948 while at Los Alamos the mathematician Stanislaw Ulam suffered a severe bout of encephalitis that resulted in an emergency trepanation.  While recovering in the hospital, he played many games of solitaire and was intrigued by the question of how to calculate the probability that a given deal could result in a winnable game.  The combinatorics required to answer this question proved staggeringly complex, so Ulam proposed the idea of generating many possible solitaire deals and merely counting how many of them resulted in victory.  This proved to be much simpler than an explicit calculation, and the rest is history: Monte Carlo is used today in a wide variety of applications.
-<o:p></o:p></div>
 
-<div class="MsoNormal">
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/crc.html"><i class="icon-tag"></i>CRC</a>
+	<a href="../tag/physics-challenge.html"><i class="icon-tag"></i>physics challenge</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/standards.html"><i class="icon-tag"></i>standards</a>
+	<a href="../tag/gilligan.html"><i class="icon-tag"></i>gilligan</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">So, some of us over here at Virtuosi Central have organized a challenge problem for the physics community here at Cornell. Well, we thought we would open up the challenge to the great wide world. The more submissions the merrier. The deadline is March 1, and submissions can be sent to our email. Details can be found at bit.ly/physicschallenge. Good luck and happy hunting.
+                        <a class="btn primary xsmall" href="../posts/problem-of-the-month-gilligan-physics.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/darts.html">Darts</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-13T16:29:00">
+        <i class="icon-calendar"></i>Thu 13 January 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">
-</div>
 
-<div class="MsoNormal">
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/darts.html"><i class="icon-tag"></i>darts</a>
+	<a href="../tag/python.html"><i class="icon-tag"></i>python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Over break I went out with a buddy of mine and played some darts. This got me to thinking, where exactly should someone aim in order to get the largest expected number of points? Now, obviously when you are playing a game like Cricket, where you should aim is fairly obvious, you are trying to hit particular numbers on the board, but in the most popular darts game -501, for most of the game you are just trying to accumulate points. So, where should you shoot on the board to get the most points? Well, something that I didn't quite realize before I started this adventure is that while the double bullseye in the center is worth 50 points, the triple 20 is worth more: 60 points. For the uninitiated, in games like 501 you score points based on where the dart falls. The center is the bullseye, where ...
+                        <a class="btn primary xsmall" href="../posts/darts.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/four-fantastic-books-3-of-which-are-free-.html">Four Fantastic Books (3 of which are free)</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-10-16T00:50:00">
+        <i class="icon-calendar"></i>Sat 16 October 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">Additional References:</div>
 
-<div class="MsoNormal">The photo at top of a Scrabble™ board was taken during the 2012 National Scrabble™ Championship.  Check out the 9-letter double-blank BINOCULAR.</div>
+<span class="label">Tags</span>
+	<a href="../tag/book-review.html"><i class="icon-tag"></i>book review</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/math.html"><i class="icon-tag"></i>math</a>
+	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Well, we just had our fall break, which means I get a bit of a break, coincidently enough. Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them. Street Fighting Mathematics - Sanjoy Mahajan The art of educated guessing and opportunistic problem solving Link to MIT Press Site You know that feeling you get when it's the second half of January and you put on new clothes that have just come out of the dryer? This book is like a cross between that and a kick in the face. The warm fuzzy-clothes-out-of-the-dryer feeling will come from the realization that you can wield unsurmountable power. The kick in the face will come when you realize you're not doing it yet. The premise of the book is something along the lines of: We ...
+                        <a class="btn primary xsmall" href="../posts/four-fantastic-books-3-of-which-are-free-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/visualizing-quantum-mechanics.html">Visualizing Quantum Mechanics</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-09-14T20:06:00">
+        <i class="icon-calendar"></i>Tue 14 September 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="MsoNormal">
-</div>
 
-<div class="MsoNormal">For anyone interested in learning more about the fascinating world of competitive Scrabble™, check out <i>Word Freak</i>, also by Stefan Fatsis.  This book has become more or less the definitive documentation upon this subculture.  If you don't have enough time to read, check out <a href="http://en.wikipedia.org/wiki/Word_Wars">Word Wars</a>, a documentary that follows many of the same people as Fatsis's book. (It still may be available streaming on Netflix if you hurry.)</div>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/feynman.html"><i class="icon-tag"></i>feynman</a>
+	<a href="../tag/quantum-mechanics.html"><i class="icon-tag"></i>quantum mechanics</a>
+	<a href="../tag/solar-system.html"><i class="icon-tag"></i>solar system</a>
+	<a href="../tag/movie.html"><i class="icon-tag"></i>movie</a>
+	<a href="../tag/bouncing-ball.html"><i class="icon-tag"></i>bouncing ball</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Or how I learned to stop worrying and love the computer. [Note: There's a neat video below the fold. ] A Confession I was recently rereading the Feynman Lectures on Physics. If you haven't read them lately, I highly recommend them. Feynman is always a pleasure to read. As usual, I was surprised. This time the surprise came in lecture 9, which the way the course was laid out meant that this was something like the last lecture in the third week that these students had ever received of university level physics. The lecture is on Newton's laws of dynamics. The start is of course Newton's first (second) law, $$ F = \frac{d }{dt } (mv ) $$ which, provided the mass is constant takes the more familiar form $$ F = ma $$ After discussing the meaning of the equation and how in general it can give you a set of equations to ...
+                        <a class="btn primary xsmall" href="../posts/visualizing-quantum-mechanics.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html">Terminal Velocity 2: A Theorist's Experimental Experiment</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-08-12T17:23:00">
+        <i class="icon-calendar"></i>Thu 12 August 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<ul style="text-align: left;"></ul>
 
-<div>
-</div>
+<span class="label">Tags</span>
+	<a href="../tag/data.html"><i class="icon-tag"></i>data</a>
+	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
+	<a href="../tag/measurement.html"><i class="icon-tag"></i>measurement</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Yesterday we rode down Ithaca's hills in an attempt to estimate the terminal velocity of a bike rider braving the city's potholes. But estimations are easy, and we relied on a number of factors - the drag coefficient and area of the bicyclist, in particular - to get them. To see how well we did, it's time to move on to the experimental portion this exercise. Our tools? My bike (figure 1), and my beloved accelerometer (figure 2), with Google's My Tracks app installed. Figure 1: Our vehicle Figure 2: Our instrumentation I took data twelve times while driving down two paths (University avenue and State street), measuring both the speed and elevation as a function of time. I came up with a lot of noisy data, some of it useful and a lot of it not. A typical plot out of the software looks something like (figure ...
+                        <a class="btn primary xsmall" href="../posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/the-wrath-of-blotto.html">The Wrath of Blotto</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-08-06T11:32:00">
+        <i class="icon-calendar"></i>Fri 06 August 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<!--EndFragment-->
 
-</div><p>There are <a href="../posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<span class="label">Tags</span>
+	<a href="../tag/games.html"><i class="icon-tag"></i>games</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/blotto.html"><i class="icon-tag"></i>blotto</a>
+	<a href="../tag/graph.html"><i class="icon-tag"></i>graph</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">You may remember when I invited everyone to play my webform version of Colonel Blotto. Well, its still up and has been up for some time, but hasn't seen any action for a while so I thought it might be time to take a look at the results. Colonel Blotto is an interesting game. It seems to me, that much of this interest derives from the fact that how well your strategy performs is very much a function of which strategies exist in the pool. There is not a clear cut winning strategy, you need to feel out the existing pool and adapt accordingly. So to stir things up a little bit, in what follows I will share some data from the existing database, refraining myself from commenting too much. Basically, stay tuned for a bunch of pretty pictures which will hopefully get your gears turning. The game is ...
+                        <a class="btn primary xsmall" href="../posts/the-wrath-of-blotto.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/steak-dinner.html">Steak Dinner</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-08-03T21:20:00">
+        <i class="icon-calendar"></i>Tue 03 August 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/pi-storage.html" rel="bookmark"
-                           title="Permalink to Pi storage">Pi storage</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-03-14T15:13:00">
-                Wed 14 March 2012
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/pi-day.html">pi day</a><a href="../tag/fun.html">fun</a><a href="../tag/probability.html">probability</a><a href="../tag/storage.html">storage</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg" width="320" /></a></div>
+<span class="label">Tags</span>
+	<a href="../tag/data.html"><i class="icon-tag"></i>data</a>
+	<a href="../tag/steak.html"><i class="icon-tag"></i>steak</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/graph.html"><i class="icon-tag"></i>graph</a>
+	<a href="../tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Sorry about the blog hiatus. During the summer, without teaching classes, inspiration is harder to come by. But, tonight I cooked a steak. I recently got a new digital meat thermometer. My plan was to slowly cook the steak until the internal temperature got to be about 140 degrees Fahrenheit with the oven at 200 degrees, take it out, wrap in tin foil, crank the oven to 500 degrees, stick it back in, and give it a nice exterior, reaching an internal temperature of about 150 degrees which would put it at about medium. After I put the steak into the oven though, I started to watch the temperature go up on my digital thermometer and thought, why not take data. And so I did. Here are the results. Above you see the internal temperature of the steak as a function of time. First some comments about the graph. The ...
+                        <a class="btn primary xsmall" href="../posts/steak-dinner.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/how-long-can-you-balance-a-quantum-pencil.html">How Long Can You Balance A (Quantum) Pencil</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-06-16T03:20:00">
+        <i class="icon-calendar"></i>Wed 16 June 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>Let me share my worst "best idea ever" moment.  Sometime during my undergraduate I thought I had solved all the world's problems.</p>
-<p>You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and ...</p>
-                <a class="readmore" href="../posts/pi-storage.html">read more</a>
-                <p>There are <a href="../posts/pi-storage.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/the-linear-theory-of-battleship.html" rel="bookmark"
-                           title="Permalink to The Linear Theory of Battleship">The Linear Theory of Battleship</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-10-03T00:48:00">
-                Mon 03 October 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/quantum.html"><i class="icon-tag"></i>quantum</a>
+	<a href="../tag/pencil-balancing.html"><i class="icon-tag"></i>pencil balancing</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/numerics.html"><i class="icon-tag"></i>numerics</a>
+	<a href="../tag/equations.html"><i class="icon-tag"></i>equations</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Sorry for the delay between posts. Here in Virtuosi-land, we've all begun our summer research projects and I think we've just become a little bogged down in the rush that is starting a summer research project. You feel as though you have no idea what the heck is going on, and just try desperately to keep your head up as you hit the ground running, but thats a topic for another post. In this post I'd like to address a fun physics problem. How long can you balance a pencil on its tip? I mean in a perfect world, how long? No really. Think about it a second. Try and come up with an answer before your proceed. What this question will become by the end of this post is something like the following: Given that Quantum Mechanics exists, what is the longest time you could conceivably ...
+                        <a class="btn primary xsmall" href="../posts/how-long-can-you-balance-a-quantum-pencil.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/i-was-born-on-wednesday.html">I was born on Wednesday</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-26T03:17:00">
+        <i class="icon-calendar"></i>Wed 26 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/battleship.html">battleship</a><a href="../tag/linear-algebra.html">linear algebra</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="250" width="249" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png" /></a></div>
 
-<p>Recently I set out to hold a <a href="http://en.wikipedia.org/wiki/Battleship_(game)">Battleship</a> programming tournament here among some of the undergraduates.  Naturally, I myself wanted to win.  So, I got to thinking about the game, and developed what I like to call "the linear theory of battleship".  </p>
-<p>A demonstration of the fruits of my efforts ...</p>
-                <a class="readmore" href="../posts/the-linear-theory-of-battleship.html">read more</a>
-                <p>There are <a href="../posts/the-linear-theory-of-battleship.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/odds.html"><i class="icon-tag"></i>odds</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/cards.html"><i class="icon-tag"></i>cards</a>
+	<a href="../tag/probability.html"><i class="icon-tag"></i>probability</a>
+	<a href="../tag/birthday.html"><i class="icon-tag"></i>birthday</a>
+	<a href="../tag/monty-hall.html"><i class="icon-tag"></i>monty hall</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Probability is a tricky thing. There are a lot of nonsensical answers to be had. I just read an article about the recent Gathering for Gardner meeting that took place. Gathering for Gardner is a unique meeting for mathematicians, magicians and puzzle makers where they get together and talk about interesting things. The meetings were inspired by Martin Gardner, one of the awesomest dudes of our time, who unfortunately just passed away. The question put to the floor was the following: "I have two children. One is a boy born on a Tuesday. What is the probability I have two boys?" Think about that for a moment. Not too hard though. The answer turns out to be surprising. Upon reading the question, I thought about it for a long time and managed to confused myself entirely. Thinking I had gone crazy, I wrote a little python script to test the ...
+                        <a class="btn primary xsmall" href="../posts/i-was-born-on-wednesday.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/physics-of-baseball-batting.html">Physics of Baseball: Batting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-19T18:21:00">
+        <i class="icon-calendar"></i>Wed 19 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/lifetime-of-liquid-water.html" rel="bookmark"
-                           title="Permalink to Lifetime of Liquid Water">Lifetime of Liquid Water</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-07-10T22:07:00">
-                Sun 10 July 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/order-of-magnitude.html">order of magnitude</a><a href="../tag/fun.html">fun</a><a href="../tag/water.html">water</a><a href="../tag/physics.html">physics</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /></a></div>
+<span class="label">Tags</span>
+	<a href="../tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/baseball.html"><i class="icon-tag"></i>baseball</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be. We were interested in just how hard it is to hit a pitch with the bat. So we thought we'd model hitting the ball with a rather simple approximation of a robot swinging a cylindrical bat, horizontally with some rotational speed and at a random height. The question then becomes, if the robot chooses a random height and a random time to swing, what are the chances that it gets a hit? Spatial Resolution So the first thing to consider is how much of the strike zone the bat takes up. In order to be a strike, the ball needs to be over home plate, which is 17 inches wide, and ...
+                        <a class="btn primary xsmall" href="../posts/physics-of-baseball-batting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/cell-phone-brain-damage-part-deux.html">Cell Phone Brain Damage: Part Deux</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-19T16:03:00">
+        <i class="icon-calendar"></i>Wed 19 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>Apologies for the hiatus recently, it's been a busy time (when isn't it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a ...</p>
-                <a class="readmore" href="../posts/lifetime-of-liquid-water.html">read more</a>
-                <p>There are <a href="../posts/lifetime-of-liquid-water.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/end-of-the-earth-vi-nanobot-destruction.html" rel="bookmark"
-                           title="Permalink to End of the Earth VI: Nanobot destruction">End of the Earth VI: Nanobot destruction</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-22T13:11:00">
-                Fri 22 April 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/molecules.html"><i class="icon-tag"></i>molecules</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/dimensional-analysis.html"><i class="icon-tag"></i>dimensional analysis</a>
+	<a href="../tag/cell-phone.html"><i class="icon-tag"></i>cell phone</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I thought I'd take another look at cell phone damage, coming at it from a different direction than my colleague. Mostly I just want to consider the energy of the radiation that cell phones produce, and compare that with the other relevant energy scales for molecules. Cell Phone EnergySo, lets start with cell phones. I looked at my cell phone battery, and it looks like it is rated for 1 A, at 3.5 V. So when it is running at its peak it should put out about 3.5 W of power in electromagnetic waves (assuming it reaches its rating and all of that energy is fully converted into radiation). But what form does this energy take? Well, its electromagnetic radiation, so its in the form of a bunch of photons. In order to determine the energy of each photon, we need to know the frequency of ...
+                        <a class="btn primary xsmall" href="../posts/cell-phone-brain-damage-part-deux.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/cell-phone-brain-damage-or-not-.html">Cell Phone Brain Damage... or not.</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-27T19:30:00">
+        <i class="icon-calendar"></i>Tue 27 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/js.html"><i class="icon-user"></i>Js</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/nanobots.html">nanobots</a><a href="../tag/end-of-the-earth.html">end of the earth</a><a href="../tag/earth-day.html">earth day</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="314" width="320" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /></a></div>
 
-<p>Let's destroy the earth with technology.</p>
-<p>A while ago, I read the novel <i>Postsingular</i> by Rudy Rucker, and in the first chapter the Earth gets destroyed, and then undestroyed, and then the novel unfolds and the Earth's likelihood is threatened again, and it looks like the Earth will ...</p>
-                <a class="readmore" href="../posts/end-of-the-earth-vi-nanobot-destruction.html">read more</a>
-                <p>There are <a href="../posts/end-of-the-earth-vi-nanobot-destruction.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/cell-phone.html"><i class="icon-tag"></i>cell phone</a>
+	<a href="../tag/faradays-law.html"><i class="icon-tag"></i>Faraday's law</a>
+	<a href="../tag/brain-damage.html"><i class="icon-tag"></i>brain damage</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">For better or worse, cell phones are a part of our lives. I say this because they can be convenient when needed, but there's nothing more annoying than a dropped call or an inconveniently timed ring tone. Since many people carry their phones with them daily, there has been a number of studies which ask what are the long-term health effects of cell phone usage. While the controversy rages among medical researchers, I decided to find my own answers by doing a calculation based on the power output of a simple hand set. The key physical idea in this calculation is Faraday's law. You can check Wikipedia for a lengthy article describing it, but I'm more interested in getting down to business. Now, from the antenna of every cell phone, an electromagnetic wave is emitted. This EM wave, has magnetic and electric components which oscillate back and ...
+                        <a class="btn primary xsmall" href="../posts/cell-phone-brain-damage-or-not-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/earth-day-earth-units.html">Earth Day - Earth Units</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-22T16:18:00">
+        <i class="icon-calendar"></i>Thu 22 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/collective-wanderings.html" rel="bookmark"
-                           title="Permalink to Collective Wanderings">Collective Wanderings</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-04T22:39:00">
-                Mon 04 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/clicky.html">clicky</a><a href="../tag/fun.html">fun</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
-</footer><!-- /.post-info -->                <p><i>Update [04/04/11]:  It seems Clicky got too popular for our bandwidth limits on the physics servers.  Hopefully we'll be able to fix this sometime soon...</i>
-<i>
-</i>
-<i>Update [04/02/11]:  We made the code faster, so check out the new and improved Clicky!</i></p>
-<p>Hey, kids!  Would you like ...</p>
-                <a class="readmore" href="../posts/collective-wanderings.html">read more</a>
-                <p>There are <a href="../posts/collective-wanderings.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/units.html"><i class="icon-tag"></i>units</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/dimensional-analysis.html"><i class="icon-tag"></i>dimensional analysis</a>
+	<a href="../tag/earth-day.html"><i class="icon-tag"></i>earth day</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In honor of Earth day, I thought I would take a look at what it would mean to do physics in 'Earth' units. What do I mean by that? Well lets be anti-Copernican here, in fact lets assume the opposite of the Copernican principle, and state that the Earth is privileged in the universe and define all of our units around the Earth. So, I will put a little subscript earth on all of the 'earth' units. They are to be read as 'earth meters' or 'earth amps', etc. We will take as our starting point the mass, radius and day of the earth, normalizing all of our standards to that. This gives us our initial conversion factors $$ 1 g_{\oplus} = M_{\oplus} = 5.9742 \times 10^{34} \text{ kg} $$ $$ 1 m_{\oplus} = R_{\oplus} = 6378.1 \text{ km} $$ $$ 1 s_{\oplus} = T_{\oplus} = 86,400 \text{ s} $$ From this ...
+                        <a class="btn primary xsmall" href="../posts/earth-day-earth-units.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/q-factors.html">Q Factors</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-21T00:38:00">
+        <i class="icon-calendar"></i>Wed 21 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/problem-of-the-month-gilligan-physics.html" rel="bookmark"
-                           title="Permalink to Problem of the Month: Gilligan Physics">Problem of the Month: Gilligan Physics</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-02-06T12:55:00">
-                Sun 06 February 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/crc.html">CRC</a><a href="../tag/physics-challenge.html">physics challenge</a><a href="../tag/fun.html">fun</a><a href="../tag/standards.html">standards</a><a href="../tag/gilligan.html">gilligan</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s1600/coconut.jpg" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="320" width="238" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s320/coconut.jpg" /></a></div>
+<span class="label">Tags</span>
+	<a href="../tag/q-factor.html"><i class="icon-tag"></i>Q factor</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">When I walk in my door when I get home, I hook my keys, which I keep on a carabiner, onto a binder clip that I've clipped onto my window sill. Its a great way to never lose your keys. But one thing I always notice is that when I hook it on, it swings, and every time it swings it makes a click. This you might expect. What always surprises me is how long the keys keep swinging. They seem to swing for a surprisingly long time, minutes. It always catches me off guard. In order to explain why, I get to talk about Q Factors The Q factor stands for quality factor. Its a nondimensional parameter (my favorite kind) that tells you how pure your oscillator is. Lets back up a step. Lots of things in the world oscillate. Think about a swing. If you get going ...
+                        <a class="btn primary xsmall" href="../posts/q-factors.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/onsager-s-tour-de-force.html">Onsager's Tour de Force</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-15T20:22:00">
+        <i class="icon-calendar"></i>Thu 15 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>So, some of us over here at Virtuosi Central have organized a challenge problem for the physics community here at Cornell.  Well, we thought we would open up the challenge to the great wide world.  The more submissions the merrier.  </p>
-<p>The deadline is March 1, and submissions can be sent ...</p>
-                <a class="readmore" href="../posts/problem-of-the-month-gilligan-physics.html">read more</a>
-                <p>There are <a href="../posts/problem-of-the-month-gilligan-physics.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/darts.html" rel="bookmark"
-                           title="Permalink to Darts">Darts</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-01-13T16:29:00">
-                Thu 13 January 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/onsager.html"><i class="icon-tag"></i>onsager</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/tour-de-force.html"><i class="icon-tag"></i>tour de force</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In 1943 in a tour de force of mathematical physics, Lars Onsager solved the 2D Ising Model. His solution has proved crucial in furthering statistical mechanics, allowing theorists to check all of there approximation schemes against analytical results. I call his effort a tour de force because it was a huge mathematical exercise, his solution spanning 33 pages. I also call it a 'tour de force' because I have seen it referenced as such in no less than 5 different sources, as well as numerous times in speech. This got me wondering, just how many times is Onsager's solution called a tour de force... So, first I started with a Google books search, and turned up 39 Books, among the one's that Google has indexed, which surely represent only the tip of the iceburg. The books search turns up some of the more popular statistical mechanics books including ...
+                        <a class="btn primary xsmall" href="../posts/onsager-s-tour-de-force.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/another-reason-why-the-core-is-stupid.html">Another Reason Why The Core is Stupid</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-15T17:30:00">
+        <i class="icon-calendar"></i>Thu 15 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/darts.html">darts</a><a href="../tag/python.html">python</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="295" width="293" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg" /></a></div>
 
-<pre><code>Over break I went out with a buddy of mine and played some darts.  This got me to thinking, where exactly should someone aim in order to get the largest expected number of points?
-</code></pre>
-<p><a name='more'></a>
-   Now, obviously when you are playing a game like <a href="http://en.wikipedia.org/wiki/Cricket_(darts)">Cricket</a>, where you should aim is fairly ...</p>
-                <a class="readmore" href="../posts/darts.html">read more</a>
-                <p>There are <a href="../posts/darts.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/the-core.html"><i class="icon-tag"></i>the core</a>
+	<a href="../tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="../tag/magnetism.html"><i class="icon-tag"></i>magnetism</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="../tag/sci-fi.html"><i class="icon-tag"></i>sci-fi</a>
+	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
+	<a href="../tag/movie.html"><i class="icon-tag"></i>movie</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I assume everyone has heard of The Core, the terrible scifi movie from 2003. If you haven't you're missing out on what appears to be, according to Discover magazine, the worst sci-fi film ever. There are already numerous sites that discuss the bad science in the core (here, or over at Bad Astronomy), but they all seem to ignore another fundamental problem with the plot. I don't think I'll give too much away if I tell you that the basic premise of the movie is that the earth's core has stopped rotating, and so the earth's magnetic field is collapsing, which they claim will mean that all of the previously deflected microwaves (note: EM radiation is not bent by a magnetic field) will cook us all. Now, a lot of people have focused on the microwaves bit, which while bad science, one could argue ...
+                        <a class="btn primary xsmall" href="../posts/another-reason-why-the-core-is-stupid.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/locating-the-sun-photo.html">Locating the Sun Photo</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-14T02:21:00">
+        <i class="icon-calendar"></i>Wed 14 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/four-fantastic-books-3-of-which-are-free-.html" rel="bookmark"
-                           title="Permalink to Four Fantastic Books (3 of which are free)">Four Fantastic Books (3 of which are free)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2010-10-16T00:50:00">
-                Sat 16 October 2010
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/book-review.html">book review</a><a href="../tag/fun.html">fun</a><a href="../tag/math.html">math</a><a href="../tag/bad-physics.html">bad physics</a></p>
-</footer><!-- /.post-info -->                <p><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248" /></a>Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
-<h3>Street Fighting Mathematics - Sanjoy ...</h3></p>
-                <a class="readmore" href="../posts/four-fantastic-books-3-of-which-are-free-.html">read more</a>
-                <p>There are <a href="../posts/four-fantastic-books-3-of-which-are-free-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/analysis.html"><i class="icon-tag"></i>analysis</a>
+	<a href="../tag/sun.html"><i class="icon-tag"></i>sun</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/picture.html"><i class="icon-tag"></i>picture</a>
+	<a href="../tag/lattitude.html"><i class="icon-tag"></i>lattitude</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">This photo has been making the rounds on the internet lately: Originally from here. Its a time lapse photo of the sun taken from a pinhole camera from June until December. The real question is: Where was this photo taken? Wandering SunWell, first lets think a second about why the sun would wander in the sky. As you may already know, the earth's pole is not aligned with our solar system's axis. The earth's axis has what is called a 23.5 degree axial tilt, or obliquity. As a result, if you sit at a fixed latitude on the earth, then as the earth revolves around the sun and the year goes by, the angle the sun makes with the horizon changes. We need to estimate how much the sun's angle in the sky changes. Consider the following diagram You'll notice that the angle ...
+                        <a class="btn primary xsmall" href="../posts/locating-the-sun-photo.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/fishy-calculation.html">Fishy Calculation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-09T14:26:00">
+        <i class="icon-calendar"></i>Fri 09 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/visualizing-quantum-mechanics.html" rel="bookmark"
-                           title="Permalink to Visualizing Quantum Mechanics">Visualizing Quantum Mechanics</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2010-09-14T20:06:00">
-                Tue 14 September 2010
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/feynman.html">feynman</a><a href="../tag/quantum-mechanics.html">quantum mechanics</a><a href="../tag/solar-system.html">solar system</a><a href="../tag/movie.html">movie</a><a href="../tag/bouncing-ball.html">bouncing ball</a></p>
-</footer><!-- /.post-info -->                <p>Or how I learned to stop worrying and love the computer.</p>
-<p>[Note:  There's a neat video below the fold. ]</p>
-<h3>A Confession</h3>
+<span class="label">Tags</span>
+	<a href="../tag/fermi.html"><i class="icon-tag"></i>fermi</a>
+	<a href="../tag/guestimation.html"><i class="icon-tag"></i>guestimation</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="../tag/fish.html"><i class="icon-tag"></i>fish</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Aaron Santos over at A Diary of Numbers, author of How Many Licks?, has posted a Fermi Contest. For the uninitiated, a Fermi Problem is a seemingly unanswerable problem, which you can actually estimate reasonable by breaking the problem down into smaller parts. They're really fun, and I intend to post more in the future. The question at hand is: How far would the oceans sink if we took all the fish out? I'll answer in two very different ways. Preliminaries In both cases, I'll answer how much the ocean depth would decrease by first calculating the total volume of fish in the ocean. Why is this helpful? Because for a spherical shell, you can estimate its volume by just taking its surface area and multiplying by the thickness, i.e. $$ V \sim 4 \pi R^2 \Delta R $$ So, if I can estimate the total volume ...
+                        <a class="btn primary xsmall" href="../posts/fishy-calculation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-<p>I was recently rereading the <a href="http://books.google.com/books?id=_6XvAAAAMAAJ&amp;q=Feynman+lectures+on+physics&amp;dq=Feynman+lectures+on+physics&amp;hl=en&amp;ei=6wmQTPzsDIG78gbAp_joDQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=2&amp;ved=0CDgQ6AEwAQ">Feynman Lectures on Physics</a>.  If you haven't read them lately, I highly recommend them.  Feynman is always a pleasure to read.  As ...</p>
-                <a class="readmore" href="../posts/visualizing-quantum-mechanics.html">read more</a>
-                <p>There are <a href="../posts/visualizing-quantum-mechanics.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
-        Page 1 / 3
-            <a href="../tag/fun2.html">&raquo;</a>
-    </p>
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -431,5 +1282,10 @@ As a final note, I would like to respond directly to to Stefan Fatsis's <a href=
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

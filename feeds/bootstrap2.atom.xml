@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/bootstrap2.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2013-02-19T22:00:08-05:00</updated><entry><title>Bootstrap 2 theme</title><link href="http://thephysicsvirtuosi.com/posts/bootstrap-2-theme.html" rel="alternate"></link><updated>2013-02-19T22:00:08-05:00</updated><author><name>The Virtuosi</name></author><id>tag:thephysicsvirtuosi.com,2013-02-19:posts/bootstrap-2-theme.html</id><summary type="html">&lt;p&gt;This is (yet another) theme for Pelican inspired by &lt;a class="reference external" href="http://twitter.github.com/bootstrap/"&gt;Twitter Bootstrap 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It makes use of &lt;a class="reference external" href="http://fortawesome.github.com/Font-Awesome/"&gt;Font-Awesome&lt;/a&gt; icons, supports tag_cloud, translation,
+and try to keep other features from Pelican's default theme &lt;tt class="docutils literal"&gt;notmyidea&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;Also you can see its result from &lt;a class="reference external" href="http://farseerfc.github.com/"&gt;my Github Page&lt;/a&gt;. It will be updated using latest theme.&lt;/p&gt;
+&lt;p&gt;Feel free to use it.&lt;/p&gt;
+</summary></entry></feed>

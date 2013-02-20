@@ -1,376 +1,1305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - old</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - old</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li class="active"><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li class="active">
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                 
-                            <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed" start="9">
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/anatomy-of-an-experiment-i-the-question.html" rel="bookmark"
-                           title="Permalink to Anatomy of an Experiment I - The Question">Anatomy of an Experiment I - The Question</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-05-05T21:06:00">
-                Thu 05 May 2011
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/human-radiation.html">Human Radiation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-09T00:24:00">
+        <i class="icon-calendar"></i>Sun 09 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/question.html">question</a><a href="../tag/cryopreservation.html">cryopreservation</a><a href="../tag/physics.html">physics</a><a href="../tag/experiment.html">experiment</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s1600/installation_of_world_largest_silicon_tracking_detector.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="204" src="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s320/installation_of_world_largest_silicon_tracking_detector.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Warning: picture has little or no relation to this post.</td></tr></tbody></table>
 
-<p>I realized the other day that I've seen a lot of people talk about research results, but it is much more rare that I see someone talk about how we do research.  I think that may be because, to ...</p>
-                <a class="readmore" href="../posts/anatomy-of-an-experiment-i-the-question.html">read more</a>
-                <p>There are <a href="../posts/anatomy-of-an-experiment-i-the-question.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/power.html"><i class="icon-tag"></i>power</a>
+	<a href="../tag/blackbody.html"><i class="icon-tag"></i>blackbody</a>
+	<a href="../tag/radiation.html"><i class="icon-tag"></i>radiation</a>
+	<a href="../tag/human.html"><i class="icon-tag"></i>human</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Things are still busy here at the Virutosi. Hopefully in a week or so we'll be back to normal, and much more active than we've been recently Anyways, today I'd like to consider human radiation. It is well known that any object will radiate energy based on its temperature. Even more interesting, we radiate at all wavelengths, though at the human body temperature our radiation is sharply peaked in the infrared. Even so, we still put out some x-ray radiation. As a professor of mine once said, consider that next time you sleep with someone! Given all this, the question on my mind today is: how does the energy we radiate daily compare to the energy we consume? That is, why don't I lose weight sitting here typing on the computer? We physicists call perfect radiators black bodies (something that radiates perfectly also must absorb perfectly ...
+                        <a class="btn primary xsmall" href="../posts/human-radiation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/letting-air-out-of-tires-ii.html">Letting Air Out of Tires II</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-04T14:52:00">
+        <i class="icon-calendar"></i>Tue 04 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/end-of-the-earth-vi-nanobot-destruction.html" rel="bookmark"
-                           title="Permalink to End of the Earth VI: Nanobot destruction">End of the Earth VI: Nanobot destruction</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-22T13:11:00">
-                Fri 22 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/nanobots.html">nanobots</a><a href="../tag/end-of-the-earth.html">end of the earth</a><a href="../tag/earth-day.html">earth day</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="314" width="320" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /></a></div>
+<span class="label">Tags</span>
+	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
+	<a href="../tag/tire.html"><i class="icon-tag"></i>tire</a>
+	<a href="../tag/thermodynamics.html"><i class="icon-tag"></i>thermodynamics</a>
+	<a href="../tag/gas.html"><i class="icon-tag"></i>gas</a>
+	<a href="../tag/cold.html"><i class="icon-tag"></i>cold</a>
+	<a href="../tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+	<a href="../tag/busted.html"><i class="icon-tag"></i>busted</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In a recent post I calculated how cold air coming out of bike tires should feel. However, at the end of the post, I did note that there are competing explanations for why the air cools. There's the approach I took, which is adiabatic cooling, but there's also something called the Joule-Thomson effect. The Joule-Thomson effect has the interesting property that helium being let out of a bike tire would actually be warmer, which suggests an immediate way to test which effect is dominant. We pressurize a bike tire with helium, and see if the valve gets cold or hot. This is exactly what I did. With the help of Mark and Vince, our local equipment gurus, I was able to pressurize a bike tire to 26 psi with helium. Using one of those little thermal measurers you can buy at radio shack, we measured the initial temperature ...
+                        <a class="btn primary xsmall" href="../posts/letting-air-out-of-tires-ii.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/physics-as-magic-.html">Physics as Magic?</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-03T23:46:00">
+        <i class="icon-calendar"></i>Mon 03 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>Let's destroy the earth with technology.</p>
-<p>A while ago, I read the novel <i>Postsingular</i> by Rudy Rucker, and in the first chapter the Earth gets destroyed, and then undestroyed, and then the novel unfolds and the Earth's likelihood is threatened again, and it looks like the Earth will ...</p>
-                <a class="readmore" href="../posts/end-of-the-earth-vi-nanobot-destruction.html">read more</a>
-                <p>There are <a href="../posts/end-of-the-earth-vi-nanobot-destruction.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/earth-day-special-post-apocalyptic-literature.html" rel="bookmark"
-                           title="Permalink to Earth Day Special: Post-Apocalyptic Literature">Earth Day Special: Post-Apocalyptic Literature</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-22T10:30:00">
-                Fri 22 April 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/magic.html"><i class="icon-tag"></i>magic</a>
+	<a href="../tag/physics.html"><i class="icon-tag"></i>physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">There's a nice post over at Physics Buzz that I thought I might draw your attention to. The central quote for me is: "Speaking strictly about technology - which is often the knowledge attained by physicists put into practical use by engineers - physics has created some pretty amazing things. Cars, planes, iphones, medical treatments, lasers, 3-D movies, and the Large Hadron Collider. We are constantly WOWED by science. Unfortunately, the less someone understands how these things work, the more they begin to believe anything is possible. In other words, if you don't understand the parameters that allow for amazing things (like jets!) you also don't understand the parameters that would prevent other things (like energy generating heart replacements). If you don't understand anything about physics and technology, then it appears to be nothing short of magic, and magic has no bounds..." I think this gets at some ...
+                        <a class="btn primary xsmall" href="../posts/physics-as-magic-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/letting-air-out-of-tires.html">Letting Air Out of Tires</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-05-03T23:21:00">
+        <i class="icon-calendar"></i>Mon 03 May 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alex.html">Alex</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://upload.wikimedia.org/wikipedia/en/2/23/Emergence_cover_first_edition.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 309px; height: 507px;" src="http://upload.wikimedia.org/wikipedia/en/2/23/Emergence_cover_first_edition.jpg" alt="" border="0" /></a>
-At some point in elementary school I got into the habit of reading Franz Kafka's <a href="http://en.wikipedia.org/wiki/The_Metamorphosis"><span style="font-style: italic;">The Metamorphosis</span></a> every time that I got sick.  I found it strangely comforting to be reminded that while I might have <a href="http://en.wikipedia.org/wiki/Scarlet_fever">scarlet fever</a> and be intermittently hallucinating about Mickey Mouse, at least I had ...</p>
-                <a class="readmore" href="../posts/earth-day-special-post-apocalyptic-literature.html">read more</a>
-                <p>There are <a href="../posts/earth-day-special-post-apocalyptic-literature.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/end-of-the-earth-v-there-goes-the-sun.html" rel="bookmark"
-                           title="Permalink to End of the Earth V: There Goes the Sun">End of the Earth V: There Goes the Sun</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-22T09:42:00">
-                Fri 22 April 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
+	<a href="../tag/tire.html"><i class="icon-tag"></i>tire</a>
+	<a href="../tag/thermodynamics.html"><i class="icon-tag"></i>thermodynamics</a>
+	<a href="../tag/gas.html"><i class="icon-tag"></i>gas</a>
+	<a href="../tag/cold.html"><i class="icon-tag"></i>cold</a>
+	<a href="../tag/experiment.html"><i class="icon-tag"></i>experiment</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Have you ever noticed how when you let air out of a bike tire (or, I suppose, a car tire) it feels rather cold? Today we're going to explore why that is, and just how cold it is. Many people consider the air escaping from a tire as a classic example of an adiabatic process. What is an adiabatic process? It is a process that happens so quickly there is no time for heat flow to occur. For our air in the bike tire this means we're letting it out of the tire so quickly that no energy can move into it from the surrounding air. This may not be exactly true, there may be a little energy flow, but there is little enough that we can ignore it. Given that, how do we talk about temperature change? Let's give a physical motivation first. Imagine a gas ...
+                        <a class="btn primary xsmall" href="../posts/letting-air-out-of-tires.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/the-beer-diet.html">The Beer Diet</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-30T11:35:00">
+        <i class="icon-calendar"></i>Fri 30 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/sun.html">sun</a><a href="../tag/scott-bakula.html">scott bakula</a><a href="../tag/end-of-the-earth.html">end of the earth</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-LtXsyHxxSi0/TbDfL6l4tnI/AAAAAAAAAMg/l_12lafg6LQ/s1600/creepy_sun.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="224" src="http://4.bp.blogspot.com/-LtXsyHxxSi0/TbDfL6l4tnI/AAAAAAAAAMg/l_12lafg6LQ/s320/creepy_sun.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The Sun [photo courtesy of NASA]</td></tr></tbody></table>
 
-<p>People that know me well know that I have a lot in common with Robert Frost.  We both were born in March and we both employ rural New England settings to explore complex social and philosophical themes in our poetry.  We also like the ...</p>
-                <a class="readmore" href="../posts/end-of-the-earth-v-there-goes-the-sun.html">read more</a>
-                <p>There are <a href="../posts/end-of-the-earth-v-there-goes-the-sun.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/diet.html"><i class="icon-tag"></i>diet</a>
+	<a href="../tag/calories.html"><i class="icon-tag"></i>Calories</a>
+	<a href="../tag/beer.html"><i class="icon-tag"></i>beer</a>
+	<a href="../tag/thermodynamics.html"><i class="icon-tag"></i>thermodynamics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I know it's been pretty quiet over here this week. The semester is winding down (a week of classes left), and that means that things have been kicked up into another gear. We've got four or five ideas bouncing around at the moment, so hopefully we'll get some up soon. Today I'd like to talk about the beer diet. A while back, there was a rumor going around that if you drank ice cold beer your body would burn more calories heating the beer than the beer contained. It turns out that this false, and I think the claim relied on a lack of knowledge that the American food Calorie is actually one thousand calories (note the difference in capitalization). Let's prove this to ourselves. Let us consider 12 fluid oz of beer. To any good approximation we can treat this as 12 oz of ...
+                        <a class="btn primary xsmall" href="../posts/the-beer-diet.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/cell-phone-brain-damage-or-not-.html">Cell Phone Brain Damage... or not.</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-27T19:30:00">
+        <i class="icon-calendar"></i>Tue 27 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/js.html"><i class="icon-user"></i>Js</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/end-of-the-earth-iv-shocking-destruction.html" rel="bookmark"
-                           title="Permalink to End of the Earth IV - Shocking Destruction">End of the Earth IV - Shocking Destruction</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-22T07:54:00">
-                Fri 22 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/jesse.html">Jesse</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/charge.html">charge</a><a href="../tag/proton.html">proton</a><a href="../tag/electron.html">electron</a><a href="../tag/end-of-the-earth.html">end of the earth</a></p>
-</footer><!-- /.post-info -->                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s1600/exploding-earth11.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s200/exploding-earth11.jpg" width="200" /></a></div>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/cell-phone.html"><i class="icon-tag"></i>cell phone</a>
+	<a href="../tag/faradays-law.html"><i class="icon-tag"></i>Faraday's law</a>
+	<a href="../tag/brain-damage.html"><i class="icon-tag"></i>brain damage</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">For better or worse, cell phones are a part of our lives. I say this because they can be convenient when needed, but there's nothing more annoying than a dropped call or an inconveniently timed ring tone. Since many people carry their phones with them daily, there has been a number of studies which ask what are the long-term health effects of cell phone usage. While the controversy rages among medical researchers, I decided to find my own answers by doing a calculation based on the power output of a simple hand set. The key physical idea in this calculation is Faraday's law. You can check Wikipedia for a lengthy article describing it, but I'm more interested in getting down to business. Now, from the antenna of every cell phone, an electromagnetic wave is emitted. This EM wave, has magnetic and electric components which oscillate back and ...
+                        <a class="btn primary xsmall" href="../posts/cell-phone-brain-damage-or-not-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/some-of-the-best-advice-you-ll-ever-receive.html">Some of the Best Advice You'll Ever Receive</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-25T20:29:00">
+        <i class="icon-calendar"></i>Sun 25 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>Earth day is upon us once more.  So many other namby-pamby bloggers out there (don't hurt me!) are writing about how wonderful the earth is and how great earth day is.  We here at The Virtuosi take a more hardline approach.  Today I'm going to tell you how ...</p>
-                <a class="readmore" href="../posts/end-of-the-earth-iv-shocking-destruction.html">read more</a>
-                <p>There are <a href="../posts/end-of-the-earth-iv-shocking-destruction.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/matt-raises-clicky-from-the-dead.html" rel="bookmark"
-                           title="Permalink to Matt Raises Clicky From the Dead">Matt Raises Clicky From the Dead</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-08T13:52:00">
-                Fri 08 April 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/education.html"><i class="icon-tag"></i>education</a>
+	<a href="../tag/feynman.html"><i class="icon-tag"></i>feynman</a>
+	<a href="../tag/advice.html"><i class="icon-tag"></i>advice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I came across what might be the best advice any student (nay any human being) could possibly ever receive reading a book today... Now there are two ways in which you can increase your understanding of these issues. One way is to remember the general ideas and then go home and try to figure out what commands you need and make sure you don't leave one out. Make the set shorter or longer for convidence and try to understand the tradeoffs by trying to do problems with your choice. This is the way I would do it because I have that kind of personality! It's the way I study -- to understand somethingby trying to work it out or, in other words, to understand something by creating it. Not creating it one hundred percent, of course; but taking a hint as to which direction to go but not remembering ...
+                        <a class="btn primary xsmall" href="../posts/some-of-the-best-advice-you-ll-ever-receive.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/end-of-the-earth-physics-iii-asteroids-.html">End of the Earth Physics III- Asteroids!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-22T18:45:00">
+        <i class="icon-calendar"></i>Thu 22 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/clicky.html">clicky</a><a href="../tag/matt-magic.html">matt magic</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://mattbierbaum.com/clicky/" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="360" src="http://2.bp.blogspot.com/-4_stoxVGUBw/TZ6JaKU2EQI/AAAAAAAAAMY/nZuXEMKRRE8/s640/clicky.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"></td></tr></tbody></table>
 
-<div class="separator" style="clear: both; text-align: left;"></div>
+<span class="label">Tags</span>
+	<a href="../tag/bruce-willis.html"><i class="icon-tag"></i>bruce willis</a>
+	<a href="../tag/dinosaur.html"><i class="icon-tag"></i>dinosaur</a>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="../tag/asteroid.html"><i class="icon-tag"></i>asteroid</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">No day of earth destroying celebration would be complete without that apocalyptic all-time favorite: the asteroid. And to be fair, it deserves to be the favorite. Of all the doomsday predictions out there (nuclear holocaust for the cynics, death by snoo-snoo for the optimists) it is the only one that is just about certain to occur at some point in the geological near future. On top of that, it's one that we could potentially avoid with enough time and some neat ideas . Let's model an asteroid impact on the earth. We will assume an asteroid starting from rest at infinity and falling to the surface of the earth due to earth's gravity only. Now obviously these assumptions are not exactly correct. We can imagine our asteroid not starting from rest or feeling some force due to the sun. Each of these would certainly change our answer, but ...
+                        <a class="btn primary xsmall" href="../posts/end-of-the-earth-physics-iii-asteroids-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/earth-day-earth-units.html">Earth Day - Earth Units</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-22T16:18:00">
+        <i class="icon-calendar"></i>Thu 22 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="separator" style="clear: both; text-align: left;"></div>
 
-<p><a name='more'></a></p>
-<div class="separator" style="clear: both; text-align: left;">After languishing for four days in the digital hereafter, Clicky has been successfully raised from the dead (thanks to Matt).  He can be found at his new (and bandwidth-unrestricted) home <a href="http://mattbierbaum.com/clicky/">here</a>.</div>
+<span class="label">Tags</span>
+	<a href="../tag/units.html"><i class="icon-tag"></i>units</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/dimensional-analysis.html"><i class="icon-tag"></i>dimensional analysis</a>
+	<a href="../tag/earth-day.html"><i class="icon-tag"></i>earth day</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In honor of Earth day, I thought I would take a look at what it would mean to do physics in 'Earth' units. What do I mean by that? Well lets be anti-Copernican here, in fact lets assume the opposite of the Copernican principle, and state that the Earth is privileged in the universe and define all of our units around the Earth. So, I will put a little subscript earth on all of the 'earth' units. They are to be read as 'earth meters' or 'earth amps', etc. We will take as our starting point the mass, radius and day of the earth, normalizing all of our standards to that. This gives us our initial conversion factors $$ 1 g_{\oplus} = M_{\oplus} = 5.9742 \times 10^{34} \text{ kg} $$ $$ 1 m_{\oplus} = R_{\oplus} = 6378.1 \text{ km} $$ $$ 1 s_{\oplus} = T_{\oplus} = 86,400 \text{ s} $$ From this ...
+                        <a class="btn primary xsmall" href="../posts/earth-day-earth-units.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/nobody-really-gets-quantum.html">Nobody Really Gets Quantum</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-22T14:29:00">
+        <i class="icon-calendar"></i>Thu 22 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div style="text-align: left;">
-</div>
 
-<div style="text-align: left;">For the initial post about Clicky, see <a href="http://thevirtuosi.blogspot.com/2011/04/collective-wanderings.html">this</a> earlier post.</div>
+<span class="label">Tags</span>
+	<a href="../tag/.html"><i class="icon-tag"></i></a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Nobody Really Gets Quantum / Etgar Keret On Yom Kippur eve Quantum walked over to Einstein's house to seek forgiveness. "I'm not home," shouted Einstein from behind a closed door. On the way home people taunted him and somebody even hit him with an empty can of coke. Quantum pretended not to care, but deep inside he was really hurt. Nobody really gets Quantum, everybody hates him. "You parasite" people cry out when he's walking down the street, "why are you dodging the draft?" - "I wanted to enlist," Quantum tries to say, "but they wouldn't take me, because I'm so small." Not that anybody listens to Quantum. Nobody listens to Quantum when he tries to speak up for himself, but when he says something that can be misconstrued, oh, then suddenly everybody's paying attention. Quantum can say something innocent like "wow, what a cat!" and ...
+                        <a class="btn primary xsmall" href="../posts/nobody-really-gets-quantum.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/end-of-the-earth-ii-blaze-of-glory.html">End of the Earth II - Blaze of Glory</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-22T14:26:00">
+        <i class="icon-calendar"></i>Thu 22 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div style="text-align: left;">
-</div>
 
-<div style="text-align: left;">Enjoy!</div>
+<span class="label">Tags</span>
+	<a href="../tag/star-wars.html"><i class="icon-tag"></i>star wars</a>
+	<a href="../tag/recoil.html"><i class="icon-tag"></i>recoil</a>
+	<a href="../tag/marvin-the-martian.html"><i class="icon-tag"></i>marvin the martian</a>
+	<a href="../tag/lasers.html"><i class="icon-tag"></i>lasers</a>
+	<a href="../tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In honor of earth day today, many bloggers are posting things about how to save the earth, or retrospectives on earth days past. We here at The Virtuosi decided, what better way to celebrate the earth than to figure out how to destroy it? So that is exactly what we intend to do. This post will focus on the destruction of the earth by a laser beam. This is a familiar concept. Whether it is Marvin the Martian or the Death Star, destroying planets with lasers (or threatening to) is a common theme. We will be considering two questions today. The first is fairly obvious: how much power would the death star need to destroy the earth? The second relates to a topic of continuing interest of mine: how much would the death star recoil upon firing? First, the power we would need. Most estimates of the death star's ...
+                        <a class="btn primary xsmall" href="../posts/end-of-the-earth-ii-blaze-of-glory.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/laser-launching.html">Laser Launching</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-21T22:22:00">
+        <i class="icon-calendar"></i>Wed 21 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<div class="separator" style="clear: both; text-align: center;"></div>
 
-<div style="text-align: left;">
-</div>
-                <a class="readmore" href="../posts/matt-raises-clicky-from-the-dead.html">read more</a>
-                <p>There are <a href="../posts/matt-raises-clicky-from-the-dead.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/laser.html"><i class="icon-tag"></i>laser</a>
+	<a href="../tag/launch.html"><i class="icon-tag"></i>launch</a>
+	<a href="../tag/satellite.html"><i class="icon-tag"></i>satellite</a>
+	<a href="../tag/physics.html"><i class="icon-tag"></i>physics</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Lasers seem to be on my mind recently. Just yesterday, the class I TA for (E&M for engineers) talked about the momentum carried by E&M waves. This called to mind a discussion I had with a housemate a few weeks back. He had heard somewhere that 'they' were thinking of launching satellites with lasers. No way, I thought to myself. Satellites are too heavy. However, his question has been hovering around in my mind, so I've decided to try and answer it: can we use a laser to launch a satellite into orbit? Let us begin with a few simplifying assumptions. I'm going to assume that we want our launched satellite to reach the escape velocity of the earth. Of course, we don't want a satellite to escape orbit, but escape velocity is calculated without considering any kind of drag forces on our launched object ...
+                        <a class="btn primary xsmall" href="../posts/laser-launching.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/laser-gun-recoil-follow-up.html">Laser Gun Recoil: Follow-up</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-21T16:31:00">
+        <i class="icon-calendar"></i>Wed 21 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/a-sense-of-scale-in-dollars-and-cents-.html" rel="bookmark"
-                           title="Permalink to A Sense of Scale (in Dollars and Cents)">A Sense of Scale (in Dollars and Cents)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-07T21:42:00">
-                Thu 07 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/large-numbers.html">large numbers</a><a href="../tag/scott-bakula.html">scott bakula</a><a href="../tag/politics.html">politics</a></p>
-</footer><!-- /.post-info -->                <p>I hate politics, but for some reason I obsessively read about it.  I don't know why I do this, but I assume it's the same reason people slow down for car wrecks and pay to see the geek [1].  Anyway, the big thing in political news now is ...</p>
-                <a class="readmore" href="../posts/a-sense-of-scale-in-dollars-and-cents-.html">read more</a>
-                <p>There are <a href="../posts/a-sense-of-scale-in-dollars-and-cents-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/recoil.html"><i class="icon-tag"></i>recoil</a>
+	<a href="../tag/laser.html"><i class="icon-tag"></i>laser</a>
+	<a href="../tag/sound.html"><i class="icon-tag"></i>sound</a>
+	<a href="../tag/momentum.html"><i class="icon-tag"></i>momentum</a>
+	<a href="../tag/gun.html"><i class="icon-tag"></i>gun</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Matt Springer over at Built on Facts has a very nice post following up on my earlier analysis of whether or not a laser gun would recoil. In my analysis I came to the conclusion that the momentum delivered was much less than that of a conventional gun, but that the impulse, and hence the force delivered, was about the same. However, that force was delivered over a ~30ns timescale, which left open the question of whether or not the wielder would be able to feel that recoil. While I had thought to possibly return to this issue at some point, Matt has beat me to it. This is fortuitous, because I wasn't sure quite where to start with the question, while he approaches it in a very sensible, clear manner. The gist of his post is that he compares our response to short time scale forces to ...
+                        <a class="btn primary xsmall" href="../posts/laser-gun-recoil-follow-up.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/q-factors.html">Q Factors</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-21T00:38:00">
+        <i class="icon-calendar"></i>Wed 21 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/collective-wanderings.html" rel="bookmark"
-                           title="Permalink to Collective Wanderings">Collective Wanderings</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-04T22:39:00">
-                Mon 04 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/clicky.html">clicky</a><a href="../tag/fun.html">fun</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
-</footer><!-- /.post-info -->                <p><i>Update [04/04/11]:  It seems Clicky got too popular for our bandwidth limits on the physics servers.  Hopefully we'll be able to fix this sometime soon...</i>
-<i>
-</i>
-<i>Update [04/02/11]:  We made the code faster, so check out the new and improved Clicky!</i></p>
-<p>Hey, kids!  Would you like ...</p>
-                <a class="readmore" href="../posts/collective-wanderings.html">read more</a>
-                <p>There are <a href="../posts/collective-wanderings.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
+<span class="label">Tags</span>
+	<a href="../tag/q-factor.html"><i class="icon-tag"></i>Q factor</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">When I walk in my door when I get home, I hook my keys, which I keep on a carabiner, onto a binder clip that I've clipped onto my window sill. Its a great way to never lose your keys. But one thing I always notice is that when I hook it on, it swings, and every time it swings it makes a click. This you might expect. What always surprises me is how long the keys keep swinging. They seem to swing for a surprisingly long time, minutes. It always catches me off guard. In order to explain why, I get to talk about Q Factors The Q factor stands for quality factor. Its a nondimensional parameter (my favorite kind) that tells you how pure your oscillator is. Lets back up a step. Lots of things in the world oscillate. Think about a swing. If you get going ...
+                        <a class="btn primary xsmall" href="../posts/q-factors.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/the-end-of-earth-physics-i.html">The End of Earth Physics I</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-17T16:25:00">
+        <i class="icon-calendar"></i>Sat 17 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/special-virtuosi-book-announcement-.html" rel="bookmark"
-                           title="Permalink to Special Virtuosi Book Announcement!">Special Virtuosi Book Announcement!</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-04-01T01:41:00">
-                Fri 01 April 2011
-        </abbr>
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/scott-bakula.html">scott bakula</a><a href="../tag/literature.html">literature</a><a href="../tag/book-reviews.html">book reviews</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-R1-a_FlO6sA/TZVXVvoqvcI/AAAAAAAAALA/nNu7S12Sliw/s1600/kindle.jpeg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-R1-a_FlO6sA/TZVXVvoqvcI/AAAAAAAAALA/nNu7S12Sliw/s1600/kindle.jpeg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Coming soon to a Kindle near you!</td></tr></tbody></table>
+<span class="label">Tags</span>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="../tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I was reading the Wikipedia page for the Hitchhiker's Guide books the other day and found that it started as a series of radio shows called "The Ends of Earth." At the end of each episode, the Earth would be destroyed. Since I feel like this is the best way to end any TV show/movie/book/news broadcast/Mayan calendar, I will shamelessly steal the idea. Since this is the first End of the Earth post, we will start small and just consider the boiling off of all the world's oceans. To be precise, we will consider how much energy it would take to turn all the world's water at 0 degrees Celsius to water vapor at 100 degrees Celsius. First we need to estimate the mass of all the water on earth. I will make the assumptions that all water is fresh water and that ...
+                        <a class="btn primary xsmall" href="../posts/the-end-of-earth-physics-i.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/entropy-and-the-arrow-of-time.html">Entropy and the Arrow of Time</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-16T21:27:00">
+        <i class="icon-calendar"></i>Fri 16 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/nik-zhelev.html"><i class="icon-user"></i>Nik Zhelev</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-<p>We've been at this whole blogging thing for about a year now and I think we've amassed a large and dedicated enough fanbase to finally release a book!  The track record so far for physicist-writers has been <a href="http://www.amazon.com/Spiral-Novel-Paul-McEuen/dp/038534211X/ref=sr_1_1?ie=UTF8&amp;qid=1301633241&amp;sr=8-1">quite good</a> of late ...</p>
-                <a class="readmore" href="../posts/special-virtuosi-book-announcement-.html">read more</a>
-                <p>There are <a href="../posts/special-virtuosi-book-announcement-.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
 
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../posts/nickel-gnomes.html" rel="bookmark"
-                           title="Permalink to Nickel Gnomes">Nickel Gnomes</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-03-31T02:17:00">
-                Thu 31 March 2011
-        </abbr>
+<span class="label">Tags</span>
+	<a href="../tag/.html"><i class="icon-tag"></i></a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Somebody I talked to yesterday about what should the topic of my post be suggested that I should write something about cosmology, in particular the Big Bang and the ultimate fate of the universe. Being mostly interested in condensed matter, I am by no means an expert in cosmology (I’ll leave that to Corky). However, I will not abandon the request, but instead, spin it in a more condensed matter direction, by talking about Entropy. Entropy is a quantity that measures disorder. The more ordered your system is, i.e. the less ways you can arrange the constituents of your system, the less entropy you have and vice versa. I like to use the example of how messy my room is to visualize this. When I clean my room, I would pick up the random articles of clothing, books, etc and put them in the places where they belong ...
+                        <a class="btn primary xsmall" href="../posts/entropy-and-the-arrow-of-time.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/physics-for-non-physicists.html">Physics for non-physicists</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-16T16:36:00">
+        <i class="icon-calendar"></i>Fri 16 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/nik-zhelev.html"><i class="icon-user"></i>Nik Zhelev</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/corky.html">Corky</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/gnomes.html">gnomes</a><a href="../tag/scott-bakula.html">scott bakula</a></p>
-</footer><!-- /.post-info -->                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-i8ltaoDuLpI/TZQPlf1wbaI/AAAAAAAAAK4/svtKmQjxBsE/s1600/underpants-gnomes.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://4.bp.blogspot.com/-i8ltaoDuLpI/TZQPlf1wbaI/AAAAAAAAAK4/svtKmQjxBsE/s320/underpants-gnomes.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Perhaps Step 2 was to steal copper?</td></tr></tbody></table>
 
-<p>While flipping through a CRC Handbook whose days in the United States are dwindling, I came across a section that described the naming conventions of each chemical element.  Most of the names made sense to me.  For example, Nobelium is named after Alfred ...</p>
-                <a class="readmore" href="../posts/nickel-gnomes.html">read more</a>
-                <p>There are <a href="../posts/nickel-gnomes.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
-                        <a href="../category/old5.html">&laquo;</a>
-                Page 6 / 19
-            <a href="../category/old7.html">&raquo;</a>
-    </p>
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+<span class="label">Tags</span>
+	<a href="../tag/.html"><i class="icon-tag"></i></a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">This is my first (but certainly not the last) post in this blog, so let me introduce myself. My name is Nikolay, and as most of the others contributing to the blog, I am also a first-year graduate student in physics at Cornell. So, what is my motivation to join the team headed by Mr. Alemi in contributing to the blog? I happen to have many friends that are not in physics. In fact, probably due to the fact that I graduated from a liberal arts college, many of my friends have never taken any physics beyond that one class in high school, which due to both the inherent difficulty of teaching physics at introductory level and the lack of good high school physics teachers was often an unpleasant experience that scared them away from physics for life. Now, imagine what my difficulty is when on a daily basis I ...
+                        <a class="btn primary xsmall" href="../posts/physics-for-non-physicists.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/onsager-s-tour-de-force.html">Onsager's Tour de Force</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-15T20:22:00">
+        <i class="icon-calendar"></i>Thu 15 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<span class="label">Tags</span>
+	<a href="../tag/onsager.html"><i class="icon-tag"></i>onsager</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/tour-de-force.html"><i class="icon-tag"></i>tour de force</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">In 1943 in a tour de force of mathematical physics, Lars Onsager solved the 2D Ising Model. His solution has proved crucial in furthering statistical mechanics, allowing theorists to check all of there approximation schemes against analytical results. I call his effort a tour de force because it was a huge mathematical exercise, his solution spanning 33 pages. I also call it a 'tour de force' because I have seen it referenced as such in no less than 5 different sources, as well as numerous times in speech. This got me wondering, just how many times is Onsager's solution called a tour de force... So, first I started with a Google books search, and turned up 39 Books, among the one's that Google has indexed, which surely represent only the tip of the iceburg. The books search turns up some of the more popular statistical mechanics books including ...
+                        <a class="btn primary xsmall" href="../posts/onsager-s-tour-de-force.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/another-reason-why-the-core-is-stupid.html">Another Reason Why The Core is Stupid</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-15T17:30:00">
+        <i class="icon-calendar"></i>Thu 15 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/the-core.html"><i class="icon-tag"></i>the core</a>
+	<a href="../tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
+	<a href="../tag/magnetism.html"><i class="icon-tag"></i>magnetism</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="../tag/sci-fi.html"><i class="icon-tag"></i>sci-fi</a>
+	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
+	<a href="../tag/movie.html"><i class="icon-tag"></i>movie</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">I assume everyone has heard of The Core, the terrible scifi movie from 2003. If you haven't you're missing out on what appears to be, according to Discover magazine, the worst sci-fi film ever. There are already numerous sites that discuss the bad science in the core (here, or over at Bad Astronomy), but they all seem to ignore another fundamental problem with the plot. I don't think I'll give too much away if I tell you that the basic premise of the movie is that the earth's core has stopped rotating, and so the earth's magnetic field is collapsing, which they claim will mean that all of the previously deflected microwaves (note: EM radiation is not bent by a magnetic field) will cook us all. Now, a lot of people have focused on the microwaves bit, which while bad science, one could argue ...
+                        <a class="btn primary xsmall" href="../posts/another-reason-why-the-core-is-stupid.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/locating-the-sun-photo.html">Locating the Sun Photo</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-14T02:21:00">
+        <i class="icon-calendar"></i>Wed 14 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/analysis.html"><i class="icon-tag"></i>analysis</a>
+	<a href="../tag/sun.html"><i class="icon-tag"></i>sun</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/picture.html"><i class="icon-tag"></i>picture</a>
+	<a href="../tag/lattitude.html"><i class="icon-tag"></i>lattitude</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">This photo has been making the rounds on the internet lately: Originally from here. Its a time lapse photo of the sun taken from a pinhole camera from June until December. The real question is: Where was this photo taken? Wandering SunWell, first lets think a second about why the sun would wander in the sky. As you may already know, the earth's pole is not aligned with our solar system's axis. The earth's axis has what is called a 23.5 degree axial tilt, or obliquity. As a result, if you sit at a fixed latitude on the earth, then as the earth revolves around the sun and the year goes by, the angle the sun makes with the horizon changes. We need to estimate how much the sun's angle in the sky changes. Consider the following diagram You'll notice that the angle ...
+                        <a class="btn primary xsmall" href="../posts/locating-the-sun-photo.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/the-malleability-of-theory.html">The malleability of theory</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-13T17:18:00">
+        <i class="icon-calendar"></i>Tue 13 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/office-hours.html"><i class="icon-tag"></i>office hours</a>
+	<a href="../tag/em.html"><i class="icon-tag"></i>EM</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">There were some undergrads in my office for office hours the other day, asking questions for the midterm. I'm teaching the engineering course on optics and waves (also known as Things that go Sine) and the students were looking at a problem dealing with quarter-wave plates. A quarter-wave plate, the question goes, is a kind of optical instrument that turns light with linear polarization into circular polarization. Show, it continues, that it also turns light with circular polarization linear. After a minute or two of discussing how a quarter-wave plate work ("what, does it act differently on different axes?" giggled one, and everybody gasped when I said yes) we went to the math. I wrote down the equations for light with linear and circular polarization, $$ E_0 \hat{x} \cos\left(kz-\omega t\right) \to \frac{E_0}{\sqrt{2}}\hat{x}\cos\left(kz-\omega t\right) + \frac{E_0 ...
+                        <a class="btn primary xsmall" href="../posts/the-malleability-of-theory.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/bubbles-.html">Bubbles!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-13T15:33:00">
+        <i class="icon-calendar"></i>Tue 13 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/matt.html"><i class="icon-user"></i>Matt</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/interference.html"><i class="icon-tag"></i>interference</a>
+	<a href="../tag/bubbles.html"><i class="icon-tag"></i>bubbles</a>
+	<a href="../tag/thin-films.html"><i class="icon-tag"></i>thin films</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Ever wonder why don't you see a standard rainbow when looking at a thin film such as soap stretched across a membrane ready for bubble making? Well, I encountered this problem when I presented my intro physics section with a quiz question today. Properly stated, the question was... "Suppose white light is incident on a thin film (a soap bubble of n=1.33) hanging vertically inside of a square loop. The minimum thickness of the film at the top of the loop is 900nm and it increases linearly (due to gravity) to 1300nm by the bottom of the loop which is 10cm away. This means that the thickness as a function of distance from the top of the loop is $$ d(x) = \text{900nm} + \text{400nm} * \left( \frac{x}{\text{10cm}} \right) $$ What wavelengths will be most strongly reflected as a function of distance along our bubble film ...
+                        <a class="btn primary xsmall" href="../posts/bubbles-.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/on-the-nature-of-many-penny-systems.html">On the Nature of Many Penny Systems</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-11T01:08:00">
+        <i class="icon-calendar"></i>Sun 11 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/pennies.html"><i class="icon-tag"></i>pennies</a>
+	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">The other day I was on my way through ye olde internets to the Quantum Leap episode index at Wikipedia, but stumbled over a quote by Feynman by accident: "There are 10^11 stars in the galaxy. That used to be a huge number. But it's only a hundred billion. It's less than the national deficit! We used to call them astronomical numbers. Now we should call them economical numbers" So this got me thinking. What if we decided to pay the national debt...in pennies? Seems fair enough, we don't really want to pay it and when you don't want to pay something but you have to you pay it in pennies. Hooray! Last I heard this figure was somewhere around $10,000,000,000,000 (ten trillion), that is:</div><div> </div><div>$$ \text{Debt} = 10^{13} \text{dollars} = 10^{15} \text{pennies} $$</div ...
+                        <a class="btn primary xsmall" href="../posts/on-the-nature-of-many-penny-systems.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/on-the-superposition-of-hip-and-hop.html">On the Superposition of Hip and Hop</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-09T17:42:00">
+        <i class="icon-calendar"></i>Fri 09 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/vampire.html"><i class="icon-tag"></i>vampire</a>
+	<a href="../tag/mad-beats.html"><i class="icon-tag"></i>mad beats</a>
+	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
+	<a href="../tag/paul-dirac.html"><i class="icon-tag"></i>Paul Dirac</a>
+	<a href="../tag/revisionist-history.html"><i class="icon-tag"></i>revisionist history</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">For posterity, completeness and another superfluous Scott Bakula reference I present the following. It is an expression, through the majesty of song (rap), of our love for all things quantum and undead ( or perhaps a superposition of dead/ not dead states...? ). We all know that the great physicist Paul Dirac, was not a vampire. What this rap presupposes is... maybe he was? If so, he would almost certainly be named Diracula. He would be especially good at physics. But he would especially be totally rad at rapping. Without further ado, the Diracula Rapula: Yo, its Diracula and I got something to say Better listen close cause sometimes my teeth get in the way. Of my rappin', but never my mathin' Gonna work it strong, gonna make these monopoles happen. Regardless of how you feel about me and my strings with length semi-infinityRespect my proclamation cause you find just one ...
+                        <a class="btn primary xsmall" href="../posts/on-the-superposition-of-hip-and-hop.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+                <div class="article">
+                <h1><a href="../posts/fishy-calculation.html">Fishy Calculation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-04-09T14:26:00">
+        <i class="icon-calendar"></i>Fri 09 April 2010
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/fermi.html"><i class="icon-tag"></i>fermi</a>
+	<a href="../tag/guestimation.html"><i class="icon-tag"></i>guestimation</a>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
+	<a href="../tag/fish.html"><i class="icon-tag"></i>fish</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Aaron Santos over at A Diary of Numbers, author of How Many Licks?, has posted a Fermi Contest. For the uninitiated, a Fermi Problem is a seemingly unanswerable problem, which you can actually estimate reasonable by breaking the problem down into smaller parts. They're really fun, and I intend to post more in the future. The question at hand is: How far would the oceans sink if we took all the fish out? I'll answer in two very different ways. Preliminaries In both cases, I'll answer how much the ocean depth would decrease by first calculating the total volume of fish in the ocean. Why is this helpful? Because for a spherical shell, you can estimate its volume by just taking its surface area and multiplying by the thickness, i.e. $$ V \sim 4 \pi R^2 \Delta R $$ So, if I can estimate the total volume ...
+                        <a class="btn primary xsmall" href="../posts/fishy-calculation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                <div class="pagination">
+        <ul>
+                                                                <li class="prev"><a href="../category/old5.html">&larr; Previous</a></li>
+                                                        <li class=""><a href="../category/old.html">1</a></li>
+                                        <li class=""><a href="../category/old2.html">2</a></li>
+                                        <li class=""><a href="../category/old3.html">3</a></li>
+                                        <li class=""><a href="../category/old4.html">4</a></li>
+                                        <li class=""><a href="../category/old5.html">5</a></li>
+                                        <li class="active"><a href="../category/old6.html">6</a></li>
+                                        <li class=""><a href="../category/old7.html">7</a></li>
+                                                        <li class="next"><a href="../category/old7.html">Next &rarr;</a></li>
+                        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -379,5 +1308,10 @@ At some point in elementary school I got into the habit of reading Franz Kafka's
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

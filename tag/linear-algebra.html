@@ -1,222 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>The Physics Virtuosi - linear algebra</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi Atom Feed" />
-                
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>The Physics Virtuosi - linear algebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The Virtuosi">
 
-        <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
-                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!-- Le styles -->
+    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-        <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+    
     <!-- Using MathJax, with the delimiters $ -->
-    <!-- Conflict with pygments for the .mo and .mi -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            "HTML-CSS": {
-                styles: {
-                    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-            },
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-        });
-    </script>
-    <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>  </head>
 
-</head>
+  <body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">The Physics Virtuosi </a></h1>
-                <nav><ul>
-                                                                                                    <li ><a href="../category/old.html">old</a></li>
-                                </ul></nav>
-        </header><!-- /#banner -->
-                
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">The Physics Virtuosi </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                                                                    <li class="divider-vertical"></li>
+                                              <li >
+                    <a href="../category/bootstrap2.html">
+						<i class="icon-folder-open icon-large"></i>bootstrap2
+					</a>
+                  </li>
+                                <li >
+                    <a href="../category/old.html">
+						<i class="icon-folder-open icon-large"></i>old
+					</a>
+                  </li>
+              
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
-            
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../posts/the-linear-theory-of-battleship.html">The Linear Theory of Battleship</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2011-10-03T00:48:00">
-                Mon 03 October 2011
-        </abbr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+                            <div class="article">
+                <h1><a href="../posts/the-linear-theory-of-battleship.html">The Linear Theory of Battleship</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-10-03T00:48:00">
+        <i class="icon-calendar"></i>Mon 03 October 2011
+</abbr>
+<span class="label">By</span>
+<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<span class="label">Category</span>
+<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-                <address class="vcard author">
-                By <a class="url fn" href="../author/alemi.html">Alemi</a>
-        </address>
-        <p>In <a href="../category/old.html">old</a>. </p>
-<p>tags: <a href="../tag/fun.html">fun</a><a href="../tag/battleship.html">battleship</a><a href="../tag/linear-algebra.html">linear algebra</a></p>
-</footer><!-- /.post-info --><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"><img border="0" height="250" width="249" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png" /></a></div>
 
-<p>Recently I set out to hold a <a href="http://en.wikipedia.org/wiki/Battleship_(game)">Battleship</a> programming tournament here among some of the undergraduates.  Naturally, I myself wanted to win.  So, I got to thinking about the game, and developed what I like to call "the linear theory of battleship".  </p>
-<p>A demonstration of the fruits of my efforts can be found <a href="http://pages.physics.cornell.edu/~aalemi/battleship/">here</a>. Below, my aim is to guide you through how I developed this theory, as an exercise in using physics to solve an interesting unknown problem.</p>
-<p><a name='more'></a></p>
-<p>This is one of the things I really love about physics, the fact that obtaining an education in physics is essentially an education in reasoning and thinking through complicated problems, along with an honestly short list of tips and tricks that have proven successful for tackling a wide range of problems.</p>
-<p>So, how do we develop the linear theory of battleship?  First we need to quantify what we know, and what we want to know.</p>
-<h3>The Goal</h3>
+<span class="label">Tags</span>
+	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
+	<a href="../tag/battleship.html"><i class="icon-tag"></i>battleship</a>
+	<a href="../tag/linear-algebra.html"><i class="icon-tag"></i>linear algebra</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">Recently I set out to hold a Battleship programming tournament here among some of the undergraduates. Naturally, I myself wanted to win. So, I got to thinking about the game, and developed what I like to call "the linear theory of battleship". A demonstration of the fruits of my efforts can be found here. Below, my aim is to guide you through how I developed this theory, as an exercise in using physics to solve an interesting unknown problem. This is one of the things I really love about physics, the fact that obtaining an education in physics is essentially an education in reasoning and thinking through complicated problems, along with an honestly short list of tips and tricks that have proven successful for tackling a wide range of problems. So, how do we develop the linear theory of battleship? First we need to quantify what we know, and what ...
+                        <a class="btn primary xsmall" href="../posts/the-linear-theory-of-battleship.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        
+                        </div><!--/span-->
 
-<p>So, how does one win Battleship?  Since the game is about sinking your opponents ships before they can sink yours, it would seem that a good strategy would be to try to maximize your probability of getting a hit every turn.  Or, if we knew the probabilities of there being a hit on every square, we could guess each square with that probability, to keep things a little random.</p>
-<p>So, let's try to represent what we are after.  We are after a whole set of numbers
-<mathjax>$$ P_{i,\alpha} $$</mathjax>
-where i ranges from 0 to 99 and denotes a particular square on the board, and alpha can take the values C,B,S,D,P for carrier, battleship, submarine, destroyer, and patrol boat respectively.  This matrix should tell us the probability of there being the given ship on the given square.  E.g.
-<mathjax>$$ P_{53,B} $$</mathjax>
-would be the probability of there being a battleship on the 53rd square.  </p>
-<p>If we had such a matrix, we could figure out the probability of there being at hit on every square by summing over all of the ships we have left, i.e.
-<mathjax>$$ P_i = \sum_{\text{ships left}} P_{i, \alpha } $$</mathjax></p>
-<h3>The Background</h3>
+                <div class="span3 well sidebar-nav" id="sidebar">
+            <ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
+    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
+    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
+    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="../" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
 
-<p>Alright, we seem to have a goal in mind, now we need to quantify what we have to work with. Minimally, we should try to measure the probabilities for the ships to be on each square given a random board configuration.  Let's codify that information in another matrix
-<mathjax>$$ B_{i,\alpha} $$</mathjax>
-where B stands for 'background', i runs from 0 to 99, and alpha is either C,B,S,D, or P again, and stands for a ship.  This matrix should tell us the probability of a particular ship being on a particular spot on the board assuming our opponent generated a completely random board.</p>
-<p>This is something we can measure.  In fact, I wrote a little code to generate random Battleship boards, and counted where each of the ships appeared.  I did this billions of times to get good statistics, and what I ended up with is a little interesting.  You can see the results for yourself over at my 
-<a href="http://pages.physics.cornell.edu/~aalemi/battleship/">results exploration page</a> by changing the radio buttons for the ship you are interested in, but I have some screen caps below.  Click on any of them to embiggen.</p>
-<h4>All </h4>
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/bootstrap2.html">
+    <i class="icon-folder-open icon-large"></i>bootstrap2
+</a>
+</li>
+<li>
+<a href="../category/old.html">
+    <i class="icon-folder-open icon-large"></i>old
+</a>
+</li>
 
-<p>First of all, lets look at the sum of all of the ship probabilities, so that we have the probability of getting a hit on any square for any ship given a random board configuration, or in our new parlance
-<mathjax>$$ B_i = \sum_{\alpha=\{C,B,S,D,P\} } B_{i,\alpha} $$</mathjax>
-The results:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s1600/all.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="200" width="162" src="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s200/all.png" /></a></div>shouldn't be too surprising.  Notice first that we can see that my statistics are fairly good, because our probabilities look more or less smooth, as they ought to be, and show nice left/right up/down symmetry, which it ought to have.</p>
-<p>But as you'll notice, on the whole there is greater probability to get a hit near the center of the board than near the edges, an especially low probability of getting a hit in the corners.  Why is that?  Well, there are a lot more ways to lay down a ship such that there is a hit in a center square than there are ways to lay a ship so that it gives a hit in a corner.  In fact, for a particular ship there are only two ways to lay it so that it registers a hit in the corner.  But, for a particular square in the center, for the Carrier for example there are 5 different ways to lay it horizontally to register a hit, and 5 ways to lay it vertically, or 10 ways total.  Neat.  We see entropy in action.</p>
-<h4>Carrier</h4>
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/office-hours.html">
+        <i class="icon-tag icon-large"></i>office hours
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/charge.html">
+        <i class="icon-tag icon-large"></i>charge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/koalas.html">
+        <i class="icon-tag icon-large"></i>koalas
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/statistics.html">
+        <i class="icon-tag icon-large"></i>statistics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/networks.html">
+        <i class="icon-tag icon-large"></i>networks
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pendulum.html">
+        <i class="icon-tag icon-large"></i>pendulum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/storage.html">
+        <i class="icon-tag icon-large"></i>storage
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/sci-fi.html">
+        <i class="icon-tag icon-large"></i>sci-fi
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cipher.html">
+        <i class="icon-tag icon-large"></i>cipher
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/rubber-bands.html">
+        <i class="icon-tag icon-large"></i>rubber bands
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/proofiness.html">
+        <i class="icon-tag icon-large"></i>Proofiness
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/cognitive-dissonance.html">
+        <i class="icon-tag icon-large"></i>cognitive dissonance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/earth-day.html">
+        <i class="icon-tag icon-large"></i>earth day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/pennies.html">
+        <i class="icon-tag icon-large"></i>pennies
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/infrared.html">
+        <i class="icon-tag icon-large"></i>infrared
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/feynman.html">
+        <i class="icon-tag icon-large"></i>feynman
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bummer.html">
+        <i class="icon-tag icon-large"></i>bummer
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/dimensional-analysis.html">
+        <i class="icon-tag icon-large"></i>dimensional analysis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cell-phone.html">
+        <i class="icon-tag icon-large"></i>cell phone
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/canada.html">
+        <i class="icon-tag icon-large"></i>Canada
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/data.html">
+        <i class="icon-tag icon-large"></i>data
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/blotto.html">
+        <i class="icon-tag icon-large"></i>blotto
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/.html">
+        <i class="icon-tag icon-large"></i>
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/games.html">
+        <i class="icon-tag icon-large"></i>games
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/japan.html">
+        <i class="icon-tag icon-large"></i>japan
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/free-data-sets.html">
+        <i class="icon-tag icon-large"></i>free data sets
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/analysis.html">
+        <i class="icon-tag icon-large"></i>analysis
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/primes.html">
+        <i class="icon-tag icon-large"></i>primes
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/exogenesis.html">
+        <i class="icon-tag icon-large"></i>exogenesis
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/monte-carlo.html">
+        <i class="icon-tag icon-large"></i>monte carlo
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/battleship.html">
+        <i class="icon-tag icon-large"></i>battleship
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/schwarzschild.html">
+        <i class="icon-tag icon-large"></i>Schwarzschild
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/advice.html">
+        <i class="icon-tag icon-large"></i>advice
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lasers.html">
+        <i class="icon-tag icon-large"></i>lasers
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/transit-of-venus.html">
+        <i class="icon-tag icon-large"></i>transit of venus
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/ants.html">
+        <i class="icon-tag icon-large"></i>ants
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/reflection.html">
+        <i class="icon-tag icon-large"></i>reflection
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/batman.html">
+        <i class="icon-tag icon-large"></i>Batman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/units.html">
+        <i class="icon-tag icon-large"></i>units
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/bridges.html">
+        <i class="icon-tag icon-large"></i>bridges
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/fosbury-flop.html">
+        <i class="icon-tag icon-large"></i>Fosbury flop
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/lhc.html">
+        <i class="icon-tag icon-large"></i>LHC
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/furlong-per-fortnight.html">
+        <i class="icon-tag icon-large"></i>furlong per fortnight
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/gas.html">
+        <i class="icon-tag icon-large"></i>gas
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/calories.html">
+        <i class="icon-tag icon-large"></i>Calories
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/freeze.html">
+        <i class="icon-tag icon-large"></i>freeze
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/bad-physics.html">
+        <i class="icon-tag icon-large"></i>bad physics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/entropy.html">
+        <i class="icon-tag icon-large"></i>entropy
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bike.html">
+        <i class="icon-tag icon-large"></i>bike
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/search-engines.html">
+        <i class="icon-tag icon-large"></i>search engines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-4">
+    <a href="../tag/quantum-mechanics.html">
+        <i class="icon-tag icon-large"></i>quantum mechanics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/esoteric.html">
+        <i class="icon-tag icon-large"></i>esoteric
+    </a>
+</li>
 
-<p>Next let's look just at the Carrier:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s1600/carrier.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="200" width="170" src="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s200/carrier.png" /></a></div>Woah.  This time the center is very heavily favored versus the edges.  This reflects the fact that the Carrier is a large ship, occupying 5 spaces, basically no matter how you lay it, it is going to have a part that lies near the center.  </p>
-<h4>Battleship</h4>
+<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+	shell: {
+	  background: '#f5f5f5',
+	  color: '#000000'
+	},
+	tweets: {
+	  background: '#ffffff',
+	  color: '#000000',
+	  links: '#1a50a1'
+	}
+  },
+  features: {
+	scrollbar: false,
+	loop: false,
+	live: false,
+	behavior: 'all'
+  }
+}).render().setUser('thevirtuosi').start();
+</script>
 
-<p>Now for the Battleship:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s1600/battleship.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="200" width="172" src="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s200/battleship.png" /></a></div>
-This is interesting.  This time, the most probable squares are not the center ones, but the not quite center ones.  Why is that?  Well, we saw that for the Carrier, the probability of finding it in the center was very large, and so respectfully, our battleship cannot be in the center as often, as a lot of the time it would collide with the Carrier. Now, this is not because I lay down the Carrier first, my board generation algorithm assigns all of the boards at once, and just weeds out invalid ones, this is a real entropic effect. So here we begin to see some interesting Ship-Ship interactions in our probability distributions.  But notice again that on the whole, the battleship should also be found near the center as it is also a large ship.</p>
-<h4>Sub / Destroyer </h4>
+</ul>        </div><!--/.well -->
 
-<p>Next let's look at the sub / destroyer.  First thing to note is that our plot should be the same for both of these ships as they are both the same length.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s1600/sub.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="200" width="168" src="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s200/sub.png" /></a></div>Here we see an even more pronounced effect near the center.  The Subs and Destroyers are 'pushed' out of the center because the Carriers and Battleships like to be there.  This is a sort of entropic repulsion.</p>
-<h4>Patrol Boat </h4>
+      </div><!--/row-->
 
-<p>Finally, let's look at the patrol boat:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s1600/patrol.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="200" width="168" src="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s200/patrol.png" /></a></div>The patrol boat is a tiny ship.  At only two squares long, it can fit in just about anywhere, and so we see it being strongly affected by the affection the other ships have for the center.</p>
-<p>Neat stuff.  So, we've experimentally measured where we are likely to find all of the battleship ships if we have a completely random board configuration.  Already we could use this to make our game play a little more effective, but I think we can do better.</p>
-<h3>The Info</h3>
+      <hr>
 
-<p>In fact, as a game of battleship unfolds, we learn a good deal of information about the board.  In fact on every turn we get a great deal of information about a particular spot on the board, our guess.  Can we incorporate this information into our theory of battleship?  Of course we can, but first we need to come up with a good way to represent this information.</p>
-<p>I suggest we invent another matrix!  Let's call this one
-<mathjax>$$ I_{j,\beta} $$</mathjax>
-Where I is for 'information', j goes from 0 to 99 and beta marks the kind of information we have about a square, let's let it take the values M,H,C,B,S,D,P, where M means a miss, H means a hit, but we don't know which ship, and CBSDP mark a particular ship hit, which we would know once we sink a ship.  This matrix will be a binary one, where for any particular value of j, the elements will all be 0 or 1, with only one 1 sitting at the spot marking our information about the square, if we have any. </p>
-<p>That was confusing.  What do I mean?  Well, let's say its the start of the game and we don't know a darn thing about spot 34 on the board, then I would set
-<mathjax>$$  I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$</mathjax>
-that is, all of the columns are zero because we don't have any information.
-Now let's say we guess spot 34 and are told we missed, now that row of our matrix would be
-<mathjax>$$ I_{34,M} = 1 \quad I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$</mathjax>
-so that we put a 1 in the column we know is right,
-instead, if we were told it was a hit, but don't know which ship it was:
-<mathjax>$$ I_{34,H} = 1 \quad I_{34,M}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$</mathjax>
-and finally, lets say a few turns later we sink our opponents sub, and we know that spot 34 was one of the spots the sub occupied, we would set:
-<mathjax>$$ I_{34,S} = 1 \quad I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,D}=I_{34,P}=0 $$</mathjax></p>
-<p>This may seem like a silly way to codify the information, but I promise it will pay off.</p>
-<p>As far as my <a href="http://pages.physics.cornell.edu/~aalemi/battleship/">Battleship Data Explorer</a> goes, you don't have to worry about all this nonsense, instead you can just click on squares to set their information content.  Note: shift-clicking will let you cycle through the particular ships, if you just regular click it will let you shuffle between no information, hit, and miss.</p>
-<h3>The Theory</h3>
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
 
-<p>Alright if we decide to go with my silly way of codifying the information, at this point we have two pieces of data, 
-<mathjax>$$ B_{i,\alpha} $$</mathjax>
-our background probability matrix, and 
-<mathjax>$$ I_{j,\beta} $$</mathjax>
-our information matrix, where what we want is 
-<mathjax>$$ P_{i,\alpha} $$</mathjax>
-the probability matrix.  Here is where the linear part comes in.  Why don't we adopt the time honored tradition in science of saying that the relationship between all of these things is just a linear one?  In matrix language that means we will choose our theory to be</p>
-<p><mathjax>$$ P_{i,\alpha} = B_{i,\alpha} + \sum_{j=[0,..,99],\beta=\{M,H,C,B,S,D,P\}} W_{i,\alpha,j,\beta} I_{j,\beta} $$</mathjax></p>
-<p>Whoa!  What the heck is that!?  Well, that is my linear theory of battleship.  What the equation is trying to say is that I will try to predict the probability of a particular ship being in a particular square by (1) noting the background probability of that being true, and (2) adding up all of the information I have, weighting it by the appropriate factor. </p>
-<p>So here, P is our probability matrix, B is our background info matrix, I is our information matrix, and W is our weight matrix, which is supposed to apply the appropriate weights.</p>
-<p>That W guy seems like quite the monster.  It has four indexes!  It does, so let's try to walk through what they all mean.  Here:
-<mathjax>$$ W_{i,\alpha,j,\beta} $$</mathjax>
-is supposed to tell us: "the extra probability of there being ship alpha at location i, given the fact that we have the situation beta going on at location j"  </p>
-<p>Read that sentence a few times.  I'm sorry its confusing, but it is the best way I could come up with explaining W in english.  Perhaps a visual would help.</p>
-<p>Behold the following: (click to embiggen)</p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s1600/W1.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="400" width="300" src="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s400/W1.png" /></a></div>
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
 
-<p>That is a picture of <mathjax>$$ W_{i,C,33,M} $$</mathjax>
-that is, that is a picture of the extra probabilities for each square (i is all of them), of there being a carrier, (alpha=C) given that we got a miss (beta=M) on square 33, (j=33).  </p>
-<p>You'll notice that the fact that we saw a miss affects some of the squares nearby. In fact, knowing that there was a miss on square 33 means that the probability that the carrier will be found on the adjacent squares is a little lower (notice on the scale that the nearby values are negative), because there are now fewer ways the carrier could be on those squares without it overlapping over into square 33.</p>
-<p>Let's try another:
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s1600/W2.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="400" width="329" src="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s400/W2.png" /></a></div>That is a picture of
-<mathjax>$$ W_{i,S,65,H} $$</mathjax>
-that is, it's showing the extra probability of there being a submarine (alpha=S), at each square (i is all of them, since its a picture with 100 squares), given that we registered a hit (beta=H) on square 65 (j=65).</p>
-<p>Here you'll notice that since we marked a hit on square 65, it is very likely that we will also get hits on the squares just next to this one, as we could have suspected.</p>
-<p>In the end, by assuming our theory has this linear form, the benefit we gain is that by doing the same sort of simulations I did to generate the background information, I can back out what the proper values should be for this W matrix.  By doing billions and billions of simulations, I can ask, for any particular set of information, I, what the probabilities are P, and solve for W.  Given that the problem is linear, this solving step is particularly easy for me to do.</p>
-<h3>The Results</h3>
+    </div><!--/.fluid-container-->
 
-<p>In the end, this is exactly what I did.  I had my computer create billions of different battleship boards, and figure out what the proper values of B and W should be for every square of the matrix.  I put all of those results together in a way that I hope is easy to explore up at the <a href="http://pages.physics.cornell.edu/~aalemi/battleship/">Fancy Battleship Results Page</a>, where you are free to explore all of the results yourself.  In fact, the way it's set up, you can even use the <a href="http://pages.physics.cornell.edu/~aalemi/battleship/">Superduper Results Page</a> as a sort of Battleship Cheat Sheet.  Have it open while you play a game of battleship, and it will show you the probabilities associated with all of the squares, helping you make your next guess.</p>
-<p>I've used the page while playing a few games of battleship online, and have had some  success, winning 9 of the 10 games I played against the computer player. </p>
-<p>Of course, this linear theory isn't everything...</p>
-<h3>Why Linear isn't everything</h3>
-
-<p>But at the end of the day, we've made a pretty glaring assumption about the game of battleship, namely that all of the information on the board adds in a linear way.</p>
-<p>Another way to say that is that in our theory of battleship, we have a principle of superposition.  </p>
-<p>Another way to say that is that in this theory, what you think is happening in a particular square is just the sum of the results from all of the squares, independent of one another.</p>
-<p>Another way to say that is to show it with another picture.  Consider the following:</p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s1600/nonlin.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="400" width="298" src="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s400/nonlin.png" /></a></div>
-
-<p>Here, I've specified a bunch of misses, and am asking for the probability of there being a Carrier on all of the positions of the board.  If you look in the center of that cluster of misses, especially in the inner left of the bunch, you'll see that the linear theory tells me that there is a small but finite chance that the Carrier is located on those squares.  But if you stop to look at the board a little bit, you'll notice that I've arranged the misses such that there is a large swatch of squares in the center of the cluster where the Carrier is strictly forbidden.  There is no way it can fit such that it touches a lot of those central squares.  </p>
-<p>This is an example of the failure of the linear model.  All the linear model knows is that in the spots nearby misses there is a lower probability of the ship being there, but what it doesn't know to do is look at the arrangement of misses and check to see whether there is any possible way the ship can fit.  This is a nonlinear effect, involving information at more than one square at a time.</p>
-<p>It is these kinds of effects that this theory will miss, but as you'll notice, it still does pretty well.  Even though it reports a finite positive probability of the Carrier being inside the cluster, the value it reports is a very small one, about 1 percent at most.  So the linear theory will have corrections at the 1 percent level or so, but that's pretty good if you ask me.</p>
-<h3>Summary</h3>
-
-<p>And so it is.  I've tried to develop a linear theory for the game Battleship, and display the results in a <a href="http://pages.physics.cornell.edu/~aalemi/battleship/">Handy Dandy Data Explorer</a>.  I encourage you to play around with the website, use it to win games of Battleship, and in the comments, point out interesting effects, things you think I've missed, or ideas for how to come up with linear theories of other things.</p><p>There are <a href="../posts/the-linear-theory-of-battleship.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://scienceblogs.com/builtonfacts/">Built on Facts</a></li>
-                                                    <li><a href="http://scienceblogs.com/principles/">Uncertain Principles</a></li>
-                                                    <li><a href="http://www.wired.com/wiredscience/">Dot Physics</a></li>
-                                                    <li><a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://thephysicsvirtuosi.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
-                                                    <li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
 
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15719155-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-15719155-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
     var disqus_shortname = 'thephysicsvirtuosi';
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -225,5 +724,10 @@ that is, it's showing the extra probability of there being a submarine (alpha=S)
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
+    <script src="../theme/js/bootstrap.min.js"></script>
+  </body>
 </html>
