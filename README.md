@@ -25,3 +25,5 @@ From here:
  * make sure you haven't broken anything.
  * when satisfied, use `update_site` script
  * this will replace the real website
+
+Checkout `post_template.md` for an example post in markdown format.
