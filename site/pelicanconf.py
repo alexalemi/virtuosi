@@ -44,3 +44,19 @@ TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
 
 SUMMARY_MAX_LENGTH = 150
+
+PLUGINS=['pelican.plugins.sitemap',]
+
+SITEMAP = {
+        'format': 'xml',
+        'priorities': {
+            'articles': 0.5,
+            'indexes': 0.5,
+            'pages': 0.5
+            },
+        'changefreqs': {
+            'articles': 'monthly',
+            'indexes': 'daily',
+            'pages': 'monthly'
+            }
+        }
