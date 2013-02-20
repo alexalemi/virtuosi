@@ -4,4 +4,5 @@ site/output/
 .env/
 *.pid
 tools/old-content/
+old-copy/
 
