@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/yeah.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 19 Feb 2013 10:20:00 -0500</lastBuildDate><item><title>My super title</title><link>http://thephysicsvirtuosi.com/posts/my-super-post.html</link><description>&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
+&lt;p&gt;This is an &lt;mathjax&gt;$ E=mc^2 $&lt;/mathjax&gt; inline math equation.&lt;/p&gt;
+&lt;p&gt;This is a math environment math equation:
+&lt;mathjax&gt;$$ E = mc^2 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;This is a link: &lt;a href="http://google.com"&gt;google&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Your Name</dc:creator><pubDate>Tue, 19 Feb 2013 10:20:00 -0500</pubDate><guid>tag:thephysicsvirtuosi.com,2013-02-19:posts/my-super-post.html</guid><category>thats</category><category>awesome</category></item></channel></rss>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/yeah.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2013-02-19T10:20:00-05:00</updated><entry><title>My super title</title><link href="http://thephysicsvirtuosi.com/posts/my-super-post.html" rel="alternate"></link><updated>2013-02-19T10:20:00-05:00</updated><author><name>Your Name</name></author><id>tag:thephysicsvirtuosi.com,2013-02-19:posts/my-super-post.html</id><summary type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;
+&lt;p&gt;This is an &lt;mathjax&gt;$ E=mc^2 $&lt;/mathjax&gt; inline math equation.&lt;/p&gt;
+&lt;p&gt;This is a math environment math equation:
+&lt;mathjax&gt;$$ E = mc^2 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;This is a link: &lt;a href="http://google.com"&gt;google&lt;/a&gt;&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry></feed>
