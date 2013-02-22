@@ -49,7 +49,7 @@ Code Outline
  * `source_env` - sources the virtual environment, same as `source .env/bin/activate`
  * `update_site` - does a pelican build and [ghp-import](https://github.com/davisp/ghp-import). Replaces the actual site, don't expect this to work, you probably don't have permissions.
  * `/tools` - miscellaneous scripts used during the migration from blogspot.
- * `/site' - the site itself
+ * `/site` - the site itself
    * `/content` - the posts in markdown, restructured text or html format.
    * `/themes` - the themes for the site itself.
    * `Makefile` - convience makefile for building / testing / viewing the site (try typing `make` while in the `site` directory to see the options )
