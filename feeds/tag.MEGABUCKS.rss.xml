@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.MEGABUCKS.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 29 Mar 2012 01:27:00 -0400</lastBuildDate><item><title>Money for (almost) Nothing</title><link>http://thephysicsvirtuosi.com/posts/money-for-almost-nothing.html</link><description>&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s1600/mega_millions.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="120" src="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s320/mega_millions.png" width="258" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Five Hundred Mega Dollars, to be precise.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.MEGABUCKS.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 29 Mar 2012 01:27:00 -0400</lastBuildDate><item><title>Money for (almost) Nothing</title><link>http://thephysicsvirtuosi.com/posts/money-for-almost-nothing.html</link><description>&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s1600/mega_millions.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="120" src="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s320/mega_millions.png" width="258" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Five Hundred Mega Dollars, to be precise.
 (Image from Wikipedia)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-&lt;p&gt;I am not typically interested in lotteries.  They seem silly and I am seriously beginning to question their usefulness in bringing about a &lt;a href="http://en.wikipedia.org/wiki/The_Lottery"&gt;good harvest&lt;/a&gt;.  But this morning I read in the news that the Mega Millions lottery currently has a &lt;a href="http://en.wikipedia.org/wiki/Mega_Millions#Record_jackpots_.28listed_by_cash_value.29"&gt;world record&lt;/a&gt; jackpot up for grabs.  In fact, the jackpot is so big...
+&lt;p&gt;I am not typically interested in lotteries.  They seem silly and I am seriously beginning to question their usefulness in bringing about a &lt;a href="http://en.wikipedia.org/wiki/The_Lottery"&gt;good harvest&lt;/a&gt;.  But this morning I read in the news that the Mega Millions lottery currently has a &lt;a href="http://en.wikipedia.org/wiki/Mega_Millions#Record_jackpots_.28listed_by_cash_value.29"&gt;world record&lt;/a&gt; jackpot up for grabs.  In fact, the jackpot is so big&amp;#8230;
 &lt;div&gt;
-&lt;/div&gt;&lt;div style="text-align: left;"&gt;Tonight Show Audience:  &lt;i&gt;HOW BIG IS IT?&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;
+&lt;/div&gt;&lt;div style="text-align: left;"&gt;Tonight Show Audience:  &lt;i&gt;&lt;span class="caps"&gt;HOW&lt;/span&gt; &lt;span class="caps"&gt;BIG&lt;/span&gt; &lt;span class="caps"&gt;IS&lt;/span&gt; &lt;span class="caps"&gt;IT&lt;/span&gt;?&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;
 &lt;/i&gt;&lt;/div&gt;&lt;div&gt;It is &lt;i&gt;so big&lt;/i&gt; that I decided to do a little bit of analysis on the expected returns.  Zing!&lt;/div&gt;&lt;div&gt;&lt;a name='more'&gt;&lt;/a&gt;
-&lt;h2&gt; Some Background&lt;/h2&gt;&lt;/div&gt;
-First, a little background.  The Mega Millions lottery is an aptly named lottery in which numbered ping pong balls are pulled from a giant rotating tub of randomization.  Five of these are drawn from one tub of 56 balls, with no replacement.  The sixth ball (the so-called "Mega Ball") is drawn from a &lt;i&gt;separate &lt;/i&gt;tub of 46 balls. &lt;/p&gt;
-&lt;p&gt;To play, one picks 5 different numbers (1-56) for the regular draws and one number (1-46) for the Mega Ball.  The first five can match in any order, but the last ball has to match with the Mega Ball.  Prizes are given out based on how many numbers you match.&lt;/p&gt;
-&lt;p&gt;Stolen from the Mega Millions website, the prizes and odds are given in the table below.  The current jackpot is listed at &lt;mathjax&gt;$500 million (if taken in annuity) or $&lt;/mathjax&gt;359 million if taken in an up-front lump sum.  It costs $1 dollar to play.&lt;/p&gt;
-&lt;table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s1600/crummy_table.gif" imageanchor="1" style="margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="297" src="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s320/crummy_table.gif" width="320" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Don't worry about the asterisk.  It just says CA is lame.
+&lt;h2&gt; Some&amp;nbsp;Background&lt;/h2&gt;&lt;/div&gt;
+First, a little background.  The Mega Millions lottery is an aptly named lottery in which numbered ping pong balls are pulled from a giant rotating tub of randomization.  Five of these are drawn from one tub of 56 balls, with no replacement.  The sixth ball (the so-called &amp;#8220;Mega Ball&amp;#8221;) is drawn from a &lt;i&gt;separate &lt;/i&gt;tub of 46&amp;nbsp;balls. &lt;/p&gt;
+&lt;p&gt;To play, one picks 5 different numbers (1-56) for the regular draws and one number (1-46) for the Mega Ball.  The first five can match in any order, but the last ball has to match with the Mega Ball.  Prizes are given out based on how many numbers you&amp;nbsp;match.&lt;/p&gt;
+&lt;p&gt;Stolen from the Mega Millions website, the prizes and odds are given in the table below.  The current jackpot is listed at &lt;mathjax&gt;$500 million (if taken in annuity) or $&lt;/mathjax&gt;359 million if taken in an up-front lump sum.  It costs $1 dollar to&amp;nbsp;play.&lt;/p&gt;
+&lt;table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s1600/crummy_table.gif" imageanchor="1" style="margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="297" src="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s320/crummy_table.gif" width="320" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Don&amp;#8217;t worry about the asterisk.  It just says &lt;span class="caps"&gt;CA&lt;/span&gt; is lame.
 (Source:  &lt;a href="http://www.megamillions.com/howto/"&gt;Mega Millions&lt;/a&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-&lt;p&gt;Hot diggity daffodil, we're ready to get going!&lt;/p&gt;
-&lt;h2&gt; Expected Winnings&lt;/h2&gt;
+&lt;p&gt;Hot diggity daffodil, we&amp;#8217;re ready to get&amp;nbsp;going!&lt;/p&gt;
+&lt;h2&gt; Expected&amp;nbsp;Winnings&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Alright, so it costs $1 to play and we could potentially win $500 million.  It sure &lt;i&gt;feels&lt;/i&gt; like it is worth it to play (what's the harm?).  But we can do better than feelings, we have... MATH!&lt;/div&gt;
+&lt;div&gt;Alright, so it costs $1 to play and we could potentially win $500 million.  It sure &lt;i&gt;feels&lt;/i&gt; like it is worth it to play (what&amp;#8217;s the harm?).  But we can do better than feelings, we have&amp;#8230; &lt;span class="caps"&gt;MATH&lt;/span&gt;!&lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Since we have an exhaustive list of outcomes and their probabilities (which is just the inverse of the big number in the "chances" column), we can calculate the expectation value for our winnings.  The expectation value is just the sum over all the possible prize values times the probability of winning that prize.  In other words,&lt;/div&gt;
+&lt;div&gt;Since we have an exhaustive list of outcomes and their probabilities (which is just the inverse of the big number in the &amp;#8220;chances&amp;#8221; column), we can calculate the expectation value for our winnings.  The expectation value is just the sum over all the possible prize values times the probability of winning that prize.  In other words,&lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -91,12 +91,12 @@ First, a little background.  The Mega Millions lottery is an aptly named lottery
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;h2&gt; The Taxman&lt;/h2&gt;
+&lt;h2&gt; The&amp;nbsp;Taxman&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;If you win a $500 million jackpot, do you &lt;i&gt;really&lt;/i&gt; get a $500 million jackpot?  Well, no.  For winnings in a lottery over $5000, the IRS &lt;a href="http://www.irs.gov/instructions/iw2g/ar02.html#d0e401"&gt;withholds&lt;/a&gt; 25% in federal income taxes.  Additionally, the winnings are subject to state taxes as well.  For example, if I were to win, the great state of New York would be entitled to about 6.8% (apparently also just for winnings above $5000).  &lt;/div&gt;
+&lt;div&gt;If you win a $500 million jackpot, do you &lt;i&gt;really&lt;/i&gt; get a $500 million jackpot?  Well, no.  For winnings in a lottery over $5000, the &lt;span class="caps"&gt;IRS&lt;/span&gt; &lt;a href="http://www.irs.gov/instructions/iw2g/ar02.html#d0e401"&gt;withholds&lt;/a&gt; 25% in federal income taxes.  Additionally, the winnings are subject to state taxes as well.  For example, if I were to win, the great state of New York would be entitled to about 6.8% (apparently also just for winnings above $5000).  &lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -116,7 +116,7 @@ First, a little background.  The Mega Millions lottery is an aptly named lottery
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;We're still in the black, but it's slowly slipping away.  Is there anything else we need to factor in?  Well, yes.  For one thing, winning the jackpot qualifies us for the top tax bracket, so most of the winnings would be taxed at the top marginal tax rate of 35%.  Welcome to the 1%, kids! &lt;a href="#note"&gt;[1]&lt;/a&gt;.&lt;p id="back"&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;We&amp;#8217;re still in the black, but it&amp;#8217;s slowly slipping away.  Is there anything else we need to factor in?  Well, yes.  For one thing, winning the jackpot qualifies us for the top tax bracket, so most of the winnings would be taxed at the top marginal tax rate of 35%.  Welcome to the 1%, kids! &lt;a href="#note"&gt;[1]&lt;/a&gt;.&lt;p id="back"&gt;&lt;/p&gt;&lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -126,7 +126,7 @@ First, a little background.  The Mega Millions lottery is an aptly named lottery
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;h2&gt; Is it always like this?&lt;/h2&gt;
+&lt;h2&gt; Is it always like&amp;nbsp;this?&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -146,7 +146,7 @@ First, a little background.  The Mega Millions lottery is an aptly named lottery
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;For simplicity, let's ignore the top marginal tax rate and just factor in the 25% withholding and the 6.8% state tax.  Solving for the minimum jackpot using the expression for &lt;w&gt; we found in the last section, we see that &lt;/w&gt;&lt;/div&gt;
+&lt;div&gt;For simplicity, let&amp;#8217;s ignore the top marginal tax rate and just factor in the 25% withholding and the 6.8% state tax.  Solving for the minimum jackpot using the expression for &lt;w&gt; we found in the last section, we see that &lt;/w&gt;&lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -176,21 +176,21 @@ First, a little background.  The Mega Millions lottery is an aptly named lottery
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;h2&gt; So am I going to win?&lt;/h2&gt;
+&lt;h2&gt; So am I going to&amp;nbsp;win?&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;No.  No, you will not.  BUT if you played record setting lotteries hundreds of millions of times, you might see decent (~10%) returns.  Although, it may just be easiest to, you know, &lt;i&gt;invest&lt;/i&gt; that money.
+&lt;div&gt;No.  No, you will not.  &lt;span class="caps"&gt;BUT&lt;/span&gt; if you played record setting lotteries hundreds of millions of times, you might see decent (~10%) returns.  Although, it may just be easiest to, you know, &lt;i&gt;invest&lt;/i&gt; that money.
 
 &lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;&lt;h4&gt;Only One Useless Footnote&lt;/h4&gt;&lt;/div&gt;
+&lt;div&gt;&lt;h4&gt;Only One Useless&amp;nbsp;Footnote&lt;/h4&gt;&lt;/div&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;&lt;p id="note"&gt;[1] Although, to be fair, the top marginal tax rate is currently at &lt;a href="http://en.wikipedia.org/wiki/File:MarginalIncomeTax.svg"&gt;historical lows&lt;/a&gt;.  It could always be worse... &lt;a href="#back"&gt; [back] &lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Thu, 29 Mar 2012 01:27:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2012-03-29:posts/money-for-almost-nothing.html</guid><category>MEGABUCKS</category><category>scott bakula</category><category>lottery</category></item></channel></rss>
+&lt;div&gt;&lt;p id="note"&gt;[1] Although, to be fair, the top marginal tax rate is currently at &lt;a href="http://en.wikipedia.org/wiki/File:MarginalIncomeTax.svg"&gt;historical lows&lt;/a&gt;.  It could always be worse&amp;#8230; &lt;a href="#back"&gt;&amp;nbsp;[back] &lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Thu, 29 Mar 2012 01:27:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2012-03-29:posts/money-for-almost-nothing.html</guid><category>MEGABUCKS</category><category>scott bakula</category><category>lottery</category></item></channel></rss>

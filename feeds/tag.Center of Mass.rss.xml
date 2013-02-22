@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.Center%20of%20Mass.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Jun 2012 11:10:00 -0400</lastBuildDate><item><title>Batman, Helicopters, and Center of Mass</title><link>http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html</link><description>&lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="180" src="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.Center%20of%20Mass.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Jun 2012 11:10:00 -0400</lastBuildDate><item><title>Batman, Helicopters, and Center of Mass</title><link>http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html</link><description>&lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="180" src="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
 
 A couple weeks ago, I came home after a long day at work looking for a break.  I thought to myself, “What’s more fun than physics? Batman*.”  I sat down to play the &lt;a href="http://en.wikipedia.org/wiki/Arkham_City" target="_blank"&gt;latest Batman videogame&lt;/a&gt;, in which Batman’s current objective was to use his grappling hook to jump onto an enemy helicopter to steal an electronic MacGuffin.  As awesome as this was, it occurred to me that something was very wrong about the way the helicopter moved while Batman zipped through the air.
 
@@ -7,26 +7,26 @@ A couple weeks ago, I came home after a long day at work looking for a break.  I
 
 What occurred to me was this:  If the helicopter’s rotors provided enough lift to balance the force of gravity, wouldn’t Batman’s sudden additional weight cause the helicopter to fall out of the sky?  Also, to get lifted up into the air, the helicopter must be pulling up on Batman: shouldn’t Batman also be pulling down on the helicopter?  By how much should we expect to see the helicopter’s altitude change?
 &lt;a name='more'&gt;&lt;/a&gt;
-To address the first question, let's go to Newton's second law:
+To address the first question, let&amp;#8217;s go to Newton&amp;#8217;s second law:
 $$ \sum \vec{F} = m\vec{a} $$
-Let’s assume that the helicopter is hovering stationary, minding its own business, when Batman jumps onto it.  &lt;span style="background-color: white;"&gt;Let's also assume the helicopter pilots are totally oblivious to Batman and make no flight corrections after Batman jumps onto it.  &lt;/span&gt;&lt;span style="background-color: white;"&gt;In order to hover, the lift from the helicopter's rotors exactly matched the pull of gravity. &lt;/span&gt;
+Let’s assume that the helicopter is hovering stationary, minding its own business, when Batman jumps onto it.  &lt;span style="background-color: white;"&gt;Let&amp;#8217;s also assume the helicopter pilots are totally oblivious to Batman and make no flight corrections after Batman jumps onto it.  &lt;/span&gt;&lt;span style="background-color: white;"&gt;In order to hover, the lift from the helicopter&amp;#8217;s rotors exactly matched the pull of gravity. &lt;/span&gt;
 
 $$ \sum \vec{F} =  \vec{F}_{rotors} - \vec{F}_{gravity} =  0 $$
 
-Batman's sudden additional weight would cause the helicopter to start falling, as the forces would no longer balance:
+Batman&amp;#8217;s sudden additional weight would cause the helicopter to start falling, as the forces would no longer balance:
 
 $$ \sum \vec{F} =  \vec{F}_{rotors} - \vec{F}_{gravity} - \vec{F}_{Batman} &amp;lt;  0 $$
 
-&lt;div&gt;&lt;span style="background-color: white;"&gt;So the helicopter does accelerate (and move) when Batman jumps onto it.  How much does it move?  &lt;/span&gt;&lt;span style="background-color: white;"&gt;Let’s assume there are no crazy winds or other external forces acting on the helicopter or Batman while Batman grapples onto the helicopter.  “No external forces” means that momentum of helicopter + Batman does not change during Batman's flight.&lt;/span&gt;
+&lt;div&gt;&lt;span style="background-color: white;"&gt;So the helicopter does accelerate (and move) when Batman jumps onto it.  How much does it move?  &lt;/span&gt;&lt;span style="background-color: white;"&gt;Let’s assume there are no crazy winds or other external forces acting on the helicopter or Batman while Batman grapples onto the helicopter.  “No external forces” means that momentum of helicopter + Batman does not change during Batman&amp;#8217;s flight.&lt;/span&gt;
 
-Let's make things a little simpler and assume that neither Batman nor the helicopter had any vertical momentum before Batman used his grappling hook.  (I can choose to approach this problem from a reference frame where the center of mass is stationary.  Choosing a frame where the center of mass moves won't change the results, it will just make the calculation more complicated.)  Because the momentum of helicopter + Batman does not change, then the center of mass does not move while Batman zips through the air:
+Let&amp;#8217;s make things a little simpler and assume that neither Batman nor the helicopter had any vertical momentum before Batman used his grappling hook.  (I can choose to approach this problem from a reference frame where the center of mass is stationary.  Choosing a frame where the center of mass moves won&amp;#8217;t change the results, it will just make the calculation more complicated.)  Because the momentum of helicopter + Batman does not change, then the center of mass does not move while Batman zips through the air:
 
-$$ \frac{d}{dt} y_{COM} = \frac{d}{dt} \frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} + m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$&lt;/div&gt;
+$$ \frac{d}{dt} y_{&lt;span class="caps"&gt;COM&lt;/span&gt;} = \frac{d}{dt} \frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} + m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$&lt;/div&gt;
 
 &lt;div&gt;
-The center of mass must remain stationary, so we can find how much the helicopter's height changes by if Batman starts on the ground (y = 0) and both end up at the same height with Batman hanging from the helicopter:
+The center of mass must remain stationary, so we can find how much the helicopter&amp;#8217;s height changes by if Batman starts on the ground (y = 0) and both end up at the same height with Batman hanging from the helicopter:
 
-$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat} (0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat} y_{final}}{m_{Bat} + m_{Copter}} $$
+$$ y_{&lt;span class="caps"&gt;COM&lt;/span&gt;} = \frac{m_{Copter} y_{Copter} + m_{Bat} (0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat} y_{final}}{m_{Bat} + m_{Copter}} $$
 $$ \Delta y = y_{Copter} - y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$&lt;/div&gt;
 
 &lt;div&gt;
@@ -36,7 +36,7 @@ Of course, if the helicopters appearing in the game were the giant army helicopt
 
 None of these considerations detracted from the fun I had playing the game, but it did seem odd that the helicopters appeared to be nailed to the sky instead of moving freely through the air.  I’ll be writing the game developers a strongly-worded letter directly.
 
-* The DC superhero, not the &lt;a href="http://en.wikipedia.org/wiki/Batman,_Turkey"&gt;city&lt;/a&gt; or the &lt;a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/"&gt;fish&lt;/a&gt;.
+* The &lt;span class="caps"&gt;DC&lt;/span&gt; superhero, not the &lt;a href="http://en.wikipedia.org/wiki/Batman,_Turkey"&gt;city&lt;/a&gt; or the &lt;a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/"&gt;fish&lt;/a&gt;.
 
 &lt;/div&gt;
 

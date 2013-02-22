@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>How Cold is the Ground?</title>
+    <title>How Cold is the&nbsp;Ground?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="The Virtuosi">
@@ -105,8 +105,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to How Cold is the Ground?">
-                                        How Cold is the Ground?
+                                        title="Permalink to How Cold is the&nbsp;Ground?">
+                                        How Cold is the&nbsp;Ground?
                                 </a>
                                 <a href="http://twitter.com/share" class="twitter-share-button"
    data-count="horizontal" data-via="thevirtuosi">Tweet</a>
@@ -130,25 +130,25 @@
 <!-- <span class="label">Tags</span> --> |
 	<a href="../tag/.html"><i class="icon-tag"></i></a>
 </footer><!-- /.post-info -->                </div>
-                <p>It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it had been warm for the previous few days, and the ground was still warm so the snow melted fast. Aside from letting me enjoy the absurd arguments against global warming that snow in April birthed, this got me thinking: How cold is the ground throughout the year? At night vs. during the day? And the corollary: How cold is my basement? If I dig a deeper basement, can I save on heating and cooling? (I'm very cheap.)</p>
+                <p>It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it had been warm for the previous few days, and the ground was still warm so the snow melted fast. Aside from letting me enjoy the absurd arguments against global warming that snow in April birthed, this got me thinking: How cold is the ground throughout the year? At night vs. during the day? And the corollary: How cold is my basement? If I dig a deeper basement, can I save on heating and cooling? (I&#8217;m very&nbsp;cheap.)</p>
 <p><a name='more'></a>
- Well, we want to know the temperature distribution <i>T</i> of the ground as a function of time <i>t</i> and position <i>x</i>. So some googlin' or previous knowledge shows that we need to solve the <a href="http://en.wikipedia.org/wiki/Heat_equation">heat equation</a>. For our purposes, we can treat the Earth as flat (I don't plan on digging a basement deep enough to see the curvature of the Earth), so we can assume the temperature only changes with the depth into the ground <i>x</i>:
+ Well, we want to know the temperature distribution <i>T</i> of the ground as a function of time <i>t</i> and position <i>x</i>. So some googlin&#8217; or previous knowledge shows that we need to solve the <a href="http://en.wikipedia.org/wiki/Heat_equation">heat equation</a>. For our purposes, we can treat the Earth as flat (I don&#8217;t plan on digging a basement deep enough to see the curvature of the Earth), so we can assume the temperature only changes with the depth into the ground <i>x</i>:
 <mathjax>$$
  \frac {\partial T}{\partial t} = a \frac {\partial^2 T} {\partial x^2} \qquad (1)
 $$</mathjax>
-where <i>a</i> is the thermal diffusivity of the material, in units of square meters per second. It looks like we're going to have to solve some partial differential equations!</p>
-<p>Or will we? We can get a very good estimate of how much the temperature changes with depth just by dimensional analysis. Let's measure our time <i>t</i> in terms of a characteristic time of our problem <i>w</i> (it could be 1 year if we were trying to see the change in the ground's temperature from summer to winter, or 1 day if we were looking at the change from day to night). Then we can write:
+where <i>a</i> is the thermal diffusivity of the material, in units of square meters per second. It looks like we&#8217;re going to have to solve some partial differential&nbsp;equations!</p>
+<p>Or will we? We can get a very good estimate of how much the temperature changes with depth just by dimensional analysis. Let&#8217;s measure our time <i>t</i> in terms of a characteristic time of our problem <i>w</i> (it could be 1 year if we were trying to see the change in the ground&#8217;s temperature from summer to winter, or 1 day if we were looking at the change from day to night). Then we can write:
 <mathjax>$$
 \frac {\partial T } {\partial t} = \frac 1 w \frac {\partial T} {\partial t/w}
 $$</mathjax>
- ... plugging this in Eq. (1), rearranging, and calling <i>l</i>= sqrt(<i>w*a</i>) gives....
+ &#8230; plugging this in Eq. (1), rearranging, and calling <i>l</i>= sqrt(<i>w*a</i>) gives&#8230;.
 <mathjax>$$
  \frac {\partial T}{\partial (t/w)} = \frac {\partial ^2 T} {\partial (x/ l )^2}
 $$</mathjax>
-Now let's say we didn't know how to or didn't want to solve this equation. (Don't worry, we do &amp; we will). From rearranging this equation, we see right away there is only one "length scale" in the problem, <i>l</i>. So if we had to guess, we could guess that the ground changes temperature a distance <i>l</i> into the ground. A quick look at Wikipedia for <a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal diffusivities</a> gives us the following table, for materials we'd find in the ground:
- <style type="text/css">.nobrtable br { display: none }</style><div class="nobrtable"><table border="2" bordercolor="black" cellpadding="3" cellspacing="3" style="background-color: white;"><tbody><tr style="background-color: gray; color: black; padding-bottom: 4px; padding-top: 5px;">  <th> Material </th><th><i>a</i>, mm^2/s</th><th><i>l</i> (cm), <i>w</i> = 1 day</th><th><i>l</i> (cm), <i>w</i> = 1 year</th></tr><tr><td>Polycrystalline Silica (glass, sand)</td><td>0.83</td><td>27 cm </td><td>5.1 meters</td></tr><tr><td>Crystalline Silica (quartz)</td><td>1.4</td><td>35 </td><td>6.6</td></tr><tr><td>Sandstone</td><td>1.15</td><td>32</td><td>6.0</td></tr><tr><td>Brick</td><td>0.52</td><td>21</td><td>4.0</td></tr><tr><td><a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil </a></td><td>0.3-1.25</td><td>16-33</td><td>3.1-6.3</td></tr></tbody></table></div> So we would expect that the temperature of the ground doesn't change much on a daily basis a foot or so below the ground, and doesn't change ever about 15-20 feet into the ground.</p>
-<p>Just to pat ourselves on the back for our skills at dimensional analysis, a quick check shows that <a href="http://en.wikipedia.org/wiki/Permafrost#Time_to_form_deep_permafrost">permafrost</a> penetrates 14.6 feet into the ground after 1 year. So our dimensional estimates looks pretty good!</p>
-<p>In the next few days I'll solve this equation exactly and throw up a few pretty graphs, and maybe talk a little about PDE's and Fourier series in the process.</p>
+Now let&#8217;s say we didn&#8217;t know how to or didn&#8217;t want to solve this equation. (Don&#8217;t worry, we do <span class="amp">&amp;</span> we will). From rearranging this equation, we see right away there is only one &#8220;length scale&#8221; in the problem, <i>l</i>. So if we had to guess, we could guess that the ground changes temperature a distance <i>l</i> into the ground. A quick look at Wikipedia for <a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal diffusivities</a> gives us the following table, for materials we&#8217;d find in the ground:
+ <style type="text/css">.nobrtable br { display: none }</style><div class="nobrtable"><table border="2" bordercolor="black" cellpadding="3" cellspacing="3" style="background-color: white;"><tbody><tr style="background-color: gray; color: black; padding-bottom: 4px; padding-top: 5px;">  <th> Material </th><th><i>a</i>, mm^2/s</th><th><i>l</i> (cm), <i>w</i> = 1 day</th><th><i>l</i> (cm), <i>w</i> = 1 year</th></tr><tr><td>Polycrystalline Silica (glass, sand)</td><td>0.83</td><td>27 cm </td><td>5.1 meters</td></tr><tr><td>Crystalline Silica (quartz)</td><td>1.4</td><td>35 </td><td>6.6</td></tr><tr><td>Sandstone</td><td>1.15</td><td>32</td><td>6.0</td></tr><tr><td>Brick</td><td>0.52</td><td>21</td><td>4.0</td></tr><tr><td><a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil </a></td><td>0.3-1.25</td><td>16-33</td><td>3.1-6.3</td></tr></tbody></table></div> So we would expect that the temperature of the ground doesn&#8217;t change much on a daily basis a foot or so below the ground, and doesn&#8217;t change ever about 15-20 feet into the&nbsp;ground.</p>
+<p>Just to pat ourselves on the back for our skills at dimensional analysis, a quick check shows that <a href="http://en.wikipedia.org/wiki/Permafrost#Time_to_form_deep_permafrost">permafrost</a> penetrates 14.6 feet into the ground after 1 year. So our dimensional estimates looks pretty&nbsp;good!</p>
+<p>In the next few days I&#8217;ll solve this equation exactly and throw up a few pretty graphs, and maybe talk a little about <span class="caps">PDE</span>&#8217;s and Fourier series in the&nbsp;process.</p>
                 </div><!-- /.entry-content -->
                                 <div class="comments">
                 <h2>Comments !</h2>
@@ -190,208 +190,8 @@ Now let's say we didn't know how to or didn't want to solve this equation. (Don'
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/fish.html">
         <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
@@ -400,13 +200,73 @@ Now let's say we didn't know how to or didn't want to solve this equation. (Don'
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
     </a>
 </li>
 <li class="tag-1">
@@ -415,13 +275,58 @@ Now let's say we didn't know how to or didn't want to solve this equation. (Don'
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/graph.html">
         <i class="icon-tag icon-large"></i>graph
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
     </a>
 </li>
 <li class="tag-2">
@@ -430,13 +335,108 @@ Now let's say we didn't know how to or didn't want to solve this equation. (Don'
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-2">
     <a href="../tag/blackbody.html">
         <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
     </a>
 </li>
 

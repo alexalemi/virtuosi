@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Problem of the Week #2: Solution</title>
+    <title>Problem of the Week #2:&nbsp;Solution</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="The Virtuosi">
@@ -105,8 +105,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to Problem of the Week #2: Solution">
-                                        Problem of the Week #2: Solution
+                                        title="Permalink to Problem of the Week #2:&nbsp;Solution">
+                                        Problem of the Week #2:&nbsp;Solution
                                 </a>
                                 <a href="http://twitter.com/share" class="twitter-share-button"
    data-count="horizontal" data-via="thevirtuosi">Tweet</a>
@@ -130,30 +130,30 @@
 <!-- <span class="label">Tags</span> --> |
 	<a href="../tag/problem-of-the-week.html"><i class="icon-tag"></i>problem of the week</a>
 </footer><!-- /.post-info -->                </div>
-                <p>Thanks to all who sent in solutions! We are very happy with the vast number of responses, and we will put up a leader board shortly!</p>
+                <p>Thanks to all who sent in solutions! We are very happy with the vast number of responses, and we will put up a leader board&nbsp;shortly!</p>
 <p><span style="font-weight: bold;">Solution</span></p>
 <p><a name='more'></a></p>
-<p>Let <span style="font-style: italic;">A</span> be the fraction of the rubber band that the ant has traversed.</p>
+<p>Let <span style="font-style: italic;">A</span> be the fraction of the rubber band that the ant has&nbsp;traversed.</p>
 <p><mathjax>$$A\left(t\right)=\frac{x\left(t\right)}{L+vt}.$$</mathjax></p>
-<p>The  ant's velocity relative to any point along the rubber band is equal to  the length of the rubber band times the first time derivative of <span style="font-style: italic;">A</span>:</p>
+<p>The  ant&#8217;s velocity relative to any point along the rubber band is equal to  the length of the rubber band times the first time derivative of <span style="font-style: italic;">A</span>:</p>
 <p><mathjax>$$u=\left(L+vt\right)\frac{dA}{dt}=\left(L+vt\right)\left[\frac{\dot{x}}{L+vt}-\frac{vx}{\left(L+vt\right)^{2}}\right]=\dot{x}-\frac{vx}{L+vt}.$$</mathjax></p>
-<p>This gives us an inseparable, first-order differential equation for <span style="font-style: italic;">x</span>(<span style="font-style: italic;">t</span>). The general differential equation of this type,</p>
+<p>This gives us an inseparable, first-order differential equation for <span style="font-style: italic;">x</span>(<span style="font-style: italic;">t</span>). The general differential equation of this&nbsp;type,</p>
 <p><mathjax>$$\dot{x}+p\left(t\right)x=q\left(t\right),$$</mathjax></p>
-<p>has the general solution</p>
+<p>has the general&nbsp;solution</p>
 <p><mathjax>$$x\left(t\right)=e^{-\int_{0}^{t} p\left(t\right)dt}\int_{0}^{t} q\left(t\right)e^{\int_{0}^{t} p\left(t\right)dt}dt.$$</mathjax></p>
-<p>In our case,</p>
+<p>In our&nbsp;case,</p>
 <p><mathjax>$$p\left(t\right)=-\frac{v}{L+vt},\quad q\left(t\right)=u.$$</mathjax></p>
 <p>Therefore,</p>
 <p><mathjax>$$x\left(t\right)&amp;amp;=&amp;amp;e^{\int\frac{v}{L+vt}dt}\int ue^{-\int\frac{v}{L+vt}dt}dt=\frac{u}{v}\left(L+vt\right)\ln\left(1+\frac{vt}{L}\right).$$</mathjax></p>
-<p>When the ant has reached the other side, <span style="font-style: italic;">x</span>(<span style="font-style: italic;">t</span>) = <span style="font-style: italic;">L</span> + <span style="font-style: italic;">vt</span>, so</p>
+<p>When the ant has reached the other side, <span style="font-style: italic;">x</span>(<span style="font-style: italic;">t</span>) = <span style="font-style: italic;">L</span> + <span style="font-style: italic;">vt</span>,&nbsp;so</p>
 <p><mathjax>$$x\left(t\right)=L+vt=\frac{u}{v}\left(L+vt\right)\ln\left(1+\frac{vt}{L}\right).$$</mathjax></p>
-<p>Solving for t, we get</p>
+<p>Solving for t, we&nbsp;get</p>
 <p><mathjax>$$t=\frac{L}{v}\left(e^{v/u}-1\right).$$</mathjax></p>
-<p>So the ant always makes it to the other side (unless <span style="font-style: italic;">u</span> = 0)! In the limit as <span style="font-style: italic;">v</span> -&gt; 0, we get</p>
+<p>So the ant always makes it to the other side (unless <span style="font-style: italic;">u</span> = 0)! In the limit as <span style="font-style: italic;">v</span> -&gt; 0, we&nbsp;get</p>
 <p><mathjax>$$t\approx\frac{L}{u},$$</mathjax></p>
-<p>which is exactly what we would expect.</p>
-<p>We  can show that the ant will reach the other side without doing any  calculations. As the ant moves across the rubber band, the velocity of  the point on the rubber band that the ant is currently walking on  increases from 0 to <span style="font-style: italic;">v</span>.  Therefore, the ant is accelerating. Since the other end of the rubber  band is moving at a constant velocity, the accelerating ant will always  eventually catch up to the far end.</p>
-<p>Another way to see this is  that since the ant is accelerating, if it makes it halfway, it will make  it all the way to the other side; if it makes it one-quarter of the  way, it will make it halfway, and so on. We know that since the ant is  traveling at some nonzero velocity, it must make it some nonzero  fraction of the way to the other side. Therefore, it must make it twice  that far, and so on, all the way to the other side. Thanks to Frank for pointing this out!</p>
+<p>which is exactly what we would&nbsp;expect.</p>
+<p>We  can show that the ant will reach the other side without doing any  calculations. As the ant moves across the rubber band, the velocity of  the point on the rubber band that the ant is currently walking on  increases from 0 to <span style="font-style: italic;">v</span>.  Therefore, the ant is accelerating. Since the other end of the rubber  band is moving at a constant velocity, the accelerating ant will always  eventually catch up to the far&nbsp;end.</p>
+<p>Another way to see this is  that since the ant is accelerating, if it makes it halfway, it will make  it all the way to the other side; if it makes it one-quarter of the  way, it will make it halfway, and so on. We know that since the ant is  traveling at some nonzero velocity, it must make it some nonzero  fraction of the way to the other side. Therefore, it must make it twice  that far, and so on, all the way to the other side. Thanks to Frank for pointing this&nbsp;out!</p>
                 </div><!-- /.entry-content -->
                                 <div class="comments">
                 <h2>Comments !</h2>
@@ -195,208 +195,8 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/fish.html">
         <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
@@ -405,13 +205,73 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/order-of-magnitude.html">
+        <i class="icon-tag icon-large"></i>order of magnitude
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
     </a>
 </li>
 <li class="tag-1">
@@ -420,13 +280,58 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/graph.html">
         <i class="icon-tag icon-large"></i>graph
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
     </a>
 </li>
 <li class="tag-2">
@@ -435,13 +340,108 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/site-news.html">
+        <i class="icon-tag icon-large"></i>site news
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/end-of-the-earth.html">
+        <i class="icon-tag icon-large"></i>end of the earth
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/physics-challenge.html">
+        <i class="icon-tag icon-large"></i>physics challenge
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/politics.html">
+        <i class="icon-tag icon-large"></i>politics
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/solar-sails.html">
+        <i class="icon-tag icon-large"></i>solar sails
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/longfellow.html">
+        <i class="icon-tag icon-large"></i>longfellow
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fun-water-rain-human.html">
+        <i class="icon-tag icon-large"></i>fun water rain human
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-2">
     <a href="../tag/blackbody.html">
         <i class="icon-tag icon-large"></i>blackbody
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
     </a>
 </li>
 
