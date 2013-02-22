@@ -42,18 +42,18 @@ fill out as many tags as you can to make the post behave well.
 Code Outline
 ------------
 
-    * `create_env` - create the virtual environment defined in `requirements.txt` in the `.env` directory
-    * `install_python_markdown_mathjax` - inject the [python-markdown-mathjax](https://github.com/mayoff/python-markdown-mathjax) plugin
-    * `post_template.md` - an example post in markdown format with metadata defined at the top
-    * `requirements.txt` - the packages used in the virtual environment
-    * `source_env` - sources the virtual environment, same as `source .env/bin/activate`
-    * `update_site` - does a pelican build and [ghp-import](https://github.com/davisp/ghp-import). Replaces the actual site, don't expect this to work, you probably don't have permissions.
-    * `/tools` - miscellaneous scripts used during the migration from blogspot.
-    * `/site' - the site itself
-        * `/content` - the posts in markdown, restructured text or html format.
-        * `/themes` - the themes for the site itself.
-        * `Makefile` - convience makefile for building / testing / viewing the site (try typing `make` while in the `site` directory to see the options )
-        * `pelicanconf.py` - the site settings.
+ * `create_env` - create the virtual environment defined in `requirements.txt` in the `.env` directory
+ * `install_python_markdown_mathjax` - inject the [python-markdown-mathjax](https://github.com/mayoff/python-markdown-mathjax) plugin
+ * `post_template.md` - an example post in markdown format with metadata defined at the top
+ * `requirements.txt` - the packages used in the virtual environment
+ * `source_env` - sources the virtual environment, same as `source .env/bin/activate`
+ * `update_site` - does a pelican build and [ghp-import](https://github.com/davisp/ghp-import). Replaces the actual site, don't expect this to work, you probably don't have permissions.
+ * `/tools` - miscellaneous scripts used during the migration from blogspot.
+ * `/site' - the site itself
+   * `/content` - the posts in markdown, restructured text or html format.
+   * `/themes` - the themes for the site itself.
+   * `Makefile` - convience makefile for building / testing / viewing the site (try typing `make` while in the `site` directory to see the options )
+   * `pelicanconf.py` - the site settings.
 
 Guidelines
 ----------
