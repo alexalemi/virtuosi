@@ -1,19 +1,24 @@
-A new virtuosi
+A New Virtuosi
 ==============
 
 [http://thephysicsvirtuosi.com](http://thephysicsvirtuosi.com)
 
 An attempt at making a new virtuosi site, using [Pelican](http://getpelican.com)
 
-Editing
--------
+This is meant to be a collaborative site for interesting physics posts, geared towards
+a general audience.
+
+Contributing
+------------
+
+Feel free to contribute your post ideas.
 
 Before you begin, make sure you have virtualenv and python installed.
 
 To create the virtualenvironment we'll use, use the script `create_env`, 
 but run it with source, i.e. `source create_env`
 this will create a virtual environment in the directory `.env` that we will 
-use to develop, and source the virtual env for you, you shoulde see your 
+use to develop, and source the virtual env for you, you should see your 
 command line change so that it starts with a `(.env)` at the start of the prompt, 
 this shows that you are in the virtual environment.
 
@@ -34,4 +39,25 @@ From here:
 Checkout `post_template.md` for an example post in markdown format, 
 fill out as many tags as you can to make the post behave well.
 
+Code Outline
+------------
+
+    * `create_env` - create the virtual environment defined in `requirements.txt` in the `.env` directory
+    * `install_python_markdown_mathjax` - inject the [python-markdown-mathjax](https://github.com/mayoff/python-markdown-mathjax) plugin
+    * `post_template.md` - an example post in markdown format with metadata defined at the top
+    * `requirements.txt` - the packages used in the virtual environment
+    * `source_env` - sources the virtual environment, same as `source .env/bin/activate`
+    * `update_site` - does a pelican build and [ghp-import](https://github.com/davisp/ghp-import). Replaces the actual site, don't expect this to work, you probably don't have permissions.
+    * `/tools` - miscellaneous scripts used during the migration from blogspot.
+    * `/site' - the site itself
+        * `/content` - the posts in markdown, restructured text or html format.
+        * `/themes` - the themes for the site itself.
+        * `Makefile` - convience makefile for building / testing / viewing the site (try typing `make` while in the `site` directory to see the options )
+        * `pelicanconf.py` - the site settings.
+
+Guidelines
+----------
+
+Posts on the virtuosi are meant to be fun and interesting first and foremost.  They ought to be tangentially related to physics,
+or science in general.  They should be digestable by a more-or-less general audience.  They should be well thought out.
 
