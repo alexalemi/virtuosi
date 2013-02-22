@@ -47,7 +47,7 @@ TAG_CLOUD_MAX_ITEMS = 100
 
 SUMMARY_MAX_LENGTH = 150
 
-PLUGINS=['pelican.plugins.sitemap',]
+PLUGINS=['pelican.plugins.sitemap','pelican.plugins.gzip_cache']
 
 SITEMAP = {
         'format': 'xml',
