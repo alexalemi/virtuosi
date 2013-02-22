@@ -12,8 +12,14 @@ FALLBACK_ON_FS_DATE = True
 
 MD_EXTENSIONS = (['mathjax'])
 
+FEED_DOMAIN = SITEURL
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+FEED_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
+TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
+
 
 # Blogroll
 LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
