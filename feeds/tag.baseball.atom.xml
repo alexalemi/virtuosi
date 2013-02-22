@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.baseball.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2011-07-03T11:52:00-04:00</updated><entry><title>Coriolis Effect on a Home Run</title><link href="http://thephysicsvirtuosi.com/posts/coriolis-effect-on-a-home-run.html" rel="alternate"></link><updated>2011-07-03T11:52:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2011-07-03:posts/coriolis-effect-on-a-home-run.html</id><summary type="html">&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s1600/phillies_stadium.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="212" src="http://3.bp.blogspot.com/-LxzlQ5iNaaI/Ta458E_AwvI/AAAAAAAAAMc/D0Z4vZS7IzA/s320/phillies_stadium.jpg" width="320" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Citizen's Bank Park&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;I like baseball.  Well, technically, I like &lt;strike&gt;laying&lt;/strike&gt;[3] lying on the couch for three hours half-awake eating potato chips and mumbling obscenities at the television.  But let's not split hairs here.
+&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Anyway, out of curiosity and in partial atonement for the sins of my past [1] I would now like to do a quick calculation to see how much effect the Coriolis force has on a home-run ball.&lt;/div&gt;&lt;div&gt;
+&lt;a name='more'&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;The Coriolis force is one of the artificial forces we have to put in if we are going to pretend the Earth is not rotating.  For a nice intuitive explanation of the Coriolis force see &lt;a href="http://www.wired.com/wiredscience/2011/04/coriolis-force-in-a-wipeout-rotating-slide/"&gt;this post&lt;/a&gt; over at Dot Physics.&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Let's now consider the following problem.  Citizen's Bank Park (home to the Philadelphia Phillies) is oriented such that the line from home plate to the foul pole in left field runs essentially South-North.  Imagine now that Ryan Howard hits a hard shot down the third base line (that is, he hits the ball due North).  Assuming it is long enough to be a home run, how with the Coriolis force effect the ball's trajectory?&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;This is a well-posed problem and we could solve it as exactly as we wanted.  But please don't &lt;a href="https://docs.google.com/viewer?a=v&amp;amp;pid=explorer&amp;amp;chrome=true&amp;amp;srcid=0Bwd5hrDOxWsrOGZmMWZkYzQtM2M2Ny00NjlmLTgyYmMtNTQwZjI1ODU1NWI4&amp;amp;hl=en_US"&gt;make me&lt;/a&gt;. It's icky and messy and I don't feel like it.  So let's do some dimensional analysis!  Hooray for that!&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;So what are the relevant physical quantities in this problem?  Well, we'll certainly need the angular velocity of the Earth and the speed of the baseball.  We'll also need the acceleration due to gravity.  Alright, so what do we want to get out of this?  Well, ideally we'd like to find the distance the ball is displaced from its current trajectory.  So is there any way we can combine an angular velocity, linear velocity and acceleration to get a displacement?&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Let's see.  We can write out the dimensions of each in terms of some length, L, and some time, T.  So:&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;mathjax&gt;$$ \left[ \Omega \right] = \frac{1}{T} $$&lt;/mathjax&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;mathjax&gt;$$ \left[ v \right] = \frac{L}{T} $$&lt;/mathjax&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;mathjax&gt;$$ \left[ g \right] = \frac{L}{T^2} $$&lt;/mathjax&gt;&lt;/div&gt;&lt;div&gt;
+where we have used the notation that [some quantity] = units of that quantity.  Combining these in a general way gives:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ L = \left[ v^{\alpha} \Omega^{\beta} g^{\gamma} \right] = \left( \frac{L}{T}\right)^{\alpha}\left( \frac{1}{T}\right)^{\beta}\left( \frac{L}{T^2}\right)^{\gamma} = L^{\alpha+\gamma} T^{-(\alpha+\beta+2\gamma)}$$&lt;/mathjax&gt;
+Since we want just want a length scale here, we need:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$\alpha+\gamma = 1~~~\mbox{and}~~~\alpha+\beta+2\gamma = 0. $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;&lt;div&gt;We can fiddle around with the above two equations to get two new equations that are both functions of alpha.  This gives:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$\beta = \alpha - 2~~~\mbox{and}~~~\gamma = 1 - \alpha. $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, we have two equations and three unknowns, so we have an infinite number of solutions.  I've listed a few of these in the Table below.&lt;/p&gt;
+&lt;table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-_wBdDaNzEP4/Tg_of5pylyI/AAAAAAAAANE/CU2Oe225_UI/s1600/table.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="320" src="http://4.bp.blogspot.com/-_wBdDaNzEP4/Tg_of5pylyI/AAAAAAAAANE/CU2Oe225_UI/s320/table.png" width="271" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Ways of getting a length&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;At this point, we have taken Math as far as we can.  We'll now have to use some physical intuition to narrow down our infinite number of solutions to one.  Hot dog!&lt;/p&gt;
+&lt;p&gt;One way we can choose from these expressions is to see which ones have the correct dependencies on each variable.  So let's consider what we would expect to happen to the deflection of our baseball by the Coriolis force if we changed each variable.&lt;/p&gt;
+&lt;p&gt;What happens if we were to "turn up" the gravity and make g larger?  If we make g much larger, then a baseball hit at a given velocity will not be in the air as long.  If the ball isn't in the air as long, then it won't have as much time to be deflected.  So we would expect the deflection to decrease if we were to increase g.  This suggests that g should be in the denominator of our final expression.&lt;/p&gt;
+&lt;p&gt;What happens if we turn up the velocity of the baseball?  If we hit the ball harder, then it will be in the air longer and thus we would expect it to have more time to be deflected.  Since increasing the velocity would increase the deflection, we would expect v to be in the numerator.&lt;/p&gt;
+&lt;p&gt;What happens if we turn up the rotation of the Earth?  Well, if the Earth is spinning faster, it's able to rotate more while the ball is in the air.  This would result in a greater deflection in the baseball's path.  Thus, we would expect this term to be in the numerator.&lt;/p&gt;
+&lt;p&gt;So, using the above criteria, we have eliminated everything on that table with alpha less than 3 based on physical intuition.  Unfortunately, we still have an infinite number of solutions to choose from (i.e. all those with alpha greater than or equal to 3).  But, we DO have a candidate for the "simplest" solution available, namely the case where alpha = 3.  Since we have exhausted are means of winnowing down our solutions, let's just go with the alpha = 3 case.&lt;/p&gt;
+&lt;p&gt;Our dimensional analysis expression for the deflection of a baseball is then&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \Delta x \sim \frac{v^3 \Omega}{g^2} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Plugging in typical values of&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ v = 50~\mbox{m/s}~~~(110~\mbox{mi/hr}) $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ \Omega = 7 \times 10^{-5}~\mbox{rad/s} $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ g = 9.8~\mbox{m/s}^2 $$&lt;/mathjax&gt;
+we get
+&lt;mathjax&gt;$$ \Delta x \approx 0.1~\mbox{m} = 10~\mbox{cm}. $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;That's all fine and good, but which way does the ball get deflected?  Is it fair or foul?  Well, remembering that the Coriolis force is given by:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ {\bf F} = -2m{\bf \Omega} \times {\bf v} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;and utilizing Ye Olde Right Hand Rule, we see that a ball hit due north will be deflected to the East.  In the case of Citizen's Bank Park, that is fair territory. &lt;/p&gt;
+&lt;p&gt;But how good is our estimate?  Well, I did the full calculation (which you can find &lt;a href="https://docs.google.com/viewer?a=v&amp;amp;pid=explorer&amp;amp;chrome=true&amp;amp;srcid=0Bwd5hrDOxWsrOGZmMWZkYzQtM2M2Ny00NjlmLTgyYmMtNTQwZjI1ODU1NWI4&amp;amp;hl=en_US"&gt;here&lt;/a&gt;) and found that the deflection due to the Coriolis force is given by&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \Delta x =-\frac{4}{3}\frac{\Omega v^3_0}{g^2} \cos \phi \sin^3 \alpha \left[1 -3 \tan \phi \cot \alpha  \right] $$&lt;/mathjax&gt;
+&lt;style type="text/css"&gt;p, li { white-space: pre-wrap; } &lt;/style&gt; 
+where phi is the latitude and alpha is the launch angle of the ball.  We see that this is essentially what we found by dimensional analysis up to that factor of 4/3 and some geometrical terms.  Not bad!  &lt;/p&gt;
+&lt;p&gt;Plugging in the same numbers we used before, along with the appropriate latitude and a 45 degree launch angle we find that the ball is deflected by:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \Delta x = 5~\mbox{cm}. $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;For comparison, we note that the diameter of a baseball is 7.5 cm.  So in the grand scheme of things, this effect is essentially negligible.  [2]&lt;/p&gt;
+&lt;p&gt;That wraps up the calculation, but I'm certain that many of you are still a little wary of this voodoo calculating style.  And you should be!  Although dimensional analysis will give you a result with the proper units and will &lt;i&gt;often&lt;/i&gt; give you approximately the right scale, it is not perfect.&lt;/p&gt;
+&lt;p&gt;But, it can be formalized and made rigorous.  The rigorous demonstration for dimensional analysis is due to Buckingham and his famous pi-theorem.  The original paper can be found behind a pay-wall &lt;a href="http://prola.aps.org/abstract/PR/v4/i4/p345_1"&gt;here&lt;/a&gt; and a really nice set of notes can be found &lt;a href="http://www.math.ntnu.no/~hanche/notes/buckingham/buckingham-a4.pdf"&gt;here&lt;/a&gt;.  It's a pretty neat idea and I highly recommend you check it out!&lt;/p&gt;
+&lt;p&gt;Unnecessary Footnotes:&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;&lt;div&gt;[1]  Once in college I argued with a meteorologist named Dr. Thunder over the direction of the Coriolis force on a golf ball for the better half of the front nine at Penn State's golf course.  I was wrong.  Moral of the story:  don't play golf with meteorologists.  &lt;/div&gt;&lt;div&gt;
+[2]  For a counterargument, see Fisk et al. (1975)&lt;/p&gt;
+&lt;p&gt;[3] Text has been corrected to illustrate our enlightenment by a former English major as to the difference between 'lay' and 'lie' through the following story: 'Once in a college psych class, a young student said "It's too hot.  Let's lay down."  A mature student, a journalist, asked, "Who's Down?" '&lt;/p&gt;
+&lt;/div&gt;</summary><category term="scott bakula"></category><category term="baseball"></category><category term="coriolis"></category></entry><entry><title>My Pepsi* Challenge</title><link href="http://thephysicsvirtuosi.com/posts/my-pepsi-challenge.html" rel="alternate"></link><updated>2010-06-08T01:30:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2010-06-08:posts/my-pepsi-challenge.html</id><summary type="html">&lt;div class="" style="clear: both; text-align: left;"&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz2-SbRtAI/AAAAAAAAAFY/eaUWEFQHTDs/s1600/bottles.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="192" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz2-SbRtAI/AAAAAAAAAFY/eaUWEFQHTDs/s200/bottles.png" width="200" /&gt;&lt;/a&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;The basement of the Physics building has a Pepsi machine.  Over the course of two semesters Alemi and I have deposited roughly the equivalent of the GDP of, say, Monaco to this very same Pepsi machine (see left, with most of Landau and Lifshitz to scale).  It just so happens that Pepsi is now having a contest, called "Caps for Caps," in which it is possible to win a baseball hat.  There are several nice things about this contest.  Firstly, I drink a lot of soda.  Secondly, I like baseball hats.  So far so good.  Lastly (and most important for this post), is that it is fairly straightforward to calculate the statistics of winning (or at least simulate them).&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;So how does the game work?  Well, on each soda cap the name of a Major League Baseball team is printed.  All thirty teams are (supposedly) printed with the same frequency, so the odds of getting any particular team are 1/30.  You can win a hat by collecting three caps with the same team printed on them.  So if I had five caps, the following would be a win:&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;
+&lt;div style="text-align: center;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;Phillies   Cubs   Tigers   Phillies   Phillies&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;whereas the following would not win me anything:&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;Yankees   Rays   Blue Jays   Orioles   Royals&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;and I would also lose if I had:&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;Mets   Nationals   Braves  Braves   Mets.     &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/span&gt;
+&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;In addition, one in eight caps gets you 15% off on some $50 dollar or more purchase to MLB.com or something like that.  For simplicity, I ignored these 15% off guys, but all they will do is push back the number of caps you need by one for every eight purchased.  It should not be too difficult to factor these ones in, but I was lazy and I already made all these nice graphs, so...&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt; &lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;The first thing I tried to do was just simulate the contest.  I wrote a little Python script that randomly generates a team for each cap and counts my wins over a given number of caps purchased.  Running this about 100,000 times for all number of caps between 1 and 61 (with 61 guaranteed to win) and averaging over the number of wins, I could determine both the expected number of wins per cap value and the probability of winning at least once.  The results are shown below.   &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: Arial; font-size: small;"&gt;&lt;span class="Apple-style-span" style="font-size: 13px;"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TAwPaC7VV-I/AAAAAAAAAEA/ei6DPQ09bmI/s1600/CapsforCaps(sim1).png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TAwPaC7VV-I/AAAAAAAAAEA/ei6DPQ09bmI/s400/CapsforCaps(sim1).png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAxwinoE0FI/AAAAAAAAAFA/VTOnToOXcmM/s1600/WinsvsSodas.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAxwinoE0FI/AAAAAAAAAFA/VTOnToOXcmM/s400/WinsvsSodas.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;But we can also exactly solve this game.  This turned out to take longer for me (I'm bad at probability) than just simulating the darn thing.  I had initially included my derivation in the post but it was long, muddled, and none too illuminating, so I took it out.  But I super-duper promise I did it and can post if you really really want to know.  Otherwise, I have just plotted the predicted results below (as a red curve) along with the simulated data (blue dots).  Turns out they agree pretty well!&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TAxxKz3m-MI/AAAAAAAAAFI/S6YpmCcO1Fs/s1600/CapsforCapsSimandPred.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TAxxKz3m-MI/AAAAAAAAAFI/S6YpmCcO1Fs/s400/CapsforCapsSimandPred.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;Just eyeballing the graph, we see that after 18 or 19 sodas the chances of winning are about a half.  Beyond about 25 or so it appears to be almost 90% that you'll win at least once.  In reality, these percentages would occur about 2 or 3 caps later to compensate for the 15% off thingies.  So now that we have some numbers and can trust our model a bit, let's see how worth it this contest is for us.&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;First, we can ask: Is this a good way to get a hat cheaper than retail value (about $15)?  To quantify "worth it" I have chosen to find the value of winnings (price of hat times expected number of wins) minus the cost of caps (how much I spend on soda).  I am fairly embarrassed to say that the cost of each soda is $1.75.  See plot below.&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;   &lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAxzBhvw-4I/AAAAAAAAAFQ/RiKEfFBDqig/s1600/ValueDifferential.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAxzBhvw-4I/AAAAAAAAAFQ/RiKEfFBDqig/s400/ValueDifferential.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;From this plot, we see that it doesn't become "worth it" (that is, value of winnings is greater than cost of sodas) until about 40 sodas purchased.  That's a lot!  In fact, we see that just when I start feeling pretty confident I'll win something (around 20-25 sodas), I'm right in a big valley of "totally not worth it."  So if I just want a baseball hat, I'm better off forking over the $15 dollars.     &lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;Although, one does see from this plot that once I get above about 40 or so sodas, it becomes much more cost effective to just keep buying sodas and winning hats.  However, Pepsi tries to stifle this a bit in the &lt;a href="http://www.pepsiusa.com/capsforcaps/"&gt;&lt;span class="Apple-style-span" style="color: blue;"&gt;rules&lt;/span&gt;&lt;/a&gt;, stating&lt;span class="Apple-style-span" style="font-family: inherit;"&gt; that "&lt;/span&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;Limit one (1) Official MLB® baseball cap per name, address or household."  Unless I either make a lot of friends real soon or develop a creative definition of my address, it looks like I'm out of luck.  &lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;But what if I want a hat but I don't want to actually buy soda like a chump?  This contest, like many others, needs to have a "No Purchase Necessary" clause for some legal reason or another (so they aren't lotteries or gambling or something).  I had assumed they (the nameless overlords at Pepsi) would limit the number of caps possible from just mailing in, but it doesn't seem that way.  From the Official rules, Chapter Two, &lt;span class="Apple-style-span" style="font-family: inherit;"&gt;verses nine to twenty-one:&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;"Limit one (1) free game piece per request, per stamped outer envelope."&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;
+&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;&lt;span class="Apple-style-span" style="font-family: inherit;"&gt;That sounds to me like you could get as many as you want, as long as you use different envelopes.  So we can redo our cost analysis with the cost of getting one cap as the cost of a stamp.  Putting the value of a cap now at the cost of a stamp (44 cents), we get the following: &lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TAz3jfb-KcI/AAAAAAAAAFg/erU1nZU7ZCg/s1600/mailincaps.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TAz3jfb-KcI/AAAAAAAAAFg/erU1nZU7ZCg/s400/mailincaps.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;Zooming in:&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz3tj6kg8I/AAAAAAAAAFo/MDHgjjjS2J0/s1600/mailinZoom.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TAz3tj6kg8I/AAAAAAAAAFo/MDHgjjjS2J0/s400/mailinZoom.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;Hey, that seems worth it!  And it should, since from above we saw that the probability of winning after about 30 caps was in the high 90% 's.  The cost of getting 30 caps this way is the cost of 30 stamps, which is less than the $15 that the hat is (supposedly) worth.  So if I really wanted a hat from this contest and didn't feel like drinking all my money away, I'd just send away for the mail-in pieces.          &lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;I may try this method, since it seems to be allowed under the rules.  Although, even a strict constructionist reading of the contest rules pretty much allows Pepsi to do whatever the heck it wants.  Either way, I'll be sure to update to see how well my model holds up!&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;-------&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: left;"&gt;*NOTE:  In no way is The Virtuosi blog affiliated in any way with Pepsi.  We may occasionally purchase Pepsi products (like sweet tasting Wild Cherry Pepsi!), but we don't do it because we think it makes us look "cool" or "hip" or "rad" (we KNOW it does).  In fact, drinking too much soda can have certain adverse health effects (like making you stronger, faster, and in general more attractive).  So if you want to have a Pepsi product (like sweet tasting Wild Cherry Pepsi!) every now and then (literally, EVERY INSTANT), go ahead.  But drinking too many Pepsi products (like sweet tasting Wild Cherry Pepsi!) could make you sick (with awesome-itis). &lt;/div&gt;</summary><category term="pepsi"></category><category term="how do i get free stuff?"></category><category term="scott bakula"></category><category term="baseball"></category></entry><entry><title>Physics of Baseball: Batting</title><link href="http://thephysicsvirtuosi.com/posts/physics-of-baseball-batting.html" rel="alternate"></link><updated>2010-05-19T18:21:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-05-19:posts/physics-of-baseball-batting.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s1600/baseball.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s320/baseball.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can be.&lt;/p&gt;
+&lt;p&gt;We were interested in just how hard it is to hit a pitch with the bat.  So we thought we'd model hitting the ball with a rather simple approximation of a robot swinging a cylindrical bat, horizontally with some rotational speed and at a random height.  The question then becomes, if the robot chooses a random height and a random time to swing, what are the chances that it gets a hit?&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Spatial Resolution &lt;/h3&gt;
+
+&lt;p&gt;So the first thing to consider is how much of the strike zone the bat takes up. &lt;/p&gt;
+&lt;p&gt;In order to be a strike, the ball needs to be over home plate, which is 17 inches wide, and between the knees and logo on the batters jersey.  Estimating this height as 0.7 m or 28 inches or so, we have the area of the strike zone
+&lt;mathjax&gt;$$ A_S = (17") \times (0.7 m) = 0.3 \text{ m}^2 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;when you swing, how much of this area does the bat take up?  Well, treat it as a cylinder, with a diameter of 10 cm, and assume it runs the length of the strike zone, when the area that the bat takes up is
+&lt;mathjax&gt;$$ A_B = (10\text{ cm}) \times (17" ) = 0.043 \text{ m}^2 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So that the fractional area that the bat takes up during our idealized swing is 
+&lt;mathjax&gt;$$ \frac{A_B}{A_S} \approx 14\% $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So already, if our robot is guessing where inside the strike zone to place the bat, and doing so randomly, assuming the pitch is a strike to begin with, it will be able to bunt successfully about 14% of the time.&lt;/p&gt;
+&lt;h3&gt;Time Resolution &lt;/h3&gt;
+
+&lt;p&gt;But getting a hit on a swing is different than getting a bunt.  Not only do you have to have your bat at the right height, but you need to time the swing correctly.  Lets first look at how much time we are dealing with here.&lt;/p&gt;
+&lt;p&gt;Most major league pitchers pitch the ball at about 90 mph or so.  The pitchers mound is 60.5 feet away from home base.  This means that the pitch is in the air for
+&lt;mathjax&gt;$$ t = \frac{ 60.5 \text{ ft} }{ 90 \text{ mph} } \approx \frac{1}{2} \text{ second} $$&lt;/mathjax&gt;
+i.e. from the time the pitcher releases the ball to the time it crosses home plate is only about half a second.    Compare this with human reaction times.  My drivers ed course told me that human reaction times are typically a third of a second or so.  So, baseball happens quick!&lt;/p&gt;
+&lt;p&gt;Alright, but we were interested in how well you have to time your swing.  Successfully hitting the ball means that you've made contact with the ball such that it lands somewhere in the field.  I.e. you've got a 90 degree play in when you make contact.  How does this translate to time?  We would need to know how fast you swing.&lt;/p&gt;
+&lt;h4&gt;Estimating the speed of a swing &lt;/h4&gt;
+
+&lt;p&gt;I don't know how fast you can swing a baseball bat, but I can estimate it.  I know that if you land your swing just right, you have a pretty good shot at a home run.  Fields are typically 300 feet long.  So, I can ask, if I launch a projectile at a 45 degree angle, how fast does it need to be going in order to make it 300 feet.  Well, we can solve this projectile problem if we remember some of our introductory physics.  &lt;/p&gt;
+&lt;p&gt;We decouple the horizontal and vertical motions of the ball, the ball travels horizontally 300 feet, so we know
+&lt;mathjax&gt;$$ v_x t = 300 \text{ ft} $$&lt;/mathjax&gt;
+where t is the time the ball is in the air, similarly we know that it is gravity that makes the ball fall, and so as far the vertical motion is concerned, in half the total flight time, we need the vertical velocity to go from its initial value to zero, i.e.
+&lt;mathjax&gt;$$ g \frac{t}{2} = v_y $$&lt;/mathjax&gt;
+where g is the acceleration due to gravity.&lt;/p&gt;
+&lt;p&gt;Furthermore, I'm assuming that I am launching this projectile at a 45 degree angle, for which I know from trig that
+&lt;mathjax&gt;$$ v_x = v_y = \frac{v}{\sqrt 2} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So I can stick these equations into one another and solve for the velocity needed to get the ball going 300 feet.&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{v^2}{ g} = 300 \text{ ft} = \frac{ v^2}{ 9.8 \text{ m/s}^2 }  $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ v \approx 30 \text{ m/s} \sim 67 \text{ mph}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So it looks like the ball needs to leave the bat going about 70 mph in order to clear the park.  ( This was of course neglecting air resistance, which ought to be important for baseballs ).  &lt;/p&gt;
+&lt;p&gt;Great that tells us how fast the ball needs to be going when it leaves the bat, but how fast was the bat going in order to get the ball going that fast?  Well, lets work worst case and assume that the baseball - bat interaction is inelastic.  I.e. I reckon that if I throw a baseball at about 100 mph towards a wooden wall, it doesn't bounce a whole lot.  In that case, the bat needs to take the ball from coming at it at 90 mph to leaving at 70 mph or so, i.e. the place where the ball hits the bat needs to be going at about 160 mph.&lt;/p&gt;
+&lt;p&gt;That seems fast, but when you think about it, if a pitcher can pitch a ball at 90 mph, that means their hand is moving at 90 mph during the last bits of the pitch, so you expect that a batter can move their hands about that fast, and we have the added advantage of the bat being a lever.&lt;/p&gt;
+&lt;h4&gt;Coming back to timing&lt;/h4&gt;
+
+&lt;p&gt;So, we have an estimate for how fast the bat is going. Knowing this and estimating the length between the sweet spot and the pivot point of the bat to be about 0.75 m or so, we can obtain the angular frequency of the bat.
+&lt;mathjax&gt;$$ v  = \omega r $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ \omega = \frac{ 160 \text{ mph} }{ 0.75 \text{ m} } \approx 100 \text{ Hz} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So, if we need to have a 90 degree resolution in our swing timing to hit the ball in the park, this means that if our swing near the end is happening at 100 \text{ Hz}, we need to get the timing down to within
+&lt;mathjax&gt;$$ t = \frac{ 90 \text{ degree}}{ 100 \text{ Hz} } \sim 15 \text{ ms} $$&lt;/mathjax&gt;
+So we need to get the timing of our swing to within about 15 milliseconds to land the hit.  &lt;/p&gt;
+&lt;p&gt;So if our robot randomly swung at some point during the duration of the pitch, it would only hit with probability
+&lt;mathjax&gt;$$ \frac{\text{time to land hit} }{ \text{time of pitch}} = \frac{ 15 \text{ ms}}{500 \text{ ms}} \sim 3\% $$&lt;/mathjax&gt;
+or only 3% of the time.  If we take both the spatial placement, and timing of the swing as independent, the probability that our robot gets a hit would be something about
+&lt;mathjax&gt;$$ p = 0.03 \times 0.14 = 0.004 = 0.4 \% $$&lt;/mathjax&gt;
+or our robot would only get a hit 1 time out of 250 tries.  &lt;/p&gt;
+&lt;p&gt;Suddenly hitting looks pretty impressive.&lt;/p&gt;
+&lt;h3&gt;Experiment &lt;/h3&gt;
+
+&lt;p&gt;Saying that the robot swings at some random time during the duration of the pitch is pretty bad.  So I decided to do a little experiment to see how good people are at judging times on half second scales.  I had some friends of mine start a stop watch and while looking try to stop it as close as they could at the half second mark.  Collecting their deviations, I obtained a standard deviation of about 41 milliseconds, which suggests a window of about 100 milliseconds over which people can reliably judge half second intervals.  Now, I have to admit, this wasn't done in any very rigorous sort of way, I had them do this while walking to dinner, but it ought to give a rough estimate of the relevant time scale for landing a hit.  So instead of comparing our 15 millisecond 'get a hit' window to the full half second pitch duration, lets compare it instead to the 100 'humans trying to judge when to hit' window.  This gives us a temporal resolution of about
+&lt;mathjax&gt;$$ p = \frac{ 15}{100} = 15 \%.  $$&lt;/mathjax&gt;
+So that now we obtain an overall hit probability of
+&lt;mathjax&gt;$$ p = 0.15 * 0.14 = 0.021 = 2 \% $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So that it seems like a poor baseball player, more or less randomly swinging should have a batting average of about 2\%.  Compare this with typical baseball batting averages of 250 or so, denoting 0.25 or 25% probability of a hit.  I think this is a much better estimate of how much better over random baseball players can do with training.&lt;/p&gt;
+&lt;p&gt;So it looks like practice can improve your ability to do a task by about an order of magnitude or so.&lt;/p&gt;
+&lt;p&gt;Either way, baseball is pretty darn impressive when you think about it.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fun"></category><category term="baseball"></category></entry></feed>
