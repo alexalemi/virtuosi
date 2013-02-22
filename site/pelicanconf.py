@@ -48,6 +48,7 @@ FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 THEME = 'themes/bootstrap2'
 
 ARTICLE_EXCLUDES = ('themes',)
+TYPOGRIFY = True
 
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 50

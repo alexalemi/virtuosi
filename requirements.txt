@@ -12,3 +12,6 @@ python-dateutil==2.1
 pytz==2012j
 six==1.2.0
 wsgiref==0.1.2
+smartypants==1.6.0.3
+typogrify==2.0.0
+
