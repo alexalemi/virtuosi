@@ -20,6 +20,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
 TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
 
+STATIC_PATHS = ["images",]
 
 # Blogroll
 LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
@@ -47,7 +48,7 @@ FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
 THEME = 'themes/bootstrap2'
 
-ARTICLE_EXCLUDES = ('themes',)
+ARTICLE_EXCLUDES = ('themes','README.md',)
 TYPOGRIFY = True
 
 TAG_CLOUD_STEPS = 4
