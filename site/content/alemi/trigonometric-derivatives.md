@@ -5,7 +5,6 @@ Category: math
 Slug: trigonometric-derivatives
 Author: Alemi
 Summary: I show that the derivative of $\sin x$ is $\cos x$ in a simple diagram!.
-Status: draft
 
 I was recently reading [The Endevour](http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/) 
 where he responded to a post over at 

@@ -19,8 +19,10 @@ FEED_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
 TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
+# GITHUB_URL = "http://github.com/alexalemi/virtuosi/"
+# GITHUB_POSITION = 'left'
 
-STATIC_PATHS = ["images",]
+STATIC_PATHS = ["images","static",]
 
 # Blogroll
 LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
@@ -34,7 +36,8 @@ SOCIAL = (('twitter','https://twitter.com/thevirtuosi'),
         ('facebook','https://www.facebook.com/thevirtuosi'),
         )
 
-DEFAULT_PAGINATION = 25
+
+DEFAULT_PAGINATION = 10
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
@@ -56,7 +59,7 @@ TAG_CLOUD_MAX_ITEMS = 50
 
 SUMMARY_MAX_LENGTH = 150
 
-PLUGINS=['pelican.plugins.sitemap','pelican.plugins.gzip_cache']
+PLUGINS=['pelican.plugins.sitemap','pelican.plugins.gzip_cache',]
 
 SITEMAP = {
         'format': 'xml',
