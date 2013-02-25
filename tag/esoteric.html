@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/flying-back.html">Flying&nbsp;back</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/flying-back.html"
+                                        rel="bookmark"
+                                        title="Permalink to Flying&nbsp;back">
+                                        Flying&nbsp;back
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/flying-back.html"
+                                    data-text="Flying&nbsp;back"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2010-05-25T09:04:00">
         <i class="icon-calendar"></i>Tue 25 May 2010
@@ -116,13 +137,38 @@
 	<a href="../tag/units.html"><i class="icon-tag"></i>units</a>
 	<a href="../tag/flying.html"><i class="icon-tag"></i>flying</a>
 	<a href="../tag/esoteric.html"><i class="icon-tag"></i>esoteric</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Those of us originating on the right side of the atlantic ocean are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way around. This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane’s movement? This gives us a perfect chance to use the Earth Units we introduced a few weeks ago. Specifically I’ll use the Earth meter (equal to the radius of the ...
-                        <a class="btn primary xsmall" href="../posts/flying-back.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Those of us originating on the right side of the <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Atlantic+Ocean&amp;sll=39.368279,-9.316406&amp;sspn=57.758311,144.316406&amp;dirflg=w&amp;ie=UTF8&amp;hq=&amp;hnear=Atlantic+Ocean&amp;ll=37.857507,-22.675781&amp;spn=62.051619,144.316406&amp;z=3">atlantic ocean</a> are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way&nbsp;around.</p>
+<p>This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane&#8217;s&nbsp;movement?</p>
+<p><a name='more'></a>
+This gives us a perfect chance to use the Earth Units we <a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html">introduced</a> a few weeks ago. Specifically I&#8217;ll use the Earth meter (equal to the radius of the Earth, which I&#8217;ll dub <span style="font-style: italic;">e-m</span>) and Earth second (one day, <span style="font-style: italic;">e-s</span>).</p>
+<p>First we want to figure out velocity of the airplane compared to the ground. When it is grounded, the plane and the Earth&#8217;s surface both have an angular velocity of 2π 1/e-s; they do one revolution per day. This means the plane&#8217;s linear velocity is 2π e-m/e-s, and its angular velocity once it&#8217;s airborne is
+<mathjax>$$2 \pi \cdot \frac{(1\; \rm{m_\oplus})}{(1\; \rm{m_\oplus}+A)} \;\rm{s_\oplus^{-1}},$$</mathjax>
+where A is the altitude. That&#8217;s the one number I&#8217;m going to pull out of thin air here; that being the thin air of the cabin where they always announce that we have attained a cruising altitude of 30,000 feet. In real people units, that&#8217;s about 9,000 meters, or 9 kilometers - round it up to 10. Going back to the Earth day <a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html">post</a> 1 e-m is about 6380 km, so that the angular velocity of the airplane is about 0.9984 (2π) 1/e-s, and relative to the ground it is
+<mathjax>$$0.0016 \cdot 2 \pi \;\rm{s_\oplus^{-1}}$$</mathjax></p>
+<p>So, over a journey of length of about 0.5 e-s, the overall distance traveled due to this effect would come to about
+<mathjax>$$0.0008 \cdot 2\pi \;\rm{m_\oplus}.$$</mathjax>
+Tel Aviv and New York are both in the mid-northern hemisphere and seven time zones apart, so a first-order estimate of the distance between them would be about
+<mathjax>$$\frac{7}{24}\cdot 2\pi \;\rm{m_\oplus} \approx 0.29\cdot 2\pi \;\rm{m_\oplus}.$$</mathjax></p>
+<p>Overall, it looks like this effect is negligible. Indeed, anyone who gives the matter a second thought would notice that the planes should go faster when traveling <span style="font-style: italic;">westwards</span>, as the Earth spins eastwards toward the rising sun.  Anyone who looks even further into the matter finds that  eastbound and westbound planes simply take different routes across the Atlantic, leaving us with a rather more mundane and less exciting&nbsp;explanation.</p>
+<p>Still, I won&#8217;t complain if it makes my flight any shorter. Now, if you&#8217;ll excuse me, I have some beaches to catch up&nbsp;with.</p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/flying-back.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-                <div class="article">
+                        </article>
+                                <div class="article">
                 <h1><a href="../posts/esoteric-physics-i-the-hall-effect.html">Esoteric Physics I - The Hall&nbsp;Effect</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -146,7 +192,7 @@
                 </div>
         </div>
         <hr />
-        
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -164,6 +210,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -171,23 +222,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -195,89 +236,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -286,13 +267,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -301,13 +332,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -321,63 +362,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -386,38 +397,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

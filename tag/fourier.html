@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/day-in-the-life-of-clicky.html">Day in the life of&nbsp;Clicky</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/day-in-the-life-of-clicky.html"
+                                        rel="bookmark"
+                                        title="Permalink to Day in the life of&nbsp;Clicky">
+                                        Day in the life of&nbsp;Clicky
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/day-in-the-life-of-clicky.html"
+                                    data-text="Day in the life of&nbsp;Clicky"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2011-06-01T16:34:00">
         <i class="icon-calendar"></i>Wed 01 June 2011
@@ -116,13 +137,39 @@
 	<a href="../tag/clicky.html"><i class="icon-tag"></i>clicky</a>
 	<a href="../tag/autocorrelation.html"><i class="icon-tag"></i>autocorrelation</a>
 	<a href="../tag/fourier.html"><i class="icon-tag"></i>fourier</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Remember when you first learned about other planets and their many fun facts? You were probably bombarded by such truisms as: “Jupiter is approximately the mass of 318 Earths, has a orbital period that is 4,300 Earth days, is made out of pure love, and is mostly transparent.” Well, I was curious about what Clicky’s day was like in terms of Earth days. When did Clicky get to sleep, when did he eat dinner, what is his orbital radius and eccentricity? To do this, I looked at only the 3rd column of the data that you may or may not have downloaded yesterday from here. Starting out, it should be noted that this is not an ordinary time series where you have some value measured at given intervals. It is actually a series of time points at which a click was entered. I thought it would be most ...
-                        <a class="btn primary xsmall" href="../posts/day-in-the-life-of-clicky.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <p><a href="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s1600/soslow.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 345px;" src="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s400/soslow.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613641295068101490" /></a>Remember when you first learned about other planets and their many fun facts?  You were probably bombarded by such truisms as: &#8220;Jupiter is approximately the mass of 318 Earths, has a orbital period that is 4,300 Earth days, is made out of pure love, and is mostly transparent.&#8221; Well, I was curious about what Clicky&#8217;s day was like in terms of Earth days.  When did Clicky get to sleep, when did he eat dinner, what is his orbital radius and eccentricity?  To do this, I looked at only the 3rd column of the data that you may or may not have downloaded yesterday from <a href="http://thevirtuosi.blogspot.com/2011/05/clickin-night-away.html">here</a>.
+<div><a name='more'></a>
+</div><div>Starting out, it should be noted that this is not an ordinary time series where you have some value measured at given intervals.  It is actually a series of time points at which a click was entered.  I thought it would be most natural to go ahead and bins these to give a sense of the access to Clicky over the past two months.  It looks something like this:</div><div style="text-align: left;">
+<a href="http://4.bp.blogspot.com/-CGv4NMXIA_Y/TeenyMR2SEI/AAAAAAAAB6g/_GymFecaR4c/s1600/rawtimehist.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 192px;" src="http://4.bp.blogspot.com/-CGv4NMXIA_Y/TeenyMR2SEI/AAAAAAAAB6g/_GymFecaR4c/s400/rawtimehist.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613639941271996482" /></a>
+</div><div>Well, that wasn&#8217;t as informative as I had hoped.  We see some spikes here and there with a general trend toward neglect and abandonment towards the end of the second month.  What if we take these days and bin them into one single day worth of traffic?  We get this:</div><div>
+</div><div><a href="http://1.bp.blogspot.com/-bmZb_JtN4yg/TefICYE6zMI/AAAAAAAAB7I/xqsCiUjBtQE/s1600/oneday-hist.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 301px;" src="http://1.bp.blogspot.com/-bmZb_JtN4yg/TefICYE6zMI/AAAAAAAAB7I/xqsCiUjBtQE/s400/oneday-hist.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613675403688987842" /></a></div>Again, not so informative yet, but we are definitely starting to see some structure in the day.  In particular, there is a lot of activity in the afternoon and evening with a definite lull around 5pm.  There is also a distinct minima around 5am.  It appears that Clicky is on the average most active between noon and 9pm, getting a break through most of the night.  <div>
+</div><div>Next, let&#8217;s look at the autocorrelation of the times.  For standard time series, the autocorrelation is defined to be </div><div>
+</div><div><mathjax>$$ C_{ss}(\tau) = \int_{-\infty}^{\infty}s(t) * \bar s(t-\tau) dt $$</mathjax></div><div>
+</div><div>which measures the amount of similarity in a signal as a function of the time separation between two points.  Again, we don&#8217;t have a continuous signal, so our autocorrelation function is instead a histogram of the all-pairs differences in the data points that we do have.  That is, start at the first time point and subtract it from all of the other time points in the series.  Then, move to the next data point and subtract it from all the subsequent times while keeping tracking of all of these differences.  This is our autocorrelation in real space.</div><div>
+</div><div><a href="http://2.bp.blogspot.com/-TcTlLQL4ccw/TefSgRN3KrI/AAAAAAAAB7Q/aLHgDXT-ZOU/s1600/time-time2-raw.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 192px;" src="http://2.bp.blogspot.com/-TcTlLQL4ccw/TefSgRN3KrI/AAAAAAAAB7Q/aLHgDXT-ZOU/s400/time-time2-raw.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613686912359803570" /></a></div>We can also zoom in and smooth the data a bit
+<div><a href="http://2.bp.blogspot.com/-VRWxWGORJt0/TefSrrD-DHI/AAAAAAAAB7Y/FncLYViZ3Jw/s1600/time-time2.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 192px;" src="http://2.bp.blogspot.com/-VRWxWGORJt0/TefSrrD-DHI/AAAAAAAAB7Y/FncLYViZ3Jw/s400/time-time2.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613687108276194418" /></a>Ah, now there we go.  We see a distinct over-abundance of time differences around 1 day, 2 days, etc.  What is the primary oscillation we see in the correlation?  To see that, let&#8217;s look at the frequency space autocorrelation and plot its power, or square.  </div><div>
+</div><div><a href="http://2.bp.blogspot.com/-CKFrfzY37Uc/TefTfvhS5pI/AAAAAAAAB7g/njevnB4JPac/s1600/time-time-power.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 192px;" src="http://2.bp.blogspot.com/-CKFrfzY37Uc/TefTfvhS5pI/AAAAAAAAB7g/njevnB4JPac/s400/time-time-power.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5613688002826135186" /></a>Finally, we get the primary component of the variation of Clicky&#8217;s visits throughout the 2 month period that he was in operation.  It occurs, to within error, at 1 day.  No very surprising at all.  I&#8217;m sure we could look more closely at the peak and its width, but I am satisfied to say that Clicky&#8217;s day is defined by the Earth day to within a few percent. </div><div>
+</div><div>
+</div><div>
+</div><div>*In response to more messages in Clicky, we agree that it is &#8220;So slow.&#8221;  Rest assured, management is looking into the problem.</div></p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/day-in-the-life-of-clicky.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-        
+                        </article>
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -140,6 +187,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -147,23 +199,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -171,89 +213,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -262,13 +244,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -277,13 +309,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -297,63 +339,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -362,38 +374,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

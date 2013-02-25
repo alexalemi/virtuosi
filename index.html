@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="./category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="./category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,7 +104,105 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="./posts/trigonometric-derivatives.html"
+                                        rel="bookmark"
+                                        title="Permalink to Trigonometric&nbsp;Derivatives">
+                                        Trigonometric&nbsp;Derivatives
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="./posts/trigonometric-derivatives.html"
+                                    data-text="Trigonometric&nbsp;Derivatives"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
+<!-- <span class="label">Date</span> -->
+<abbr class="published" title="2013-02-22T16:52:00">
+        <i class="icon-calendar"></i>Fri 22 February 2013
+</abbr>
+<!-- <span class="label">By</span> --> |
+<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
+<!-- <span class="label">Category</span> --> |
+<a href="./category/math.html"><i class="icon-folder-open"></i>math</a>.
+
+
+<!-- <span class="label">Tags</span> --> |
+	<a href="./tag/trig.html"><i class="icon-tag"></i>trig</a>
+	<a href="./tag/calculus.html"><i class="icon-tag"></i>calculus</a>
+	<a href="./tag/trigonometry.html"><i class="icon-tag"></i>trigonometry</a>
+</footer><!-- /.post-info -->                </div>
+                <p>I was recently reading <a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/">The Endevour</a> 
+where he responded to a post over at 
+<a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/">Math Mama Writes</a> 
+about teaching the derivatives of the trigonometric&nbsp;functions.</p>
+<p>I decided to weigh in on the&nbsp;issue.</p>
+<p>In my experience, 
+<a href="http://en.wikipedia.org/wiki/Calculus">Calculus</a> is always best taught
+in terms of infinitesimals, as in 
+<a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;printsec=frontcover&amp;dq=calculus+made+easy&amp;hl=en&amp;sa=X&amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;ved=0CD4Q6AEwAA">Thompson&#8217;s Book</a>, 
+(which I&#8217;ve <a href="./posts/four-fantastic-books-3-of-which-are-free-.html">already talked about</a> ) 
+and <a href="http://en.wikipedia.org/wiki/Trigonometry">Trigonometry</a> is best taught using 
+the <a href="http://tricochet.com/math/pdfs/completetriangle.pdf">complete triangle</a>.
+Marrying these two together, we can give a simple geometric proof of the basic trigonometric&nbsp;derivatives:</p>
+<p><mathjax>$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$</mathjax></p>
+<p>Summed up on one diagram:
+<center>
+    <a href="/static/images/trigdiff.pdf">
+    <img src="/static/images/trigdiff.png" width=600px alt="Trigonometic Derivatives">
+    </a>
+</center></p>
+<h3>Short&nbsp;version</h3>
+<p>By looking at how the line <mathjax>$\sin \alpha$</mathjax> and <mathjax>$\cos \alpha$</mathjax> change when we change <mathjax>$\alpha$</mathjax> a little bit (<mathjax>$d\alpha$</mathjax>) and noting that we form a similar triangle, we know exactly what those lengths&nbsp;are.</p>
+<h3>Long&nbsp;version</h3>
+<p>You&#8217;ll notice I&#8217;ve drawn a unit circle in the bottom right, chosen an angle <mathjax>$\alpha$</mathjax>, and shown both <mathjax>$\sin \alpha$</mathjax> and <mathjax>$\cos \alpha$</mathjax> on the&nbsp;plot.</p>
+<p>We are interested in how <mathjax>$\sin \alpha$</mathjax> changes when we make a very small change in <mathjax>$\alpha$</mathjax>, so I&#8217;ve done just that.  I&#8217;ve moved the blue line from and angle of <mathjax>$\alpha$</mathjax> to the dotted line at an angle of <mathjax>$\alpha + d\alpha$</mathjax>.  Don&#8217;t get caught up on the <mathjax>$d$</mathjax> symbol here, it just means &#8216;a little bit&nbsp;of&#8217;.</p>
+<p>Since we&#8217;ve only moved the angle a little bit, I&#8217;ve included a zoomed in picture in the upper right so that we can continue.  Here, we see the solid and dashed lines again where they meet our unit circle.  Notice that since we&#8217;ve zoomed in quite a bit the circle&#8217;s edge doesn&#8217;t look very circley anymore, it looks like a straight&nbsp;line.</p>
+<p>In fact that is the first thing we&#8217;ll note, namely that the arc of the circle we trace when we change the angle a little bit has the length <mathjax>$d\alpha$</mathjax>.  We know this is the case because we know that we&#8217;ve only gone an angle <mathjax>$d\alpha$</mathjax>, which is a small fraction <mathjax>$d\alpha/2\pi$</mathjax> of the total circumference of the circle.  The total circumference is itself <mathjax>$2\pi$</mathjax> so at the end of the day, the length of that little bit of arc is&nbsp;just:</p>
+<p><mathjax>$$ \frac{ d\alpha }{2\pi} 2\pi = d\alpha $$</mathjax></p>
+<p>which we may have remembered anyway from our trig classes. What is important here is that even though <mathjax>$d \alpha$</mathjax> is the length of the arc, when we are this zoomed in,
+we can treat the arc as a straight line.  In fact if we imagine taking our change <mathjax>$d\alpha$</mathjax> smaller and smaller,
+approximating the segment of arc as a line gets better and better. [Technically it should be noted that what is important is that the correction between the arc length and line length is higher order in <mathjax>$d\alpha$</mathjax>, so it can be ignored to linear&nbsp;order]</p>
+<p>You&#8217;ll notice that in the zoomed in picture, we can see the yellow and green segments,
+which correspond to the changes in the length of the dotted yellow and green segments
+from the zoomed out picture.  These are the segments I&#8217;ve marked <mathjax>$d(\sin \alpha)$</mathjax> and <mathjax>$-d(\cos \alpha)$</mathjax>, because the represent the change in the length of the <mathjax>$\sin \alpha$</mathjax> line
+and <mathjax>$\cos \alpha$</mathjax> line respectively.  The green segment is marked <mathjax>$-d(\cos \alpha)$</mathjax> because the <mathjax>$\cos \alpha$</mathjax> line actually shrinks when we increase <mathjax>$\alpha$</mathjax> a little&nbsp;bit.</p>
+<p>Now for the kicker.  Notice the right triangle formed by the green, yellow and red sements?  That is similar to the larger triangle in the zoomed out picture.  I&#8217;ve marked the similar angle in red.  If you stare at the picture for a bit, you can convince yourself of this fact.  If all else fails, just compute all of the angles involved in the intersection of the circle with the blue line, they can all be&nbsp;resolved.</p>
+<p>Knowing that the two triangles are similar, we know that the lengths of theirs sides are equal except for some scale factor, in&nbsp;particular:</p>
+<p><mathjax>$$ \frac{ d(\sin \alpha) }{\cos \alpha} = \frac{ d\alpha }{ 1} $$</mathjax>
+or 
+<mathjax>$$ d(\sin \alpha) = \cos \alpha \ d\alpha $$</mathjax>
+And we&#8217;ve done it! Shown the derivative of <mathjax>$\sin \alpha$</mathjax> with a little picture.<br />
+In particular, the change in the sine of the angle (<mathjax>$d(\sin \alpha)$</mathjax>) is equal to the cosine of that angle <mathjax>$\cos \alpha$</mathjax> times the amount we change it.  In the limit of very tiny angle changes, this tells us the derivative of <mathjax>$\sin \alpha$</mathjax>:
+<mathjax>$$ \frac{d}{d\alpha} \sin \alpha = \cos \alpha $$</mathjax></p>
+<p>Doing the same for the <mathjax>$d(\cos \alpha)$</mathjax> segment gives
+<mathjax>$$ d(\cos \alpha) = -\sin\alpha \ d\alpha $$</mathjax>
+and we even get the sign&nbsp;right.  </p>
+<p>From here, the other trigonometric derivates are easy to obtain, either by making similar pictures al la the <a href="http://tricochet.com/math/pdfs/completetriangle.pdf">complete triangle</a>,
+or by using the regular rules relating all of the trigonometric function to one&nbsp;another.</p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/trigonometric-derivatives.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+                        </article>
+                                <div class="article">
                 <h1><a href="./posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html">Re-evaluating the values of the tiles in&nbsp;Scrabble™</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -122,7 +225,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/the-skeleton-supporting-search-engine-ranking-systems.html">The Skeleton Supporting Search Engine Ranking&nbsp;Systems</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -147,7 +250,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/when-will-the-earth-fall-into-the-sun-.html">When will the Earth fall into the&nbsp;Sun?</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -168,7 +271,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/creating-an-earth.html">Creating an&nbsp;Earth</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -189,7 +292,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/a-curious-footprint.html">A Curious&nbsp;Footprint</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -213,7 +316,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/a-homemade-viscometer-i.html">A Homemade Viscometer&nbsp;I</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -234,7 +337,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/batman-helicopters-and-center-of-mass.html">Batman, Helicopters, and Center of&nbsp;Mass</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -256,7 +359,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/tales-from-the-transit-of-venus.html">Tales from the Transit of&nbsp;Venus</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -279,7 +382,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="./posts/how-cold-is-the-ground-ii.html">How Cold is the Ground&nbsp;<span class="caps">II</span></a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -300,369 +403,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
-                <h1><a href="./posts/how-cold-is-the-ground-.html">How Cold is the&nbsp;Ground?</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-05-18T00:20:00">
-        <i class="icon-calendar"></i>Fri 18 May 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/brian.html"><i class="icon-user"></i>Brian</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it had been warm for the previous few days, and the ground was still warm so the snow melted fast. Aside from letting me enjoy the absurd arguments against global warming that snow in April birthed, this got me thinking: How cold is the ground throughout the year? At night vs. during the day? And the corollary: How cold is my basement? If I dig a deeper basement, can I save on heating and cooling? (I’m very cheap.) Well, we want to know the temperature distribution T of the ground as a function of time t and position x. So some googlin’ or previous knowledge shows that we need to solve the heat equation. For our purposes, we can treat the Earth as flat (I don’t plan on digging a basement deep enough to see the ...
-                        <a class="btn primary xsmall" href="./posts/how-cold-is-the-ground-.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/end-of-the-earth-vii-the-big-freeze.html">End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-04-22T19:34:00">
-        <i class="icon-calendar"></i>Sun 22 April 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">http://tinyurl.com/7rdj996 It is traditional here at The Virtuosi to plot the destruction of the earth. We also are making secret plans for our volcano lair and death ray. However, since it is earth day, we will only share with you the plans for the total doom of the earth, not the cybernetically enhanced guard dogs we’re building for our moon base. The plan I reveal today is elegant in its simplicity. I intend to alter the orbit of the earth enough to cause the earth to freeze, thus ending life as we know it. According to the internet at large, the average surface temperature of the earth is ~15 C. This average surface temperature is directly related to the power output of the sun. More precisely, it is directly related to the radiated power from the sun that the earth absorbs. Assuming that the earth’s ...
-                        <a class="btn primary xsmall" href="./posts/end-of-the-earth-vii-the-big-freeze.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/earth-day-2012-escape-to-the-moon.html">Earth Day 2012: Escape to the&nbsp;Moon</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-04-22T15:12:00">
-        <i class="icon-calendar"></i>Sun 22 April 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/brian.html"><i class="icon-user"></i>Brian</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">It is now Earth Day 2012, and, according to the Mayan predictions, The Virtuosi will destroy the earth. In a futile attempt to fight my own mortality, I decided to send something to the Moon. It seems, for a poor graduate student trying to get to the Moon, the most difficult part is the Earth holding me back. So first I’ll focus on escaping the Earth’s gravitational potential well, and if that’s possible, then I’ll worry about more technical problems, such as actually hitting the moon. Moreover, in honor of the destructive spirit of The Virtuosi near Earth Day, I’ll try to do this in the most Wiley-Coyote-esque way possible. Preliminaries If we want to get to the Moon, we need to first figure out how much energy we’ll need to escape the Earth’s gravitational pull. “That’s easy!” you say. “We need ...
-                        <a class="btn primary xsmall" href="./posts/earth-day-2012-escape-to-the-moon.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/money-for-almost-nothing.html">Money for (almost)&nbsp;Nothing</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-29T01:27:00">
-        <i class="icon-calendar"></i>Thu 29 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/megabucks.html"><i class="icon-tag"></i>MEGABUCKS</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/lottery.html"><i class="icon-tag"></i>lottery</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Five Hundred Mega Dollars, to be precise. (Image from Wikipedia) I am not typically interested in lotteries. They seem silly and I am seriously beginning to question their usefulness in bringing about a good harvest. But this morning I read in the news that the Mega Millions lottery currently has a world record jackpot up for grabs. In fact, the jackpot is so big… Tonight Show Audience: HOW BIG IS IT? It is so big that I decided to do a little bit of analysis on the expected returns. Zing! Some Background First, a little background. The Mega Millions lottery is an aptly named lottery in which numbered ping pong balls are pulled from a giant rotating tub of randomization. Five of these are drawn from one tub of 56 balls, with no replacement. The sixth ball (the so-called “Mega Ball”) is drawn from a separate tub of 46 balls ...
-                        <a class="btn primary xsmall" href="./posts/money-for-almost-nothing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/pi-storage.html">Pi&nbsp;storage</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T15:13:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
-	<a href="./tag/probability.html"><i class="icon-tag"></i>probability</a>
-	<a href="./tag/storage.html"><i class="icon-tag"></i>storage</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Let me share my worst “best idea ever” moment. Sometime during my undergraduate I thought I had solved all the world’s problems. You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff. I hate getting rid of my stuff. But what can someone do? And then it hit me, I had the bright idea: What if we didn’t have to store things, what if we could just compute files whenever we wanted them back?Sounds like an awesome idea, right? I know. But how could we compute our files? Well, as you may know pi is conjectured to be a normal number, meaning its digits are probably random. We also know that it is irrational, meaning pi never ends…. Since its digits are random ...
-                        <a class="btn primary xsmall" href="./posts/pi-storage.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/calculator-pi.html">Calculator&nbsp;Pi</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T14:16:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">There is a very fast converging algorithm for computing pi that you can do on a desktop calculator. Set x = 3Now set x = x + sin(x)RepeatThis converges ridiculously fast, after 1 step you get 4 digits right, after 2 steps you get 11 correct, in general we find: # steps Digits right 1 4 2 11 3 33 4 100 5 301 6 903 7 2708 8 8124 of course on a pocket calculator, you only need to do 2 steps to have an accuracy greater than the calculator can display. To make this chart I had to trick a computer into doing high precision arithmetic, the code is here. Granted, this approximation is really cheating, since sin is a hard function to compute, and basically being able to compute sin means you know what pi is already. Really, this is just Newton’s method for computing the ...
-                        <a class="btn primary xsmall" href="./posts/calculator-pi.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/a-clarification.html">A&nbsp;Clarification</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T12:20:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/eurocentrism.html"><i class="icon-tag"></i>Eurocentrism</a>
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/day-month-year.html"><i class="icon-tag"></i>day-month-year</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">As there seems to be some confusion among my fellow Virtuosi, I wanted to point out that Pi day occurs on July 22nd or, in the year 4159, on January 3rd. Today is in fact Seventh Power Day.
-                        <a class="btn primary xsmall" href="./posts/a-clarification.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/pi-rithmetic.html">Pi-rithmetic</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T11:52:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/approximation.html"><i class="icon-tag"></i>approximation</a>
-	<a href="./tag/pi-rithmetic.html"><i class="icon-tag"></i>pi-rithmetic</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Fun fact: pi squared is very close to 10. How close? Well, Wolfram Alpha tells me that it is only about 1% off. I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are awesome. It turns out I use this fact all of the time. How’s that you ask? Well, I use this fast to enable me to do very quick mental arithmetic. It goes like this. For every number you come across in a calculation, drop all of the information save two parts, first, what’s its order of magnitude, that is, how many digits does it have, and second, is it closest to 1, pi, or 10? The first part amounts to thinking of every number you come across as it looks in scientific notation, so a number like 2342 turns into ...
-                        <a class="btn primary xsmall" href="./posts/pi-rithmetic.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/moving-pi-ctures.html">Moving&nbsp;Pi-ctures</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T08:35:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/pineapple.html"><i class="icon-tag"></i>pineapple</a>
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">My TV celebrates without me. Today, as I’m sure you’re aware, is Pi Day - a day for the festive consumption of pies and quiet self-reflection. In the spirit of the holiday, I’d like to present a point for discussion: Everyone has a great talent for at least one thing. That this is true for at least some people is seen through even a cursory glance at a history book: George Washington was really good at leading revolutions, Michelangelo was an outstanding ceiling painter [1], and Batman was the best at solving complex riddles (especially in English, pero especialmente en español). But I’m certain that this holds for everyone. What’s your talent? Mine, as those of you who read this blog should know very well by now, is certainly not doing physics. Nope, my talent is watching TV. Seriously guys, I watch TV like a boss ...
-                        <a class="btn primary xsmall" href="./posts/moving-pi-ctures.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/a-very-small-slice-of-pi.html">A Very Small Slice of&nbsp;Pi</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T08:22:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/42.html"><i class="icon-tag"></i>42</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Rhubarb pie (Source: Wikipedia) Some people know a suspiciously large number of the digits of pi. Perhaps you have met one of these people. They can typically be found hiding behind bushes and under the counters at pastry shops, just… waiting. At the slightest hint of a mention of pi, they will jump out and start reciting the digits like there’s a prize at the end. After rattling off numbers for a few minutes they abruptly come to an end, grin like an idiot, and walk away. It is an unpleasant encounter. The sheer uselessness of this kind of thing has always bothered me, so I’d like to set a preliminary upper bound on the number of digits of pi that could ever possibly potentially kind of be useful (maybe). For those following along at home, now would be a good time to put on your numerology hats ...
-                        <a class="btn primary xsmall" href="./posts/a-very-small-slice-of-pi.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/primes-in-pi.html">Primes in&nbsp;Pi</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T03:14:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="./tag/primes.html"><i class="icon-tag"></i>primes</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Recently, I’ve been concerned with the fact that I don’t know many large primes. Why? I don’t know. This has led to a search for easy to remember prime numbers. I’ve found a few goods ones, namely 867-5309 - Jenny’s number the digit 1 - 1031 times, in the style of the picture to above, and the largest known repunit prime1987 (my birth year), 2011 (last year), 1999 (the party year)But then I remembered that I already know 50 digits of pi, memorized one boring day in grade school, so this got me wondering whether there were any primes among the digits of pi Lo an behold, I wrote a little script, and found a few: Found one, with 1 digits, is: 3 Found one, with 2 digits, is: 31 Found one, with 6 digits, is: 314159 Found a rounded one with 12 digits, is ...
-                        <a class="btn primary xsmall" href="./posts/primes-in-pi.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/f-91-revisited.html">F-91&nbsp;Revisited</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-12T00:57:00">
-        <i class="icon-calendar"></i>Mon 12 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/daylight-savings-time.html"><i class="icon-tag"></i>daylight savings time</a>
-	<a href="./tag/casio.html"><i class="icon-tag"></i>casio</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Farmer Uncle Sam…with a rifle. (Image Credit: Wikipedia) Today was a sunny exception to the grey overcast rule of weather in Ithaca. I should be overjoyed by this anomaly, spending the day outside flying a kite or playing frisbee with a border collie in a bandanna. Unfortunately, today was also the beginning of Daylight Savings Time (DST) - my least favorite day of the year. For my colleagues unfamiliar with this temporal travesty (I’m looking at you Arizona), let me briefly explain DST. Once a year, the time lords steal a single hour from us and place it in an escrow account for future disbursement, presumably in some elaborate scheme to gain the favor of hat-throwing farmer-clock hybrids (see image left). The details are a bit murky, but the net result is that today I had one less hour to do my very favorite thing in the whole wide ...
-                        <a class="btn primary xsmall" href="./posts/f-91-revisited.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html">Proofiness: A look into how mathematics relates to American political&nbsp;life</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-06T14:37:00">
-        <i class="icon-calendar"></i>Tue 06 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/dtc.html"><i class="icon-user"></i>DTC</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/census.html"><i class="icon-tag"></i>Census</a>
-	<a href="./tag/culture.html"><i class="icon-tag"></i>culture</a>
-	<a href="./tag/elections.html"><i class="icon-tag"></i>elections</a>
-	<a href="./tag/proofiness.html"><i class="icon-tag"></i>Proofiness</a>
-	<a href="./tag/math.html"><i class="icon-tag"></i>math</a>
-	<a href="./tag/politics.html"><i class="icon-tag"></i>politics</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Dearest readers, This is my first post on The Virtuosi, so I thought I’d take a moment to introduce myself. I’m a first year physics graduate student at Cornell, recently joined after 2 years working as an engineer first at a private firm and then at a national lab. I myself have had lots of fun following the exploits of my estimable colleagues here on The Virtuosi, and I thought I could bring a new angle to the content here. I would like to use this space to discuss how science interacts with everyday life in a cultural sense. How does science appear in popular culture? How do political or social issues relate back to science? Those sorts of questions. (I understand that there are plenty of other resources elsewhere that offer far more intelligent insight into these matters than I can, but in the very least this ...
-                        <a class="btn primary xsmall" href="./posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/time-keeps-on-slippin-.html">Time Keeps On&nbsp;Slippin&#8217;</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-02-12T22:00:00">
-        <i class="icon-calendar"></i>Sun 12 February 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/allan-variance.html"><i class="icon-tag"></i>allan variance</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/casio.html"><i class="icon-tag"></i>casio</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">This is picture of a watch. (Source: Wikipedia) A couple of months ago, the Virtuosi Action Team (VAT) assembled for lunch and the discussion quickly and unexpectedly turned to watches. As Nic and Alemi argued over the finer parts of fancy-dancy watch ownership, I looked down at my watch: the lowly Casio F-91W. Though it certainly isn’t fancy, it is inexpensive, durable, and could potentially win me an all-expense paid trip to the Caribbean. But how good of a watch is it? To find out, I decided to time it against the official U.S. time for a couple of months. Incidentally, about half-way in I found out that Chad over at Uncertain Principles had done essentially the same thing already. No matter, science is still fun even if you aren’t the first person to do it. So here’s my “new-to-me” analysis. Alright, so how do we ...
-                        <a class="btn primary xsmall" href="./posts/time-keeps-on-slippin-.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/the-stars-fell-on-abe-and-frederick.html">The Stars Fell on Abe and&nbsp;Frederick</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-01-02T20:02:00">
-        <i class="icon-calendar"></i>Mon 02 January 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The 1833 Leonids (Source: Wikipedia) Word on the street is there’s a meteor shower set for late Tuesday night, peaking at 2 am EST on January 4th [1]. The meteors in question are the Quadrantids, which often go unnoticed for two good reasons. Reason the first: apparently [2], they are usually pretty awful. Unlike the “good” meteor showers, the Quadrantids are bright and pretty for only a few hours (instead of a few days). This means that a lot of the time, we just miss them. Reason the second: they have a lame name [3]. But this year, they should be pretty good if the weather is right. Now, there’s lots of neat physics to talk about with meteors, but that’s not why I bring it up. This has all just been flimsy pretext so I could share a historical anecdote about a meteor shower. Trickery, indeed ...
-                        <a class="btn primary xsmall" href="./posts/the-stars-fell-on-abe-and-frederick.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="./posts/how-long-will-a-bootprint-last-on-the-moon-.html">How Long Will a Bootprint Last on the&nbsp;Moon?</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-01-01T20:46:00">
-        <i class="icon-calendar"></i>Sun 01 January 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/footprint.html"><i class="icon-tag"></i>footprint</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/moon.html"><i class="icon-tag"></i>moon</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Buzz Aldrin’s bootprint (source: Wikipedia) A couple of months ago, I stumbled across a bunch of pictures of Apollo landing sites taken by one of the cameras onboard the Lunar Reconnaissance Orbiter. The images have a resolution high enough that you can resolve features on the surface down to about a meter. Looking at the Apollo 17 landing site, you can see the trails of both astronauts and a moon buggy. It’s pretty cool. It also got me thinking about how long the landing sites would be preserved. More specifically, I want to know how long Buzz Aldrin’s right bootprint (shown, incidentally, to the left) will last on the Moon. Since the Moon has no atmosphere, the wind and rain that would weather away a similar bootprint here on Earth are not present and it seems as though the print would last a really long time. But ...
-                        <a class="btn primary xsmall" href="./posts/how-long-will-a-bootprint-last-on-the-moon-.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        
+                
                 <div class="pagination">
         <ul>
                                         <li class="prev disabled"><a href="#">&larr; Previous</a></li>
@@ -673,6 +414,15 @@
                                         <li class=""><a href="./index5.html">5</a></li>
                                         <li class=""><a href="./index6.html">6</a></li>
                                         <li class=""><a href="./index7.html">7</a></li>
+                                        <li class=""><a href="./index8.html">8</a></li>
+                                        <li class=""><a href="./index9.html">9</a></li>
+                                        <li class=""><a href="./index10.html">10</a></li>
+                                        <li class=""><a href="./index11.html">11</a></li>
+                                        <li class=""><a href="./index12.html">12</a></li>
+                                        <li class=""><a href="./index13.html">13</a></li>
+                                        <li class=""><a href="./index14.html">14</a></li>
+                                        <li class=""><a href="./index15.html">15</a></li>
+                                        <li class=""><a href="./index16.html">16</a></li>
                                                         <li class="next"><a href="./index2.html">Next &rarr;</a></li>
                         </ul>
         </div>
@@ -694,6 +444,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="./category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="./category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -701,23 +456,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="./tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="./tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="./tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -725,89 +470,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="./tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="./tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="./tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="./tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="./tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="./tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="./tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="./tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -816,13 +501,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="./tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="./tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="./tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="./tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -831,13 +566,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="./tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="./tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="./tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -851,63 +596,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="./tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="./tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="./tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="./tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="./tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="./tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="./tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="./tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -916,38 +631,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="./tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="./tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="./tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="./tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="./tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="./tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="./tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="./tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

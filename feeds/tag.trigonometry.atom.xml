@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.trigonometry.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2013-02-22T16:52:00-05:00</updated><entry><title>Trigonometric Derivatives</title><link href="http://thephysicsvirtuosi.com/posts/trigonometric-derivatives.html" rel="alternate"></link><updated>2013-02-22T16:52:00-05:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2013-02-22:posts/trigonometric-derivatives.html</id><summary type="html">&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endevour&lt;/a&gt; 
+where he responded to a post over at 
+&lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;Math Mama Writes&lt;/a&gt; 
+about teaching the derivatives of the trigonometric&amp;nbsp;functions.&lt;/p&gt;
+&lt;p&gt;I decided to weigh in on the&amp;nbsp;issue.&lt;/p&gt;
+&lt;p&gt;In my experience, 
+&lt;a href="http://en.wikipedia.org/wiki/Calculus"&gt;Calculus&lt;/a&gt; is always best taught
+in terms of infinitesimals, as in 
+&lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=calculus+made+easy&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;amp;ved=0CD4Q6AEwAA"&gt;Thompson&amp;#8217;s Book&lt;/a&gt;, 
+(which I&amp;#8217;ve &lt;a href="http://thephysicsvirtuosi.com/posts/four-fantastic-books-3-of-which-are-free-.html"&gt;already talked about&lt;/a&gt; ) 
+and &lt;a href="http://en.wikipedia.org/wiki/Trigonometry"&gt;Trigonometry&lt;/a&gt; is best taught using 
+the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;.
+Marrying these two together, we can give a simple geometric proof of the basic trigonometric&amp;nbsp;derivatives:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Summed up on one diagram:
+&lt;center&gt;
+    &lt;a href="/static/images/trigdiff.pdf"&gt;
+    &lt;img src="/static/images/trigdiff.png" width=600px alt="Trigonometic Derivatives"&gt;
+    &lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Short&amp;nbsp;version&lt;/h3&gt;
+&lt;p&gt;By looking at how the line &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; change when we change &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; a little bit (&lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;) and noting that we form a similar triangle, we know exactly what those lengths&amp;nbsp;are.&lt;/p&gt;
+&lt;h3&gt;Long&amp;nbsp;version&lt;/h3&gt;
+&lt;p&gt;You&amp;#8217;ll notice I&amp;#8217;ve drawn a unit circle in the bottom right, chosen an angle &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt;, and shown both &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; on the&amp;nbsp;plot.&lt;/p&gt;
+&lt;p&gt;We are interested in how &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; changes when we make a very small change in &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt;, so I&amp;#8217;ve done just that.  I&amp;#8217;ve moved the blue line from and angle of &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; to the dotted line at an angle of &lt;mathjax&gt;$\alpha + d\alpha$&lt;/mathjax&gt;.  Don&amp;#8217;t get caught up on the &lt;mathjax&gt;$d$&lt;/mathjax&gt; symbol here, it just means &amp;#8216;a little bit&amp;nbsp;of&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;Since we&amp;#8217;ve only moved the angle a little bit, I&amp;#8217;ve included a zoomed in picture in the upper right so that we can continue.  Here, we see the solid and dashed lines again where they meet our unit circle.  Notice that since we&amp;#8217;ve zoomed in quite a bit the circle&amp;#8217;s edge doesn&amp;#8217;t look very circley anymore, it looks like a straight&amp;nbsp;line.&lt;/p&gt;
+&lt;p&gt;In fact that is the first thing we&amp;#8217;ll note, namely that the arc of the circle we trace when we change the angle a little bit has the length &lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;.  We know this is the case because we know that we&amp;#8217;ve only gone an angle &lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;, which is a small fraction &lt;mathjax&gt;$d\alpha/2\pi$&lt;/mathjax&gt; of the total circumference of the circle.  The total circumference is itself &lt;mathjax&gt;$2\pi$&lt;/mathjax&gt; so at the end of the day, the length of that little bit of arc is&amp;nbsp;just:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{ d\alpha }{2\pi} 2\pi = d\alpha $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;which we may have remembered anyway from our trig classes. What is important here is that even though &lt;mathjax&gt;$d \alpha$&lt;/mathjax&gt; is the length of the arc, when we are this zoomed in,
+we can treat the arc as a straight line.  In fact if we imagine taking our change &lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt; smaller and smaller,
+approximating the segment of arc as a line gets better and better. [Technically it should be noted that what is important is that the correction between the arc length and line length is higher order in &lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;, so it can be ignored to linear&amp;nbsp;order]&lt;/p&gt;
+&lt;p&gt;You&amp;#8217;ll notice that in the zoomed in picture, we can see the yellow and green segments,
+which correspond to the changes in the length of the dotted yellow and green segments
+from the zoomed out picture.  These are the segments I&amp;#8217;ve marked &lt;mathjax&gt;$d(\sin \alpha)$&lt;/mathjax&gt; and &lt;mathjax&gt;$-d(\cos \alpha)$&lt;/mathjax&gt;, because the represent the change in the length of the &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; line
+and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; line respectively.  The green segment is marked &lt;mathjax&gt;$-d(\cos \alpha)$&lt;/mathjax&gt; because the &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; line actually shrinks when we increase &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; a little&amp;nbsp;bit.&lt;/p&gt;
+&lt;p&gt;Now for the kicker.  Notice the right triangle formed by the green, yellow and red sements?  That is similar to the larger triangle in the zoomed out picture.  I&amp;#8217;ve marked the similar angle in red.  If you stare at the picture for a bit, you can convince yourself of this fact.  If all else fails, just compute all of the angles involved in the intersection of the circle with the blue line, they can all be&amp;nbsp;resolved.&lt;/p&gt;
+&lt;p&gt;Knowing that the two triangles are similar, we know that the lengths of theirs sides are equal except for some scale factor, in&amp;nbsp;particular:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{ d(\sin \alpha) }{\cos \alpha} = \frac{ d\alpha }{ 1} $$&lt;/mathjax&gt;
+or 
+&lt;mathjax&gt;$$ d(\sin \alpha) = \cos \alpha \ d\alpha $$&lt;/mathjax&gt;
+And we&amp;#8217;ve done it! Shown the derivative of &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; with a little picture.&lt;br /&gt;
+In particular, the change in the sine of the angle (&lt;mathjax&gt;$d(\sin \alpha)$&lt;/mathjax&gt;) is equal to the cosine of that angle &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; times the amount we change it.  In the limit of very tiny angle changes, this tells us the derivative of &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt;:
+&lt;mathjax&gt;$$ \frac{d}{d\alpha} \sin \alpha = \cos \alpha $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Doing the same for the &lt;mathjax&gt;$d(\cos \alpha)$&lt;/mathjax&gt; segment gives
+&lt;mathjax&gt;$$ d(\cos \alpha) = -\sin\alpha \ d\alpha $$&lt;/mathjax&gt;
+and we even get the sign&amp;nbsp;right.  &lt;/p&gt;
+&lt;p&gt;From here, the other trigonometric derivates are easy to obtain, either by making similar pictures al la the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;,
+or by using the regular rules relating all of the trigonometric function to one&amp;nbsp;another.&lt;/p&gt;</summary><category term="trig"></category><category term="calculus"></category><category term="trigonometry"></category></entry></feed>

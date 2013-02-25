@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/teminal-velocity.html">Teminal&nbsp;Velocity</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/teminal-velocity.html"
+                                        rel="bookmark"
+                                        title="Permalink to Teminal&nbsp;Velocity">
+                                        Teminal&nbsp;Velocity
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/teminal-velocity.html"
+                                    data-text="Teminal&nbsp;Velocity"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2010-08-11T14:04:00">
         <i class="icon-calendar"></i>Wed 11 August 2010
@@ -118,13 +139,46 @@
 	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
 	<a href="../tag/wiki.html"><i class="icon-tag"></i>wiki</a>
 	<a href="../tag/equations.html"><i class="icon-tag"></i>equations</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The impetus for this post lies with three facts. First, I like to bike to work. Second, Cornell sits on a hill. And finally, I’m not very brave. As a result of all of these, along with Ithaca’s less-than-optimal road maintenance, my semi-daily rides home tend to produce a lot of wear on my brakes as I cruise downhill at what appears to me to be very high speeds. I began to ponder just how high this speed really is, and if I could reduce my use of the brakes or if I’m going to end up using them anyway at the bottom of the hill. Figure 1: An inclined plane So, I asked myself, what do I remember about bikes going down the hill? Well, I remember the good old inclined plane (figure 1), and I remember that air resistance is proportional to velocity, so that ...
-                        <a class="btn primary xsmall" href="../posts/teminal-velocity.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <p>The impetus for this post lies with three facts. First, I like to bike to work. Second, Cornell sits on a <a href="http://www.cornell.edu/search/index.cfm?tab=facts&amp;q=&amp;id=272">hill</a>. And finally, I&#8217;m not very&nbsp;brave.</p>
+<p>As a result of all of these, along with Ithaca&#8217;s less-than-optimal road maintenance, my semi-daily rides home tend to produce a lot of wear on my brakes as I cruise downhill at what appears to me to be very high speeds. I began to ponder just how high this speed really is, and if I could reduce my use of the brakes or if I&#8217;m going to end up using them anyway at the bottom of the&nbsp;hill.</p>
+<p><a name='more'></a></p>
+<p><img alt="" border="0" id="BLOGGER_PHOTO_ID_5504225823691657218" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGLwOVisUAI/AAAAAAAACD4/V9TvWzmEv9k/s200/200px-Free_body.svg.png" style="cursor: pointer; display: block; height: 136px; margin: 0px auto 10px; text-align: center; width: 200px;" /></p>
+<p><center><span style="font-size: 85%;">Figure 1: An inclined plane</span></center></p>
+<p>So, I asked myself, what do I remember about bikes going down the hill? Well, I remember the good old inclined plane (figure 1), and I remember that air resistance is proportional to velocity, so that the equation of motion is given by
+<mathjax>$$ ma = mg\sin\theta - \alpha v. $$</mathjax></p>
+<p>I had no idea what <span style="font-style: italic;">α</span> was, though. My first stop in considering it was naturally Wikipedia. A quick <a href="http://en.wikipedia.org/wiki/Terminal_velocity">search</a> came up with the formula
+<mathjax>$$m a = mg\sin\theta -  \frac{1}{2}\rho A C_d  v^2$$</mathjax>
+where <span style="font-style: italic;">ρ</span> is the density of air, <span style="font-style: italic;">A</span> the projected area of the body and <span style="font-style: italic;">C<sub>d</sub></span><span style="font-size: 100%;"><span style="font-style: italic;"></span></span> the drag&nbsp;coefficient</p>
+<p>The first thing to notice here is that I was wrong - drag in a fluid acts like the velocity squared, and not the velocity. Second, we can easily determine terminal velocity out of this formula - it&#8217;s the speed at which the sum of the forces equals to zero, or
+<mathjax>$$v_t = \sqrt{\frac{2mg\sin\theta}{\rho A C_d}}.$$</mathjax></p>
+<p>We can throw in some numbers into that. <span style="font-style: italic;">ρ</span> = 1.2 kg/m<sup>3</sup> for air; Wikipedia estimates <span style="font-style: italic;">C<sub>d</sub></span> =  0.9 for a <a href="http://en.wikipedia.org/wiki/Drag_coefficient">cyclist</a>. For the mass, we need to add up mine (~75 kg), the bike&#8217;s (15-20 kg) and my bag&#8217;s (let&#8217;s say 5 kg). We come to about 100 kg, give or take 5%. <span style="font-style: italic;">A</span> is a little harder to estimate, but height times width gives me an initial guess of 0.62 m<sup>2</sup>, which I&#8217;ll revise to 0.7 m<sup>2</sup> to account for the bike, flailing arms and fashionable helmet, up to about 10%&nbsp;accuracy.</p>
+<p>We&#8217;re left with sinθ, which varies by road, but in general we expect the terminal velocity to look like
+<mathjax>$$v_t \approx \left(50 \pm 3  \rm{m/s}\right) \sqrt{\sin\theta}.$$</mathjax></p>
+<p>This appears not-unreasonable. For an 8% grade like we have down University avenue  this yields about 50  km/h and for a 13% grade like we have down Buffalo street this will bring us up to a respectable 65 <a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;postID=6743488546064317383#miles" title="That's - sigh - about 30 mph and 40 mph, respectively, in crazy units">km/h</a>. Both, incidentally, are faster than I&#8217;m willing to go down a badly maintained, not entire straight&nbsp;road.</p>
+<p>So we have some numbers, and I begin to feel justified about pressing those breaks often, but all of this is really an introduction for the next post, in which I go against all my theorist instincts and take some data in the field. Stay tuned.
+<span style="font-size: 78%;">
+</span>
+<span style="font-size: 78%;"></span>
+<span style="font-size: 78%;"><ol><li><a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;postID=6743488546064317383" name="miles"></a>That&#8217;s - sigh - about 30 mph and 40 mph, respectively, in crazy&nbsp;units</li></ol></span><span style="font-size: 78%;">
+</span></p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/teminal-velocity.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-                <div class="article">
+                        </article>
+                                <div class="article">
                 <h1><a href="../posts/how-long-can-you-balance-a-quantum-pencil.html">How Long Can You Balance A (Quantum)&nbsp;Pencil</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -149,7 +203,7 @@
                 </div>
         </div>
         <hr />
-        
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -167,6 +221,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -174,23 +233,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -198,89 +247,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -289,13 +278,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -304,13 +343,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -324,63 +373,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -389,38 +408,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

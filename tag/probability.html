@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/pi-storage.html">Pi&nbsp;storage</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/pi-storage.html"
+                                        rel="bookmark"
+                                        title="Permalink to Pi&nbsp;storage">
+                                        Pi&nbsp;storage
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/pi-storage.html"
+                                    data-text="Pi&nbsp;storage"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2012-03-14T15:13:00">
         <i class="icon-calendar"></i>Wed 14 March 2012
@@ -117,13 +138,62 @@
 	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
 	<a href="../tag/probability.html"><i class="icon-tag"></i>probability</a>
 	<a href="../tag/storage.html"><i class="icon-tag"></i>storage</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Let me share my worst “best idea ever” moment. Sometime during my undergraduate I thought I had solved all the world’s problems. You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff. I hate getting rid of my stuff. But what can someone do? And then it hit me, I had the bright idea: What if we didn’t have to store things, what if we could just compute files whenever we wanted them back?Sounds like an awesome idea, right? I know. But how could we compute our files? Well, as you may know pi is conjectured to be a normal number, meaning its digits are probably random. We also know that it is irrational, meaning pi never ends…. Since its digits are random ...
-                        <a class="btn primary xsmall" href="../posts/pi-storage.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="155" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg" width="320" /></a></div>
+
+<p>Let me share my worst &#8220;best idea ever&#8221; moment.  Sometime during my undergraduate I thought I had solved all the world&#8217;s&nbsp;problems.</p>
+<p>You see, on this fateful day, my hard drive was full. I hate it when my hard drive fills up, it means I have to go and get rid of some of my stuff.  I hate getting rid of my stuff.  But what can someone&nbsp;do?</p>
+<p>And then it hit me, I had the bright idea:
+<blockquote class="tr_bq">What if we didn&#8217;t have to <i>store</i> things, what if we could just <i>compute</i> files whenever we wanted them back?</blockquote>Sounds like an awesome idea, right?  I know.  But how could we compute our files?  Well, as you may know pi is conjectured to be a <a href="http://en.wikipedia.org/wiki/Normal_number">normal number</a>, meaning its digits are probably random.  We also know that it is irrational, meaning pi never&nbsp;ends&#8230;.</p>
+<p><a name='more'></a>
+Since its digits are random, and they never end, in principle any sequence you could ever imagine should show up in pi eventually.  In fact there is a nifty website <a href="http://pi.nersc.gov/">here</a> that will let you search for arbitrary strings (using a 5-bit format) in first 4 billion digits, for example &#8220;alemi&#8221; <a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;format=char">seems to show up</a> at around digit&nbsp;3149096356.</p>
+<p>So in principle, I could send you just an index, and a length, and you could compute the resulting&nbsp;file.</p>
+<p>But wait you cry, isn&#8217;t computing digits of pi hard, don&#8217;t people work really hard to compute pi farther and farther?  Hold on I claim, first of all, I&#8217;m imagining a future where computation is cheap.  Secondly, there is a really neat algorithm, the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula"><span class="caps">BBP</span> algorithm</a>, that enables you to compute the kth binary digit of pi without knowing any of the preceding digits.  In other words, in principle if you wanted to know the 4 billionth digit of pi, you can compute it without having to first compute the first 4 billion other&nbsp;digits.</p>
+<p>Cool, this is beginning to sound like a really good idea.  What&#8217;s the&nbsp;catch?</p>
+<p>Perhaps you&#8217;ve already gotten a taste of it.  Let&#8217;s try to estimate just how far along in pi we would have to look before our message of interest shows&nbsp;up. </p>
+<p>Let&#8217;s assume we have written our file in binary, and are computing pi in binary&nbsp;e.g.</p>
+<blockquote>11.
+00100100 00111111 01101010 10001000 10000101 10100011 00001000 11010011</blockquote>
+
+<p>etc.  So, if the sequence is random, there is a 1/2 chance that at any point we get the right starting bit of our file, and then a 1/2 chance we get the next one, etc.  So the chance that we would create our file if we were randomly flipping coins would be
+<mathjax>$$ P = \left( \frac{1}{2} \right)^N = 2^{-N} $$</mathjax>
+if our file was N bits&nbsp;long.</p>
+<p>So where do we expect this sequence to first show up in the digits of pi?  Well, this turns out to be a <a href="http://mathworld.wolfram.com/CoinTossing.html">subtle problem</a>, but we can get a feel for it by assuming that we compute N digits of pi at a time and see if its right or not.  If its not, we move on to the next group of N digits, if its right, we&#8217;re done.  If this were the case, we should expect to have to draw about
+<mathjax>$$ \frac{1}{P} = 2^N $$</mathjax>
+times until we have a success, and since each trial ate up N digits, we should expect to see our file show up after about
+<mathjax>$$ N 2^N $$</mathjax>
+digits of&nbsp;pi.</p>
+<p>Great, so instead of handing you the file, I could just hand you the index the file is located.  But how many bits would I need to tell you that index.  Well, just like we know that 10^3 takes 4 digits to express in decimal, and 6 x 10^7 takes 8 digits to express, in general it takes
+<mathjax>$$ d = \log_b x + 1 $$</mathjax>
+digits to express a number in base b, in this case it takes
+<mathjax>$$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N + \log_2 N + 1 $$</mathjax>
+digits to express this index in&nbsp;binary.</p>
+<p>And there&#8217;s the rub.  Instead of sending you N bits of information contained in the file, all my genius compression algorithm has manged to do is replace N bits of information in the file, with a number that takes ( ~ N + \log_2 N ) bits to express.  I&#8217;ve actually managed to make the files larger not&nbsp;smaller!</p>
+<p>You may have noticed above, that even for the simple case of &#8220;alemi&#8221;, all I managed to do was swap the binary&nbsp;message</p>
+<blockquote class="tr_bq">alemi -&gt; 0000101100001010110101001
+with the index 3149096356 -&gt; 10111011101100110110010110100100</blockquote>
+
+<p>which is longer in&nbsp;binary!</p>
+<p>As an aside, you may have felt uncomfortable with my estimation for how long we have to wait to see our message, and you would be right.  Just because all N digits I draw at a time don&#8217;t match up doesn&#8217;t mean that the second half isn&#8217;t useful.  For instance if I was looking for 010, lets say some of the digits are 101,010.  While both of those sequences didn&#8217;t match, if I was looking at every digit at a time, I would have found a match.  And you&#8217;d be right.  <a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf">Smarter people than I</a> have computed just how long you should have to wait, and end up with the better estimation
+<mathjax>$$ \text{wait time} \sim 2^N N \log 2 $$</mathjax>
+which is pretty darn close to our silly&nbsp;estimate. </p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/pi-storage.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-                <div class="article">
+                        </article>
+                                <div class="article">
                 <h1><a href="../posts/i-was-born-on-wednesday.html">I was born on&nbsp;Wednesday</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -149,7 +219,7 @@
                 </div>
         </div>
         <hr />
-        
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -167,6 +237,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -174,23 +249,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -198,89 +263,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -289,13 +294,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -304,13 +359,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -324,63 +389,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -389,38 +424,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

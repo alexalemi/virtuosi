@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/ask-a-physicist-volume-i.html">Ask a Physicist: Volume&nbsp;I</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/ask-a-physicist-volume-i.html"
+                                        rel="bookmark"
+                                        title="Permalink to Ask a Physicist: Volume&nbsp;I">
+                                        Ask a Physicist: Volume&nbsp;I
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/ask-a-physicist-volume-i.html"
+                                    data-text="Ask a Physicist: Volume&nbsp;I"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2010-05-17T11:56:00">
         <i class="icon-calendar"></i>Mon 17 May 2010
@@ -116,13 +137,37 @@
 	<a href="../tag/ask-a-physicist.html"><i class="icon-tag"></i>ask a physicist</a>
 	<a href="../tag/potato.html"><i class="icon-tag"></i>potato</a>
 	<a href="../tag/conduction.html"><i class="icon-tag"></i>conduction</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">We have received our first Ask a Physicist e-query! An entity known only to us as “Hungry” writes: “We had a dispute at a dinner party about whether blowing on hot food actually makes it cool down faster, or only gives you something to do while you wait for your food to cool.” While it is questionable whether or not I am indeed a physicist (but people do pay me to do physics) and whether I will answer definitively (there’ll be some hand-waving), I’ll give it my darndest. Let’s imagine a hot baked potato you just sliced open. The mass of potato is capable of transferring energy as heat to the surrounding air (and therefore cooling down) via a number of mechanisms. The most common we hear about are conduction, radiation, and convection. Conduction is the process by which two objects in intimate contact exchange heat. Radiation ...
-                        <a class="btn primary xsmall" href="../posts/ask-a-physicist-volume-i.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <p><a href="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}">
+</a>We have received our first <i>Ask a Physicist</i> e-query!  An entity known only to us as &#8220;Hungry&#8221; writes:
+<div>
+</div><div><div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif;"><span class="Apple-style-span">&#8220;We had a dispute at a dinner party about whether blowing on hot food actually makes it cool down faster, or only gives you something to do while you wait for your food to cool.&#8221;</span></span></div><div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif;"><span class="Apple-style-span">
+</span></span></div><div>While it is questionable whether or not I am indeed a physicist (but people do pay me to do physics) and whether I will answer definitively (there&#8217;ll be some hand-waving), I&#8217;ll give it my darndest.</div><div>
+<a name='more'></a>
+</div><div>Let&#8217;s imagine a hot baked potato you just sliced open.  The mass of potato is capable of transferring energy as heat to the surrounding air (and therefore cooling down) via a number of mechanisms. The most common we hear about are conduction, radiation, and convection.  Conduction is the process by which two objects in intimate contact exchange heat. Radiation is a bit more mysterious, but in the same way that a poker in the fire can glow white hot, all things at non-zero temperature emit electromagnetic radiation, which carries away energy from your potato.</div><div>
+</div><div>Convection is even more complicated, but is one of the most important processes by which solids exchange heat with gases. Convection in our case occurs when the potato heats up the gas at its surface. The random motion of air molecules (now a little hotter) will &#8220;randomly&#8221; dissipate heat. However, the hotter gas is less dense than the room temperature gas, and buoyant forces (think Helium balloon) will create a current of hot gas upwards from the potato surface. Both of these processes constitute convection.</div><div>
+</div><div>Convection is <span class="caps">REALLY</span> hard to describe with physical models. You can do some computer simulations of the motion of the gas in convection. I found this cool picture on Wikipedia of someone who did just that:</div><div>
+</div><div><a href="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif"><img alt="" border="0" src="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif" style="cursor: pointer; float: left; height: 274px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; margin-top: 0px; width: 689px;" /></a></div><div>Pretty cool. Now! To actually answer your question. To get a qualitative answer, we don&#8217;t even need to consider models of convection, etc. Isaac Newton was kind enough to find an empirical relation for the process of cooling, aptly named &#8220;Newton&#8217;s law of cooling&#8221;. If we call the amount of heat transferred from the potato Q, the found that the rate of heat being lost by the potato is proportional to the temperature difference between the surrounding gas and the potato itself:</div><div>
+</div><div><mathjax>$$    \text{Rate of Heat Loss}=\frac{\text{Amount of Heat Loss}}{\text{Amount of time}}=\frac{\Delta Q}{\Delta t} \propto T_{\text{Potato}}-T_{\text{Air }}   $$</mathjax> </p>
+<p>So the quantity which is of primary importance is the temperature difference between your potato and the surrounding air.  Now we can answer the question.  If you let your potato cool down naturally, then the potato heats the air which then starts to convect.  This means that the air immediately above the potato is quite hot.  If you blow on the potato, however, you get the air circulating faster than it would by convection alone, effectively replacing the hot air with slightly cooler air.  And since the cooling rate is proportional to to temperature difference; this will result in a faster cooling rate.  To first order, blowing on your food should&nbsp;help.</p>
+<p>So, Hungry,  feel free to blow on your food, Miss Manners be damned.</div><div></div></div></p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/ask-a-physicist-volume-i.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-                <div class="article">
+                        </article>
+                                <div class="article">
                 <h1><a href="../posts/lessons-in-prohibition-one.html">Lessons in Prohibition:&nbsp;One</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -144,7 +189,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/life-in-the-infrared.html">Life in the&nbsp;Infrared</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -167,7 +212,7 @@
                 </div>
         </div>
         <hr />
-        
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -185,6 +230,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -192,23 +242,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -216,89 +256,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -307,13 +287,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -322,13 +352,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -342,63 +382,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -407,38 +417,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

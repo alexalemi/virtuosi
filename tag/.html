@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/when-will-the-earth-fall-into-the-sun-.html">When will the Earth fall into the&nbsp;Sun?</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/when-will-the-earth-fall-into-the-sun-.html"
+                                        rel="bookmark"
+                                        title="Permalink to When will the Earth fall into the&nbsp;Sun?">
+                                        When will the Earth fall into the&nbsp;Sun?
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/when-will-the-earth-fall-into-the-sun-.html"
+                                    data-text="When will the Earth fall into the&nbsp;Sun?"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2012-11-29T22:58:00">
         <i class="icon-calendar"></i>Thu 29 November 2012
@@ -114,13 +135,39 @@
 
 <!-- <span class="label">Tags</span> --> |
 	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The time I spent making this poster could have been spent doing research. Since December 2012 is coming up, I thought I’d help the Mayans out with a look at a possible end of the world scenario. (I know, it’s not Earth Day yet, but we at the Virtuosi can only go so long without fantasizing about wanton destruction.) As the Earth zips around the Sun, it moves through the heliosphere, which is a collection of charged particles emitted by the Sun. Like any other fluid, this will exert drag on the Earth, slowly causing it to spiral into the Sun. Eventually, it will burn in a blaze of glory, in a bad-action-movie combination of Sunshine meets Armageddon. Before I get started, let me preface this by saying that I have no idea what the hell I’m talking about. But, in the spirit of being an arrogant ...
-                        <a class="btn primary xsmall" href="../posts/when-will-the-earth-fall-into-the-sun-.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s1600/RetardedPic.png" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="143" src="http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s200/RetardedPic.png" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center; width: 200px;">The time I spent making this poster could have been spent doing research. </td></tr></tbody></table>
+
+<p>Since December 2012 is coming up, I thought I&#8217;d help the Mayans out with a look at a possible end of the world scenario. (I know, it&#8217;s not Earth Day yet, but we at the Virtuosi can only go so long without fantasizing about wanton destruction.) As the Earth zips around the Sun, it moves through the <a href="http://en.wikipedia.org/wiki/Heliosphere">heliosphere</a>, which is a collection of charged particles emitted by the Sun. Like any other fluid, this will exert drag on the Earth, slowly causing it to spiral into the Sun. Eventually, it will burn in a blaze of glory, in a bad-action-movie combination of Sunshine meets Armageddon.
+<a name='more'></a>
+Before I get started, let me preface this by saying that I have no idea what the hell I&#8217;m talking about. But, in the spirit of being an arrogant physicist, I&#8217;m going to go ahead and make some back-of-the-envelope calculations, and expect that this post will be accurate to within a few orders of&nbsp;magnitude.</p>
+<p>Well, how long will the Earth rotate around the Sun before drag from the heliosphere stops it? This seems like a problem for fluid dynamics. How do we calculate what the drag is on the Earth? Rather than solve the fluid dynamics equations, let&#8217;s make some arguments based on dimensional&nbsp;analysis.</p>
+<p>What can the drag of the Earth depend on? It certainly depends on the speed of the Earth v &#8212; if an object isn&#8217;t moving, there can&#8217;t be any drag. We also expect that a wider object feels more drag, so the drag force should depend on the radius of the Earth R. Finally, the density of the heliosphere might have something to do with it. If we fudge around with these, we see that there is only 1 combination that gives units of force:
+ <mathjax>$$
+ F_{drag} \sim \rho v^2 R^2
+ $$</mathjax></p>
+<p>Now that we have the force, the energy dissipated from the Earth to the heliosphere after moving a distance <i>d</i> is <i>E_lost = F<em>d</i>. If the Earth moves with speed v for time t, then we can write <i>E_lost = F</em>v<em>t</i>. So we can get an idea of the time scale over which the Earth starts to fall into the Sun by taking <i>E_lost = E_Earth ~ 1/2 M_Earth v^2</i>. Rearranging and dropping factors of 1/2 gives
+ <mathjax>$$
+ T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \\ \qquad  \sim M_{Earth} / (\rho R^2 v)
+$$</mathjax>
+Using the velocity of the Earth as <i>2</em>pi *</i> 1 Astronomical unit/year, Googlin&#8217; for some numbers, and taking the <a href="http://web.mit.edu/space/www/helio.review/axford.suess.html">density of the heliosphere</a> to be 10^-23 g/cc  we get&#8230; <mathjax>$$ T \approx 10^{19} \textrm{ years} $$</mathjax>  Looks like this won&#8217;t be the cause of the Mayan apocalypse. (By comparison, the <a href="http://en.wikipedia.org/wiki/Sun#Life_cycle">Sun will burn out </a>after only ~10^9&nbsp;years.) </p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/when-will-the-earth-fall-into-the-sun-.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-                <div class="article">
+                        </article>
+                                <div class="article">
                 <h1><a href="../posts/creating-an-earth.html">Creating an&nbsp;Earth</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -141,7 +188,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/a-homemade-viscometer-i.html">A Homemade Viscometer&nbsp;I</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -162,7 +209,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/how-cold-is-the-ground-ii.html">How Cold is the Ground&nbsp;<span class="caps">II</span></a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -183,7 +230,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/how-cold-is-the-ground-.html">How Cold is the&nbsp;Ground?</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -204,7 +251,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/end-of-the-earth-vii-the-big-freeze.html">End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -225,7 +272,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/earth-day-2012-escape-to-the-moon.html">Earth Day 2012: Escape to the&nbsp;Moon</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -246,7 +293,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/calculator-pi.html">Calculator&nbsp;Pi</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -267,7 +314,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/the-stars-fell-on-abe-and-frederick.html">The Stars Fell on Abe and&nbsp;Frederick</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -288,7 +335,7 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
+                                <div class="article">
                 <h1><a href="../posts/earth-day-special-post-apocalyptic-literature.html">Earth Day Special: Post-Apocalyptic&nbsp;Literature</a></h1>
                 <div class="well small"><footer class="post-info">
 <!-- <span class="label">Date</span> -->
@@ -309,302 +356,18 @@
                 </div>
         </div>
         <hr />
-                <div class="article">
-                <h1><a href="../posts/exploration-of-cameras-i.html">Exploration of Cameras&nbsp;I</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-02-03T19:50:00">
-        <i class="icon-calendar"></i>Thu 03 February 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/matt.html"><i class="icon-user"></i>Matt</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">In the next posts, I’d like to attempt to make a camera from ‘scratch.’ And by that, I mean explore the creation of cameras from their components and then create a very primitive one from readily available materials. In terms of history and simplicity, we should start with the pinhole camera. I’ve heard stories that Newton used a pinhole camera to look at the sun though I don’t know if this was before or after he stared directly at it for 8 minutes. The pinhole is neat because it is so simple. With a pinhole, light is focused simply by restricting the paths which an incident ray may take to hit our film. Typically, diffuse and specular scattering sends light bouncing every which way off an object. The pinhole just restricts which directions hit the film. I think a picture is a better guide to this concept ...
-                        <a class="btn primary xsmall" href="../posts/exploration-of-cameras-i.html">more ...</a>
-                </div>
+                
+                <div class="pagination">
+        <ul>
+                                        <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+                                                        <li class="active"><a href="../tag/.html">1</a></li>
+                                        <li class=""><a href="../tag/2.html">2</a></li>
+                                        <li class=""><a href="../tag/3.html">3</a></li>
+                                                        <li class="next"><a href="../tag/2.html">Next &rarr;</a></li>
+                        </ul>
         </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-short-thanksgiving-edition.html">Your Week in Seminars: Short Thanksgiving&nbsp;edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-29T18:51:00">
-        <i class="icon-calendar"></i>Mon 29 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
 
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Good Monday evening all, and welcome to another edition of Your Week in Seminars. Last week was a half week here in Cornell, but we still managed two talks, the general colloquium and the Wednseday-talk-on-Tuesday. Monday we had Charles Marcus of Harvard talk about Building Schrödinger’s Chip. This was a quantum computing talk. We don’t actually have a quantum computing group in Cornell, but I’ve taken a couple of courses on it back home, and it’s an interesting subject, although I’ve been a bit disillusion by the notable lack of problems solvable by quantum computers. Marcus started by talking about the wonders and insanities of quantum mechanics - the usual spiel about the two slit experiment, electrons passing through walls, and Schrödinger’s cat. He said he dubbed the talk Schrödinger’s chip because unlike cats, that appear to break when we put them in the ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-short-thanksgiving-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-one-for-two-edition.html">Your Week in Seminars: One for Two&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-22T11:12:00">
-        <i class="icon-calendar"></i>Mon 22 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Hello everyone and welcome to another week of talks here at the physics department. I was out of Ithaca for a bit this past week, so in this very special edition I’m going to present a full week’s worth of seminars (one from last week and two from the previous week) in one post covering two weeks. The Colloquium two weeks ago was given by our own Csaba Csaki, who talked about Electroweak Symmetry Breaking and the Physics of the TeV Scale. This was essentially an overview of beyond-the-standard-model physics and the kind of things we expect out of the LHC. Csaba started off by reminding us of the Standard Model, our very successful model of particle physics that’s withstood nearly every test over the last thirty or forty years. The Standard Model is a set of three gauge theories - three forces that a relayed by massless ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-one-for-two-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-dark-edition.html">Your Week in Seminars Dark&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-08T15:46:00">
-        <i class="icon-calendar"></i>Mon 08 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Good afternoon everyone, and welcome to another week of seminars here in the physics department. Our theme of the week is dark matter - where does it come from, how do we see it, and why is there so much of it. Along with that we have a little more AdS/CFT, seemingly continuing last week’s subjects theme. All in all, it looks like seminars on similar subjects tend to condense here in the department. We start with the Monday Colloquium, where Richard Schnee from Syracuse University told us about What’s the Matter in the Universe? Direct Searches for WIMP Dark Matter. Dark matter, we’ll recall, is the astrophysics name for any kind of matter that doesn’t emit light - one that is not inside stars. Our knowledge of our own solar system, which has its mass concentrated almost entirely inside the sun, led us to expect that ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-dark-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-conformal-edition.html">Your Week in Seminars: Conformal&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-01T17:58:00">
-        <i class="icon-calendar"></i>Mon 01 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Another week has gone by here in Cornell. The last leaves are turning red, a hint of snow passed us on the weekend, and the undergrads have hit the streets and parties in minimal clothing, then did the same again next day wearing a set of cat ears. And in the physics department, we had the usual three talks. On Monday, the colloquium speaker was Holger Müller from UC Berkeley, talking about Gravitational Redshift, Equivalence Principle, and Matter Waves. The center of the talk was Muller’s experimental device, an atom interferometer. Many of you will remember the Michelson-Morley interferometer, the device used to disprove the existence of the ether. A light-interferometer essentially takes a beam of light, splits it in two and then merges it back again, using the result of the interference between the two parts to learn something about the relative difference between the optical paths taken ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-conformal-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-fermionic-edition.html">Your Week in Seminars Fermionic&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-10-25T11:56:00">
-        <i class="icon-calendar"></i>Mon 25 October 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Good evening, and welcome to the second edition of YWiS. Last week I took in the full range of seminars, from colloquium to Friday lunch. I don’t know if I can say I took in the full content of these talks as well, but let’s see what I learned On Monday we had Andrew Millis from Columbia University talk about Materials with Strong Electronic Correlations: The (Theoretical) End of the Beginning? (I think the subtitle wasn’t actually there in the talk itself). This was a condensed matter theory talk, and like all condensed matter talks it started off with the phase diagram for cuprates and a mention of the illustrious pseudogap, the Dark Energy of condensed matter. The pseudogap is a phase of cuprates - the materials that make high-temperature superconductors - that occurs at about the same concentration of defects as superconductivity but at a higher temperature. It ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-fermionic-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/paradigm-shifts-3-with-a-vengence.html">Paradigm Shifts 3: With a&nbsp;Vengence</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-10-21T14:32:00">
-        <i class="icon-calendar"></i>Thu 21 October 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/sam.html"><i class="icon-user"></i>Sam</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The last shift I wanted to present is best explained at http://tauday.com/ . There you will find a manifesto (yes, a manifesto) about why we should change from using $$ \pi = \text{180 degrees} $$ as the circle constant to $$ \tau = 2 \pi = \text{360 degrees} $$ It’s quite a convincing argument, and it’s a shift that can easily be made. Check the website for more. TAU VS PI
-                        <a class="btn primary xsmall" href="../posts/paradigm-shifts-3-with-a-vengence.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-intro-edition.html">Your Week in Seminars Intro&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-10-18T12:50:00">
-        <i class="icon-calendar"></i>Mon 18 October 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">We’ve done a lot of talking over the past few months here on the Virtuosi, but one important subject has not come up so far. An issue that is central to the day to day life of the average grad student. The subject of free food. The average graduate student in an American university shops for food 0.7 times per semester, paying a total of $13.22. He eats an average of three vegetables and one fruit, all at home during Thanksgiving. He turns his oven on once per year while trying to ascertain if the power is out or the light bulb in the kitchen needs to be replaced. The rest of his nutrition is made up entirely of free donuts, bagels and pizza. The place to get all this free food, naturally, is various department talks and seminars. And while we’re there, we may as ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-intro-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/quantum-chess-.html">Quantum&nbsp;Chess!</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-09-08T21:48:00">
-        <i class="icon-calendar"></i>Wed 08 September 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/sam.html"><i class="icon-user"></i>Sam</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Ever find out when you’re playing chess that the Queen you reached for is actually a pawn? Probably not. But most chess games aren’t affected by the weirdness of the quantum world. This one is: http://research.cs.queensu.ca/Parallel/QuantumChess/QuantumChess.html
-                        <a class="btn primary xsmall" href="../posts/quantum-chess-.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/solar-sails-addendum-i.html">Solar Sails Addendum&nbsp;I</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-05-16T23:28:00">
-        <i class="icon-calendar"></i>Sun 16 May 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">As requested, below is an explicit evaluation of the silly looking integral in Solar Sails I. If you just want some hints to do the integral, see Solar Sails Addendum II. Here we present a step-by-step solution of the differential equation: $$ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} $$ This is just a separable equation, so we rearrange to get an integral equation: $$ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} =\int_{0}^{t}dt$$ We see that the right hand side here will just evaluate to t. Let’s rearrange the left hand side to get the integration variable to be dimensionless. This is important because it allows the integral to just be a number, with all the unit-dependent terms pulled outside. So we have ...
-                        <a class="btn primary xsmall" href="../posts/solar-sails-addendum-i.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/solar-sails-addendum-ii.html">Solar Sails Addendum&nbsp;<span class="caps">II</span></a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-05-16T23:27:00">
-        <i class="icon-calendar"></i>Sun 16 May 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">This is the schematic version, if you just wanted hints. The full solution is given in Solar Sails Addendum I. Here we present a schematic solution of the differential equation: $$ \frac{dr}{dt} = \left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2} $$ This is just a separable equation, so we rearrange to get an integral equation: $$ \int_{r_0}^{r_f} \frac{dr}{\left[ \frac{2\alpha}{m} \left( \frac{1}{r_0} - \frac{1}{r} \right)\right]^{1/2}} = \int_{0}^{t}dt$$ From here it’s nice to non-dimensionalize, so our integration variable is just a number (with no units attached). This allows us to get the integral into a form like $$ k\int_{1}^{u_f} \frac{du}{\left[ \left( 1 - \frac{1}{u} \right)\right]^{1/2}} = t$$ for appropriate values of k and u. Now we are ready to get started! Typically ...
-                        <a class="btn primary xsmall" href="../posts/solar-sails-addendum-ii.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/nobody-really-gets-quantum.html">Nobody Really Gets&nbsp;Quantum</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-22T14:29:00">
-        <i class="icon-calendar"></i>Thu 22 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Nobody Really Gets Quantum / Etgar Keret On Yom Kippur eve Quantum walked over to Einstein’s house to seek forgiveness. “I’m not home,” shouted Einstein from behind a closed door. On the way home people taunted him and somebody even hit him with an empty can of coke. Quantum pretended not to care, but deep inside he was really hurt. Nobody really gets Quantum, everybody hates him. “You parasite” people cry out when he’s walking down the street, “why are you dodging the draft?” - “I wanted to enlist,” Quantum tries to say, “but they wouldn’t take me, because I’m so small.” Not that anybody listens to Quantum. Nobody listens to Quantum when he tries to speak up for himself, but when he says something that can be misconstrued, oh, then suddenly everybody’s paying attention. Quantum can say something innocent like “wow, what a cat!” and ...
-                        <a class="btn primary xsmall" href="../posts/nobody-really-gets-quantum.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/entropy-and-the-arrow-of-time.html">Entropy and the Arrow of&nbsp;Time</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-16T21:27:00">
-        <i class="icon-calendar"></i>Fri 16 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/nik-zhelev.html"><i class="icon-user"></i>Nik Zhelev</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Somebody I talked to yesterday about what should the topic of my post be suggested that I should write something about cosmology, in particular the Big Bang and the ultimate fate of the universe. Being mostly interested in condensed matter, I am by no means an expert in cosmology (I’ll leave that to Corky). However, I will not abandon the request, but instead, spin it in a more condensed matter direction, by talking about Entropy. Entropy is a quantity that measures disorder. The more ordered your system is, i.e. the less ways you can arrange the constituents of your system, the less entropy you have and vice versa. I like to use the example of how messy my room is to visualize this. When I clean my room, I would pick up the random articles of clothing, books, etc and put them in the places where they belong ...
-                        <a class="btn primary xsmall" href="../posts/entropy-and-the-arrow-of-time.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                <div class="article">
-                <h1><a href="../posts/physics-for-non-physicists.html">Physics for&nbsp;non-physicists</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-16T16:36:00">
-        <i class="icon-calendar"></i>Fri 16 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/nik-zhelev.html"><i class="icon-user"></i>Nik Zhelev</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">This is my first (but certainly not the last) post in this blog, so let me introduce myself. My name is Nikolay, and as most of the others contributing to the blog, I am also a first-year graduate student in physics at Cornell. So, what is my motivation to join the team headed by Mr. Alemi in contributing to the blog? I happen to have many friends that are not in physics. In fact, probably due to the fact that I graduated from a liberal arts college, many of my friends have never taken any physics beyond that one class in high school, which due to both the inherent difficulty of teaching physics at introductory level and the lack of good high school physics teachers was often an unpleasant experience that scared them away from physics for life. Now, imagine what my difficulty is when on a daily basis I ...
-                        <a class="btn primary xsmall" href="../posts/physics-for-non-physicists.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        
-                        </div><!--/span-->
+        </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
             <ul class="nav nav-list">
@@ -621,6 +384,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -628,23 +396,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -652,89 +410,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -743,13 +441,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -758,13 +506,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -778,63 +536,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -843,38 +571,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 

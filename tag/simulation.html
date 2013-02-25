@@ -80,6 +80,11 @@
             <ul class="nav">
                                                                     <li class="divider-vertical"></li>
                                               <li >
+                    <a href="../category/math.html">
+						<i class="icon-folder-open icon-large"></i>math
+					</a>
+                  </li>
+                                <li >
                     <a href="../category/old.html">
 						<i class="icon-folder-open icon-large"></i>old
 					</a>
@@ -99,9 +104,25 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-                            <div class="article">
-                <h1><a href="../posts/zombpocalypse.html">Zombpocalypse</a></h1>
-                <div class="well small"><footer class="post-info">
+                                    <article>
+                <header>
+                        <h1>
+                            <a href="../posts/zombpocalypse.html"
+                                        rel="bookmark"
+                                        title="Permalink to Zombpocalypse">
+                                        Zombpocalypse
+                                </a>
+                                                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                    data-url="../posts/zombpocalypse.html"
+                                    data-text="Zombpocalypse"
+                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+                                </script>
+                                                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+                        <footer class="post-info">
 <!-- <span class="label">Date</span> -->
 <abbr class="published" title="2010-07-01T23:48:00">
         <i class="icon-calendar"></i>Thu 01 July 2010
@@ -117,13 +138,45 @@
 	<a href="../tag/monte-carlo.html"><i class="icon-tag"></i>monte carlo</a>
 	<a href="../tag/simulation.html"><i class="icon-tag"></i>simulation</a>
 	<a href="../tag/zombies.html"><i class="icon-tag"></i>zombies</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Here at the Virtuosi, we’re concerned. We are concerned that perhaps the world is really not ready for a zombie apocalypse. You know, the kind of zombie apocalypse that you may have seen in such classics as “Night of the Living Dead”, “Shaun of the Dead”, or perhaps the even more recent “Zombieland” (sweet cameo by the way). The kind of zombpocalypse that could leave major cities void of life and the country plagued with the undead. Well, Alemi and I were curious as to how likely such a pandemic was to occur and what it would look like in the simplest of models. In typical Virtuosi fashion, we threw some physics at it and this is what we came up with. The Model: Taking cues from the epidemiologists, we feel that the spread of zombie-ism might fall into a compartmental model that is much like the heavily studied ...
-                        <a class="btn primary xsmall" href="../posts/zombpocalypse.html">more ...</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Here at the Virtuosi, we&#8217;re concerned. We are concerned that perhaps the world is really not ready for a zombie apocalypse. You know, the kind of zombie apocalypse that you may have seen in such classics as &#8220;Night of the Living Dead&#8221;, &#8220;Shaun of the Dead&#8221;, or perhaps the even more recent &#8220;Zombieland&#8221; (sweet cameo by the way). The kind of zombpocalypse that could leave major cities void of life and the country plagued with the undead.<div>
+</div><div>Well, Alemi and I were curious as to how likely such a pandemic was to occur and what it would look like in the simplest of models.  In typical Virtuosi fashion, we threw some physics at it and this is what we came up with.</div>
+<a name='more'></a>
+<div>
+</div><div><span class="Apple-style-span"  style="font-size:large;"><b>The Model</b>:</span></div><div>
+</div><div>Taking cues from the epidemiologists, we feel that the spread of zombie-ism might fall into a <a href="http://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">compartmental model</a> that is much like the heavily studied <span class="caps">SIR</span> model.  Here, there are susceptibles, S, that get infected, I, and can subsequently infect other susceptibles or recover, R, and not play a part in the disease dynamics anymore.  Our analogous model is the <span class="caps">SZR</span> model in which there are susceptibles, S, once again that can be bitten by a zombie to become another zombie, Z.  However, this is a huge difference - a susceptible must then kill a zombie (by destroying the brain of cause) to make it removed, R.  Hence, we have the <span class="caps">SZR</span> disease model.  </div><div>
+</div><div>Like with the compartmental models, one can write down a set of differential equations that govern the dynamics of disease in a population.  However, these might not be the best option for simulation as the population is represented as a continuous variable.  After all, there can&#8217;t be 1/100th of a zombie roaming around biting ankles causing a new epidemic after all of this partners have been killed off.  To get around this, we set up a discrete contact network where each node is one of the three states of the model and there are set probabilities of the three states interacting when they are neighbors.  In particular if there is a susceptible with a zombie neighbor then there is a probability <b>b</b> that the zombie will bite the susceptible turning the node into a zombie.  In the same time step, there is a probability <b>k</b> that the susceptible will kill the zombie putting it in the removed class.  Both of these actions can happen in one time step of the simulation.  However, the two actions can&#8217;t happen sequentially to the same node.  That is, a newly bitten susceptible must be a zombie for at least one time step before it can be removed adding a latent period for the infection.  </div><div>
+</div><div><span class="Apple-style-span"  style="font-size:large;"><b>Simulations:</b></span></div><div>
+</div><div>With these rules, we created networks with average connectivity k=8 (probably way too low) with up to N=40,000 susceptibles.  Patient zero was seeded at a random location and the simulation run until there were no more susceptible - zombie neighbor pairs.  </div><div>
+</div><div>A typical simulation looks something like:</div><div>
+</div><div><center><object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/D8GPovqceNY&amp;hl=en_US&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/D8GPovqceNY&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object></center>
+</div><div>
+</div><div>Here, the blue represent the susceptibles and red zombies.  More subtly, the removed are shown in black.  You may also notice that the zombies actually wrap around as they spread due to periodic boundary conditions.  </div><div>
+</div><div>And so we ran many of these simulations for various values of N, b, and k to see what type of dynamics arise.  As the ratio of b/k is increased and zombies become proportionally better at biting susceptibles than they are at killing the zombies, we see a transition from little to no infection to mass pandemic in what appears to be a sort of percolation transition.  </div><div>
+</div><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s1600/cp.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s320/cp.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5489167771945219234" /></a><div>In the figure red is the fraction of zombies in the final population and green is the amount of time that the simulation took to run.  The spike in time around the critical point shows critical slowing down as also seen in the length of the movie above.  Also, the ending configuration of zombies shows a fractal like structure near the critical point.  Using the <a href="http://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension">box-counting</a> method, we actually calculated the fractal dimension:</div><div>
+</div><div><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s1600/fractal.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 241px;" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s320/fractal.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5489170236989510514" /></a></div>This helps us pinpoint the epidemic transition at a ratio of b/k = 1.4.  This means for our particular network type and assumptions on the infectious nature of zombie-ism that zombies must be 40% better at biting than we are at lopping heads for an epidemic to take off.  Even then, there must be a much larger ratio of b/k for more than 50% of the population to become part of the undead.  <div>
+</div><div>I trust that we the living would be at least as capable as the undead so any potential zombie scenario would seem to be stifled in our model.  But then again, what about fast zombies?  Now those things are scary.</div><div>
+</div><div>
+</div><div><b><span class="Apple-style-span"  style="font-size:large;">Update:</span></b></div><div><span class="Apple-style-span"  style="font-size:medium;">I had a quick thought that mobile zombies might be a bit more realistic.  I made a quick movie where zombies pursue the closest susceptible while the susceptibles run away from the zombies at the same speed.  You will see an area clear around the initial infection as the zombies give chase.  By accident, two zombies will collide providing the spark for an epidemic.  An explosion of zombies results.  More to follow!</span></div><div><span class="Apple-style-span"  style="font-size:medium;">
+</span></div><center>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/EkUo0Hs1SN8&amp;hl=en_US&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/EkUo0Hs1SN8&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object></center></p>
+                </div><!-- /.entry-content -->
+                                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "posts/zombpocalypse.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
-        
+                        </article>
+                
                         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
@@ -141,6 +194,11 @@
 
 <li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
 <li>
+<a href="../category/math.html">
+    <i class="icon-folder-open icon-large"></i>math
+</a>
+</li>
+<li>
 <a href="../category/old.html">
     <i class="icon-folder-open icon-large"></i>old
 </a>
@@ -148,23 +206,13 @@
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
+    <a href="../tag/bohn.html">
+        <i class="icon-tag icon-large"></i>Bohn
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
+    <a href="../tag/momentum.html">
+        <i class="icon-tag icon-large"></i>momentum
     </a>
 </li>
 <li class="tag-3">
@@ -172,89 +220,29 @@
         <i class="icon-tag icon-large"></i>fun water rain human
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
 <li class="tag-2">
     <a href="../tag/bike.html">
         <i class="icon-tag icon-large"></i>bike
     </a>
 </li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
+<li class="tag-3">
+    <a href="../tag/thermodynamics.html">
+        <i class="icon-tag icon-large"></i>thermodynamics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
+    <a href="../tag/human.html">
+        <i class="icon-tag icon-large"></i>human
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
+    <a href="../tag/particle-physics.html">
+        <i class="icon-tag icon-large"></i>particle physics
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
+    <a href="../tag/magnetism.html">
+        <i class="icon-tag icon-large"></i>magnetism
     </a>
 </li>
 <li class="tag-1">
@@ -263,13 +251,63 @@
     </a>
 </li>
 <li class="tag-3">
+    <a href="../tag/math.html">
+        <i class="icon-tag icon-large"></i>math
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/recoil.html">
+        <i class="icon-tag icon-large"></i>recoil
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/equations.html">
+        <i class="icon-tag icon-large"></i>equations
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/probability.html">
+        <i class="icon-tag icon-large"></i>probability
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/scott-bakula.html">
+        <i class="icon-tag icon-large"></i>scott bakula
+    </a>
+</li>
+<li class="tag-3">
     <a href="../tag/site-news.html">
         <i class="icon-tag icon-large"></i>site news
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
+    <a href="../tag/movie.html">
+        <i class="icon-tag icon-large"></i>movie
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/large-numbers.html">
+        <i class="icon-tag icon-large"></i>large numbers
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/tire.html">
+        <i class="icon-tag icon-large"></i>tire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/experiment.html">
+        <i class="icon-tag icon-large"></i>experiment
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/fish.html">
+        <i class="icon-tag icon-large"></i>fish
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/python.html">
+        <i class="icon-tag icon-large"></i>python
     </a>
 </li>
 <li class="tag-3">
@@ -278,13 +316,23 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
+    <a href="../tag/cryopreservation.html">
+        <i class="icon-tag icon-large"></i>cryopreservation
     </a>
 </li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
+<li class="tag-3">
+    <a href="../tag/cold.html">
+        <i class="icon-tag icon-large"></i>cold
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/how-do-i-get-free-stuff.html">
+        <i class="icon-tag icon-large"></i>how do i get free stuff?
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/pi-day.html">
+        <i class="icon-tag icon-large"></i>pi day
     </a>
 </li>
 <li class="tag-2">
@@ -298,63 +346,33 @@
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-3">
     <a href="../tag/solar-sails.html">
         <i class="icon-tag icon-large"></i>solar sails
     </a>
 </li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
+<li class="tag-2">
+    <a href="../tag/problem-of-the-week.html">
+        <i class="icon-tag icon-large"></i>problem of the week
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
+    <a href="../tag/blackbody.html">
+        <i class="icon-tag icon-large"></i>blackbody
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
+    <a href="../tag/ice.html">
+        <i class="icon-tag icon-large"></i>ice
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/power.html">
+        <i class="icon-tag icon-large"></i>power
     </a>
 </li>
 <li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
+    <a href="../tag/physics.html">
+        <i class="icon-tag icon-large"></i>physics
     </a>
 </li>
 <li class="tag-2">
@@ -363,38 +381,78 @@
     </a>
 </li>
 <li class="tag-2">
+    <a href="../tag/chess.html">
+        <i class="icon-tag icon-large"></i>CHESS
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/laser.html">
+        <i class="icon-tag icon-large"></i>laser
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/sun.html">
+        <i class="icon-tag icon-large"></i>sun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/guestimation.html">
+        <i class="icon-tag icon-large"></i>guestimation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="../tag/fun.html">
+        <i class="icon-tag icon-large"></i>fun
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/features.html">
+        <i class="icon-tag icon-large"></i>features
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/casio.html">
+        <i class="icon-tag icon-large"></i>casio
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/baseball.html">
+        <i class="icon-tag icon-large"></i>baseball
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/fermi-problem.html">
+        <i class="icon-tag icon-large"></i>fermi problem
+    </a>
+</li>
+<li class="tag-2">
+    <a href="../tag/clicky.html">
+        <i class="icon-tag icon-large"></i>clicky
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/radiation.html">
+        <i class="icon-tag icon-large"></i>radiation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="../tag/graph.html">
+        <i class="icon-tag icon-large"></i>graph
+    </a>
+</li>
+<li class="tag-2">
     <a href="../tag/physics-challenge.html">
         <i class="icon-tag icon-large"></i>physics challenge
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
+    <a href="../tag/space.html">
+        <i class="icon-tag icon-large"></i>space
     </a>
 </li>
 <li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
+    <a href="../tag/water.html">
+        <i class="icon-tag icon-large"></i>water
     </a>
 </li>
 
