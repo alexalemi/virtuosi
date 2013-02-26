@@ -8,3 +8,8 @@ div .article .summary img {
 div .article .summary table {
     display: none;
 }
+
+body {
+    /* background-image:url('../img/virtuosi-bg2.jpg'); */
+    /* background-position: 0px 40px; */
+}
