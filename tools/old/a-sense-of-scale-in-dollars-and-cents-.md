@@ -18,13 +18,13 @@ We shall take as our inspiration Alemi's <a href="http://thevirtuosi.blogspot.co
 
 The first thing we'd like to do is find out what fraction this $5.5 billion discrepancy is compared to the total budget.  Alemi cites the total budget of the U.S. government in the 2010 fiscal year to be $3.55 trillion.  Hot dog!  So we see that:
 
-$$ \frac{\mbox{Disputed Difference}}{\mbox{Total Budget}} = \frac{\$5.5 \times 10^9}{\$3.55 \times 10^{12}} = 0.0015 $$
+$$ \frac{\mbox{Disputed Difference}}{\mbox{Total Budget}} = \frac{$5.5 \times 10^9}{$3.55 \times 10^{12}} = 0.0015 $$
 
 So the disputed part amounts to 0.15% of the total budget or one and half parts in a thousand.  Let's compare this to some things for which we have a better sense of scale. 
 
 Let's pretend we are looking to buy a car.  We need it to get to work and, you know, get stuff done.  If our car costs $10,000 dollars then 0.15% of our total costs will be
 
-$$ \mbox{\$10,000} \times 0.0015 = \$15 $$
+$$ \mbox{$10,000} \times 0.0015 = $15 $$
 
 So the current budget situation is like arguing for 6 months over a $15 charge on your $10,000 car.  Sounds reasonable!
 

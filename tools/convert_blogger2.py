@@ -2,8 +2,8 @@ import subprocess
 import os
 import shutil
 
-DIR = "../site/content/old"
-NEWDIR = "../site/content/old2"
+DIR = "old"
+NEWDIR = "old2"
 
 for fl in os.listdir(DIR):
     print fl

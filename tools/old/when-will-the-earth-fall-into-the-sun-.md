@@ -20,6 +20,6 @@ What can the drag of the Earth depend on? It certainly depends on the speed of t
 
  Now that we have the force, the energy dissipated from the Earth to the heliosphere after moving a distance <i>d</i> is <i>E_lost = F*d</i>. If the Earth moves with speed v for time t, then we can write <i>E_lost = F*v*t</i>. So we can get an idea of the time scale over which the Earth starts to fall into the Sun by taking <i>E_lost = E_Earth ~ 1/2 M_Earth v^2</i>. Rearranging and dropping factors of 1/2 gives
  $$
- T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \\ \qquad  \sim M_{Earth} / (\rho R^2 v)
+ T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \ \qquad  \sim M_{Earth} / (\rho R^2 v)
 $$
 Using the velocity of the Earth as <i>2*pi *</i> 1 Astronomical unit/year, Googlin' for some numbers, and taking the <a href="http://web.mit.edu/space/www/helio.review/axford.suess.html">density of the heliosphere</a> to be 10^-23 g/cc  we get... $$ T \approx 10^{19} \textrm{ years} $$  Looks like this won't be the cause of the Mayan apocalypse. (By comparison, the <a href="http://en.wikipedia.org/wiki/Sun#Life_cycle">Sun will burn out </a>after only ~10^9 years.) 

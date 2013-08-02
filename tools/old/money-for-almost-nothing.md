@@ -28,29 +28,29 @@ Stolen from the Mega Millions website, the prizes and odds are given in the tabl
 </div><div>where we denote our expected winnings in angled brackets. </div><div>
 </div><div>In essence, this value represents the average prize you would win if you played this lottery over and over and over again (or played all the combinations of numbers).  </div><div>
 </div><div>Setting the jackpot to $500 million, we can now compute the expected winnings as</div><div>
-</div><div>$$ \langle W \rangle = \frac{\$ 500,000,000}{175,711,536} + \frac{\$ 250,000}{3,904,701} +\frac{\$ 10,000}{689,065} + \frac{\$ 150}{15,313} + \frac{\$ 150}{13,781} $$</div><div>$$+ \frac{\$ 10}{844} + \frac{\$ 7}{306} + \frac{\$ 3}{141} + \frac{\$ 2}{75}$$</div><div>
+</div><div>$$ \langle W \rangle = \frac{$ 500,000,000}{175,711,536} + \frac{$ 250,000}{3,904,701} +\frac{$ 10,000}{689,065} + \frac{$ 150}{15,313} + \frac{$ 150}{13,781} $$</div><div>$$+ \frac{$ 10}{844} + \frac{$ 7}{306} + \frac{$ 3}{141} + \frac{$ 2}{75}$$</div><div>
 </div><div>A few flicks of the abacus later, we find that the expectation value of our prize is</div><div>
-</div><div>$$\langle W \rangle = \$ 3.02,$$</div><div>
+</div><div>$$\langle W \rangle = $ 3.02,$$</div><div>
 </div><div>which means that after we subtract the dollar we paid for the ticket, our expected return is $2.02.  </div><div>
 </div><div>But what if we had chosen to take our winnings as a lump sum of $359 million instead of the $500 million paid out over a span of 26 years?  In that case we find</div><div>
-</div><div>$$\langle W \rangle = \$ 2.22,$$</div><div>
+</div><div>$$\langle W \rangle = $ 2.22,$$</div><div>
 </div><div>which results in a $1.22 gain when we subtract the dollar we paid for the ticket.  </div><div>
 </div><div>At least in a statistical sense for this particular jackpot, one is better off playing than not playing.  But are we forgetting anything?</div><div>
 </div><h2> The Taxman</h2><div>
 </div><div>If you win a $500 million jackpot, do you <i>really</i> get a $500 million jackpot?  Well, no.  For winnings in a lottery over $5000, the IRS <a href="http://www.irs.gov/instructions/iw2g/ar02.html#d0e401">withholds</a> 25% in federal income taxes.  Additionally, the winnings are subject to state taxes as well.  For example, if I were to win, the great state of New York would be entitled to about 6.8% (apparently also just for winnings above $5000).  </div><div>
 </div><div>After applying federal and state taxes to the prizes above $5000, we now have an expected winnings of</div><div>
-</div><div><div>$$ \langle W \rangle = \left[1-(0.25 + 0.068)\right]\times\left(\frac{\mbox{Jackpot}}{175,711,536} + \frac{\$ 250,000}{3,904,701} +\frac{\$ 10,000}{689,065}\right) $$</div><div>$$+ \frac{\$ 150}{15,313} + \frac{\$ 150}{13,781}+ \frac{\$ 10}{844} + \frac{\$ 7}{306} + \frac{\$ 3}{141} + \frac{\$ 2}{75},$$</div></div><div>
+</div><div><div>$$ \langle W \rangle = \left[1-(0.25 + 0.068)\right]\times\left(\frac{\mbox{Jackpot}}{175,711,536} + \frac{$ 250,000}{3,904,701} +\frac{$ 10,000}{689,065}\right) $$</div><div>$$+ \frac{$ 150}{15,313} + \frac{$ 150}{13,781}+ \frac{$ 10}{844} + \frac{$ 7}{306} + \frac{$ 3}{141} + \frac{$ 2}{75},$$</div></div><div>
 </div><div>which gives an expected net win (minus the $1 for the ticket) of $1.10 for the $500 million annuity prize and $0.55 for the $359 million up-front lump sum.  </div><div>
 </div><div>We're still in the black, but it's slowly slipping away.  Is there anything else we need to factor in?  Well, yes.  For one thing, winning the jackpot qualifies us for the top tax bracket, so most of the winnings would be taxed at the top marginal tax rate of 35%.  Welcome to the 1%, kids! <a href="#note">[1]</a>.<p id="back"></p></div><div>
 </div><div>Changing the federal tax rate on the jackpot from 25% to 35% and recalculating, we find net expected winnings of $0.81 for the $500 million annuity and $0.34 for the $359 million lump sum.  Surprisingly, it is still worth it in a statistical sense.</div><div>
 </div><h2> Is it always like this?</h2><div>
 </div><div>One thing to keep in mind as we make these estimates is that this is a <i>historically large</i> jackpot.  So even though it may be favorable to play this time, this will not always be the case.  In fact, we can find the minimum jackpot value for which this is the case.</div><div>
 </div><div>The condition in which our expected return is a gain (rather than a loss) is</div><div>
-</div><div>$$ \langle W \rangle - \$1.00 &gt; 0. $$</div><div>
+</div><div>$$ \langle W \rangle - $1.00 &gt; 0. $$</div><div>
 </div><div>For simplicity, let's ignore the top marginal tax rate and just factor in the 25% withholding and the 6.8% state tax.  Solving for the minimum jackpot using the expression for <w> we found in the last section, we see that </w></div><div>
-</div><div>$$ \mbox{Jackpot}_{min} = \$217~\mbox{million}.$$</div><div>
+</div><div>$$ \mbox{Jackpot}_{min} = $217~\mbox{million}.$$</div><div>
 </div><div>Technically, this would have to be the amount actually awarded by the payment method of your choice.  The <i>stated</i> jackpot is always the annuity method (because it looks higher).  The lump sum offering is <i>at most</i> about 70% of the stated jackpot.  So if you want to take the lump sum offering the <i>stated</i> jackpot will need to be </div><div>
-</div><div>$$ \mbox{Jackpot}_{min} = \$217~\mbox{million} / 0.7 = \$310~\mbox{million}.$$</div><div>
+</div><div>$$ \mbox{Jackpot}_{min} = $217~\mbox{million} / 0.7 = $310~\mbox{million}.$$</div><div>
 </div><div>In fact, these values are likely a bit low, since we have not included the increase to the marginal tax rate, nor have we included other effects like having to split a prize (which seems to happen a lot) or inflation effects if you take the prize in yearly installments.</div><div>
 </div><div>In any case, a quick look through the <a href="http://www.megamillions.com/winners/jackpothistory.asp">jackpot history</a> shows that these threshold values are only met occasionally.  An eyeball estimate puts about one jackpot per year that exceeds the (absolute) minimum $217 million threshold.</div><div>
 </div><h2> So am I going to win?</h2><div>

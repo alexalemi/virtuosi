@@ -20,7 +20,7 @@ We're currently sitting at the radius of the Earth <i>R<span style="font-size: x
 
 Well, we know that the force of gravity is the related to the potential by:
 $$
-\vec{F}(r) = - \vec{\nabla} \Phi = - \frac {d\Phi}{dr} \hat{r} \\
+\vec{F}(r) = - \vec{\nabla} \Phi = - \frac {d\Phi}{dr} \hat{r} \
 \vec{F} = - \frac {G m M_E } {r^2}
 \label{eqn:gravforce}
 $$
@@ -41,7 +41,7 @@ give or take.
 
 How fast do we need to go if we're going to make it to the Moon? Well, at the minimum, we need the kinetic energy of our object to be equal to the depth of the potential well <a href="#footnote-1">[1]</a>, or 
 $$
-\frac 1 2 m v^2 = 6 m \times 10^7 \textrm{m}^2/\textrm{s}^2 \quad \textrm{or} \\
+\frac 1 2 m v^2 = 6 m \times 10^7 \textrm{m}^2/\textrm{s}^2 \quad \textrm{or} \
 v \approx 1.1 \times 10^4 \textrm{ m/s   (2)} . 
 $$
 So we need to go pretty fast -- this is about Mach 33 (33 times the speed of sound in air). At this speed, we'd get from NYC to LA in under 7 minutes. Looks difficult, but let's see just how difficult it is. 
@@ -69,7 +69,7 @@ After the humiliation of the last section, let's start out small. Can we send an
 $$v \approx 1.1 \times 10^4 \textrm{m/s} \approx 4 \times 10^{-5} c.
 $$
 So an electron moving at this velocity will have a kinetic energy of 
-$$ \textrm{KE}  = m c^2 \times \frac 1 2 \frac {v^2}{c^2} = 511 \textrm{ keV} \times \frac 1 2 \frac {v^2}{c^2} \\
+$$ \textrm{KE}  = m c^2 \times \frac 1 2 \frac {v^2}{c^2} = 511 \textrm{ keV} \times \frac 1 2 \frac {v^2}{c^2} \
  \qquad  \approx 511 \textrm{ keV} \times  0.8 \times 10^{-9} \approx 0.4 \times 10^{-3} eV.
 $$
 So we can give an electron enough kinetic energy to get to the moon with a voltage difference of 0.4 mV, assuming it doesn't hit anything on the way up (it will). 
