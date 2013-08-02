@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.memorial-day.atom.xml" rel="self"></link><id>/</id><updated>2010-05-31T13:12:00-04:00</updated><entry><title>Memorial Day Distractions</title><link href="/posts/memorial-day-distractions.html" rel="alternate"></link><updated>2010-05-31T13:12:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-05-31:posts/memorial-day-distractions.html</id><summary type="html">&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s1600/manufactoria.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s200/manufactoria.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Summer is upon us. That means summer research, and online games. In
+order to help you through this three day weekend and beyond, I thought
+I&amp;#8217;d share some of the more physics inspired games I&amp;#8217;ve been playing
+lately to pass the time. I really enjoy physics based games. When done
+right, I think they can not only be fun and engaging but have the
+opportunity to teach you&amp;nbsp;something.&lt;/p&gt;
+&lt;h3&gt;Colonel&amp;nbsp;Blotto&lt;/h3&gt;
+&lt;p&gt;First up is a web Colonel Blotto tournament that I coded up, which you
+can find
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php"&gt;here&lt;/a&gt;.
+&lt;a href="http://en.wikipedia.org/wiki/Colonel_Blotto"&gt;Colonel Blotto&lt;/a&gt; is a silly
+little game theoretic game where you try and assign one hundred soldiers
+between 10 different fields. Opponents do the same. Neither side knows
+what the other side is going to do. The game turns out to have some very
+interesting dynamics. Apparently for more than 12 soldiers, the game
+does not have a deterministic optimal strategy, so you&amp;#8217;re guess is as
+best as mine for how to beat the other players in the pool. Its worth
+checking out. Feel free to try your hand at the pool. Once the
+participation has settled down, I want to try and analyze the strategies
+that people employ and see if I can do any interesting statistical
+physics with it. I spent a good chunk of this weekend working out the
+bugs, so it should run smoothly now, but be sure to let me know if you
+discover any&amp;nbsp;errors.&lt;/p&gt;
+&lt;h3&gt;Manufactoria&lt;/h3&gt;
+&lt;p&gt;This game has been sucking up a lot of my evenings lately.
+&lt;a href="http://pleasingfungus.com/"&gt;Manufactoria&lt;/a&gt; is one of the most pleasing
+puzzle games I&amp;#8217;ve played in a long time. It pretends to be about
+selecting robots that meat specification, but really its about
+programming finite state machines. I&amp;#8217;ve really enjoyed this game a lot.
+It has a real engineering type bent, but unlike a lot of games that
+require critical thinking to solve a puzzle, once you know how to solve
+it, it isn&amp;#8217;t tedious to do so. A great game, and I highly recommend it.
+One of the best games I&amp;#8217;ve played in a while, although maybe I&amp;#8217;m so into
+it because I&amp;#8217;m reading through &lt;a href="http://books.google.com/books?id=-olQAAAAMAAJ&amp;amp;q=feynman+lectures+on+computation&amp;amp;dq=feynman+lectures+on+computation&amp;amp;ei=qOoDTIntCqCszQSc-cyODA&amp;amp;cd=1"&gt;The Feynman Lectures on
+Computation&lt;/a&gt;
+right now. He gives as exercises very similar problems to the ones in
+the game. Its also in regards to these types of problems specifically
+that he gives &lt;a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html"&gt;this
+quote&lt;/a&gt;.
+A few tips. (1) You can use asdf or the arrow keys to rotate the pieces.
+(2) Space bar switches the chirality of the gates (swaps red for blue).
+(3) In order to round corners, you just make the conveyors meet at a T
+(4) You don&amp;#8217;t have to enter the gates on the open side. (5) During
+tests, move the slider in the bottom left to the right to speed up time.
+If you manage to solve all of the puzzles, three bonus ones will appear
+at the&amp;nbsp;bottom.&lt;/p&gt;
+&lt;h3&gt;Fantastic&amp;nbsp;Contraption&lt;/h3&gt;
+&lt;p&gt;This one is old. Its been on the internet for a while now, but if you
+haven&amp;#8217;t seen &lt;a href="http://www.kongregate.com/games/inXile_Ent/fantastic-contraption?acomplete=fantastic"&gt;Fantastic
+Contraption&lt;/a&gt;
+you should check it out. Its a very free form game. You need to get the
+pink block into the goal, but in order to do so, you can build any
+contraption you desire out of wheels and sticks. Its a great time. Most
+impressive of course is the level that some kids have taken it to. Once
+you&amp;#8217;ve played with the game a bit, be sure to search &lt;a href="http://www.youtube.com/results?search_query=fantastic+contraption&amp;amp;page=&amp;amp;utm_source=opensearch"&gt;youtube for
+fantastic
+contraption&lt;/a&gt;,
+and marvel at the engineering insight some of these kids show. I like
+this game a lot, but it can get a bit tedious to get your design to work
+out just&amp;nbsp;right.&lt;/p&gt;
+&lt;h3&gt;Splitter&amp;nbsp;2&lt;/h3&gt;
+&lt;p&gt;This one is neat. As a kid I read the &lt;a href="http://en.wikipedia.org/wiki/His_Dark_Materials"&gt;His Dark
+Materials&lt;/a&gt; trilogy
+(which started with &lt;a href="http://en.wikipedia.org/wiki/Golden_Compass"&gt;The Golden
+Compass&lt;/a&gt;). Anyway the
+second book in the series is &lt;a href="http://en.wikipedia.org/wiki/The_Subtle_Knife"&gt;The Subtle
+Knife&lt;/a&gt; which stars a
+knife, the subtle knife in fact, which can cut through anything like
+butter, and I mean anything, including the fabric between worlds. This
+led to many day dreams as a kid, and I&amp;#8217;ve spent a lot of time thinking
+about what a knife like that could actually do. Anyway, &lt;a href="http://www.kongregate.com/games/CasualCollective/splitter-2"&gt;Splitter
+2&lt;/a&gt; is a
+puzzle game that works along those lines. You have to get a ball do the
+goal, but do so by cutting through pieces of wood on the stage. A neat
+game. Worth a&amp;nbsp;look.&lt;/p&gt;
+&lt;h3&gt;Phun&lt;/h3&gt;
+&lt;p&gt;While I&amp;#8217;m hear, I can&amp;#8217;t help but mention
+&lt;a href="http://www.phunland.com/wiki/Home"&gt;Phun&lt;/a&gt;. While not strictly a game.
+Phun is a physics sandbox similar in style to Fantastic Contraption, but
+with a whole lot more features. This one is loads of fun to play with,
+and I think could really serve as a learning tool for some classes.
+Worth the download. If you know of any other physics type games, drop
+them in the comments. I&amp;#8217;m always on the look out for good&amp;nbsp;ones.&lt;/p&gt;</summary><category term="manufactoria"></category><category term="games"></category><category term="fantastic contraption"></category><category term="blotto"></category><category term="memorial day"></category></entry></feed>

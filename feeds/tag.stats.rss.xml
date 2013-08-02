@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.stats.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 13 Dec 2011 17:36:00 -0500</lastBuildDate><item><title>Report from the Trenches: A CMS Grad Student’s Take on the Higgs</title><link>/posts/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs.html</link><description>&lt;p&gt;&lt;img alt="Mmmm run172822 evt2554393033
+3d" src="http://lh6.ggpht.com/-hPHBh1UVJic/TuvD-aa1MYI/AAAAAAAAAX4/BQgsVZulLkw/mmmm-run172822-evt2554393033-3d.jpg?imgmax=800" title="mmmm-run172822-evt2554393033-3d.jpg" /&gt;
+Hi folks. It&amp;#8217;s been an embarrassingly long time since I last posted, but
+today&amp;#8217;s news on the Higgs boson has brought me out of hiding. I want to
+share my thoughts on today&amp;#8217;s announcement from the &lt;span class="caps"&gt;CMS&lt;/span&gt; and &lt;span class="caps"&gt;ATLAS&lt;/span&gt;
+collaborations on their searches for the Higgs boson. I&amp;#8217;m a member of
+the &lt;span class="caps"&gt;CMS&lt;/span&gt; collaboration, but these are my views and don&amp;#8217;t represent those
+of the collaboration. The upshot is that &lt;span class="caps"&gt;ATLAS&lt;/span&gt; sees a 2.3 sigma signal
+for a Higgs boson at 126 GeV. &lt;span class="caps"&gt;CMS&lt;/span&gt; sees a 1.9 sigma excess around 124
+GeV. &lt;span class="caps"&gt;CERN&lt;/span&gt; is being wishy-washy about whether or not this is actually a
+discovery. After all the media hype leading up to the announcement, this
+is somewhat disappointing, but maybe not too surprising. First of all,
+what does a 2 sigma signal mean? The significance corresponds to the
+probability of seeing a signal as large or larger than the observed one
+given only background events. That is, what&amp;#8217;s the chance of seeing what
+we saw if there is no Higgs boson? You can think of the significance in
+terms of a Normal distribution. The probability of the observation
+corresponds to the integral of the tails of the Normal distribution from
+the significance to infinity. For those of you in the know, this is just
+1 minus the &lt;span class="caps"&gt;CDF&lt;/span&gt; evaluated at the significance. For a 2 sigma
+observation, this corresponds to about 5%. For both experiments, there
+was a 5% chance of observing the signal they observed or bigger if the
+Higgs boson doesn&amp;#8217;t exist. In medicine, this would be considered an
+unqualified success. So why is &lt;span class="caps"&gt;CERN&lt;/span&gt; being so cagey? In particle physics
+we require at least 3 sigma before we even consider something
+interesting, and 5 sigma to consider it an unambiguous discovery. The
+reasons why the burden of proof is so much higher in particle physics
+than in other fields aren&amp;#8217;t entirely clear to me. I suspect is has to do
+with the relative ease of running the collider a little longer compared
+to recruiting more human test subjects, to use medicine as an example.
+Given what I&amp;#8217;ve just told you that we need a 3 sigma significance in
+particle physics, why is everyone so excited about a couple of 2 sigma
+results? Well, the first reason is that both results show bumps at
+approximately the same Higgs mass. Although it&amp;#8217;s not rigorous, you can
+get a rough idea of what the significance of the combined results are by
+adding the significances in quadrature. This gives us about 2.8 sigma.
+Higher, but still not up to the magic number of 3. The explanation for
+the excitement that is most compelling brings us to Bayesian statistics.
+The paradigm of Bayesian statistics says that our belief in something
+given new information is the product of our prior beliefs and a term
+which updates them based on the new information. Physicists have long
+expected to find a Higgs boson with a mass around 120 GeV. So our prior
+degree of belief is pretty high. Thus, it doesn&amp;#8217;t take as much to
+convince us (or me anyway) that we have observed the Higgs boson. In
+contrast, consider the &lt;span class="caps"&gt;OPERA&lt;/span&gt; collaboration&amp;#8217;s measurement of neutrinos
+going faster than the speed of light. This claims to be a 6 sigma
+result, but no one expected to find superluminal neutrinos, so our (or
+at least my) prior for this is much lower. (Aside: If the &lt;span class="caps"&gt;OPERA&lt;/span&gt; result
+is wrong, it is likely due to a systematic effect rather than a
+statistical one. Nevertheless, I stand by my point.) The final thing
+that excites me about this observation is that what we&amp;#8217;ve seen is
+completely consistent with what we would expect to see from the Standard
+Model. Forgetting about significances for the moment, when the &lt;span class="caps"&gt;CMS&lt;/span&gt;
+experiment fits for the Higgs boson mass, they find a cross section that
+agrees very well with that predicted by the Standard Model. In the plot
+below, you&amp;#8217;re interested in the masses where the black line is near 1.
+The &lt;span class="caps"&gt;ATLAS&lt;/span&gt; experiment actually sees more signal than one would expect.
+This is likely just a statistical fluctuation, and explains why the
+&lt;span class="caps"&gt;ATLAS&lt;/span&gt; result has a higher significance. &lt;img alt="GUIDO HIGGS CERN SEMINAR pdf
+page 43 of 60
+1" src="http://lh6.ggpht.com/-tHKpXH_FDfM/TuvD_jbM8wI/AAAAAAAAAYA/-LWjE0AqDog/GUIDO_HIGGS_CERN_SEMINAR.pdf%252520%252528page%25252043%252520of%25252060%252529-1.png?imgmax=800" title="&amp;quot;GUIDO_HIGGS_CERN_SEMINAR.pdf (page 43 of 60" /&gt;-1.png&amp;#8221;)
+&lt;img alt="ATLAS Higgs pdf page 34 of
+68" src="http://lh6.ggpht.com/-dLvDz4KoVuU/TuvEBK3mg3I/AAAAAAAAAYI/4x-6m2b-g0M/ATLAS-Higgs.pdf%252520%252528page%25252034%252520of%25252068%252529.jpg?imgmax=800" title="&amp;quot;ATLAS-Higgs.pdf (page 34 of 68" /&gt;.jpg&amp;#8221;)
+In conclusion, while &lt;span class="caps"&gt;CERN&lt;/span&gt; is being non-committal, in my opinion, we have
+seen the first hints of the Higgs boson. This is mostly due to my high
+personal prior that there the Higgs boson exists around the observed
+mass. Unfortunately, Bayesian priors are for the most part a qualitative
+thing. Thus, &lt;span class="caps"&gt;ATLAS&lt;/span&gt; and &lt;span class="caps"&gt;CMS&lt;/span&gt; are sticking to the hard numbers, which say
+that what we have looks promising, but is not yet anything to get
+excited about. I&amp;#8217;ll close by reminding you all to take this all with a
+grain of salt. There is every possibility that this is just a
+fluctuation. I&amp;#8217;ll remind you that at the end of last summer, &lt;span class="caps"&gt;CMS&lt;/span&gt; and
+&lt;span class="caps"&gt;ATLAS&lt;/span&gt; both showed a &lt;a href="http://resonaances.blogspot.com/2011/07/higgs-wont-come-out-of-closet.html"&gt;3 sigma
+excess&lt;/a&gt;
+around 140 GeV, which went away just a month later at the next
+conference. So let&amp;#8217;s cross our fingers that next year&amp;#8217;s data will give
+us a definitive answer on this question. By the way, if anyone wants to
+know more, fire away in the comments. I&amp;#8217;ll do my&amp;nbsp;best.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nic Eggert</dc:creator><pubDate>Tue, 13 Dec 2011 17:36:00 -0500</pubDate><guid>tag:,2011-12-13:posts/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs.html</guid><category>particle physics</category><category>Stats</category><category>Higgs</category></item></channel></rss>

@@ -1,540 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>How Cold is the&nbsp;Ground?</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>How Cold is the&nbsp;Ground? - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to How Cold is the&nbsp;Ground?">
-                                        How Cold is the&nbsp;Ground?
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-05-18T00:20:00">
-        <i class="icon-calendar"></i>Fri 18 May 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/brian.html"><i class="icon-user"></i>Brian</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info -->                </div>
-                <p>It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it had been warm for the previous few days, and the ground was still warm so the snow melted fast. Aside from letting me enjoy the absurd arguments against global warming that snow in April birthed, this got me thinking: How cold is the ground throughout the year? At night vs. during the day? And the corollary: How cold is my basement? If I dig a deeper basement, can I save on heating and cooling? (I&#8217;m very&nbsp;cheap.)</p>
-<p><a name='more'></a>
- Well, we want to know the temperature distribution <i>T</i> of the ground as a function of time <i>t</i> and position <i>x</i>. So some googlin&#8217; or previous knowledge shows that we need to solve the <a href="http://en.wikipedia.org/wiki/Heat_equation">heat equation</a>. For our purposes, we can treat the Earth as flat (I don&#8217;t plan on digging a basement deep enough to see the curvature of the Earth), so we can assume the temperature only changes with the depth into the ground <i>x</i>:
-<mathjax>$$
- \frac {\partial T}{\partial t} = a \frac {\partial^2 T} {\partial x^2} \qquad (1)
-$$</mathjax>
-where <i>a</i> is the thermal diffusivity of the material, in units of square meters per second. It looks like we&#8217;re going to have to solve some partial differential&nbsp;equations!</p>
-<p>Or will we? We can get a very good estimate of how much the temperature changes with depth just by dimensional analysis. Let&#8217;s measure our time <i>t</i> in terms of a characteristic time of our problem <i>w</i> (it could be 1 year if we were trying to see the change in the ground&#8217;s temperature from summer to winter, or 1 day if we were looking at the change from day to night). Then we can write:
-<mathjax>$$
-\frac {\partial T } {\partial t} = \frac 1 w \frac {\partial T} {\partial t/w}
-$$</mathjax>
- &#8230; plugging this in Eq. (1), rearranging, and calling <i>l</i>= sqrt(<i>w*a</i>) gives&#8230;.
-<mathjax>$$
- \frac {\partial T}{\partial (t/w)} = \frac {\partial ^2 T} {\partial (x/ l )^2}
-$$</mathjax>
-Now let&#8217;s say we didn&#8217;t know how to or didn&#8217;t want to solve this equation. (Don&#8217;t worry, we do <span class="amp">&amp;</span> we will). From rearranging this equation, we see right away there is only one &#8220;length scale&#8221; in the problem, <i>l</i>. So if we had to guess, we could guess that the ground changes temperature a distance <i>l</i> into the ground. A quick look at Wikipedia for <a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal diffusivities</a> gives us the following table, for materials we&#8217;d find in the ground:
- <style type="text/css">.nobrtable br { display: none }</style><div class="nobrtable"><table border="2" bordercolor="black" cellpadding="3" cellspacing="3" style="background-color: white;"><tbody><tr style="background-color: gray; color: black; padding-bottom: 4px; padding-top: 5px;">  <th> Material </th><th><i>a</i>, mm^2/s</th><th><i>l</i> (cm), <i>w</i> = 1 day</th><th><i>l</i> (cm), <i>w</i> = 1 year</th></tr><tr><td>Polycrystalline Silica (glass, sand)</td><td>0.83</td><td>27 cm </td><td>5.1 meters</td></tr><tr><td>Crystalline Silica (quartz)</td><td>1.4</td><td>35 </td><td>6.6</td></tr><tr><td>Sandstone</td><td>1.15</td><td>32</td><td>6.0</td></tr><tr><td>Brick</td><td>0.52</td><td>21</td><td>4.0</td></tr><tr><td><a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil </a></td><td>0.3-1.25</td><td>16-33</td><td>3.1-6.3</td></tr></tbody></table></div> So we would expect that the temperature of the ground doesn&#8217;t change much on a daily basis a foot or so below the ground, and doesn&#8217;t change ever about 15-20 feet into the&nbsp;ground.</p>
-<p>Just to pat ourselves on the back for our skills at dimensional analysis, a quick check shows that <a href="http://en.wikipedia.org/wiki/Permafrost#Time_to_form_deep_permafrost">permafrost</a> penetrates 14.6 feet into the ground after 1 year. So our dimensional estimates looks pretty&nbsp;good!</p>
-<p>In the next few days I&#8217;ll solve this equation exactly and throw up a few pretty graphs, and maybe talk a little about <span class="caps">PDE</span>&#8217;s and Fourier series in the&nbsp;process.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/how-cold-is-the-ground-.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>How Cold is the&nbsp;Ground?</h1>
+			<p>It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it
+had been warm for the previous few days, and the ground was still warm
+so the snow melted fast. Aside from letting me enjoy the absurd
+arguments against global warming that snow in April birthed, this got me
+thinking: How cold is the ground throughout the year? At night vs.
+during the day? And the corollary: How cold is my basement? If I dig a
+deeper basement, can I save on heating and cooling? (I&#8217;m very cheap.)
+Well, we want to know the temperature distribution <em>T</em> of the ground as
+a function of time <em>t</em> and position <em>x</em>. So some googlin&#8217; or previous
+knowledge shows that we need to solve the <a href="http://en.wikipedia.org/wiki/Heat_equation">heat
+equation</a>. For our purposes,
+we can treat the Earth as flat (I don&#8217;t plan on digging a basement deep
+enough to see the curvature of the Earth), so we can assume the
+temperature only changes with the depth into the ground <em>x</em>: <mathjax>$$ \\frac
+{\\partial T}{\\partial t} = a \\frac {\\partial\^2 T} {\\partial x\^2}
+\\qquad (1) $$</mathjax> where <em>a</em> is the thermal diffusivity of the material, in
+units of square meters per second. It looks like we&#8217;re going to have to
+solve some partial differential equations! Or will we? We can get a very
+good estimate of how much the temperature changes with depth just by
+dimensional analysis. Let&#8217;s measure our time <em>t</em> in terms of a
+characteristic time of our problem <em>w</em> (it could be 1 year if we were
+trying to see the change in the ground&#8217;s temperature from summer to
+winter, or 1 day if we were looking at the change from day to night).
+Then we can write: <mathjax>$$ \\frac {\\partial T } {\\partial t} = \\frac 1 w
+\\frac {\\partial T} {\\partial t/w} $$</mathjax> &#8230; plugging this in Eq. (1),
+rearranging, and calling <em>l</em>= sqrt(<em>w*a</em>) gives&#8230;. <mathjax>$$ \\frac
+{\\partial T}{\\partial (t/w)} = \\frac {\\partial \^2 T} {\\partial (x/
+l )\^2} $$</mathjax> Now let&#8217;s say we didn&#8217;t know how to or didn&#8217;t want to solve
+this equation. (Don&#8217;t worry, we do <span class="amp">&amp;</span> we will). From rearranging this
+equation, we see right away there is only one &#8220;length scale&#8221; in the
+problem, <em>l</em>. So if we had to guess, we could guess that the ground
+changes temperature a distance <em>l</em> into the ground. A quick look at
+Wikipedia for <a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal
+diffusivities</a> gives
+us the following table, for materials we&#8217;d find in the ground:
+Material
+<em>a</em>, mm\^2/s
+<em>l</em> (cm), <em>w</em> = 1 day
+<em>l</em> (cm), <em>w</em> = 1 year
+Polycrystalline Silica (glass, sand)
+0.83
+27 cm
+5.1 meters
+Crystalline Silica (quartz)
+1.4
+35
+6.6
+Sandstone
+1.15
+32
+6.0
+Brick
+0.52
+21
+4.0
+<a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil</a>
+0.3-1.25
+16-33
+3.1-6.3
+So we would expect that the temperature of the ground doesn&#8217;t change
+much on a daily basis a foot or so below the ground, and doesn&#8217;t change
+ever about 15-20 feet into the ground. Just to pat ourselves on the back
+for our skills at dimensional analysis, a quick check shows that
+<a href="http://en.wikipedia.org/wiki/Permafrost#Time_to_form_deep_permafrost">permafrost</a>
+penetrates 14.6 feet into the ground after 1 year. So our dimensional
+estimates looks pretty good! In the next few days I&#8217;ll solve this
+equation exactly and throw up a few pretty graphs, and maybe talk a
+little about <span class="caps">PDE</span>&#8217;s and Fourier series in the&nbsp;process.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/how-cold-is-the-ground-.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2012-05-18T00:20:00" pubdate>Fri 18 May 2012</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/.html"></a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

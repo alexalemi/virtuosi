@@ -1,592 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - dice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>dice - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: dice</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/breaking-intuition.html"><time datetime="2010-09-19T16:52:00" pubdate>Sun 19 September 2010</time> Breaking&nbsp;Intuition</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/breaking-intuition.html"
-                                        rel="bookmark"
-                                        title="Permalink to Breaking&nbsp;Intuition">
-                                        Breaking&nbsp;Intuition
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/breaking-intuition.html"
-                                    data-text="Breaking&nbsp;Intuition"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-09-19T16:52:00">
-        <i class="icon-calendar"></i>Sun 19 September 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/bohn.html"><i class="icon-user"></i>Bohn</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/nontransitive.html"><i class="icon-tag"></i>nontransitive</a>
-	<a href="../tag/bohn.html"><i class="icon-tag"></i>Bohn</a>
-	<a href="../tag/intuition.html"><i class="icon-tag"></i>intuition</a>
-	<a href="../tag/dice.html"><i class="icon-tag"></i>dice</a>
-	<a href="../tag/witchcraft.html"><i class="icon-tag"></i>witchcraft</a>
-	<a href="../tag/logic.html"><i class="icon-tag"></i>logic</a>
-</footer><!-- /.post-info -->                </div>
-                <p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298"></span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">When  I walked into my first day of physics class in high school, I carried  with me a set of ideas which I learned from simply observing and  interacting with the world.  In fact everyone builds up what they  believe to be intuitive concepts, whether it be in science, math, or any  other field.  Without any scientific training whatsoever, we begin to  build&nbsp;intuition.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">If you let go of a ball in the air, what will&nbsp;happen?  </span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">If you try to run on the ice of a frozen lake, will it be easier than running on the&nbsp;sidewalk?</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">If you stand in the sun and on the ground you see a strange dark misshapen copy of yourself imitating your every move&#8230; who is following&nbsp;you?</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Unfortunately  we run into an issue when our intuition disagrees with experimental  results or someone else’s intuition.  At that point, it is essential to  break down and analyze our intuition to find where any problems in our  logic may exist.  This process of continually breaking down and  analyzing intuition is key to progressing in&nbsp;science.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"><a name='more'></a></span></p>
-<p><a href="http://4.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ5DVIGsPI/AAAAAAAAABU/-22lS-Cq6_U/s1600/ThreeDice.jpg"><img style="float: right; margin: 0pt 0pt 10px 10px; cursor: pointer; width: 320px; height: 266px;" src="http://4.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ5DVIGsPI/AAAAAAAAABU/-22lS-Cq6_U/s320/ThreeDice.jpg" alt="" id="BLOGGER_PHOTO_ID_5518731491506827506" border="0" /></a><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">Let&#8217;s  take a look at a simple dice game.  The rules of the game dictate that  you pick a die first, then I pick a die, then we roll together 100 times  (</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: italic; text-decoration: none; vertical-align: baseline;">we’re</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"> really bored, apparently).  The winner is the person who rolls</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: italic; text-decoration: none; vertical-align: baseline;"> a</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">  higher number more times in 100 rolls.  The catch is that the numbers  are not the standard 1-6 on each die, but a magic set of numbers which  may repeat any number from 1-6 as many times as desired, for example {1,  2, 3, 4, 5,&nbsp;5}.  </span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"><span class="dquo">&#8220;</span>Sounds easy</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: italic; text-decoration: none; vertical-align: baseline;">,&#8221;</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"> you say, as you pick up the yellow die.  I choose blue.  We</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: italic; text-decoration: none; vertical-align: baseline;"> </span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">roll</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: italic; text-decoration: none; vertical-align: baseline;">, </span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">and  I win 74 out of 100 times.  &#8220;Obviously the blue die is better, give me  that one,&#8221; you say.  I proceed to pick up the green die, lo and behold, I  win 63 out of 100 times.  &#8220;Okay okay, I&#8217;ve got the hang of it now.   Clearly the green die is better than all of the rest.&#8221;  I choose the  yellow die and win 65 out of 100 times.  In a fit of rage you proclaim  &#8220;witchcraft&#8221; and storm off for your witch-hunt&nbsp;gear.</p>
-<p></span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">There  is no deception here with the exception of logic, the younger sister of  witchcraft.  It is actually an interesting challenge to try to come up  with a set of numbers which will yield the following&nbsp;result:</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">The probability of the value on the blue die being higher than the value on the yellow die is greater than&nbsp;1/2.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">The probability of the value on the green die being higher than the value on the blue die is greater than&nbsp;1/2.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">The probability of the value on the yellow die being higher than the value on the green die is greater than&nbsp;1/2.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; text-decoration: none; vertical-align: baseline;">There are definitely a multitude of possible solutions</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">, so I encourage you to attempt </span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; text-decoration: none; vertical-align: baseline;">to find one</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"> using only numbers 1-6 before scrolling&nbsp;down.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Got a&nbsp;solution?</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Let&#8217;s take a look at the following&nbsp;dice:</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Yellow : {1, 4, 4, 4, 4,&nbsp;4}</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Blue :   {2, 2, 2, 5, 5,&nbsp;5}</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">Green :  {3, 3, 3, 3, 3,&nbsp;6}</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">I  should note that my solution is set up to have no ties, which makes the  analysis a bit more straightforward.  It is certainly possible to come  up with interesting solutions which allow&nbsp;ties. </span></p>
-<p><a href="http://1.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ436UNErI/AAAAAAAAABM/m-BpJNofQFk/s1600/Screen+shot+2010-09-19+at+4.10.27+PM.png"><img style="float: right; margin: 0pt 0pt 10px 10px; cursor: pointer; width: 168px; height: 363px;" src="http://1.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ436UNErI/AAAAAAAAABM/m-BpJNofQFk/s320/Screen+shot+2010-09-19+at+4.10.27+PM.png" alt="" id="BLOGGER_PHOTO_ID_5518731295331259058" border="0" /></a><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">The  chart on the right shows how each die compares to the others.  The  color of each square indicates the winner when the number of the same  row and column are compared.  We can see that blue beats yellow 21 out  of 36 times, green beats blue 21 out of 36 times, and yellow beats green  25 out of 36 times.  So this combination of dice will show the  non-transitive effect we were looking&nbsp;for.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">So  I explain this “sorcery” to you, before you try to burn me at the stake  for being a witch, and you calm down.  Now I tell you that I’d like to  try a new game.  I select two dice of the same color, then you get to  select two dice of the same color, then we roll both pairs 100 times.   The winner this time is the person who rolls a higher total, the sum of  their two dice, more times in 100&nbsp;rolls.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">I  select two yellow dice.  After learning of my trick, you decide to pick  two blues and proceed to lose 60 out of 100 times.  You declare, “‘tis  but a statistical error, let’s have another go!” I select two blues and  you, two greens.  I win again!  Just to rub it in, I choose green and  you choose yellow, and I win once&nbsp;again.  </span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">Softly  weeping, you listen as I explain that the probabilities have now  switched!  The chart on the right shows the different sums that are  possible for a given set of colored dice.  When you look</span><a href="http://3.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ4wlSQh4I/AAAAAAAAAA0/p69QSdtqFdc/s1600/Screen+shot+2010-09-19+at+4.10.38+PM.png"><img style="float: right; margin: 0pt 0pt 10px 10px; cursor: pointer; width: 155px; height: 349px;" src="http://3.bp.blogspot.com/_CPJjnXOJ-mQ/TJZ4wlSQh4I/AAAAAAAAAA0/p69QSdtqFdc/s320/Screen+shot+2010-09-19+at+4.10.38+PM.png" alt="" id="BLOGGER_PHOTO_ID_5518731169426868098" border="0" /></a><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298"> at the possible  sum 4 for the blue dice, you see that 4 can meet up with 2 a total of  nine times, with blue w</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">in</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">ning each, 4 can meet up with 5 a total of 90  times with yellow winning each, and  can meet up with 8 a total of 225  times with yellow winning each.  So the value in each cell is the number  of times each match</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">-up can occur, with the color of the cell showing  who will win each match-up.  There are 6^4 = 1296 possibilities, so  winning half corresponds to&nbsp;648.</span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">This  dice trick is an example of non-transitive logic, which can certainly  be a non-intuitive topic (Stay tuned for some non-transitive logic  involving coins!).  In this case, you must break your intuition that  there must be one “best”&nbsp;die.  </span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;"></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">In  science, it’s a great idea to try to look for other examples of the  behavior you are observing to help reinforce what you’ve learned.  It  turns out that one of the most basic schoolyard games invo</span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;">lves  non-transitive logic!  In the game of rock, paper, scissors, we find  that rock crushes scissors, scissors cuts paper, and paper covers rock.   This is analogous to the behavior of our special dice, and I believe  makes the logic much easier to&nbsp;understand.</p>
-<p></span></p>
-<p><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline;" id="internal-source-marker_0.5041676977831298">Compare against your intuition, break down and analyze, build up and&nbsp;reinforce.</span></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/breaking-intuition.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

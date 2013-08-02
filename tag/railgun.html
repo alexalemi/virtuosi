@@ -1,614 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - railgun</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>railgun - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: railgun</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/railguns.html"><time datetime="2010-04-07T16:01:00" pubdate>Wed 07 April 2010</time> Railguns</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/railguns.html"
-                                        rel="bookmark"
-                                        title="Permalink to Railguns">
-                                        Railguns
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/railguns.html"
-                                    data-text="Railguns"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-07T16:01:00">
-        <i class="icon-calendar"></i>Wed 07 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/toy-physics.html"><i class="icon-tag"></i>toy physics</a>
-	<a href="../tag/railgun.html"><i class="icon-tag"></i>railgun</a>
-	<a href="../tag/model.html"><i class="icon-tag"></i>model</a>
-</footer><!-- /.post-info -->                </div>
-                <h2><span class="Apple-style-span" style="font-weight: normal;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">So me and Jesse got to thinking today about Railguns.  Every year in Physics 213 a common homework problem is a rather simple model of a railgun.  We tried to think about a more realistic model.  We simulated a rail connected to a voltage source with a limiting resistor, moving under its own magnetic field with a&nbsp;back-emf.  </span></span></span></h2>
-
-<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S7zoATPE26I/AAAAAAAAAIY/Gdi3rZBkdSI/s1600/speed2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="255" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S7zoATPE26I/AAAAAAAAAIY/Gdi3rZBkdSI/s400/speed2.png" width="400" /></a></div>
-
-<div>Short answer:  Doesn&#8217;t work very well if you limit the current, but works great if you dump a <span class="caps">MA</span> or so down the wire.  </div>
-
-<div>
 </div>
-
-<div>See the full solution after the jump.</div>
-
-<div><a name='more'></a></div>
-
-<h3>Setup</h3>
-
-<p>Imagine you have two closely spaced conducting rails which you connect to a voltage source.  Laid across these two rails is another piece of conductor.  The first thing to notice is that we expect the conductor, if we assume it can slide along the rails without friction, will be compelled to move because of the magnetic force caused by the magnetic field from the rails acting on the current through the&nbsp;segment.</p>
-<p>Lets be quantitative, our voltage source provides and emf V.  The rails are seperated by some distance L.  The initial position of the slug (as it will be termed) is <mathjax>$x_0$</mathjax></p>
-<p>We are interested in the motion of the slug.  It will feel a force
-<mathjax>$$ F = I \int B \cdot dl $$</mathjax></p>
-<p>The current being the current that flows through the circuit.  The important contributions to the current is the emf of the source, the resistivity of the rails and slug, and the back emf induced by the motion of the slug.  I.e. our equation for the circuit takes the form
-<mathjax>$$ V - I\lambda( L + 2x ) - \frac{d}{dt} \int B dA = 0 $$</mathjax></p>
-<p>We need to approximate the magnetic field acting on the slug.  We will treat this magnetic field as originating wholly from the rails, which we will treat as semi-infinite wires.  This approximation should be good in the limit that <mathjax>$L \gg x_0$</mathjax></p>
-<p>The magnetic field of a semi-infinite wire is
-<mathjax>$$ B = \frac{\mu_0}{4\pi} \frac{I}{r} $$</mathjax>
-so our magnetic field acting on the slug, if we treat <mathjax>$z=0$</mathjax> to be at the bottom rail and <mathjax>$z=L$</mathjax> to be at the top is given by
-<mathjax>$$ B = \frac{\mu_0}{4\pi}I \left( \frac{1}{z} + \frac{1}{L-z} \right) $$</mathjax></p>
-<p>We can calculate the influence of this field on the slug. Of course if we integrate this field from 0 to L it will blow up, so we need to set some cutoff, <mathjax>$R$</mathjax> which will stand in for the fact that our wires have some finite thickness.  We proceed:
-<mathjax>$$ \int B\ dl =  \frac{\mu_0}{4\pi} I \int_{R}^{1-R} \frac{1}{z} + \frac{1}{L-z} \ dz =  \frac{\mu_0}{4\pi} I \int_{\epsilon}^{1-\epsilon} \frac{1}{\xi} + \frac{1}{1-\xi} \ d\xi $$</mathjax>
-where I have non dimensionalized the integral with:
-<mathjax>$$ \epsilon = R/L $$</mathjax>
-We obtain
-<mathjax>$$ \int B\ dl = \frac{\mu_0}{4\pi}  \left[ 2 \log \left( 1/\epsilon - 1 \right)  \right] I \equiv \kappa I $$</mathjax></p>
-<p>This gives us the force on our slug
-<mathjax>$$ F = \kappa I^2 $$</mathjax>
-as well as an approximation for the magnetic flux if we assume that this field approximation works for the length of the rails (up to the slug)
-<mathjax>$$ \int B \ dA = \kappa I x $$</mathjax></p>
-<p>So that we can gather our circuit&nbsp;equation</p>
-<p><mathjax>$$ V - I\lambda( L + 2x ) - \kappa \frac{d}{dt}(I x)  = 0 $$</mathjax>
-and the equation of motion for our slug
-<mathjax>$$ m \ddot x = \kappa I^2 $$</mathjax></p>
-<p>Lets nondimensionalize these equations with
-<mathjax>$$ x = L \chi $$</mathjax>
-<mathjax>$$ x_0 = f L $$</mathjax>
-<mathjax>$$ I = \frac{V}{r + \lambda L (1+ 2f)} \Phi \equiv I_0 \Phi $$</mathjax>
-marking the initial current that will flow through the slug.
-<mathjax>$$ t = \frac{ \kappa}{2 \lambda  } \tau $$</mathjax>
-giving a characteristic&nbsp;time.</p>
-<p>Putting it all together, our differential equations become much simpler.
-<mathjax>$$ f -  \chi   -  \frac{d}{d\tau} \left(  \Phi \chi \right) = 0 $$</mathjax>
-<mathjax>$$ \frac{d^2 \chi}{d\tau^2} = \beta \Phi^2 $$</mathjax>
-<mathjax>$$ \beta = \frac{ \kappa^3 I_0^2 }{ 4 m L \lambda^2 } $$</mathjax>
-So that our system is specified completely by the dimensionless constants f, <span class="Apple-style-span" style="font-family: sans-serif; font-size: 13px; line-height: 19px;">β,<span class="Apple-style-span" style="font-family: 'Times New Roman'; font-size: medium; line-height: normal;"> f having something to say about the initial geometry of our system, and <span class="Apple-style-span" style="font-family: sans-serif; font-size: 13px; line-height: 19px;">β<span class="Apple-style-span" style="font-family: 'Times New Roman'; font-size: medium; line-height: normal;"> speaking to the relative mass of the&nbsp;slug.</span></span></span></span></p>
-<h3>Analysis </h3>
-
-<p>These coupled nonlinear differential equations are not easily solved, but by taking the time to nondimensionalize them, we can integrate them numerically.  Lets suppose our rails are separated by 1 cm, and our f is taken to be 10 or so (remember the larger f, the better our approximation for the field).  And for our material properties, lets take gauge 0 copper wire, i.e. I will use its radius, mass density, and conductivity at room temperature.  Lets make the voltage supply be a kilovolt (non unreasonable), and lets choose the limiting resistor in order to keep the current in the gauge 0 wire under its specification: 170 amps.  Doing all of this, we have
-<mathjax>$$ \beta \approx 5.4 \times 10^{-7} $$</mathjax>
-<mathjax>$$ f = 10 $$</mathjax>
-and for interest our characteristic time is 112 microseconds or so, the mass of our slug is about 5 grams.  Our average magnetic field is about 0.07 gauss/amp between the rails, so that our starting field is about 12&nbsp;gauss.</p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/S7zhbsaAdVI/AAAAAAAAAHg/SfKB5NoR0MU/s1600/speed.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="252" src="http://1.bp.blogspot.com/_YOjDhtygcuA/S7zhbsaAdVI/AAAAAAAAAHg/SfKB5NoR0MU/s400/speed.png" width="400" /></a></div>
-
-<div class="separator" style="clear: both; text-align: center;">
 </div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<p><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/S7zhsXUx6bI/AAAAAAAAAHo/k8rUQ3Jzovk/s1600/distance.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_YOjDhtygcuA/S7zhsXUx6bI/AAAAAAAAAHo/k8rUQ3Jzovk/s320/distance.png" /></a>
-<div class="separator" style="clear: both; text-align: center;">
-</div><div class="separator" style="clear: both; text-align: center;">
-</div><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhtcp6s0I/AAAAAAAAAHw/HfWWKmCPnwE/s1600/force.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhtcp6s0I/AAAAAAAAAHw/HfWWKmCPnwE/s320/force.png" /></a>
-<div class="separator" style="clear: both; text-align: center;">
-</div><div class="separator" style="clear: both; text-align: center;">
-</div><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhu4MwwGI/AAAAAAAAAH4/ZPuxGwcM8dA/s1600/power.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhu4MwwGI/AAAAAAAAAH4/ZPuxGwcM8dA/s320/power.png" /></a>
-<div class="separator" style="clear: both; text-align: center;">
-</div><div class="separator" style="clear: both; text-align: center;">
-</div><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhw6ZggNI/AAAAAAAAAIA/FJv8lWnysm8/s1600/current.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zhw6ZggNI/AAAAAAAAAIA/FJv8lWnysm8/s320/current.png" /></a></p>
-<h3>Conclusions </h3>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<p>So it looks like our Railgun doesn&#8217;t do very much at all.  In fact, its quite paltry, achieving very puny speeds.  What went wrong?  Well, it seems the biggest problem comes from limiting the maximum current that can go down our wire.  The truth is that if we want to really project some stuff forward, we&#8217;re either going to need much higher currents, or some external field.  You&#8217;ll notice that most of the action takes place over a very short time scale, so it could be that we could violate the rated currents of our wire.  If that&#8217;s the case, setting our failsafe resistor to zero, I&#8217;ll just show two more graphs, that of the velocity and position of the&nbsp;slug: </p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zkf6uIunI/AAAAAAAAAIQ/sBrNFBEtvxY/s1600/speed2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zkf6uIunI/AAAAAAAAAIQ/sBrNFBEtvxY/s320/speed2.png" /></a></div>
-
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zkWOT_6vI/AAAAAAAAAII/9Hsws2QKEDw/s1600/dist2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S7zkWOT_6vI/AAAAAAAAAII/9Hsws2QKEDw/s320/dist2.png" /></a></div>
-
-<p>This is starting to look a lot more like a Railgun, unfortunately, it would draw a current of 15 <span class="caps">MA</span> to&nbsp;start!</p>
-<p>So the real question becomes, how much current can you dump into a copper wire in 0.1 ms or so.  15 <span class="caps">MA</span> is a lot and would certainly melt the wire, but would it melt the wire in such a short time?  If not, then it looks like we could get some real kick out of our&nbsp;model. </p>
-<p>In fact, we know that railguns with some kick can be made.  According to <a href="http://en.wikipedia.org/wiki/Railgun">Wikipedia</a>, the <span class="caps">US</span> Navy has a railgun that can accelerate a 3.2 kg projectile at 7 times the speed of sound (~2.3 km/s).   Playing with my code, if I put in by hand a projectile mass of 3.2 kg, and reduce f to 1 (meaning we get a little more kick but our approximation of the field starts to really break down), I can get a final speed of about 2 km/s, which seems to be in relatively good agreement, but this only occurs if the current is ~100 <span class="caps">MA</span> for about 30&nbsp;microseconds.</p>
-<p>Moral of the story, if you want to build a railgun, you need to be willing to melt some&nbsp;copper.</p>
-<p>Attached is a Mathematica notebook used for the computation: <a href="http://docs.google.com/leaf?id=0B8Il0b2saix4YWFjYjM0MTEtMTNhZi00NWE3LTkxNzAtNmM5NTJkZjJlOWFl&amp;hl=en">here</a>.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/railguns.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

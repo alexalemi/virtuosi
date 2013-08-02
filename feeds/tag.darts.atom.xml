@@ -1,47 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.darts.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2011-01-13T16:29:00-05:00</updated><entry><title>Darts</title><link href="http://thephysicsvirtuosi.com/posts/darts.html" rel="alternate"></link><updated>2011-01-13T16:29:00-05:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2011-01-13:posts/darts.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"&gt;&lt;img border="0" height="295" width="293" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;Over break I went out with a buddy of mine and played some darts.  This got me to thinking, where exactly should someone aim in order to get the largest expected number of points?
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
-   Now, obviously when you are playing a game like &lt;a href="http://en.wikipedia.org/wiki/Cricket_(darts)"&gt;Cricket&lt;/a&gt;, where you should aim is fairly obvious, you are trying to hit particular numbers on the board, but in the most popular darts game -&lt;a href="http://en.wikipedia.org/wiki/Darts#Playing_darts"&gt;501&lt;/a&gt;, for most of the game you are just trying to accumulate points.  So, where should you shoot on the board to get the most points?  Well, something that I didn&amp;#8217;t quite realize before I started this adventure is that while the double bullseye in the center is worth 50 points, the triple 20 is worth more: 60&amp;nbsp;points.  &lt;/p&gt;
-&lt;p&gt;For the uninitiated, in games like 501 you score points based on where the dart falls.  The center is the bullseye, where the inner most circle is worth 50 and the ring around it is worth 25, after that you score depending on which of the pie slice things you fall in, the points being the number on the slice.  The little ring around the outside is worth double points, and the little ring at about half the board radius is worth triple&amp;nbsp;points.&lt;/p&gt;
-&lt;p&gt;So perhaps the triple 20 is where you should be aiming all the time.  But you&amp;#8217;ll notice that to the left and right of the 20 section are low numbers 1 and 5.  So you might suspect that if you can&amp;#8217;t throw all that accurately, you&amp;#8217;ll be paying a price for shooting at the triple&amp;nbsp;20.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.darts.atom.xml" rel="self"></link><id>/</id><updated>2011-01-13T16:29:00-05:00</updated><entry><title>Darts</title><link href="/posts/darts.html" rel="alternate"></link><updated>2011-01-13T16:29:00-05:00</updated><author><name>Alemi</name></author><id>tag:,2011-01-13:posts/darts.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Over break I went out with a buddy of mine and played some darts. This
+got me to thinking, where exactly should someone aim in order to get the
+largest expected number of points? Now, obviously when you are playing a
+game like &lt;a href="http://en.wikipedia.org/wiki/Cricket_(darts)"&gt;Cricket&lt;/a&gt;, where
+you should aim is fairly obvious, you are trying to hit particular
+numbers on the board, but in the most popular darts game
+-&lt;a href="http://en.wikipedia.org/wiki/Darts#Playing_darts"&gt;501&lt;/a&gt;, for most of
+the game you are just trying to accumulate points. So, where should you
+shoot on the board to get the most points? Well, something that I didn&amp;#8217;t
+quite realize before I started this adventure is that while the double
+bullseye in the center is worth 50 points, the triple 20 is worth more:
+60 points. For the uninitiated, in games like 501 you score points based
+on where the dart falls. The center is the bullseye, where the inner
+most circle is worth 50 and the ring around it is worth 25, after that
+you score depending on which of the pie slice things you fall in, the
+points being the number on the slice. The little ring around the outside
+is worth double points, and the little ring at about half the board
+radius is worth triple points. So perhaps the triple 20 is where you
+should be aiming all the time. But you&amp;#8217;ll notice that to the left and
+right of the 20 section are low numbers 1 and 5. So you might suspect
+that if you can&amp;#8217;t throw all that accurately, you&amp;#8217;ll be paying a price
+for shooting at the triple&amp;nbsp;20.&lt;/p&gt;
 &lt;h3&gt;The&amp;nbsp;Model&lt;/h3&gt;
-
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s1600/dartsdistsig1p0.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"&gt;&lt;img border="0" height="241" width="320" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s320/dartsdistsig1p0.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;In order to answer a question like that, we need to develop a model for dart throwing.  In this case, I thought it was safe to assume that dart throws are &lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;normally distributed&lt;/a&gt; about the place you aim, with some sigma determined by your skill&amp;nbsp;level.&lt;/p&gt;
-&lt;p&gt;To the left is an example of what normally-distributed dart throws look like when the aim is at the center, and with a 1 inch standard deviation in the throws.  The dashed line marks a one inch ring to give a sense of how scattered darts can be from 1 standard&amp;nbsp;deviation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s1600/dartsdistsig1p0.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s320/dartsdistsig1p0.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In order to answer a question like that, we need to develop a model for
+dart throwing. In this case, I thought it was safe to assume that dart
+throws are &lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;normally
+distributed&lt;/a&gt; about the
+place you aim, with some sigma determined by your skill level. To the
+left is an example of what normally-distributed dart throws look like
+when the aim is at the center, and with a 1 inch standard deviation in
+the throws. The dashed line marks a one inch ring to give a sense of how
+scattered darts can be from 1 standard&amp;nbsp;deviation.&lt;/p&gt;
 &lt;h3&gt;Results&lt;/h3&gt;
-
-&lt;p&gt;So, off I went, having drawn a dart board (to regulation) in Gimp, and coloring each section in gray scale according to its point values, I used python to perform all of the necessary computations (using primarily the ndimage package in scipy).  The result can be seen&amp;nbsp;below.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s1600/dartscircleplusdot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="301" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s400/dartscircleplusdot.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;This image shows the optimal position on the board to aim for as a function of how good of a player you are.  The rings denote the sigmas, and the dots the center point to aim for.  The colorscale gives a quantitative measure of the sigma, in&amp;nbsp;inches.  &lt;/p&gt;
-&lt;p&gt;As you can see, the best players should (and do according to youtube) aim for the triple 20, since they are good enough to hit it most of the time, but once you&amp;#8217;re throw is at about a 1 inch sigma, you should be aiming for the triple 19 in the bottom left.  As you can see on the numbered board at the top, the triple 19 is buffered on either side by the 3 and the 7, which are both 2 points above the 20 section&amp;#8217;s neighbors (1 and 5).  So as you might expect if you have a reasonable chance of hitting the sections to either side, the triple 19 offers a higher expected score in the long&amp;nbsp;run.  &lt;/p&gt;
-&lt;p&gt;The other limit we can understand is the limit of really bad throws.  If you have a nontrivial chance of missing the board altogether, then obviously you should just aim for the center of the board, in the hopes that you at least hit the&amp;nbsp;thing.  &lt;/p&gt;
-&lt;p&gt;But interestingly, in between the track that the optimal aiming point takes is a little interesting.  It tends to the center (as we should expect), but it takes a curvy sort of root along the bottom left quadrant of the board.&amp;nbsp;Neat.&lt;/p&gt;
+&lt;p&gt;So, off I went, having drawn a dart board (to regulation) in Gimp, and
+coloring each section in gray scale according to its point values, I
+used python to perform all of the necessary computations (using
+primarily the ndimage package in scipy). The result can be seen&amp;nbsp;below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s1600/dartscircleplusdot.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s400/dartscircleplusdot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This image shows the optimal position on the board to aim for as a
+function of how good of a player you are. The rings denote the sigmas,
+and the dots the center point to aim for. The colorscale gives a
+quantitative measure of the sigma, in inches. As you can see, the best
+players should (and do according to youtube) aim for the triple 20,
+since they are good enough to hit it most of the time, but once you&amp;#8217;re
+throw is at about a 1 inch sigma, you should be aiming for the triple 19
+in the bottom left. As you can see on the numbered board at the top, the
+triple 19 is buffered on either side by the 3 and the 7, which are both
+2 points above the 20 section&amp;#8217;s neighbors (1 and 5). So as you might
+expect if you have a reasonable chance of hitting the sections to either
+side, the triple 19 offers a higher expected score in the long run. The
+other limit we can understand is the limit of really bad throws. If you
+have a nontrivial chance of missing the board altogether, then obviously
+you should just aim for the center of the board, in the hopes that you
+at least hit the thing. But interestingly, in between the track that the
+optimal aiming point takes is a little interesting. It tends to the
+center (as we should expect), but it takes a curvy sort of root along
+the bottom left quadrant of the board.&amp;nbsp;Neat.&lt;/p&gt;
 &lt;h3&gt;Heat&amp;nbsp;Maps&lt;/h3&gt;
-
-&lt;p&gt;In order to get a little better of a feel for why the track takes the path it does, I decided to look at the heat maps for the expected score at every location on the board for a set of given sigmas.  So, in the images below, the colors above the board indicate the relative score expected if you aimed at that&amp;nbsp;point.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s1600/darts-sig0p25flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s200/darts-sig0p25flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Above is for a quarter inch sigma throw [Click to zoom].  Notice that the triple 20 is the place to hit, as&amp;nbsp;expected.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s1600/darts-sig0p50flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s200/darts-sig0p50flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Above is a half inch sigma throw.  The triple 20 is still in the lead, but not by a whole lot.  You can really see how if your aim is as good as a half inch sigma, you can really still see the triple spots as true&amp;nbsp;features.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s1600/darts-sig1p00flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s200/darts-sig1p00flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Above is a 1 inch sigma throw.  Now the lower left hand quadrant has taken over as the optimal place to throw.  Notice that both the triple 16 and triple 19 make decent targets.  The triple 14 also makes a showing, due probably to its large neighbors.
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s1600/darts-sig1p50flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s200/darts-sig1p50flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-Above is a 1.5&amp;#8221; sigma.  The triple 20 is nearly gone as a place of interest on the board, since we are no longer good enough to really capitalize on it.  The lower left hand portion of the board is the place to be.  We&amp;#8217;ve really sort of lost any distinct features of the triple spots, and now are just looking at quadrants of the board as a whole.  Our aim seems to tend to center a bit, as we are now in a little danger of falling off the&amp;nbsp;board.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s1600/darts-sig2p00flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s200/darts-sig2p00flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
+&lt;p&gt;In order to get a little better of a feel for why the track takes the
+path it does, I decided to look at the heat maps for the expected score
+at every location on the board for a set of given sigmas. So, in the
+images below, the colors above the board indicate the relative score
+expected if you aimed at that&amp;nbsp;point.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s1600/darts-sig0p25flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s200/darts-sig0p25flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is for a quarter inch sigma throw [Click to zoom]. Notice that the
+triple 20 is the place to hit, as&amp;nbsp;expected.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s1600/darts-sig0p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s200/darts-sig0p50flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a half inch sigma throw. The triple 20 is still in the lead,
+but not by a whole lot. You can really see how if your aim is as good as
+a half inch sigma, you can really still see the triple spots as true&amp;nbsp;features.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s1600/darts-sig1p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s200/darts-sig1p00flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1 inch sigma throw. Now the lower left hand quadrant has
+taken over as the optimal place to throw. Notice that both the triple 16
+and triple 19 make decent targets. The triple 14 also makes a showing,
+due probably to its large&amp;nbsp;neighbors.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s1600/darts-sig1p50flair.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s200/darts-sig1p50flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1.5&amp;#8221; sigma. The triple 20 is nearly gone as a place of
+interest on the board, since we are no longer good enough to really
+capitalize on it. The lower left hand portion of the board is the place
+to be. We&amp;#8217;ve really sort of lost any distinct features of the triple
+spots, and now are just looking at quadrants of the board as a whole.
+Our aim seems to tend to center a bit, as we are now in a little danger
+of falling off the&amp;nbsp;board.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s1600/darts-sig2p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s200/darts-sig2p00flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;At 2&amp;#8221; sigma, we can really only hope to aim&amp;nbsp;left-of-center.&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s1600/darts-sig2p50flair.png" imageanchor="1" style="margin-left:1em; margin-right:1em"&gt;&lt;img border="0" height="150" width="200" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s200/darts-sig2p50flair.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;At 2.5&amp;#8221; sigma, we really just want to hit the&amp;nbsp;board. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s1600/darts-sig2p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s200/darts-sig2p50flair.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At 2.5&amp;#8221; sigma, we really just want to hit the&amp;nbsp;board.&lt;/p&gt;
 &lt;h3&gt;Lesson&lt;/h3&gt;
-
 &lt;p&gt;So, now I know, personally, I really just ought to aim just left of&amp;nbsp;center.&lt;/p&gt;</summary><category term="fun"></category><category term="darts"></category><category term="python"></category></entry></feed>

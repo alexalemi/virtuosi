@@ -1,611 +1,316 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Futurama&nbsp;Physics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Futurama&nbsp;Physics - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Futurama&nbsp;Physics">
-                                        Futurama&nbsp;Physics
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-08-22T23:44:00">
-        <i class="icon-calendar"></i>Mon 22 August 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/orbits.html"><i class="icon-tag"></i>orbits</a>
-	<a href="../tag/hedonism-bot.html"><i class="icon-tag"></i>hedonism bot</a>
-	<a href="../tag/toto.html"><i class="icon-tag"></i>toto</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-6STZpSqRmJk/Tk1oSvdCgQI/AAAAAAAAAOc/M9wr0wJUlE8/s1600/global_warming.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://1.bp.blogspot.com/-6STZpSqRmJk/Tk1oSvdCgQI/AAAAAAAAAOc/M9wr0wJUlE8/s320/global_warming.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The rotting corpses of sunbeams cause global warming.</td></tr></tbody></table>
-
-<p>Good news, everyone!  While rummaging through all my old stuff at home, I found my long-lost copy of <i>Toto <span class="caps">IV</span></i>.  Huzzah for me!  This is entirely unrelated to what I wanted to talk about, but I have it on good authority that Toto&#8217;s <i><a href="http://www.youtube.com/watch?v=azVqekQBK8g">Africa</a></i> syncs up <i>really</i> well with this post [1].  I&#8217;ll tell you when to press&nbsp;play.</p>
-<p>Anyway, what I really wanted to talk about was a fairly well-posed problem in <i>Futurama.</i>  In the episode &#8220;Crimes of the Hot,&#8221; all of the Earth&#8217;s robots vent their various &#8220;exhausts&#8221; into the sky at the same time, using the thrust to push the Earth into an orbit slightly further away from the sun.  As a result of this new orbit, the year is made longer by &#8220;exactly one week.&#8221;  Anything that quantitative is pretty much asking to be analyzed.  Let&#8217;s explore this problem a bit more then, why&nbsp;not?</p>
-<p><a name='more'></a>[ <i>Those wishing to get the full aural experience of this post should press </i>play <i>on their cassette players &#8230; now ]</i>
-<i>
-</i>
-First, a little background.  In this episode, it is learned that all the robots (especially Hedonism Bot) emit the greenhouse gases responsible for Global Warming.  The previous solution (detailed <a href="http://www.youtube.com/watch?v=2taViFH_6_Y">here</a>) is no longer viable, so it is decided that all robots must be destroyed (especially Hedonism Bot).  The disembodied head of Richard Nixon rounds up all the world&#8217;s robots on the Galapagos [2] to have a &#8220;party&#8221; so that they may be destroyed by a giant space-based electromagnetic pulse cannon.  In a last-ditch effort to save the robots, Professor Farnsworth has all the robots blast their exhausts into the sky, using the thrust to push the Earth into an orbit further away from the sun, thus solving the problem of global warming once and for all.  As a result of changing the Earth&#8217;s orbit, the year is &#8220;exactly one week&nbsp;longer.&#8221;  </p>
-<p><span class="Apple-style-span" style="font-size: x-large;">First Pass&nbsp;Through</span></p>
-<p>Ok, so what can we say about the new orbit if all we know is that its orbital period is exactly one week longer?  Well, we know from our good buddy Kepler that the square of the period of a bound orbit is proportional to the cube of its semi-major axis [3],&nbsp;so</p>
-<p><mathjax>$$\tau^2 \propto a^3.$$</mathjax></p>
-<p>We already know the Earth&#8217;s period (1 year) and semi-major axis (1 <a href="http://en.wikipedia.org/wiki/Astronomical_unit"><span class="caps">AU</span></a>) before the robo-boost, so we can get rid of the proportionality by writing things in terms of the initial values.  In other&nbsp;words,</p>
-<p><mathjax>$$ \left(\frac{\tau}{1~\mbox{yr}}\right)^2=\left(\frac{a}{1~\mbox{AU}}\right)^3.$$</mathjax></p>
-<p>Alright, so we know that our new orbital period is 1 year + 1 week, or since there are 52 weeks in a year, 53/52 years.  So our new semi-major axis&nbsp;is</p>
-<p><mathjax>$$ a = \left(\frac{1 + 1/52~\mbox{yr}}{1~\mbox{yr}}\right)^{2/3}\mbox{AU}\approx1.013~\mbox{AU},$$</mathjax></p>
-<p>or a little over 1% larger than it is currently.  Fair enough.  So would this fix Global Warming for ever and ever?  Let&#8217;s&nbsp;see.</p>
-<p>The solar flux at some distance d is given&nbsp;by</p>
-<p><mathjax>$$ S = \frac{L_{\odot}}{4\pi d^2}, $$</mathjax></p>
-<p>where L is the luminosity of the sun.  So the ratio of the flux at the new semi-major axis [4] to that before the orbit was changed&nbsp;is</p>
-<p><mathjax>$$ \frac{S}{S_0}=\left(\frac{a_0}{a}\right)^2=\left(\frac{a}{1~\mbox{yr}}\right)^{-2}.$$</mathjax></p>
-<p><span class="caps">OK</span>, so we have the flux, but how do we relate this to temperature?  Well, we know that the power radiated by a blackbody of temperature T is given&nbsp;by</p>
-<p><mathjax>$$ P = \sigma A T^4, $$</mathjax></p>
-<p>where sigma is the Stefan-Boltzmann <a href="http://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law">constant</a>, A is the area of the emitting region and T is the temperature.  For a blackbody in equilibrium, the power coming in is going to be equal to the power going out.  The power coming in is just the solar flux times the cross-section area of Earth, given&nbsp;by</p>
-<p><mathjax>$$ P_{in} = S\times\pi R^2_{\oplus} $$</mathjax></p>
-<p>and the power going out is just that radiated by the Earth as a&nbsp;blackbody</p>
-<p><mathjax>$$ P_{out} =\sigma \times 4\pi R^2_{\oplus}\times T^4. $$</mathjax></p>
-<p>Equating the power in to the power out&nbsp;gives</p>
-<p><mathjax>$$ T = \left( \frac{S}{4\sigma}\right)^{1/4}. $$</mathjax></p>
-<p>Now we can find the ratio of the new average Earth temperature to the temperature before the orbital move.  We&nbsp;have</p>
-<p><mathjax>$$ \frac{T}{T_0} =\left( \frac{S}{S_0}\right)^{1/4}=\left( \frac{a_0}{a}\right)^{1/2}\approx0.994$$</mathjax></p>
-<p>If we take the initial average Earth temperature to be something like T = 300 K, then we find a new temperature of T = 298 K.  Huzzah, a whole 2 degrees&nbsp;cooler! </p>
-<p>That may not sound like a lot, but remember, that&#8217;s the mean global temperature.  Apparently, it only takes a few degrees increase in global average temperatures to make things a bit uncomfortable for people.  The <span class="caps">IPCC</span> <a href="http://en.wikipedia.org/wiki/Global_warming">indicates</a> that the average global surface temperature on Earth in the next century is likely to rise by about 1 to 2 degrees under optimistic scenarios or about 3 to 6 degrees under pessimistic scenarios.  So the robo-boost option is at least in the right ballpark here.&nbsp;Neat!</p>
-<p><span class="Apple-style-span" style="font-size: x-large;">How Big Is The&nbsp;Push?</span></p>
-<p>So how big of a push did the robots need to give the Earth to boost it out to this new orbit?  Is this possible?  Let&#8217;s find&nbsp;out!</p>
-<p>First we need to find out how the Earth&#8217;s velocity has changed.  We can do this by finding the change in energy.  The total energy of a bound orbit is given&nbsp;by</p>
-<p><mathjax>$$ E = -\frac{k}{2a}$$</mathjax></p>
-<p>where <i>a</i> is the semi-major axis of the orbit and <i>k </i>= <i>GMm</i>.  So the difference in Earth&#8217;s energy before and after the robo-boost&nbsp;is</p>
-<p><mathjax>$$ E_f - E_0 =-\frac{k}{2a_f}-\left(-\frac{k}{2a_0}\right)=\frac{k}{2a_0}\left(1-\frac{a_0}{a_f}\right).$$</mathjax></p>
-<p>But we also know that Earth&#8217;s energy in the orbit is given&nbsp;by</p>
-<p><mathjax>$$ E = -\frac{k}{r} + \frac{1}{2}mv^2, $$</mathjax></p>
-<p>so the difference in energy before and after&nbsp;is</p>
-<p><mathjax>$$ E_f - E_0 =\frac{1}{2}m\left(v^2_f-v^2_0\right), $$</mathjax></p>
-<p>where we have found the energies immediately before and immediately after the boost so Earth is pretty much at the same distance from the sun, so the potential energy terms&nbsp;cancel.</p>
-<p>Combining our expressions for the change in energy and solving for the final velocity, we&nbsp;find</p>
-<p><mathjax>$$ v_f = \left[\frac{GM_{\odot}}{a_0}\left(1-\frac{a_0}{a_f}\right)+v^2_0\right]^{1/2}.$$</mathjax></p>
-<p>Taking the initial orbital velocity of the Earth to be 30 km/s, we find that the final velocity of the Earth immediately after the robo-boost&nbsp;is</p>
-<p><mathjax>$$ v_f = 30.2~\mbox{km/s}$$</mathjax></p>
-<p>So the robots just need to give a &#8220;little&#8221; 200 m/s boost to the Earth, right?  Well, we are adding velocity vectors here, so it depends on which direction the robots are pushing.  The magnitude of the final velocity is given&nbsp;by</p>
-<p><mathjax>$$v_f = \sqrt{\left({\bf v_0}+{\bf \Delta v} \right)^2}=\sqrt{v^2_0+\Delta v^2-2v_0\Delta v \cos{\beta}},$$</mathjax></p>
-<p>where delta v is the boost in velocity caused by the robots and beta is the angle between the initial orbital motion of the Earth and the velocity boost from the&nbsp;robots. </p>
-<p>If they wanted to make it slightly easier on themselves, the robots would have boosted the Earth in the direction it was already moving.  That would make the cosine beta term equal to one and thus minimize the necessary boost.  However, in the show the robots appear to point their exhaust right at the sun (see figure below).  This is essentially at a 90 degree angle to the Earth&#8217;s orbital motion, so the cosine beta term goes to zero in our expression&nbsp;above. </p>
-<p>Plugging it all in we find that the magnitude of the robo-boost&nbsp;is</p>
-<p><mathjax>$$\Delta v \approx 3.5~\mbox{km/s}.$$</mathjax></p>
-<p>We see that this is a fair bit larger than the 0.2 km/s needed for a boost parallel to Earth&#8217;s initial&nbsp;velocity.</p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-w6j6RXF1QEo/TlFUG6hU8PI/AAAAAAAAAOg/lViVcBBpFSA/s1600/delta_v.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://4.bp.blogspot.com/-w6j6RXF1QEo/TlFUG6hU8PI/AAAAAAAAAOg/lViVcBBpFSA/s400/delta_v.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Robots blasting from the Galapagos (which now appear to be in China&#8230;)</td></tr></tbody></table>
-
-<p>Alright, so how much effort would it take to give that kind of boost to the Earth?  We can quantify this effort in terms of a force or in terms of the energy difference.  Let&#8217;s do&nbsp;both.</p>
-<p>For the force, we&nbsp;have</p>
-<p><mathjax>$$ F = \frac{\Delta p}{\Delta t}=\frac{M_{\oplus}\Delta v}{\Delta t}.$$</mathjax></p>
-<p>Here we are a little stuck unless we can figure out the duration of the robo-boost.  Watching the episode again, the robots are blasting up exhaust for about a minute but then the show cuts to commercial.  So we don&#8217;t really know how long they were pushing.  Let&#8217;s just say an hour, but we&#8217;ll leave the time in if we want to fiddle with&nbsp;that.</p>
-<p>Plugging in numbers, the total force&nbsp;is</p>
-<p><mathjax>$$ F = 6\times10^{24}~\mbox{N}\left(\frac{\Delta t}{1~\mbox{hr}}\right)^{-1}.$$</mathjax></p>
-<p>If this force is spread evenly over the billion robots present [5], then each robot would be applying a force&nbsp;of</p>
-<p><mathjax>$$ F = 6\times10^{15}~\mbox{N},$$</mathjax></p>
-<p>which is roughly equivalent to the force it would take to lift up Mount Everest&nbsp;[6].</p>
-<p>That wasn&#8217;t terribly helpful.  Let&#8217;s look at the work then instead.  The total work done by the robots to move the Earth&nbsp;is</p>
-<p><mathjax>$$ W = \frac{1}{2}M_{\oplus}\left(v^2_f - v^2_0\right) \approx 4\times10^{31}~\mbox{J}.$$</mathjax></p>
-<p>Well, that&#8217;s a large number.  Could a billion robots feasibly do that much work?  If the robots are each 100 kg, then if the mass of all billion robots were directly converted to energy, we would&nbsp;get</p>
-<p><mathjax>$$ E = mc^2 = 10^9\times10^2~\mbox{kg}\times\left(3\times10^8~\mbox{m/s}\right)^2 \approx 10^{28}~\mbox{J},$$</mathjax></p>
-<p>or less than a thousandth the total energy needed.  So it looks unlikely that the robots would be able to push the Earth, but that was to be&nbsp;expected.</p>
-<p><span class="Apple-style-span" style="font-size: x-large;">Changes to The&nbsp;Orbit</span></p>
-<div class="separator" style="clear: both; text-align: center;"></div>
-
-<p>Let&#8217;s take a look at how the robo-boost affects the entirety of the Earth&#8217;s new orbit.  In our first pass through the problem, we ignored the fact that the shape of the orbit changed and only focused on the new semi-major axis.  To see why we must also consider the changes to the &#8220;shape&#8221; of the orbit, take a look at the figure below. 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-3tRZVuztuF0/TlGMMLhegtI/AAAAAAAAAOo/3jzGbWvvM90/s1600/orbits.png" imageanchor="1"><img border="0" height="400" src="http://2.bp.blogspot.com/-3tRZVuztuF0/TlGMMLhegtI/AAAAAAAAAOo/3jzGbWvvM90/s400/orbits.png" width="400" /></a></div>In the figure, the initial orbit is plotted (black dashed line) as well as two new orbits that each have the appropriate semi-major axis so that the period of revolution is one year and one week.  The difference between the two final orbits comes from the robots pushing in different directions.  In the blue orbit, the boost was made in a direction radially outward from the Sun (that is, perpendicular to the orbital velocity of the Earth).  This is the case shown in the <i>Futurama </i>episode.  In the red orbit, the boost was made parallel to the orbital velocity of the Earth.  In each case, the boost was applied at the point labeled with an&nbsp;&#8220;X.&#8221; </p>
-<p>One thing that jumps out from this figure is that the Earth is always further away from the sun on the red orbit than it was on the initial (dashed black) orbit.  But on the blue orbit, the Earth is further away from the Sun than it was initially for only half the orbit.  On the other half, the blue orbit would actually make the Earth&#8217;s temperature <i>higher</i> than it was on the old&nbsp;orbit! </p>
-<p>The temperature calculation we made earlier should hold pretty well for the red orbit, since it is essentially a circle.  It would be a little more tricky for the blue orbit, as one would need to get a time-averaged value of the flux over the course of the whole orbit.  A hundred Quatloos to anyone that does the&nbsp;calculation.</p>
-<p><span class="Apple-style-span" style="font-size: x-large;">Wrap-Up</span></p>
-<p>So what have we found out here?  Well, it seems that there are certain scenarios in which boosting the Earth out to a new orbit with period of 1 year + 1 week could cool the Earth by a few degrees.  Granted, we have made some simplifications (the Earth is not a blackbody), but the general idea of the thing should still&nbsp;hold.</p>
-<p>I had some fun playing around with this problem and I thought it was neat that there was a good deal of information to get started with from the episode.  The <i>Futurama</i> people gave an exact period and at least a visual representation of the direction the robots apply their push.  So 600 Quatloos for the&nbsp;writers!</p>
-<p><span class="Apple-style-span" style="font-size: x-large;">Not Quite As Useless as Usual&nbsp;Footnotes</span></p>
-<p>[1] At least I think it says so if you play this <a href="http://www.youtube.com/watch?v=uUjIA3Rt7gk">song</a>&nbsp;backwards. </p>
-<p>[2] According to the Wikipedia page for the <a href="http://en.wikipedia.org/wiki/Crimes_of_the_Hot#Production">episode</a>, the location of the Galapagos for the party was chosen because the writers felt that it would be most convenient to push the Earth near the&nbsp;equator.</p>
-<p>[3] The semi-major axis of an ellipse is half of the longest line cutting through the center of the ellipse.  Likewise, the semi-minor axis is half of the shortest line drawn through the center of the ellipse.  Check <a href="http://mathworld.wolfram.com/Ellipse.html">this</a> out for some more fun stuff on&nbsp;ellipses.</p>
-<p>[4] This is technically incorrect, since the semi-major axis is measured from the center of the ellipse, but the sun is located on one of the foci.  However, this requires information on the eccentricity of the orbit, which we are currently glossing over right now.  Our method is then approximate, but becomes exact in the case where both orbits are circles.  The effect, however, is minor.  At worst, it is semi-minor.&nbsp;Zing!</p>
-<p>[5] My source for this billion robots number comes from Professor Farnsworth himself.  When it looks like the robots will all be destroyed the Professor says &#8220;A billion robot lives are about to be extinguished. Oh, the Jedis are going to feel this&nbsp;one!&#8221;</p>
-<p>[6] Well, sort of.  The height of Everest is ~10^4 m, so this gives a volume of ~10^12 m^3.  The density of most metals is around ~10 g/cm^3, which is ~10^4 kg/m^3.  This gives a mass of ~10^16 kg. The weight is then ~10^17 N.  Each robot exerts a force of ~10^16 N.  So not quite, but hey it was the first thing I thought of and it almost worked out so I&#8217;m sticking with&nbsp;it!</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/futurama-physics.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>Futurama&nbsp;Physics</h1>
+			<hr />
+<p><a href="http://1.bp.blogspot.com/-6STZpSqRmJk/Tk1oSvdCgQI/AAAAAAAAAOc/M9wr0wJUlE8/s1600/global_warming.png"><img alt="image" src="http://1.bp.blogspot.com/-6STZpSqRmJk/Tk1oSvdCgQI/AAAAAAAAAOc/M9wr0wJUlE8/s320/global_warming.png" /></a>
+  The rotting corpses of sunbeams cause global&nbsp;warming.</p>
+<hr />
+<p>Good news, everyone! While rummaging through all my old stuff at home, I
+found my long-lost copy of <em>Toto <span class="caps">IV</span></em>. Huzzah for me! This is entirely
+unrelated to what I wanted to talk about, but I have it on good
+authority that Toto&#8217;s
+<em><a href="http://www.youtube.com/watch?v=azVqekQBK8g">Africa</a></em> syncs up <em>really</em>
+well with this post [1]. I&#8217;ll tell you when to press play. Anyway, what
+I really wanted to talk about was a fairly well-posed problem in
+<em>Futurama.</em> In the episode &#8220;Crimes of the Hot,&#8221; all of the Earth&#8217;s
+robots vent their various &#8220;exhausts&#8221; into the sky at the same time,
+using the thrust to push the Earth into an orbit slightly further away
+from the sun. As a result of this new orbit, the year is made longer by
+&#8220;exactly one week.&#8221; Anything that quantitative is pretty much asking to
+be analyzed. Let&#8217;s explore this problem a bit more then, why not? [
+<em>Those wishing to get the full aural experience of this post should
+press</em>play <em>on their cassette players &#8230; now ]</em> <em><em> First, a little
+background. In this episode, it is learned that all the robots
+(especially Hedonism Bot) emit the greenhouse gases responsible for
+Global Warming. The previous solution (detailed
+<a href="http://www.youtube.com/watch?v=2taViFH_6_Y">here</a>) is no longer viable,
+so it is decided that all robots must be destroyed (especially Hedonism
+Bot). The disembodied head of Richard Nixon rounds up all the world&#8217;s
+robots on the Galapagos [2] to have a &#8220;party&#8221; so that they may be
+destroyed by a giant space-based electromagnetic pulse cannon. In a
+last-ditch effort to save the robots, Professor Farnsworth has all the
+robots blast their exhausts into the sky, using the thrust to push the
+Earth into an orbit further away from the sun, thus solving the problem
+of global warming once and for all. As a result of changing the Earth&#8217;s
+orbit, the year is &#8220;exactly one week longer.&#8221; First Pass Through Ok, so
+what can we say about the new orbit if all we know is that its orbital
+period is exactly one week longer? Well, we know from our good buddy
+Kepler that the square of the period of a bound orbit is proportional to
+the cube of its semi-major axis [3], so <mathjax>$$\\tau\^2 \\propto a\^3.$$</mathjax> We
+already know the Earth&#8217;s period (1 year) and semi-major axis (1
+<a href="http://en.wikipedia.org/wiki/Astronomical_unit"><span class="caps">AU</span></a>) before the
+robo-boost, so we can get rid of the proportionality by writing things
+in terms of the initial values. In other words, <mathjax>$$
+\\left(\\frac{\\tau}{1\~\\mbox{yr}}\\right)\^2=\\left(\\frac{a}{1\~\\mbox{AU}}\\right)\^3.$$</mathjax>
+Alright, so we know that our new orbital period is 1 year + 1 week, or
+since there are 52 weeks in a year, 53/52 years. So our new semi-major
+axis is <mathjax>$$ a = \\left(\\frac{1 +
+1/52\~\\mbox{yr}}{1\~\\mbox{yr}}\\right)\^{2/3}\\mbox{AU}\\approx1.013\~\\mbox{AU},$$</mathjax>
+or a little over 1% larger than it is currently. Fair enough. So would
+this fix Global Warming for ever and ever? Let&#8217;s see. The solar flux at
+some distance d is given by <mathjax>$$ S = \\frac{L\_{\\odot}}{4\\pi d\^2}, $$</mathjax>
+where L is the luminosity of the sun. So the ratio of the flux at the
+new semi-major axis [4] to that before the orbit was changed is <mathjax>$$
+\\frac{S}{S\_0}=\\left(\\frac{a\_0}{a}\\right)\^2=\\left(\\frac{a}{1\~\\mbox{yr}}\\right)\^{-2}.$$</mathjax>
+<span class="caps">OK</span>, so we have the flux, but how do we relate this to temperature? Well,
+we know that the power radiated by a blackbody of temperature T is given
+by <mathjax>$$ P = \\sigma A T\^4, $$</mathjax> where sigma is the Stefan-Boltzmann
+<a href="http://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law">constant</a>, A
+is the area of the emitting region and T is the temperature. For a
+blackbody in equilibrium, the power coming in is going to be equal to
+the power going out. The power coming in is just the solar flux times
+the cross-section area of Earth, given by <mathjax>$$ P\_{in} = S\\times\\pi
+R\^2\_{\\oplus} $$</mathjax> and the power going out is just that radiated by the
+Earth as a blackbody <mathjax>$$ P\_{out} =\\sigma \\times 4\\pi
+R\^2\_{\\oplus}\\times T\^4. $$</mathjax> Equating the power in to the power out
+gives <mathjax>$$ T = \\left( \\frac{S}{4\\sigma}\\right)\^{1/4}. $$</mathjax> Now we can
+find the ratio of the new average Earth temperature to the temperature
+before the orbital move. We have <mathjax>$$ \\frac{T}{T\_0} =\\left(
+\\frac{S}{S\_0}\\right)\^{1/4}=\\left(
+\\frac{a\_0}{a}\\right)\^{1/2}\\approx0.994$$</mathjax> If we take the initial
+average Earth temperature to be something like T = 300 K, then we find a
+new temperature of T = 298 K. Huzzah, a whole 2 degrees cooler! That may
+not sound like a lot, but remember, that&#8217;s the mean global temperature.
+Apparently, it only takes a few degrees increase in global average
+temperatures to make things a bit uncomfortable for people. The <span class="caps">IPCC</span>
+<a href="http://en.wikipedia.org/wiki/Global_warming">indicates</a> that the
+average global surface temperature on Earth in the next century is
+likely to rise by about 1 to 2 degrees under optimistic scenarios or
+about 3 to 6 degrees under pessimistic scenarios. So the robo-boost
+option is at least in the right ballpark here. Neat! How Big Is The
+Push? So how big of a push did the robots need to give the Earth to
+boost it out to this new orbit? Is this possible? Let&#8217;s find out! First
+we need to find out how the Earth&#8217;s velocity has changed. We can do this
+by finding the change in energy. The total energy of a bound orbit is
+given by <mathjax>$$ E = -\\frac{k}{2a}$$</mathjax> where </em>a</em> is the semi-major axis of the
+orbit and <em>k</em>= <em>GMm</em>. So the difference in Earth&#8217;s energy before and
+after the robo-boost is <mathjax>$$ E\_f - E\_0
+=-\\frac{k}{2a\_f}-\\left(-\\frac{k}{2a\_0}\\right)=\\frac{k}{2a\_0}\\left(1-\\frac{a\_0}{a\_f}\\right).$$</mathjax>
+But we also know that Earth&#8217;s energy in the orbit is given by <mathjax>$$ E =
+-\\frac{k}{r} + \\frac{1}{2}mv\^2, $$</mathjax> so the difference in energy before
+and after is <mathjax>$$ E\_f - E\_0
+=\\frac{1}{2}m\\left(v\^2\_f-v\^2\_0\\right), $$</mathjax> where we have found the
+energies immediately before and immediately after the boost so Earth is
+pretty much at the same distance from the sun, so the potential energy
+terms cancel. Combining our expressions for the change in energy and
+solving for the final velocity, we find <mathjax>$$ v\_f =
+\\left[\\frac{GM\_{\\odot}}{a\_0}\\left(1-\\frac{a\_0}{a\_f}\\right)+v\^2\_0\\right]\^{1/2}.$$</mathjax>
+Taking the initial orbital velocity of the Earth to be 30 km/s, we find
+that the final velocity of the Earth immediately after the robo-boost is
+<mathjax>$$ v\_f = 30.2\~\\mbox{km/s}$$</mathjax> So the robots just need to give a
+&#8220;little&#8221; 200 m/s boost to the Earth, right? Well, we are adding velocity
+vectors here, so it depends on which direction the robots are pushing.
+The magnitude of the final velocity is given by <mathjax>$$v\_f =
+\\sqrt{\\left({\\bf v\_0}+{\\bf \\Delta v}
+\\right)\^2}=\\sqrt{v\^2\_0+\\Delta v\^2-2v\_0\\Delta v
+\\cos{\\beta}},$$</mathjax> where delta v is the boost in velocity caused by the
+robots and beta is the angle between the initial orbital motion of the
+Earth and the velocity boost from the robots. If they wanted to make it
+slightly easier on themselves, the robots would have boosted the Earth
+in the direction it was already moving. That would make the cosine beta
+term equal to one and thus minimize the necessary boost. However, in the
+show the robots appear to point their exhaust right at the sun (see
+figure below). This is essentially at a 90 degree angle to the Earth&#8217;s
+orbital motion, so the cosine beta term goes to zero in our expression
+above. Plugging it all in we find that the magnitude of the robo-boost
+is <mathjax>$$\\Delta v \\approx 3.5\~\\mbox{km/s}.$$</mathjax> We see that this is a fair
+bit larger than the 0.2 km/s needed for a boost parallel to Earth&#8217;s
+initial&nbsp;velocity.</p>
+<hr />
+<p><a href="http://4.bp.blogspot.com/-w6j6RXF1QEo/TlFUG6hU8PI/AAAAAAAAAOg/lViVcBBpFSA/s1600/delta_v.png"><img alt="image" src="http://4.bp.blogspot.com/-w6j6RXF1QEo/TlFUG6hU8PI/AAAAAAAAAOg/lViVcBBpFSA/s400/delta_v.png" /></a>
+  Robots blasting from the Galapagos (which now appear to be in&nbsp;China&#8230;)</p>
+<hr />
+<p>Alright, so how much effort would it take to give that kind of boost to
+the Earth? We can quantify this effort in terms of a force or in terms
+of the energy difference. Let&#8217;s do both. For the force, we have <mathjax>$$ F =
+\\frac{\\Delta p}{\\Delta t}=\\frac{M\_{\\oplus}\\Delta v}{\\Delta t}.$$</mathjax>
+Here we are a little stuck unless we can figure out the duration of the
+robo-boost. Watching the episode again, the robots are blasting up
+exhaust for about a minute but then the show cuts to commercial. So we
+don&#8217;t really know how long they were pushing. Let&#8217;s just say an hour,
+but we&#8217;ll leave the time in if we want to fiddle with that. Plugging in
+numbers, the total force is <mathjax>$$ F =
+6\\times10\^{24}\~\\mbox{N}\\left(\\frac{\\Delta
+t}{1\~\\mbox{hr}}\\right)\^{-1}.$$</mathjax> If this force is spread evenly over
+the billion robots present [5], then each robot would be applying a
+force of <mathjax>$$ F = 6\\times10\^{15}\~\\mbox{N},$$</mathjax> which is roughly
+equivalent to the force it would take to lift up Mount Everest [6]. That
+wasn&#8217;t terribly helpful. Let&#8217;s look at the work then instead. The total
+work done by the robots to move the Earth is <mathjax>$$ W =
+\\frac{1}{2}M\_{\\oplus}\\left(v\^2\_f - v\^2\_0\\right) \\approx
+4\\times10\^{31}\~\\mbox{J}.$$</mathjax> Well, that&#8217;s a large number. Could a
+billion robots feasibly do that much work? If the robots are each 100
+kg, then if the mass of all billion robots were directly converted to
+energy, we would get <mathjax>$$ E = mc\^2 =
+10\^9\\times10\^2\~\\mbox{kg}\\times\\left(3\\times10\^8\~\\mbox{m/s}\\right)\^2
+\\approx 10\^{28}\~\\mbox{J},$$</mathjax> or less than a thousandth the total
+energy needed. So it looks unlikely that the robots would be able to
+push the Earth, but that was to be expected. Changes to The Orbit
+Let&#8217;s take a look at how the robo-boost affects the entirety of the
+Earth&#8217;s new orbit. In our first pass through the problem, we ignored the
+fact that the shape of the orbit changed and only focused on the new
+semi-major axis. To see why we must also consider the changes to the
+&#8220;shape&#8221; of the orbit, take a look at the figure below.
+<a href="http://2.bp.blogspot.com/-3tRZVuztuF0/TlGMMLhegtI/AAAAAAAAAOo/3jzGbWvvM90/s1600/orbits.png"><img alt="image" src="http://2.bp.blogspot.com/-3tRZVuztuF0/TlGMMLhegtI/AAAAAAAAAOo/3jzGbWvvM90/s400/orbits.png" /></a>
+In the figure, the initial orbit is plotted (black dashed line) as well
+as two new orbits that each have the appropriate semi-major axis so that
+the period of revolution is one year and one week. The difference
+between the two final orbits comes from the robots pushing in different
+directions. In the blue orbit, the boost was made in a direction
+radially outward from the Sun (that is, perpendicular to the orbital
+velocity of the Earth). This is the case shown in the <em>Futurama</em>episode.
+In the red orbit, the boost was made parallel to the orbital velocity of
+the Earth. In each case, the boost was applied at the point labeled with
+an &#8220;X.&#8221; One thing that jumps out from this figure is that the Earth is
+always further away from the sun on the red orbit than it was on the
+initial (dashed black) orbit. But on the blue orbit, the Earth is
+further away from the Sun than it was initially for only half the orbit.
+On the other half, the blue orbit would actually make the Earth&#8217;s
+temperature <em>higher</em> than it was on the old orbit! The temperature
+calculation we made earlier should hold pretty well for the red orbit,
+since it is essentially a circle. It would be a little more tricky for
+the blue orbit, as one would need to get a time-averaged value of the
+flux over the course of the whole orbit. A hundred Quatloos to anyone
+that does the calculation. Wrap-Up So what have we found out here? Well,
+it seems that there are certain scenarios in which boosting the Earth
+out to a new orbit with period of 1 year + 1 week could cool the Earth
+by a few degrees. Granted, we have made some simplifications (the Earth
+is not a blackbody), but the general idea of the thing should still
+hold. I had some fun playing around with this problem and I thought it
+was neat that there was a good deal of information to get started with
+from the episode. The <em>Futurama</em> people gave an exact period and at
+least a visual representation of the direction the robots apply their
+push. So 600 Quatloos for the writers! Not Quite As Useless as Usual
+Footnotes [1] At least I think it says so if you play this
+<a href="http://www.youtube.com/watch?v=uUjIA3Rt7gk">song</a> backwards. [2]
+According to the Wikipedia page for the
+<a href="http://en.wikipedia.org/wiki/Crimes_of_the_Hot#Production">episode</a>,
+the location of the Galapagos for the party was chosen because the
+writers felt that it would be most convenient to push the Earth near the
+equator. [3] The semi-major axis of an ellipse is half of the longest
+line cutting through the center of the ellipse. Likewise, the semi-minor
+axis is half of the shortest line drawn through the center of the
+ellipse. Check <a href="http://mathworld.wolfram.com/Ellipse.html">this</a> out for
+some more fun stuff on ellipses. [4] This is technically incorrect,
+since the semi-major axis is measured from the center of the ellipse,
+but the sun is located on one of the foci. However, this requires
+information on the eccentricity of the orbit, which we are currently
+glossing over right now. Our method is then approximate, but becomes
+exact in the case where both orbits are circles. The effect, however, is
+minor. At worst, it is semi-minor. Zing! [5] My source for this billion
+robots number comes from Professor Farnsworth himself. When it looks
+like the robots will all be destroyed the Professor says &#8220;A billion
+robot lives are about to be extinguished. Oh, the Jedis are going to
+feel this one!&#8221; [6] Well, sort of. The height of Everest is \~10\^4 m,
+so this gives a volume of \~10\^12 m\^3. The density of most metals is
+around \~10 g/cm\^3, which is \~10\^4 kg/m\^3. This gives a mass of
+\~10\^16 kg. The weight is then \~10\^17 N. Each robot exerts a force of
+\~10\^16 N. So not quite, but hey it was the first thing I thought of
+and it almost worked out so I&#8217;m sticking with&nbsp;it!</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/futurama-physics.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2011-08-22T23:44:00" pubdate>Mon 22 August 2011</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/orbits.html">orbits</a></li>
+			<li><a href="/tag/hedonism-bot.html">hedonism bot</a></li>
+			<li><a href="/tag/toto.html">toto</a></li>
+			<li><a href="/tag/scott-bakula.html">scott bakula</a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

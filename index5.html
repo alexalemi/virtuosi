@@ -1,726 +1,276 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="./theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="./theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="./theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="./theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="./theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png">
-
-    <link href="./" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="./feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="./index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="./category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="./category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="./archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
+		<article class="wrapper main">
+		<h1><a href="/posts/trigonometric-derivatives.html">Trigonometric&nbsp;Derivatives</a></h1>
+		<p>I was recently reading <a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/">The Endeavour</a> 
+where he responded to a post over at 
+<a href="http://mathmamawrites.blogspot.com/2013/02/derivatives-of-sine-and-cosine.html">Math Mama Writes</a>
+about teaching the derivatives of the trigonometric&nbsp;functions.</p>
+<p>I decided to weigh in on the&nbsp;issue.</p>
+<p>In my experience, 
+<a href="http://en.wikipedia.org/wiki/Calculus">Calculus</a> is always best taught
+in terms of infinitesimals, as in 
+<a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;printsec=frontcover&amp;dq=calculus+made+easy&amp;hl=en&amp;sa=X&amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;ved=0CD4Q6AEwAA">Thompson&#8217;s Book</a>, 
+(which I&#8217;ve <a href="/posts/four-fantastic-books-3-of-which-are-free.html">already talked about</a> ) 
+and <a href="http://en.wikipedia.org/wiki/Trigonometry">Trigonometry</a> is best taught using 
+the <a href="http://tricochet.com/math/pdfs/completetriangle.pdf">complete triangle</a>.
+Marrying these two together, we can give a simple geometric proof of the basic trigonometric&nbsp;derivatives:</p>
+<p><mathjax>$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$</mathjax></p>
+<p>Summed up on one diagram:
+<center>
+    <a href="/static/images/trigdiff.pdf">
+    <img src="/static/images/trigdiff.png" width=600px alt="Trigonometic Derivatives">
+    </a>
+</center></p>
+<h3>Short&nbsp;version</h3>
+<p>By looking at how the line <mathjax>$\sin \alpha$</mathjax> and <mathjax>$\cos \alpha$</mathjax> change when we change <mathjax>$\alpha$</mathjax> a little bit (<mathjax>$d\alpha$</mathjax>) and noting that we form a similar triangle, we know exactly what those lengths&nbsp;are.</p>
+ <a class="btn" href="/posts/trigonometric-derivatives.html">read more →</a>
+	</article>
 
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <div class="article">
-                <h1><a href="./posts/day-in-the-life-of-clicky.html">Day in the life of&nbsp;Clicky</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-06-01T16:34:00">
-        <i class="icon-calendar"></i>Wed 01 June 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/matt.html"><i class="icon-user"></i>Matt</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/clicky.html"><i class="icon-tag"></i>clicky</a>
-	<a href="./tag/autocorrelation.html"><i class="icon-tag"></i>autocorrelation</a>
-	<a href="./tag/fourier.html"><i class="icon-tag"></i>fourier</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Remember when you first learned about other planets and their many fun facts? You were probably bombarded by such truisms as: “Jupiter is approximately the mass of 318 Earths, has a orbital period that is 4,300 Earth days, is made out of pure love, and is mostly transparent.” Well, I was curious about what Clicky’s day was like in terms of Earth days. When did Clicky get to sleep, when did he eat dinner, what is his orbital radius and eccentricity? To do this, I looked at only the 3rd column of the data that you may or may not have downloaded yesterday from here. Starting out, it should be noted that this is not an ordinary time series where you have some value measured at given intervals. It is actually a series of time points at which a click was entered. I thought it would be most ...
-                        <a class="btn primary xsmall" href="./posts/day-in-the-life-of-clicky.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/clicky-data-v1-0.html">Clicky Data&nbsp;v1.0</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-05-31T11:36:00">
-        <i class="icon-calendar"></i>Tue 31 May 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/matt.html"><i class="icon-user"></i>Matt</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/clicky.html"><i class="icon-tag"></i>clicky</a>
-	<a href="./tag/not-absurdly-large-images.html"><i class="icon-tag"></i>not absurdly large images</a>
-	<a href="./tag/picopixels.html"><i class="icon-tag"></i>picopixels</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">As we sift through the Clicky data Corky presented yesterday, let us not forget the Clicky that came before. Let us not forget the Great Server Move of 2011 and the great pains we felt while waiting for Clicky to come back to us: Corky sat in his room crying into his pillow, Alex was pressing his arrow keys longingly, and I just couldn’t seem to get up in the morning. Let us not forget the many hours in which untold numbers of anonymous internet users tried in vain to spell simple words using only discrete steps on a finite lattice. Let us not forget the Great Server Crash that caused the physics department to be charged extra for data usage. Let us not forget Clicky v1.0. So today we remember him, our beloved Clicky v1.0, by releasing his data as well. It can be found close ...
-                        <a class="btn primary xsmall" href="./posts/clicky-data-v1-0.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/clickin-the-night-away.html">Clickin&#8217; the Night&nbsp;Away</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-05-31T00:07:00">
-        <i class="icon-calendar"></i>Tue 31 May 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/ungodly-large-images.html"><i class="icon-tag"></i>ungodly large images</a>
-	<a href="./tag/clicky.html"><i class="icon-tag"></i>clicky</a>
-	<a href="./tag/megapixels-srsly.html"><i class="icon-tag"></i>MEGAPIXELS (srsly)</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Hey, everybody! Do you remember Clicky [1]? Well, we finally got around to analyzing data, so here goes. But first, a brief summary. Matt, Alemi and I came up with the idea for Clicky in the beginning of April. Perhaps “idea” is a bit too generous… it was really just a passing thought: “Hey wouldn’t it be cool if we had an internet Ouija board?” It was just a stupid lunch-time discussion that wouldn’t have gone anywhere had Alemi and Matt not taken it as some sort of challenge. So after a few hours that night we had Clicky. To say we had some goal with Clicky would be an overstatement. But, if anything, we were kind of hoping to see some sort of Brownian motion. We figured if we had lots of people pulling on the same dot, some kind of Brownian walk would show up. This ...
-                        <a class="btn primary xsmall" href="./posts/clickin-the-night-away.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/anatomy-of-an-experiment-i-the-question.html">Anatomy of an Experiment I - The&nbsp;Question</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-05-05T21:06:00">
-        <i class="icon-calendar"></i>Thu 05 May 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/question.html"><i class="icon-tag"></i>question</a>
-	<a href="./tag/cryopreservation.html"><i class="icon-tag"></i>cryopreservation</a>
-	<a href="./tag/physics.html"><i class="icon-tag"></i>physics</a>
-	<a href="./tag/experiment.html"><i class="icon-tag"></i>experiment</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Warning: picture has little or no relation to this post. I realized the other day that I’ve seen a lot of people talk about research results, but it is much more rare that I see someone talk about how we do research. I think that may be because, to us as scientists, the process is second nature. We’ve been doing it for years. Other folks may be less familiar with the process though. With this in mind, I’m going to do a short series of posts focused on how we do an experiment. Not the results, not so much the physics, but the process that we go through to create, setup, and carry out an experiment. As my example I’ll use a short little experiment that I built from the ground up in the last few weeks, that I’m currently in the process of (hopefully ...
-                        <a class="btn primary xsmall" href="./posts/anatomy-of-an-experiment-i-the-question.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/end-of-the-earth-vi-nanobot-destruction.html">End of the Earth <span class="caps">VI</span>: Nanobot&nbsp;destruction</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-22T13:11:00">
-        <i class="icon-calendar"></i>Fri 22 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/fun.html"><i class="icon-tag"></i>fun</a>
-	<a href="./tag/nanobots.html"><i class="icon-tag"></i>nanobots</a>
-	<a href="./tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
-	<a href="./tag/earth-day.html"><i class="icon-tag"></i>earth day</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Let’s destroy the earth with technology. A while ago, I read the novel Postsingular by Rudy Rucker, and in the first chapter the Earth gets destroyed, and then undestroyed, and then the novel unfolds and the Earth’s likelihood is threatened again, and it looks like the Earth will be destroyed, but it isn’t. How does all of this craziness happen you might ask: nanobots! The story revolves around little self-replicating robots. The story explores what it would be like to live in a world where every surface on Earth was coated in little computers, all of which were networked together. It’s certainly a neat idea, but whenever you have self-replicating things, you need to worry a bit about what might happen if they get out of control. So, let’s assume we, evil scientists that we are, have managed to create a little self-replicating nanobot. This ...
-                        <a class="btn primary xsmall" href="./posts/end-of-the-earth-vi-nanobot-destruction.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/earth-day-special-post-apocalyptic-literature.html">Earth Day Special: Post-Apocalyptic&nbsp;Literature</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-22T10:30:00">
-        <i class="icon-calendar"></i>Fri 22 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/alex.html"><i class="icon-user"></i>Alex</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">At some point in elementary school I got into the habit of reading Franz Kafka’s The Metamorphosis every time that I got sick. I found it strangely comforting to be reminded that while I might have scarlet fever and be intermittently hallucinating about Mickey Mouse, at least I had not been (spoiler alert!) turned into a giant cockroach and disowned by my family. Today is Earth Day! The earth has seen better days, and I got too depressed googling various environmental problems to even come up with a suitable list of examples. However, look on the bright side: things could be much, much worse. To explore how much worse it could be, here’s a few of my favorite works of post-apocalyptic fiction - perfect reading for Earth Day. Skip past the cut to check them out. In no particular order, here’s some of my favorite post-apocalyptic fiction. Many ...
-                        <a class="btn primary xsmall" href="./posts/earth-day-special-post-apocalyptic-literature.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/end-of-the-earth-v-there-goes-the-sun.html">End of the Earth V: There Goes the&nbsp;Sun</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-22T09:42:00">
-        <i class="icon-calendar"></i>Fri 22 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/sun.html"><i class="icon-tag"></i>sun</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The Sun [photo courtesy of NASA] People that know me well know that I have a lot in common with Robert Frost. We both were born in March and we both employ rural New England settings to explore complex social and philosophical themes in our poetry. We also like the same rap groups. In honor of my literary doppelganger, I will now, having already had the world end in fire, try my hand at ice. Let’s try to answer the question: “If the sun blinks out of existence this instant, what is the temperature of the Earth as a function of time?” The Sun, in addition to being the King of Planets, is also what keeps us all warm and toasty and alive. What happens if we turn that off? Well, the Earth will cool by radiating its heat away into space. To see how long this would take ...
-                        <a class="btn primary xsmall" href="./posts/end-of-the-earth-v-there-goes-the-sun.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/end-of-the-earth-iv-shocking-destruction.html">End of the Earth <span class="caps">IV</span> - Shocking&nbsp;Destruction</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-22T07:54:00">
-        <i class="icon-calendar"></i>Fri 22 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/charge.html"><i class="icon-tag"></i>charge</a>
-	<a href="./tag/proton.html"><i class="icon-tag"></i>proton</a>
-	<a href="./tag/electron.html"><i class="icon-tag"></i>electron</a>
-	<a href="./tag/end-of-the-earth.html"><i class="icon-tag"></i>end of the earth</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Earth day is upon us once more. So many other namby-pamby bloggers out there (don’t hurt me!) are writing about how wonderful the earth is and how great earth day is. We here at The Virtuosi take a more hardline approach. Today I’m going to tell you how to destroy the earth. Completely and totally. Unlike last year’s methods, this one should work. In fact, this method is so simple that I can tell you what to do right now. Just tweak the charge on the electron so it is a bit out of balance with the charge on the proton. Just a little bit. How little a bit, you might ask? A very little bit. Really, this doesn’t sound hard. I mean, sure, you have to do it for all of the electrons in the earth, but we’re talking about a very very small ...
-                        <a class="btn primary xsmall" href="./posts/end-of-the-earth-iv-shocking-destruction.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/matt-raises-clicky-from-the-dead.html">Matt Raises Clicky From the&nbsp;Dead</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-08T13:52:00">
-        <i class="icon-calendar"></i>Fri 08 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/clicky.html"><i class="icon-tag"></i>clicky</a>
-	<a href="./tag/matt-magic.html"><i class="icon-tag"></i>matt magic</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">After languishing for four days in the digital hereafter, Clicky has been successfully raised from the dead (thanks to Matt). He can be found at his new (and bandwidth-unrestricted) home here. For the initial post about Clicky, see this earlier post. Enjoy!
-                        <a class="btn primary xsmall" href="./posts/matt-raises-clicky-from-the-dead.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="./posts/a-sense-of-scale-in-dollars-and-cents-.html">A Sense of Scale (in Dollars and&nbsp;Cents)</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-04-07T21:42:00">
-        <i class="icon-calendar"></i>Thu 07 April 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="./author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="./category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="./tag/large-numbers.html"><i class="icon-tag"></i>large numbers</a>
-	<a href="./tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="./tag/politics.html"><i class="icon-tag"></i>politics</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">I hate politics, but for some reason I obsessively read about it. I don’t know why I do this, but I assume it’s the same reason people slow down for car wrecks and pay to see the geek [1]. Anyway, the big thing in political news now is that if Congress can’t pass a budget [2] by the end of the day Friday, the government will shut down. Shutting down the government means that 800,000 federal employees will go without pay [3], lots of services will be put on hold and you won’t be able to go to the Smithsonian or the Grand Canyon. So it’s kind of a big deal. Since the ramifications of a government shutdown are so serious, there must be some really important disagreements holding it up, right? Right? A quick search (for example, here), shows that the big hold-up ...
-                        <a class="btn primary xsmall" href="./posts/a-sense-of-scale-in-dollars-and-cents-.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                
-                <div class="pagination">
-        <ul>
-                                                                <li class="prev"><a href="./index4.html">&larr; Previous</a></li>
-                                                        <li class=""><a href="./index.html">1</a></li>
-                                        <li class=""><a href="./index2.html">2</a></li>
-                                        <li class=""><a href="./index3.html">3</a></li>
-                                        <li class=""><a href="./index4.html">4</a></li>
-                                        <li class="active"><a href="./index5.html">5</a></li>
-                                        <li class=""><a href="./index6.html">6</a></li>
-                                        <li class=""><a href="./index7.html">7</a></li>
-                                        <li class=""><a href="./index8.html">8</a></li>
-                                        <li class=""><a href="./index9.html">9</a></li>
-                                        <li class=""><a href="./index10.html">10</a></li>
-                                        <li class=""><a href="./index11.html">11</a></li>
-                                        <li class=""><a href="./index12.html">12</a></li>
-                                        <li class=""><a href="./index13.html">13</a></li>
-                                        <li class=""><a href="./index14.html">14</a></li>
-                                        <li class=""><a href="./index15.html">15</a></li>
-                                        <li class=""><a href="./index16.html">16</a></li>
-                                                        <li class="next"><a href="./index6.html">Next &rarr;</a></li>
-                        </ul>
-        </div>
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="./feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="./feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="./category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="./category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="./tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="./tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="./tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="./tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="./tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="./tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./theme/js/jquery-1.7.2.min.js"></script>
-    <script src="./theme/js/bootstrap.min.js"></script>
-  </body>
+		<div class="wrapper main">		
+		<h3>More posts</h3>
+		<ol class="archive">
+			
+				<li class="clearfix"><a href="/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html" rel="bookmark" title="Permalink to Re-evaluating the values of the tiles in&nbsp;Scrabble™"><time datetime="2013-01-20T22:52:00" pubdate>Sun 20 January 2013</time> Re-evaluating the values of the tiles in&nbsp;Scrabble™</a></li>
+		
+				<li class="clearfix"><a href="/posts/the-skeleton-supporting-search-engine-ranking-systems.html" rel="bookmark" title="Permalink to The Skeleton Supporting Search Engine Ranking&nbsp;Systems"><time datetime="2013-01-01T19:09:00" pubdate>Tue 01 January 2013</time> The Skeleton Supporting Search Engine Ranking&nbsp;Systems</a></li>
+		
+				<li class="clearfix"><a href="/posts/when-will-the-earth-fall-into-the-sun-.html" rel="bookmark" title="Permalink to When will the Earth fall into the&nbsp;Sun?"><time datetime="2012-11-29T22:58:00" pubdate>Thu 29 November 2012</time> When will the Earth fall into the&nbsp;Sun?</a></li>
+		
+				<li class="clearfix"><a href="/posts/creating-an-earth.html" rel="bookmark" title="Permalink to Creating an&nbsp;Earth"><time datetime="2012-10-27T19:07:00" pubdate>Sat 27 October 2012</time> Creating an&nbsp;Earth</a></li>
+		
+				<li class="clearfix"><a href="/posts/a-curious-footprint.html" rel="bookmark" title="Permalink to A Curious&nbsp;Footprint"><time datetime="2012-08-04T04:56:00" pubdate>Sat 04 August 2012</time> A Curious&nbsp;Footprint</a></li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				</ol>
+		
+		<p>More posts in the <a href="/archives.html">archive</a>.</p>
+	</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

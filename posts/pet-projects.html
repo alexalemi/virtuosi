@@ -1,564 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Pet&nbsp;Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Pet&nbsp;Projects - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Pet&nbsp;Projects">
-                                        Pet&nbsp;Projects
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-14T12:38:00">
-        <i class="icon-calendar"></i>Sun 14 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="../tag/hello-kitty.html"><i class="icon-tag"></i>hello kitty</a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s1600/cat+drink+straw.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s320/cat+drink+straw.jpg" width="233" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">You&#8217;re doing it wrong!</td></tr></tbody></table>
-
-<p>Here at the Virtuosi, we have a very specific way of asking a very specific type of question that sounds anything but specific.  These are the &#8220;How come [blank]?&#8221; questions [1].  These are very simple questions that just about every four year old asks, but likely never get sufficiently answered.  To  get a feel for what I mean by these questions I provide the following translations of problems we have either considered or will consider:
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Q:  How come trees?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Translation:  How tall can trees be?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Q:  How come plants?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Translation:  Why are plants&nbsp;green?</p>
-<p></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">These are my very favorite types of questions because they are completely understandable by everyone and promise to have very interesting physics working behind the scenes.  So I&#8217;ve been thrilled to see two such questions considered by scientists lately that have also had a good run  in popular media.  They are:</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Q:  How come cats?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Translation:  How do cats&nbsp;drink?</p>
-<p>and</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Q:  How come dogs?</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Translation:  How do dogs shake?</div><div><a name='more'></a>
-The question of how cats drink was <a href="http://web.mit.edu/preis/www/mypapers/cats_Science_Express_Reis_Aristoff_Stocker.pdf">answered</a> recently by a few dudes from <span class="caps">MIT</span>, Virginia Tech and Princeton.  One morning, one of the guys was just watching his cat drink water and realized he couldn&#8217;t immediately figure out how it worked, so he decided to do a bit more research and <span class="caps">BAM</span>! science happens.  </div><div>
-</div><div>It turns out that the cat isn&#8217;t just scooping up the water with it tongue as one would probably have expected.  Instead the cat uses its tongue to effectively punch the water, drawing up a column of fluid.  They then bite this column and get a very itty bitty kitty mouthful of water.  Here it is in a slow motion video I stole from the Washington Post who stole it from&nbsp;Reuters:</p>
-<p>(You&#8217;ll probably have to sit through an ad,&nbsp;apologies)</p>
-<p></div><iframe frameborder="0" height="270px" marginheight="0" marginwidth="0" scrolling="no" src="http://specials.washingtonpost.com/mv/embed/?title=Taking%20the%20purrfect%20drink%20is%20all%20physics%20to%20a%20cat&amp;stillURL=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Fphoto%2F2010%2F11%2F11%2FPH2010111104841.jpg&amp;flvURL=%2Fmedia%2F2010%2F11%2F11%2F11112010-44v.m4v&amp;width=480&amp;height=270&amp;autoStart=false&amp;clickThru=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Fvideo%2F2010%2F11%2F11%2FVI2010111104784.html" width="480px"></iframe></p>
-<p>And here&#8217;s a series of stills that illustrates the same&nbsp;thing:</p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s1600/12cats_graphic-popup-v2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="232" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s400/12cats_graphic-popup-v2.jpg" width="400" /></a></div>
-
-<p>Not a cat person?  Well there was also a study done a month or so ago about dog shaking.  If you have a dog, you have almost certainly experienced the elegant way in which a wet dog un-wettafies itself.  Well, a few students at Georgia Tech were also familiar with this shaking and just happened to have a super high speed camera that could track water droplets.  I assume it only took a short period of time to put two and two together and <span class="caps">BAM</span>! science&nbsp;happens.</p>
-<p>In addition to providing the logical extension of the &#8220;spherical cow&#8221; joke to &#8220;dog of radius R&#8221;, the study also found some fairly surprising results.  If we are spinning a wet cylinder (i.e. dog), we would assume that the water is held on by some &#8220;sticking force.&#8221;  Then to shake off these droplets, we&#8217;d assume that the dog would have to shake fast enough that the centrifugal force would overcome the sticking force.  In other&nbsp;equations,</p>
-<p><mathjax>$$ F_{centrifugal} = m{\omega}^2 R $$</mathjax></p>
-<p>and</p>
-<p><mathjax>$$ F_{sticking} = C $$</mathjax></p>
-<p>So we would then expect the shaking frequency to be the frequency that gets those two guys to equal each other.  We would thus&nbsp;predict</p>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$${\omega} \sim R^{-0.5} $$</div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>Pet&nbsp;Projects</h1>
+			<hr />
+<p><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s1600/cat+drink+straw.jpg"><img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s320/cat+drink+straw.jpg" /></a>
+  You&#8217;re doing it&nbsp;wrong!</p>
+<hr />
+<p>Here at the Virtuosi, we have a very specific way of asking a very
+specific type of question that sounds anything but specific. These are
+the &#8220;How come [blank]?&#8221; questions [1]. These are very simple questions
+that just about every four year old asks, but likely never get
+sufficiently answered. To get a feel for what I mean by these questions
+I provide the following translations of problems we have either
+considered or will consider:
+Q: How come trees?
+Translation: How tall can trees be?
+Q: How come plants?
+Translation: Why are plants green?
+These are my very favorite types of questions because they are
+completely understandable by everyone and promise to have very
+interesting physics working behind the scenes. So I&#8217;ve been thrilled to
+see two such questions considered by scientists lately that have also
+had a good run in popular media. They are:
+Q: How come cats?
+Translation: How do cats drink? and
+Q: How come dogs?
+Translation: How do dogs shake?
+The question of how cats drink was
+<a href="http://web.mit.edu/preis/www/mypapers/cats_Science_Express_Reis_Aristoff_Stocker.pdf">answered</a>
+recently by a few dudes from <span class="caps">MIT</span>, Virginia Tech and Princeton. One
+morning, one of the guys was just watching his cat drink water and
+realized he couldn&#8217;t immediately figure out how it worked, so he decided
+to do a bit more research and <span class="caps">BAM</span>! science happens.
+It turns out that the cat isn&#8217;t just scooping up the water with it
+tongue as one would probably have expected. Instead the cat uses its
+tongue to effectively punch the water, drawing up a column of fluid.
+They then bite this column and get a very itty bitty kitty mouthful of
+water. Here it is in a slow motion video I stole from the Washington
+Post who stole it from Reuters: (You&#8217;ll probably have to sit through an
+ad, apologies)
+And here&#8217;s a series of stills that illustrates the same thing:
+<a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s1600/12cats_graphic-popup-v2.jpg"><img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s400/12cats_graphic-popup-v2.jpg" /></a>
+Not a cat person? Well there was also a study done a month or so ago
+about dog shaking. If you have a dog, you have almost certainly
+experienced the elegant way in which a wet dog un-wettafies itself.
+Well, a few students at Georgia Tech were also familiar with this
+shaking and just happened to have a super high speed camera that could
+track water droplets. I assume it only took a short period of time to
+put two and two together and <span class="caps">BAM</span>! science happens. In addition to
+providing the logical extension of the &#8220;spherical cow&#8221; joke to &#8220;dog of
+radius R&#8221;, the study also found some fairly surprising results. If we
+are spinning a wet cylinder (i.e. dog), we would assume that the water
+is held on by some &#8220;sticking force.&#8221; Then to shake off these droplets,
+we&#8217;d assume that the dog would have to shake fast enough that the
+centrifugal force would overcome the sticking force. In other equations,
+<mathjax>$$ F\_{centrifugal} = m{\\omega}\^2 R $$</mathjax> and <mathjax>$$ F\_{sticking} = C $$</mathjax> So
+we would then expect the shaking frequency to be the frequency that gets
+those two guys to equal each other. We would thus predict
+<mathjax>$${\\omega} \\sim R\^{-0.5} $$</mathjax>
+where the little squiggle just means that the frequency scales as the
+radius to the -0.5 power, with some constant multipliers out front that
+we don&#8217;t know so we just ignore.
+But this is not what the Ga Tech guys observed! Check out the video
+below:
+So there&#8217;s still something else going on that wasn&#8217;t in our simple
+model. But this is what makes science so exciting! Even something dogs
+and cats figured out long ago can have some really rich and interesting
+physics. So keep on asking those questions! Notes: [1] Interestingly
+enough, the first &#8220;How come [blank]?&#8221; questions we asked did not have
+the now canonical form. Instead, it was stated as &#8220;Why are cows?&#8221;. After
+much deliberation, we found that the solution is &#8220;Because milkshakes.&#8221;
+Fair&nbsp;enough.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/pet-projects.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2010-11-14T12:38:00" pubdate>Sun 14 November 2010</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/scott-bakula.html">scott bakula</a></li>
+			<li><a href="/tag/hello-kitty.html">hello kitty</a></li>
+		</ul>
+	</div>	</article>	
 </div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">where the little squiggle just means that the frequency scales as the radius to the -0.5 power, with some constant multipliers out front that we don&#8217;t know so we just ignore.  </div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But this is not what the Ga Tech guys observed!  Check out the video below:</div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div>
-
-<p><object height="385" width="480"><param name="movie" value="http://www.youtube.com/v/kvoKN1UfLn0?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/kvoKN1UfLn0?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object></p>
-<p>So there&#8217;s still something else going on that wasn&#8217;t in our simple model.  But this is what makes science so exciting!  Even something dogs and cats figured out long ago can have some really rich and interesting physics.  So keep on asking those&nbsp;questions!</p>
-<p>Notes:</p>
-<p>[1]  Interestingly enough, the first &#8220;How come [blank]?&#8221; questions we asked did not have the now canonical form.  Instead, it was stated as &#8220;Why are cows?&#8221;.  After much deliberation, we found that the solution is &#8220;Because milkshakes.&#8221;  Fair&nbsp;enough.  </p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/pet-projects.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

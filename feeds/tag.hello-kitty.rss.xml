@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.hello-kitty.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 14 Nov 2010 12:38:00 -0500</lastBuildDate><item><title>Pet Projects</title><link>/posts/pet-projects.html</link><description>&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s1600/cat+drink+straw.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAM4LfDLkI/AAAAAAAAAHU/-bbyWAodpc0/s320/cat+drink+straw.jpg" /&gt;&lt;/a&gt;
+  You&amp;#8217;re doing it&amp;nbsp;wrong!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Here at the Virtuosi, we have a very specific way of asking a very
+specific type of question that sounds anything but specific. These are
+the &amp;#8220;How come [blank]?&amp;#8221; questions [1]. These are very simple questions
+that just about every four year old asks, but likely never get
+sufficiently answered. To get a feel for what I mean by these questions
+I provide the following translations of problems we have either
+considered or will consider:
+Q: How come trees?
+Translation: How tall can trees be?
+Q: How come plants?
+Translation: Why are plants green?
+These are my very favorite types of questions because they are
+completely understandable by everyone and promise to have very
+interesting physics working behind the scenes. So I&amp;#8217;ve been thrilled to
+see two such questions considered by scientists lately that have also
+had a good run in popular media. They are:
+Q: How come cats?
+Translation: How do cats drink? and
+Q: How come dogs?
+Translation: How do dogs shake?
+The question of how cats drink was
+&lt;a href="http://web.mit.edu/preis/www/mypapers/cats_Science_Express_Reis_Aristoff_Stocker.pdf"&gt;answered&lt;/a&gt;
+recently by a few dudes from &lt;span class="caps"&gt;MIT&lt;/span&gt;, Virginia Tech and Princeton. One
+morning, one of the guys was just watching his cat drink water and
+realized he couldn&amp;#8217;t immediately figure out how it worked, so he decided
+to do a bit more research and &lt;span class="caps"&gt;BAM&lt;/span&gt;! science happens.
+It turns out that the cat isn&amp;#8217;t just scooping up the water with it
+tongue as one would probably have expected. Instead the cat uses its
+tongue to effectively punch the water, drawing up a column of fluid.
+They then bite this column and get a very itty bitty kitty mouthful of
+water. Here it is in a slow motion video I stole from the Washington
+Post who stole it from Reuters: (You&amp;#8217;ll probably have to sit through an
+ad, apologies)
+And here&amp;#8217;s a series of stills that illustrates the same thing:
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s1600/12cats_graphic-popup-v2.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TOAVxjml42I/AAAAAAAAAHc/06dcbYUsowM/s400/12cats_graphic-popup-v2.jpg" /&gt;&lt;/a&gt;
+Not a cat person? Well there was also a study done a month or so ago
+about dog shaking. If you have a dog, you have almost certainly
+experienced the elegant way in which a wet dog un-wettafies itself.
+Well, a few students at Georgia Tech were also familiar with this
+shaking and just happened to have a super high speed camera that could
+track water droplets. I assume it only took a short period of time to
+put two and two together and &lt;span class="caps"&gt;BAM&lt;/span&gt;! science happens. In addition to
+providing the logical extension of the &amp;#8220;spherical cow&amp;#8221; joke to &amp;#8220;dog of
+radius R&amp;#8221;, the study also found some fairly surprising results. If we
+are spinning a wet cylinder (i.e. dog), we would assume that the water
+is held on by some &amp;#8220;sticking force.&amp;#8221; Then to shake off these droplets,
+we&amp;#8217;d assume that the dog would have to shake fast enough that the
+centrifugal force would overcome the sticking force. In other equations,
+&lt;mathjax&gt;$$ F\_{centrifugal} = m{\\omega}\^2 R $$&lt;/mathjax&gt; and &lt;mathjax&gt;$$ F\_{sticking} = C $$&lt;/mathjax&gt; So
+we would then expect the shaking frequency to be the frequency that gets
+those two guys to equal each other. We would thus predict
+&lt;mathjax&gt;$${\\omega} \\sim R\^{-0.5} $$&lt;/mathjax&gt;
+where the little squiggle just means that the frequency scales as the
+radius to the -0.5 power, with some constant multipliers out front that
+we don&amp;#8217;t know so we just ignore.
+But this is not what the Ga Tech guys observed! Check out the video
+below:
+So there&amp;#8217;s still something else going on that wasn&amp;#8217;t in our simple
+model. But this is what makes science so exciting! Even something dogs
+and cats figured out long ago can have some really rich and interesting
+physics. So keep on asking those questions! Notes: [1] Interestingly
+enough, the first &amp;#8220;How come [blank]?&amp;#8221; questions we asked did not have
+the now canonical form. Instead, it was stated as &amp;#8220;Why are cows?&amp;#8221;. After
+much deliberation, we found that the solution is &amp;#8220;Because milkshakes.&amp;#8221;
+Fair&amp;nbsp;enough.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Sun, 14 Nov 2010 12:38:00 -0500</pubDate><guid>tag:,2010-11-14:posts/pet-projects.html</guid><category>scott bakula</category><category>hello kitty</category></item></channel></rss>

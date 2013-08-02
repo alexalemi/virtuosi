@@ -1,735 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - Yariv</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>The Physics Virtuosi - Articles by Yariv</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
+		<article class="wrapper main">
+		<h1><a href="/posts/a-clarification.html">A&nbsp;Clarification</a></h1>
+		<p>As there seems to be some
+<a href="http://en.wikipedia.org/wiki/Date_format#Date_format">confusion</a> among
+my fellow Virtuosi, I wanted to point out that Pi day occurs on July
+22nd or, in the year 4159, on January 3rd. Today is in fact <a href="http://en.wikipedia.org/wiki/Waring%27s_problem">Seventh
+Power Day</a>.</p> <a class="btn" href="/posts/a-clarification.html">read more →</a>
+	</article>
 
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/a-clarification.html"
-                                        rel="bookmark"
-                                        title="Permalink to A&nbsp;Clarification">
-                                        A&nbsp;Clarification
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/a-clarification.html"
-                                    data-text="A&nbsp;Clarification"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-03-14T12:20:00">
-        <i class="icon-calendar"></i>Wed 14 March 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/eurocentrism.html"><i class="icon-tag"></i>Eurocentrism</a>
-	<a href="../tag/pi-day.html"><i class="icon-tag"></i>pi day</a>
-	<a href="../tag/day-month-year.html"><i class="icon-tag"></i>day-month-year</a>
-</footer><!-- /.post-info -->                </div>
-                <p>As there seems to be some <a href="http://en.wikipedia.org/wiki/Date_format#Date_format">confusion</a> among my fellow Virtuosi, I wanted to point out that Pi day occurs on July 22nd or, in the year 4159, on January&nbsp;3rd.</p>
-<p>Today is in fact <a href="http://en.wikipedia.org/wiki/Waring%27s_problem">Seventh Power Day</a>.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/a-clarification.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                                <div class="article">
-                <h1><a href="../posts/flying-back.html">Flying&nbsp;back</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-05-25T09:04:00">
-        <i class="icon-calendar"></i>Tue 25 May 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/units.html"><i class="icon-tag"></i>units</a>
-	<a href="../tag/flying.html"><i class="icon-tag"></i>flying</a>
-	<a href="../tag/esoteric.html"><i class="icon-tag"></i>esoteric</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Those of us originating on the right side of the atlantic ocean are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way around. This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane’s movement? This gives us a perfect chance to use the Earth Units we introduced a few weeks ago. Specifically I’ll use the Earth meter (equal to the radius of the ...
-                        <a class="btn primary xsmall" href="../posts/flying-back.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/nobody-really-gets-quantum.html">Nobody Really Gets&nbsp;Quantum</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-22T14:29:00">
-        <i class="icon-calendar"></i>Thu 22 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Nobody Really Gets Quantum / Etgar Keret On Yom Kippur eve Quantum walked over to Einstein’s house to seek forgiveness. “I’m not home,” shouted Einstein from behind a closed door. On the way home people taunted him and somebody even hit him with an empty can of coke. Quantum pretended not to care, but deep inside he was really hurt. Nobody really gets Quantum, everybody hates him. “You parasite” people cry out when he’s walking down the street, “why are you dodging the draft?” - “I wanted to enlist,” Quantum tries to say, “but they wouldn’t take me, because I’m so small.” Not that anybody listens to Quantum. Nobody listens to Quantum when he tries to speak up for himself, but when he says something that can be misconstrued, oh, then suddenly everybody’s paying attention. Quantum can say something innocent like “wow, what a cat!” and ...
-                        <a class="btn primary xsmall" href="../posts/nobody-really-gets-quantum.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/remembering-two-things.html">Remembering two&nbsp;things</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-09-02T16:32:00">
-        <i class="icon-calendar"></i>Thu 02 September 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/class.html"><i class="icon-tag"></i>class</a>
-	<a href="../tag/particle-physics.html"><i class="icon-tag"></i>particle physics</a>
-	<a href="../tag/shorts.html"><i class="icon-tag"></i>shorts</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">One of my professors, Yuval Grossman, was talking about the zoology of particle physics in class the other day. Trying to get us to remember such trivia as the mass of the B meson, he noted that it’s easier to remember two things than it is to remember one - and as it happens, the mass of the B meson is about 5280 MeV, which is also the length of a mile in feet (an equally obscure piece of trivia, if you ask me). This reminded of one of my first calculus classes back home where another professor (Mikhail Sodin) chided us for not knowing the value of e, 2.71828. This is easy to remember, he said because 1828 is the year Lev Tolstoy was born. Then again, when I came to write this post, I could neither remember e, nor Tolstoy’s year of birth - or even that ...
-                        <a class="btn primary xsmall" href="../posts/remembering-two-things.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/teminal-velocity.html">Teminal&nbsp;Velocity</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-08-11T14:04:00">
-        <i class="icon-calendar"></i>Wed 11 August 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/analysis.html"><i class="icon-tag"></i>analysis</a>
-	<a href="../tag/guestimation.html"><i class="icon-tag"></i>guestimation</a>
-	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
-	<a href="../tag/wiki.html"><i class="icon-tag"></i>wiki</a>
-	<a href="../tag/equations.html"><i class="icon-tag"></i>equations</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">The impetus for this post lies with three facts. First, I like to bike to work. Second, Cornell sits on a hill. And finally, I’m not very brave. As a result of all of these, along with Ithaca’s less-than-optimal road maintenance, my semi-daily rides home tend to produce a lot of wear on my brakes as I cruise downhill at what appears to me to be very high speeds. I began to ponder just how high this speed really is, and if I could reduce my use of the brakes or if I’m going to end up using them anyway at the bottom of the hill. Figure 1: An inclined plane So, I asked myself, what do I remember about bikes going down the hill? Well, I remember the good old inclined plane (figure 1), and I remember that air resistance is proportional to velocity, so that ...
-                        <a class="btn primary xsmall" href="../posts/teminal-velocity.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html">Terminal Velocity 2: A Theorist&#8217;s Experimental&nbsp;Experiment</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-08-12T17:23:00">
-        <i class="icon-calendar"></i>Thu 12 August 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/data.html"><i class="icon-tag"></i>data</a>
-	<a href="../tag/bike.html"><i class="icon-tag"></i>bike</a>
-	<a href="../tag/measurement.html"><i class="icon-tag"></i>measurement</a>
-	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Yesterday we rode down Ithaca’s hills in an attempt to estimate the terminal velocity of a bike rider braving the city’s potholes. But estimations are easy, and we relied on a number of factors - the drag coefficient and area of the bicyclist, in particular - to get them. To see how well we did, it’s time to move on to the experimental portion this exercise. Our tools? My bike (figure 1), and my beloved accelerometer (figure 2), with Google’s My Tracks app installed. Figure 1: Our vehicle Figure 2: Our instrumentation I took data twelve times while driving down two paths (University avenue and State street), measuring both the speed and elevation as a function of time. I came up with a lot of noisy data, some of it useful and a lot of it not. A typical plot out of the software looks something like (figure ...
-                        <a class="btn primary xsmall" href="../posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/the-malleability-of-theory.html">The malleability of&nbsp;theory</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-13T17:18:00">
-        <i class="icon-calendar"></i>Tue 13 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/office-hours.html"><i class="icon-tag"></i>office hours</a>
-	<a href="../tag/em.html"><i class="icon-tag"></i>EM</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">There were some undergrads in my office for office hours the other day, asking questions for the midterm. I’m teaching the engineering course on optics and waves (also known as Things that go Sine) and the students were looking at a problem dealing with quarter-wave plates. A quarter-wave plate, the question goes, is a kind of optical instrument that turns light with linear polarization into circular polarization. Show, it continues, that it also turns light with circular polarization linear. After a minute or two of discussing how a quarter-wave plate work (“what, does it act differently on different axes?” giggled one, and everybody gasped when I said yes) we went to the math. I wrote down the equations for light with linear and circular polarization, $$ E_0 \hat{x} \cos\left(kz-\omega t\right) \to \frac{E_0}{\sqrt{2}}\hat{x}\cos\left(kz-\omega t\right) + \frac{E_0 ...
-                        <a class="btn primary xsmall" href="../posts/the-malleability-of-theory.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-conformal-edition.html">Your Week in Seminars: Conformal&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-01T17:58:00">
-        <i class="icon-calendar"></i>Mon 01 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Another week has gone by here in Cornell. The last leaves are turning red, a hint of snow passed us on the weekend, and the undergrads have hit the streets and parties in minimal clothing, then did the same again next day wearing a set of cat ears. And in the physics department, we had the usual three talks. On Monday, the colloquium speaker was Holger Müller from UC Berkeley, talking about Gravitational Redshift, Equivalence Principle, and Matter Waves. The center of the talk was Muller’s experimental device, an atom interferometer. Many of you will remember the Michelson-Morley interferometer, the device used to disprove the existence of the ether. A light-interferometer essentially takes a beam of light, splits it in two and then merges it back again, using the result of the interference between the two parts to learn something about the relative difference between the optical paths taken ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-conformal-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-dark-edition.html">Your Week in Seminars Dark&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-11-08T15:46:00">
-        <i class="icon-calendar"></i>Mon 08 November 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Good afternoon everyone, and welcome to another week of seminars here in the physics department. Our theme of the week is dark matter - where does it come from, how do we see it, and why is there so much of it. Along with that we have a little more AdS/CFT, seemingly continuing last week’s subjects theme. All in all, it looks like seminars on similar subjects tend to condense here in the department. We start with the Monday Colloquium, where Richard Schnee from Syracuse University told us about What’s the Matter in the Universe? Direct Searches for WIMP Dark Matter. Dark matter, we’ll recall, is the astrophysics name for any kind of matter that doesn’t emit light - one that is not inside stars. Our knowledge of our own solar system, which has its mass concentrated almost entirely inside the sun, led us to expect that ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-dark-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                                <div class="article">
-                <h1><a href="../posts/your-week-in-seminars-fermionic-edition.html">Your Week in Seminars Fermionic&nbsp;Edition</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-10-25T11:56:00">
-        <i class="icon-calendar"></i>Mon 25 October 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/yariv.html"><i class="icon-user"></i>Yariv</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Good evening, and welcome to the second edition of YWiS. Last week I took in the full range of seminars, from colloquium to Friday lunch. I don’t know if I can say I took in the full content of these talks as well, but let’s see what I learned On Monday we had Andrew Millis from Columbia University talk about Materials with Strong Electronic Correlations: The (Theoretical) End of the Beginning? (I think the subtitle wasn’t actually there in the talk itself). This was a condensed matter theory talk, and like all condensed matter talks it started off with the phase diagram for cuprates and a mention of the illustrious pseudogap, the Dark Energy of condensed matter. The pseudogap is a phase of cuprates - the materials that make high-temperature superconductors - that occurs at about the same concentration of defects as superconductivity but at a higher temperature. It ...
-                        <a class="btn primary xsmall" href="../posts/your-week-in-seminars-fermionic-edition.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                
-                <div class="pagination">
-        <ul>
-                                        <li class="prev disabled"><a href="#">&larr; Previous</a></li>
-                                                        <li class="active"><a href="../author/yariv.html">1</a></li>
-                                        <li class=""><a href="../author/yariv2.html">2</a></li>
-                                                        <li class="next"><a href="../author/yariv2.html">Next &rarr;</a></li>
-                        </ul>
-        </div>
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+		<div class="wrapper main">		
+		<h3>More posts</h3>
+		<ol class="archive">
+			
+				<li class="clearfix"><a href="/posts/flying-back.html" rel="bookmark" title="Permalink to Flying&nbsp;back"><time datetime="2010-05-25T09:04:00" pubdate>Tue 25 May 2010</time> Flying&nbsp;back</a></li>
+		
+				<li class="clearfix"><a href="/posts/nobody-really-gets-quantum.html" rel="bookmark" title="Permalink to Nobody Really Gets&nbsp;Quantum"><time datetime="2010-04-22T14:29:00" pubdate>Thu 22 April 2010</time> Nobody Really Gets&nbsp;Quantum</a></li>
+		
+				<li class="clearfix"><a href="/posts/remembering-two-things.html" rel="bookmark" title="Permalink to Remembering two&nbsp;things"><time datetime="2010-09-02T16:32:00" pubdate>Thu 02 September 2010</time> Remembering two&nbsp;things</a></li>
+		
+				<li class="clearfix"><a href="/posts/teminal-velocity.html" rel="bookmark" title="Permalink to Teminal&nbsp;Velocity"><time datetime="2010-08-11T14:04:00" pubdate>Wed 11 August 2010</time> Teminal&nbsp;Velocity</a></li>
+		
+				<li class="clearfix"><a href="/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html" rel="bookmark" title="Permalink to Terminal Velocity 2: A Theorist&#8217;s Experimental&nbsp;Experiment"><time datetime="2010-08-12T17:23:00" pubdate>Thu 12 August 2010</time> Terminal Velocity 2: A Theorist&#8217;s Experimental&nbsp;Experiment</a></li>
+		
+		
+		
+		
+		
+		
+		
+				</ol>
+		
+		<p>More posts in the <a href="/archives.html">archive</a>.</p>
+	</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

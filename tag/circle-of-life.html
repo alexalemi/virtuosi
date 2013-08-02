@@ -1,584 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - circle of life</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>circle of life - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: circle of life</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/counting-critters.html"><time datetime="2011-06-28T00:19:00" pubdate>Tue 28 June 2011</time> Counting&nbsp;Critters</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/counting-critters.html"
-                                        rel="bookmark"
-                                        title="Permalink to Counting&nbsp;Critters">
-                                        Counting&nbsp;Critters
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/counting-critters.html"
-                                    data-text="Counting&nbsp;Critters"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-06-28T00:19:00">
-        <i class="icon-calendar"></i>Tue 28 June 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/circle-of-life.html"><i class="icon-tag"></i>circle of life</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="../tag/jimmy-johns.html"><i class="icon-tag"></i>jimmy johns</a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s1600/marx_horse.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="254" src="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s320/marx_horse.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This picture allows us to set a lower bound on the number
-of <a href="http://www.youtube.com/watch?v=9IrCgCKrv8U">creatures</a> that ever lived of ~4.</td></tr></tbody></table>
-
-<p>We recently had a big book sale [1] here in town where books were being sold for about a quarter.  Needless to say, I bought far more than I&#8217;ll probably ever need or read.  One of the books I bought was called <i>General Paleontology</i> by A. Brouwer&nbsp;[2].</p>
-<p>Anyways, I didn&#8217;t really make it too far in the book.  In fact, I only made it to the first sentence of the second paragraph of the first chapter, when I encountered this&nbsp;line:</p>
-<p><i><span class="dquo">&#8220;</span>The number of individuals which has populated the Earth since life began is beyond estimation.&#8221;</i>
-<i>
-</i>
-Horse feathers, I say!  Horse&nbsp;Feathers!</p>
-<p>The number of things that ever lived may very well be <i>unknowable</i>, but it&#8217;s certainly not beyond estimation.  So below, Alemi and I each provide an estimate for the total number of creatures that have ever lived on&nbsp;Earth.</p>
-<p><a name='more'></a>We flipped a coin and I lost, so I guess I&#8217;ll go first.  My estimation will be a genuine guess-y kind of estimate that doesn&#8217;t draw too heavily on too many physical considerations.  Instead, I will formulate a series of assumptions and base my final answer on that.  So assuming my assumptions are valid, the answer should give a reasonable estimate to the total number of creatures that have ever&nbsp;lived. </p>
-<p>My assumptions are as&nbsp;follows:</p>
-<p>(1)  The number of individuals that have ever lived will be almost entirely dominated by the number of bacteria that have ever lived on Earth.  So to leading order, all the life that has ever lived on Earth is bacteria (or something&nbsp;similar).</p>
-<p>(2)  Life began at some time, T, in the past and immediately spread to all places on Earth.  Hey, man, it&#8217;s the power of geometric&nbsp;progression!</p>
-<p>(3)  The majority of life is found within h = 1 m from the surface of water.  I picked this number since it&#8217;s roughly (order of magnitude) how far down I can see in really clear water.  Most of the life will be photosynthetic and thus need a fair amount of&nbsp;sunlight.</p>
-<p>(4)  The number density of organisms in water is  n ~ 10^5.  I have no real justification for&nbsp;this.</p>
-<p>(5)  The average lifetime of an organism is t ~ 1&nbsp;hr.</p>
-<p>Alright, so if these assumptions are valid (a big if [3]), then the following prediction should be fairly accurate.  So the total volume in which these creatures may live is just the shell of the Earth down to about a&nbsp;meter:</p>
-<p><mathjax>$$ V = 4 \pi R_{\oplus}^2 h $$</mathjax></p>
-<p>where R = 6 * 10^6 m is the radius of the Earth.  Alright, so the number of creatures at any given moment will be the volume times the number density which I will take to be n ~ 10^5.  That will give us the total number of creatures at any given moment.  But we want it for <i>all</i> the moments.  So I will take the total number of &#8220;generations&#8221; to be the time life has been around divided by the average lifetime of a given organism.  Putting this all together&nbsp;gives</p>
-<p><mathjax>$$N = 4 \pi R_{\oplus}^2 h \times \frac{T}{t} $$</mathjax></p>
-<p>Plugging in some numbers I&nbsp;get:</p>
-<p><mathjax>$$ N \sim 10^{39} \left(\frac{h}{1~\mbox{m}}\right)\left(\frac{n}{10^5~\mbox{cm}^{-3}}\right)\left(\frac{T}{3\times10^9~\mbox{yrs}} \right)\left(\frac{t}{1~\mbox{hr}} \right)^{-1}$$</mathjax></p>
-<p>So for the nominal values I&#8217;ve plugged in, I&#8217;ll get that about 10^39 creatures have ever lived on Earth [4].  I&#8217;ve left my equation in a dimensionless form above, so if you think my individual estimates are garbage, you can easily plug in your own estimates to see how things&nbsp;change. </p>
-<p>Except for the completely arbitrary factor for the average number density of organisms per cubic centimeter of water, I feel alright about this estimate.  And I&#8217;m fairly confident that the number density will not be off more than about 3 orders of magnitude either high or low.  So my final estimate&nbsp;is:</p>
-<p><mathjax>$$ N \sim 10^{39 \pm 3} $$</mathjax></p>
-<p>I promised that there would be two estimates, so I present below in picture form, Alemi&#8217;s back-of-the-wrapper estimate.
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s1600/jj_phys.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="238" src="http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s400/jj_phys.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Click for the full Jimmy Johns experience</td></tr></tbody></table>To explain these scribbles, I now cede the floor (and the mic) to&nbsp;Alemi. </p>
-<p>[ <span class="caps">SEAMLESS</span> <span class="caps">TRANSITION</span>&nbsp;]</p>
-<p>So, when Corky posed this question to me while we ate some tasty sandwiches, another approach came to&nbsp;mind.  </p>
-<p>Namely, I wanted to try to estimate the number of critters that have ever lived by putting some kind of energy bound on the&nbsp;number.</p>
-<p>Ultimately, all critters come from the sun.  That is, all life on Earth is only able to exist in so much as it consumes energy, and for almost all life [ignoring the under ocean heat vent guys], the energy they consume, one way or another comes from the&nbsp;sun.</p>
-<p>So, let&#8217;s estimate the number of critters in three parts (1) We need the energy the Earth recieves from the sun.  (2) We need to estimate the energy density of life (3) These two things, combined with a characteristic length or volume scale for a critter would enable us to figure out the rate at which the Earth could produce critters. (4) Assuming this rate and a time scale for how long life has been around on the Earth would give us a total number of&nbsp;critters.</p>
-<p>Let&#8217;s&nbsp;begin</p>
-<p>(1) Energy from the&nbsp;sun.</p>
-<p>Corky and I happen to know that the solar flux on the sun is roughly 1000 W/m^2.  Multiplying this by half the surface area of the earth gives us a rough total solar&nbsp;flux</p>
-<p><mathjax>$$ (1000 \text{ W/m}^2) ( 2\pi R_{\oplus}^2) \sim 2 \times 10^{17} \text{ W} $$</mathjax></p>
-<p>(2) Energy density of&nbsp;critters</p>
-<p>For this we used the bag of potato chips we had on hand, assuming that all life matter has roughly the same energy content.  The bag of chips was 150 calories in a serving size of 28 grams.  This and assuming that life forms are the density of water gives us a life energy&nbsp;density</p>
-<p><mathjax>$$  \left( \frac{ 150 \text{ kcal} }{ 28 \text{ g}} \right)\left( \frac{ 1 \text{ g}}{ \text{ cm}^3} \right)  \sim  2 \times 10^4 \text{ J/cm}^3  $$</mathjax></p>
-<p>(3) Length scale of&nbsp;critters</p>
-<p>We assumed that bacteria are the most abundant life form, so we chose a length scale of 100&nbsp;microns.</p>
-<p>Putting these pieces together&nbsp;gives</p>
-<p><mathjax>$$ \frac{ 2 \times 10^{17} \text{ W} }{ \left(  2 \times 10^4 \text{ J/cm}^3 \right) \left( 100\ \mu\text{m} \right)^3 }  \sim 10^{19} \text{ 1/s}  $$</mathjax></p>
-<p>Which is our estimated critter creation&nbsp;rate</p>
-<p>(4) Time scale for life&nbsp;generation</p>
-<p>Finally, we estimate that life creation has been chugging along on earth for about 3 billion years, this gives us our final estimate for the number of critters that have every&nbsp;lived</p>
-<p><mathjax>$$  \left(  10^{19} \text{ 1/s} \right) \left( 3 \times 10^9 \text{ years} \right) \sim 10^{36} $$</mathjax></p>
-<p>So, there we have it.  If the Earth was 100% efficient at converting solar energy into life, and that life is characteristically the energy density of a potato chip and the size of a bacteria, we should have had 1 billion billion billion billion critters ever.  To make us feel a little better we would like to tack on a 10% efficiency, since we don&#8217;t actually expect the Earth to be 100% efficient, and because 10% seems to be the rule of thumb efficiency estimation used when it comes to food chains and the like, so our final estimate, motivated purely by physics&nbsp;is</p>
-<p><mathjax>$$ \boxed{ \text{ Total number of critters ever } = 10^{35\pm 3} } $$</mathjax></p>
-<p>This number seems pretty good, and is in general agreement with Corky&#8217;s earlier method.  Notice that the only parameter we are a little worried about the is the length scale, especially because our final answer depends on the inverse cube of this number, so, our error is probably something around 3 orders of magnitude, as before, since an order of magnitude goof in the size would cause 3 orders of magnitude error in the final&nbsp;estimate.</p>
-<p>So there you have it.  Two not-egregiously-horrible estimates for the total number of critters that have ever lived.  All in all, I think that book was a quarter well&nbsp;spent!</p>
-<p>Unnecessary&nbsp;footnotes:</p>
-<p>[1]  This is a bit misleading.  They actually sold books of all&nbsp;sizes.</p>
-<p>[2]  I like to read about paleontology and such just in case I&#8217;m ever sent back in time.  This way, I&#8217;ll know what dinosaurs are safe to&nbsp;eat.</p>
-<p>[3]  Here&#8217;s a bigger if:  <span class="Apple-style-span" style="font-size: large;">if</span>
-<span class="Apple-style-span" style="font-size: large;">
-</span>
-[4]  <span class="caps">FUN</span> <span class="caps">FACT</span>:  The total number of atoms in all the people on Earth is roughly 10^39.  A proof of this is left as an exercise for the reader.
-<span class="Apple-style-span" style="font-size: large;">
-</span></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/counting-critters.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

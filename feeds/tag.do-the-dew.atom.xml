@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.do-the-dew.atom.xml" rel="self"></link><id>/</id><updated>2010-05-17T22:24:00-04:00</updated><entry><title>Solar Sails III (because two just isn’t enough)</title><link href="/posts/solar-sails-iii-because-two-just-isn-t-enough-.html" rel="alternate"></link><updated>2010-05-17T22:24:00-04:00</updated><author><name>Corky</name></author><id>tag:,2010-05-17:posts/solar-sails-iii-because-two-just-isn-t-enough-.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/S_IKFerS7nI/AAAAAAAAACo/DPNAyMeuMaQ/s1600/leezle+pon+justice.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/S_IKFerS7nI/AAAAAAAAACo/DPNAyMeuMaQ/s320/leezle+pon+justice.jpg" /&gt;&lt;/a&gt;
+One thing that I&amp;#8217;ve wanted to quantify since reading &lt;em&gt;Intelligent Life
+in the Universe&lt;/em&gt;, an outstanding book by Carl Sagan and &lt;span class="caps"&gt;I.S.&lt;/span&gt; Shklovskii,
+is the idea of exogenesis. Exogenesis is the hypothesis that life formed
+elsewhere in the universe and was somehow transferred to earth in the
+form of some small seed or spore. Now since &lt;span class="caps"&gt;E.T. E.&lt;/span&gt; coli presumably do
+not have little tiny jetpacks or other means of active transport, they
+would need to traverse the cosmos in some passive way. One such way
+would be solar sailing.
+Way back in Solar Sails I, we derived equations describing the maximum
+speeds and time-of-travel for various distances for a given solar sail.
+Each of these equations was a function of the surface mass density of
+the sail, which is just the amount of mass per unit cross-sectional
+area. All we need to know is the cross-sectional area and mass of a
+given object and we can apply these equations to just about anything!
+Assume we have some spherical blob with the density of water (1g/cm\^3).
+The effective sigma of this blob would just be the mass divided by the
+cross-sectional area. In other words,
+&lt;mathjax&gt;$$ \\sigma = \\frac{m}{Area} = \\frac{\\frac{4}{3}\\pi r\^3 \\rho}{\\pi
+r\^2} = \\frac{4}{3}\\rho r .$$&lt;/mathjax&gt;
+Rearranging to get r in terms of the other variables, we have
+&lt;mathjax&gt;$$ r = \\frac{3\\sigma}{4\\rho} . $$&lt;/mathjax&gt;
+Plugging in our density of 1g/cm\^3 and a suitable sigma (10\^-4
+g/cm\^2), we get
+&lt;mathjax&gt;$$ r \\le 0.75 \\times 10\^{-4} cm = 0.75 \\mu m .$$&lt;/mathjax&gt;
+Check out
+&lt;a href="http://learn.genetics.utah.edu/content/begin/cells/scale/"&gt;this&lt;/a&gt; fun
+site to see what kind of critters can fit in this blob.
+From the previous post, we saw that for a sigma of 10\^-4 g/cm\^2, our
+sail would get to the nearest stars on a timescale of order 10,000
+years. Thus if our blob has a radius of less than about a micron, it
+could spread to hundreds of stars in around 10,000-100,000 years. Even
+if it would take millions of years, that would be almost no time at all
+on the cosmic scale. Just based on this calculation it all seems fairly
+feasible.
+In making these calculations I have neglected several important aspects
+of the problem. First, in no way have I actually calculated any sort of
+probability of this happening. Additionally, I would have to see how
+likely it is for some blob to reach planetary escape velocity
+(presumably just by riding that tail of the Boltzmann distribution).
+Finally, and perhaps most important of all, I have not given any sort of
+motivation or mechanism by which some living body could survive hundreds
+of thousands of years in the vacuum of space with constant radiation
+exposure. But I have heard that some forms of life are totally
+&lt;a href="http://en.wikipedia.org/wiki/Extremophile"&gt;extreme&lt;/a&gt; (especially if they
+drink &lt;a href="http://en.wikipedia.org/wiki/Mountain_Dew"&gt;this&lt;/a&gt;).
+Even though such a process seems possible, it certainly doesn&amp;#8217;t seem
+like the easiest way to get life on earth. I prefer the much more
+satisfying &amp;#8220;amino acids + lightning + magic =
+&lt;a href="http://en.wikipedia.org/wiki/Abiogenesis"&gt;life&lt;/a&gt;&amp;#8221; model. But it does
+offer some interesting possibilities. Suppose we as people think that
+people are super awesome and therefore people should be everywhere. We
+do some bio magic and put whatever &lt;span class="caps"&gt;DNA&lt;/span&gt; we want into viruses, which we
+then pack into as many micron spheres as we can make. We then point them
+at the nearest stars and have them disperse.
+What would the probabilities be that they land somewhere habitable? Are
+there any ethical considerations in doing this? Is it a galactic faux&amp;nbsp;pas?&lt;/p&gt;</summary><category term="exogenesis"></category><category term="solar sails"></category><category term="scott bakula"></category><category term="do the dew"></category></entry></feed>

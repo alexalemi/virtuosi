@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.things-that-probs-wont-kill-you.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 05 Nov 2011 01:25:00 -0400</lastBuildDate><item><title>Betelgeuse, Betelgeuse, Betelgeuse!</title><link>/posts/betelgeuse-betelgeuse-betelgeuse-.html</link><description>&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s1600/betelgeuse.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-6s6rSrItOdk/TrS6st3tdVI/AAAAAAAAAPk/GpGfjY5KZ3Y/s320/betelgeuse.png" /&gt;&lt;/a&gt;
+  A very cold person points out&amp;nbsp;Betelgeuse&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Betelgeuse is a massive star at the very end of its life and could
+explode any second now!&lt;/em&gt; Every time I hear that I get really &lt;em&gt;really&lt;/em&gt;
+excited. Like a kid in a candy store that&amp;#8217;s about to see a star blow up
+like nobody&amp;#8217;s business. This giddiness will last for a solid minute
+before I realize that &amp;#8220;any second now&amp;#8221; is taken on astronomical
+timescales and roughly translates to &amp;#8220;sometime in the next million years
+maybe possibly.&amp;#8221; Then I feel sad. But you know what always cheers me up?
+Calculating things! Hooray! So let&amp;#8217;s take a look at the ways Betelgeuse
+could end its life (even if it&amp;#8217;s not going to happen tomorrow) and how
+these would affect Earth. First, a little background. Betelgeuse is the
+bright orangey-red star that sits at the head/armpit of Orion. It is one
+of the &lt;a href="http://en.wikipedia.org/wiki/List_of_brightest_stars"&gt;brightest&lt;/a&gt;
+stars in the night sky. Its distance has been measured by the
+&lt;em&gt;&lt;a href="http://en.wikipedia.org/wiki/Hipparcos"&gt;Hipparcos&lt;/a&gt;&lt;/em&gt;satellite to be
+about 200 parsecs [1] from Earth (about 600 light years). Betelgeuse is
+at least 10 times as massive as our Sun and has a diameter that would
+easily accomodate the orbit of Mars. In fact, the star is big enough and
+close enough that it can actually be spatially resolved by the Hubble
+Space Telescope! Being so big and bright, Betelgeuse is destined to die
+young, going out with a bang as a
+&lt;a href="http://en.wikipedia.org/wiki/Supernova#Core_collapse"&gt;core-collapse&lt;/a&gt;
+supernova. This massive explosion ejects a good deal of &amp;#8220;star stuff&amp;#8221;
+into interstellar space [2] and leaves behind either a &lt;a href="http://en.wikipedia.org/wiki/Neutron_star"&gt;neutron
+star&lt;/a&gt; or a &lt;a href="http://en.wikipedia.org/wiki/Black_hole"&gt;black
+hole&lt;/a&gt;. Alright, now that we&amp;#8217;re
+all caught up, let&amp;#8217;s turn our focus on this &amp;#8220;massive explosion&amp;#8221; bit.
+What kind of energy scale are we talking about if Betelgeuse blows up?
+Well, a pretty good upper bound would be if all of the star&amp;#8217;s mass (10
+solar masses worth!) were converted directly to energy, so &lt;mathjax&gt;$$ E\_{max} =
+mc\^2 =
+10M\_{\\odot}\\times\\left(\\frac{2\\times10\^{30}\~\\mbox{kg}}{1\~M\_{\\odot}}\\right)\\times
+\\left(3\\times10\^8\~\\mbox{m/s}\\right)\^2 $$&lt;/mathjax&gt; which is about &lt;mathjax&gt;$$
+E\_{max} \\sim 10\^{48}\~\\mbox{J} $$&lt;/mathjax&gt; and that&amp;#8217;s nothing to shake a
+stick at. But remember, this is if the &lt;em&gt;entire star&lt;/em&gt; were converted
+directly to energy, and that would be hard to do. Typical fusion
+efficiencies are about \~1% [3], so let&amp;#8217;s say a reasonable estimate for
+the total nuclear energy available is &lt;mathjax&gt;$$ E\_{nuc} \\sim \\eta\_{f}
+\\times E\_{max} \\sim 10\^{-2} \\times 10\^{48}\~\\mbox{J} \\sim
+10\^{46}\~\\mbox{J}. $$&lt;/mathjax&gt; This is the total energy released by a typical
+supernova. As it turns out though, 99% of this energy is carried away in
+the form of neutrinos and only about 1% is carried away in photons.
+Since we are mainly concerned with how this explosion will affect Earth,
+and the neutrinos will just pass on by, we will only consider the 1% of
+energy released in photons that would reasonably interact with Earth.
+That gives us &lt;mathjax&gt;$$ E\_{ph} \\sim 0.01 \\times E\_{nuc} \\sim
+10\^{44}\~\\mbox{J}. $$&lt;/mathjax&gt; Neato, so that&amp;#8217;s the total amount of energy
+released in a supernova in the form of photons. How much of this energy
+would be deposited at the Earth if Betelgeuse exploded? Well, if the
+energy is deposited isotropically (that is, the same in all directions),
+then the fluence (or time integrated energy flux) is given by &lt;mathjax&gt;$$ F\_{ph}
+= \\frac{E\_{ph}}{4\\pi d\^2}. $$&lt;/mathjax&gt; All this is saying is that the total
+energy release by the supernova spreads out uniformly over a sphere of
+radius d, so the fluence will give us the amount of energy deposited in
+each square meter of that sphere (the units of fluence here are J/m\^2).
+The total energy deposited on Earth is then &lt;mathjax&gt;$$ E\_{\\oplus} = F\_{ph}
+\\times \\pi R\^2\_{\\oplus}. $$&lt;/mathjax&gt; Hot dog! Let&amp;#8217;s plug in some numbers,
+already. The total energy deposited on the Earth by a symmetrically
+exploding Betelgeuse at a distance of d = 200 pc (where 1 pc = 3 *
+10\^16 m) is &lt;mathjax&gt;$$E\_{\\oplus}=\\frac{E\_{ph}}{4\\pi d\^2}\\times\\pi
+R\^2\_{\\oplus}\\sim
+10\^{19}\~\\mbox{J}\\left(\\frac{E\_{ph}}{10\^{44}\~\\mbox{J}}\\right)\\left(\\frac{d}{200\~\\mbox{pc}}\\right)\^{-2}.$$&lt;/mathjax&gt;
+Well, 10\^19 J certainly &lt;em&gt;seems&lt;/em&gt; like a lot of energy. In fact, it is
+roughly the amount of energy contained in the entire nuclear arsenal of
+the United States [4]. But it is spread over the entire atmosphere. Is
+there a way to gauge how this would affect life on Earth? We could see
+how much it would heat up the atmosphere using specific heats: &lt;mathjax&gt;$$ E =
+m\_{atm}c\_{air}\\Delta T $$&lt;/mathjax&gt; where c is the specific heat of air
+(\~10\^3 J per kg per K). Oops, looks like we need to know the mass of
+the atmosphere. But we can figure this out, the answer is pushing right
+down on our heads! We know the pressure at the surface of the Earth (1
+atm = 101 kPa) and that pressure is just the result of the weight of the
+atmosphere pushing down on us. Since pressure is just force / area, we
+have &lt;mathjax&gt;$$ P = F/A = m\_{atm}g / A\_{\\oplus} $$&lt;/mathjax&gt; So &lt;mathjax&gt;$$ m\_{atm} =
+\\frac{P\\times4\\pi
+R\^2\_{\\oplus}}{g}=\\frac{10\^5\~\\mbox{Pa}\\times4\\pi
+(6\\times10\^6\~\\mbox{m})\^2}{9.8\~\\mbox{m/s}\^2}\\approx4\\times10\^{18}\~\\mbox{kg}.$$&lt;/mathjax&gt;
+Neato, gang. So we could see a temperature rise of about &lt;mathjax&gt;$$ \\Delta T =
+\\frac{E\_{ph}}{m\_{atm}c\_{air}}=\\frac{10\^{19}\~\\mbox{J}}{4\\times10\^{18}\~\\mbox{kg}\\times10\^3\~\\mbox{J/
+kg K}}\\approx0.003\~\\mbox{K}, $$&lt;/mathjax&gt; or three one-thousandths of a degree.
+Remember, too, that this will be an upper bound since we are assuming
+that all this energy is deposited into the atmosphere before it has a
+chance to cool. In fact, if the energy is deposited over the course of
+hours or days, this value will be much less. So it looks like we&amp;#8217;ve
+wrapped this thing up: Betelgeuse exploding will most certainly not put
+the Earth in any danger. Or did we? We have considered the case of a
+symmetric supernova, but there&amp;#8217;s more than one way to blow up a star.
+Massive stars can also end their lives in a fantastic explosion called a
+&lt;a href="http://en.wikipedia.org/wiki/Gamma-ray_burst"&gt;gamma-ray burst&lt;/a&gt; (GRBs to
+the hep cats that study them, some fun facts relegated to [5]). GRBs are
+still an intense area of current study, but the current picture (for one
+type of &lt;span class="caps"&gt;GRB&lt;/span&gt;, at least) is that they are the result of a star blowing up
+with the energy of the explosion focussed into two narrow beams (see
+picture below). Since the flux isn&amp;#8217;t distributed over the whole sphere,
+GRBs can be seen at much greater distances than a typical&amp;nbsp;supernova.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-siXXiFnQWHY/TrITJA8z_sI/AAAAAAAAAPU/qStD4_9qLBI/s1600/grb.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-siXXiFnQWHY/TrITJA8z_sI/AAAAAAAAAPU/qStD4_9qLBI/s320/grb.jpg" /&gt;&lt;/a&gt;
+  Example of a gamma-ray burst, with the explosion in two&amp;nbsp;beams.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;So how will this change our answer? Well, it&amp;#8217;s going to change the
+fluence we calculated above. Instead of spreading the energy out over
+the whole sphere, it&amp;#8217;s only going to go to some fraction of the 4pi
+steradians. So we get &lt;mathjax&gt;$$ F\_{ph} = \\frac{E\_{ph}}{4\\pi f\_{\\Omega}
+d\^2}, $$&lt;/mathjax&gt; where f_{omega} is called the &amp;#8220;beaming fraction&amp;#8221; and tells us
+what fraction of the sphere the energy goes through. Typical &lt;span class="caps"&gt;GRB&lt;/span&gt; beams
+range from 1 to 10 degrees in radius. Converting this to radians, we can
+find the beaming fraction as &lt;mathjax&gt;$$ f\_{\\Omega} = \\frac{2 \\times \\pi
+\\theta\^2}{4\\pi} \\approx
+10\^{-4}\\left(\\frac{\\theta}{1\^\\circ}\\right)\^2,$$&lt;/mathjax&gt; so the beaming
+fraction is 10\^-4 and 10\^-2 for a beam angle of 1 degree and 10
+degrees, respectively. Alright, so now we can redo the calculations we
+did for the supernova case, but keeping this beaming fraction around.
+The total amount of energy that would hit Earth is then about
+&lt;mathjax&gt;$$E\_{\\oplus}=\\frac{E\_{ph}}{4\\pi f\_{\\Omega} d\^2}\\times\\pi
+R\^2\_{\\oplus}\\sim
+10\^{23}\~\\mbox{J}\\left(\\frac{E\_{ph}}{10\^{44}\~\\mbox{J}}\\right)\\left(\\frac{d}{200\~\\mbox{pc}}\\right)\^{-2}\\left(\\frac{\\theta}{1\^\\circ}\\right)\^{-2}.$$&lt;/mathjax&gt;
+Holy sixth-of-a-moley! Continuing as we did above, we find that this
+could potentially heat up the atmosphere by &lt;mathjax&gt;$$ \\Delta T =
+\\frac{E\_{ph}}{m\_{atm}c\_{air}}=\\frac{10\^{23}\~\\mbox{J}}{4\\times10\^{18}\~\\mbox{kg}\\times10\^3\~\\mbox{J/
+kg
+K}}\\approx3\~\\mbox{K}\\left(\\frac{\\theta}{1\^\\circ}\\right)\^{-2},
+$$&lt;/mathjax&gt; which is certainly non-negligible. Now, this won&amp;#8217;t destroy the planet
+[6], but it could make things really uncomfortable. This will be
+especially true when you realize that a fair amount of the energy
+carried away from a gamma-ray burst is in the form of (wait for it&amp;#8230;)
+gamma-rays, which will wreck havoc on your &lt;span class="caps"&gt;DNA&lt;/span&gt;. Remember, though, that
+this is an absolute worst-case scenario since we have assumed the
+smallest beaming angle. But this may still make us a little nervous, so
+is there anyway to figure out if Betelgeuse could, in fact, beam a
+gamma-ray burst towards Earth? Yes, yes there is. Jets and beams like
+those in GRBs typically point along the rotation axis of the star [7].
+If we could determine the rotational axis of Betelgeuse, then we could
+say whether or not there&amp;#8217;s a chance it&amp;#8217;s pointed towards us. It just so
+happens that Betelgeuse is the only star (aside from our Sun) that is
+spatially resolved. If you could measure spectra along the star, you
+could look for Doppler shifting of absorption lines and say something
+about the velocity at the surface of the star. Luckily, this has already
+been done for us (see, for example &lt;a href="http://adsabs.harvard.edu/abs/1998AJ....116.2501U"&gt;Uitenbroek et al.
+1998&lt;/a&gt;). These
+measurements are hard to do since the star is only a few pixels wide,
+but it appears as though the rotation axis is inclined to the
+line-of-sight by about 20 degrees (see figure below). That means this
+would require a beam with at least a 20 degree radius to hit the Earth.
+This appears to be outside the typical ranges observed. So even if
+Betelgeuse were to explode in a gamma-ray burst, the beam would miss
+Earth and hit some dumb other planet nobody cares&amp;nbsp;about.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-xYILwh0eLEM/TrSTBxflbxI/AAAAAAAAAPc/Amma1aQtmPU/s1600/rotation.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-xYILwh0eLEM/TrSTBxflbxI/AAAAAAAAAPc/Amma1aQtmPU/s400/rotation.png" /&gt;&lt;/a&gt;
+  Figure reproduced from Uitenbroek et al.&amp;nbsp;(1998)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Alright, so the moral of the story is that Betelgeuse is completely
+harmless to people on Earth. When it does explode, it will be a
+brilliant supernova that would likely be visible at least a little bit
+during the day. It will be the coolest thing that anyone alive (if there
+are people&amp;#8230;) will ever see. Sadly, this explosion could take place at
+just about any time during the next million years. Assuming a uniform
+distribution over this time period and a human lifetime of order 100
+years, there is something like a 1 in 10,000 chance you&amp;#8217;ll see this in
+your life. Feel free to hope for a spectacular astronomical sight, but
+don&amp;#8217;t lose sleep worrying about being hurt by Betelgeuse!
+&lt;strong&gt;Semi-excessive Footnotes:&lt;/strong&gt; [1] This has nothing to do with the Kessel
+Run. For a description of the actual distance unit see
+&lt;a href="http://en.wikipedia.org/wiki/Parsec"&gt;Wikipedia&lt;/a&gt;. For a circuitous
+retconning to correct for one throwaway line in &lt;em&gt;Star Wars&lt;/em&gt;, see
+&lt;a href="http://starwars.wikia.com/wiki/Kessel_Run"&gt;Wookieepedia&lt;/a&gt;. [2] This is
+how anything heavier than helium gets distributed throughout the
+universe. The hydrogen and helium formed after the Big Bang gets fused
+into heavier elements in stars and then dispersed out through
+supernovae. In fact, most things heavier than Iron actually &lt;em&gt;require&lt;/em&gt;
+supernovae to even exist. If you have any gold on you right now (I&amp;#8217;m
+looking at you Mr. T), that only exists &lt;em&gt;because a star exploded!&lt;/em&gt; [3]
+Let&amp;#8217;s consider the case of turning 4 protons into a Helium nucleus.
+&lt;a href="http://en.wikipedia.org/wiki/Helium-4"&gt;Helium-4&lt;/a&gt; has a binding energy
+of about 28 MeV, which means that the total energy of a bound He-4
+nucleus is 28 MeV less than its free protons and neutrons (in other
+words, we need to put in 28 MeV to break it up). So the process of
+turning 4 protons into a Helium nucleus gives off 28 MeV worth of
+energy. But we had a total of 4 times 1000 MeV worth of matter we could
+have turned into energy. Thus, the process was 28 MeV/4000 MeV \~ 0.7%
+efficient at turning matter into energy. [4] Sometime last year, the
+United States
+&lt;a href="http://www.defense.gov/npr/docs/10-05-03_Fact_Sheet_US_Nuclear_Transparency__FINAL_w_Date.pdf"&gt;disclosed&lt;/a&gt;
+that its nuclear arsenal as of Sept 2009 was something like 5000
+warheads. Assume these to be Megaton warheads. A Megaton is about 4 *
+10\^15 J, so the total energy in the &lt;span class="caps"&gt;US&lt;/span&gt; arsenal is about 5000 * 4 *
+10\^15 J = 2 * 10\^19 J. [5] A fun fact about GRBs: They were
+discovered by a &lt;a href="http://en.wikipedia.org/wiki/Vela_(satellite)"&gt;military
+satellite&lt;/a&gt; looking for
+illegal nuclear tests, which would emit some gamma-rays. Instead of
+seeing a signal on Earth, they saw bursts coming from space. I really
+really hope that someone&amp;#8217;s first thought was that the Russians were
+testing nukes on the Moon or something. &lt;em&gt;We must not allow a moon-nuke
+gap!&lt;/em&gt; [6] We here at the Virtuosi are contractually obligated to only
+destroy the Earth in our posts on Earth day. I apologize for any
+inconvenience this may cause. [7] I am not exactly sure why this is the
+case. It is certainly observed to be the case and I thought there was a
+straightforward explanation for why this was the case, but I don&amp;#8217;t
+really have a good explanation. Although, maybe there just &lt;a href="http://en.wikipedia.org/wiki/Polar_jet"&gt;isn&amp;#8217;t a good
+one yet.&lt;/a&gt; [8] For comparison,
+there is about a 1 in 3000
+&lt;a href="http://www.lightningsafety.com/nlsi_pls/probability.html"&gt;chance&lt;/a&gt;
+you&amp;#8217;ll be struck by lightning in your&amp;nbsp;lifetime.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Sat, 05 Nov 2011 01:25:00 -0400</pubDate><guid>tag:,2011-11-05:posts/betelgeuse-betelgeuse-betelgeuse-.html</guid><category>things that probs wont kill you</category><category>betelgeuse</category><category>scott bakula</category></item></channel></rss>

@@ -1,559 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - allan variance</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>allan variance - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: allan variance</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/time-keeps-on-slippin-.html"><time datetime="2012-02-12T22:00:00" pubdate>Sun 12 February 2012</time> Time Keeps On&nbsp;Slippin&#8217;</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/time-keeps-on-slippin-.html"
-                                        rel="bookmark"
-                                        title="Permalink to Time Keeps On&nbsp;Slippin&#8217;">
-                                        Time Keeps On&nbsp;Slippin&#8217;
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/time-keeps-on-slippin-.html"
-                                    data-text="Time Keeps On&nbsp;Slippin&#8217;"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-02-12T22:00:00">
-        <i class="icon-calendar"></i>Sun 12 February 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/allan-variance.html"><i class="icon-tag"></i>allan variance</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-	<a href="../tag/casio.html"><i class="icon-tag"></i>casio</a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-rtzREUF0wYM/TyX0orGHkpI/AAAAAAAAASk/hsRZAwtg7H4/s1600/casi_f91w.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://3.bp.blogspot.com/-rtzREUF0wYM/TyX0orGHkpI/AAAAAAAAASk/hsRZAwtg7H4/s320/casi_f91w.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This is picture of a watch.  (Source: Wikipedia)</td></tr></tbody></table>
-
-<p>A couple of months ago, the Virtuosi Action Team (<span class="caps">VAT</span>) assembled for lunch and the discussion quickly and unexpectedly turned to watches.  As Nic and Alemi argued over the finer parts of fancy-dancy watch ownership, I looked down at my watch:  the lowly <a href="http://en.wikipedia.org/wiki/Casio_F91W">Casio F-91W</a>.  Though it certainly isn&#8217;t fancy, it is inexpensive, durable, and could potentially win me an all-expense paid trip to the <a href="http://www.guardian.co.uk/world/2011/apr/25/guantanamo-files-casio-wristwatch-alqaida">Caribbean</a>. 
-<div>
-</div><div>But how <i>good</i> of a watch is it?  To find out, I decided to time it against the official <span class="caps">U.S.</span> time for a couple of months.  Incidentally, about half-way in I found out that Chad over at <a href="http://scienceblogs.com/principles/">Uncertain Principles</a> had done essentially the same thing <a href="http://scienceblogs.com/principles/2011/05/the_testing_of_time_measuring.php">already</a>.  No matter, science is still fun even if you aren&#8217;t the first person to do it.  So here&#8217;s my &#8220;new-to-me&#8221;&nbsp;analysis.</p>
-<p><a name='more'></a>Alright, so how do we go about quantifying how &#8220;good&#8221; a watch is?  Well, there seem to be two main things we can test.  The first of these is accuracy.  That is, how close does this watch come to the <i>actual</i> time (according to some time system)?  If the official time is 3:00 pm and my watch claims it is 5:00 am, then it is not very accurate.  The second measure of &#8220;good-ness&#8221; is precision or, in watch parlance, stability.  This is essentially a measure of the consistency of the watch.  If I have a watch that is consistently off by 5 minutes from the official time, then it is not accurate but it is still stable.  In essence, a very consistent watch would be just as good as an accurate one, because we can always just subtract off the known&nbsp;offset.</p>
-<p>To test any of the above measures of how &#8220;good&#8221; my cheap watch is, we will need to know the actual time.  We will adopt the official <span class="caps">U.S.</span> time as provided on the <a href="http://nist.time.gov/timezone.cgi?Eastern/d/-5/java"><span class="caps">NIST</span> website</a>.  This time is determined and maintained by a collection of really impressive atomic clocks.  <a href="http://en.wikipedia.org/wiki/NIST-F1">One of these</a> is in Colorado and the other is secretly guarded by an ever-vigilant Time Lord (see Figure&nbsp;1). </p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-EXMf5o9a4GI/TzCRcaMjjVI/AAAAAAAAASs/FlqyjHbJS9Q/s1600/flavor_flav.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-EXMf5o9a4GI/TzCRcaMjjVI/AAAAAAAAASs/FlqyjHbJS9Q/s320/flavor_flav.jpg" width="290" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 1:  Flavor Flav, Keeper of the Time</td></tr></tbody></table>
-
-<p>At 9:00:00 am <span class="caps">EST</span> on November 30th, I synchronized my watch with the time displayed on the <span class="caps">NIST</span> website.  For the next 54 days, I kept track of the difference between my watch an the <span class="caps">NIST</span> time.  On the 55th day, I forgot to check the time and the experiment promptly ended.  The results are plotted below in Figure 2 (and, as with all plots, click through for a larger version).
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-hscjUIehrHQ/TzCYqNhcsYI/AAAAAAAAATE/eAz3O5KlAcY/s1600/time_fit_short.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://3.bp.blogspot.com/-hscjUIehrHQ/TzCYqNhcsYI/AAAAAAAAATE/eAz3O5KlAcY/s400/time_fit_short.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 2: Best-fit to time difference</td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><span style="font-size: x-small;">
-</span></div>As you can see from Figure 2, the amount of time the watch lost over the timing period appears to be fairly linear.  There does appear to be a jagged-ness to the data, though.  This is mainly caused by the fact that both the watch and the <span class="caps">NIST</span> website only report times to the nearest second.  As a result, the finest time resolution I was willing to report was about half a&nbsp;second.</p>
-<p>Adopting an uncertainty of half a second, I did a least-squares fit of a straight line to the data and found that the watch loses about 0.35 seconds per&nbsp;day.</p>
-<p>As far as accuracy goes, that&#8217;s not bad!  No matter what, I&#8217;ll have to set my watch at least twice a year to appease the Daylight Savings Gods.  The longest stretch between resetting is about 8 months.  If I synchronize my watch with the <span class="caps">NIST</span> time to &#8220;spring forward&#8221; in March, it will only lose&nbsp;about</p>
-<p><mathjax>$$ t_{loss} = 8~\mbox{months} \times 30\frac{\mbox{days}}{\mbox{month}} \times 0.35 \frac{\mbox{sec}}{\mbox{day}} = 84~\mbox{sec} $$</mathjax></p>
-<p>before I have to re-synchronize to &#8220;fall back&#8221; in November.  Assuming the loss rate is constant, I&#8217;ll never be more than about a minute and a half off the &#8220;actual&#8221; time.  That&#8217;s good enough for&nbsp;me.</p>
-<p>Furthermore, if the watch is <i>consistently</i> losing 0.35 seconds per day and I know how long ago I last synchronized, I can always correct for the offset.  In this case, I can always know the official time to within a second (assuming I can&nbsp;add).</p>
-<p>But <i>is</i> the watch consistent?  That&#8217;s a good question.  The simplest means of finding the stability of the watch would be to look at the timing residuals between the data and the model.  That is, we will consider how &#8220;off&#8221; each point is from our constant rate-loss model.  A plot of the results is shown below in Figure 3.
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-13ULtvOlXuU/TzCpp6LGvfI/AAAAAAAAATM/8rybD1lxZOo/s1600/residuals.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://1.bp.blogspot.com/-13ULtvOlXuU/TzCpp6LGvfI/AAAAAAAAATM/8rybD1lxZOo/s400/residuals.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 3: Timing residuals</td></tr></tbody></table>From Figure 3, we see that the data fit the model pretty well.  There&#8217;s a little bit of a wiggle going on there and we see some strong short-term correlations (the latter is an artifact of the fact that I could only get times to the nearest&nbsp;second). </p>
-<p>To get some sense of the timing stability from the residuals, we can calculate the standard deviation, which will give us a figure for how &#8220;off&#8221; the data typically are from the model.  The standard deviation of the residuals&nbsp;is</p>
-<p><mathjax>$$ \sigma_{res} = 0.19~\mbox{sec}. $$</mathjax></p>
-<p>A good guess at the fractional stability of the watch would then just be the standard deviation divided by the sampling&nbsp;interval,</p>
-<p><mathjax>$$ \frac{\sigma_{res}}{T} = 0.19~\mbox{sec} \times \frac{1}{1~\mbox{day}} \times \frac{1~\mbox{day}}{24\times3600~\mbox{sec}} \approx 2\times10^{-6}.$$</mathjax></p>
-<p>In words, this means that each &#8220;tick&#8221; of the watch is consistent with the average &#8220;tick&#8221; value to about 2 parts in a&nbsp;million. </p>
-<p>That&#8217;s nice&#8230;but isn&#8217;t there something <i>fancier</i> we could be doing?  Well, I have been wanting to learn about <a href="http://en.wikipedia.org/wiki/Allan_variance">Allan variance</a> for some time now, so let&#8217;s try&nbsp;that. </p>
-<p>The Allan variance (refs: <a href="http://www.ino.it/~azavatta/References/Allan.pdf">original paper</a> and a <a href="http://tf.boulder.nist.gov/general/pdf/118.pdf">review</a>) can be used to find the fractional frequency stability of an oscillator over a wide range of time scales.  Roughly speaking, the Allan variance tells us how averaging our residuals over different chunks of time affects the stability of our data.  The square root of the Allan variance, essentially the &#8220;Allan standard deviation,&#8221; is plotted against various averaging times for our data below in Figure 4.
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-_zhCroHDoNE/TzC7XYkDZ1I/AAAAAAAAATU/mCaspxYhlxA/s1600/allan_variance.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="300" src="http://2.bp.blogspot.com/-_zhCroHDoNE/TzC7XYkDZ1I/AAAAAAAAATU/mCaspxYhlxA/s400/allan_variance.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Figure 4:  Allan variance of our residuals</td></tr></tbody></table>From Figure 4, we see that as we increase the averaging time from one day to ten days, the Allan deviation decreases.  That is, the averaging reduces the amount of variation in the frequency of the data, making it more stable.  However, at around 10 days of averaging time it seems as though we hit a floor in how low we can go.  Since the error bars get really big here, this may not be a real effect.  If it is real, though, this would be indicative of some low-frequency noise in our oscillator.  For those who prefer colors, this would be &#8220;<a href="http://en.wikipedia.org/wiki/Colors_of_noise">red</a>&#8220;&nbsp;noise.</p>
-<p>Since the Allan deviation gives the fractional frequency stability of the oscillator, we have&nbsp;that</p>
-<p><mathjax>$$\sigma_A = \frac{\delta f}{f} = \frac{\delta(1/t)}{1/t} = \frac{\delta t}{t}. $$</mathjax></p>
-<p>Looking at the plot, we see that with an averaging time of one day, the fractional time stability of the watch&nbsp;is</p>
-<p><mathjax>$$\frac{\delta t}{t} \approx 2\times10^{-6}, $$</mathjax></p>
-<p>which corresponds nicely to our previously calculated value.  If we average over chunks that are ten days long instead, we get a fractional stability&nbsp;of</p>
-<p><mathjax>$$\frac{\delta t}{t} \approx 10^{-7}, $$</mathjax></p>
-<p>which would correspond to a deviation from our model of about 0.008 seconds.  Not&nbsp;bad.</p>
-<p>The initial question that started this whole ordeal was &#8220;How good is my watch?&#8221; and I think we can safely answer that with &#8220;as good as I&#8217;ll ever need it to be.&#8221;  Hooray for cheap and effective&nbsp;electronics!</p>
 </div>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/time-keeps-on-slippin-.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

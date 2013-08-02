@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.question.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 05 May 2011 21:06:00 -0400</lastBuildDate><item><title>Anatomy of an Experiment I - The Question</title><link>http://thephysicsvirtuosi.com/posts/anatomy-of-an-experiment-i-the-question.html</link><description>&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s1600/installation_of_world_largest_silicon_tracking_detector.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="204" src="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s320/installation_of_world_largest_silicon_tracking_detector.jpg" width="320" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Warning: picture has little or no relation to this post.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;I realized the other day that I&amp;#8217;ve seen a lot of people talk about research results, but it is much more rare that I see someone talk about how we do research.  I think that may be because, to us as scientists, the process is second nature.  We&amp;#8217;ve been doing it for years.  Other folks may be less familiar with the process though.  With this in mind, I&amp;#8217;m going to do a short series of posts focused on how we do an experiment.  Not the results, not so much the physics, but the process that we go through to create, setup, and carry out an experiment.  As my example I&amp;#8217;ll use a short little experiment that I built from the ground up in the last few weeks, that I&amp;#8217;m currently in the process of (hopefully) wrapping up.  Today I&amp;#8217;ll talk about the driving force behind almost any experiment: The&amp;nbsp;Question.&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;It might be argued that there are two types of experiments.  There are those that set out to answer a specific question, and those that set out to explore what happens under certain conditions (explore some part of phase space).  An example of the first type that comes immediately to mind is the recently announced results from &lt;a href="http://science.nasa.gov/science-news/science-at-nasa/2011/04may_epic/"&gt;Gravity Probe B&lt;/a&gt; (&lt;span class="caps"&gt;GP&lt;/span&gt;-B).  This was an experiment designed with one goal in mind, to test the validity of einstein&amp;#8217;s theory of general relativity, specifically geodesic precession and frame dragging.  They asked the question, built the apparatus, and then got results.  Here&amp;#8217;s a spoiler from the article: Einstein was right, to remarkable&amp;nbsp;precision.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m going to mostly ignore the second type of experiment.  While very important, I argue that those exploratory experiments are (almost?) always done on experimental apparatus that was built for another experiment.  You don&amp;#8217;t spend the time, money, and energy to build an experimental apparatus without having good evidence that it&amp;#8217;s worth doing, that is, without expecting to see&amp;nbsp;something.&lt;/p&gt;
-&lt;p&gt;This brings me to The Question.  The name might be misleading, the motivation for an experiment might not be a question (though it can usually be phrased as one).  One common motivation is to test theoretical predictions, as was the case with &lt;span class="caps"&gt;GP&lt;/span&gt;-B.  Theory without experimental verification is empty.  It may sound nice, but we can&amp;#8217;t trust it unless we&amp;#8217;ve tested it against what nature actually does.  Sometimes theory develops because of experimental results, for example the knowledge of the quantization of light came out of anomalous experimental effects of the photoelectric effect and blackbody radiation (among others).  Other times, experiment develops to test theory, the &lt;span class="caps"&gt;GP&lt;/span&gt;-B and the Large Hadron Collider for&amp;nbsp;example.&lt;/p&gt;
-&lt;p&gt;Another common motivation is a question based on a physical observation, for example: &lt;a href="http://physicsbuzz.physicscentral.com/2011/04/small-insects-paddle-through-air.html"&gt;how does a fly fly&lt;/a&gt;?  That question is, as these things go, very simply stated.  For an idea of how complicated they can get, just take a look at any recent collection of articles from any physics journal, wherein we find things like the form and source of &amp;#8216;itinerant magnetism in FeAs&amp;#8217; (grabbed from a recent Phys. Rev. B&amp;nbsp;article).&lt;/p&gt;
-&lt;p&gt;I classify a third type of question, one that is more process based: &amp;#8220;How can we do X?&amp;#8221;.  This third category is where the question that motivates (at least in the broad sense) the experiment I&amp;#8217;m going to describe comes from.  I can phrase it as: &amp;#8220;How can we successfully cryopreserve biological samples?&amp;#8221;  For those unfamiliar with biological cryopreservation, this is something I discussed &lt;a href="http://thevirtuosi.blogspot.com/2010/05/cryopreservation.html"&gt;almost a year ago&lt;/a&gt;.  From there, we get into smaller questions, most of those are type two, based on physical&amp;nbsp;observations.&lt;/p&gt;
-&lt;p&gt;This particular small experiment has grown out of my work on cryopreservation, and has more to do with the structure of water on freezing.  Over the past year, one of the projects I&amp;#8217;ve been working on has been to measure the so called critical warming rate of aqueous solutions.  This is the rate at which you have to warm vitreous aqueous solutions (see my earlier cryopreservation post for more details) to prevent ice formation on warming.  The question that has grown out of this work is: how does the cooling history of my vitreous sample affect the critical warming&amp;nbsp;rate?&lt;/p&gt;
-&lt;p&gt;Having arrived at the question, we&amp;#8217;ll next discuss the&amp;nbsp;apparatus.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Thu, 05 May 2011 21:06:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2011-05-05:posts/anatomy-of-an-experiment-i-the-question.html</guid><category>question</category><category>cryopreservation</category><category>physics</category><category>experiment</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.question.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 05 May 2011 21:06:00 -0400</lastBuildDate><item><title>Anatomy of an Experiment I - The Question</title><link>/posts/anatomy-of-an-experiment-i-the-question.html</link><description>&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s1600/installation_of_world_largest_silicon_tracking_detector.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s320/installation_of_world_largest_silicon_tracking_detector.jpg" /&gt;&lt;/a&gt;
+  Warning: picture has little or no relation to this&amp;nbsp;post.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;I realized the other day that I&amp;#8217;ve seen a lot of people talk about
+research results, but it is much more rare that I see someone talk about
+how we do research. I think that may be because, to us as scientists,
+the process is second nature. We&amp;#8217;ve been doing it for years. Other folks
+may be less familiar with the process though. With this in mind, I&amp;#8217;m
+going to do a short series of posts focused on how we do an experiment.
+Not the results, not so much the physics, but the process that we go
+through to create, setup, and carry out an experiment. As my example
+I&amp;#8217;ll use a short little experiment that I built from the ground up in
+the last few weeks, that I&amp;#8217;m currently in the process of (hopefully)
+wrapping up. Today I&amp;#8217;ll talk about the driving force behind almost any
+experiment: The Question. It might be argued that there are two types of
+experiments. There are those that set out to answer a specific question,
+and those that set out to explore what happens under certain conditions
+(explore some part of phase space). An example of the first type that
+comes immediately to mind is the recently announced results from
+&lt;a href="http://science.nasa.gov/science-news/science-at-nasa/2011/04may_epic/"&gt;Gravity Probe
+B&lt;/a&gt;
+(&lt;span class="caps"&gt;GP&lt;/span&gt;-B). This was an experiment designed with one goal in mind, to test
+the validity of einstein&amp;#8217;s theory of general relativity, specifically
+geodesic precession and frame dragging. They asked the question, built
+the apparatus, and then got results. Here&amp;#8217;s a spoiler from the article:
+Einstein was right, to remarkable precision. I&amp;#8217;m going to mostly ignore
+the second type of experiment. While very important, I argue that those
+exploratory experiments are (almost?) always done on experimental
+apparatus that was built for another experiment. You don&amp;#8217;t spend the
+time, money, and energy to build an experimental apparatus without
+having good evidence that it&amp;#8217;s worth doing, that is, without expecting
+to see something. This brings me to The Question. The name might be
+misleading, the motivation for an experiment might not be a question
+(though it can usually be phrased as one). One common motivation is to
+test theoretical predictions, as was the case with &lt;span class="caps"&gt;GP&lt;/span&gt;-B. Theory without
+experimental verification is empty. It may sound nice, but we can&amp;#8217;t
+trust it unless we&amp;#8217;ve tested it against what nature actually does.
+Sometimes theory develops because of experimental results, for example
+the knowledge of the quantization of light came out of anomalous
+experimental effects of the photoelectric effect and blackbody radiation
+(among others). Other times, experiment develops to test theory, the
+&lt;span class="caps"&gt;GP&lt;/span&gt;-B and the Large Hadron Collider for example. Another common
+motivation is a question based on a physical observation, for example:
+&lt;a href="http://physicsbuzz.physicscentral.com/2011/04/small-insects-paddle-through-air.html"&gt;how does a fly
+fly&lt;/a&gt;?
+That question is, as these things go, very simply stated. For an idea of
+how complicated they can get, just take a look at any recent collection
+of articles from any physics journal, wherein we find things like the
+form and source of &amp;#8216;itinerant magnetism in FeAs&amp;#8217; (grabbed from a recent
+Phys. Rev. B article). I classify a third type of question, one that is
+more process based: &amp;#8220;How can we do X?&amp;#8221;. This third category is where the
+question that motivates (at least in the broad sense) the experiment I&amp;#8217;m
+going to describe comes from. I can phrase it as: &amp;#8220;How can we
+successfully cryopreserve biological samples?&amp;#8221; For those unfamiliar with
+biological cryopreservation, this is something I discussed &lt;a href="http://thevirtuosi.blogspot.com/2010/05/cryopreservation.html"&gt;almost a
+year
+ago&lt;/a&gt;.
+From there, we get into smaller questions, most of those are type two,
+based on physical observations. This particular small experiment has
+grown out of my work on cryopreservation, and has more to do with the
+structure of water on freezing. Over the past year, one of the projects
+I&amp;#8217;ve been working on has been to measure the so called critical warming
+rate of aqueous solutions. This is the rate at which you have to warm
+vitreous aqueous solutions (see my earlier cryopreservation post for
+more details) to prevent ice formation on warming. The question that has
+grown out of this work is: how does the cooling history of my vitreous
+sample affect the critical warming rate? Having arrived at the question,
+we&amp;#8217;ll next discuss the&amp;nbsp;apparatus.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Thu, 05 May 2011 21:06:00 -0400</pubDate><guid>tag:,2011-05-05:posts/anatomy-of-an-experiment-i-the-question.html</guid><category>question</category><category>cryopreservation</category><category>physics</category><category>experiment</category></item></channel></rss>

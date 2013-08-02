@@ -1,539 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - Schwarzschild</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Schwarzschild - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: Schwarzschild</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/on-the-death-of-karl-schwarzschild.html"><time datetime="2010-07-24T23:54:00" pubdate>Sat 24 July 2010</time> On the Death of Karl&nbsp;Schwarzschild</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/on-the-death-of-karl-schwarzschild.html"
-                                        rel="bookmark"
-                                        title="Permalink to On the Death of Karl&nbsp;Schwarzschild">
-                                        On the Death of Karl&nbsp;Schwarzschild
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/on-the-death-of-karl-schwarzschild.html"
-                                    data-text="On the Death of Karl&nbsp;Schwarzschild"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-07-24T23:54:00">
-        <i class="icon-calendar"></i>Sat 24 July 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/schwarzschild.html"><i class="icon-tag"></i>Schwarzschild</a>
-	<a href="../tag/footnotes.html"><i class="icon-tag"></i>footnotes</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info -->                </div>
-                <p><br class="Apple-interchange-newline" />
-<div class="separator" style="clear: both; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; text-align: center;"><a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TEevPyrqW6I/AAAAAAAAAF4/nI7Q_2RQZV0/s1600/Karl+Schwarzschild.jpeg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TEevPyrqW6I/AAAAAAAAAF4/nI7Q_2RQZV0/s200/Karl+Schwarzschild.jpeg" width="164" /></a></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Every once in a while, in the study of science, one comes across biographical snippets that momentarily breathe life into names that otherwise serve as shorthand for equations and eras.  As an obvious effect of the selection bias involved with including this superfluous information in technical books, they are bound to be pretty interesting.  Such stories range from the hilarious antics of Feynman [1] or Fermi [2], to the heartbreaking stories of <a href="http://en.wikipedia.org/wiki/Ludwig_Boltzmann#Final_years">Boltzmann</a> and <a href="http://en.wikipedia.org/wiki/Oppenheimer_security_hearing">Oppenheimer</a>, and even to the surprisingly scandalous life o<span class="Apple-style-span" style="font-family: inherit;">f Erwin </span><span class="Apple-style-span" style="line-height: 19px;"><span class="Apple-style-span" style="font-family: inherit;">Schrödinger.  But my all time favorite of all these historical &#8220;fun facts&#8221; is that of the man who provided the first exact solution to the Einstein field equations while fighting in the First World War:  Karl Schwarzschild (pictured left impersonating a surprised walrus [3]).</span></span></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="line-height: 19px;"><span class="Apple-style-span" style="font-family: inherit;"></span></span></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: inherit;"></span></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: inherit;"></span></div><span class="Apple-style-span" style="font-family: inherit;"><a name='more'></a></span><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="line-height: 19px;"><span class="Apple-style-span" style="font-family: inherit;">
-</span></span></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="line-height: 19px;"><span class="Apple-style-span" style="font-family: inherit;">Karl Schwarzschild was an astronomer, physicist and mathematician; an across the board physical scientist with passions both abstract and practical.  He published his first article regarding the orbits of double stars at the age of 16 while still in high school.  He went on to work on the mathematical treatment of orbits, constructed several useful astronomical instruments, and put forward theoretical treatments of comet tails and stellar atmospheres.  His creativity was admired by some of the greatest scientists of his era.  Eddington, chief among them, offered his praise in a strangely brutal simile [4]:</span></span></div><blockquote><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>&#8220;&#8230; his joy was to range unrestricted over the pastures of knowledge, and, like a guerrilla leader, his attacks fell where they were least expected.&#8221;</i></div></blockquote><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But Schwarzschild&#8217;s greatest contribution to science was finding the first exact solution to Einstein&#8217;s field equations for general relativity in 1916.  This solution, which takes the form of the <a href="http://en.wikipedia.org/wiki/Schwarzschild_metric">Schwarzschild metric</a>, describes the space-time surrounding a non-rotating spherically symmetric object (the solution for a rotating spherically symmetric object was found in 1963 by Roy Kerr).  It was through this metric that I came to meet Schwarzschild, since every time it is introduced in a class the instructor is sure to drop the mother of all fun facts: Schwarzschild discovered his solution while in the army during World War I, a war that would eventually kill him (among others).</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">In this age of Wikipedia, I find it hard to believe that I didn&#8217;t immediately go home and check the full story behind this statement.  I may very well have, but over the years I have constructed a myth about the death of Schwarzschild that I at least half believed until I finally looked up the full story for this post.  </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">I imagined Schwarzschild as the noble and peaceful scientist immediately skeptical of the war, but eventually conscripted to fight.  There he fought on the front lines, carrying both a Mauser and a notebook.  He would spend the long lulls between suicidal assaults through no-man&#8217;s-land huddled down in the mud in the trenches scribbling away like mad at what would eventually become the elegant solution that bears his name.  </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Then (and here I will blatantly plagiarize the <i>All Quiet on the Western Front </i>movie) Schwarzschild began to see the solution, everything started to fall in place.  He became excited and no longer able to sit still.  Now standing, he reached out towards the beauty of nature he saw not in a <a href="http://www.youtube.com/watch?v=ShscVNkUmy0">butterfly</a> or <a href="http://www.youtube.com/watch?v=DJcBC2Am-uU">bluebird</a>, but in the fabric of space-time.  Just as he finishes his solution, Schwarzschild&#8217;s head briefly peaks above the trench and is caught by a sniper&#8217;s bullet.  Both he and his notebook fall to the mud unnoticed, an overly romanticized symbol for the futility of war or some such nonsense.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Now this version is obviously false (how did he get the solution to anyone?), but it is the one that has persisted in my mind grapes.  So what really happened?  When <a href="http://www.youtube.com/watch?v=YQkaD6fG8mk">war were declared</a> in 1914, Schwarzschild volunteered for the German army and manned weather stations and calculated missile trajectories in France, Belgium, and Russia.  It was in Russia that he discovered and published his well-known results in relativity as well as a derivation of the Stark effect using the &#8216;old&#8217; quantum mechanics.  It was also in Russia that he began to struggle with pemphigus, an autoimmune disease where the body starts attacking its own cells.  He was sent home, where he died in 1916 at the age of 42.  </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">The reality is much more sensible than my version, and still a good tale in its own right: a brilliant scientist cut down in his prime, working until the very end.  So why did I unconsciously elevate a respectable tale to one of mythical proportions?  I think it has something to do with how we view the great scientists of the past.  Since they were extraordinary at one thing (some scientific field), we assume they must have been extraordinary in every regard.  Therefore, their fates must carry some deeper meaning or symbolism.  But it turns out that the reality, while certainly less romantic, may be more satisfying (to some), that these men and women whose names live on tied to equations were just regular people who happened to be very good at one thing: being scientists.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Or maybe it&#8217;s just my inability to separate movies from real life.  Who knows?  </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[1]  <i>Surely You&#8217;re Joking, Mr. Feynman</i> is essentially the gag reel for 20th century physics.  It can be <a href="http://www.amazon.com/Surely-Feynman-Adventures-Curious-Character/dp/0393316041">purchased</a> with money if you&#8217;re into the whole capitalism thing.  Or for all you pinko commies and poor grad students there are two free options.  One, assemble approximately one gaggle of undergrad physics majors or Virtuosi bloggers and proceed to give them the shakedown, at least one copy should pop out.  Two, look into big government <a href="http://en.wikipedia.org/wiki/Public_library">socialism</a>.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[2]  See Virtuosi blog post, Future.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[3]  Some scholars use this picture as evidence of Schwarzschild&#8217;s involvement as the nerdiest and most forgotten Marx Brother.  There is no evidence to suggest his was, in fact, Poindexter Marx.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[4] Quote (and most facts) lifted from <a href="http://www-groups.dcs.st-and.ac.uk/~history/Biographies/Schwarzschild.html">here</a>, take that Wikipedia!</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[5] Apologies for the excessive and irrelevant links! [6]</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">[6] Apologies for the excessive and unnecessary footnotes!</div></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/on-the-death-of-karl-schwarzschild.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

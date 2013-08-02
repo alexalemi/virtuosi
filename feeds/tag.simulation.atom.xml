@@ -1,22 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.simulation.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2010-07-01T23:48:00-04:00</updated><entry><title>Zombpocalypse</title><link href="http://thephysicsvirtuosi.com/posts/zombpocalypse.html" rel="alternate"></link><updated>2010-07-01T23:48:00-04:00</updated><author><name>Matt</name></author><id>tag:thephysicsvirtuosi.com,2010-07-01:posts/zombpocalypse.html</id><summary type="html">&lt;p&gt;Here at the Virtuosi, we&amp;#8217;re concerned. We are concerned that perhaps the world is really not ready for a zombie apocalypse. You know, the kind of zombie apocalypse that you may have seen in such classics as &amp;#8220;Night of the Living Dead&amp;#8221;, &amp;#8220;Shaun of the Dead&amp;#8221;, or perhaps the even more recent &amp;#8220;Zombieland&amp;#8221; (sweet cameo by the way). The kind of zombpocalypse that could leave major cities void of life and the country plagued with the undead.&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;Well, Alemi and I were curious as to how likely such a pandemic was to occur and what it would look like in the simplest of models.  In typical Virtuosi fashion, we threw some physics at it and this is what we came up with.&lt;/div&gt;
-&lt;a name='more'&gt;&lt;/a&gt;
-&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"  style="font-size:large;"&gt;&lt;b&gt;The Model&lt;/b&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;Taking cues from the epidemiologists, we feel that the spread of zombie-ism might fall into a &lt;a href="http://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology"&gt;compartmental model&lt;/a&gt; that is much like the heavily studied &lt;span class="caps"&gt;SIR&lt;/span&gt; model.  Here, there are susceptibles, S, that get infected, I, and can subsequently infect other susceptibles or recover, R, and not play a part in the disease dynamics anymore.  Our analogous model is the &lt;span class="caps"&gt;SZR&lt;/span&gt; model in which there are susceptibles, S, once again that can be bitten by a zombie to become another zombie, Z.  However, this is a huge difference - a susceptible must then kill a zombie (by destroying the brain of cause) to make it removed, R.  Hence, we have the &lt;span class="caps"&gt;SZR&lt;/span&gt; disease model.  &lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;Like with the compartmental models, one can write down a set of differential equations that govern the dynamics of disease in a population.  However, these might not be the best option for simulation as the population is represented as a continuous variable.  After all, there can&amp;#8217;t be 1/100th of a zombie roaming around biting ankles causing a new epidemic after all of this partners have been killed off.  To get around this, we set up a discrete contact network where each node is one of the three states of the model and there are set probabilities of the three states interacting when they are neighbors.  In particular if there is a susceptible with a zombie neighbor then there is a probability &lt;b&gt;b&lt;/b&gt; that the zombie will bite the susceptible turning the node into a zombie.  In the same time step, there is a probability &lt;b&gt;k&lt;/b&gt; that the susceptible will kill the zombie putting it in the removed class.  Both of these actions can happen in one time step of the simulation.  However, the two actions can&amp;#8217;t happen sequentially to the same node.  That is, a newly bitten susceptible must be a zombie for at least one time step before it can be removed adding a latent period for the infection.  &lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"  style="font-size:large;"&gt;&lt;b&gt;Simulations:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;With these rules, we created networks with average connectivity k=8 (probably way too low) with up to N=40,000 susceptibles.  Patient zero was seeded at a random location and the simulation run until there were no more susceptible - zombie neighbor pairs.  &lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;A typical simulation looks something like:&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;center&gt;&lt;object width="480" height="385"&gt;&lt;param name="movie" value="http://www.youtube.com/v/D8GPovqceNY&amp;amp;hl=en_US&amp;amp;fs=1"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="allowscriptaccess" value="always"&gt;&lt;embed src="http://www.youtube.com/v/D8GPovqceNY&amp;amp;hl=en_US&amp;amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/center&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;Here, the blue represent the susceptibles and red zombies.  More subtly, the removed are shown in black.  You may also notice that the zombies actually wrap around as they spread due to periodic boundary conditions.  &lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;And so we ran many of these simulations for various values of N, b, and k to see what type of dynamics arise.  As the ratio of b/k is increased and zombies become proportionally better at biting susceptibles than they are at killing the zombies, we see a transition from little to no infection to mass pandemic in what appears to be a sort of percolation transition.  &lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s1600/cp.png"&gt;&lt;img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s320/cp.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5489167771945219234" /&gt;&lt;/a&gt;&lt;div&gt;In the figure red is the fraction of zombies in the final population and green is the amount of time that the simulation took to run.  The spike in time around the critical point shows critical slowing down as also seen in the length of the movie above.  Also, the ending configuration of zombies shows a fractal like structure near the critical point.  Using the &lt;a href="http://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension"&gt;box-counting&lt;/a&gt; method, we actually calculated the fractal dimension:&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s1600/fractal.png"&gt;&lt;img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 241px;" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s320/fractal.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5489170236989510514" /&gt;&lt;/a&gt;&lt;/div&gt;This helps us pinpoint the epidemic transition at a ratio of b/k = 1.4.  This means for our particular network type and assumptions on the infectious nature of zombie-ism that zombies must be 40% better at biting than we are at lopping heads for an epidemic to take off.  Even then, there must be a much larger ratio of b/k for more than 50% of the population to become part of the undead.  &lt;div&gt;
-&lt;/div&gt;&lt;div&gt;I trust that we the living would be at least as capable as the undead so any potential zombie scenario would seem to be stifled in our model.  But then again, what about fast zombies?  Now those things are scary.&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span class="Apple-style-span"  style="font-size:large;"&gt;Update:&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"  style="font-size:medium;"&gt;I had a quick thought that mobile zombies might be a bit more realistic.  I made a quick movie where zombies pursue the closest susceptible while the susceptibles run away from the zombies at the same speed.  You will see an area clear around the initial infection as the zombies give chase.  By accident, two zombies will collide providing the spark for an epidemic.  An explosion of zombies results.  More to follow!&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"  style="font-size:medium;"&gt;
-&lt;/span&gt;&lt;/div&gt;&lt;center&gt;
-&lt;object width="480" height="385"&gt;&lt;param name="movie" value="http://www.youtube.com/v/EkUo0Hs1SN8&amp;amp;hl=en_US&amp;amp;fs=1"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="allowscriptaccess" value="always"&gt;&lt;embed src="http://www.youtube.com/v/EkUo0Hs1SN8&amp;amp;hl=en_US&amp;amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/center&gt;&lt;/p&gt;</summary><category term="video"></category><category term="monte carlo"></category><category term="simulation"></category><category term="zombies"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.simulation.atom.xml" rel="self"></link><id>/</id><updated>2010-07-01T23:48:00-04:00</updated><entry><title>Zombpocalypse</title><link href="/posts/zombpocalypse.html" rel="alternate"></link><updated>2010-07-01T23:48:00-04:00</updated><author><name>Matt</name></author><id>tag:,2010-07-01:posts/zombpocalypse.html</id><summary type="html">&lt;p&gt;Here at the Virtuosi, we&amp;#8217;re concerned. We are concerned that perhaps the
+world is really not ready for a zombie apocalypse. You know, the kind of
+zombie apocalypse that you may have seen in such classics as &amp;#8220;Night of
+the Living Dead&amp;#8221;, &amp;#8220;Shaun of the Dead&amp;#8221;, or perhaps the even more recent
+&amp;#8220;Zombieland&amp;#8221; (sweet cameo by the way). The kind of zombpocalypse that
+could leave major cities void of life and the country plagued with the
+undead.
+Well, Alemi and I were curious as to how likely such a pandemic was to
+occur and what it would look like in the simplest of models. In typical
+Virtuosi fashion, we threw some physics at it and this is what we came
+up with.
+&lt;strong&gt;The Model&lt;/strong&gt;:
+Taking cues from the epidemiologists, we feel that the spread of
+zombie-ism might fall into a &lt;a href="http://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology"&gt;compartmental
+model&lt;/a&gt;
+that is much like the heavily studied &lt;span class="caps"&gt;SIR&lt;/span&gt; model. Here, there are
+susceptibles, S, that get infected, I, and can subsequently infect other
+susceptibles or recover, R, and not play a part in the disease dynamics
+anymore. Our analogous model is the &lt;span class="caps"&gt;SZR&lt;/span&gt; model in which there are
+susceptibles, S, once again that can be bitten by a zombie to become
+another zombie, Z. However, this is a huge difference - a susceptible
+must then kill a zombie (by destroying the brain of cause) to make it
+removed, R. Hence, we have the &lt;span class="caps"&gt;SZR&lt;/span&gt; disease model.
+Like with the compartmental models, one can write down a set of
+differential equations that govern the dynamics of disease in a
+population. However, these might not be the best option for simulation
+as the population is represented as a continuous variable. After all,
+there can&amp;#8217;t be 1/100th of a zombie roaming around biting ankles causing
+a new epidemic after all of this partners have been killed off. To get
+around this, we set up a discrete contact network where each node is one
+of the three states of the model and there are set probabilities of the
+three states interacting when they are neighbors. In particular if there
+is a susceptible with a zombie neighbor then there is a probability
+&lt;strong&gt;b&lt;/strong&gt; that the zombie will bite the susceptible turning the node into a
+zombie. In the same time step, there is a probability &lt;strong&gt;k&lt;/strong&gt; that the
+susceptible will kill the zombie putting it in the removed class. Both
+of these actions can happen in one time step of the simulation. However,
+the two actions can&amp;#8217;t happen sequentially to the same node. That is, a
+newly bitten susceptible must be a zombie for at least one time step
+before it can be removed adding a latent period for the infection.
+&lt;strong&gt;Simulations:&lt;/strong&gt;
+With these rules, we created networks with average connectivity k=8
+(probably way too low) with up to N=40,000 susceptibles. Patient zero
+was seeded at a random location and the simulation run until there were
+no more susceptible - zombie neighbor pairs.
+A typical simulation looks something like:
+Here, the blue represent the susceptibles and red zombies. More subtly,
+the removed are shown in black. You may also notice that the zombies
+actually wrap around as they spread due to periodic boundary conditions.
+And so we ran many of these simulations for various values of N, b, and
+k to see what type of dynamics arise. As the ratio of b/k is increased
+and zombies become proportionally better at biting susceptibles than
+they are at killing the zombies, we see a transition from little to no
+infection to mass pandemic in what appears to be a sort of percolation
+transition.
+&lt;a href="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s1600/cp.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s320/cp.png" /&gt;&lt;/a&gt;
+In the figure red is the fraction of zombies in the final population and
+green is the amount of time that the simulation took to run. The spike
+in time around the critical point shows critical slowing down as also
+seen in the length of the movie above. Also, the ending configuration of
+zombies shows a fractal like structure near the critical point. Using
+the
+&lt;a href="http://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension"&gt;box-counting&lt;/a&gt;
+method, we actually calculated the fractal dimension:
+&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s1600/fractal.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s320/fractal.png" /&gt;&lt;/a&gt;
+This helps us pinpoint the epidemic transition at a ratio of b/k = 1.4.
+This means for our particular network type and assumptions on the
+infectious nature of zombie-ism that zombies must be 40% better at
+biting than we are at lopping heads for an epidemic to take off. Even
+then, there must be a much larger ratio of b/k for more than 50% of the
+population to become part of the undead.
+I trust that we the living would be at least as capable as the undead so
+any potential zombie scenario would seem to be stifled in our model. But
+then again, what about fast zombies? Now those things are scary.
+&lt;strong&gt;Update:&lt;/strong&gt;
+I had a quick thought that mobile zombies might be a bit more realistic.
+I made a quick movie where zombies pursue the closest susceptible while
+the susceptibles run away from the zombies at the same speed. You will
+see an area clear around the initial infection as the zombies give
+chase. By accident, two zombies will collide providing the spark for an
+epidemic. An explosion of zombies results. More to&amp;nbsp;follow!&lt;/p&gt;</summary><category term="video"></category><category term="monte carlo"></category><category term="simulation"></category><category term="zombies"></category></entry></feed>

@@ -1,563 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>How Cold is the Ground&nbsp;<span class="caps">II</span></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>How Cold is the Ground&nbsp;<span class="caps">II</span> - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to How Cold is the Ground&nbsp;<span class="caps">II</span>">
-                                        How Cold is the Ground&nbsp;<span class="caps">II</span>
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-05-26T21:28:00">
-        <i class="icon-calendar"></i>Sat 26 May 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/brian.html"><i class="icon-user"></i>Brian</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s1600/mainImage.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s200/mainImage.png" width="90" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Images <a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG">from </a><a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg">Wikipedia</a></td><td class="tr-caption" style="text-align: center;">
-</td><td class="tr-caption" style="text-align: center;">
-</td></tr></tbody></table>
-
-<p>Last week (ok, it was a little more than a few days ago&#8230;.) I used dimensional analysis to figure out how the ground&#8217;s temperature changes with time. But although dimensional analysis can give us information about the length scales in the problem, it doesn&#8217;t tell us what the solution looks like. From dimensional analysis, we don&#8217;t even know what the solution does at large times and distances. (Although we can usually see the asymptotic behavior directly from the equation.) So let&#8217;s go ahead and solve the the heat equation exactly:
-<mathjax>$$
-\frac {\partial T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)
-$$</mathjax> </p>
-<p><a name='more'></a></p>
-<p>Well, what type of solution do we want to this equation? We want the temperature at the Earth&#8217;s surface <i>x=0</i> to change with the days or the seasons. So let&#8217;s start out modeling this with a sinusoidal dependence &#8212; we&#8217;ll look for a solution of the form
-<mathjax>$$
- T(x,t) = A(x)e^{i wt}
-$$</mathjax> 
-for some function <i>A(x)</i>, then we can take the real part for our&nbsp;solution.</p>
-<p>Plugging this into Eq. (1) gives <i>A&#8221; = iw/a * A</i>,&nbsp;or </p>
-<p><mathjax>$$
-A(x) = e^{ \pm \sqrt{w/2a } (1+i) x}
-$$</mathjax>
-Since we have a second-order ordinary differential equation for <i>A</i>, we have two possible solutions, which are like <i>exp(+x) </i>or <i>exp(-x)</i>. Which one do we choose? Well, we want the temperature very far away from the surface of the ground to be constant, so we need the solution that decays with distance, <i>A~exp(-x)</i>. Taking the real part of this solution, we find <a href="#footnote-1">[1]</a> 
-<mathjax>$$T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x ) e^{-\sqrt{w/2a}x} \quad (2)
-$$</mathjax> 
-Well, what does this solution <i>say</i>?  As we expected from our scaling arguments last week, the distance scale depends on the <i>square root</i> of the time scale &#8212; if we decrease our frequency by 4 (say, looking at  changes over a season vs over a month), the ground gets cooler only 2x  deeper. We also see that the temperature oscillation drops off quite  rapidly as we go deeper into the ground, and that there is a &#8220;lag&#8221; the  farther you go into the ground. In particular, we see that at distances deep into the ground, the temperature drops to its average value at the surface. You can see this all in the pretty plot below (generated with Python):
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s1600/SingleFrequency.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="301" src="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s400/SingleFrequency.png" width="400" /></a></div>Let&#8217;s recap. To model the temperature of the ground, we looked for a solution to the heat equation which had a sinusoidally oscillating temperature at <i>x=0</i>, and decayed to 0 at large <i>x</i>. We found a solution such a solution, and it shows that the temperature decays rapidly as we go far into the ground. At this point, there are two questions that pop into mind: 1) Is the solution that we found <i>unique</i>? Or are there other possible solutions? 2) This is all well and good, but what if our days or seasons <i>aren&#8217;t perfect sines</i>? Can we find a solution that describes this&nbsp;behavior?</p>
-<p>I&#8217;ll give one (1) VirtuosiPoint to the first commenter who can prove to what extent the above solution is unique <a href="#footnote-2">[2]</a>. But how about the second point? Can we solve this for non-sinusoidal time&nbsp;variations? </p>
-<p>Well, at this point most of the readers are rolling their eyes and shouting &#8220;Use a <a href="http://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> and move on.&#8221; So I will. Briefly, it turns out that (more or less) <i>any</i> periodic function can be written as a sum of sines <span class="amp">&amp;</span> cosines. So we can just add a bunch of sines and cosines together and construct our final&nbsp;solution.</p>
-<p>So just for fun, here is a plot of the temperature of the ground in Ithaca (data from <a href="http://en.wikipedia.org/wiki/Ithaca,_New_York">Wikipedia</a>) over a year. (I used a discrete Fourier transform to compute the&nbsp;coefficients.)</p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s1600/IthacaTemp.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="301" src="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s400/IthacaTemp.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The temperature (colorbar) is in degrees C, assuming <a href="http://thevirtuosi.blogspot.com/2012/05/how-cold-is-ground.html"><i>a=0.5 mm^2/s</i>. </a></td></tr></tbody></table>
-
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-hNPxXpFwZag/T8F30BJbujI/AAAAAAAAAAk/v6Y4pzilvao/s1600/IthacaTemp.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-</a></div>
-
-<p>Looks pretty boring, but I swear that all the frequencies are in that plot. It just turns out that the seasons in Ithaca are pretty sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty constant 8&nbsp;C.  </p>
-<p>While I was postponing writing this, I wondered what the temperature on Mercury&#8217;s rocks would be. If we dig deep enough, can we find an area with habitable temperatures? Some <a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml">quick </a><a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29">Googlin</a>&#8216; shows that the daytime and nighttime temperatures on Mercury are ~550-700 K and ~110 K at the &#8220;equator.&#8221; While I don&#8217;t think that Mercury&#8217;s temperature varies symmetrically, let&#8217;s assume so for lack of better data.<a href="#footnote-3">[3]</a> Then we&#8217;d expect that deep into the surface, the temperature would be fairly constant in time, at the average of these two extremes. Plugging in the numbers (assuming <i>a~0.52 mm^2/s </i> and using a Mercurial solar day as 176 days), we&nbsp;get</p>
-<div style="text-align: center;"><span style="font-size: small;"><i>T=94 </i>C, </span><span style="font-size: small;">at</span><span style="font-size: small;"> 2.75 meters into the surface. </span></div>
-
-<p id="footnote-1">[1] More precisely, since the heat equation is linear and real, if <i>T(x,t) </i>is a solution to the equation, then so are <i>1/2(T+T*)</i> or <i>1/2i(T-T*). </i> </p>
-
-<p id="footnote-2">[2] Hint: It&#8217;s not unique. For instance, here is another  solution that satisfies the constraints, with no internal heat sources  or sinks (I&#8217;ll call it the &#8220;freshly buried&#8221; solution):
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s1600/buriedAlive.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="241" src="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s320/buriedAlive.png" width="320" /></a></div>
-Can  you prove that all the other solutions decay to the original solution?  Or is there a second or even a spectrum of steady state&nbsp;solutions? </p>
-
-<p><p id="footnote-3">[3] If someone provides me with better data of the time variation of Mercury&#8217;s surface at some specific latitude, I&#8217;ll update with a full plot of the temperature as a function of depth and&nbsp;time.</p> </p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/how-cold-is-the-ground-ii.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>How Cold is the Ground&nbsp;<span class="caps">II</span></h1>
+			<hr />
+<p><a href="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s1600/mainImage.png"><img alt="image" src="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s200/mainImage.png" /></a>
+  Images <a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG">from</a><a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg">Wikipedia</a>                                           </p>
+<hr />
+<p>Last week (ok, it was a little more than a few days ago&#8230;.) I used
+dimensional analysis to figure out how the ground&#8217;s temperature changes
+with time. But although dimensional analysis can give us information
+about the length scales in the problem, it doesn&#8217;t tell us what the
+solution looks like. From dimensional analysis, we don&#8217;t even know what
+the solution does at large times and distances. (Although we can usually
+see the asymptotic behavior directly from the equation.) So let&#8217;s go
+ahead and solve the the heat equation exactly: <mathjax>$$ \\frac {\\partial
+T}{\\partial t} = a \\frac {\\partial \^2 T}{\\partial x\^2} \\quad (1)
+$$</mathjax> Well, what type of solution do we want to this equation? We want the
+temperature at the Earth&#8217;s surface <em>x=0</em> to change with the days or the
+seasons. So let&#8217;s start out modeling this with a sinusoidal dependence
+&#8212; we&#8217;ll look for a solution of the form <mathjax>$$ T(x,t) = A(x)e\^{i wt} $$</mathjax>
+for some function <em>A(x)</em>, then we can take the real part for our
+solution. Plugging this into Eq. (1) gives <em>A&#8221; = iw/a * A</em>, or <mathjax>$$ A(x)
+= e\^{ \\pm \\sqrt{w/2a } (1+i) x} $$</mathjax> Since we have a second-order
+ordinary differential equation for <em>A</em>, we have two possible solutions,
+which are like <em>exp(+x)</em>or <em>exp(-x)</em>. Which one do we choose? Well, we
+want the temperature very far away from the surface of the ground to be
+constant, so we need the solution that decays with distance,
+<em>A\~exp(-x)</em>. Taking the real part of this solution, we find
+<a href="#footnote-1">[1]</a> <mathjax>$$T(x,t) = T\_0 \\cos (wt + \\sqrt{w/2a}\\times x )
+e\^{-\\sqrt{w/2a}x} \\quad (2) $$</mathjax> Well, what does this solution <em>say</em>?
+As we expected from our scaling arguments last week, the distance scale
+depends on the <em>square root</em> of the time scale &#8212; if we decrease our
+frequency by 4 (say, looking at changes over a season vs over a month),
+the ground gets cooler only 2x deeper. We also see that the temperature
+oscillation drops off quite rapidly as we go deeper into the ground, and
+that there is a &#8220;lag&#8221; the farther you go into the ground. In particular,
+we see that at distances deep into the ground, the temperature drops to
+its average value at the surface. You can see this all in the pretty
+plot below (generated with&nbsp;Python):</p>
+<p><a href="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s1600/SingleFrequency.png"><img alt="image" src="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s400/SingleFrequency.png" /></a></p>
+<p>Let&#8217;s recap. To model the temperature of the ground, we looked for a
+solution to the heat equation which had a sinusoidally oscillating
+temperature at <em>x=0</em>, and decayed to 0 at large <em>x</em>. We found a solution
+such a solution, and it shows that the temperature decays rapidly as we
+go far into the ground. At this point, there are two questions that pop
+into mind: 1) Is the solution that we found <em>unique</em>? Or are there other
+possible solutions? 2) This is all well and good, but what if our days
+or seasons <em>aren&#8217;t perfect sines</em>? Can we find a solution that describes
+this behavior? I&#8217;ll give one (1) VirtuosiPoint to the first commenter
+who can prove to what extent the above solution is unique
+<a href="#footnote-2">[2]</a>. But how about the second point? Can we solve this
+for non-sinusoidal time variations? Well, at this point most of the
+readers are rolling their eyes and shouting &#8220;Use a <a href="http://en.wikipedia.org/wiki/Fourier_series">Fourier
+series</a> and move on.&#8221; So I
+will. Briefly, it turns out that (more or less) <em>any</em> periodic function
+can be written as a sum of sines <span class="amp">&amp;</span> cosines. So we can just add a bunch
+of sines and cosines together and construct our final solution. So just
+for fun, here is a plot of the temperature of the ground in Ithaca (data
+from <a href="http://en.wikipedia.org/wiki/Ithaca,_New_York">Wikipedia</a>) over a
+year. (I used a discrete Fourier transform to compute the&nbsp;coefficients.)</p>
+<hr />
+<p><a href="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s1600/IthacaTemp.png"><img alt="image" src="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s400/IthacaTemp.png" /></a>
+  The temperature (colorbar) is in degrees C, assuming <a href="http://thevirtuosi.blogspot.com/2012/05/how-cold-is-ground.html"><em>a=0.5 mm\^2/s</em>.</a></p>
+<hr />
+<p><a href="http://2.bp.blogspot.com/-hNPxXpFwZag/T8F30BJbujI/AAAAAAAAAAk/v6Y4pzilvao/s1600/IthacaTemp.png"></a></p>
+<p>Looks pretty boring, but I swear that all the frequencies are in that
+plot. It just turns out that the seasons in Ithaca are pretty
+sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty
+constant 8 C. While I was postponing writing this, I wondered what the
+temperature on Mercury&#8217;s rocks would be. If we dig deep enough, can we
+find an area with habitable temperatures? Some
+<a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml">quick</a><a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29">Googlin</a>&#8216;
+shows that the daytime and nighttime temperatures on Mercury are
+\~550-700 K and \~110 K at the &#8220;equator.&#8221; While I don&#8217;t think that
+Mercury&#8217;s temperature varies symmetrically, let&#8217;s assume so for lack of
+better data.<a href="#footnote-3">[3]</a> Then we&#8217;d expect that deep into the
+surface, the temperature would be fairly constant in time, at the
+average of these two extremes. Plugging in the numbers (assuming
+<em>a\~0.52 mm\^2/s</em> and using a Mercurial solar day as 176 days), we&nbsp;get</p>
+<p><em>T=94</em>C, at 2.75 meters into the&nbsp;surface.</p>
+<p>[1] More precisely, since the heat equation is linear and real, if
+<em>T(x,t)</em>is a solution to the equation, then so are <em>1/2(T+T*)</em> or
+<em>1/2i(T-T*).</em></p>
+<p>[2] Hint: It&#8217;s not unique. For instance, here is another solution that
+satisfies the constraints, with no internal heat sources or sinks (I&#8217;ll
+call it the &#8220;freshly buried&#8221;&nbsp;solution):</p>
+<p><a href="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s1600/buriedAlive.png"><img alt="image" src="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s320/buriedAlive.png" /></a></p>
+<p>Can you prove that all the other solutions decay to the original
+solution? Or is there a second or even a spectrum of steady state&nbsp;solutions?</p>
+<p>[3] If someone provides me with better data of the time variation of
+Mercury&#8217;s surface at some specific latitude, I&#8217;ll update with a full
+plot of the temperature as a function of depth and&nbsp;time.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/how-cold-is-the-ground-ii.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2012-05-26T21:28:00" pubdate>Sat 26 May 2012</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/.html"></a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

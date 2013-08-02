@@ -1,550 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze">
-                                        End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2012-04-22T19:34:00">
-        <i class="icon-calendar"></i>Sun 22 April 2012
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/.html"><i class="icon-tag"></i></a>
-</footer><!-- /.post-info -->                </div>
-                <table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s1600/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s320/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="background-color: white; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; text-align: -webkit-auto;">http://tinyurl.com/7rdj996</span></td></tr></tbody></table>
-
-<p>It is traditional here at The Virtuosi to <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html">plot</a> <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html">the</a> <a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html">destruction</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-iv-shocking-destruction.html">of</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-v-there-goes-sun.html">the</a> <a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-vi-nanobot-destruction.html">earth</a>.  We also are making secret plans for our volcano lair and death ray.  However, since it is earth day, we will only share with you the plans for the total doom of the earth, not the cybernetically enhanced guard dogs we&#8217;re building for our <a href="http://thevirtuosi.blogspot.com/2012/04/earth-day-2012-escape-to-moon.html">moon base</a>.  The plan I reveal today is elegant in its simplicity.  I intend to alter the orbit of the earth enough to cause the earth to freeze, thus ending life as we know&nbsp;it. </p>
-<p><a name='more'></a>According to the internet at large, the average surface temperature of the earth is ~15 C.  This average surface temperature is directly related to the power output of the sun.  More precisely, it is directly related to the radiated power from the sun that the earth absorbs.  Assuming that the earth&#8217;s temperature is not changing (true enough for our purposes), the then power radiated by the earth must be equal to the power absorbed from the sun.  More&nbsp;precisely</p>
-<p><mathjax>$$ P_{rad,earth}=P_{abs,sun}$$</mathjax></p>
-<p>Now, the radiated power goes&nbsp;as</p>
-<p><mathjax>$$P_{rad}=\epsilon \sigma A_{earth} T^4 $$</mathjax></p>
-<p>where A_earth is the surface area of the earth, T is the temperature of the earth, and epsilon and sigma are constants.  I&#8217;ll be conservative and say that I want to cool the temperature of the earth down to 0 C.  The ratio of the power the earth will emit&nbsp;is</p>
-<p><mathjax>$$\frac{P_{new}}{P_{old}}=\frac{T_{new}^4}{T_{old}^4} \approx .81$$</mathjax></p>
-<p>Note that the temperature ratio must be done in&nbsp;Kelvin.</p>
-<p>The power radiated by the sun (or any star) drops off as the inverse square of the distance from the sun to the point of&nbsp;interest:</p>
-<p><mathjax>$$P_{sun} \sim \frac{1}{r^2} $$</mathjax></p>
-<p>To reduce the power the earth receives from the sun to 81% of the current value would&nbsp;require</p>
-<p><mathjax>$$\frac{P_{sun,new}}{P_{sun,old}}=\frac{r_{old}^2}{r_{new}^2}=.81 $$</mathjax></p>
-<p>This tells us that the new earth-sun distance must be larger than the old (a good sanity check).  In fact, it&nbsp;gives</p>
-<p><mathjax>$$r_{new}=1.11 r_{old} $$</mathjax></p>
-<p>So I&#8217;ll need to move the earth by 11% of the current distance from the earth to the sun.  No small&nbsp;task!</p>
-<p>The earth is in a circular orbit (or close enough).  To change to a circular orbit of larger radius requires two applications of thrust at opposite points  in the orbit  It turns out that the required boost in speed (the ratio of the speeds just before and after applying thrust) for the first boost of an object changing orbits is given&nbsp;by</p>
-<p><mathjax>$$\frac{v_{f}}{v_{i}}=\sqrt{\frac{2R_{f}}{R_i+R_f}}=1.026$$</mathjax></p>
-<p>To move from the transfer orbit to the final circular orbit&nbsp;requires</p>
-<p><mathjax>$$\frac{v_{f}}{v_{i}}=\sqrt{\frac{R_{i}+R_f}{2R_i}}=1.027$$</mathjax></p>
-<p>Note that despite the fact that we boost the velocity at both points, the velocity of the final orbit is less than that of the&nbsp;initial.</p>
-<p>Now, how could we apply that much thrust?  Well, the change in momentum for the earth from each stage is roughly (ignoring the slight velocity increase of the transfer&nbsp;orbit)</p>
-<p><mathjax>$$\Delta p = .03M_E v_E $$</mathjax></p>
-<p>The mass of the earth is ~6*10^24 kg, the orbital velocity is ~30 km/s,&nbsp;so</p>
-<p><mathjax>$$\Delta p = 5\cdot 10^{27} kg*m/s$$</mathjax></p>
-<p>A solid rocket booster (the booster rocket used for shuttle launches, when those still happened) can apply about 12 <span class="caps">MN</span> of force for 75 s (thank you wikipedia).  That&#8217;s a net momentum change of ~900 <em>10^9 kg</em>m/s (900 billion!).  So we would only&nbsp;need</p>
-<p><mathjax>$$\frac{2*5\cdot 10^{27}}{9\cdot 10^{11}}=12 \cdot 10^{15}$$</mathjax></p>
-<p>That&#8217;s right, only 12 million billion booster rockets!  With those I can freeze the earth.  I assure you that this plan is proceeding on schedule, and will be ready shortly after we have constructed our volcano&nbsp;lair.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/end-of-the-earth-vii-the-big-freeze.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>End of the Earth <span class="caps">VII</span>: The Big&nbsp;Freeze</h1>
+			<hr />
+<p><a href="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s1600/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg"><img alt="image" src="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s320/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg" /></a>&nbsp;http://tinyurl.com/7rdj996</p>
+<hr />
+<p>It is traditional here at The Virtuosi to
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html">plot</a>
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html">the</a>
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html">destruction</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-iv-shocking-destruction.html">of</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-v-there-goes-sun.html">the</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-vi-nanobot-destruction.html">earth</a>.
+We also are making secret plans for our volcano lair and death ray.
+However, since it is earth day, we will only share with you the plans
+for the total doom of the earth, not the cybernetically enhanced guard
+dogs we&#8217;re building for our <a href="http://thevirtuosi.blogspot.com/2012/04/earth-day-2012-escape-to-moon.html">moon
+base</a>.
+The plan I reveal today is elegant in its simplicity. I intend to alter
+the orbit of the earth enough to cause the earth to freeze, thus ending
+life as we know it. According to the internet at large, the average
+surface temperature of the earth is \~15 C. This average surface
+temperature is directly related to the power output of the sun. More
+precisely, it is directly related to the radiated power from the sun
+that the earth absorbs. Assuming that the earth&#8217;s temperature is not
+changing (true enough for our purposes), the then power radiated by the
+earth must be equal to the power absorbed from the sun. More precisely
+<mathjax>$$ P\_{rad,earth}=P\_{abs,sun}$$</mathjax> Now, the radiated power goes as
+<mathjax>$$P\_{rad}=\\epsilon \\sigma A\_{earth} T\^4 $$</mathjax> where A_earth is the
+surface area of the earth, T is the temperature of the earth, and
+epsilon and sigma are constants. I&#8217;ll be conservative and say that I
+want to cool the temperature of the earth down to 0 C. The ratio of the
+power the earth will emit is
+<mathjax>$$\\frac{P\_{new}}{P\_{old}}=\\frac{T\_{new}\^4}{T\_{old}\^4} \\approx
+.81$$</mathjax> Note that the temperature ratio must be done in Kelvin. The power
+radiated by the sun (or any star) drops off as the inverse square of the
+distance from the sun to the point of interest: <mathjax>$$P\_{sun} \\sim
+\\frac{1}{r\^2} $$</mathjax> To reduce the power the earth receives from the sun
+to 81% of the current value would require
+<mathjax>$$\\frac{P\_{sun,new}}{P\_{sun,old}}=\\frac{r\_{old}\^2}{r\_{new}\^2}=.81
+$$</mathjax> This tells us that the new earth-sun distance must be larger than the
+old (a good sanity check). In fact, it gives <mathjax>$$r\_{new}=1.11 r\_{old} $$</mathjax>
+So I&#8217;ll need to move the earth by 11% of the current distance from the
+earth to the sun. No small task! The earth is in a circular orbit (or
+close enough). To change to a circular orbit of larger radius requires
+two applications of thrust at opposite points in the orbit It turns out
+that the required boost in speed (the ratio of the speeds just before
+and after applying thrust) for the first boost of an object changing
+orbits is given by
+<mathjax>$$\\frac{v\_{f}}{v\_{i}}=\\sqrt{\\frac{2R\_{f}}{R\_i+R\_f}}=1.026$$</mathjax> To
+move from the transfer orbit to the final circular orbit requires
+<mathjax>$$\\frac{v\_{f}}{v\_{i}}=\\sqrt{\\frac{R\_{i}+R\_f}{2R\_i}}=1.027$$</mathjax> Note
+that despite the fact that we boost the velocity at both points, the
+velocity of the final orbit is less than that of the initial. Now, how
+could we apply that much thrust? Well, the change in momentum for the
+earth from each stage is roughly (ignoring the slight velocity increase
+of the transfer orbit) <mathjax>$$\\Delta p = .03M\_E v\_E $$</mathjax> The mass of the
+earth is \~6*10\^24 kg, the orbital velocity is \~30 km/s, so <mathjax>$$\\Delta
+p = 5\\cdot 10\^{27} kg\*m/s$$</mathjax> A solid rocket booster (the booster
+rocket used for shuttle launches, when those still happened) can apply
+about 12 <span class="caps">MN</span> of force for 75 s (thank you wikipedia). That&#8217;s a net
+momentum change of \~900 *10\^9 kg*m/s (900 billion!). So we would
+only need <mathjax>$$\\frac{2\*5\\cdot 10\^{27}}{9\\cdot 10\^{11}}=12 \\cdot
+10\^{15}$$</mathjax> That&#8217;s right, only 12 million billion booster rockets! With
+those I can freeze the earth. I assure you that this plan is proceeding
+on schedule, and will be ready shortly after we have constructed our
+volcano&nbsp;lair.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/end-of-the-earth-vii-the-big-freeze.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2012-04-22T19:34:00" pubdate>Sun 22 April 2012</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/.html"></a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

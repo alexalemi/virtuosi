@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.thin-films.atom.xml" rel="self"></link><id>/</id><updated>2010-04-13T15:33:00-04:00</updated><entry><title>Bubbles!</title><link href="/posts/bubbles-.html" rel="alternate"></link><updated>2010-04-13T15:33:00-04:00</updated><author><name>Matt</name></author><id>tag:,2010-04-13:posts/bubbles-.html</id><summary type="html">&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s1600/good-small.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s320/good-small.jpg" /&gt;&lt;/a&gt;
+Ever wonder why don&amp;#8217;t you see a standard rainbow when looking at a thin
+film such as soap stretched across a membrane ready for bubble making?
+Well, I encountered this problem when I presented my intro physics
+section with a quiz question today. Properly stated, the question was&amp;#8230;
+&amp;#8220;Suppose white light is incident on a thin film (a soap bubble of
+n=1.33) hanging vertically inside of a square loop. The minimum
+thickness of the film at the top of the loop is 900nm and it increases
+linearly (due to gravity) to 1300nm by the bottom of the loop which is
+10cm away. This means that the thickness as a function of distance from
+the top of the loop is
+&lt;mathjax&gt;$$ d(x) = \\text{900nm} + \\text{400nm} \* \\left(
+\\frac{x}{\\text{10cm}} \\right) $$&lt;/mathjax&gt;
+What wavelengths will be most strongly reflected as a function of
+distance along our bubble film?&amp;#8221;
+So I got to thinking - don&amp;#8217;t the partially interfering wavelengths also
+contribute to the image that our eyes see? Isn&amp;#8217;t there a better mass
+profile to use such as an exponential? Linear is just silly.
+As for the first question, if you consider a single ray entering the
+thin film and reflecting off both the first interface as well as the
+second, then there is a phase difference between the two reflected
+waves,
+&lt;mathjax&gt;$$ \\Delta \\phi = \\pi + 2\\pi \* \\frac{2d}{\\lambda} $$&lt;/mathjax&gt;
+where d is the thickness of the film and lambda is the wavelength. If we
+consider these two waves as two standing waves added together with a
+phase then we see that the superposition of their electric fields, for
+example, is
+&lt;mathjax&gt;$$ E\_{tot} = E\_0 \\cos(\\omega t) + E\_0 \\cos(\\omega t + \\Delta
+\\phi) $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ E\_{tot} = E\_0 \\sin(\\omega t) \\cos(\\Delta \\phi) $$&lt;/mathjax&gt;
+The intensity that our eyes see then goes like the square of this giving
+an effective damping to certain wavelengths as given by
+&lt;mathjax&gt;$$ \\delta = \\cos\^2(\\Delta \\phi) $$&lt;/mathjax&gt;
+Using a more realistic exponential mass profile and this damping factor
+for wavelengths in the visible spectrum, I created the top image using
+OpenIL (maybe it&amp;#8217;s called DevIL, hard to&amp;nbsp;say).&lt;/p&gt;</summary><category term="interference"></category><category term="bubbles"></category><category term="thin films"></category></entry></feed>

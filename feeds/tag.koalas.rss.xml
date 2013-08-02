@@ -1,63 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.koalas.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 15 Dec 2010 02:01:00 -0500</lastBuildDate><item><title>Problem of the Week #3: Solution</title><link>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3-solution.html</link><description>&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s1600/koala.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="183" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s200/koala.jpg" width="200" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Cold-Blooded Killer&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;Hello all and welcome to to another roundup of Problem of the Week.  If the time intervals don&amp;#8217;t seem to be adding up, just remember that &amp;#8220;week&amp;#8221; is an illusion here at Virtuosi headquarters.  &amp;#8220;Problem of the Week,&amp;#8221; doubly so.  But enough with the excuses, let&amp;#8217;s see if Mr. Bond lives to Die Another&amp;nbsp;Day. &lt;/p&gt;
-&lt;p&gt;The situation presented in the problem was one of a glass of water filled all the way to the top with a single ice cube in it.  The goal is to see if any water falls to the floor as the ice cube&amp;nbsp;melts.&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
-The simplest analysis would be to just consider the displacement of water by the ice cube.  By Archimedes&amp;#8217; principle we know that the buoyant force on the ice cube is equal to the weight of the water displaced by the ice cube.  But since the ice cube is floating, we know that the buoyant force is equal to the weight of the ice cube.  Therefore, the ice cube just displaces it&amp;#8217;s own weight in water.  So as the ice cube melts, the water level stays the same and no water is spilled&amp;nbsp;over.&lt;/p&gt;
-&lt;p&gt;Stated a bit more explicitly, we have that the buoyant force is the weight of the displaced&amp;nbsp;water:&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ F_b = m_{water}g = {\rho}_{water}V_{water}g $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where we have just expressed the mass of the water as the density of water times the volume of the water displaced.  Likewise, the weight of the ice cube&amp;nbsp;is&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ W_{ice} = m_{ice}g = {\rho}_{ice}V_{ice}g $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;But since the ice cube is floating, the buoyant force is equal to the weight.  Setting the above equations equal to each other and rearranging a bit, we can solve for the volume of the water displaced by the ice&amp;nbsp;cube:&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ V_{water} = \frac{{\rho}_{ice}V_{ice}}{{\rho}_{water}} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Great, now we have the volume of water that the ice cube displaced, so now we just need to see what volume of water the ice cube will add once it melts.  Since we know that the mass of ice cube better be the same as the mass of the water left after it melts, we can&amp;nbsp;write&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ {\rho}_{ice}V_{ice} = {\rho}_{water}V_{water} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;which gives that the total volume of the water  is&amp;nbsp;just&lt;/p&gt;
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;$$ V_{water} = \frac{{\rho}_{ice}V_{ice}}{{\rho}_{water}} $$&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;which is exactly the same volume we found before.  Therefore, when the ice cube melts it fills up exactly the same amount of volume as the water displaced to hold up the ice cube, so the water level remains the same and James Bond lives!&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Or does he?  Well, he sure does if the system is entirely described by the analysis above.  But we need to be exact here since a single drop would set off the Koala death trap.  We have considered the biggest contributions to the change of volume of the water (and easiest to calculate!), but we have ignored a large number of much much smaller effects on the volume.  Typically these effects would be swept aside and callously labeled &amp;#8220;negligible,&amp;#8221; but since even the smallest change of volume could mean life or death for our hero, they must be accounted for to give a final &amp;#8220;exact&amp;#8221; answer.  &lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Unfortunately, &amp;#8220;exact&amp;#8221; isn&amp;#8217;t something science can do very well.  We can only do as good as the measurements we make allow.  And since I gave you practically no information, this was very tough.  However, one could consider the magnitude of the effects given typical values and see which side wins out.  But if two competing effects give similar values under reasonable conditions, it becomes very difficult to give an answer.  &lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;The last two &amp;#8220;Problems of the Week&amp;#8221; were well posed math problems, each with a clear-cut &amp;#8220;correct&amp;#8221; answer.  This one was a physics problem and physics is a lot messier than math.  That may initially seem less satisfying, but it means that there is a whole lot of interesting &amp;#8220;mess&amp;#8221; to sort out!  I really enjoyed reading the &lt;a href="http://thevirtuosi.blogspot.com/2010/11/problem-of-week-3.html#more"&gt;comments&lt;/a&gt; detailing all the neat small effects to the change of volume that I ignored in my solution.  Density variations as a function of temperature, surface tension effects, evaporation and thermal expansion all play some role in determining the final answer.   There&amp;#8217;s a whole lot of interesting physics going on!  &lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Without knowing the exact conditions a bit more and doing a whole lot more work, it seems as though I will not be able to provide a final physics solution.  But, having seen just about every Bond movie, I can give an answer with a certainty not afforded to me by science:  Mr. Bond lives.  How do I know this?  Well, it is common knowledge that James Bond has tiny smoke grenades in the soles of his shoes that release a potent koala knock-out potion specifically created by Q.  So Bond releases these into the koala death pit, rendering the vicious beasts harmless.  Then he uses his watch laser to cut any bindings Dr. Cherrycoke may have placed him in, falling into the death pit.  The fall leaves Mr. Bond uninjured, as a cuddly mass of sleeping koalas break his fall.  By stacking the koalas into a rudimentary series of steps, Mr. Bond ascends out of the death pit and free to save the world&amp;#8217;s ice supply from the evil Dr. Cherrycoke.       &lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Obviously.&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Wed, 15 Dec 2010 02:01:00 -0500</pubDate><guid>tag:thephysicsvirtuosi.com,2010-12-15:posts/problem-of-the-week-3-solution.html</guid><category>koalas</category><category>problem of the week</category><category>scott bakula</category></item><item><title>Problem of the Week #3</title><link>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3.html</link><description>&lt;p&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, Times, serif; font-size: 14px; line-height: 19px;"&gt;&lt;i&gt;We welcome you to send in solutions, or even any ideas you have about how to solve the problems to &lt;/i&gt;&lt;/span&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, Times, serif; font-size: 14px; line-height: 19px;"&gt;&lt;a href="mailto:the.physics.virtuosi@gmail.com" style="background-attachment: initial; background-clip: initial; background-color: transparent; background-image: initial; background-origin: initial; background-position: initial initial; background-repeat: initial initial; color: #2d6e89; font-weight: bold; text-decoration: none;"&gt;&lt;i&gt;the.physics.virtuosi@gmail.com&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, Times, serif; font-size: 14px; line-height: 19px;"&gt;&lt;i&gt; with “problem of the week” in the subject line. We will keep track of the top Virtuosi problem&amp;nbsp;solvers.&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;Welcome to the third installment of &lt;/span&gt;&lt;i style="font-size: 14px; line-height: 19px;"&gt;Problem of the Week&lt;/i&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;!  We are very pleased with the number of responses we have gotten so far and we super duper promise to put up some kind of leader board soon.  In fact, I super duper promise to relegate that assignment to Alemi.  We intend to keep this up as long as we can and give out prizes for high scores maybe&amp;#8230;? They will be lame internet&amp;nbsp;prizes&amp;#8230;?&lt;/p&gt;
-&lt;p&gt;The solution to the last problem of the week will be up shortly.  Adam is the only one who knows the answer and he was busy all weekend taking a magic ring to&amp;nbsp;Mordor.&lt;/p&gt;
-&lt;p&gt;One more housekeeping note.  Since we want everyone to have a clean shot at answering the question, we would prefer the solutions to be sent by email instead of posted in the comments.  However, we certainly don&amp;#8217;t want to stop discussion on the problem, so if you don&amp;#8217;t want any hints you might want to avoid the comments!&lt;/span&gt;
-&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt; &lt;/span&gt;
-&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;&lt;b&gt;&lt;i&gt;Now for the problem&amp;#8230;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;&lt;b&gt;&lt;i&gt; &lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
-&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TOohHfT9CTI/AAAAAAAAAHg/kpLDQteBptA/s1600/james+bond007.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="320" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TOohHfT9CTI/AAAAAAAAAHg/kpLDQteBptA/s320/james+bond007.jpg" width="320" /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;James Bond has been captured by the evil mastermind Dr. Vontavious Cherrycoke, who is trying to take over the world&amp;#8217;s &lt;a href="http://en.wikipedia.org/wiki/Ice_Cube"&gt;ice cube&lt;/a&gt; supply.  The minions of Dr. Cherrycoke have placed Mr. Bond in an elaborate and unnecessary death contraption that, if triggered, would drop our hero into a pit of ravenous killer koalas.  In other words, certain death!          &lt;/span&gt;
-&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;
-&lt;/span&gt;&lt;/span&gt; &lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;Dr. Cherrycoke has constructed a fitting trigger for his death machine / koala feeder.  A single ice cube is placed in a glass of water so that the water is completely filling the glass up to the brim.  The glass of water is then placed on a very sensitive detector.  If even a single drop of water spills out of the glass as the ice cube melts, James Bond will find himself on the wrong end of a murderous marsupial mauling.&lt;/span&gt;&lt;/span&gt;
-&lt;div&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;Vontavious exits the room with his minions, confident that his death trap will be triggered and Bond will be vanquished once and for all.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span"&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt;Does Mr. Bond survive?  If not, roughly how long does it take until he checks in to the big &lt;span class="caps"&gt;MI6&lt;/span&gt; in the sky?  Be sure to back up your answer!&lt;/span&gt;&lt;/span&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt; &lt;/span&gt;&lt;/span&gt; &lt;span class="Apple-style-span" style="font-size: medium;"&gt;&lt;span class="Apple-style-span" style="font-size: 14px; line-height: 19px;"&gt; &lt;/span&gt;&lt;/span&gt;
-&lt;div class="separator" style="clear: both; font-size: 4px; text-align: center;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Mon, 22 Nov 2010 03:53:00 -0500</pubDate><guid>tag:thephysicsvirtuosi.com,2010-11-22:posts/problem-of-the-week-3.html</guid><category>koalas</category><category>problem of the week</category><category>james bond</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.koalas.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 15 Dec 2010 02:01:00 -0500</lastBuildDate><item><title>Problem of the Week #3: Solution</title><link>/posts/problem-of-the-week-3-solution.html</link><description>&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s1600/koala.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TPnT0ucqSUI/AAAAAAAAAHk/kOFxbYCSx1g/s200/koala.jpg" /&gt;&lt;/a&gt;
+  Cold-Blooded&amp;nbsp;Killer&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Hello all and welcome to to another roundup of Problem of the Week. If
+the time intervals don&amp;#8217;t seem to be adding up, just remember that &amp;#8220;week&amp;#8221;
+is an illusion here at Virtuosi headquarters. &amp;#8220;Problem of the Week,&amp;#8221;
+doubly so. But enough with the excuses, let&amp;#8217;s see if Mr. Bond lives to
+Die Another Day. The situation presented in the problem was one of a
+glass of water filled all the way to the top with a single ice cube in
+it. The goal is to see if any water falls to the floor as the ice cube
+melts. The simplest analysis would be to just consider the displacement
+of water by the ice cube. By Archimedes&amp;#8217; principle we know that the
+buoyant force on the ice cube is equal to the weight of the water
+displaced by the ice cube. But since the ice cube is floating, we know
+that the buoyant force is equal to the weight of the ice cube.
+Therefore, the ice cube just displaces it&amp;#8217;s own weight in water. So as
+the ice cube melts, the water level stays the same and no water is
+spilled over. Stated a bit more explicitly, we have that the buoyant
+force is the weight of the displaced water: &lt;mathjax&gt;$$ F\_b = m\_{water}g =
+{\\rho}\_{water}V\_{water}g $$&lt;/mathjax&gt; where we have just expressed the mass of
+the water as the density of water times the volume of the water
+displaced. Likewise, the weight of the ice cube is &lt;mathjax&gt;$$ W\_{ice} =
+m\_{ice}g = {\\rho}\_{ice}V\_{ice}g $$&lt;/mathjax&gt; But since the ice cube is
+floating, the buoyant force is equal to the weight. Setting the above
+equations equal to each other and rearranging a bit, we can solve for
+the volume of the water displaced by the ice cube: &lt;mathjax&gt;$$ V\_{water} =
+\\frac{{\\rho}\_{ice}V\_{ice}}{{\\rho}\_{water}} $$&lt;/mathjax&gt; Great, now we have
+the volume of water that the ice cube displaced, so now we just need to
+see what volume of water the ice cube will add once it melts. Since we
+know that the mass of ice cube better be the same as the mass of the
+water left after it melts, we can write &lt;mathjax&gt;$$ {\\rho}\_{ice}V\_{ice} =
+{\\rho}\_{water}V\_{water} $$&lt;/mathjax&gt; which gives that the total volume of the
+water is just
+&lt;mathjax&gt;$$ V\_{water} = \\frac{{\\rho}\_{ice}V\_{ice}}{{\\rho}\_{water}} $$&lt;/mathjax&gt;
+which is exactly the same volume we found before. Therefore, when the
+ice cube melts it fills up exactly the same amount of volume as the
+water displaced to hold up the ice cube, so the water level remains the
+same and James Bond lives!
+Or does he? Well, he sure does if the system is entirely described by
+the analysis above. But we need to be exact here since a single drop
+would set off the Koala death trap. We have considered the biggest
+contributions to the change of volume of the water (and easiest to
+calculate!), but we have ignored a large number of much much smaller
+effects on the volume. Typically these effects would be swept aside and
+callously labeled &amp;#8220;negligible,&amp;#8221; but since even the smallest change of
+volume could mean life or death for our hero, they must be accounted for
+to give a final &amp;#8220;exact&amp;#8221; answer.
+Unfortunately, &amp;#8220;exact&amp;#8221; isn&amp;#8217;t something science can do very well. We can
+only do as good as the measurements we make allow. And since I gave you
+practically no information, this was very tough. However, one could
+consider the magnitude of the effects given typical values and see which
+side wins out. But if two competing effects give similar values under
+reasonable conditions, it becomes very difficult to give an answer.
+The last two &amp;#8220;Problems of the Week&amp;#8221; were well posed math problems, each
+with a clear-cut &amp;#8220;correct&amp;#8221; answer. This one was a physics problem and
+physics is a lot messier than math. That may initially seem less
+satisfying, but it means that there is a whole lot of interesting &amp;#8220;mess&amp;#8221;
+to sort out! I really enjoyed reading the
+&lt;a href="http://thevirtuosi.blogspot.com/2010/11/problem-of-week-3.html#more"&gt;comments&lt;/a&gt;
+detailing all the neat small effects to the change of volume that I
+ignored in my solution. Density variations as a function of temperature,
+surface tension effects, evaporation and thermal expansion all play some
+role in determining the final answer. There&amp;#8217;s a whole lot of interesting
+physics going on!
+Without knowing the exact conditions a bit more and doing a whole lot
+more work, it seems as though I will not be able to provide a final
+physics solution. But, having seen just about every Bond movie, I can
+give an answer with a certainty not afforded to me by science: Mr. Bond
+lives. How do I know this? Well, it is common knowledge that James Bond
+has tiny smoke grenades in the soles of his shoes that release a potent
+koala knock-out potion specifically created by Q. So Bond releases these
+into the koala death pit, rendering the vicious beasts harmless. Then he
+uses his watch laser to cut any bindings Dr. Cherrycoke may have placed
+him in, falling into the death pit. The fall leaves Mr. Bond uninjured,
+as a cuddly mass of sleeping koalas break his fall. By stacking the
+koalas into a rudimentary series of steps, Mr. Bond ascends out of the
+death pit and free to save the world&amp;#8217;s ice supply from the evil Dr.
+Cherrycoke.&amp;nbsp;Obviously.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Wed, 15 Dec 2010 02:01:00 -0500</pubDate><guid>tag:,2010-12-15:posts/problem-of-the-week-3-solution.html</guid><category>koalas</category><category>problem of the week</category><category>scott bakula</category></item><item><title>Problem of the Week #3</title><link>/posts/problem-of-the-week-3.html</link><description>&lt;p&gt;&lt;em&gt;We welcome you to send in solutions, or even any ideas you have about
+how to solve the problems
+to&lt;/em&gt;&lt;a href="mailto:the.physics.virtuosi@gmail.com"&gt;&lt;em&gt;the.physics.virtuosi@gmail.com&lt;/em&gt;&lt;/a&gt;&lt;em&gt;with
+“problem of the week” in the subject line. We will keep track of the top
+Virtuosi problem solvers.&lt;/em&gt; Welcome to the third installment of &lt;em&gt;Problem
+of the Week&lt;/em&gt;! We are very pleased with the number of responses we have
+gotten so far and we super duper promise to put up some kind of leader
+board soon. In fact, I super duper promise to relegate that assignment
+to Alemi. We intend to keep this up as long as we can and give out
+prizes for high scores maybe&amp;#8230;? They will be lame internet prizes&amp;#8230;?
+The solution to the last problem of the week will be up shortly. Adam is
+the only one who knows the answer and he was busy all weekend taking a
+magic ring to Mordor. One more housekeeping note. Since we want everyone
+to have a clean shot at answering the question, we would prefer the
+solutions to be sent by email instead of posted in the comments.
+However, we certainly don&amp;#8217;t want to stop discussion on the problem, so
+if you don&amp;#8217;t want any hints you might want to avoid the comments! &lt;strong&gt;&lt;em&gt;Now
+for the problem&amp;#8230;&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;*&lt;/strong&gt;*
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TOohHfT9CTI/AAAAAAAAAHg/kpLDQteBptA/s1600/james+bond007.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TOohHfT9CTI/AAAAAAAAAHg/kpLDQteBptA/s320/james+bond007.jpg" /&gt;&lt;/a&gt;
+James Bond has been captured by the evil mastermind Dr. Vontavious
+Cherrycoke, who is trying to take over the world&amp;#8217;s &lt;a href="http://en.wikipedia.org/wiki/Ice_Cube"&gt;ice
+cube&lt;/a&gt; supply. The minions of Dr.
+Cherrycoke have placed Mr. Bond in an elaborate and unnecessary death
+contraption that, if triggered, would drop our hero into a pit of
+ravenous killer koalas. In other words, certain death! Dr. Cherrycoke
+has constructed a fitting trigger for his death machine / koala feeder.
+A single ice cube is placed in a glass of water so that the water is
+completely filling the glass up to the brim. The glass of water is then
+placed on a very sensitive detector. If even a single drop of water
+spills out of the glass as the ice cube melts, James Bond will find
+himself on the wrong end of a murderous marsupial mauling.
+Vontavious exits the room with his minions, confident that his death
+trap will be triggered and Bond will be vanquished once and for all.
+Does Mr. Bond survive? If not, roughly how long does it take until he
+checks in to the big &lt;span class="caps"&gt;MI6&lt;/span&gt; in the sky? Be sure to back up your&amp;nbsp;answer!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Mon, 22 Nov 2010 03:53:00 -0500</pubDate><guid>tag:,2010-11-22:posts/problem-of-the-week-3.html</guid><category>koalas</category><category>problem of the week</category><category>james bond</category></item></channel></rss>

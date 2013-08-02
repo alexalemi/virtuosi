@@ -1,577 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - glass</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>glass - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: glass</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/cryopreservation.html"><time datetime="2010-05-30T13:42:00" pubdate>Sun 30 May 2010</time> Cryopreservation</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/cryopreservation.html"
-                                        rel="bookmark"
-                                        title="Permalink to Cryopreservation">
-                                        Cryopreservation
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/cryopreservation.html"
-                                    data-text="Cryopreservation"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-05-30T13:42:00">
-        <i class="icon-calendar"></i>Sun 30 May 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/ice.html"><i class="icon-tag"></i>ice</a>
-	<a href="../tag/glass.html"><i class="icon-tag"></i>glass</a>
-	<a href="../tag/cryopreservation.html"><i class="icon-tag"></i>cryopreservation</a>
-	<a href="../tag/summer-research.html"><i class="icon-tag"></i>summer research</a>
-</footer><!-- /.post-info -->                </div>
-                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/TAKGwD0rgVI/AAAAAAAAABk/VqmdMGXzMCI/s1600/frozen.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="160" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/TAKGwD0rgVI/AAAAAAAAABk/VqmdMGXzMCI/s200/frozen.jpg" width="200" /></a></div>
-
-<p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">I&#8217;d like to start a short series of posts on what I&#8217;m doing this summer.  Like most all of the first year physics graduate students, I&#8217;ve found a <a href="http://pages.physics.cornell.edu/~rthorne/">research group</a> at Cornell for the summer, and if everything goes well, I&#8217;ll continue working with them after the summer is done.  This is good for three reasons.  First, I&#8217;m getting paid, so I can do things like pay rent.  I&#8217;m not all about the money, but having a place to live is a big deal to me.  Second, I&#8217;m getting a chance to explore a new area of research, with limited expectation of commitment on my part.  Third, if everything works out, I&#8217;ve found the group I&#8217;ll be working with the for the next 4-6 years.  I&#8217;d like to spend a few posts here on The Virtuosi discussing first the physics I&#8217;m considering, and then what I actually do.  Today I&#8217;m going to talk about the most exciting sounding piece of my work, cryopreservation.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><a name='more'></a><b>What do we mean when we talk about cryopreservation? </b> </span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">For many of us our first thought may be Han Solo frozen in carbonite.  This is the basic idea.  Cryopreservation is the freezing biological samples, and thawing them, while they retain biological viability.  At least, that&#8217;s the idea.  At the moment, cryopreservation is the freezing and thawing biological samples, and hoping that some of them remain biologically viable.  Even though the methods have been in development since the 1950s, successes are limited even for such simple objects as spermatozoa or oocytes (sperm <span class="amp">&amp;</span> eggs), let alone larger and much more complicated objects like Harrison Ford.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>Why would we want to cryopreserve something? (and did I just invent a verb?)</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">The idea is fairly simple.  If we cool down biological samples, biological functions slow down or completely stop.  The hope is that if we get samples sufficiently cold, we can suspend biological (and all other) functions indefinitely.  This would allow indefinitely preservation of many things.  Eggs and sperm for reproductive purposes (both human and other animals), plant seeds, blood (for transfusions), vaccines, drugs (no more pesky shelf life for pharmaceuticals until you unfreeze them).  The perfect frozen strawberries.  The list of possibilities is huge.  And according to my dictionary, cryopreserve is a well established verb.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>Why is it so hard?</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">It&#8217;s easy to stick something in the freezer.  That seems to work on my food.  However, it doesn&#8217;t work well on biological samples.  If we just stick them in the freezer many of the cells are damaged irreparably.  We&#8217;d like to know why.  To answer this we&#8217;re going to need to take a step down to the cellular level.  I&#8217;m not a biologist, so I&#8217;m not going to attempt to explain cell structure to you.  For our current purposes it is sufficient to know that cells have an inside and an outside (then, doesn&#8217;t most everything?), separated by a semi-permeable membrane, and that both inside and outside of the cells there is water.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">We need to take a brief detour now into the realm of water.  Water is a fantastically amazing substance, and I&#8217;m not just saying that because we (and most/all life on earth) would all die without it.  Water is fascinating from a pure physics perspective.  Now, when I refer to water, I&#8217;m going to use it to mean <span class="caps">H2O</span>, in any phase.  Colloquially we usually mean liquid water when we say water, we say ice we mean crystalline frozen water, and steam when we mean vaporous water.  I&#8217;m going to call all of these things &#8216;water&#8217; and I will specify what phase I mean by saying &#8216;frozen, liquid, vapor&#8217;.  I will refer to frozen <i>crystalline </i> water as <i>ice</i>.  So what&#8217;s so fascinating about water?  Well, first off, it is one of the only substances that expands when it crystallizes (forms ice).  Most objects become more dense when they transform from a liquid to a solid.  Water doesn&#8217;t.  This is why ice floats.  There are many other fascinating aspects of water, for example, that liquid water is most dense at 4 C.  This is mostly responsible for why fish survive in the winter.  Ice forms on top of lakes/rivers, and the 4C water stays at the bottom of the lake because it is the densest.  But for our purposes, what we really need to know is that water expands on forming ice.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">When we freeze our cells, this expansion of water can cause massive problems.  Everything in the cell besides the water contracts on cooling.  The water crystallizes and expands (by about 9%).  If you&#8217;ve ever frozen something liquid in a very full container and seeing it split the container open, the idea is very similar.  The intracellular water can crystallize and split open the cell membrane.  Once you&#8217;ve split the cell membrane, there&#8217;s no way (that I&#8217;ve seen) to successfully revive that cell.  It turns out that ice formation outside the cell isn&#8217;t such a big deal, it usually just pushes the cells around.  The water in the cells is what is most likely to cause damage to our biological tissues when we freeze them. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WD5-4KXF5HB-1&amp;_user=10&amp;_coverDate=08%2F31%2F1968&amp;_rdoc=1&amp;_fmt=high&amp;_orig=search&amp;_sort=d&amp;_docanchor=&amp;view=c&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=41501096aa949fd2c441dc760bc6513a"> Early studies</a> showed survival rates between 10^-6% and ~50%.  Those are not good odds.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>How do we prevent this damage?</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">There are two methods currently in practice to prevent damage on cooling.  The first of these is slow cooling.  It was discovered that if you cool your sample at a rate of ~1 C/min very little to no intracellular ice forms, though intercellular ice still forms.  The water in and between cells is not pure water, but contains all kinds of things (proteins, salts, etc).  This means that it starts to crystallize not at 0 C, but somewhere lower.  This is the reason we salt sidewalks in the winter (at least, in places where we get snow).  The salt lowers the freezing point of water, causing the ice/snow to melt even if the temperature is below 0 C.  Of course, if the temperature gets low enough it will still freeze.  So our intra and intercellular water crystallizes below 0 C.  It turns out that the intercellular water starts to crystallize before the intracellular water.  This means we have ice formation outside the cell while the water inside the cell is still liquid.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Earlier I told you that we needed to know that the membrane of a cell was semi-permiable.  This is why.  Some water diffuses through the membrane.  At room temperature, the liquid water outside the cells diffuses into the cell at the same rate that the liquid water inside the cell diffuses out of the cell.  Now, if we start crystallizing the intercellular water, there will be less liquid water moving into the cell.  But since the intracellular water is still liquid it will still be diffusing out at the same rate.  This results in a partial dehydration of the cell, more liquid water moving out than in.  This is a basic example of osmotic pressure.  With less liquid water in the cell, when it does crystallize, the ice crystals that form are smaller, and less likely to damage the cell membrane.  This method is not perfect, because extreme dehydration of cells will also damage them, due to cell shrinkage and extremely high solute concentration (this phenomena is called osmotic shock).</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">The second method that is considered is ultrafast cooling.  Here we must take another diversion into physics land.  You may have noticed my emphasis on ice as crystalline water.  It turns out that when you freeze water, forming a crystal is not the only option available to it (and we&#8217;re not even going to discuss the variety of crystals it can form).  It can also form a glass.  Now, if you&#8217;re not a physicist, you&#8217;re probably not familiar with glass as a type of substance, but rather as the thing you put in your windows and drink out of.  A glass, to a physicist, is, essentially, a solid without long range order.  The best way to think about of it would be to imagine you took liquid water and stopped time for the water (<em>not</em> freezing it in the conventional sense).  That&#8217;s a glass.  It looks like liquid water, has the same density as liquid water, but is a solid.  It&#8217;s a very strange concept, and I&#8217;m going to save a more thorough discussion for a later post, because that takes me into a whole different research area I&#8217;m working on this summer.  For our purposes, it is sufficient to know that we can reach a solid state of water at cold temperatures that has the same density as liquid water.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Based on our discussion above, the advantages should be immediately obvious.  Without the expansion of ice to worry about, the solidification of water is nowhere near as damaging to our cells.  By vitrifying (turning to a glass) our liquid water, we should see much less damage to the cells.  To achieve vitrification, you have to cool down the cells much faster (depending on the substance &gt;1000 C/min).  How do we do this?  The conventional method is to dunk the cells directly into liquid nitrogen, or put them into a very cold stream of gas (around liquid nitrogen temperatures).    I should note that I&#8217;m skipping over a very large field of putting cryopreservants into cells and freezing them.  However, the effect of cryopreservants is to prevent ice crystallization, and so this is just a method of vitrification.  It just makes it easier to achieve by lowering the rate you have to cool the sample at.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>So that&#8217;s it?</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">It may seem like that&#8217;s the solution.  Cooling fast enough to vitrify the liquid water, and we&#8217;ll get good cryopreservation of our cells.  The rest is just technology development.  Unfortunately, it&#8217;s not that easy.  It turns out that warming is a harder problem to solve than cooling.  When we warm up glassy water, it turns back into supercooled liquid water (liquid water way below the freezing point of water).  I&#8217;ll discuss this in more detail in my next post on my research.  So now we&#8217;ve got really cold water, and it will start forming ice, unless we warm up fast enough to prevent that, very similar to how we had to cool down very quickly to prevent ice formation.  </span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">The problem is, experiments suggest that &#8216;fast enough&#8217; is at least 10-100 times faster than cooling down.  Not only that, but on cooling down, we&#8217;re really trying to get very very cold.  On warming up, we don&#8217;t want to get much over room temperature, otherwise we&#8217;ll fry the cells.  So we have to warm really really quickly, in an extremely well controlled manner.  So far, this has proved very challenging to do.  A recent study with mouse oocytes achieved a ~90% success rate with their freezing/thawing cycles, and that is the best that I&#8217;ve seen.  90% is pretty good, but we&#8217;d like to do better.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>So what&#8217;s your research this summer?</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">It turns out that my research isn&#8217;t so much into cryopreservation.  As I will talk about next post, it is more into the physics of crystallization and glass formation of aqueous substances, where there is a lot of fundamental physics still to be understood.  However, one of the most exciting eventual applications is cryopreservation.  We&#8217;ve already developed a fast cooling system, and we&#8217;re working on a fast warming system that will allow us to study crystallization and glass formation, and hopefully extend the techniques we develop into the field of cryopreservation.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><b>That&#8217;s way cool!</b></span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Yes.  Yes it is.  Even if that is a horrible pun.</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><i>Note:  The question and answer format was inspired by Chad over at <a href="http://scienceblogs.com/principles/">Uncertain Principles</a> and his research&nbsp;blogging.</i></span></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/cryopreservation.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

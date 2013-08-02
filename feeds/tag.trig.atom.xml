@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.trig.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2013-02-22T16:52:00-05:00</updated><entry><title>Trigonometric Derivatives</title><link href="http://thephysicsvirtuosi.com/posts/trigonometric-derivatives.html" rel="alternate"></link><updated>2013-02-22T16:52:00-05:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2013-02-22:posts/trigonometric-derivatives.html</id><summary type="html">&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.trig.atom.xml" rel="self"></link><id>/</id><updated>2013-02-22T16:52:00-05:00</updated><entry><title>Trigonometric Derivatives</title><link href="/posts/trigonometric-derivatives.html" rel="alternate"></link><updated>2013-02-22T16:52:00-05:00</updated><author><name>Alemi</name></author><id>tag:,2013-02-22:posts/trigonometric-derivatives.html</id><summary type="html">&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
 where he responded to a post over at 
 &lt;a href="http://mathmamawrites.blogspot.com/2013/02/derivatives-of-sine-and-cosine.html"&gt;Math Mama Writes&lt;/a&gt;
 about teaching the derivatives of the trigonometric&amp;nbsp;functions.&lt;/p&gt;
@@ -8,7 +8,7 @@ about teaching the derivatives of the trigonometric&amp;nbsp;functions.&lt;/p&gt
 &lt;a href="http://en.wikipedia.org/wiki/Calculus"&gt;Calculus&lt;/a&gt; is always best taught
 in terms of infinitesimals, as in 
 &lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=calculus+made+easy&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;amp;ved=0CD4Q6AEwAA"&gt;Thompson&amp;#8217;s Book&lt;/a&gt;, 
-(which I&amp;#8217;ve &lt;a href="http://thephysicsvirtuosi.com/posts/four-fantastic-books-3-of-which-are-free-.html"&gt;already talked about&lt;/a&gt; ) 
+(which I&amp;#8217;ve &lt;a href="/posts/four-fantastic-books-3-of-which-are-free.html"&gt;already talked about&lt;/a&gt; ) 
 and &lt;a href="http://en.wikipedia.org/wiki/Trigonometry"&gt;Trigonometry&lt;/a&gt; is best taught using 
 the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;.
 Marrying these two together, we can give a simple geometric proof of the basic trigonometric&amp;nbsp;derivatives:&lt;/p&gt;
@@ -21,6 +21,8 @@ Marrying these two together, we can give a simple geometric proof of the basic t
 &lt;/center&gt;&lt;/p&gt;
 &lt;h3&gt;Short&amp;nbsp;version&lt;/h3&gt;
 &lt;p&gt;By looking at how the line &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; change when we change &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; a little bit (&lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;) and noting that we form a similar triangle, we know exactly what those lengths&amp;nbsp;are.&lt;/p&gt;
+
+
 &lt;h3&gt;Long&amp;nbsp;version&lt;/h3&gt;
 &lt;p&gt;You&amp;#8217;ll notice I&amp;#8217;ve drawn a unit circle in the bottom right, chosen an angle &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt;, and shown both &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; on the&amp;nbsp;plot.&lt;/p&gt;
 &lt;p&gt;We are interested in how &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; changes when we make a very small change in &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt;, so I&amp;#8217;ve done just that.  I&amp;#8217;ve moved the blue line from and angle of &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; to the dotted line at an angle of &lt;mathjax&gt;$\alpha + d\alpha$&lt;/mathjax&gt;.  Don&amp;#8217;t get caught up on the &lt;mathjax&gt;$d$&lt;/mathjax&gt; symbol here, it just means &amp;#8216;a little bit&amp;nbsp;of&amp;#8217;.&lt;/p&gt;

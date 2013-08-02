@@ -1,608 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - ice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>ice - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: ice</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/falling-ice.html"><time datetime="2011-01-27T22:41:00" pubdate>Thu 27 January 2011</time> Falling&nbsp;Ice</a></li>
+				<li class="clearfix"><a href="/posts/cryopreservation.html"><time datetime="2010-05-30T13:42:00" pubdate>Sun 30 May 2010</time> Cryopreservation</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/falling-ice.html"
-                                        rel="bookmark"
-                                        title="Permalink to Falling&nbsp;Ice">
-                                        Falling&nbsp;Ice
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/falling-ice.html"
-                                    data-text="Falling&nbsp;Ice"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-01-27T22:41:00">
-        <i class="icon-calendar"></i>Thu 27 January 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/ice.html"><i class="icon-tag"></i>ice</a>
-	<a href="../tag/air-resistance.html"><i class="icon-tag"></i>air resistance</a>
-	<a href="../tag/physics.html"><i class="icon-tag"></i>physics</a>
-</footer><!-- /.post-info -->                </div>
-                <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s1600/shattered_windshield.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="191" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s320/shattered_windshield.jpg" width="320" /></a></div>
-
-<p>It&#8217;s been a while since I posted anything, much to my shame.  Hopefully this post marks a change in that streak.  Today I&#8217;m going to consider a very practical application of all this physics stuff.  One of my housemates parks his car on the side of the house, with the front of the car facing the house.  Living in Ithaca, <span class="caps">NY</span>, the weather has been the usual cold and snowy, like the rest of the northeast <span class="caps">USA</span> this winter. Yet, early last week, we had some unusually warm weather, in the 30s (fahrenheit).  A few days later, my housemate went out to his car, and discovered that falling chunks of ice had broken his windshield!  Now, to be clear here, I&#8217;m not talking about icicles, I&#8217;m talking about large, block-like, chunks.  My best guess is that during the warm days, snow on the roof turned into chunks of ice, and slid off the roof.  The question I&#8217;m going to try to answer today is: How far from the house could these chunks possibly land?  Put another way, what I want to know is, how far from the house would we have to park our cars to not risk broken windshields from falling&nbsp;ice?</p>
-<p><a name='more'></a><b><u>The First Attempt</u></b>
-We&#8217;ll start with the simplest assumptions we can think of.  First, we&#8217;ll assume that there is no friction on the ice block as it slides down the roof.  We&#8217;ll also assume there&#8217;s no air resistance slowing down the ice in the air.  The maximum range will be given by a block of ice sliding from the top of the roof.  Taking the height of the peak of the roof as h, relative to the edge of the roof, we can write down the magnitude of the velocity of the ice chunk when it reaches the edge of the roof.  We start by setting the change in gravitational potential energy equal to the change in kinetic energy.  Recalling the form for both of these,
-<mathjax>$$PE=mgh$$</mathjax>
-<mathjax>$$KE=\tfrac{1}{2}mv^2$$</mathjax>
-we can set these equal and solve for v,
-<mathjax>$$mgh = \tfrac{1}{2}mv^2$$</mathjax>
-so
-<mathjax>$$|v|=\sqrt{2gh}$$</mathjax>
-This should be a familiar expression to anyone who went through introductory mechanics.  Now, given that the roof is at an angle theta, we can write down the x (horizontal) and y (vertical) components of velocity,
-<mathjax>$$v_x=|v|\cos\theta$$</mathjax>
-<mathjax>$$v_y=-|v|\sin \theta$$</mathjax>
-where I&#8217;ve introduced a minus sign in the y component of velocity to indicate that the ice chunk is&nbsp;falling.</p>
-<p>Now that we have the velocity, we have to call upon some more kinematics.  To figure out how far the ice flies, we have to know how long it is in the air.  So we start by considering the vertical motion.  The distance traveled by an object with an initial velocity, v_0, and a constant acceleration, a, is given by
-<mathjax>$$\Delta y=\tfrac{1}{2}at^2+v_0t$$</mathjax>
-In our case, the distance traveled is the height of the first two floors of my house.  The acceleration is that of gravity, g, and the initial velocity is the y component of velocity we found above.  We&#8217;d like to find the time it takes to travel this distance.  We have to be a little careful with our minus signs, by our convention the acceleration is in the negative direction, and the change in position is negative.  Working all of that out, and plugging in our known values, we get
-<mathjax>$$\tfrac{1}{2}gt^2+|v|\sin \theta t - l =0$$</mathjax>
-where l is the height of the house.  We can solve this for t, finding
-<mathjax>$$t=\frac{-|v|\sin \theta + \sqrt{(|v|\sin \theta)^2+2gl}}{g}$$</mathjax>
-The horizontal distance traveled is simply the horizontal velocity times the time,
-<mathjax>$$x=\frac{|v|\cos\theta}{g}(-|v|\sin \theta + \sqrt{(|v|\sin \theta)^2+2gl})$$</mathjax>
-a result that you may recognize as the &#8216;projectile range formula&#8217; (particularly if I brought the minus on the v sine theta term into the sine, indicating that I&#8217;m firing at a negative angle, that is,&nbsp;downwards).</p>
-<p>Having found that result, lets plug in our velocity, and then some numbers.  First,
-<mathjax>$$x=\frac{\sqrt{2gh}\cos\theta}{g}(\sqrt{2gh}\sin \theta + \sqrt{(2gh\sin^2 \theta+2gl})$$</mathjax>
-Now, for some estimation.  I&#8217;d say that the height of the roof peak is 10 ft, the height of the first two floors of the house is 20 ft, and the angle of the roof is 30 degrees.  Having made those estimates, now I just have to plug in all the numbers, yielding
-<mathjax>$$x=5.2 m=17 ft$$</mathjax>
-That&#8217;s a very long&nbsp;range!</p>
-<p>Now, I didn&#8217;t see any chunks of ice that were more than about 7 ft from the house.  So we have to question what went wrong with the above derivation.  Well, maybe nothing went wrong.  I did calculate the <i>maximum</i> range.  It&#8217;s quite possible none of these ice chunks were from the very top of the roof.  Still, I&#8217;m inclined to think we may have overestimated.  I&#8217;d say that our initial velocity was too high.  The ice, as it comes down the roof, will have to push a bunch of snow out of the way.  Even though it may not have much friction with the roof, all that snow will slow it down, and reduce the velocity with which it comes off.  I&#8217;m just going to guess that about half of the potential energy it had is lost to the snow and roof, as a rough estimation.  That would give a velocity
-<mathjax>$$|v| = \sqrt{gh}$$</mathjax>
-and a maximum distance of
-<mathjax>$$x= 4m = 13ft$$</mathjax>
-which is closer to what I&nbsp;observed.</p>
-<p><b><u>The Second Attempt</u></b>
-I&#8217;m still not completely satisfied with the previous work, the answer doesn&#8217;t match my observation.  As a wise man (Einstein) once said, &#8220;make things as simple as possible, but no simpler.&#8221;  I may be guilty of making the problem too simple here.  So I&#8217;m going to add back in air resistance.  In general, we physicists like to avoid this because it usually means we can&#8217;t get nice, analytic expressions as answers (like the one I have above).  Instead, we usually just have to calculate the result numerically.  This isn&#8217;t the end of the world, and often times it is actually a bit easier, but it&#8217;s not as pretty looking.  Still, to satisfy myself, and you, gentle reader, I will step into that&nbsp;realm.</p>
-<p>We start by writing down the force on our block of ice once it is falling.  We&#8217;ve got gravity, and air resistance.  Thus
-<mathjax>$$\vec{F}=-mg\hat{y}-bv^2\hat{v}$$</mathjax>
-I&#8217;ve input a drag force that goes as v^2, and is in the opposite direction of v.  The &#8216;v direction&#8217; is a cop out, because I didn&#8217;t want to do the explicit direction, so lets fix that.  We&#8217;ll have x and y components, and we note that the magnitude of v times the direction of v is the velocity vector.  So,
-<mathjax>$$\vec{F}=-mg\hat{y}-bv\hat{v}_x-bv\hat{v}_y$$</mathjax>
-Breaking this up into components we get
-<mathjax>$$a_x=-\frac{bv}{m}v_x$$</mathjax>
-<mathjax>$$a_y=-g-\frac{bv}{m}v_y$$</mathjax>
-This is as far as we can take this work analytically.  I&#8217;ll say a little more about the coefficient b.  This depends on the exact size and shape of the object, as well as the medium it is moving through.  I&#8217;m going to use
-<mathjax>$$b=.4\rho A$$</mathjax>
-because that&#8217;s what we used for hay bales in my classical mechanics class years ago.  Here, rho is the density of air, and A is the surface area of the object.  I would estimate that the large face of the ice chunk is roughly one square foot, or .1 m^2.  I&#8217;d estimate the mass of the ice was around 2 kg.  Now, for some magic.  I&#8217;ve put all of this into mathematica, and asked it to solve this&nbsp;numerically.  </p>
-<p>First we have the plot for the full initial velocity,
-<mathjax>$$v=\sqrt{2gh}$$</mathjax></p>
-<div class="separator" style="clear: both; text-align: center;"></div>
-
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TUILYLcLr3I/AAAAAAAAAD4/q_j8djBIPP0/s1600/Falling+Ice.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TUILYLcLr3I/AAAAAAAAAD4/q_j8djBIPP0/s320/Falling+Ice.jpg" width="266" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The solid line is with air resistance, the dashed line without air resistance.  The plot shows vertical vs. horizontal distance, and the units are meters. (click to enlarge)</td></tr></tbody></table>
-
-<p>Next we have the plot for the half initial velocity,
-<mathjax>$$v=\sqrt{gh}$$</mathjax>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUIMIxdlzLI/AAAAAAAAAD8/G3P9KWUB3mw/s1600/Falling+Ice2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUIMIxdlzLI/AAAAAAAAAD8/G3P9KWUB3mw/s320/Falling+Ice2.jpg" width="212" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The solid line is with air resistance, the dashed line without air resistance.  The plot shows vertical vs. horizontal distance, and the units are meters. (click to enlarge)</td></tr></tbody></table>As you can see from the plots, in neither case does it make a large difference, about .2&nbsp;m.</p>
-<p><b><u>The Third Round</u></b>
-The final thought that occurs to me is that perhaps I got the angle of the roof wrong.  That would be quite easy.  Humans are notoriously bad at estimating angles.  I&#8217;ll plot the results (with air resistance) for 15, 30, and 45 degree angles and the lower&nbsp;velocity.</p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUI5Q4qB5DI/AAAAAAAAAEE/9ydcM8EXzxA/s1600/Falling+Ice3.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUI5Q4qB5DI/AAAAAAAAAEE/9ydcM8EXzxA/s320/Falling+Ice3.jpg" width="204" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The plot shows vertical vs. horizontal distance, and the units are meters.  The red line is 15 degrees, the blue line is 30 degrees, and the black line is 45 degrees. (click to enlarge)</td></tr></tbody></table>
-
-<p>In summary, the answer is unclear.  What I really need to do is measure the angle of my roof better, because there&#8217;s a significant angle dependence.  It&#8217;s also quite possible that we didn&#8217;t see a maximum distance hit (thankfully!).  In addition, air resistance doesn&#8217;t seem to matter much in this particular problem, probably because the distance the thing falls is short enough that terminal velocity is not&nbsp;reached.</p>
-<p>Hopefully this gave you a bit of a taste of a more practical physics problem, and how to approach air resistance (if you want to see the mathematica code, let me know).  The lesson here seems to be either don&#8217;t park too close to roofs, or have insurance for your&nbsp;windshield!</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/falling-ice.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                                <div class="article">
-                <h1><a href="../posts/cryopreservation.html">Cryopreservation</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-05-30T13:42:00">
-        <i class="icon-calendar"></i>Sun 30 May 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/ice.html"><i class="icon-tag"></i>ice</a>
-	<a href="../tag/glass.html"><i class="icon-tag"></i>glass</a>
-	<a href="../tag/cryopreservation.html"><i class="icon-tag"></i>cryopreservation</a>
-	<a href="../tag/summer-research.html"><i class="icon-tag"></i>summer research</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">I’d like to start a short series of posts on what I’m doing this summer. Like most all of the first year physics graduate students, I’ve found a research group at Cornell for the summer, and if everything goes well, I’ll continue working with them after the summer is done. This is good for three reasons. First, I’m getting paid, so I can do things like pay rent. I’m not all about the money, but having a place to live is a big deal to me. Second, I’m getting a chance to explore a new area of research, with limited expectation of commitment on my part. Third, if everything works out, I’ve found the group I’ll be working with the for the next 4-6 years. I’d like to spend a few posts here on The Virtuosi discussing first the physics ...
-                        <a class="btn primary xsmall" href="../posts/cryopreservation.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

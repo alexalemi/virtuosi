@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.earth-day.atom.xml" rel="self"></link><id>/</id><updated>2011-04-22T13:11:00-04:00</updated><entry><title>End of the Earth VI: Nanobot destruction</title><link href="/posts/end-of-the-earth-vi-nanobot-destruction.html" rel="alternate"></link><updated>2011-04-22T13:11:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2011-04-22:posts/end-of-the-earth-vi-nanobot-destruction.html</id><summary type="html">&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s destroy the earth with technology. A while ago, I read the novel
+&lt;em&gt;Postsingular&lt;/em&gt; by Rudy Rucker, and in the first chapter the Earth gets
+destroyed, and then undestroyed, and then the novel unfolds and the
+Earth&amp;#8217;s likelihood is threatened again, and it looks like the Earth will
+be destroyed, but it isn&amp;#8217;t. How does all of this craziness happen you
+might ask: nanobots! The story revolves around little self-replicating
+robots. The story explores what it would be like to live in a world
+where every surface on Earth was coated in little computers, all of
+which were networked together. It&amp;#8217;s certainly a neat idea, but whenever
+you have self-replicating things, you need to worry a bit about what
+might happen if they get out of control. So, let&amp;#8217;s assume we, evil
+scientists that we are, have managed to create a little self-replicating
+nanobot. This little guy can scurry around, running off something
+ubiquitous, probably some combination of solar, and some kind of
+infrared photovoltaics. This little guy, call him Bob, his only mission
+in life is to create a friend. He scurries around collecting the various
+ingredients necessary, and using his little robot arms, he slices and
+dices up the pieces and welds them together to create another copy of
+himself, Rob. Not satisfied with his work; Bob found Rob quite the bore,
+and honestly Rob didn&amp;#8217;t too much like Bob either, both of them part ways
+and try to fashion a new friend. How long until Bob and Rob and their
+cohorts manage to chew through all of the material on Earth? What we
+have here is the setup to a problem in &lt;a href="http://en.wikipedia.org/wiki/Exponential_growth"&gt;Exponential
+Growth&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Exponential&amp;nbsp;Growth&lt;/h3&gt;
+&lt;p&gt;Let&amp;#8217;s simplify things a bit and assume that the nanobots always take a
+fixed amount to time to make a new copy of themselves, call that time T.
+We&amp;#8217;ll start with one guy, so we know that at t =0, we have 1 bot &lt;mathjax&gt;$$ N(t
+=0 ) = 1 $$&lt;/mathjax&gt; And we know that after T seconds we should have 2 &lt;mathjax&gt;$$ N(T) =
+2 $$&lt;/mathjax&gt; and after 2T seconds, we&amp;#8217;ve managed to double twice and get 4 &lt;mathjax&gt;$$
+N(2T) = 4 $$&lt;/mathjax&gt; after 3T seconds we&amp;#8217;ll double again to 8, etc. In fact,
+after nT seconds, so m repetitions we should have doubled m times &lt;mathjax&gt;$$
+N(nT) = 2\^n $$&lt;/mathjax&gt; So if we want to describe all times, we need only ask
+how many doublings can fit into t seconds &lt;mathjax&gt;$$ t = n T $$&lt;/mathjax&gt; which gives us
+&lt;mathjax&gt;$$ N(t) = 2\^{t/T} $$&lt;/mathjax&gt; At this point you might object, as this formula
+doesn&amp;#8217;t always give an integer, so we could ask things like how many
+bots are there after 0.5T seconds? We know the true answer is still 1,
+Bob hasn&amp;#8217;t finished Rob yet, but our formula tells us the answer is
+1.414&amp;#8230; What we&amp;#8217;ve done is made a continuous approximation to a
+discrete function. Certainly, we&amp;#8217;ve paid a price, in that our new
+formula doesn&amp;#8217;t get answers right in fractions of T, but its a small
+price to pay for the mathematical simplicity afforded by the nice
+continuous function, and as long as we don&amp;#8217;t really care about time
+scales smaller than T in the long run, we haven&amp;#8217;t done any real harm.
+These kinds of approximations show up all over the place in physics, and
+going both ways too. Sometimes it is advantageous to treat some discrete
+quantity as continuous, and sometimes it might be beneficial to treat
+some continuous quantity as discrete. These kinds of approximations are
+more than adequate, provided you don&amp;#8217;t really take the answers they give
+you in the cases where your approximation starts to break too seriously.
+In this case, as long as we don&amp;#8217;t try to seriously predict the number of
+nanobots to an exact count in time scales less than a fraction of their
+doubling time, we will have a nice prediction of the number of bots
+running&amp;nbsp;around.&lt;/p&gt;
+&lt;h3&gt;Earth&amp;nbsp;Destruction&lt;/h3&gt;
+&lt;p&gt;As promised, we wanted to calculate the time it would take the nanobots
+to devour the earth. For this we need a little bit more to our model.
+How will the nanobots eat the earth, I reckon it will be through using
+up its mass. Assuming the bots are made out of elements that are rich
+enough, something like iron, they ought to have a field day on Earth,
+seeing as it&amp;#8217;s composed of about 5% iron on the surface, and with an
+interior that is probably about 32% iron overall
+&lt;a href="http://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements#Abundance_of_elements_in_the_Earth"&gt;[ref]&lt;/a&gt;.
+So, we need to estimate the mass of a single nanobot. Let&amp;#8217;s say the
+nanobot is roughly a 1 micron sized cube, made out of iron. This gives
+us a nanobot mass of &lt;mathjax&gt;$$ m = (\\text{ density of iron }) \* (\\text{ 1
+micron} )\^3 = \\rho\_{\\text{Fe}} L\^3 \\sim 8 \\text{ picograms} $$&lt;/mathjax&gt;
+From here we can estimate the time it would take to chew through the
+earth, as the time for the nanobots to be as massive as the earth. &lt;mathjax&gt;$$
+\\frac{M\_{\\oplus}}{\\rho\_{\\text{Fe}} L\^3 } = N(t) = 2\^{t/T} $$&lt;/mathjax&gt;
+Solving for t we obtain &lt;mathjax&gt;$$ t = T \\log\_2 \\frac{ M\_{\\oplus}}{
+\\rho\_{\\text{Fe}} L\^3 } $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Let&amp;#8217;s say it takes Bob one month to make Rob, which I don&amp;#8217;t think is a
+completely unrealistic time for nanobot replication, assuming Bob and
+Rob and all of their cohorts are 1 micron in size, I calculate that in
+10 years time they would chew through the Earth. The power of
+exponential growth! Even with a 1 month gestation, if left unabashed,
+the self-replicating robots would eat the entire earth in 10 years time.
+They could eat through Mars in about 2. In fact in &lt;em&gt;Postsingular&lt;/em&gt; this
+is what the humans planned. They wanted a Dyson sphere, so they sent
+some self-replicating robots to Mars, let them chew through it a couple
+years, and they had 10\^37 little robots to do their bidding. That is of
+course until the nants set their sites on Earth as their next target&amp;#8230;
+In order to let you play around with the doubling time and bot size,
+I&amp;#8217;ve created a Wolfram Alpha widget that solves the above equation, feel
+free to play around with the parameters and see how long Earth would&amp;nbsp;survive.&lt;/p&gt;
+&lt;p&gt;The widget should be right above this text. If it isn&amp;#8217;t working for some
+reason, here&amp;#8217;s a
+&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;</summary><category term="fun"></category><category term="nanobots"></category><category term="end of the earth"></category><category term="earth day"></category></entry><entry><title>Earth Day - Earth Units</title><link href="/posts/earth-day-earth-units.html" rel="alternate"></link><updated>2010-04-22T16:18:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-04-22:posts/earth-day-earth-units.html</id><summary type="html">&lt;p&gt;In honor of Earth day, I thought I would take a look at what it would
+mean to do physics in &amp;#8216;Earth&amp;#8217; units. What do I mean by that? Well lets
+be anti-Copernican here, in fact lets assume the opposite of the
+&lt;a href="http://en.wikipedia.org/wiki/Copernican_principle"&gt;Copernican
+principle&lt;/a&gt;, and state
+that the Earth is privileged in the universe and define all of our units
+around the&amp;nbsp;Earth.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S9Cu1nxGXDI/AAAAAAAAAKU/JTtr_QKqdR8/s1600/50px-Earth_symbol.svg.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S9Cu1nxGXDI/AAAAAAAAAKU/JTtr_QKqdR8/s320/50px-Earth_symbol.svg.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, I will put a little subscript earth on all of the &amp;#8216;earth&amp;#8217; units.
+They are to be read as &amp;#8216;earth meters&amp;#8217; or &amp;#8216;earth amps&amp;#8217;, etc. We will take
+as our starting point the mass, radius and day of the earth, normalizing
+all of our standards to that. This gives us our initial conversion
+factors &lt;mathjax&gt;$$ 1 g\_{\\oplus} = M\_{\\oplus} = 5.9742 \\times 10\^{34}
+\\text{ kg} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ 1 m\_{\\oplus} = R\_{\\oplus} = 6378.1 \\text{ km} $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ 1 s\_{\\oplus} = T\_{\\oplus} = 86,400 \\text{ s} $$&lt;/mathjax&gt; From this, we
+can figure out what all of the other &amp;#8216;earth&amp;#8217; units would&amp;nbsp;be.&lt;/p&gt;
+&lt;h3&gt;Lengths&lt;/h3&gt;
+&lt;p&gt;Some things we are used to talking about start to look a little simpler
+in these units. The surface area of the earth would be &lt;mathjax&gt;$$ 4 \\pi\\
+m\_{\\oplus}\^2 \\sim 12.6\\ m\_{\\oplus}\^2 $$&lt;/mathjax&gt; and the volume of the
+earth would be &lt;mathjax&gt;$$ \\frac{4\\pi}{3}\\ m\_{\\oplus}\^3 \\sim 4.2\\
+m\_{\\oplus}\^3 $$&lt;/mathjax&gt; One earth velocity would be &lt;mathjax&gt;$$ 1\\ \\frac{
+m\_{\\oplus} }{ s\_{\\oplus} } = 73.8\\ \\frac{ m }{ s} $$&lt;/mathjax&gt; so that the
+velocity of a person standing at the equator would be about &lt;mathjax&gt;$$ 2 \\pi\\
+\\frac{ m\_{\\oplus }}{s\_{\\oplus} } \\sim 6.3\\ \\frac{ m\_{\\oplus }
+}{ s\_{\\oplus } } $$&lt;/mathjax&gt; and one earth acceleration would be &lt;mathjax&gt;$$ 1\\ \\frac{
+m\_{\\oplus} }{ s\_{\\oplus}\^2 } = 8.5 \\times 10\^{-4} \\frac{
+m}{s\^2} $$&lt;/mathjax&gt; so that the gravitational acceleration we feel on the earth
+in earth accelerations would be &lt;mathjax&gt;$$ g \\sim 1.15 \\times 10\^4\\
+\\frac{m\_{\\oplus}}{s\_{\\oplus}\^2 } $$&lt;/mathjax&gt; which is a little more awkward
+than the 10 that it is in &lt;span class="caps"&gt;SI&lt;/span&gt;. After this all of the numbers start to get
+pretty&amp;nbsp;silly.&lt;/p&gt;
+&lt;h3&gt;Mechanics&lt;/h3&gt;
+&lt;p&gt;One earth energy is &lt;mathjax&gt;$$ 1\\ J\_{\\oplus} = 3.3 \\times 10\^{28}\\ J $$&lt;/mathjax&gt;
+and earth force &lt;mathjax&gt;$$ 1\\ N\_{\\oplus} = 5.1\\times 10\^{21}\\ N $$&lt;/mathjax&gt; the
+gravitational constant becomes &lt;mathjax&gt;$$ G = 3.88 \\times 10\^{-25} \\
+\\frac{m\_{\\oplus}\^3 }{ g\_{\\oplus} s\_{\\oplus}\^2} $$&lt;/mathjax&gt; earth power
+&lt;mathjax&gt;$$ 1\\ W\_{\\oplus} = 3.8 \\times 10\^{23} \\ W $$&lt;/mathjax&gt; earth pressure &lt;mathjax&gt;$$ 1\\
+Pa\_{\\oplus} = 1.2 \\times 10\^8 \\ Pa $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;h3&gt;Electrical and&amp;nbsp;Thermal&lt;/h3&gt;
+&lt;p&gt;Additionally if I take the Boltzmann constant and electrical constant as
+fundamental dimensionfull quantities, and set them equal to 1 (i.e.
+&lt;span class="caps"&gt;CGS&lt;/span&gt;-type Earth units), I can use them to discover earth units dealing
+with electrical or thermal phenomenon. An earth kelvin is &lt;mathjax&gt;$$ 1\\
+K\_{\\oplus} = 3.2 \\times 10\^{28} \\ K $$&lt;/mathjax&gt; earth coulomb &lt;mathjax&gt;$$ 1\\
+C\_{\\oplus} = 4.6 \\times 10\^{17} \\ C $$&lt;/mathjax&gt; earth amp &lt;mathjax&gt;$$ 1\\
+A\_{\\oplus} = 5.3 \\times 10\^{12} \\ A $$&lt;/mathjax&gt; an earth volt &lt;mathjax&gt;$$ 1\\
+V\_{\\oplus} = 7.1 \\times 10\^{10} \\ V $$&lt;/mathjax&gt; an earth farad &lt;mathjax&gt;$$ 1\\
+F\_{\\oplus} = 6.4\\times 10\^6 \\ F $$&lt;/mathjax&gt; an earth ohm &lt;mathjax&gt;$$ 1\\
+\\Omega\_{\\oplus} = 14 m\\Omega$$&lt;/mathjax&gt; a earth henry &lt;mathjax&gt;$$ 1\\ H\_{\\oplus} =
+1170 \\ H $$&lt;/mathjax&gt; an earth electric field &lt;mathjax&gt;$$ 1\\
+\\frac{V\_{\\oplus}}{m\_{\\oplus}} = 11200\\ \\frac{V}{m} $$&lt;/mathjax&gt; an earth
+tesla &lt;mathjax&gt;$$ 1\\ T\_{\\oplus} = 152 \\ T $$&lt;/mathjax&gt; etc&amp;#8230;.&lt;/p&gt;
+&lt;h3&gt;Lessons&lt;/h3&gt;
+&lt;p&gt;So, it looks like if we really decide to fly in the face of the
+Copernican principle and look to the earth as something fundamental in
+the universe, these considerations can suggest a bunch of other relevant
+values for other kinds of dimensionfull quantities in the world. If the
+earth really was something super special in the universe, and if somehow
+its design was intimately connected with the properties of physics at
+large, then all of these different values ought to have some kind of
+deep meaning. Unfortunately, as far as I can tell, they are just a bunch
+of random numbers. Looks like the Copernican principle wins again.
+Nobody should tell the earth. Its feelings might get&amp;nbsp;hurt.&lt;/p&gt;</summary><category term="units"></category><category term="fun"></category><category term="dimensional analysis"></category><category term="earth day"></category></entry></feed>

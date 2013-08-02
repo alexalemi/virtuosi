@@ -1,554 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - benford</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>benford - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: benford</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/benford-s-law.html"><time datetime="2010-12-31T14:42:00" pubdate>Fri 31 December 2010</time> Benford&#8217;s&nbsp;Law</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/benford-s-law.html"
-                                        rel="bookmark"
-                                        title="Permalink to Benford&#8217;s&nbsp;Law">
-                                        Benford&#8217;s&nbsp;Law
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/benford-s-law.html"
-                                    data-text="Benford&#8217;s&nbsp;Law"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-12-31T14:42:00">
-        <i class="icon-calendar"></i>Fri 31 December 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/statistics.html"><i class="icon-tag"></i>statistics</a>
-	<a href="../tag/benford.html"><i class="icon-tag"></i>benford</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info -->                </div>
-                <p>Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one?  My first thought was that it would be 1/9.  There are nine non-zero numbers to choose from and they should be uniformly distributed,&nbsp;right? </p>
-<p>Turns out that for almost all data sets naturally collected, this is not the case.  In most cases, one occurs as the first digit most frequently, then two, then three, etc.  That this seemingly paradoxical result should be the case is the essence of Benford&#8217;s&nbsp;Law.</p>
-<p><a name='more'></a>Benford&#8217;s Law [1] states that for most real-life lists of data, the first significant digit in the data is distributed in a specific way,&nbsp;namely:</p>
-<p><mathjax>$$ P(d) = \mbox{log}_{10}\left(1 + \frac{1}{d}\right) $$</mathjax></p>
-<p>The probabilities for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12, P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) = 0.04.  So we would expect the first significant digit to be a one almost 30% of the&nbsp;time!</p>
-<p>But where would such a distribution come from?  Well, it turns out that it comes from a distribution that is logarithmically uniform.  We can map the interval [1,10) to the interval [0,1) by just taking a logarithm (base ten).  These logarithms are then distributed uniformly on the interval&nbsp;[0,1). </p>
-<p>We can now get some grasp for why one should occur as the first digit more often in a uniform log distribution.  In the figure below, I have plotted 1-10 on a logarithm scale.  In a uniform log distribution, a given point is equally likely to be found anywhere on the line.  So the probability of getting any particular first digit is just its length along that line.  Clearly, the intervals get smaller as the numbers get bigger.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: left;">But we can quantify this, too.  For a first digit on the interval [1,10), the probability that the first digit is <i>d</i> is given by:</div>
-<mathjax>$$ P(d) = \frac{\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d)}{\mbox{log}_{10}(10) -\mbox{log}_{10}(1)} $$</mathjax></p>
-<p>which is&nbsp;just</p>
-<p><mathjax>$$ P(d) =\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d) $$</mathjax></p>
-<p>or</p>
-<p><mathjax>$$ P(d) = \mbox{log}_{10}\left( 1 + \frac{1}{d} \right) $$</mathjax></p>
-<p>which is the distribution of Benford&#8217;s&nbsp;Law.</p>
-<p>So how well do different data sets follow Benford&#8217;s Law?  I decided to test it out on a couple easily available data sets: pulsar periods, <span class="caps">U.S.</span> city populations, <span class="caps">U.S.</span> county sizes and masses of plant genomes.  Let&#8217;s start first with pulsar periods.  I took 1875 pulsar periods from the <span class="caps">ATNF</span> Pulsar Database (found <a href="http://www.atnf.csiro.au/research/pulsar/psrcat/">here</a>).  The results are plotted below.  The bars represent the fraction of numbers that start with a given digit and the red dots are the fractions predicted by Benford&#8217;s Law. 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png" width="400" /></a></div>From this plot, we see that the pulsar period data shows the general trend of Benford&#8217;s Law, but not&nbsp;exactly. </p>
-<p>Now let&#8217;s try <span class="caps">U.S.</span> city populations.  This data was taken from the <span class="caps">U.S.</span> census bureau from the 2009 census and contains population data for over 81,000 <span class="caps">U.S.</span> cities.  We see from the chart below that there is a near exact correspondence between the observed first-digit distribution and Benford&#8217;s Law.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png" width="400" /></a></div>Also from the <span class="caps">U.S.</span> census bureau, I got the data for the land area of over 3000 <span class="caps">U.S.</span> counties.  These data also conform fairly well to Benford&#8217;s Law.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png" width="400" /></a></div>Finally, I found <a href="http://data.kew.org/cvalues/CvalServlet?querytype=1">this</a> neat website that catalogs the genome masses of over 2000 different species of plants.  I&#8217;m not totally sure <i>why</i> they do this, but it provided a ton of easy-to-access data, so why not?
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png" width="400" /></a></div>
-Neat, so we see that wide variety of natural data follow Benford&#8217;s Law (some more examples <a href="http://mathworld.wolfram.com/BenfordsLaw.html">here</a>).  But why should they?  Well, as far as I have gathered, there are a few reasons for this.  The first two come from a paper published by Jeff Boyle [2].  Boyle makes (and proves) two claims about this&nbsp;distribution.</p>
-<p>First, he claims that &#8220;the log distribution [Benford&#8217;s Law] is the limiting distribution when random variables are repeatedly multiplied, divided, or raised to integer powers.&#8221;  Second, he claims that once such a distribution is achieved, it &#8220;persists under all further multiplications, divisions and raising to integer&nbsp;powers.&#8221;     </p>
-<p>Since most data we accumulate (scientific, financial, gambling,&#8230;) is the result of many mathematical operations, we would expect that they would tend towards the logarithmic distribution as described by&nbsp;Boyle. </p>
-<p>Another reason for why natural data should fit Benford&#8217;s Law is given by Roger Pinkham (in <a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf">this paper</a>).  Pinkham proves that<i> &#8220;</i>the only distribution for the first significant digits which is invariant under scale change of the underlying distribution&#8221; is Benford&#8217;s Law.  This means that if we have some data, say the lengths of rivers in feet, it will have some distribution in the first digit.  If we require that this distribution remain the same under unit conversion (to meters, yards, cubits, &#8230; ), the only distribution that satisfies this distribution would be the uniform logarithmic distribution of Benford&#8217;s&nbsp;Law.</p>
-<p>This &#8220;scale-invariant&#8221; rationale for this first digit law is probably the most important when it comes to data that we actually measure.  If we find some distribution for the first digit, we would like it to be the same no matter what units we have used.  But this should also be really easy to test.  The county size data used above was given in square miles, so let&#8217;s try some new units.  First, we can try square kilometers.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png" width="400" /></a></div>Slightly different than square miles, but still a very good fit.  Now how about square furlongs?
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png" width="400" /></a></div>Neat!  Seems like the distribution holds true regardless of the units we have&nbsp;used. </p>
-<p>So it seems like a wide range of data satisfy Benford&#8217;s Law.  But is this useful in any way or is it just a statistical curiosity?  Well, it&#8217;s mainly just a curiosity.  But people have found some pretty neat applications.  One field in which it has found use is <a href="http://en.wikipedia.org/wiki/Forensic_accounting">Forensic Accounting</a>, which I can only assume is a totally rad bunch of accountants that dramatically remove sunglasses as they go over tax returns.  Since certain types of financial data (for example, see <a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf">here</a>) should follow Benford&#8217;s Law, inconsistencies in financial returns can be found if the data is faked or manipulated in any&nbsp;way. </p>
-<p>Moral of the story:  If you&#8217;re going to cook the books, remember&nbsp;Benford!</p>
-<p>[1]  Benford&#8217;s Law, in the great tradition of <a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy">Stigler&#8217;s Law,</a> was discovered by Simon&nbsp;Newcomb.</p>
-<p>[2]  Paper can be found <a href="http://www.jstor.org/pss/2975136">here</a>.  Unfortunately, this is only a preview as the full version isn&#8217;t publicly available without a library license.  The two points that I use from this paper are at least stated in this&nbsp;preview.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/benford-s-law.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

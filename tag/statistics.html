@@ -1,589 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - statistics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>statistics - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: statistics</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/fun-fact-lebron-james-plays-basketball.html"><time datetime="2011-02-07T12:37:00" pubdate>Mon 07 February 2011</time> Fun Fact: Lebron James Plays&nbsp;Basketball</a></li>
+				<li class="clearfix"><a href="/posts/benford-s-law.html"><time datetime="2010-12-31T14:42:00" pubdate>Fri 31 December 2010</time> Benford&#8217;s&nbsp;Law</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/fun-fact-lebron-james-plays-basketball.html"
-                                        rel="bookmark"
-                                        title="Permalink to Fun Fact: Lebron James Plays&nbsp;Basketball">
-                                        Fun Fact: Lebron James Plays&nbsp;Basketball
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/fun-fact-lebron-james-plays-basketball.html"
-                                    data-text="Fun Fact: Lebron James Plays&nbsp;Basketball"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2011-02-07T12:37:00">
-        <i class="icon-calendar"></i>Mon 07 February 2011
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/bohn.html"><i class="icon-user"></i>Bohn</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/statistics.html"><i class="icon-tag"></i>statistics</a>
-	<a href="../tag/basketball.html"><i class="icon-tag"></i>basketball</a>
-	<a href="../tag/bohn.html"><i class="icon-tag"></i>Bohn</a>
-	<a href="../tag/lebron-james.html"><i class="icon-tag"></i>lebron james</a>
-</footer><!-- /.post-info -->                </div>
-                <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg"><img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 332px; height: 329px;" src="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg" alt="" border="0" /></a></p>
-<p>Between building airplanes and playfully destroying everyone else in my apartment at Super Smash Brothers, my roommate Nathan brought up an interesting recent fact about LeBron James.  He told me that LeBron scored 11 consecutive field goals (not in football&#8230; you know who you are) in one game.  Apparently this was a pretty special event, but how rare is it for a player of LeBron&#8217;s caliber?  <span class="caps">TO</span> <span class="caps">THE</span>&nbsp;<span class="caps">SCIENCE</span>-<span class="caps">MOBILE</span>!</p>
-<p><a name='more'></a></p>
-<p><span style="font-weight: bold;">The&nbsp;Problem!</span></p>
-<p><a href="http://www.youtube.com/watch?v=kHltCzuwlOs&amp;feature=related"><span class="caps">ESPN</span> 8, The Ocho</a> tells me that LeBron&#8217;s career field goal percentage is 47.5%.  Considering the number of shots he takes, this is a pretty good number.  To compare, the highest field goal percentage for a single season was Wilt Chamberlin with 72.7%, but eye witness testimony says he was around 10 feet tall and would wait in the offensive paint all&nbsp;game.</p>
-<p>Let&#8217;s see how improbable this 11 in a row streak is.  The generic question we are going to need to answer is as&nbsp;follows:</p>
-<p>If a basketball player takes N shots in one game, with a shooting probability of q, what is the probability that the player will make <span class="caps">AT</span> <span class="caps">LEAST</span> k shots in a row?  We&#8217;ll call this probability&nbsp;P(N)</p>
-<p>This turns out to be a tricky problem, but let&#8217;s take a shot (awful pun&#8230; I sincerely apologize).  We can take care of simple&nbsp;cases:</p>
-<p>If N &lt; k,  then P(N) = 0.  This tells us you can&#8217;t have a streak of k if you don&#8217;t take k&nbsp;shots!</p>
-<p>If N = k, P(N) = q^k.  This is the probability of getting k in a row if you take k shots, not too surprising&nbsp;yet.</p>
-<p>When N &gt; k, things get more&nbsp;interesting.</p>
-<p><span style="font-weight: bold;">Finding the Recurrence&nbsp;Relation</span></p>
-<p>Our goal is to write a relationship that has this&nbsp;form:</p>
-<p>P(N) = P(N-1) +&nbsp;blank</p>
-<p>What&#8217;s blank?  &#8220;You don&#8217;t worry about blank&#8230; let me worry about&nbsp;blank!&#8221;</p>
-<p>We&#8217;ll need to look at the <a href="http://en.wikipedia.org/wiki/Inclusion_exclusion_principle">inclusion-exclusion principle</a>.  This principle basically says that when we want to take all <span class="caps">DISTINCT</span> items in two sets, we need to take all of the elements in one set, and add all elements in the second set which are <span class="caps">DISTINCT</span> from the first.  For example, if A = {0, 1, 2, 3, 4} and B = {3, 4, 5, 6, 7, 8}, then the union of A and B is {0, 1, 2, 3, 4, 5, 6, 7, 8}.  Note that I did not include 3 and 4&nbsp;twice.</p>
-<p>Let&#8217;s take a look at the expertly designed (5 minutes before class) google docs drawing&nbsp;below:</p>
-<p><a href="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;w=1122&amp;h=485" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" src="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;w=1122&amp;h=485" style="cursor: pointer; display: block; height: 211px; margin: 0px auto 10px; text-align: center; width: 490px;" border="0" /></a></p>
-<p>The entire line represents N shots being taken.  Each shot gets its own little column (not all columns shown).  Using the inclusion-exclusion principle with the following sets will give us the answer.  Choose A to be the first N-1 shots, and B to be all N&nbsp;shots.</p>
-<p>The principle tells us first to take everything from A, which is the probability P(N-1) shown in red.  B will be the entire line, but the principle tells us to only add <span class="caps">DISTINCT</span> chances from B.  Since the only difference in B is one more shot than A, the only distinct chance for a streak of k shots will be in the last k shots, shown in yellow as P(k).  This is only distinct if the (k+1)th to last shot shown in green is missed!  Otherwise a streak of k would have been included in A already. There is one more place for a streak to be already included in A.  If there was a streak in the blue section, we must not include the B streak so we don&#8217;t double&nbsp;count.</p>
-<p>Phew&#8230; Let&#8217;s put this all together by multiplying the probabilities of each of those&nbsp;events:</p>
-<p>P(N) = P(N-1) + (probability of yellow streak)<em>(probability we miss green)</em>(probability of no streak in&nbsp;blue)</p>
-<p><mathjax>$$P(N) = P(N-1) + q^k \times (1-q) \times (1 - P(N-k-1))$$</mathjax></p>
-<p>This gives us a recurrence relation for the probabilities!   This is a general statement about the probability of at least one streak of length k out of N chances, given each has a probability q.  Since I&#8217;m just going to plug this into Python anyway to handle the data, this equation is good&nbsp;enough.</p>
-<p>The expectation value of an event is the probability multiplied by the number of chances.  For example, the expectation value of getting heads with 2 tosses is just (1/2)*2 = 1.  The plan is to compile a list of his field goal attempts in every game LeBron has played in the <span class="caps">NBA</span>, and sum the expectation values for each&nbsp;N.</p>
-<p><mathjax>$$ \mbox{Expectation} = \sum_i P(i) \times \mbox{(number of games with i shots)} $$</mathjax></p>
-<p>Using LeBron&#8217;s actual field goal attempt data for each game (up to February 4, 2011), we find that LeBron is expected number of games with at least a streak of 11 in a row is 1.128.  This is a higher expectation value than the number of heads in 2 coin flips!   So this is <span class="caps">MORE</span> expected than the number of heads we would see with 2 coin flips.  This isn&#8217;t very exciting given the number of shots he has taken and his shooting&nbsp;percentage.</p>
-<p><span style="font-weight: bold;">Data&nbsp;Tables</span></p>
-<style>table {  }<span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">td</span> { padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-size: 12pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: <span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">Calibri</span>,sans-serif; vertical-align: bottom; border: medium none; white-space: <span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">nowrap</span>; }.xl63 { text-align: center; }.xl64 { text-align: center; }.xl65 { color: red; text-align: center; }.xl66 { font-weight: 700; }</style>
-
-<table style="border-collapse: collapse; width: 294px;" border="0" cellpadding="0" cellspacing="0"><colgroup><col style="width: 95pt;" width="95">  <col style="width: 105pt;" width="105">  <col style="width: 94pt;" width="94">  </colgroup><tbody><tr style="height: 15pt;" height="15">   <td class="xl66" style="height: 15pt; width: 95pt;" width="95" height="15">Consecutive   Shots</td>   <td class="xl66" style="width: 105pt;" width="105">Expected out of 667</td>   <td class="xl66" style="width: 94pt;" width="94">Percent of Games</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">1</td>   <td class="xl63">666.9</td>   <td class="xl63">99.99</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">2</td>   <td class="xl63">643.6</td>   <td class="xl63">96.49</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">3</td>   <td class="xl63">489.0</td>   <td class="xl63">73.32</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">4</td>   <td class="xl63">281.8</td>   <td class="xl63">42.25</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">5</td>   <td class="xl63">140.0</td>   <td class="xl63">21.00</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">6</td>   <td class="xl63">65.23</td>   <td class="xl63">9.780</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">7</td>   <td class="xl63">29.55</td>   <td class="xl63">4.431</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">8</td>   <td class="xl63">13.20</td>   <td class="xl63">1.980</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">9</td>   <td class="xl63">5.854</td>   <td class="xl63">0.8778</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">10</td>   <td class="xl63">2.578</td>   <td class="xl63">0.3866</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl65" style="height: 15pt;" height="15">11</td>   <td class="xl65">1.128</td>   <td class="xl65">0.1691</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">12</td>   <td class="xl63">0.4898</td>   <td class="xl63">0.07344</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">13</td>   <td class="xl63">0.2110</td>   <td class="xl63">0.03164</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">14</td>   <td class="xl63">0.09011</td>   <td class="xl63">0.01351</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">15</td>   <td class="xl63">0.03807</td>   <td class="xl63">0.005709</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">16</td>   <td class="xl63">0.01592</td>   <td class="xl63">0.002387</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">17</td>   <td class="xl63">0.006560</td>   <td class="xl63">0.0009839</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">18</td>   <td class="xl63">0.002660</td>   <td class="xl63">0.0003995</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">19</td>   <td class="xl63">0.001067</td>   <td class="xl63">0.0001600</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">20</td>   <td class="xl63">0.0004180</td>   <td class="xl63">6.267E-05</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">21</td>   <td class="xl63">0.0001599</td>   <td class="xl63">2.397E-05</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">22</td>   <td class="xl64">6.03E-05</td>   <td class="xl63">9.033E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">23</td>   <td class="xl64">2.22E-05</td>   <td class="xl63">3.328E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">24</td>   <td class="xl64">8.06E-06</td>   <td class="xl63">1.208E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">25</td>   <td class="xl64">2.84E-06</td>   <td class="xl63">4.259E-07</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">26</td>   <td class="xl64">9.98E-07</td>   <td class="xl63">1.495E-07</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">27</td>   <td class="xl64">3.51E-07</td>   <td class="xl63">5.255E-08</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">28</td>   <td class="xl64">1.20E-07</td>   <td class="xl63">1.797E-08</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">29</td>   <td class="xl64">3.92E-08</td>   <td class="xl63">5.870E-09</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">30</td>   <td class="xl64">1.15E-08</td>   <td class="xl63">1.717E-09</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">31</td>   <td class="xl64">3.45E-09</td>   <td class="xl63">5.171E-10</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">32</td>   <td class="xl64">1.06E-09</td>   <td class="xl63">1.589E-10</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">33</td>   <td class="xl64">3.37E-10</td>   <td class="xl63">5.050E-11</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">34</td>   <td class="xl64">7.23E-11</td>   <td class="xl63">1.083E-11</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">35</td>   <td class="xl64">1.70E-11</td>   <td class="xl63">2.554E-12</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">36</td>   <td class="xl64">2.30E-12</td>   <td class="xl63">3.442E-13</td>  </tr></tbody></table>
-
-<p>The streak in question is highlighted in red, so it appears we expect it to happen 0.169% of his&nbsp;games.</p>
-<p><span style="font-weight: bold;">The&nbsp;Realization</span></p>
-<p>Of course I did all of this before looking up the <a href="http://espn.go.com/nba/truehoop/miamiheat/notebook/_/page/heatreaction-110203/miami-heat-orlando-magic">actual article</a>.   I&#8217;ll quote the blurb&nbsp;here:</p>
-<blockquote>LeBron James set a personal record by making his first 11 field goals to  start the game. His previous career-high was 10 straight field goals  after tip-off, recorded against Chicago in 2008. After hitting his first  11 field goal attempts on Thursday night, James shot 6-for-14  thereafter. </blockquote>
-
-<p>Well&#8230; this calculation just got a bit easier.  He has played 667 games, and the probability of getting 11 straight off the bat is q^k = 0.475^11 = 0.0002777.  Multiply this by 667 games to get the expected value of 0.185.  Sure this is 6 times smaller than our previous calculation; however it&#8217;s still not statistically <span style="font-style: italic;">that</span>&nbsp;impressive.</p>
-<p>How would LeBron&#8217;s expected number change if he shot the same percentage (72.7%) as Wilt for his record breaking season?  The expected number of games with 11 in a row during the game would be 72.38 games!!  So this is incredibly dependent on the shooting percentage.  We have a factor of q^k everywhere!  Certainly it&#8217;s dependent on the number of shots taken in a game too.  The probability P(N) is a monotonically increasing&nbsp;function!</p>
-<p><span style="font-weight: bold;">Moral</span></p>
-<p>Given LeBron&#8217;s shooting percentage and high number of shots per game, we expect that he would have at least 1 of these streak of 11 games so far in his career.  This is certainly not to diminish this feat though.  You still need to take 20 some shots a game in the <span class="caps">NBA</span> with nearly 50% shooting&nbsp;accuracy!</p>
-<p>We also have a nice formula to apply to more sports streaks!  More to&nbsp;come&#8230;</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/fun-fact-lebron-james-plays-basketball.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                                <div class="article">
-                <h1><a href="../posts/benford-s-law.html">Benford&#8217;s&nbsp;Law</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-12-31T14:42:00">
-        <i class="icon-calendar"></i>Fri 31 December 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/statistics.html"><i class="icon-tag"></i>statistics</a>
-	<a href="../tag/benford.html"><i class="icon-tag"></i>benford</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one? My first thought was that it would be 1/9. There are nine non-zero numbers to choose from and they should be uniformly distributed, right? Turns out that for almost all data sets naturally collected, this is not the case. In most cases, one occurs as the first digit most frequently, then two, then three, etc. That this seemingly paradoxical result should be the case is the essence of Benford’s Law. Benford’s Law [1] states that for most real-life lists of data, the first significant digit in the data is distributed in a specific way, namely: $$ P(d) = \mbox{log}_{10}\left(1 + \frac{1}{d}\right) $$ The probabilities for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P ...
-                        <a class="btn primary xsmall" href="../posts/benford-s-law.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

@@ -1,600 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Physics Virtuosi - bad physics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>bad physics - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">
+<div class="wrapper main">		
+	<h2>Post tagged: bad physics</h2>
+	
+	<ol class="archive">
+				<li class="clearfix"><a href="/posts/four-fantastic-books-3-of-which-are-free.html"><time datetime="2010-10-16T00:50:00" pubdate>Sat 16 October 2010</time> Four Fantastic Books (3 of which are&nbsp;free)</a></li>
+				<li class="clearfix"><a href="/posts/another-reason-why-the-core-is-stupid.html"><time datetime="2010-04-15T17:30:00" pubdate>Thu 15 April 2010</time> Another Reason Why The Core is&nbsp;Stupid</a></li>
+			</ol>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li >
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-                                    <article>
-                <header>
-                        <h1>
-                            <a href="../posts/four-fantastic-books-3-of-which-are-free-.html"
-                                        rel="bookmark"
-                                        title="Permalink to Four Fantastic Books (3 of which are&nbsp;free)">
-                                        Four Fantastic Books (3 of which are&nbsp;free)
-                                </a>
-                                                                <a href="http://twitter.com/share" class="twitter-share-button"
-                                    data-url="../posts/four-fantastic-books-3-of-which-are-free-.html"
-                                    data-text="Four Fantastic Books (3 of which are&nbsp;free)"
-                                   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-                                </script>
-                                                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-10-16T00:50:00">
-        <i class="icon-calendar"></i>Sat 16 October 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/book-review.html"><i class="icon-tag"></i>book review</a>
-	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
-	<a href="../tag/math.html"><i class="icon-tag"></i>math</a>
-	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
-</footer><!-- /.post-info -->                </div>
-                <p><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248" /></a>Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I&#8217;ve managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
-<h3>Street Fighting Mathematics - Sanjoy&nbsp;Mahajan </h3><h4>The art of educated guessing and opportunistic problem&nbsp;solving </h4><div><a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=12156">Link to <span class="caps">MIT</span> Press&nbsp;Site</a></p>
-<p>You know that feeling you get when it&#8217;s the second half of January and you put on new clothes that have just come out of the dryer?  This book is like a cross between that and a kick in the&nbsp;face.  </p>
-<p>The warm fuzzy-clothes-out-of-the-dryer feeling will come from the realization that you can wield unsurmountable power.  The kick in the face will come when you realize you&#8217;re not doing it yet.
-<a name='more'></a>
-The premise of the book is something along the lines of:  We&#8217;ve all been taught how to solve math problem exactly.  Science isn&#8217;t exact.  Turns out when you realize this, you can do a heck of a lot.  Let Sanjoy show you&nbsp;how.</p>
-<p>As an undergrad, I had the supreme fortune of taking some life changing courses.  One of the ones that has struck me the deepest was Ph 101: Order of Magnitude Physics.  It did a remarkable job building my confidence.  It&#8217;s one thing to go through your classes and complete the homework assignments.  It&#8217;s another thing entirely to feel as you can take a stab at just about any question anyone can&nbsp;ask.</p>
-<p>This book is the handbook that will introduce you to the techniques and ways of thinking you&#8217;ll need in order to tackle the most general of questions.  The first chapter is Dimensional Analysis, something that every high school student should be exposed to. I love Dimensional Analysis.  The rest of the book goes on to estimate Integrals, Sums and Differential Equations, thinking about limiting cases and scaling, and thinking&nbsp;pictorially.  </p>
-<p>The best part:  it&#8217;s available in a creative commons version, i.e. for free.  Just follow the creative common pdf link in the left&nbsp;sidebar.</p>
-<p>One of the biggest flaws I see in modern physics teaching is that physics courses have a tendency of being reduced to plugging numbers into highlighted and yellow boxed equations.  That&#8217;s not physics!  Physics is a way of thinking about the world.  It&#8217;s the delight you obtain when you understand something for the first time.  It&#8217;s the power you can wield by being able to properly predict phenomenon that only minutes ago you found baffling.  In a word: it&#8217;s awesome.  In order to be able to see past all of the equations, you need to have an appreciation for how powerful intelligent approximations can&nbsp;be.</p>
-<p>The amazing fact is that with a proper introductory physics course, you are capable of understanding a huge deal of the world around&nbsp;you. </p>
-<p>If physics classes were taught the way Sanjoy would like them to be taught, if they relied fundamentally on the kinds of techniques he discusses, I think students would like physics a lot more.  I think the world would be a better place.<br />
-</div></p>
-<h3>Why Things Break  - Mark E.&nbsp;Eberhart </h3>
-
-<h4>Understanding the world by the way it comes&nbsp;apart </h4>
-
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TLkXVqJBxlI/AAAAAAAAAOs/WEGJaROjFhI/s1600/4115MFY61ML._SS500_.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TLkXVqJBxlI/AAAAAAAAAOs/WEGJaROjFhI/s320/4115MFY61ML._SS500_.jpg" width="320" /></a></div>
-
-<p><a href="http://books.google.com/books?id=wo9wGKk9MVsC&printsec=frontcover&dq=Why+Things+Break&hl=eo&ei=4Be5TJ6jPIL48Aa2uKzPDg&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCUQ6AEwAA#v=onepage&q&f=false">Link to Google Books&nbsp;Page</a></p>
-<p>This book was mentioned to me by someone in my group.  I decided to check it out, and read the first 70% of it in one sitting.  I think that says something about&nbsp;it.  </p>
-<p>This is a really fun read.  It&#8217;s a popular science book, but on something you&#8217;ve probably never read about before - material&nbsp;science.</p>
-<p>Mixing very interesting history, science, and biography, Eberhart takes you on a journey attempting to answer the question: Why do things break?  Which he is quick to point out is probably not the question you think it is.  His life goal is not to answer what happens when things break, or which materials break sooner than others (which he manages to mention along the way anyway), but he is primarily interested in answergin why things even break in the first place, a rather subtle and non-trivial question when you think about&nbsp;it.</p>
-<p>I actually learned quite a lot from this book.  It&#8217;s full of really interesting accounts and digressions.  I can&#8217;t recommend it enough.  Very fun&nbsp;read.</p>
-<h3>Soap Bubbles - C. V.&nbsp;Boys </h3>
-
-<h4>Their colours and the forces which mold&nbsp;them </h4>
-
-<p><a href="http://books.google.com/books?id=EcgCKTPYqCIC&printsec=frontcover&source=gbs_atb#v=onepage&q&f=false">Link to Google Books&nbsp;page</a></p>
-<p>I found this book by accident, but boy am I glad I found it.  It&#8217;s a printing of a series of lectures the author gave to some children near the close of the 19th century about&nbsp;bubbles.</p>
-<p>This goes into the drawer of happy little discoveries I&#8217;ve made of old science literature for which the copyright has expired.  Meaning its free on Google Books as a pdf&nbsp;download.  </p>
-<p>I don&#8217;t know what it is, but I find basically anything written before about 1950 at least an order of magnitude easier to understand than anything since.  Sure, some of it has to do with the fact that older science literature is necessarily dated, while new physics can tend to be a lot more complicated, and you could point out that there is a clear selection bias in the old texts that I manage to find, but I really believe there is something more to it than that.  Old science authors wrote to be understood.  You get the distinct impression that most of these guys really loved their craft and really wanted to explain their findings to others.  Sometimes I get the impression that modern articles are written less to be understood and more as the modern version of mailing your patent idea to yourself in a closed envelope - as a way to get a stamp on your lab notebook to prove you did something&nbsp;first.</p>
-<p>That said, this little gem was not what I thought it was going to be.  Going in, I thought it would be a bunch of cool things you could do with bubbles.  Oh but it&#8217;s so much more.  Boys manages in these three little lectures to give one of the clearest introductions to some basic fluid dynamics and electricity I&#8217;ve seen.  Boys manages to teach, and while using&nbsp;bubbles.</p>
-<p>I recommend it.  If not for the science and cool bubble tricks, I think it can serve as another find indicating that physics education doesn&#8217;t need to be boring in order to get real ideas&nbsp;planted.</p>
-<h3>Calculus Made Easy - Silvanus Phillips&nbsp;Thompson </h3>
-
-<h4>Being a very-simplest introduction to those beautiful methods of reckoning which are generally called by the terrifying names of the <span class="caps">DIFFERENTIAL</span> <span class="caps">CALCULUS</span> and <span class="caps">INTEGRAL</span>&nbsp;<span class="caps">CALCULUS</span></h4>
-
-<p><a href="http://books.google.com/books?id=BrhBAAAAYAAJ&printsec=frontcover&dq=Calculus+Made+Easy&hl=eo&ei=WRu5TKDJLsT38Ab4wNiaDw&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q&f=false">Google Books Link</a> - another&nbsp;freebie</p>
-<p>I have to admit, I didn&#8217;t just read this one.  I read it a while ago, but while writing up the other ones I could let such a fantastical book as this pass by without&nbsp;mention.</p>
-<p>Another book I found by accident for free on Google Books.  If I remember correctly, this one was pure serendipity.  But it has to be the best introductory calculus book ever written.  Seriously.  I don&#8217;t joke about these things.  I fell in love with it as soon as I finished reading the subtitle (and the author&#8217;s&nbsp;name).</p>
-<p>This. book. rocks.  If nothing else, do yourself a favor and read the first couple chapters of this bad boy.  It&#8217;s free.  I won&#8217;t&nbsp;hurt.</p>
-<p>It&#8217;s so good, I read it online.  Then I checked it out from the library.  Then I bought the <a href="http://www.amazon.com/Calculus-Made-Easy-CALCULUS-MADE/dp/B001TIKS36/ref=sr_1_4?ie=UTF8&qid=1287200177&sr=8-4">shiny new edition</a> because I needed to have it on my shelf.  Turns out I&#8217;m not the only one in love with the book.  Martin Gardner so loved it as to release the shiny edition with recreational problems and his&nbsp;commentary.</p>
-<p>This is not Calculus crib notes.  This is not spark notes or Calculus for Dummies.  This is not just a condensed version of the calculus book you used in highschool.  This isn&#8217;t just a list of formulas.  This book <i>explains</i> what calculus is.  You do not understand what I meant by the sentence.  You will not understand until you read Calculus Made&nbsp;Easy.</p>
-<p>This is another book that just makes me sad at the current state of education.  Calculus is one of those things that&#8217;s feared by the general public.  It&#8217;s feared because it&#8217;s misunderstood.  Calculus isn&#8217;t hard.  And I don&#8217;t mean to just sound like a jerk when I say that.  It isn&#8217;t meant to be hard at least.  As the opening proverb of Calculus Made Easy says:
-<blockquote>What one fool can do, another can.</blockquote>
-All it really takes to understand calculus is the ability to imagine a very little bit of something.  That and a caring and skilled tutor to lead you on your way.  What name can you think of that sounds more caring and skillful than Silvanus Phillips&nbsp;Thompson.  </p>
-<p>I can think of no legitimate reason this book isn&#8217;t used in each and every high school calculus in America.&nbsp;Seriously.</p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/four-fantastic-books-3-of-which-are-free-.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                        </article>
-                                <div class="article">
-                <h1><a href="../posts/another-reason-why-the-core-is-stupid.html">Another Reason Why The Core is&nbsp;Stupid</a></h1>
-                <div class="well small"><footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-15T17:30:00">
-        <i class="icon-calendar"></i>Thu 15 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/the-core.html"><i class="icon-tag"></i>the core</a>
-	<a href="../tag/order-of-magnitude.html"><i class="icon-tag"></i>order of magnitude</a>
-	<a href="../tag/magnetism.html"><i class="icon-tag"></i>magnetism</a>
-	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
-	<a href="../tag/fermi-problem.html"><i class="icon-tag"></i>fermi problem</a>
-	<a href="../tag/sci-fi.html"><i class="icon-tag"></i>sci-fi</a>
-	<a href="../tag/bad-physics.html"><i class="icon-tag"></i>bad physics</a>
-	<a href="../tag/movie.html"><i class="icon-tag"></i>movie</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">I assume everyone has heard of The Core, the terrible scifi movie from 2003. If you haven’t you’re missing out on what appears to be, according to Discover magazine, the worst sci-fi film ever. There are already numerous sites that discuss the bad science in the core (here, or over at Bad Astronomy), but they all seem to ignore another fundamental problem with the plot. I don’t think I’ll give too much away if I tell you that the basic premise of the movie is that the earth’s core has stopped rotating, and so the earth’s magnetic field is collapsing, which they claim will mean that all of the previously deflected microwaves (note: EM radiation is not bent by a magnetic field) will cook us all. Now, a lot of people have focused on the microwaves bit, which while bad science, one could argue ...
-                        <a class="btn primary xsmall" href="../posts/another-reason-why-the-core-is-stupid.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-                
-                        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

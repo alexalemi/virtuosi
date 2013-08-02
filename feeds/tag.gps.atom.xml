@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.gps.atom.xml" rel="self"></link><id>/</id><updated>2010-09-12T23:04:00-04:00</updated><entry><title>Microseconds and Miles</title><link href="/posts/microseconds-and-miles.html" rel="alternate"></link><updated>2010-09-12T23:04:00-04:00</updated><author><name>Corky</name></author><id>tag:,2010-09-12:posts/microseconds-and-miles.html</id><summary type="html">&lt;p&gt;The following is an unfinished manuscript found under heaps of rubble
+and pizza boxes here at Virtuosi headquarters. It appears to be some
+sort of screen play, though one would be hard-pressed to figure this out
+solely from the script. The true giveaway was the 100 page addendum (not
+published) full of potential titles and acceptance speeches. I dare not
+bore you with these vanity pages in their entirety, but just for
+completeness and posterity I include some samples.
+For possible titles we have: &amp;#8220;Dr. Dre, &lt;span class="caps"&gt;OR&lt;/span&gt;: How I Learned to Stop
+Worrying and Love the Metric,&amp;#8221; &amp;#8220;How to Teach Physics to your Dee Oh
+Double G (West Coast Edition),&amp;#8221; &amp;#8220;Bring Da Ruckus: ODEs by &lt;span class="caps"&gt;ODB&lt;/span&gt;&amp;#8221; and
+&amp;#8220;Flavor Flav&amp;#8217;s Flavor Physics&amp;#8230;boooyeeeee!&amp;#8221; among other even worse and
+less relevant titles.
+Among the acceptance speeches we have one that starts: &amp;#8220;I would like to
+thank the Academy, Scott Bakula and Chuck D. You know what you did.
+Here&amp;#8217;s a song I wrote&amp;#8230;&amp;#8221;, etc. It is all very painful.
+There is almost no value to this document whatsoever, but it does
+present a nice fun fact about &lt;span class="caps"&gt;GPS&lt;/span&gt;. The legible parts of the script are
+thus presented below. The illegible parts appear to have been obscured
+by some caustic mixture of Mountain Dew, pizza sauce and tears. &lt;strong&gt; &lt;em&gt;We
+descend to the bottom of the abandoned mineshaft recently converted to
+the headquarters of General Stanley K. Ripper. He is currently engaged
+in a heated discussion with his science advisor, Dr. Vontavious Dre. We
+join mid-sentence as a result of lazy writing&amp;#8230;&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: &amp;#8230;shortage of scientists! What&amp;#8217;s that? Yeah, you could
+definitely call it a &amp;#8220;chronic&amp;#8221; shortage if you want. But semantics
+aren&amp;#8217;t important right now. The &amp;#8220;G&amp;#8221;-sector needs more funding.&lt;/em&gt;
+&lt;strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;GEN&lt;/span&gt;. &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: You are my most trusted science advisor, Dr. Dre, but you
+already have one staff scientist&amp;#8230;a Dr. Snoop Dogg, I believe&amp;#8230;? How
+many scientists do we need doing relativity here? This is the military!
+We need Moonraker lasers and nuclear hand grenades. So no more funding
+unless&amp;#8230; That is, unless you figured out the&amp;#8230;&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: No sir, we still don&amp;#8217;t have a Stargate.&lt;/em&gt;
+&lt;strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;GEN&lt;/span&gt;. &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: Well then you are just wasting my time! I want something
+useful. Either something that goes boom or something that helps
+something that goes boom. What I don&amp;#8217;t need is a theoretical money
+drain.&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: And how did you find your way to work today, sir?&lt;/em&gt;
+&lt;strong&gt;
+&lt;/strong&gt;&lt;em&gt;&lt;span class="caps"&gt;GEN&lt;/span&gt;. &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: What? You know very well I ride my horse, Neigh-braham
+Lincoln. He knows how to get here.&lt;/em&gt;
+&lt;strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: And how does Nifty &amp;#8216;Nabe know where to go&amp;#8230;?&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: &lt;span class="caps"&gt;GPS&lt;/span&gt;, of course!&lt;/em&gt;
+&lt;strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Bingo. That&amp;#8217;s our department. Without correcting for general
+relativistic effects (the specialty of the &amp;#8220;G&amp;#8221;-sector, I may add), &lt;span class="caps"&gt;GPS&lt;/span&gt;
+would be completely useless. Let me show you.&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;A large blackboard drops down from the ceiling and a slow steady beat,
+just barely audible, seems to come from all directions. Dre writes the
+following equation on the board:&lt;/em&gt;
+&lt;mathjax&gt;$$ ds\^2 = -\\left(1-\\frac{R\_s}{r} \\right)c\^2dt\^2+ \\left( 1 -
+\\frac{R\_s}{r} \\right)\^{-1} dr\^2 + r\^2 \\left( d{\\theta}\^2 +
+{\\sin\\theta} {d\\phi}\^2 \\right)$$&lt;/mathjax&gt;
+This equation gives the line element for a Schwarzschild metric. The
+R_s in the equation is called the &amp;#8220;Schwarzschild Radius&amp;#8221; and is given
+by
+&lt;mathjax&gt;$$ R\_s = \\frac{2GM}{c\^2} .$$&lt;/mathjax&gt;
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: Is that Karl Schwarzschild? I remember reading a delightful
+biography of him somewhere&amp;#8230;? Anyway, what the heck is this &amp;#8220;line
+element&amp;#8221; thing&amp;#8230;?
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Good question. Essentially what we get is the differential
+change in the space-time interval ( ds ) if we change all the
+coordinates by a very tiny little bit. What is nice about this is that
+although coordinates are a tricky thing in general relativity and can
+change from one observer to another, the space-time interval is an
+invariant quantity. That is, different observers will measure the same
+space-time interval between events even though they may measure
+different times and distances.
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: So this space-time interval is just a kind of space-time
+distance that different observers will agree on?
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Right-o. And this invariance allows us to compare different
+reference frames. Eventually, we will use this invariance to get the
+frequencies observed by an observer on the surface of the earth and one
+traveling along with a satellite in orbit. Since we will only be
+considering observers at fixed radius and fixed theta = 90 degrees (ie
+at the equator), we can simplify things a bit. Since we will have a
+fixed radius and theta value we have that:
+&lt;mathjax&gt;$$ dr = 0 $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ d\\theta = 0 $$&lt;/mathjax&gt;
+and
+&lt;mathjax&gt;$$\\sin\\theta = 1 $$&lt;/mathjax&gt;
+Plugging these simplifications into our line element gives:
+&lt;mathjax&gt;$$ ds\^2 = -\\left( 1 - \\frac{R\_s}{r} \\right)c\^2 dt\^2 + r\^2
+d\\phi\^2 $$&lt;/mathjax&gt;
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: Neato Toledo!
+&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;span class="caps"&gt;DRE&lt;/span&gt;: Right, so now we divide out the -c\^2 dt\^2 term on the right
+hand side. So we have:
+&lt;mathjax&gt;$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right) -
+\\frac{r\^2}{c\^2} \\frac{d\\phi\^2}{dt\^2} \\right] $$&lt;/mathjax&gt;
+But this is just &lt;mathjax&gt;$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 -
+\\frac{R\_s}{r} \\right) - \\frac{r\^2}{c\^2} {\\left(\\frac{d\\phi}{dt}
+\\right)}\^2 \\right] $$&lt;/mathjax&gt;
+But what does that d phi / dt term look like?
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: Sure looks like an angular velocity to me. But don&amp;#8217;t we need
+to be careful with these rates?
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Yep, that is an angular velocity term. We need to be a little
+careful with these rates. Essentially, in the coordinate system we have
+chosen the time is something like the time measured at r = infinity and
+thus the rate would also be measured from r = infinity. Plugging in
+omega as our angular velocity, we now have:
+&lt;mathjax&gt;$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right)
+-\\left( \\frac{r {\\omega}}{c} \\right)\^2 \\right] $$&lt;/mathjax&gt;
+But we want to figure out the times on the &lt;span class="caps"&gt;GPS&lt;/span&gt; satellites, so we&amp;#8217;ll need
+some measure of how time ticks by as measured by the orbiting observer.
+In the rest frame of the observer, we have that
+&lt;mathjax&gt;$$ ds\^2 = -c\^2 {d\\tau}\^2 $$&lt;/mathjax&gt;
+where the tau is the &amp;#8220;proper time&amp;#8221; of the observer. It tells us the time
+that the observer measures on his clocks. To find the frequency (in
+other words, how quickly the observer clock ticks by a second) we just
+have
+&lt;mathjax&gt;$$ f = \\frac{1}{d\\tau} $$&lt;/mathjax&gt;
+And now we have enough background to start talking about &lt;span class="caps"&gt;GPS&lt;/span&gt;!
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: Hooray! Should I go get my horse&amp;#8230;?
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: I don&amp;#8217;t think that&amp;#8217;s necessary&amp;#8230;? Anyway, let&amp;#8217;s model our &lt;span class="caps"&gt;GPS&lt;/span&gt;
+system as a satellite in a 26,000 km orbit [1]. Meanwhile our earth
+reference frame will be an observer standing on the surface of the
+earth. So let&amp;#8217;s write out our line element for each reference frame.
+First the satellite frame:
+&lt;em&gt;As Dr. Dre works, the beat steadily gets louder.&lt;/em&gt;
+&lt;mathjax&gt;$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right] $$&lt;/mathjax&gt;
+So the frequency at which a satellite clock ticks is
+&lt;mathjax&gt;$$ f\_{sat} = \\frac{1}{dt} \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left(\\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right]}\^{-1/2} $$&lt;/mathjax&gt; and likewise the earth frame:
+&lt;mathjax&gt;$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{earth}}
+\\right) -{\\left(\\frac{\\omega\_{earth} R\_{earth}}{c} \\right)}\^2
+\\right] $$&lt;/mathjax&gt;
+So the frequency at which an earth clock ticks is
+&lt;mathjax&gt;$$ f\_{earth} = \\frac{1}{dt} \\left[ \\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 \\right]}\^{-1/2} $$&lt;/mathjax&gt;
+Taking the ratio of these frequencies tells us how quickly the satellite
+clocks tick relative to the earth clocks. We get:
+&lt;mathjax&gt;$$ \\frac{f\_{sat}}{f\_{earth}} = {\\left[ \\frac{\\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 }{\\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2 }
+\\right]}\^{1/2} $$&lt;/mathjax&gt;
+And we&amp;#8217;re done. So what do we get? Let&amp;#8217;s plug in some numbers:
+&lt;mathjax&gt;$$ r\_{sat} = 26 \\times 10\^6 m $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ R\_{earth} = 6.3 \\times 10\^6 m$$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$\\omega\_{earth} = 7.3 \\times 10\^{-5} rad/s $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$\\omega\_{sat}=\\sqrt{\\frac{GM}{{r\_{sat}}\^3}}=15 \\times 10\^{-5}
+rad/s $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ c = 3 \\times 10\^8 m/s $$&lt;/mathjax&gt;
+We can also find the Schwarzschild radius of the Earth to be
+&lt;mathjax&gt;$$ R\_s = 8.9 mm $$&lt;/mathjax&gt;
+Now you still have that fancy calculator, right General? Can you plug
+all this stuff in there and tell me what you get?
+&lt;em&gt;General Ripper works diligently on the calculator for a few minutes,
+then shows the calculator to Dr. Dre.&lt;/em&gt;
+&lt;strong&gt;
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: &amp;#8220;01134&amp;#8221;..? No that can&amp;#8217;t be correct. Did you plug in the values
+I &amp;#8230; ?
+&lt;em&gt;General, with a wry smile, turns the calculator upside down and shows
+Dr. Dre.&lt;/em&gt;&lt;/strong&gt;
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Ah, well &amp;#8220;hello&amp;#8221; to you to sir. &lt;span class="caps"&gt;GEN&lt;/span&gt;. &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: And I&amp;#8217;ve got
+another! Now where&amp;#8217;s that eight key&amp;#8230;? &lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: I guess I&amp;#8217;ll just do
+the math in my head&amp;#8230;
+&lt;em&gt;The background beat, which had just reached a crescendo immediately
+drops out as Dre thinks&lt;/em&gt;. &lt;em&gt;Then comes right back in as he begins to
+speak again&amp;#8230;&lt;/em&gt;
+&lt;strong&gt;
+Alright, I got that
+&lt;mathjax&gt;$$\\frac{f\_{sat}}{f\_{earth}} = 1 + 4.4 \\times 10\^{-10} $$&lt;/mathjax&gt;
+From this we see that the satellite clock ticks faster (i.e. at a higher
+frequency) than does the earth clock. The difference is very very small.
+For every second that ticks by on earth, we see that the difference in
+the earth and satellite clocks increases by 4.4 * 10\^{-10} seconds.
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: But we are talking about half a billionth of a second!
+There&amp;#8217;s no way that can do much harm.
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Well remember, that&amp;#8217;s per second. So over the course of a day
+(86,400 s), the satellite has picked up 38 microseconds. But that
+corresponds to&lt;mathjax&gt;$$ d = c \\times t = ( 3 \\times 10\^8 m/s ) \\times ( 38 \\times
+10\^{-6} s ) = 11 km $$&lt;/mathjax&gt;
+So without correcting for general relativity, &lt;span class="caps"&gt;GPS&lt;/span&gt; systems would be off
+by 11 km per day!
+&lt;span class="caps"&gt;GEN&lt;/span&gt; &lt;span class="caps"&gt;RIPPER&lt;/span&gt;: I am impressed! Here&amp;#8217;s millions of dollars in funding!
+Hooray!
+&lt;span class="caps"&gt;DR&lt;/span&gt;. &lt;span class="caps"&gt;DRE&lt;/span&gt;: Hooray!
+&lt;em&gt;Dr. Dre and General Ripper jump up and give each other a mid-air high
+five. We freeze-frame this scene and&lt;/em&gt;&amp;#8220;Don&amp;#8217;t You Forget About Me&amp;#8221; &lt;em&gt;plays
+as the credits roll.&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;&lt;span class="caps"&gt;THE&lt;/span&gt; &lt;span class="caps"&gt;END&lt;/span&gt; (?)&lt;/em&gt; &lt;strong&gt; &lt;/strong&gt; [1] Thanks to Tom from &lt;a href="http://blogs.scienceforums.net/swansont/"&gt;Swans on
+Tea&lt;/a&gt; (one of my favorite
+physics blogs) for fixing a mistake for me. I had initially done the
+calculation assuming the satellite was in a geosynchronous orbit (about
+42,000 km) and got a time delay of 48 microseconds. As it turns out, the
+&lt;span class="caps"&gt;GPS&lt;/span&gt; satellites are really at an orbit of about 26,000 km, which gives a
+time delay of 38 microseconds. I have made the appropriate changes and
+the calculations now reflect this more accurate value.&amp;nbsp;**&lt;/p&gt;</summary><category term="dr. dre"></category><category term="GPS"></category><category term="scott bakula"></category></entry></feed>

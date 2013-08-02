@@ -1,538 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Q&nbsp;Factors</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Q&nbsp;Factors - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Q&nbsp;Factors">
-                                        Q&nbsp;Factors
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-04-21T00:38:00">
-        <i class="icon-calendar"></i>Wed 21 April 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/alemi.html"><i class="icon-user"></i>Alemi</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/q-factor.html"><i class="icon-tag"></i>Q factor</a>
-	<a href="../tag/fun.html"><i class="icon-tag"></i>fun</a>
-</footer><!-- /.post-info -->                </div>
-                <p><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">When I walk in my door when I get home, I hook my keys, which I keep on a carabiner, onto a binder clip that I&#8217;ve clipped onto my window sill.  Its a great way to never lose your keys.  But one thing I always notice is that when I hook it on, it swings, and every time it swings it makes a click.  This you might expect.  What always surprises me is how long the keys keep swinging.  They seem to swing for a surprisingly long time, minutes. </span></span>
-<div><span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span> </span></span></div><div><span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">It always catches me off guard.  In order to explain why, I get to talk about </span><a href="http://en.wikipedia.org/wiki/Q_factor"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Q Factors</span></a></span></span></div><div><span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><a href="http://en.wikipedia.org/wiki/Q_factor"></a></span></span></span>
-<span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: 13px;"></span></span></span>
-<span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: 13px;"></span></span></span>
-<span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: 13px;"></span></span></span>
-<span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><a name='more'></a><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">The Q factor stands for quality factor.  Its a nondimensional parameter (my favorite kind) that tells you how pure your oscillator is.  </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Lets back up a step.  Lots of things in the world oscillate.  Think about a swing.  If you get going on the swing and then stop rocking, you swing back and forth, back and forth, but eventually you come to a stop.   Imagine swinging on a rusted old swing set.  Now give the joint where the swing swings from a nice shot of <span class="caps">WD</span>-40.  You can imagine that if you repeated the experiment (get swinging to some height and then stop pumping), you&#8217;d continue to swing longer.  Why?  Because the Q factor has increased.  You&#8217;re swinging on a higher quality swing.</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Mathematically its defined to be</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><mathjax>$$ Q = 2 \pi \times \frac{ U }{ \Delta U } $$</mathjax></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">or 2 pi times the total energy stored in the oscillator divided by the energy lost in a cycle.  </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">But, another way to gauge the Q factor is the fact that it tells you something about how the oscillators get damped each period.  As a number it tells you how many periods need to go by for the amplitude of the oscillations to be damped by </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><mathjax>$$ \frac{1}{e^{2\pi}} \sim \frac{1}{535} $$</mathjax></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">This allows you to estimate Q factors for everyday objects.  A factor of 1/535 is pretty near to my threshold for observing a lot of things.  What does a factor of 535 mean in terms of sound, one of the most common ways I interact with things around me?  Well, sound is measured in decibels, which is a logarithmic scale, where a factor of 535 in the power output by something corresponds to a change in the decibels of</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><mathjax>$$ dB = 10 \log_{10} \frac{1}{535} \sim -27 $$</mathjax></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">What is a decibel change of 27 mean?  Well, </span><a href="http://en.wikipedia.org/wiki/Sound_pressure#Examples_of_sound_pressure_and_sound_pressure_levels"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">wikipedia</span></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"> tells me that a calm room is somewhere between 20 and 30 decibels, where as a <span class="caps">TV</span> set about a meter away is at about 60 dB.  So that tells me that if something like my keys start off making a sound comparable to the volume I set my <span class="caps">TV</span> at, I can listen to it until it just gets drowned out by the room and that should give me some estimate for the Q of my keys.</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">I&#8217;ll keep you in suspense just a bit longer.  I said I was surprised how long the keys swing.  In order to put the Q that I measured in context, I&#8217;ll tell you about a few other Qs of things you might have some experience with.</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Most swinging things that I seem to remember coming in contact with have quality factors of about 10 or so.  Swings, or things letting a meter stick swing, stuff like that.  Tuning forks, which are built to be accurate resonators will have quality factors of about a thousand or so.  The quartz crystal in your watch, which is really supposed to be a good oscillator has a quality factor of 10 thousand or so.  One of the best Q factors achieved by man is 10^14.  </span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">So, what was the Q factor of my keys?  I counted the times I could hear them swinging and got a count of 435.  This number isn&#8217;t to be taken too seriously, but it indicated that my swinging keys have a quality factor of something between 400 and 500, which is pretty darn good for something that wasn&#8217;t engineered.   That explains why it always surprises me, the keys always seem to swing much longer than I would anticipate.</span></div></span></span></div></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/q-factors.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>Q&nbsp;Factors</h1>
+			<p>When I walk in my door when I get home, I hook my keys, which I keep on
+a carabiner, onto a binder clip that I&#8217;ve clipped onto my window sill.
+Its a great way to never lose your keys. But one thing I always notice
+is that when I hook it on, it swings, and every time it swings it makes
+a click. This you might expect. What always surprises me is how long the
+keys keep swinging. They seem to swing for a surprisingly long time,
+minutes.
+It always catches me off guard. In order to explain why, I get to talk
+about <a href="http://en.wikipedia.org/wiki/Q_factor">Q Factors</a>
+<a href="http://en.wikipedia.org/wiki/Q_factor"></a>
+The Q factor stands for quality factor. Its a nondimensional parameter
+(my favorite kind) that tells you how pure your oscillator is.
+Lets back up a step. Lots of things in the world oscillate. Think about
+a swing. If you get going on the swing and then stop rocking, you swing
+back and forth, back and forth, but eventually you come to a stop.
+Imagine swinging on a rusted old swing set. Now give the joint where the
+swing swings from a nice shot of <span class="caps">WD</span>-40. You can imagine that if you
+repeated the experiment (get swinging to some height and then stop
+pumping), you&#8217;d continue to swing longer. Why? Because the Q factor has
+increased. You&#8217;re swinging on a higher quality swing.
+Mathematically its defined to be
+<mathjax>$$ Q = 2 \\pi \\times \\frac{ U }{ \\Delta U } $$</mathjax>
+or 2 pi times the total energy stored in the oscillator divided by the
+energy lost in a cycle.
+But, another way to gauge the Q factor is the fact that it tells you
+something about how the oscillators get damped each period. As a number
+it tells you how many periods need to go by for the amplitude of the
+oscillations to be damped by
+<mathjax>$$ \\frac{1}{e\^{2\\pi}} \\sim \\frac{1}{535} $$</mathjax>
+This allows you to estimate Q factors for everyday objects. A factor of
+1/535 is pretty near to my threshold for observing a lot of things. What
+does a factor of 535 mean in terms of sound, one of the most common ways
+I interact with things around me? Well, sound is measured in decibels,
+which is a logarithmic scale, where a factor of 535 in the power output
+by something corresponds to a change in the decibels of
+<mathjax>$$ dB = 10 \\log\_{10} \\frac{1}{535} \\sim -27 $$</mathjax>
+What is a decibel change of 27 mean? Well,
+<a href="http://en.wikipedia.org/wiki/Sound_pressure#Examples_of_sound_pressure_and_sound_pressure_levels">wikipedia</a>
+tells me that a calm room is somewhere between 20 and 30 decibels, where
+as a <span class="caps">TV</span> set about a meter away is at about 60 dB. So that tells me that
+if something like my keys start off making a sound comparable to the
+volume I set my <span class="caps">TV</span> at, I can listen to it until it just gets drowned out
+by the room and that should give me some estimate for the Q of my keys.
+I&#8217;ll keep you in suspense just a bit longer. I said I was surprised how
+long the keys swing. In order to put the Q that I measured in context,
+I&#8217;ll tell you about a few other Qs of things you might have some
+experience with.
+Most swinging things that I seem to remember coming in contact with have
+quality factors of about 10 or so. Swings, or things letting a meter
+stick swing, stuff like that. Tuning forks, which are built to be
+accurate resonators will have quality factors of about a thousand or so.
+The quartz crystal in your watch, which is really supposed to be a good
+oscillator has a quality factor of 10 thousand or so. One of the best Q
+factors achieved by man is 10\^14.
+So, what was the Q factor of my keys? I counted the times I could hear
+them swinging and got a count of 435. This number isn&#8217;t to be taken too
+seriously, but it indicated that my swinging keys have a quality factor
+of something between 400 and 500, which is pretty darn good for
+something that wasn&#8217;t engineered. That explains why it always surprises
+me, the keys always seem to swing much longer than I would&nbsp;anticipate.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/q-factors.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2010-04-21T00:38:00" pubdate>Wed 21 April 2010</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/q-factor.html">Q factor</a></li>
+			<li><a href="/tag/fun.html">fun</a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

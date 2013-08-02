@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.proton.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2011-04-22T07:54:00-04:00</updated><entry><title>End of the Earth IV - Shocking Destruction</title><link href="http://thephysicsvirtuosi.com/posts/end-of-the-earth-iv-shocking-destruction.html" rel="alternate"></link><updated>2011-04-22T07:54:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-04-22:posts/end-of-the-earth-iv-shocking-destruction.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s1600/exploding-earth11.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="200" src="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s200/exploding-earth11.jpg" width="200" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Earth day is upon us once more.  So many other namby-pamby bloggers out there (don&amp;#8217;t hurt me!) are writing about how wonderful the earth is and how great earth day is.  We here at The Virtuosi take a more hardline approach.  Today I&amp;#8217;m going to tell you how to destroy the earth.  Completely and totally.  Unlike &lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html"&gt;last&lt;/a&gt; &lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html"&gt;year&amp;#8217;s&lt;/a&gt; &lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html"&gt;methods&lt;/a&gt;, this one should&amp;nbsp;work.&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;In fact, this method is so simple that I can tell you what to do right now.  Just tweak the charge on the electron so it is a bit out of balance with the charge on the proton.  Just a little bit.  How little a bit, you might ask?  A very little bit.  Really, this doesn&amp;#8217;t sound hard.  I mean, sure, you have to do it for all of the electrons in the earth, but we&amp;#8217;re talking about a very very small percentage change.  Not convinced?  Let me show you just how small a change we&amp;#8217;re&amp;nbsp;talking.&lt;/p&gt;
-&lt;p&gt;If there is a charge imbalance in the electron and the proton, this will give the earth a net charge, throughout it&amp;#8217;s volume.  I&amp;#8217;ve got to make a few assumptions about the earth here, so hold on.  I&amp;#8217;m going to assume that the earth is a uniform density everywhere, and I&amp;#8217;m going to assume that the earth is made entirely of iron.&lt;em&gt;  Now, the net charge of any iron atom will be
-&lt;mathjax&gt;$$ (q_e-q_p)Z=(q_e-q_p)26$$&lt;/mathjax&gt;
-where Z is the atomic number of iron, the number of protons (and electrons) the atom has.  The net charge of the earth, Q, is the number of iron atoms, N, times this charge,
-&lt;mathjax&gt;$$Q=(q_e-q_p)ZN$$&lt;/mathjax&gt;
-I&amp;#8217;ve &lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html"&gt;previously estimated&lt;/a&gt; that N is about 3&lt;/em&gt;10^50 atoms.  Now, the electric potential energy of a sphere of radius r with charge q uniformly distributed throughout it&amp;#8217;s volume is
-&lt;mathjax&gt;$$U_e=\frac{3kq^2}{5r}$$&lt;/mathjax&gt;
-where k is the coulomb&amp;nbsp;constant.&lt;/p&gt;
-&lt;p&gt;Dissolution of the earth will occur when the electrostatic energy of the earth equals the gravitational potential energy of the earth.  The gravitational bound energy of the earth is given by
-&lt;mathjax&gt;$$U_g=\frac{3GM^2}{5R}$$&lt;/mathjax&gt;
-Where M is the mass of the earth, G is Newton&amp;#8217;s gravitational constant, and R is the radius of the earth.  Setting this equal to the electrostatic energy of the earth,
-&lt;mathjax&gt;$$\frac{3GM^2}{5R}=\frac{3kQ^2}{5R}$$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$Q^2=\frac{G}{k}M^2$$&lt;/mathjax&gt;
-so
-&lt;mathjax&gt;$$(q_e-q_p)ZN=\left(\frac{G}{k}\right)^{1/2}M$$&lt;/mathjax&gt;
-Now, N is given, in our approximations, by
-&lt;mathjax&gt;$$N=\frac{M_{earth}}{m_{iron}}$$&lt;/mathjax&gt;
-so
-&lt;mathjax&gt;$$q_e-q_p=\left(\frac{G}{k}\right)^{1/2}\frac{m_{iron}}{Z_{iron}}$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Now we can plug in some numbers.  G=6.7&lt;em&gt;10^-11 m^3&lt;/em&gt;kg^-1&lt;em&gt;s^-2, k= 9&lt;/em&gt;10^9 m^3&lt;em&gt;kg&lt;/em&gt;s^-2&lt;em&gt;C^-2, m_iron=9&lt;/em&gt;10^-26 kg, Z=26.&amp;nbsp;Thus,&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$q_e-q_p=3*10^{-37} C$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;To put this in perspective, the charge on the electron is 1.6&lt;em&gt;10^-19 C, so this is roughly 10^18 times less than that charge.  Put another way, if the charge on the electron was imbalanced from that of the proton by roughly 1 part in 10^18, the earth would cease to exist due to electrostatic repulsion.&lt;/em&gt;*&lt;/p&gt;
-&lt;p&gt;As I told you at the beginning, you only have to change the charge by a very small amount!  So get working.  There are only about 1000000000000000000000000000000000000000000000000000 electrons you need to&amp;nbsp;modify!&lt;/p&gt;
-&lt;p&gt;*According to the internet, the density of the earth, on average, is roughly 5.5 g/cm^3.  The density of iron is 7.9 g/cm^3 at room temperature, and the density of water is 1 g/cm^3 at room temperature.  So, while the earth is not entirely iron (of course), it is a better approximation to assume the earth is iron than the earth is water.  And those, of course, were really our only two&amp;nbsp;choices.&lt;/p&gt;
-&lt;p&gt;** It turns out that this is a good argument for the charge balance of the electron and the&amp;nbsp;proton.&lt;/p&gt;</summary><category term="charge"></category><category term="proton"></category><category term="electron"></category><category term="end of the earth"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.proton.atom.xml" rel="self"></link><id>/</id><updated>2011-04-22T07:54:00-04:00</updated><entry><title>End of the Earth IV - Shocking Destruction</title><link href="/posts/end-of-the-earth-iv-shocking-destruction.html" rel="alternate"></link><updated>2011-04-22T07:54:00-04:00</updated><author><name>Jesse</name></author><id>tag:,2011-04-22:posts/end-of-the-earth-iv-shocking-destruction.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s1600/exploding-earth11.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-aa4EF60W7m0/TbCwQ8Vc3WI/AAAAAAAAAEU/03HiJiGJ6hc/s200/exploding-earth11.jpg" /&gt;&lt;/a&gt;
+Earth day is upon us once more. So many other namby-pamby bloggers out
+there (don&amp;#8217;t hurt me!) are writing about how wonderful the earth is and
+how great earth day is. We here at The Virtuosi take a more hardline
+approach. Today I&amp;#8217;m going to tell you how to destroy the earth.
+Completely and totally. Unlike
+&lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html"&gt;last&lt;/a&gt;
+&lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html"&gt;year&amp;#8217;s&lt;/a&gt;
+&lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html"&gt;methods&lt;/a&gt;,
+this one should work. In fact, this method is so simple that I can tell
+you what to do right now. Just tweak the charge on the electron so it is
+a bit out of balance with the charge on the proton. Just a little bit.
+How little a bit, you might ask? A very little bit. Really, this doesn&amp;#8217;t
+sound hard. I mean, sure, you have to do it for all of the electrons in
+the earth, but we&amp;#8217;re talking about a very very small percentage change.
+Not convinced? Let me show you just how small a change we&amp;#8217;re talking. If
+there is a charge imbalance in the electron and the proton, this will
+give the earth a net charge, throughout it&amp;#8217;s volume. I&amp;#8217;ve got to make a
+few assumptions about the earth here, so hold on. I&amp;#8217;m going to assume
+that the earth is a uniform density everywhere, and I&amp;#8217;m going to assume
+that the earth is made entirely of iron.* Now, the net charge of any
+iron atom will be &lt;mathjax&gt;$$ (q\_e-q\_p)Z=(q\_e-q\_p)26$$&lt;/mathjax&gt; where Z is the atomic
+number of iron, the number of protons (and electrons) the atom has. The
+net charge of the earth, Q, is the number of iron atoms, N, times this
+charge, &lt;mathjax&gt;$$Q=(q\_e-q\_p)ZN$$&lt;/mathjax&gt; I&amp;#8217;ve &lt;a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html"&gt;previously
+estimated&lt;/a&gt;
+that N is about 3*10\^50 atoms. Now, the electric potential energy of a
+sphere of radius r with charge q uniformly distributed throughout it&amp;#8217;s
+volume is &lt;mathjax&gt;$$U\_e=\\frac{3kq\^2}{5r}$$&lt;/mathjax&gt; where k is the coulomb constant.
+Dissolution of the earth will occur when the electrostatic energy of the
+earth equals the gravitational potential energy of the earth. The
+gravitational bound energy of the earth is given by
+&lt;mathjax&gt;$$U\_g=\\frac{3GM\^2}{5R}$$&lt;/mathjax&gt; Where M is the mass of the earth, G is
+Newton&amp;#8217;s gravitational constant, and R is the radius of the earth.
+Setting this equal to the electrostatic energy of the earth,
+&lt;mathjax&gt;$$\\frac{3GM\^2}{5R}=\\frac{3kQ\^2}{5R}$$&lt;/mathjax&gt; &lt;mathjax&gt;$$Q\^2=\\frac{G}{k}M\^2$$&lt;/mathjax&gt; so
+&lt;mathjax&gt;$$(q\_e-q\_p)ZN=\\left(\\frac{G}{k}\\right)\^{1/2}M$$&lt;/mathjax&gt; Now, N is given,
+in our approximations, by &lt;mathjax&gt;$$N=\\frac{M\_{earth}}{m\_{iron}}$$&lt;/mathjax&gt; so
+&lt;mathjax&gt;$$q\_e-q\_p=\\left(\\frac{G}{k}\\right)\^{1/2}\\frac{m\_{iron}}{Z\_{iron}}$$&lt;/mathjax&gt;
+Now we can plug in some numbers. G=6.7*10\^-11 m\^3*kg\^-1*s\^-2, k=
+9*10\^9 m\^3*kg*s\^-2*C\^-2, m_iron=9*10\^-26 kg, Z=26. Thus,
+&lt;mathjax&gt;$$q\_e-q\_p=3\*10\^{-37} C$$&lt;/mathjax&gt; To put this in perspective, the charge on
+the electron is 1.6*10\^-19 C, so this is roughly 10\^18 times less
+than that charge. Put another way, if the charge on the electron was
+imbalanced from that of the proton by roughly 1 part in 10\^18, the
+earth would cease to exist due to electrostatic repulsion.** As I told
+you at the beginning, you only have to change the charge by a very small
+amount! So get working. There are only about
+1000000000000000000000000000000000000000000000000000 electrons you need
+to modify! *According to the internet, the density of the earth, on
+average, is roughly 5.5 g/cm\^3. The density of iron is 7.9 g/cm\^3 at
+room temperature, and the density of water is 1 g/cm\^3 at room
+temperature. So, while the earth is not entirely iron (of course), it is
+a better approximation to assume the earth is iron than the earth is
+water. And those, of course, were really our only two choices. ** It
+turns out that this is a good argument for the charge balance of the
+electron and the&amp;nbsp;proton.&lt;/p&gt;</summary><category term="charge"></category><category term="proton"></category><category term="electron"></category><category term="end of the earth"></category></entry></feed>

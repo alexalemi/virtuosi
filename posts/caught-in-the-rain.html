@@ -1,554 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Caught In The&nbsp;Rain</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Caught In The&nbsp;Rain - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
 
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Caught In The&nbsp;Rain">
-                                        Caught In The&nbsp;Rain
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-09-01T22:53:00">
-        <i class="icon-calendar"></i>Wed 01 September 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/jesse.html"><i class="icon-user"></i>Jesse</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/fun-water-rain-human.html"><i class="icon-tag"></i>fun water rain human</a>
-</footer><!-- /.post-info -->                </div>
-                <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s1600/boy+rain.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="131" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s200/boy+rain.gif" width="200" /></a></div>
-
-<div style="text-align: left;"></div>
-
-<p>There&#8217;s an age old question that mankind has pondered.  I&#8217;m sure that noble heads such as Aristotle, Newton, and Einstein have pondered it. I myself have raised it a few times.  The question is: do you get more wet running or walking through the rain?  Now, I know that this question was <a href="http://mythbustersresults.com/episode38">mythbusted</a> a while back.  So this is one of those situations where I know the result I want to get to with my calculation: according to mythbusters running is better.  Still, I think formulating the question mathematically will be fun, plus if I fail to agree with experiment everyone can mock me&nbsp;mercilessly.</p>
-<p><a name='more'></a>I&#8217;ll begin by stating a few assumptions.  I&#8217;m going to assuming that the rain is falling straight down, at a constant rate.  I&#8217;m also going to assume that if we are standing still, only our head and shoulders get wet, not our front or back.  With those in place, lets start by formulating the expression for how wet we would get if we stood still.  Well,&nbsp;take</p>
-<p><mathjax>$$\Delta W_{top} - \text{the change in water (in liters) on a person} $$</mathjax>
-<mathjax>$$\rho - \text{the density of water in the air in liters per cubic meter}$$</mathjax>
-<mathjax>$$A_t - \text{top area of a person}$$</mathjax>
-<mathjax>$$\Delta t - \text{time elapsed}$$</mathjax></p>
-<p>Intuition suggests that the rate at which raindrops hit our top, times the area of our top, times the time we stand in the rain, will give us the change in water.  In an&nbsp;equation,</p>
-<p><mathjax>$$ \Delta W_{top} = \rho A_t v_r \Delta t $$</mathjax></p>
-<p>Note that whatever expression we generate for how wet we get when moving will have to reduce to this form in the limit that we&#8217;re not moving.  This will be a good check for us.  Next, we need to define a few additional&nbsp;measures:</p>
-<p><mathjax>$$d - \text{distance we have to travel in the rain}$$</mathjax>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$v_r - \text{raindrop velocity}$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$A_f - \text{front area of a person}$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot} - \text{total amount of water in liters we get hit with} $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Well, no mater how fast we run the rain will keep hitting us on the top of our heads, so we&#8217;re going to have our standing still term, plus another term for how much hits us when running.  How do we consider that?  Well, when we run, we&#8217;re cutting into the swath of rainy air in front of ourselves.  We&#8217;ll get hit on our frontside by all the additional raindrops in that stretch we carve out.  Mathematically, if we travel some distance delta x in a time delta t, we&#8217;ll get hit with an additional amount of water</div>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ \Delta W = \rho A_f \Delta x $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ \Delta W = \rho A_f v \Delta t $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">We combine our two terms to get</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$\Delta W_{tot} = \rho \Delta t (A_t v_r + A_f v)$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Note that if we stop walking (v goes to zero) we&#8217;ll return to our stationary expression.  Next I&#8217;ll take the delta t over to the other side, turn that into a derivative, and integrate to get the total water hitting us, not just the change for some delta t.  Of course, since everything else in the equation is constant, this is the equivalent of dropping the deltas,</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot} = \rho (A_t v_r + A_f v) t $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot} = \rho (A_t v_r + A_f v)\frac{d}{v}$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot}= \rho d (A_t \frac{v_r}{v} + A_f)$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">where I substituted t = d/v, and did some simplification.  Now, lets look at the qualitative features of this result.  First, we have two terms, a constant and a term that depends inversely on the velocity of motion.  This means that the faster we go, the less wet we get (I&#8217;ll plot this in a bit), but also that there&#8217;s a threshold wetness you cannot avoid.  This threshold represents the amount of rain in a human sized channel between where you start and where you end.  Also note that as velocity goes to zero, i.e. we stop moving, how wet we get goes to infinity.  That is, if we&#8217;re going to stand in the rain forever we&#8217;re going to keep getting wet.  What is the term in 1/v?  It&#8217;s the amount of rain that hits you on the top of your head!  So what we&#8217;ve derived is that for a fixed distance how wet you get on the front is fixed, and by moving faster you can make less rain hit you on the top of your head.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Now, lets figure out what some reasonable numbers are, and plot this function.  A few months back when discussion <a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html">human radiation</a> I estimated my area as a cylinder with a height of 1.8 m and a radius of .14 m.  This gives a top area of A_t = .06 m^2 and a front cross section area (note, this is not the cylinder area, but my cross section that will be exposed to the rain!) of .5 m^2.    As for raindrop velocity, well in my <a href="http://thevirtuosi.blogspot.com/2010/04/falling-water-hot-or-cold.html">first post</a> on this blog I calculated the terminal velocity of what I described as a medium sized raindrop as 6 m/s, and since water drops reach that while going over niagara falls, we can assume that our raindrops are falling at terminal velocity.  </div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Finally, I need to estimate the water density.  In a medium-to-heavy rain I would say it takes about 45 s to get a sidewalk square totally wet.  Let&#8217;s assume a raindrop wets an area of sidewalk equal to twice the cross section of the raindrop.  I used a raindrop of 1.5mm radius, so that&#8217;s 7<em>10^-6 m^2 cross section.  Now, a sidewalk square is about 2/3 m x 2/3m (about 2 ft x 2ft), so we need ~32000 drops!  The volume of a 1.5mm drop is 1.4^-8 m^3, so we have a volume of 4.5</em>10^-4 m^3 = .45 liters.   Now, take our stationary expression from above.  This allows us to solve for \rho.  Set delta W equal to .45 liters and substitute the rest of the numbers we&#8217;ve generated.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ \frac{\Delta W_{top}}{A_t v_r \Delta t}= \rho $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ \rho = \frac{.45 liters}{(.44 m^2)( 6 m/s )(45 s)} = .004 liters/m^3 $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">We&#8217;ve found our water density, .004 liters/m^3.  Having done this, we can plug numbers into our final equation above and find</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot}= d (\frac{(.001 liters/s)}{v} + .002 liters/m)$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">This scales linearly with distance, so lets pick something reasonable, say 100m, and if you want the result for another other distance just scale the results appropriately.  Thus</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$W_{tot}= (\frac{(.1 liters\text{*}m/s)}{v} + .2 liters)$$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Finally we can plot this.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></p>
-<p></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8Mj6XEkVI/AAAAAAAAACs/xiGu976NrOs/s1600/rain+graph.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8Mj6XEkVI/AAAAAAAAACs/xiGu976NrOs/s400/rain+graph.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Plot of how wet you get vs. how fast you run.  The blue line is the actual curve and the red line is the theoretical least wet asymptote.</td></tr></tbody></table>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">I&#8217;ve chosen .5 m/s (~1mph, a meander) and 11 m/s (slightly faster than the world record for the 100m dash) as my starting and ending points on the velocity.  The blue line is the curve I calculated, and the red line represents the theoretical minimum, the &#8216;wetness threshold&#8217; if you will.  So you see that if you are Usain Bolt, you can reduce how wet you get by almost a factor of two by going from a meander to a sprint!</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Now, there&#8217;s more I could say about this (what if the rain isn&#8217;t coming straight down?  What is my best speed if I have an umbrella?), but I think that&#8217;s enough for tonight.  I&#8217;ve come out with a theoretically satisfying result that concurs with experiment.  Anytime that happens that&#8217;s a good day for the theorists.</div></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/caught-in-the-rain.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>Caught In The&nbsp;Rain</h1>
+			<p><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s1600/boy+rain.gif"><img alt="image" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8RX3wsh6I/AAAAAAAAAC0/fIrDNg5flzY/s200/boy+rain.gif" /></a>
+There&#8217;s an age old question that mankind has pondered. I&#8217;m sure that
+noble heads such as Aristotle, Newton, and Einstein have pondered it. I
+myself have raised it a few times. The question is: do you get more wet
+running or walking through the rain? Now, I know that this question was
+<a href="http://mythbustersresults.com/episode38">mythbusted</a> a while back. So
+this is one of those situations where I know the result I want to get to
+with my calculation: according to mythbusters running is better. Still,
+I think formulating the question mathematically will be fun, plus if I
+fail to agree with experiment everyone can mock me mercilessly. I&#8217;ll
+begin by stating a few assumptions. I&#8217;m going to assuming that the rain
+is falling straight down, at a constant rate. I&#8217;m also going to assume
+that if we are standing still, only our head and shoulders get wet, not
+our front or back. With those in place, lets start by formulating the
+expression for how wet we would get if we stood still. Well, take
+<mathjax>$$\\Delta W\_{top} - \\text{the change in water (in liters) on a person}
+$$</mathjax> <mathjax>$$\\rho - \\text{the density of water in the air in liters per cubic
+meter}$$</mathjax> <mathjax>$$A\_t - \\text{top area of a person}$$</mathjax> <mathjax>$$\\Delta t -
+\\text{time elapsed}$$</mathjax> Intuition suggests that the rate at which
+raindrops hit our top, times the area of our top, times the time we
+stand in the rain, will give us the change in water. In an equation, <mathjax>$$
+\\Delta W\_{top} = \\rho A\_t v\_r \\Delta t $$</mathjax> Note that whatever
+expression we generate for how wet we get when moving will have to
+reduce to this form in the limit that we&#8217;re not moving. This will be a
+good check for us. Next, we need to define a few additional measures:
+<mathjax>$$d - \\text{distance we have to travel in the rain}$$</mathjax>
+<mathjax>$$v\_r - \\text{raindrop velocity}$$</mathjax>
+<mathjax>$$A\_f - \\text{front area of a person}$$</mathjax>
+<mathjax>$$W\_{tot} - \\text{total amount of water in liters we get hit with} $$</mathjax>
+Well, no mater how fast we run the rain will keep hitting us on the top
+of our heads, so we&#8217;re going to have our standing still term, plus
+another term for how much hits us when running. How do we consider that?
+Well, when we run, we&#8217;re cutting into the swath of rainy air in front of
+ourselves. We&#8217;ll get hit on our frontside by all the additional
+raindrops in that stretch we carve out. Mathematically, if we travel
+some distance delta x in a time delta t, we&#8217;ll get hit with an
+additional amount of water
+<mathjax>$$ \\Delta W = \\rho A\_f \\Delta x $$</mathjax>
+<mathjax>$$ \\Delta W = \\rho A\_f v \\Delta t $$</mathjax>
+We combine our two terms to get
+<mathjax>$$\\Delta W\_{tot} = \\rho \\Delta t (A\_t v\_r + A\_f v)$$</mathjax>
+Note that if we stop walking (v goes to zero) we&#8217;ll return to our
+stationary expression. Next I&#8217;ll take the delta t over to the other
+side, turn that into a derivative, and integrate to get the total water
+hitting us, not just the change for some delta t. Of course, since
+everything else in the equation is constant, this is the equivalent of
+dropping the deltas,
+<mathjax>$$W\_{tot} = \\rho (A\_t v\_r + A\_f v) t $$</mathjax>
+<mathjax>$$W\_{tot} = \\rho (A\_t v\_r + A\_f v)\\frac{d}{v}$$</mathjax>
+<mathjax>$$W\_{tot}= \\rho d (A\_t \\frac{v\_r}{v} + A\_f)$$</mathjax>
+where I substituted t = d/v, and did some simplification. Now, lets look
+at the qualitative features of this result. First, we have two terms, a
+constant and a term that depends inversely on the velocity of motion.
+This means that the faster we go, the less wet we get (I&#8217;ll plot this in
+a bit), but also that there&#8217;s a threshold wetness you cannot avoid. This
+threshold represents the amount of rain in a human sized channel between
+where you start and where you end. Also note that as velocity goes to
+zero, i.e. we stop moving, how wet we get goes to infinity. That is, if
+we&#8217;re going to stand in the rain forever we&#8217;re going to keep getting
+wet. What is the term in 1/v? It&#8217;s the amount of rain that hits you on
+the top of your head! So what we&#8217;ve derived is that for a fixed distance
+how wet you get on the front is fixed, and by moving faster you can make
+less rain hit you on the top of your head.
+Now, lets figure out what some reasonable numbers are, and plot this
+function. A few months back when discussion <a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html">human
+radiation</a>
+I estimated my area as a cylinder with a height of 1.8 m and a radius of
+.14 m. This gives a top area of A_t = .06 m\^2 and a front cross
+section area (note, this is not the cylinder area, but my cross section
+that will be exposed to the rain!) of .5 m\^2. As for raindrop velocity,
+well in my <a href="http://thevirtuosi.blogspot.com/2010/04/falling-water-hot-or-cold.html">first
+post</a>
+on this blog I calculated the terminal velocity of what I described as a
+medium sized raindrop as 6 m/s, and since water drops reach that while
+going over niagara falls, we can assume that our raindrops are falling
+at terminal velocity.
+Finally, I need to estimate the water density. In a medium-to-heavy rain
+I would say it takes about 45 s to get a sidewalk square totally wet.
+Let&#8217;s assume a raindrop wets an area of sidewalk equal to twice the
+cross section of the raindrop. I used a raindrop of 1.5mm radius, so
+that&#8217;s 7*10\^-6 m\^2 cross section. Now, a sidewalk square is about 2/3
+m x 2/3m (about 2 ft x 2ft), so we need \~32000 drops! The volume of a
+1.5mm drop is 1.4\^-8 m\^3, so we have a volume of 4.5*10\^-4 m\^3 =
+.45 liters. Now, take our stationary expression from above. This allows
+us to solve for \rho. Set delta W equal to .45 liters and substitute
+the rest of the numbers we&#8217;ve generated.
+<mathjax>$$ \\frac{\\Delta W\_{top}}{A\_t v\_r \\Delta t}= \\rho $$</mathjax>
+<mathjax>$$ \\rho = \\frac{.45 liters}{(.44 m\^2)( 6 m/s )(45 s)} = .004
+liters/m\^3 $$</mathjax>
+We&#8217;ve found our water density, .004 liters/m\^3. Having done this, we
+can plug numbers into our final equation above and find
+<mathjax>$$W\_{tot}= d (\\frac{(.001 liters/s)}{v} + .002 liters/m)$$</mathjax>
+This scales linearly with distance, so lets pick something reasonable,
+say 100m, and if you want the result for another other distance just
+scale the results appropriately. Thus
+<mathjax>$$W\_{tot}= (\\frac{(.1 liters\\text{\*}m/s)}{v} + .2 liters)$$</mathjax>
+Finally we can plot&nbsp;this.</p>
+<hr />
+<p><a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8Mj6XEkVI/AAAAAAAAACs/xiGu976NrOs/s1600/rain+graph.jpg"><img alt="image" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TH8Mj6XEkVI/AAAAAAAAACs/xiGu976NrOs/s400/rain+graph.jpg" /></a>
+  Plot of how wet you get vs. how fast you run. The blue line is the actual curve and the red line is the theoretical least wet&nbsp;asymptote.</p>
+<hr />
+<p>I&#8217;ve chosen .5 m/s (\~1mph, a meander) and 11 m/s (slightly faster than
+the world record for the 100m dash) as my starting and ending points on
+the velocity. The blue line is the curve I calculated, and the red line
+represents the theoretical minimum, the &#8216;wetness threshold&#8217; if you will.
+So you see that if you are Usain Bolt, you can reduce how wet you get by
+almost a factor of two by going from a meander to a sprint!
+Now, there&#8217;s more I could say about this (what if the rain isn&#8217;t coming
+straight down? What is my best speed if I have an umbrella?), but I
+think that&#8217;s enough for tonight. I&#8217;ve come out with a theoretically
+satisfying result that concurs with experiment. Anytime that happens
+that&#8217;s a good day for the&nbsp;theorists.</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/caught-in-the-rain.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2010-09-01T22:53:00" pubdate>Wed 01 September 2010</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/fun-water-rain-human.html">fun water rain human</a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

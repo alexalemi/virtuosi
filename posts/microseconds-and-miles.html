@@ -1,730 +1,304 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Microseconds and&nbsp;Miles</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="The Virtuosi">
-
-    <!-- Le styles -->
-    <link rel='stylesheet' href="../theme/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="../theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="../theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
-
-    <link href="../" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
-        <link href="../feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
-    
-    <!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Microseconds and&nbsp;Miles - The Physics Virtuosi</title>	
+	<meta name="author" content="The Virtuosi">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+			
+	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
+		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
+	
+    </head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">The Physics Virtuosi</a></h1>
+		</div>
+        <div class="search">
+            <script>
+  (function() {
+    var cx = '016118979984514975664:u9tdrwxiom8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">The Physics Virtuosi </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                                                                    <li class="divider-vertical"></li>
-                                              <li >
-                    <a href="../category/math.html">
-						<i class="icon-folder-open icon-large"></i>math
-					</a>
-                  </li>
-                                <li class="active">
-                    <a href="../category/old.html">
-						<i class="icon-folder-open icon-large"></i>old
-					</a>
-                  </li>
-              
-                          <ul class="nav pull-right">
-                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-            <section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Microseconds and&nbsp;Miles">
-                                        Microseconds and&nbsp;Miles
-                                </a>
-                                <a href="http://twitter.com/share" class="twitter-share-button"
-   data-count="horizontal" data-via="thevirtuosi">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
-</script>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-                        <footer class="post-info">
-<!-- <span class="label">Date</span> -->
-<abbr class="published" title="2010-09-12T23:04:00">
-        <i class="icon-calendar"></i>Sun 12 September 2010
-</abbr>
-<!-- <span class="label">By</span> --> |
-<a href="../author/corky.html"><i class="icon-user"></i>Corky</a>
-<!-- <span class="label">Category</span> --> |
-<a href="../category/old.html"><i class="icon-folder-open"></i>old</a>.
-
-
-<!-- <span class="label">Tags</span> --> |
-	<a href="../tag/dr-dre.html"><i class="icon-tag"></i>dr. dre</a>
-	<a href="../tag/gps.html"><i class="icon-tag"></i>GPS</a>
-	<a href="../tag/scott-bakula.html"><i class="icon-tag"></i>scott bakula</a>
-</footer><!-- /.post-info -->                </div>
-                <div style="font-family: Arial; font-size: 13px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">The following is an unfinished manuscript found under heaps of rubble and pizza boxes here at Virtuosi headquarters.  It appears to be some sort of screen play, though one would be hard-pressed to figure this out solely from the script.  The true giveaway was the 100 page addendum (not published) full of potential titles and acceptance speeches.  I dare not bore you with these vanity pages in their entirety, but just for completeness and posterity I include some samples.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">For possible titles we have: &#8220;Dr. Dre, <span class="caps">OR</span>: How I Learned to Stop Worrying and Love the Metric,&#8221; &#8220;How to Teach Physics to your Dee Oh Double G (West Coast Edition),&#8221; &#8220;Bring Da Ruckus: ODEs by <span class="caps">ODB</span>&#8221; and &#8220;Flavor Flav&#8217;s Flavor Physics&#8230;boooyeeeee!&#8221; among other even worse and less relevant titles.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Among the acceptance speeches we have one that starts: &#8220;I would like to thank the Academy, Scott Bakula and Chuck D.  You know what you did.  Here&#8217;s a song I wrote&#8230;&#8221;, etc.  It is all very painful.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">There is almost no value to this document whatsoever, but it does present a nice fun fact about <span class="caps">GPS</span>.  The legible parts of the script are thus presented below.  The illegible parts appear to have been obscured by some caustic mixture of Mountain Dew, pizza sauce and tears.
-<i></i>
-<i><a name='more'></a>We descend to the bottom of the abandoned mineshaft recently converted to the headquarters of General Stanley K. Ripper.  He is currently engaged in a heated discussion with his science advisor, Dr. Vontavious Dre.  We join mid-sentence as a result of lazy writing&#8230;</i></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i>
-</i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">DR</span>. <span class="caps">DRE</span>: &#8230;shortage of scientists!  What&#8217;s that?  Yeah, you could definitely call it a &#8220;chronic&#8221; shortage if you want.  But semantics aren&#8217;t important right now.  The &#8220;G&#8221;-sector needs more funding.</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">GEN</span>. <span class="caps">RIPPER</span>:  You are my most trusted science advisor, Dr. Dre, but you already have one staff scientist&#8230;a Dr. Snoop Dogg, I believe&#8230;?  How many scientists do we need doing relativity here?  This is the military!  We need Moonraker lasers and nuclear hand grenades.  So no more funding unless&#8230;  That is, unless you figured out the&#8230;</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  No sir, we still don&#8217;t have a Stargate.   </span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">GEN</span>. <span class="caps">RIPPER</span>:  Well then you are just wasting my time!  I want something useful.  Either something that goes boom or something that helps something that goes boom.  What I don&#8217;t need is a theoretical money drain.</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  And how did you find your way to work today, sir?</span></i></span></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"></span></i></span></span><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">GEN</span>. <span class="caps">RIPPER</span>: What?  You know very well I ride my horse, Neigh-braham Lincoln.  He knows how to get here.</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  And how does Nifty &#8216;Nabe know where to go&#8230;?</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>:  <span class="caps">GPS</span>, of course!</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Bingo.  That&#8217;s our department.  Without correcting for general relativistic effects (the specialty of the &#8220;G&#8221;-sector, I may add), <span class="caps">GPS</span> would be completely useless.  Let me show you.</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div>
-
-<div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i>A large blackboard drops down from the ceiling and a slow steady beat, just barely audible, seems to come from all directions.  Dre writes the following equation on the board:</i></span></div></div></div></div>
-
-<p><mathjax>$$  ds^2 = -\left(1-\frac{R_s}{r} \right)c^2dt^2+ \left( 1  - \frac{R_s}{r} \right)^{-1} dr^2 + r^2 \left( d{\theta}^2 + {\sin\theta} {d\phi}^2 \right)$$</mathjax></p>
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">This equation gives the line element for a Schwarzschild metric.  The R_s in the equation is called the &#8220;Schwarzschild Radius&#8221; and is given by</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ R_s = \frac{<span class="caps">2GM</span>}{c^2} .$$</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>:  Is that Karl Schwarzschild?  I remember reading a delightful biography of him somewhere&#8230;?  Anyway, what the heck is this &#8220;line element&#8221; thing&#8230;?</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Good question.  Essentially what we get is the differential change in the space-time interval ( ds ) if we change all the coordinates by a very tiny little bit.  What is nice about this is that although coordinates are a tricky thing in general relativity and can change from one observer to another, the space-time interval is an invariant quantity.  That is, different observers will measure the same space-time interval between events even though they may measure different times and distances.</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>:  So this space-time interval is just a kind of space-time distance that different observers will agree on?</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Right-o.  And this invariance allows us to compare different reference frames.  Eventually, we will use this invariance to get the frequencies observed by an observer on the surface of the earth and one traveling along with a satellite in orbit.  Since we will only be considering observers at fixed radius and fixed theta = 90 degrees (ie at the equator), we can simplify things a bit.  Since we will have a fixed radius and theta value we have that:</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ dr = 0 $$</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ d\theta = 0 $$</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">and</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$\sin\theta = 1 $$</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Plugging these simplifications into our line element gives:</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ ds^2 = -\left( 1 - \frac{R_s}{r} \right)c^2 dt^2 + r^2 d\phi^2 $$ </div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>: Neato Toledo!</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span> <span class="caps">DRE</span>: Right, so now we divide out the -c^2 dt^2 term on the right hand side.  So we have:</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) - \frac{r^2}{c^2} \frac{d\phi^2}{dt^2}  \right] $$</div></div>
-
-<p>But this is&nbsp;just</p>
-<p><mathjax>$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) - \frac{r^2}{c^2} {\left(\frac{d\phi}{dt} \right)}^2  \right] $$</mathjax></p>
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But what does that d phi / dt term look like?</div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>: Sure looks like an angular velocity to me.  But don&#8217;t we need to be careful with these rates?</div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Yep, that is an angular velocity term.  We need to be a little careful with these rates.  Essentially, in the coordinate system we have chosen the time is something like the time measured at r = infinity and thus the rate would also be measured from r = infinity.  Plugging in omega as our angular velocity, we now have: </div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div>
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) -\left( \frac{r {\omega}}{c} \right)^2 \right] $$
-<span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">
-</span></span></span></span></span></span></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But we want to figure out the times on the <span class="caps">GPS</span> satellites, so we&#8217;ll need some measure of how time ticks by as measured by the orbiting observer.  In the rest frame of the observer, we have that</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ ds^2 = -c^2 {d\tau}^2 $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">where the tau is the &#8220;proper time&#8221; of the observer.  It tells us the time that the observer measures on his clocks.  To find the frequency (in other words, how quickly the observer clock ticks by a second) we just have</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ f = \frac{1}{d\tau} $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">And now we have enough background to start talking about <span class="caps">GPS</span>! </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>:  Hooray!  Should I go get my horse&#8230;?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  I don&#8217;t think that&#8217;s necessary&#8230;?  Anyway, let&#8217;s model our <span class="caps">GPS</span> system as a satellite in a 26,000 km orbit [1].  Meanwhile our earth reference frame will be an observer standing on the surface of the earth.  So let&#8217;s write out our line element for each reference frame.  First the satellite frame:</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>As Dr. Dre works, the beat steadily gets louder.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;">
-</span></span></span></span></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"> $$ ds^2 = -c^2 {dt}^2 \left[ \left( 1 - \frac{R_s}{R_{sat}} \right) -{\left( \frac{\omega_{sat} R_{sat}}{c} \right)}^2 \right] $$
-
-</span></span></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So the frequency at which a satellite clock ticks is</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div>
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ f_{sat} = \frac{1}{dt} \left[ \left( 1 - \frac{R_s}{R_{sat}} \right) -{\left(\frac{\omega_{sat} R_{sat}}{c} \right)}^2 \right]}^{-1/2} $$
-
-and likewise the earth frame:</div>
-
-<p></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;">
-</span></span></span></span></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"> <mathjax>$$ ds^2 = -c^2 {dt}^2 \left[ \left( 1 - \frac{R_s}{R_{earth}} \right) -{\left(\frac{\omega_{earth} R_{earth}}{c} \right)}^2 \right] $$</mathjax></p>
-<p></span></span></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So the frequency at which an earth clock ticks is </div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ f_{earth} = \frac{1}{dt} \left[ \left( 1 - \frac{R_s}{R_{earth}} \right) -{\left( \frac{\omega_{earth} R_{earth}}{c} \right)}^2 \right]}^{-1/2} $$</mathjax></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Taking the ratio of these frequencies tells us how quickly the satellite clocks tick relative to the earth clocks.  We get:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ \frac{f_{sat}}{f_{earth}} = {\left[ \frac{\left( 1 - \frac{R_s}{R_{earth}} \right) -{\left( \frac{\omega_{earth} R_{earth}}{c} \right)}^2 }{\left( 1 - \frac{R_s}{R_{sat}} \right) -{\left( \frac{\omega_{sat} R_{sat}}{c} \right)}^2 } \right]}^{1/2} $$</mathjax></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">And we&#8217;re done.  So what do we get?  Let&#8217;s plug in some numbers:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ r_{sat} = 26 \times 10^6 m $$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ R_{earth} = 6.3 \times 10^6 m$$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$\omega_{earth} = 7.3 \times 10^{-5} rad/s $$</mathjax></p>
-<p><mathjax>$$\omega_{sat}=\sqrt{\frac{GM}{{r_{sat}}^3}}=15 \times 10^{-5} rad/s $$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ c = 3 \times 10^8 m/s $$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">We can also find the Schwarzschild radius of the Earth to be</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ R_s = 8.9 mm $$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Now you still have that fancy calculator, right General?  Can you plug all this stuff in there and tell me what you get?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>General Ripper works diligently on the calculator for a few minutes, then shows the calculator to Dr. Dre.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  &#8220;01134&#8221;..?  No that can&#8217;t be correct.  Did you plug in the values I &#8230; ?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>General, with a wry smile, turns the calculator upside down and shows Dr. Dre.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Ah, well &#8220;hello&#8221; to you to&nbsp;sir. </p>
-<p><span class="caps">GEN</span>. <span class="caps">RIPPER</span>:  And I&#8217;ve got another!  Now where&#8217;s that eight&nbsp;key&#8230;?</p>
-<p><span class="caps">DR</span>. <span class="caps">DRE</span>:  I guess I&#8217;ll just do the math in my head&#8230;</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>The background beat, which had just reached a crescendo immediately drops out as Dre thinks</i>.  <i>Then comes right back in as he begins to speak again&#8230;</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Alright, I got that </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$\frac{f_{sat}}{f_{earth}} = 1 + 4.4 \times 10^{-10} $$</mathjax></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">From this we see that the satellite clock ticks faster (i.e. at a higher frequency) than does the earth clock.  The difference is very very small.  For every second that ticks by on earth, we see that the difference in the earth and satellite clocks increases by 4.4 * 10^{-10} seconds.    </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>:  But we are talking about half a billionth of a second!  There&#8217;s no way that can do much harm.</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>: Well remember, that&#8217;s per second.  So over the course of a day (86,400 s), the satellite has picked up 38 microseconds.  But that corresponds to</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><mathjax>$$ d = c \times t = ( 3 \times 10^8 m/s ) \times ( 38 \times 10^{-6} s ) = 11 km $$</mathjax></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So without correcting for general relativity, <span class="caps">GPS</span> systems would be off by 11 km per day!   </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">GEN</span> <span class="caps">RIPPER</span>: I am impressed!  Here&#8217;s millions of dollars in funding!  Hooray!</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="caps">DR</span>. <span class="caps">DRE</span>:  Hooray!</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>Dr. Dre and General Ripper jump up and give each other a mid-air high five.  We freeze-frame this scene and </i>&#8220;Don&#8217;t You Forget About Me&#8221; <i>plays as the credits roll.</i></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i><span class="caps">THE</span> <span class="caps">END</span> (?)</i>
-<i>
-</i>
-<i>
-</i>
-[1]  Thanks to Tom from <a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a> (one of my favorite physics blogs) for fixing a mistake for me.  I had initially done the calculation assuming the satellite was in a geosynchronous orbit (about 42,000 km) and got a time delay of 48 microseconds.  As it turns out, the <span class="caps">GPS</span> satellites are really at an orbit of about 26,000 km, which gives a time delay of 38 microseconds.  I have made the appropriate changes and the calculations now reflect this more accurate value.</div><div><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div></div></div></div></div></div></div></div></div></p>
-                </div><!-- /.entry-content -->
-                                <div class="comments">
-                <h2>Comments !</h2>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                           var disqus_identifier = "posts/microseconds-and-miles.html";
-                           (function() {
-                                var dsq = document.createElement('script');
-                                dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] ||
-                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
-                          })();
-                        </script>
-                </div>
-                                <!--  -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-            <ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="http://scienceblogs.com/builtonfacts/"><i class="icon-external-link"></i>Built on Facts</a></li>
-    <li><a href="http://scienceblogs.com/principles/"><i class="icon-external-link"></i>Uncertain Principles</a></li>
-    <li><a href="http://www.wired.com/wiredscience/"><i class="icon-external-link"></i>Dot Physics</a></li>
-    <li><a href="http://blogs.scienceforums.net/swansont/"><i class="icon-external-link"></i>Swans on Tea</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="../feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-<li><a href="../feeds/all.rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
-    <li><a href="https://twitter.com/thevirtuosi"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
-    <li><a href="https://www.facebook.com/thevirtuosi"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="../category/math.html">
-    <i class="icon-folder-open icon-large"></i>math
-</a>
-</li>
-<li>
-<a href="../category/old.html">
-    <i class="icon-folder-open icon-large"></i>old
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-3">
-    <a href="../tag/cold.html">
-        <i class="icon-tag icon-large"></i>cold
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/end-of-the-earth.html">
-        <i class="icon-tag icon-large"></i>end of the earth
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/solar-sails.html">
-        <i class="icon-tag icon-large"></i>solar sails
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/space.html">
-        <i class="icon-tag icon-large"></i>space
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/features.html">
-        <i class="icon-tag icon-large"></i>features
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/water.html">
-        <i class="icon-tag icon-large"></i>water
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/graph.html">
-        <i class="icon-tag icon-large"></i>graph
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/pi-day.html">
-        <i class="icon-tag icon-large"></i>pi day
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/scott-bakula.html">
-        <i class="icon-tag icon-large"></i>scott bakula
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/large-numbers.html">
-        <i class="icon-tag icon-large"></i>large numbers
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/.html">
-        <i class="icon-tag icon-large"></i>
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/probability.html">
-        <i class="icon-tag icon-large"></i>probability
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/laser.html">
-        <i class="icon-tag icon-large"></i>laser
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/radiation.html">
-        <i class="icon-tag icon-large"></i>radiation
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fun-water-rain-human.html">
-        <i class="icon-tag icon-large"></i>fun water rain human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/guestimation.html">
-        <i class="icon-tag icon-large"></i>guestimation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bike.html">
-        <i class="icon-tag icon-large"></i>bike
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/python.html">
-        <i class="icon-tag icon-large"></i>python
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/experiment.html">
-        <i class="icon-tag icon-large"></i>experiment
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/cryopreservation.html">
-        <i class="icon-tag icon-large"></i>cryopreservation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="../tag/fun.html">
-        <i class="icon-tag icon-large"></i>fun
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/site-news.html">
-        <i class="icon-tag icon-large"></i>site news
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/fermi-problem.html">
-        <i class="icon-tag icon-large"></i>fermi problem
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/how-do-i-get-free-stuff.html">
-        <i class="icon-tag icon-large"></i>how do i get free stuff?
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/particle-physics.html">
-        <i class="icon-tag icon-large"></i>particle physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/sun.html">
-        <i class="icon-tag icon-large"></i>sun
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/bohn.html">
-        <i class="icon-tag icon-large"></i>Bohn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/recoil.html">
-        <i class="icon-tag icon-large"></i>recoil
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics.html">
-        <i class="icon-tag icon-large"></i>physics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/equations.html">
-        <i class="icon-tag icon-large"></i>equations
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/momentum.html">
-        <i class="icon-tag icon-large"></i>momentum
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/thermodynamics.html">
-        <i class="icon-tag icon-large"></i>thermodynamics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/magnetism.html">
-        <i class="icon-tag icon-large"></i>magnetism
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/longfellow.html">
-        <i class="icon-tag icon-large"></i>longfellow
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/physics-challenge.html">
-        <i class="icon-tag icon-large"></i>physics challenge
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/blackbody.html">
-        <i class="icon-tag icon-large"></i>blackbody
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/math.html">
-        <i class="icon-tag icon-large"></i>math
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/power.html">
-        <i class="icon-tag icon-large"></i>power
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/order-of-magnitude.html">
-        <i class="icon-tag icon-large"></i>order of magnitude
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/clicky.html">
-        <i class="icon-tag icon-large"></i>clicky
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/problem-of-the-week.html">
-        <i class="icon-tag icon-large"></i>problem of the week
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/movie.html">
-        <i class="icon-tag icon-large"></i>movie
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/human.html">
-        <i class="icon-tag icon-large"></i>human
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/tire.html">
-        <i class="icon-tag icon-large"></i>tire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/baseball.html">
-        <i class="icon-tag icon-large"></i>baseball
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/casio.html">
-        <i class="icon-tag icon-large"></i>casio
-    </a>
-</li>
-<li class="tag-2">
-    <a href="../tag/chess.html">
-        <i class="icon-tag icon-large"></i>CHESS
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/politics.html">
-        <i class="icon-tag icon-large"></i>politics
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/fish.html">
-        <i class="icon-tag icon-large"></i>fish
-    </a>
-</li>
-<li class="tag-3">
-    <a href="../tag/ice.html">
-        <i class="icon-tag icon-large"></i>ice
-    </a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-twitter-sign"></i>Twitter</h4></li>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-	shell: {
-	  background: '#f5f5f5',
-	  color: '#000000'
-	},
-	tweets: {
-	  background: '#ffffff',
-	  color: '#000000',
-	  links: '#1a50a1'
-	}
-  },
-  features: {
-	scrollbar: false,
-	loop: false,
-	live: false,
-	behavior: 'all'
-  }
-}).render().setUser('thevirtuosi').start();
-</script>
-<li class="nav-header"><h4><i class="icon-search"></i>Google Search</h4></li>
-<div id="cse" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '016118979984514975664:u9tdrwxiom8', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-  }, true);
-</script>
-<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-    <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-15719155-6");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-        <script type="text/javascript">
-    var disqus_shortname = 'thephysicsvirtuosi';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../theme/js/jquery-1.7.2.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-  </body>
+<gcse:searchbox></gcse:searchbox>        </div>
+	</header>
+
+    <div class="results content">
+        <gcse:searchresults></gcse:searchresults>    </div>
+	<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>Microseconds and&nbsp;Miles</h1>
+			<p>The following is an unfinished manuscript found under heaps of rubble
+and pizza boxes here at Virtuosi headquarters. It appears to be some
+sort of screen play, though one would be hard-pressed to figure this out
+solely from the script. The true giveaway was the 100 page addendum (not
+published) full of potential titles and acceptance speeches. I dare not
+bore you with these vanity pages in their entirety, but just for
+completeness and posterity I include some samples.
+For possible titles we have: &#8220;Dr. Dre, <span class="caps">OR</span>: How I Learned to Stop
+Worrying and Love the Metric,&#8221; &#8220;How to Teach Physics to your Dee Oh
+Double G (West Coast Edition),&#8221; &#8220;Bring Da Ruckus: ODEs by <span class="caps">ODB</span>&#8221; and
+&#8220;Flavor Flav&#8217;s Flavor Physics&#8230;boooyeeeee!&#8221; among other even worse and
+less relevant titles.
+Among the acceptance speeches we have one that starts: &#8220;I would like to
+thank the Academy, Scott Bakula and Chuck D. You know what you did.
+Here&#8217;s a song I wrote&#8230;&#8221;, etc. It is all very painful.
+There is almost no value to this document whatsoever, but it does
+present a nice fun fact about <span class="caps">GPS</span>. The legible parts of the script are
+thus presented below. The illegible parts appear to have been obscured
+by some caustic mixture of Mountain Dew, pizza sauce and tears. <strong> <em>We
+descend to the bottom of the abandoned mineshaft recently converted to
+the headquarters of General Stanley K. Ripper. He is currently engaged
+in a heated discussion with his science advisor, Dr. Vontavious Dre. We
+join mid-sentence as a result of lazy writing&#8230;</em></strong>
+<em><span class="caps">DR</span>. <span class="caps">DRE</span>: &#8230;shortage of scientists! What&#8217;s that? Yeah, you could
+definitely call it a &#8220;chronic&#8221; shortage if you want. But semantics
+aren&#8217;t important right now. The &#8220;G&#8221;-sector needs more funding.</em>
+<strong>
+<em><span class="caps">GEN</span>. <span class="caps">RIPPER</span>: You are my most trusted science advisor, Dr. Dre, but you
+already have one staff scientist&#8230;a Dr. Snoop Dogg, I believe&#8230;? How
+many scientists do we need doing relativity here? This is the military!
+We need Moonraker lasers and nuclear hand grenades. So no more funding
+unless&#8230; That is, unless you figured out the&#8230;</em></strong>
+<em><span class="caps">DR</span>. <span class="caps">DRE</span>: No sir, we still don&#8217;t have a Stargate.</em>
+<strong>
+<em><span class="caps">GEN</span>. <span class="caps">RIPPER</span>: Well then you are just wasting my time! I want something
+useful. Either something that goes boom or something that helps
+something that goes boom. What I don&#8217;t need is a theoretical money
+drain.</em></strong>
+<em><span class="caps">DR</span>. <span class="caps">DRE</span>: And how did you find your way to work today, sir?</em>
+<strong>
+</strong><em><span class="caps">GEN</span>. <span class="caps">RIPPER</span>: What? You know very well I ride my horse, Neigh-braham
+Lincoln. He knows how to get here.</em>
+<strong>
+<em><span class="caps">DR</span>. <span class="caps">DRE</span>: And how does Nifty &#8216;Nabe know where to go&#8230;?</em></strong>
+<em><span class="caps">GEN</span> <span class="caps">RIPPER</span>: <span class="caps">GPS</span>, of course!</em>
+<strong>
+<em><span class="caps">DR</span>. <span class="caps">DRE</span>: Bingo. That&#8217;s our department. Without correcting for general
+relativistic effects (the specialty of the &#8220;G&#8221;-sector, I may add), <span class="caps">GPS</span>
+would be completely useless. Let me show you.</em></strong>
+<em>A large blackboard drops down from the ceiling and a slow steady beat,
+just barely audible, seems to come from all directions. Dre writes the
+following equation on the board:</em>
+<mathjax>$$ ds\^2 = -\\left(1-\\frac{R\_s}{r} \\right)c\^2dt\^2+ \\left( 1 -
+\\frac{R\_s}{r} \\right)\^{-1} dr\^2 + r\^2 \\left( d{\\theta}\^2 +
+{\\sin\\theta} {d\\phi}\^2 \\right)$$</mathjax>
+This equation gives the line element for a Schwarzschild metric. The
+R_s in the equation is called the &#8220;Schwarzschild Radius&#8221; and is given
+by
+<mathjax>$$ R\_s = \\frac{2GM}{c\^2} .$$</mathjax>
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: Is that Karl Schwarzschild? I remember reading a delightful
+biography of him somewhere&#8230;? Anyway, what the heck is this &#8220;line
+element&#8221; thing&#8230;?
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Good question. Essentially what we get is the differential
+change in the space-time interval ( ds ) if we change all the
+coordinates by a very tiny little bit. What is nice about this is that
+although coordinates are a tricky thing in general relativity and can
+change from one observer to another, the space-time interval is an
+invariant quantity. That is, different observers will measure the same
+space-time interval between events even though they may measure
+different times and distances.
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: So this space-time interval is just a kind of space-time
+distance that different observers will agree on?
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Right-o. And this invariance allows us to compare different
+reference frames. Eventually, we will use this invariance to get the
+frequencies observed by an observer on the surface of the earth and one
+traveling along with a satellite in orbit. Since we will only be
+considering observers at fixed radius and fixed theta = 90 degrees (ie
+at the equator), we can simplify things a bit. Since we will have a
+fixed radius and theta value we have that:
+<mathjax>$$ dr = 0 $$</mathjax>
+<mathjax>$$ d\\theta = 0 $$</mathjax>
+and
+<mathjax>$$\\sin\\theta = 1 $$</mathjax>
+Plugging these simplifications into our line element gives:
+<mathjax>$$ ds\^2 = -\\left( 1 - \\frac{R\_s}{r} \\right)c\^2 dt\^2 + r\^2
+d\\phi\^2 $$</mathjax>
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: Neato Toledo!
+<span class="caps">DR</span> <span class="caps">DRE</span>: Right, so now we divide out the -c\^2 dt\^2 term on the right
+hand side. So we have:
+<mathjax>$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right) -
+\\frac{r\^2}{c\^2} \\frac{d\\phi\^2}{dt\^2} \\right] $$</mathjax>
+But this is just <mathjax>$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 -
+\\frac{R\_s}{r} \\right) - \\frac{r\^2}{c\^2} {\\left(\\frac{d\\phi}{dt}
+\\right)}\^2 \\right] $$</mathjax>
+But what does that d phi / dt term look like?
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: Sure looks like an angular velocity to me. But don&#8217;t we need
+to be careful with these rates?
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Yep, that is an angular velocity term. We need to be a little
+careful with these rates. Essentially, in the coordinate system we have
+chosen the time is something like the time measured at r = infinity and
+thus the rate would also be measured from r = infinity. Plugging in
+omega as our angular velocity, we now have:
+<mathjax>$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right)
+-\\left( \\frac{r {\\omega}}{c} \\right)\^2 \\right] $$</mathjax>
+But we want to figure out the times on the <span class="caps">GPS</span> satellites, so we&#8217;ll need
+some measure of how time ticks by as measured by the orbiting observer.
+In the rest frame of the observer, we have that
+<mathjax>$$ ds\^2 = -c\^2 {d\\tau}\^2 $$</mathjax>
+where the tau is the &#8220;proper time&#8221; of the observer. It tells us the time
+that the observer measures on his clocks. To find the frequency (in
+other words, how quickly the observer clock ticks by a second) we just
+have
+<mathjax>$$ f = \\frac{1}{d\\tau} $$</mathjax>
+And now we have enough background to start talking about <span class="caps">GPS</span>!
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: Hooray! Should I go get my horse&#8230;?
+<span class="caps">DR</span>. <span class="caps">DRE</span>: I don&#8217;t think that&#8217;s necessary&#8230;? Anyway, let&#8217;s model our <span class="caps">GPS</span>
+system as a satellite in a 26,000 km orbit [1]. Meanwhile our earth
+reference frame will be an observer standing on the surface of the
+earth. So let&#8217;s write out our line element for each reference frame.
+First the satellite frame:
+<em>As Dr. Dre works, the beat steadily gets louder.</em>
+<mathjax>$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right] $$</mathjax>
+So the frequency at which a satellite clock ticks is
+<mathjax>$$ f\_{sat} = \\frac{1}{dt} \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left(\\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right]}\^{-1/2} $$</mathjax> and likewise the earth frame:
+<mathjax>$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{earth}}
+\\right) -{\\left(\\frac{\\omega\_{earth} R\_{earth}}{c} \\right)}\^2
+\\right] $$</mathjax>
+So the frequency at which an earth clock ticks is
+<mathjax>$$ f\_{earth} = \\frac{1}{dt} \\left[ \\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 \\right]}\^{-1/2} $$</mathjax>
+Taking the ratio of these frequencies tells us how quickly the satellite
+clocks tick relative to the earth clocks. We get:
+<mathjax>$$ \\frac{f\_{sat}}{f\_{earth}} = {\\left[ \\frac{\\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 }{\\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2 }
+\\right]}\^{1/2} $$</mathjax>
+And we&#8217;re done. So what do we get? Let&#8217;s plug in some numbers:
+<mathjax>$$ r\_{sat} = 26 \\times 10\^6 m $$</mathjax>
+<mathjax>$$ R\_{earth} = 6.3 \\times 10\^6 m$$</mathjax>
+<mathjax>$$\\omega\_{earth} = 7.3 \\times 10\^{-5} rad/s $$</mathjax>
+<mathjax>$$\\omega\_{sat}=\\sqrt{\\frac{GM}{{r\_{sat}}\^3}}=15 \\times 10\^{-5}
+rad/s $$</mathjax>
+<mathjax>$$ c = 3 \\times 10\^8 m/s $$</mathjax>
+We can also find the Schwarzschild radius of the Earth to be
+<mathjax>$$ R\_s = 8.9 mm $$</mathjax>
+Now you still have that fancy calculator, right General? Can you plug
+all this stuff in there and tell me what you get?
+<em>General Ripper works diligently on the calculator for a few minutes,
+then shows the calculator to Dr. Dre.</em>
+<strong>
+<span class="caps">DR</span>. <span class="caps">DRE</span>: &#8220;01134&#8221;..? No that can&#8217;t be correct. Did you plug in the values
+I &#8230; ?
+<em>General, with a wry smile, turns the calculator upside down and shows
+Dr. Dre.</em></strong>
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Ah, well &#8220;hello&#8221; to you to sir. <span class="caps">GEN</span>. <span class="caps">RIPPER</span>: And I&#8217;ve got
+another! Now where&#8217;s that eight key&#8230;? <span class="caps">DR</span>. <span class="caps">DRE</span>: I guess I&#8217;ll just do
+the math in my head&#8230;
+<em>The background beat, which had just reached a crescendo immediately
+drops out as Dre thinks</em>. <em>Then comes right back in as he begins to
+speak again&#8230;</em>
+<strong>
+Alright, I got that
+<mathjax>$$\\frac{f\_{sat}}{f\_{earth}} = 1 + 4.4 \\times 10\^{-10} $$</mathjax>
+From this we see that the satellite clock ticks faster (i.e. at a higher
+frequency) than does the earth clock. The difference is very very small.
+For every second that ticks by on earth, we see that the difference in
+the earth and satellite clocks increases by 4.4 * 10\^{-10} seconds.
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: But we are talking about half a billionth of a second!
+There&#8217;s no way that can do much harm.
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Well remember, that&#8217;s per second. So over the course of a day
+(86,400 s), the satellite has picked up 38 microseconds. But that
+corresponds to<mathjax>$$ d = c \\times t = ( 3 \\times 10\^8 m/s ) \\times ( 38 \\times
+10\^{-6} s ) = 11 km $$</mathjax>
+So without correcting for general relativity, <span class="caps">GPS</span> systems would be off
+by 11 km per day!
+<span class="caps">GEN</span> <span class="caps">RIPPER</span>: I am impressed! Here&#8217;s millions of dollars in funding!
+Hooray!
+<span class="caps">DR</span>. <span class="caps">DRE</span>: Hooray!
+<em>Dr. Dre and General Ripper jump up and give each other a mid-air high
+five. We freeze-frame this scene and</em>&#8220;Don&#8217;t You Forget About Me&#8221; <em>plays
+as the credits roll.</em></strong>
+<em><span class="caps">THE</span> <span class="caps">END</span> (?)</em> <strong> </strong> [1] Thanks to Tom from <a href="http://blogs.scienceforums.net/swansont/">Swans on
+Tea</a> (one of my favorite
+physics blogs) for fixing a mistake for me. I had initially done the
+calculation assuming the satellite was in a geosynchronous orbit (about
+42,000 km) and got a time delay of 48 microseconds. As it turns out, the
+<span class="caps">GPS</span> satellites are really at an orbit of about 26,000 km, which gives a
+time delay of 38 microseconds. I have made the appropriate changes and
+the calculations now reflect this more accurate value.&nbsp;**</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+						<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "posts/microseconds-and-miles.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://thephysicsvirtuosi.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2010-09-12T23:04:00" pubdate>Sun 12 September 2010</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/old.html">old</a></li>
+			<li><a href="/tag/dr-dre.html">dr. dre</a></li>
+			<li><a href="/tag/gps.html">GPS</a></li>
+			<li><a href="/tag/scott-bakula.html">scott bakula</a></li>
+		</ul>
+	</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+					<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+						<li><a href="https://twitter.com/thevirtuosi">twitter</a></li>
+						<li><a href="https://www.facebook.com/thevirtuosi">facebook</a></li>
+					</ul>
+	
+		<p role="contentinfo">© 2012 The Virtuosi<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount','UA-15719155-6'],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
 </html>

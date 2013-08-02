@@ -1,45 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.nanobots.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 22 Apr 2011 13:11:00 -0400</lastBuildDate><item><title>End of the Earth VI: Nanobot destruction</title><link>http://thephysicsvirtuosi.com/posts/end-of-the-earth-vi-nanobot-destruction.html</link><description>&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png" imageanchor="1" style="clear:left; float:left;margin-right:1em; margin-bottom:1em"&gt;&lt;img border="0" height="314" width="320" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Let&amp;#8217;s destroy the earth with&amp;nbsp;technology.&lt;/p&gt;
-&lt;p&gt;A while ago, I read the novel &lt;i&gt;Postsingular&lt;/i&gt; by Rudy Rucker, and in the first chapter the Earth gets destroyed, and then undestroyed, and then the novel unfolds and the Earth&amp;#8217;s likelihood is threatened again, and it looks like the Earth will be destroyed, but it&amp;nbsp;isn&amp;#8217;t. &lt;/p&gt;
-&lt;p&gt;How does all of this craziness happen you might ask: nanobots!  The story revolves around little self-replicating robots.  The story explores what it would be like to live in a world where every surface on Earth was coated in little computers, all of which were networked together.  It&amp;#8217;s certainly a neat idea, but whenever you have self-replicating things, you need to worry a bit about what might happen if they get out of control.
-&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;So, let&amp;#8217;s assume we, evil scientists that we are, have managed to create a little self-replicating nanobot.  This little guy can scurry around, running off something ubiquitous, probably some combination of solar, and some kind of infrared photovoltaics.  This little guy, call him Bob, his only mission in life is to create a friend.  He scurries around collecting the various ingredients necessary, and using his little robot arms, he slices and dices up the pieces and welds them together to create another copy of himself, Rob.  Not satisfied with his work; Bob found Rob quite the bore, and honestly Rob didn&amp;#8217;t too much like Bob either, both of them part ways and try to fashion a new&amp;nbsp;friend.&lt;/p&gt;
-&lt;p&gt;How long until Bob and Rob and their cohorts manage to chew through all of the material on&amp;nbsp;Earth?&lt;/p&gt;
-&lt;p&gt;What we have here is the setup to a problem in &lt;a href="http://en.wikipedia.org/wiki/Exponential_growth"&gt;Exponential Growth&lt;/a&gt;.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.nanobots.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 22 Apr 2011 13:11:00 -0400</lastBuildDate><item><title>End of the Earth VI: Nanobot destruction</title><link>/posts/end-of-the-earth-vi-nanobot-destruction.html</link><description>&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s destroy the earth with technology. A while ago, I read the novel
+&lt;em&gt;Postsingular&lt;/em&gt; by Rudy Rucker, and in the first chapter the Earth gets
+destroyed, and then undestroyed, and then the novel unfolds and the
+Earth&amp;#8217;s likelihood is threatened again, and it looks like the Earth will
+be destroyed, but it isn&amp;#8217;t. How does all of this craziness happen you
+might ask: nanobots! The story revolves around little self-replicating
+robots. The story explores what it would be like to live in a world
+where every surface on Earth was coated in little computers, all of
+which were networked together. It&amp;#8217;s certainly a neat idea, but whenever
+you have self-replicating things, you need to worry a bit about what
+might happen if they get out of control. So, let&amp;#8217;s assume we, evil
+scientists that we are, have managed to create a little self-replicating
+nanobot. This little guy can scurry around, running off something
+ubiquitous, probably some combination of solar, and some kind of
+infrared photovoltaics. This little guy, call him Bob, his only mission
+in life is to create a friend. He scurries around collecting the various
+ingredients necessary, and using his little robot arms, he slices and
+dices up the pieces and welds them together to create another copy of
+himself, Rob. Not satisfied with his work; Bob found Rob quite the bore,
+and honestly Rob didn&amp;#8217;t too much like Bob either, both of them part ways
+and try to fashion a new friend. How long until Bob and Rob and their
+cohorts manage to chew through all of the material on Earth? What we
+have here is the setup to a problem in &lt;a href="http://en.wikipedia.org/wiki/Exponential_growth"&gt;Exponential
+Growth&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Exponential&amp;nbsp;Growth&lt;/h3&gt;
-
-&lt;p&gt;Let&amp;#8217;s simplify things a bit and assume that the nanobots always take a fixed amount to time to make a new copy of themselves, call that time T.  We&amp;#8217;ll start with one guy, so we know that at t =0, we have 1 bot
-&lt;mathjax&gt;$$ N(t =0 ) = 1 $$&lt;/mathjax&gt;
-And we know that after T seconds we should have 2
-&lt;mathjax&gt;$$ N(T) = 2 $$&lt;/mathjax&gt;
-and after 2T seconds, we&amp;#8217;ve managed to double twice and get 4
-&lt;mathjax&gt;$$ N(2T) = 4 $$&lt;/mathjax&gt;
-after 3T seconds we&amp;#8217;ll double again to 8, etc.  In fact, after nT seconds, so m repetitions we should have doubled m times
-&lt;mathjax&gt;$$ N(nT) = 2^n $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So if we want to describe all times, we need only ask how many doublings can fit into t seconds
-&lt;mathjax&gt;$$ t = n T $$&lt;/mathjax&gt;
-which gives us
-&lt;mathjax&gt;$$ N(t) = 2^{t/T} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;At this point you might object, as this formula doesn&amp;#8217;t always give an integer, so we could ask things like how many bots are there after 0.5T seconds?  We know the true answer is still 1, Bob hasn&amp;#8217;t finished Rob yet, but our formula tells us the answer is&amp;nbsp;1.414&amp;#8230;  &lt;/p&gt;
-&lt;p&gt;What we&amp;#8217;ve done is made a continuous approximation to a discrete function.  Certainly, we&amp;#8217;ve paid a price, in that our new formula doesn&amp;#8217;t get answers right in fractions of T, but its a small price to pay for the mathematical simplicity afforded by the nice continuous function, and as long as we don&amp;#8217;t really care about time scales smaller than T in the long run, we haven&amp;#8217;t done any real&amp;nbsp;harm.&lt;/p&gt;
-&lt;p&gt;These kinds of approximations show up all over the place in physics, and going both ways too.  Sometimes it is advantageous to treat some discrete quantity as continuous, and sometimes it might be beneficial to treat some continuous quantity as discrete.  These kinds of approximations are more than adequate, provided you don&amp;#8217;t really take the answers they give you in the cases where your approximation starts to break too&amp;nbsp;seriously.&lt;/p&gt;
-&lt;p&gt;In this case, as long as we don&amp;#8217;t try to seriously predict the number of nanobots to an exact count in time scales less than a fraction of their doubling time, we will have a nice prediction of the number of bots running&amp;nbsp;around.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s simplify things a bit and assume that the nanobots always take a
+fixed amount to time to make a new copy of themselves, call that time T.
+We&amp;#8217;ll start with one guy, so we know that at t =0, we have 1 bot &lt;mathjax&gt;$$ N(t
+=0 ) = 1 $$&lt;/mathjax&gt; And we know that after T seconds we should have 2 &lt;mathjax&gt;$$ N(T) =
+2 $$&lt;/mathjax&gt; and after 2T seconds, we&amp;#8217;ve managed to double twice and get 4 &lt;mathjax&gt;$$
+N(2T) = 4 $$&lt;/mathjax&gt; after 3T seconds we&amp;#8217;ll double again to 8, etc. In fact,
+after nT seconds, so m repetitions we should have doubled m times &lt;mathjax&gt;$$
+N(nT) = 2\^n $$&lt;/mathjax&gt; So if we want to describe all times, we need only ask
+how many doublings can fit into t seconds &lt;mathjax&gt;$$ t = n T $$&lt;/mathjax&gt; which gives us
+&lt;mathjax&gt;$$ N(t) = 2\^{t/T} $$&lt;/mathjax&gt; At this point you might object, as this formula
+doesn&amp;#8217;t always give an integer, so we could ask things like how many
+bots are there after 0.5T seconds? We know the true answer is still 1,
+Bob hasn&amp;#8217;t finished Rob yet, but our formula tells us the answer is
+1.414&amp;#8230; What we&amp;#8217;ve done is made a continuous approximation to a
+discrete function. Certainly, we&amp;#8217;ve paid a price, in that our new
+formula doesn&amp;#8217;t get answers right in fractions of T, but its a small
+price to pay for the mathematical simplicity afforded by the nice
+continuous function, and as long as we don&amp;#8217;t really care about time
+scales smaller than T in the long run, we haven&amp;#8217;t done any real harm.
+These kinds of approximations show up all over the place in physics, and
+going both ways too. Sometimes it is advantageous to treat some discrete
+quantity as continuous, and sometimes it might be beneficial to treat
+some continuous quantity as discrete. These kinds of approximations are
+more than adequate, provided you don&amp;#8217;t really take the answers they give
+you in the cases where your approximation starts to break too seriously.
+In this case, as long as we don&amp;#8217;t try to seriously predict the number of
+nanobots to an exact count in time scales less than a fraction of their
+doubling time, we will have a nice prediction of the number of bots
+running&amp;nbsp;around.&lt;/p&gt;
 &lt;h3&gt;Earth&amp;nbsp;Destruction&lt;/h3&gt;
-
-&lt;p&gt;As promised, we wanted to calculate the time it would take the nanobots to devour the earth.  For this we need a little bit more to our model.  How will the nanobots eat the earth, I reckon it will be through using up its mass.  Assuming the bots are made out of elements that are rich enough, something like iron, they ought to have a field day on Earth, seeing as it&amp;#8217;s composed of about 5% iron on the surface, and with an interior that is probably about 32% iron overall &lt;a href="http://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements#Abundance_of_elements_in_the_Earth"&gt;[ref]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;So, we need to estimate the mass of a single nanobot.  Let&amp;#8217;s say the nanobot is roughly a 1 micron sized cube, made out of iron.  This gives us a nanobot mass of 
-&lt;mathjax&gt;$$ m = (\text{ density of iron }) * (\text{ 1 micron} )^3 = \rho_{\text{Fe}} L^3 \sim 8 \text{ picograms} $$&lt;/mathjax&gt; &lt;/p&gt;
-&lt;p&gt;From here we can estimate the time it would take to chew through the earth, as the time for the nanobots to be as massive as the&amp;nbsp;earth.&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ \frac{M_{\oplus}}{\rho_{\text{Fe}} L^3 } = N(t) = 2^{t/T} $$&lt;/mathjax&gt;
-Solving for t we obtain
-&lt;mathjax&gt;$$ t = T \log_2 \frac{ M_{\oplus}}{ \rho_{\text{Fe}} L^3 }  $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;As promised, we wanted to calculate the time it would take the nanobots
+to devour the earth. For this we need a little bit more to our model.
+How will the nanobots eat the earth, I reckon it will be through using
+up its mass. Assuming the bots are made out of elements that are rich
+enough, something like iron, they ought to have a field day on Earth,
+seeing as it&amp;#8217;s composed of about 5% iron on the surface, and with an
+interior that is probably about 32% iron overall
+&lt;a href="http://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements#Abundance_of_elements_in_the_Earth"&gt;[ref]&lt;/a&gt;.
+So, we need to estimate the mass of a single nanobot. Let&amp;#8217;s say the
+nanobot is roughly a 1 micron sized cube, made out of iron. This gives
+us a nanobot mass of &lt;mathjax&gt;$$ m = (\\text{ density of iron }) \* (\\text{ 1
+micron} )\^3 = \\rho\_{\\text{Fe}} L\^3 \\sim 8 \\text{ picograms} $$&lt;/mathjax&gt;
+From here we can estimate the time it would take to chew through the
+earth, as the time for the nanobots to be as massive as the earth. &lt;mathjax&gt;$$
+\\frac{M\_{\\oplus}}{\\rho\_{\\text{Fe}} L\^3 } = N(t) = 2\^{t/T} $$&lt;/mathjax&gt;
+Solving for t we obtain &lt;mathjax&gt;$$ t = T \\log\_2 \\frac{ M\_{\\oplus}}{
+\\rho\_{\\text{Fe}} L\^3 } $$&lt;/mathjax&gt;&lt;/p&gt;
 &lt;h3&gt;Solution&lt;/h3&gt;
-
-&lt;p&gt;Let&amp;#8217;s say it takes Bob one month to make Rob, which I don&amp;#8217;t think is a completely unrealistic time for nanobot replication, assuming Bob and Rob and all of their cohorts are 1 micron in size,  I calculate that in 10 years time they would chew through the&amp;nbsp;Earth.&lt;/p&gt;
-&lt;p&gt;The power of exponential growth!  Even with a 1 month gestation, if left unabashed, the self-replicating robots would eat the entire earth in 10 years time.  They could eat through Mars in about 2.  In fact in &lt;i&gt;Postsingular&lt;/i&gt; this is what the humans planned.  They wanted a Dyson sphere, so they sent some self-replicating robots to Mars, let them chew through it a couple years, and they had 10^37 little robots to do their bidding.  That is of course until the nants set their sites on Earth as their next&amp;nbsp;target&amp;#8230;&lt;/p&gt;
-&lt;p&gt;In order to let you play around with the doubling time and bot size, I&amp;#8217;ve created a Wolfram Alpha widget that solves the above equation, feel free to play around with the parameters and see how long Earth would&amp;nbsp;survive.&lt;/p&gt;
-&lt;script type="text/javascript" id="WolframAlphaScript6a645314f9be6be7b902d4cc1f776d00" src="http://www.wolframalpha.com/widget/widget.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;&lt;/script&gt;
-
-&lt;p&gt;The widget should be right above this text.  If it isn&amp;#8217;t working for some reason, here&amp;#8217;s a &lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Fri, 22 Apr 2011 13:11:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2011-04-22:posts/end-of-the-earth-vi-nanobot-destruction.html</guid><category>fun</category><category>nanobots</category><category>end of the earth</category><category>earth day</category></item></channel></rss>
+&lt;p&gt;Let&amp;#8217;s say it takes Bob one month to make Rob, which I don&amp;#8217;t think is a
+completely unrealistic time for nanobot replication, assuming Bob and
+Rob and all of their cohorts are 1 micron in size, I calculate that in
+10 years time they would chew through the Earth. The power of
+exponential growth! Even with a 1 month gestation, if left unabashed,
+the self-replicating robots would eat the entire earth in 10 years time.
+They could eat through Mars in about 2. In fact in &lt;em&gt;Postsingular&lt;/em&gt; this
+is what the humans planned. They wanted a Dyson sphere, so they sent
+some self-replicating robots to Mars, let them chew through it a couple
+years, and they had 10\^37 little robots to do their bidding. That is of
+course until the nants set their sites on Earth as their next target&amp;#8230;
+In order to let you play around with the doubling time and bot size,
+I&amp;#8217;ve created a Wolfram Alpha widget that solves the above equation, feel
+free to play around with the parameters and see how long Earth would&amp;nbsp;survive.&lt;/p&gt;
+&lt;p&gt;The widget should be right above this text. If it isn&amp;#8217;t working for some
+reason, here&amp;#8217;s a
+&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Fri, 22 Apr 2011 13:11:00 -0400</pubDate><guid>tag:,2011-04-22:posts/end-of-the-earth-vi-nanobot-destruction.html</guid><category>fun</category><category>nanobots</category><category>end of the earth</category><category>earth day</category></item></channel></rss>

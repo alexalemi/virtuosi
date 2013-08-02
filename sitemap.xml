@@ -4,3284 +4,3284 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://thephysicsvirtuosi.com/index.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/index.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/archives.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tags.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/categories.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/trigonometric-derivatives.html</loc>
+<loc>/posts/trigonometric-derivatives.html</loc>
 <lastmod>2013-02-22T16:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html</loc>
+<loc>/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html</loc>
 <lastmod>2013-01-20T22:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems.html</loc>
+<loc>/posts/the-skeleton-supporting-search-engine-ranking-systems.html</loc>
 <lastmod>2013-01-01T19:09:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-.html</loc>
+<loc>/posts/when-will-the-earth-fall-into-the-sun-.html</loc>
 <lastmod>2012-11-29T22:58:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/creating-an-earth.html</loc>
+<loc>/posts/creating-an-earth.html</loc>
 <lastmod>2012-10-27T19:07:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-curious-footprint.html</loc>
+<loc>/posts/a-curious-footprint.html</loc>
 <lastmod>2012-08-04T04:56:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-homemade-viscometer-i.html</loc>
+<loc>/posts/a-homemade-viscometer-i.html</loc>
 <lastmod>2012-07-24T22:32:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html</loc>
+<loc>/posts/batman-helicopters-and-center-of-mass.html</loc>
 <lastmod>2012-06-26T11:10:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/tales-from-the-transit-of-venus.html</loc>
+<loc>/posts/tales-from-the-transit-of-venus.html</loc>
 <lastmod>2012-06-05T00:50:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-ii.html</loc>
+<loc>/posts/how-cold-is-the-ground-ii.html</loc>
 <lastmod>2012-05-26T21:28:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html</loc>
+<loc>/posts/how-cold-is-the-ground-.html</loc>
 <lastmod>2012-05-18T00:20:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-vii-the-big-freeze.html</loc>
+<loc>/posts/end-of-the-earth-vii-the-big-freeze.html</loc>
 <lastmod>2012-04-22T19:34:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-2012-escape-to-the-moon.html</loc>
+<loc>/posts/earth-day-2012-escape-to-the-moon.html</loc>
 <lastmod>2012-04-22T15:12:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/money-for-almost-nothing.html</loc>
+<loc>/posts/money-for-almost-nothing.html</loc>
 <lastmod>2012-03-29T01:27:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/pi-storage.html</loc>
+<loc>/posts/pi-storage.html</loc>
 <lastmod>2012-03-14T15:13:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/calculator-pi.html</loc>
+<loc>/posts/calculator-pi.html</loc>
 <lastmod>2012-03-14T14:16:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-clarification.html</loc>
+<loc>/posts/a-clarification.html</loc>
 <lastmod>2012-03-14T12:20:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/pi-rithmetic.html</loc>
+<loc>/posts/pi-rithmetic.html</loc>
 <lastmod>2012-03-14T11:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/moving-pi-ctures.html</loc>
+<loc>/posts/moving-pi-ctures.html</loc>
 <lastmod>2012-03-14T08:35:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi.html</loc>
+<loc>/posts/a-very-small-slice-of-pi.html</loc>
 <lastmod>2012-03-14T08:22:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/primes-in-pi.html</loc>
+<loc>/posts/primes-in-pi.html</loc>
 <lastmod>2012-03-14T03:14:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/f-91-revisited.html</loc>
+<loc>/posts/f-91-revisited.html</loc>
 <lastmod>2012-03-12T00:57:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</loc>
+<loc>/posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</loc>
 <lastmod>2012-03-06T14:37:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/time-keeps-on-slippin-.html</loc>
+<loc>/posts/time-keeps-on-slippin-.html</loc>
 <lastmod>2012-02-12T22:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-stars-fell-on-abe-and-frederick.html</loc>
+<loc>/posts/the-stars-fell-on-abe-and-frederick.html</loc>
 <lastmod>2012-01-02T20:02:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-.html</loc>
+<loc>/posts/how-long-will-a-bootprint-last-on-the-moon-.html</loc>
 <lastmod>2012-01-01T20:46:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs.html</loc>
+<loc>/posts/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs.html</loc>
 <lastmod>2011-12-13T17:36:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-award-show-ii.html</loc>
+<loc>/posts/physics-challenge-award-show-ii.html</loc>
 <lastmod>2011-11-06T23:22:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/betelgeuse-betelgeuse-betelgeuse-.html</loc>
+<loc>/posts/betelgeuse-betelgeuse-betelgeuse-.html</loc>
 <lastmod>2011-11-05T01:25:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-update.html</loc>
+<loc>/posts/physics-challenge-update.html</loc>
 <lastmod>2011-10-31T22:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-linear-theory-of-battleship.html</loc>
+<loc>/posts/the-linear-theory-of-battleship.html</loc>
 <lastmod>2011-10-03T00:48:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-ii-marty-mcphysics.html</loc>
+<loc>/posts/physics-challenge-ii-marty-mcphysics.html</loc>
 <lastmod>2011-09-05T14:16:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-tweet-is-worth-at-least-140-words.html</loc>
+<loc>/posts/a-tweet-is-worth-at-least-140-words.html</loc>
 <lastmod>2011-08-30T23:49:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/futurama-physics.html</loc>
+<loc>/posts/futurama-physics.html</loc>
 <lastmod>2011-08-22T23:44:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/fun-with-an-iphone-accelerometer.html</loc>
+<loc>/posts/fun-with-an-iphone-accelerometer.html</loc>
 <lastmod>2011-08-03T03:24:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-in-sports-the-fosbury-flop.html</loc>
+<loc>/posts/physics-in-sports-the-fosbury-flop.html</loc>
 <lastmod>2011-08-01T01:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/grains-of-sand.html</loc>
+<loc>/posts/grains-of-sand.html</loc>
 <lastmod>2011-07-18T11:33:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/lifetime-of-liquid-water.html</loc>
+<loc>/posts/lifetime-of-liquid-water.html</loc>
 <lastmod>2011-07-10T22:07:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/coriolis-effect-on-a-home-run.html</loc>
+<loc>/posts/coriolis-effect-on-a-home-run.html</loc>
 <lastmod>2011-07-03T11:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/counting-critters.html</loc>
+<loc>/posts/counting-critters.html</loc>
 <lastmod>2011-06-28T00:19:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/day-in-the-life-of-clicky.html</loc>
+<loc>/posts/day-in-the-life-of-clicky.html</loc>
 <lastmod>2011-06-01T16:34:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/clicky-data-v1-0.html</loc>
+<loc>/posts/clicky-data-v1-0.html</loc>
 <lastmod>2011-05-31T11:36:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/clickin-the-night-away.html</loc>
+<loc>/posts/clickin-the-night-away.html</loc>
 <lastmod>2011-05-31T00:07:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/anatomy-of-an-experiment-i-the-question.html</loc>
+<loc>/posts/anatomy-of-an-experiment-i-the-question.html</loc>
 <lastmod>2011-05-05T21:06:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-vi-nanobot-destruction.html</loc>
+<loc>/posts/end-of-the-earth-vi-nanobot-destruction.html</loc>
 <lastmod>2011-04-22T13:11:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-special-post-apocalyptic-literature.html</loc>
+<loc>/posts/earth-day-special-post-apocalyptic-literature.html</loc>
 <lastmod>2011-04-22T10:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-v-there-goes-the-sun.html</loc>
+<loc>/posts/end-of-the-earth-v-there-goes-the-sun.html</loc>
 <lastmod>2011-04-22T09:42:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-iv-shocking-destruction.html</loc>
+<loc>/posts/end-of-the-earth-iv-shocking-destruction.html</loc>
 <lastmod>2011-04-22T07:54:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/matt-raises-clicky-from-the-dead.html</loc>
+<loc>/posts/matt-raises-clicky-from-the-dead.html</loc>
 <lastmod>2011-04-08T13:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-sense-of-scale-in-dollars-and-cents-.html</loc>
+<loc>/posts/a-sense-of-scale-in-dollars-and-cents-.html</loc>
 <lastmod>2011-04-07T21:42:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/collective-wanderings.html</loc>
+<loc>/posts/collective-wanderings.html</loc>
 <lastmod>2011-04-04T22:39:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/special-virtuosi-book-announcement-.html</loc>
+<loc>/posts/special-virtuosi-book-announcement-.html</loc>
 <lastmod>2011-04-01T01:41:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/nickel-gnomes.html</loc>
+<loc>/posts/nickel-gnomes.html</loc>
 <lastmod>2011-03-31T02:17:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/blown-away.html</loc>
+<loc>/posts/blown-away.html</loc>
 <lastmod>2011-03-24T17:46:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-award-show.html</loc>
+<loc>/posts/physics-challenge-award-show.html</loc>
 <lastmod>2011-03-17T23:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/japan-nuclear-crisis.html</loc>
+<loc>/posts/japan-nuclear-crisis.html</loc>
 <lastmod>2011-03-16T10:36:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/apologies-saturn-.html</loc>
+<loc>/posts/apologies-saturn-.html</loc>
 <lastmod>2011-03-16T00:35:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/fun-fact-lebron-james-plays-basketball.html</loc>
+<loc>/posts/fun-fact-lebron-james-plays-basketball.html</loc>
 <lastmod>2011-02-07T12:37:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-month-gilligan-physics.html</loc>
+<loc>/posts/problem-of-the-month-gilligan-physics.html</loc>
 <lastmod>2011-02-06T12:55:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/life-in-the-infrared.html</loc>
+<loc>/posts/life-in-the-infrared.html</loc>
 <lastmod>2011-02-06T00:47:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/free-data-set-of-the-month-imaging-spectroscopy.html</loc>
+<loc>/posts/free-data-set-of-the-month-imaging-spectroscopy.html</loc>
 <lastmod>2011-02-04T16:44:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/exploration-of-cameras-i.html</loc>
+<loc>/posts/exploration-of-cameras-i.html</loc>
 <lastmod>2011-02-03T19:50:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-magnetar-credit-card-swipe.html</loc>
+<loc>/posts/the-magnetar-credit-card-swipe.html</loc>
 <lastmod>2011-01-30T17:22:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/falling-ice.html</loc>
+<loc>/posts/falling-ice.html</loc>
 <lastmod>2011-01-27T22:41:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/darts.html</loc>
+<loc>/posts/darts.html</loc>
 <lastmod>2011-01-13T16:29:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/holiday-hidden-message-revealed.html</loc>
+<loc>/posts/holiday-hidden-message-revealed.html</loc>
 <lastmod>2011-01-03T23:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/benford-s-law.html</loc>
+<loc>/posts/benford-s-law.html</loc>
 <lastmod>2010-12-31T14:42:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/holiday-hidden-message.html</loc>
+<loc>/posts/holiday-hidden-message.html</loc>
 <lastmod>2010-12-24T13:05:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-buffoon-s-toothpicks.html</loc>
+<loc>/posts/a-buffoon-s-toothpicks.html</loc>
 <lastmod>2010-12-18T17:33:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3-solution.html</loc>
+<loc>/posts/problem-of-the-week-3-solution.html</loc>
 <lastmod>2010-12-15T02:01:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-law-and-large-numbers.html</loc>
+<loc>/posts/the-law-and-large-numbers.html</loc>
 <lastmod>2010-12-09T22:34:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-short-thanksgiving-edition.html</loc>
+<loc>/posts/your-week-in-seminars-short-thanksgiving-edition.html</loc>
 <lastmod>2010-11-29T18:51:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-2-solution.html</loc>
+<loc>/posts/problem-of-the-week-2-solution.html</loc>
 <lastmod>2010-11-23T17:46:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-one-for-two-edition.html</loc>
+<loc>/posts/your-week-in-seminars-one-for-two-edition.html</loc>
 <lastmod>2010-11-22T11:12:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3.html</loc>
+<loc>/posts/problem-of-the-week-3.html</loc>
 <lastmod>2010-11-22T03:53:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-2.html</loc>
+<loc>/posts/problem-of-the-week-2.html</loc>
 <lastmod>2010-11-14T16:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/pet-projects.html</loc>
+<loc>/posts/pet-projects.html</loc>
 <lastmod>2010-11-14T12:38:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-dark-edition.html</loc>
+<loc>/posts/your-week-in-seminars-dark-edition.html</loc>
 <lastmod>2010-11-08T15:46:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-1.html</loc>
+<loc>/posts/problem-of-the-week-1.html</loc>
 <lastmod>2010-11-05T19:39:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-conformal-edition.html</loc>
+<loc>/posts/your-week-in-seminars-conformal-edition.html</loc>
 <lastmod>2010-11-01T17:58:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-fermionic-edition.html</loc>
+<loc>/posts/your-week-in-seminars-fermionic-edition.html</loc>
 <lastmod>2010-10-25T11:56:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-3-with-a-vengence.html</loc>
+<loc>/posts/paradigm-shifts-3-with-a-vengence.html</loc>
 <lastmod>2010-10-21T14:32:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-intro-edition.html</loc>
+<loc>/posts/your-week-in-seminars-intro-edition.html</loc>
 <lastmod>2010-10-18T12:50:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/four-fantastic-books-3-of-which-are-free-.html</loc>
+<loc>/posts/four-fantastic-books-3-of-which-are-free.html</loc>
 <lastmod>2010-10-16T00:50:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/caught-in-the-rain-ii.html</loc>
+<loc>/posts/caught-in-the-rain-ii.html</loc>
 <lastmod>2010-10-10T14:41:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/beards-and-pulsars.html</loc>
+<loc>/posts/beards-and-pulsars.html</loc>
 <lastmod>2010-09-28T02:56:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-2-paradigm-shifter.html</loc>
+<loc>/posts/paradigm-shifts-2-paradigm-shifter.html</loc>
 <lastmod>2010-09-19T23:55:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/breaking-intuition.html</loc>
+<loc>/posts/breaking-intuition.html</loc>
 <lastmod>2010-09-19T16:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/visualizing-quantum-mechanics.html</loc>
+<loc>/posts/visualizing-quantum-mechanics.html</loc>
 <lastmod>2010-09-14T20:06:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/microseconds-and-miles.html</loc>
+<loc>/posts/microseconds-and-miles.html</loc>
 <lastmod>2010-09-12T23:04:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/quantum-chess-.html</loc>
+<loc>/posts/quantum-chess-.html</loc>
 <lastmod>2010-09-08T21:48:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-1.html</loc>
+<loc>/posts/paradigm-shifts-1.html</loc>
 <lastmod>2010-09-07T23:01:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/remembering-two-things.html</loc>
+<loc>/posts/remembering-two-things.html</loc>
 <lastmod>2010-09-02T16:32:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/caught-in-the-rain.html</loc>
+<loc>/posts/caught-in-the-rain.html</loc>
 <lastmod>2010-09-01T22:53:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/ringing-a-bridge.html</loc>
+<loc>/posts/ringing-a-bridge.html</loc>
 <lastmod>2010-08-14T21:16:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</loc>
+<loc>/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</loc>
 <lastmod>2010-08-12T17:23:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/teminal-velocity.html</loc>
+<loc>/posts/teminal-velocity.html</loc>
 <lastmod>2010-08-11T14:04:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-wrath-of-blotto.html</loc>
+<loc>/posts/the-wrath-of-blotto.html</loc>
 <lastmod>2010-08-06T11:32:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/steak-dinner.html</loc>
+<loc>/posts/steak-dinner.html</loc>
 <lastmod>2010-08-03T21:20:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-death-of-karl-schwarzschild.html</loc>
+<loc>/posts/on-the-death-of-karl-schwarzschild.html</loc>
 <lastmod>2010-07-24T23:54:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/something-bugging-me.html</loc>
+<loc>/posts/something-bugging-me.html</loc>
 <lastmod>2010-07-20T23:24:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/zombpocalypse.html</loc>
+<loc>/posts/zombpocalypse.html</loc>
 <lastmod>2010-07-01T23:48:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-impossibility-of-why.html</loc>
+<loc>/posts/the-impossibility-of-why.html</loc>
 <lastmod>2010-07-01T23:44:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-reflections.html</loc>
+<loc>/posts/life-as-an-experimenter-reflections.html</loc>
 <lastmod>2010-06-19T15:50:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-three.html</loc>
+<loc>/posts/life-as-an-experimenter-day-three.html</loc>
 <lastmod>2010-06-18T13:49:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-two.html</loc>
+<loc>/posts/life-as-an-experimenter-day-two.html</loc>
 <lastmod>2010-06-18T01:57:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-one.html</loc>
+<loc>/posts/life-as-an-experimenter-day-one.html</loc>
 <lastmod>2010-06-17T13:53:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/how-long-can-you-balance-a-quantum-pencil.html</loc>
+<loc>/posts/how-long-can-you-balance-a-quantum-pencil.html</loc>
 <lastmod>2010-06-16T03:20:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/my-pepsi-challenge.html</loc>
+<loc>/posts/my-pepsi-challenge.html</loc>
 <lastmod>2010-06-08T01:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/memorial-day-distractions.html</loc>
+<loc>/posts/memorial-day-distractions.html</loc>
 <lastmod>2010-05-31T13:12:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/cryopreservation.html</loc>
+<loc>/posts/cryopreservation.html</loc>
 <lastmod>2010-05-30T13:42:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/i-was-born-on-wednesday.html</loc>
+<loc>/posts/i-was-born-on-wednesday.html</loc>
 <lastmod>2010-05-26T03:17:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/why-is-the-grass-green-.html</loc>
+<loc>/posts/why-is-the-grass-green-.html</loc>
 <lastmod>2010-05-25T23:29:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/flying-back.html</loc>
+<loc>/posts/flying-back.html</loc>
 <lastmod>2010-05-25T09:04:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/fishy-calculation-followup-new-contest.html</loc>
+<loc>/posts/fishy-calculation-followup-new-contest.html</loc>
 <lastmod>2010-05-25T03:03:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/esoteric-physics-i-the-hall-effect.html</loc>
+<loc>/posts/esoteric-physics-i-the-hall-effect.html</loc>
 <lastmod>2010-05-23T23:31:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-of-baseball-batting.html</loc>
+<loc>/posts/physics-of-baseball-batting.html</loc>
 <lastmod>2010-05-19T18:21:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/cell-phone-brain-damage-part-deux.html</loc>
+<loc>/posts/cell-phone-brain-damage-part-deux.html</loc>
 <lastmod>2010-05-19T16:03:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-iii-because-two-just-isn-t-enough-.html</loc>
+<loc>/posts/solar-sails-iii-because-two-just-isn-t-enough-.html</loc>
 <lastmod>2010-05-17T22:24:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/ask-a-physicist-volume-i.html</loc>
+<loc>/posts/ask-a-physicist-volume-i.html</loc>
 <lastmod>2010-05-17T11:56:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-ii.html</loc>
+<loc>/posts/solar-sails-ii.html</loc>
 <lastmod>2010-05-17T01:15:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-i.html</loc>
+<loc>/posts/solar-sails-i.html</loc>
 <lastmod>2010-05-16T23:29:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-addendum-i.html</loc>
+<loc>/posts/solar-sails-addendum-i.html</loc>
 <lastmod>2010-05-16T23:28:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-addendum-ii.html</loc>
+<loc>/posts/solar-sails-addendum-ii.html</loc>
 <lastmod>2010-05-16T23:27:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world.html</loc>
+<loc>/posts/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world.html</loc>
 <lastmod>2010-05-16T19:53:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/freezing-in-space-ii-turn-on-the-sun-.html</loc>
+<loc>/posts/freezing-in-space-ii-turn-on-the-sun-.html</loc>
 <lastmod>2010-05-13T23:38:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/freezing-in-space-i-blackest-night.html</loc>
+<loc>/posts/freezing-in-space-i-blackest-night.html</loc>
 <lastmod>2010-05-12T22:26:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/human-radiation.html</loc>
+<loc>/posts/human-radiation.html</loc>
 <lastmod>2010-05-09T00:24:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/letting-air-out-of-tires-ii.html</loc>
+<loc>/posts/letting-air-out-of-tires-ii.html</loc>
 <lastmod>2010-05-04T14:52:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-as-magic-.html</loc>
+<loc>/posts/physics-as-magic-.html</loc>
 <lastmod>2010-05-03T23:46:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/letting-air-out-of-tires.html</loc>
+<loc>/posts/letting-air-out-of-tires.html</loc>
 <lastmod>2010-05-03T23:21:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-beer-diet.html</loc>
+<loc>/posts/the-beer-diet.html</loc>
 <lastmod>2010-04-30T11:35:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/cell-phone-brain-damage-or-not-.html</loc>
+<loc>/posts/cell-phone-brain-damage-or-not-.html</loc>
 <lastmod>2010-04-27T19:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/some-of-the-best-advice-you-ll-ever-receive.html</loc>
+<loc>/posts/some-of-the-best-advice-you-ll-ever-receive.html</loc>
 <lastmod>2010-04-25T20:29:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-physics-iii-asteroids-.html</loc>
+<loc>/posts/end-of-the-earth-physics-iii-asteroids-.html</loc>
 <lastmod>2010-04-22T18:45:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-earth-units.html</loc>
+<loc>/posts/earth-day-earth-units.html</loc>
 <lastmod>2010-04-22T16:18:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/nobody-really-gets-quantum.html</loc>
+<loc>/posts/nobody-really-gets-quantum.html</loc>
 <lastmod>2010-04-22T14:29:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-ii-blaze-of-glory.html</loc>
+<loc>/posts/end-of-the-earth-ii-blaze-of-glory.html</loc>
 <lastmod>2010-04-22T14:26:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/laser-launching.html</loc>
+<loc>/posts/laser-launching.html</loc>
 <lastmod>2010-04-21T22:22:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html</loc>
+<loc>/posts/laser-gun-recoil-follow-up.html</loc>
 <lastmod>2010-04-21T16:31:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/q-factors.html</loc>
+<loc>/posts/q-factors.html</loc>
 <lastmod>2010-04-21T00:38:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-end-of-earth-physics-i.html</loc>
+<loc>/posts/the-end-of-earth-physics-i.html</loc>
 <lastmod>2010-04-17T16:25:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/entropy-and-the-arrow-of-time.html</loc>
+<loc>/posts/entropy-and-the-arrow-of-time.html</loc>
 <lastmod>2010-04-16T21:27:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-for-non-physicists.html</loc>
+<loc>/posts/physics-for-non-physicists.html</loc>
 <lastmod>2010-04-16T16:36:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/onsager-s-tour-de-force.html</loc>
+<loc>/posts/onsager-s-tour-de-force.html</loc>
 <lastmod>2010-04-15T20:22:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/another-reason-why-the-core-is-stupid.html</loc>
+<loc>/posts/another-reason-why-the-core-is-stupid.html</loc>
 <lastmod>2010-04-15T17:30:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/locating-the-sun-photo.html</loc>
+<loc>/posts/locating-the-sun-photo.html</loc>
 <lastmod>2010-04-14T02:21:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/the-malleability-of-theory.html</loc>
+<loc>/posts/the-malleability-of-theory.html</loc>
 <lastmod>2010-04-13T17:18:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/bubbles-.html</loc>
+<loc>/posts/bubbles-.html</loc>
 <lastmod>2010-04-13T15:33:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-nature-of-many-penny-systems.html</loc>
+<loc>/posts/on-the-nature-of-many-penny-systems.html</loc>
 <lastmod>2010-04-11T01:08:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-superposition-of-hip-and-hop.html</loc>
+<loc>/posts/on-the-superposition-of-hip-and-hop.html</loc>
 <lastmod>2010-04-09T17:42:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/fishy-calculation.html</loc>
+<loc>/posts/fishy-calculation.html</loc>
 <lastmod>2010-04-09T14:26:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/would-a-laser-gun-recoil-.html</loc>
+<loc>/posts/would-a-laser-gun-recoil-.html</loc>
 <lastmod>2010-04-08T23:16:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/ask-a-physicist.html</loc>
+<loc>/posts/ask-a-physicist.html</loc>
 <lastmod>2010-04-08T13:28:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/lessons-in-prohibition-one.html</loc>
+<loc>/posts/lessons-in-prohibition-one.html</loc>
 <lastmod>2010-04-07T20:56:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/falling-water-hot-or-cold-.html</loc>
+<loc>/posts/falling-water-hot-or-cold-.html</loc>
 <lastmod>2010-04-07T19:25:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/railguns.html</loc>
+<loc>/posts/railguns.html</loc>
 <lastmod>2010-04-07T16:01:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/latex-test.html</loc>
+<loc>/posts/latex-test.html</loc>
 <lastmod>2010-04-06T10:37:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/posts/a-new-beginning.html</loc>
+<loc>/posts/a-new-beginning.html</loc>
 <lastmod>2010-04-06T00:37:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/category/math.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/category/math.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/category/old.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/category/old.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/canada.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/canada.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/furlong-per-fortnight.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/furlong-per-fortnight.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/koalas.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/koalas.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/electron.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/radiation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/battleship.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/battleship.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/search-engine-ranking.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/search-engine-ranking.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/scott-bakula.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/scott-bakula.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/birthday.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/birthday.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/infrared.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/infrared.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/quantum-mechanics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/vampire.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/ants.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/ants.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/search-engines.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/search-engines.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/entropy.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/entropy.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/chess.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/chess.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/human.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/lasers.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/radiation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/japan.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/japan.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cold.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/primes.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/tour-de-force.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/moon.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/networks.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/networks.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bridges.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bridges.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/desperate-plea.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/dice.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/dice.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/tire.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/tire.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/schwarzschild.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/conduction.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/graph.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/graph.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/lasers.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/free-data-sets.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/free-data-sets.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/thermodynamics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/thermodynamics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/charge.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/charge.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/hall-effect.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/magnetar.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/proofiness.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/proofiness.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/molecules.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/molecules.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pennies.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pennies.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/quantum-mechanics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/census.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/neutron-star.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/momentum.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/momentum.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fosbury-flop.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/lattitude.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/rubber-bands.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/rubber-bands.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/lhc.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/lhc.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sci-fi.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sci-fi.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/python.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/python.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/exogenesis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/exogenesis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/calories.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/calories.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/allan-variance.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pencil-balancing.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/buffons-needle.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/allan-variance.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/faradays-law.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/buffons-needle.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/casio.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/faradays-law.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/mad-beats.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/electron.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pi-rithmetic.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/mad-beats.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/laser.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pi-rithmetic.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bubbles.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/high-jump.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/saturn.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/onsager.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/qwerty.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bubbles.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gps.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/saturn.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/trigonometry.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/qwerty.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cold.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gps.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/magic.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/memorial-day.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/end-of-the-earth.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/diet.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gun.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/end-of-the-earth.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/standards.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gun.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/hooray.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/standards.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/not-absurdly-large-images.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/hooray.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/lebron-james.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/not-absurdly-large-images.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/benford.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/lebron-james.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/zombies.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/benford.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/jimmy-johns.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/zombies.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/steak.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/jimmy-johns.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/optics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/steak.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/guestimation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/optics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/time-travel.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/guestimation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/wiki.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/time-travel.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/hedonism-bot.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/particle-physics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/stats.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/magic.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/longfellow.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/hedonism-bot.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/witchcraft.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/storage.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fish.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/stats.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/neutron-star.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/human.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/nontransitive.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/witchcraft.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/freeze.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/twitter.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/approximation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/paradigm-shift.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/crc.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/nontransitive.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/video.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/freeze.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/betelgeuse.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/approximation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/measurement.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/crc.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/quantum.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/summer.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/how-do-i-get-free-stuff.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/betelgeuse.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/particle-physics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/measurement.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/physics-challenge.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/apologies.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/toto.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/how-do-i-get-free-stuff.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/nuclear.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/primes.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/book-review.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/physics-challenge.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/space.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/trig.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/movie.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/toto.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fun-water-rain-human.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/book-review.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/interference.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/dinosaur.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/ask-a-physicist.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/culture.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/ice.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/movie.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/tour-de-force.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fun-water-rain-human.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/current.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/interference.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/hello-kitty.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/ask-a-physicist.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/experiment.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/ice.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/crisis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/moon.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pi-day.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/current.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/large-numbers.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/video.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/high-jump.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/experiment.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/free-fall.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pi-day.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/math.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/large-numbers.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/em.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/nuclear.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/do-the-dew.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/free-fall.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/macguyver.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/advice.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/desperate-plea.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/math.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/power.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/em.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/higgs.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/do-the-dew.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/asteroid.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/macguyver.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cryopreservation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/day-month-year.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/orbits.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/power.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/coriolis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/higgs.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/autocorrelation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cryopreservation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/magnetism.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/james-bond.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/basketball.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/coriolis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/baseball.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fun.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/diet.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/magnetism.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pepsi.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/basketball.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/english.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/baseball.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/equations.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gnomes.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sho.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pepsi.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/water.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/english.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/day-month-year.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/niagara-falls.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/well-spent-saturdays.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sho.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/dr-dre.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bad-physics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/accelerometer.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/well-spent-saturdays.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/launch.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/dr-dre.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/thin-films.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/accelerometer.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/simulation.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/launch.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/great-scott.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/space.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/carl-sagan.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/thin-films.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/dimensional-analysis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/trigonometry.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/games.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/schwarzschild.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/green-power.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/carl-sagan.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/logic.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/dimensional-analysis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/footnotes.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/games.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fourier.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/green-power.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gnomes.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/logic.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/blackbody.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/footnotes.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/circle-of-life.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fourier.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/intuition.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/camera.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/megabucks.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/blackbody.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/features.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/circle-of-life.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/probability.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/intuition.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/monty-hall.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/megabucks.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/brain-damage.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/features.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/proton.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/toothpicks.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bruce-willis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/brain-damage.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fermi-problem.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/proton.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/conduction.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/why.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/marvin-the-martian.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bruce-willis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pulsar.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fermi-problem.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/megapixels-srsly.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/marvin-the-martian.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cell-phone.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pulsar.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/picopixels.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/megapixels-srsly.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/spectra.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/crisis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/star-wars.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/picopixels.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/statistics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/spectra.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/lottery.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/star-wars.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/eurocentrism.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/statistics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/site-news.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/lottery.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/niagara-falls.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/eurocentrism.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/flying.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/site-news.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/question.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/equations.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/manufactoria.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/flying.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/long.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/question.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sports.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/manufactoria.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/toy-physics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/long.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/beer.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sports.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bike.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/toy-physics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fantastic-contraption.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/beer.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/the-core.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/asteroid.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/mars.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/iphone.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/book-reviews.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/the-core.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/apologies.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/mars.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/twitter.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/book-reviews.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/iphone.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fish.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/octopodes.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fantastic-contraption.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bummer.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/census.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bad-physics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bummer.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/revisionist-history.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/wiki.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/esoteric.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/shorts.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/matt-magic.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/revisionist-history.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gas.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/esoteric.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gilligan.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/longfellow.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cards.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bike.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/glass.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gilligan.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/heat.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/glass.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bohn.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/heat.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/recoil.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bohn.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/vampire.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/recoil.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/excessive-saluting.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/excessive-saluting.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bug.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bug.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/phone-data.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/phone-data.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/bouncing-ball.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/bouncing-ball.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sound.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sound.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pencil-balancing.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pendulum.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/onsager.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/laser.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/culture.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cognitive-dissonance.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/linear-algebra.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/linear-algebra.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/blotto.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/blotto.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/nanobots.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/nanobots.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/budget.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/elections.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/trig.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/magnetar.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/railgun.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cards.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fermi.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fermi.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/elections.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/budget.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/fun.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/autocorrelation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/office-hours.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/office-hours.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/lattitude.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/fosbury-flop.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/things-that-probs-wont-kill-you.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/things-that-probs-wont-kill-you.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/summer-research.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/summer-research.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sand.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sand.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/information-theory.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/railgun.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/monte-carlo.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/information-theory.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/geonosian-solar-sailer.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/monte-carlo.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/metric.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/geonosian-solar-sailer.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/centrality-measures.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/metric.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/ungodly-large-images.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/centrality-measures.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/q-factor.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/ungodly-large-images.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/collision.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/q-factor.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cognitive-dissonance.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/water.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/msl.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/collision.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/solar-sails.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/quantum.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/transit-of-venus.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/msl.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/politics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/solar-sails.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/education.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/transit-of-venus.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/paul-dirac.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/politics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/numerics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/education.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/contest.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/paul-dirac.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/batman.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/numerics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/chlorophyll-more-like-borophyll.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/contest.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/storage.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/batman.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/42.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/chlorophyll-more-like-borophyll.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/gravity.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/great-scott.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/order-of-magnitude.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/42.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/problem-of-the-week.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gravity.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/busted.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/order-of-magnitude.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/shorts.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/problem-of-the-week.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/memorial-day.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/busted.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/clicky.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/clicky.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/units.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/units.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/puns.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/puns.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/dvorak.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/dvorak.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/solar-system.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/solar-system.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/calculus.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/simulation.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/picture.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/calculus.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/satellite.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/picture.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/literature.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/satellite.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/dinosaur.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/literature.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/summer.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/octopodes.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/camera.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/probability.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/advice.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/gas.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/james-bond.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/class.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/nic-shout-outs.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/pineapple.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pendulum.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/orbits.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/class.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/nic-shout-outs.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/cipher.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/matt-magic.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/curiosity.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cipher.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/darts.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/curiosity.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/footprint.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/darts.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/sun.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/footprint.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/data.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/cell-phone.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/why.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/data.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/long-day.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/model.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/reflection.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/long-day.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/credit-cards.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/reflection.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/potato.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/credit-cards.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/odds.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/potato.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/earth-day.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/odds.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/paradigm-shift.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/earth-day.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/analysis.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/casio.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/hall-effect.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/analysis.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/center-of-mass.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/center-of-mass.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/feynman.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/feynman.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/toothpicks.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/monty-hall.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/daylight-savings-time.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/daylight-savings-time.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/scrabble.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/scrabble.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/air-resistance.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/air-resistance.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/pineapple.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/sun.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/physics-in-sports.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/physics-in-sports.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/model.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/hello-kitty.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/physics.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/physics.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/tag/wind.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/tag/wind.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/alemi.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/alemi.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/alex.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/alex.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/bohn.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/bohn.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/brian.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/brian.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/corky.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/corky.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/dtc.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/dtc.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/holmes.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/holmes.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/jared.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/jared.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/jesse.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/jesse.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/js.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/js.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/matt.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/matt.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/nic-eggert.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/nic-eggert.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/nik-zhelev.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/nik-zhelev.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/sam.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/sam.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>http://thephysicsvirtuosi.com/author/yariv.html</loc>
-<lastmod>2013-02-26T22:42:21-00:00</lastmod>
+<loc>/author/yariv.html</loc>
+<lastmod>2013-08-02T02:12:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
