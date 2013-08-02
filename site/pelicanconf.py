@@ -49,7 +49,7 @@ GOOGLE_CUSTOM_SEARCH_SIDEBAR = '016118979984514975664:u9tdrwxiom8'
 
 FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
-THEME = 'themes/bootstrap2'
+THEME = 'themes/justread'
 
 ARTICLE_EXCLUDES = ('themes','README.md',)
 TYPOGRIFY = True

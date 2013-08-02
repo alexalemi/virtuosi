@@ -1,8 +1,0 @@
-#! /bin/bash
-
-# We need to hack in the markdown mathjax support
-CURRENT=`pwd`
-cd $(python -c 'import markdown; print markdown.__path__[0]')
-cd extensions
-wget https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py -O mathjax.py
-cd $CURRENT

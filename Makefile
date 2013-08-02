@@ -25,7 +25,7 @@ help:
 	@echo '                                                                       '
 
 create_env: mathjax
-	virtualenv --no-site-packages --distribute .env && source .env/bin/activate && pip install -r requirements.txt && ./install_python_markdown_mathjax
+	virtualenv --no-site-packages --distribute .env && source .env/bin/activate && pip install -r requirements.txt
 
 mathjax: source_env
 	wget https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py -O .env/local/lib/python2.7/site-packages/markdown/extensions/mathjax.py
@@ -34,22 +34,22 @@ html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	cd $(BASEDIR); $(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	find $(OUTPUTDIR) -mindepth 1 -delete
 
 regenerate: clean
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	cd $(BASEDIR); $(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
 	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
 
 devserver:
-	$(BASEDIR)/develop_server.sh restart
+	cd $(BASEDIR); ./develop_server.sh restart
 
 publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	cd $(BASEDIR); $(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
 	ghp-import $(OUTPUTDIR)
