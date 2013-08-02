@@ -4,7 +4,6 @@ Tags: trig, calculus, trigonometry
 Category: math
 Slug: trigonometric-derivatives
 Author: Alemi
-Summary: I show that the derivative of $\sin x$ is $\cos x$ in a simple diagram!.
 
 I was recently reading [The Endeavour](http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/) 
 where he responded to a post over at 
@@ -17,7 +16,7 @@ In my experience,
 [Calculus](http://en.wikipedia.org/wiki/Calculus) is always best taught
 in terms of infinitesimals, as in 
 [Thompson's Book](http://books.google.com/books?id=BrhBAAAAYAAJ&printsec=frontcover&dq=calculus+made+easy&hl=en&sa=X&ei=vu8nUZ-MGcW20AHknICgCw&ved=0CD4Q6AEwAA), 
-(which I've [already talked about](|filename|../old/four-fantastic-books-3-of-which-are-free-.md) ) 
+(which I've [already talked about](|filename|../old/four-fantastic-books-3-of-which-are-free.md) ) 
 and [Trigonometry](http://en.wikipedia.org/wiki/Trigonometry) is best taught using 
 the [complete triangle](http://tricochet.com/math/pdfs/completetriangle.pdf).
 Marrying these two together, we can give a simple geometric proof of the basic trigonometric derivatives:
@@ -34,6 +33,8 @@ Summed up on one diagram:
 ###Short version
 
 By looking at how the line $\sin \alpha$ and $\cos \alpha$ change when we change $\alpha$ a little bit ($d\alpha$) and noting that we form a similar triangle, we know exactly what those lengths are.
+
+<!-- more -->
 
 ###Long version
 

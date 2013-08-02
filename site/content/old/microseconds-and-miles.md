@@ -6,101 +6,207 @@ Slug: microseconds-and-miles
 Author: Corky
 
 
-<div style="font-family: Arial; font-size: 13px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">The following is an unfinished manuscript found under heaps of rubble and pizza boxes here at Virtuosi headquarters.  It appears to be some sort of screen play, though one would be hard-pressed to figure this out solely from the script.  The true giveaway was the 100 page addendum (not published) full of potential titles and acceptance speeches.  I dare not bore you with these vanity pages in their entirety, but just for completeness and posterity I include some samples.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">For possible titles we have: "Dr. Dre, OR: How I Learned to Stop Worrying and Love the Metric," "How to Teach Physics to your Dee Oh Double G (West Coast Edition)," "Bring Da Ruckus: ODEs by ODB" and "Flavor Flav's Flavor Physics...boooyeeeee!" among other even worse and less relevant titles.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Among the acceptance speeches we have one that starts: "I would like to thank the Academy, Scott Bakula and Chuck D.  You know what you did.  Here's a song I wrote...", etc.  It is all very painful.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">There is almost no value to this document whatsoever, but it does present a nice fun fact about GPS.  The legible parts of the script are thus presented below.  The illegible parts appear to have been obscured by some caustic mixture of Mountain Dew, pizza sauce and tears.
-<i></i>
-<i><a name='more'></a>We descend to the bottom of the abandoned mineshaft recently converted to the headquarters of General Stanley K. Ripper.  He is currently engaged in a heated discussion with his science advisor, Dr. Vontavious Dre.  We join mid-sentence as a result of lazy writing...</i></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i>
-</i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">DR. DRE: ...shortage of scientists!  What's that?  Yeah, you could definitely call it a "chronic" shortage if you want.  But semantics aren't important right now.  The "G"-sector needs more funding.</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">GEN. RIPPER:  You are my most trusted science advisor, Dr. Dre, but you already have one staff scientist...a Dr. Snoop Dogg, I believe...?  How many scientists do we need doing relativity here?  This is the military!  We need Moonraker lasers and nuclear hand grenades.  So no more funding unless...  That is, unless you figured out the...</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">DR. DRE:  No sir, we still don't have a Stargate.   </span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">GEN. RIPPER:  Well then you are just wasting my time!  I want something useful.  Either something that goes boom or something that helps something that goes boom.  What I don't need is a theoretical money drain.</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">DR. DRE:  And how did you find your way to work today, sir?</span></i></span></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;"></span></i></span></span><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">GEN. RIPPER: What?  You know very well I ride my horse, Neigh-braham Lincoln.  He knows how to get here.</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">DR. DRE:  And how does Nifty 'Nabe know where to go...?</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">GEN RIPPER:  GPS, of course!</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">DR. DRE:  Bingo.  That's our department.  Without correcting for general relativistic effects (the specialty of the "G"-sector, I may add), GPS would be completely useless.  Let me show you.</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i><span class="Apple-style-span" style="font-style: normal;">
-</span></i></span></div></div></div></div><div style="font-family: Arial; font-size: 13px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: 13px;"><i>A large blackboard drops down from the ceiling and a slow steady beat, just barely audible, seems to come from all directions.  Dre writes the following equation on the board:</i></span></div></div></div></div>
-$$  ds^2 = -\left(1-\frac{R_s}{r} \right)c^2dt^2+ \left( 1  - \frac{R_s}{r} \right)^{-1} dr^2 + r^2 \left( d{\theta}^2 + {\sin\theta} {d\phi}^2 \right)$$
-
-<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">This equation gives the line element for a Schwarzschild metric.  The R_s in the equation is called the "Schwarzschild Radius" and is given by</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ R_s = \frac{2GM}{c^2} .$$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER:  Is that Karl Schwarzschild?  I remember reading a delightful biography of him somewhere...?  Anyway, what the heck is this "line element" thing...?</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  Good question.  Essentially what we get is the differential change in the space-time interval ( ds ) if we change all the coordinates by a very tiny little bit.  What is nice about this is that although coordinates are a tricky thing in general relativity and can change from one observer to another, the space-time interval is an invariant quantity.  That is, different observers will measure the same space-time interval between events even though they may measure different times and distances.</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER:  So this space-time interval is just a kind of space-time distance that different observers will agree on?</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  Right-o.  And this invariance allows us to compare different reference frames.  Eventually, we will use this invariance to get the frequencies observed by an observer on the surface of the earth and one traveling along with a satellite in orbit.  Since we will only be considering observers at fixed radius and fixed theta = 90 degrees (ie at the equator), we can simplify things a bit.  Since we will have a fixed radius and theta value we have that:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ dr = 0 $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ d\theta = 0 $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">and</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$\sin\theta = 1 $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Plugging these simplifications into our line element gives:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ ds^2 = -\left( 1 - \frac{R_s}{r} \right)c^2 dt^2 + r^2 d\phi^2 $$ </div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER: Neato Toledo!</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR DRE: Right, so now we divide out the -c^2 dt^2 term on the right hand side.  So we have:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) - \frac{r^2}{c^2} \frac{d\phi^2}{dt^2}  \right] $$</div></div>
-But this is just
-
-$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) - \frac{r^2}{c^2} {\left(\frac{d\phi}{dt} \right)}^2  \right] $$
-
-<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But what does that d phi / dt term look like?</div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER: Sure looks like an angular velocity to me.  But don't we need to be careful with these rates?</div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  Yep, that is an angular velocity term.  We need to be a little careful with these rates.  Essentially, in the coordinate system we have chosen the time is something like the time measured at r = infinity and thus the rate would also be measured from r = infinity.  Plugging in omega as our angular velocity, we now have: </div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">$$ ds^2 = -c^2 dt^2 \left[ \left( 1 - \frac{R_s}{r} \right) -\left( \frac{r {\omega}}{c} \right)^2 \right] $$
-<span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;">
-</span></span></span></span></span></span></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But we want to figure out the times on the GPS satellites, so we'll need some measure of how time ticks by as measured by the orbiting observer.  In the rest frame of the observer, we have that</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ ds^2 = -c^2 {d\tau}^2 $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">where the tau is the "proper time" of the observer.  It tells us the time that the observer measures on his clocks.  To find the frequency (in other words, how quickly the observer clock ticks by a second) we just have</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ f = \frac{1}{d\tau} $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">And now we have enough background to start talking about GPS! </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER:  Hooray!  Should I go get my horse...?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  I don't think that's necessary...?  Anyway, let's model our GPS system as a satellite in a 26,000 km orbit [1].  Meanwhile our earth reference frame will be an observer standing on the surface of the earth.  So let's write out our line element for each reference frame.  First the satellite frame:</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>As Dr. Dre works, the beat steadily gets louder.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;">
-</span></span></span></span></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"> $$ ds^2 = -c^2 {dt}^2 \left[ \left( 1 - \frac{R_s}{R_{sat}} \right) -{\left( \frac{\omega_{sat} R_{sat}}{c} \right)}^2 \right] $$
-
-</span></span></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So the frequency at which a satellite clock ticks is</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ f_{sat} = \frac{1}{dt} \left[ \left( 1 - \frac{R_s}{R_{sat}} \right) -{\left(\frac{\omega_{sat} R_{sat}}{c} \right)}^2 \right]}^{-1/2} $$
-
-and likewise the earth frame:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"><span class="Apple-style-span" style="font-family: 'Times New Roman';"><span class="Apple-style-span" style="font-size: medium;">
-</span></span></span></span></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="font-family: Arial; font-size: small;"><span class="Apple-style-span" style="font-size: 13px;"> $$ ds^2 = -c^2 {dt}^2 \left[ \left( 1 - \frac{R_s}{R_{earth}} \right) -{\left(\frac{\omega_{earth} R_{earth}}{c} \right)}^2 \right] $$
-
-</span></span></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So the frequency at which an earth clock ticks is </div></div></div><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ f_{earth} = \frac{1}{dt} \left[ \left( 1 - \frac{R_s}{R_{earth}} \right) -{\left( \frac{\omega_{earth} R_{earth}}{c} \right)}^2 \right]}^{-1/2} $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Taking the ratio of these frequencies tells us how quickly the satellite clocks tick relative to the earth clocks.  We get:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ \frac{f_{sat}}{f_{earth}} = {\left[ \frac{\left( 1 - \frac{R_s}{R_{earth}} \right) -{\left( \frac{\omega_{earth} R_{earth}}{c} \right)}^2 }{\left( 1 - \frac{R_s}{R_{sat}} \right) -{\left( \frac{\omega_{sat} R_{sat}}{c} \right)}^2 } \right]}^{1/2} $$</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">And we're done.  So what do we get?  Let's plug in some numbers:</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ r_{sat} = 26 \times 10^6 m $$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ R_{earth} = 6.3 \times 10^6 m$$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$\omega_{earth} = 7.3 \times 10^{-5} rad/s $$
-
-$$\omega_{sat}=\sqrt{\frac{GM}{{r_{sat}}^3}}=15 \times 10^{-5} rad/s $$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ c = 3 \times 10^8 m/s $$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">We can also find the Schwarzschild radius of the Earth to be</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ R_s = 8.9 mm $$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Now you still have that fancy calculator, right General?  Can you plug all this stuff in there and tell me what you get?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>General Ripper works diligently on the calculator for a few minutes, then shows the calculator to Dr. Dre.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  "01134"..?  No that can't be correct.  Did you plug in the values I ... ?</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>General, with a wry smile, turns the calculator upside down and shows Dr. Dre.</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  Ah, well "hello" to you to sir. 
-
-GEN. RIPPER:  And I've got another!  Now where's that eight key...?
-
-DR. DRE:  I guess I'll just do the math in my head...</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>The background beat, which had just reached a crescendo immediately drops out as Dre thinks</i>.  <i>Then comes right back in as he begins to speak again...</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Alright, I got that </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$\frac{f_{sat}}{f_{earth}} = 1 + 4.4 \times 10^{-10} $$</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">From this we see that the satellite clock ticks faster (i.e. at a higher frequency) than does the earth clock.  The difference is very very small.  For every second that ticks by on earth, we see that the difference in the earth and satellite clocks increases by 4.4 * 10^{-10} seconds.    </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER:  But we are talking about half a billionth of a second!  There's no way that can do much harm.</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE: Well remember, that's per second.  So over the course of a day (86,400 s), the satellite has picked up 38 microseconds.  But that corresponds to</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">$$ d = c \times t = ( 3 \times 10^8 m/s ) \times ( 38 \times 10^{-6} s ) = 11 km $$</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">So without correcting for general relativity, GPS systems would be off by 11 km per day!   </div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">GEN RIPPER: I am impressed!  Here's millions of dollars in funding!  Hooray!</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">DR. DRE:  Hooray!</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
-</div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>Dr. Dre and General Ripper jump up and give each other a mid-air high five.  We freeze-frame this scene and </i>"Don't You Forget About Me" <i>plays as the credits roll.</i></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>
-</i></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><i>THE END (?)</i>
-<i>
-</i>
-<i>
-</i>
-[1]  Thanks to Tom from <a href="http://blogs.scienceforums.net/swansont/">Swans on Tea</a> (one of my favorite physics blogs) for fixing a mistake for me.  I had initially done the calculation assuming the satellite was in a geosynchronous orbit (about 42,000 km) and got a time delay of 48 microseconds.  As it turns out, the GPS satellites are really at an orbit of about 26,000 km, which gives a time delay of 38 microseconds.  I have made the appropriate changes and the calculations now reflect this more accurate value.</div><div><i>
-</i></div></div></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div></div></div></div></div></div></div></div></div>
+The following is an unfinished manuscript found under heaps of rubble
+and pizza boxes here at Virtuosi headquarters. It appears to be some
+sort of screen play, though one would be hard-pressed to figure this out
+solely from the script. The true giveaway was the 100 page addendum (not
+published) full of potential titles and acceptance speeches. I dare not
+bore you with these vanity pages in their entirety, but just for
+completeness and posterity I include some samples.
+For possible titles we have: "Dr. Dre, OR: How I Learned to Stop
+Worrying and Love the Metric," "How to Teach Physics to your Dee Oh
+Double G (West Coast Edition)," "Bring Da Ruckus: ODEs by ODB" and
+"Flavor Flav's Flavor Physics...boooyeeeee!" among other even worse and
+less relevant titles.
+Among the acceptance speeches we have one that starts: "I would like to
+thank the Academy, Scott Bakula and Chuck D. You know what you did.
+Here's a song I wrote...", etc. It is all very painful.
+There is almost no value to this document whatsoever, but it does
+present a nice fun fact about GPS. The legible parts of the script are
+thus presented below. The illegible parts appear to have been obscured
+by some caustic mixture of Mountain Dew, pizza sauce and tears. ** *We
+descend to the bottom of the abandoned mineshaft recently converted to
+the headquarters of General Stanley K. Ripper. He is currently engaged
+in a heated discussion with his science advisor, Dr. Vontavious Dre. We
+join mid-sentence as a result of lazy writing...*
+**
+*DR. DRE: ...shortage of scientists! What's that? Yeah, you could
+definitely call it a "chronic" shortage if you want. But semantics
+aren't important right now. The "G"-sector needs more funding.*
+**
+*GEN. RIPPER: You are my most trusted science advisor, Dr. Dre, but you
+already have one staff scientist...a Dr. Snoop Dogg, I believe...? How
+many scientists do we need doing relativity here? This is the military!
+We need Moonraker lasers and nuclear hand grenades. So no more funding
+unless... That is, unless you figured out the...*
+**
+*DR. DRE: No sir, we still don't have a Stargate.*
+**
+*GEN. RIPPER: Well then you are just wasting my time! I want something
+useful. Either something that goes boom or something that helps
+something that goes boom. What I don't need is a theoretical money
+drain.*
+**
+*DR. DRE: And how did you find your way to work today, sir?*
+**
+***GEN. RIPPER: What? You know very well I ride my horse, Neigh-braham
+Lincoln. He knows how to get here.*
+**
+*DR. DRE: And how does Nifty 'Nabe know where to go...?*
+**
+*GEN RIPPER: GPS, of course!*
+**
+*DR. DRE: Bingo. That's our department. Without correcting for general
+relativistic effects (the specialty of the "G"-sector, I may add), GPS
+would be completely useless. Let me show you.*
+**
+*A large blackboard drops down from the ceiling and a slow steady beat,
+just barely audible, seems to come from all directions. Dre writes the
+following equation on the board:*
+$$ ds\^2 = -\\left(1-\\frac{R\_s}{r} \\right)c\^2dt\^2+ \\left( 1 -
+\\frac{R\_s}{r} \\right)\^{-1} dr\^2 + r\^2 \\left( d{\\theta}\^2 +
+{\\sin\\theta} {d\\phi}\^2 \\right)$$
+This equation gives the line element for a Schwarzschild metric. The
+R\_s in the equation is called the "Schwarzschild Radius" and is given
+by
+$$ R\_s = \\frac{2GM}{c\^2} .$$
+GEN RIPPER: Is that Karl Schwarzschild? I remember reading a delightful
+biography of him somewhere...? Anyway, what the heck is this "line
+element" thing...?
+DR. DRE: Good question. Essentially what we get is the differential
+change in the space-time interval ( ds ) if we change all the
+coordinates by a very tiny little bit. What is nice about this is that
+although coordinates are a tricky thing in general relativity and can
+change from one observer to another, the space-time interval is an
+invariant quantity. That is, different observers will measure the same
+space-time interval between events even though they may measure
+different times and distances.
+GEN RIPPER: So this space-time interval is just a kind of space-time
+distance that different observers will agree on?
+DR. DRE: Right-o. And this invariance allows us to compare different
+reference frames. Eventually, we will use this invariance to get the
+frequencies observed by an observer on the surface of the earth and one
+traveling along with a satellite in orbit. Since we will only be
+considering observers at fixed radius and fixed theta = 90 degrees (ie
+at the equator), we can simplify things a bit. Since we will have a
+fixed radius and theta value we have that:
+$$ dr = 0 $$
+$$ d\\theta = 0 $$
+and
+$$\\sin\\theta = 1 $$
+Plugging these simplifications into our line element gives:
+$$ ds\^2 = -\\left( 1 - \\frac{R\_s}{r} \\right)c\^2 dt\^2 + r\^2
+d\\phi\^2 $$
+GEN RIPPER: Neato Toledo!
+DR DRE: Right, so now we divide out the -c\^2 dt\^2 term on the right
+hand side. So we have:
+$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right) -
+\\frac{r\^2}{c\^2} \\frac{d\\phi\^2}{dt\^2} \\right] $$
+But this is just $$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 -
+\\frac{R\_s}{r} \\right) - \\frac{r\^2}{c\^2} {\\left(\\frac{d\\phi}{dt}
+\\right)}\^2 \\right] $$
+But what does that d phi / dt term look like?
+GEN RIPPER: Sure looks like an angular velocity to me. But don't we need
+to be careful with these rates?
+DR. DRE: Yep, that is an angular velocity term. We need to be a little
+careful with these rates. Essentially, in the coordinate system we have
+chosen the time is something like the time measured at r = infinity and
+thus the rate would also be measured from r = infinity. Plugging in
+omega as our angular velocity, we now have:
+$$ ds\^2 = -c\^2 dt\^2 \\left[ \\left( 1 - \\frac{R\_s}{r} \\right)
+-\\left( \\frac{r {\\omega}}{c} \\right)\^2 \\right] $$
+But we want to figure out the times on the GPS satellites, so we'll need
+some measure of how time ticks by as measured by the orbiting observer.
+In the rest frame of the observer, we have that
+$$ ds\^2 = -c\^2 {d\\tau}\^2 $$
+where the tau is the "proper time" of the observer. It tells us the time
+that the observer measures on his clocks. To find the frequency (in
+other words, how quickly the observer clock ticks by a second) we just
+have
+$$ f = \\frac{1}{d\\tau} $$
+And now we have enough background to start talking about GPS!
+GEN RIPPER: Hooray! Should I go get my horse...?
+DR. DRE: I don't think that's necessary...? Anyway, let's model our GPS
+system as a satellite in a 26,000 km orbit [1]. Meanwhile our earth
+reference frame will be an observer standing on the surface of the
+earth. So let's write out our line element for each reference frame.
+First the satellite frame:
+*As Dr. Dre works, the beat steadily gets louder.*
+$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right] $$
+So the frequency at which a satellite clock ticks is
+$$ f\_{sat} = \\frac{1}{dt} \\left[ \\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left(\\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2
+\\right]}\^{-1/2} $$ and likewise the earth frame:
+$$ ds\^2 = -c\^2 {dt}\^2 \\left[ \\left( 1 - \\frac{R\_s}{R\_{earth}}
+\\right) -{\\left(\\frac{\\omega\_{earth} R\_{earth}}{c} \\right)}\^2
+\\right] $$
+So the frequency at which an earth clock ticks is
+$$ f\_{earth} = \\frac{1}{dt} \\left[ \\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 \\right]}\^{-1/2} $$
+Taking the ratio of these frequencies tells us how quickly the satellite
+clocks tick relative to the earth clocks. We get:
+$$ \\frac{f\_{sat}}{f\_{earth}} = {\\left[ \\frac{\\left( 1 -
+\\frac{R\_s}{R\_{earth}} \\right) -{\\left( \\frac{\\omega\_{earth}
+R\_{earth}}{c} \\right)}\^2 }{\\left( 1 - \\frac{R\_s}{R\_{sat}}
+\\right) -{\\left( \\frac{\\omega\_{sat} R\_{sat}}{c} \\right)}\^2 }
+\\right]}\^{1/2} $$
+And we're done. So what do we get? Let's plug in some numbers:
+$$ r\_{sat} = 26 \\times 10\^6 m $$
+$$ R\_{earth} = 6.3 \\times 10\^6 m$$
+$$\\omega\_{earth} = 7.3 \\times 10\^{-5} rad/s $$
+$$\\omega\_{sat}=\\sqrt{\\frac{GM}{{r\_{sat}}\^3}}=15 \\times 10\^{-5}
+rad/s $$
+$$ c = 3 \\times 10\^8 m/s $$
+We can also find the Schwarzschild radius of the Earth to be
+$$ R\_s = 8.9 mm $$
+Now you still have that fancy calculator, right General? Can you plug
+all this stuff in there and tell me what you get?
+*General Ripper works diligently on the calculator for a few minutes,
+then shows the calculator to Dr. Dre.*
+**
+DR. DRE: "01134"..? No that can't be correct. Did you plug in the values
+I ... ?
+*General, with a wry smile, turns the calculator upside down and shows
+Dr. Dre.*
+**
+DR. DRE: Ah, well "hello" to you to sir. GEN. RIPPER: And I've got
+another! Now where's that eight key...? DR. DRE: I guess I'll just do
+the math in my head...
+*The background beat, which had just reached a crescendo immediately
+drops out as Dre thinks*. *Then comes right back in as he begins to
+speak again...*
+**
+Alright, I got that
+$$\\frac{f\_{sat}}{f\_{earth}} = 1 + 4.4 \\times 10\^{-10} $$
+From this we see that the satellite clock ticks faster (i.e. at a higher
+frequency) than does the earth clock. The difference is very very small.
+For every second that ticks by on earth, we see that the difference in
+the earth and satellite clocks increases by 4.4 \* 10\^{-10} seconds.
+GEN RIPPER: But we are talking about half a billionth of a second!
+There's no way that can do much harm.
+DR. DRE: Well remember, that's per second. So over the course of a day
+(86,400 s), the satellite has picked up 38 microseconds. But that
+corresponds to
+$$ d = c \\times t = ( 3 \\times 10\^8 m/s ) \\times ( 38 \\times
+10\^{-6} s ) = 11 km $$
+So without correcting for general relativity, GPS systems would be off
+by 11 km per day!
+GEN RIPPER: I am impressed! Here's millions of dollars in funding!
+Hooray!
+DR. DRE: Hooray!
+*Dr. Dre and General Ripper jump up and give each other a mid-air high
+five. We freeze-frame this scene and*"Don't You Forget About Me" *plays
+as the credits roll.*
+**
+*THE END (?)* ** ** [1] Thanks to Tom from [Swans on
+Tea](http://blogs.scienceforums.net/swansont/) (one of my favorite
+physics blogs) for fixing a mistake for me. I had initially done the
+calculation assuming the satellite was in a geosynchronous orbit (about
+42,000 km) and got a time delay of 48 microseconds. As it turns out, the
+GPS satellites are really at an orbit of about 26,000 km, which gives a
+time delay of 38 microseconds. I have made the appropriate changes and
+the calculations now reflect this more accurate value.
+**

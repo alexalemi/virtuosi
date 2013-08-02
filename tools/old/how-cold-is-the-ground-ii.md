@@ -1,0 +1,59 @@
+Title: How Cold is the Ground II
+Date: 2012-05-26 21:28:00
+Tags: 
+Category: old
+Slug: how-cold-is-the-ground-ii
+Author: Brian
+
+
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s1600/mainImage.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s200/mainImage.png" width="90" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Images <a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG">from </a><a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg">Wikipedia</a></td><td class="tr-caption" style="text-align: center;">
+</td><td class="tr-caption" style="text-align: center;">
+</td></tr></tbody></table>Last week (ok, it was a little more than a few days ago....) I used dimensional analysis to figure out how the ground's temperature changes with time. But although dimensional analysis can give us information about the length scales in the problem, it doesn't tell us what the solution looks like. From dimensional analysis, we don't even know what the solution does at large times and distances. (Although we can usually see the asymptotic behavior directly from the equation.) So let's go ahead and solve the the heat equation exactly:
+$$
+\frac {\partial T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)
+$$ 
+
+<a name='more'></a>
+
+Well, what type of solution do we want to this equation? We want the temperature at the Earth's surface <i>x=0</i> to change with the days or the seasons. So let's start out modeling this with a sinusoidal dependence -- we'll look for a solution of the form
+$$
+ T(x,t) = A(x)e^{i wt}
+$$ 
+for some function <i>A(x)</i>, then we can take the real part for our solution.
+
+Plugging this into Eq. (1) gives <i>A'' = iw/a * A</i>, or 
+
+$$
+A(x) = e^{ \pm \sqrt{w/2a } (1+i) x}
+$$
+Since we have a second-order ordinary differential equation for <i>A</i>, we have two possible solutions, which are like <i>exp(+x) </i>or <i>exp(-x)</i>. Which one do we choose? Well, we want the temperature very far away from the surface of the ground to be constant, so we need the solution that decays with distance, <i>A~exp(-x)</i>. Taking the real part of this solution, we find <a href="#footnote-1">[1]</a> 
+$$T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x ) e^{-\sqrt{w/2a}x} \quad (2)
+$$ 
+Well, what does this solution <i>say</i>?  As we expected from our scaling arguments last week, the distance scale depends on the <i>square root</i> of the time scale -- if we decrease our frequency by 4 (say, looking at  changes over a season vs over a month), the ground gets cooler only 2x  deeper. We also see that the temperature oscillation drops off quite  rapidly as we go deeper into the ground, and that there is a "lag" the  farther you go into the ground. In particular, we see that at distances deep into the ground, the temperature drops to its average value at the surface. You can see this all in the pretty plot below (generated with Python):
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s1600/SingleFrequency.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="301" src="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s400/SingleFrequency.png" width="400" /></a></div>Let's recap. To model the temperature of the ground, we looked for a solution to the heat equation which had a sinusoidally oscillating temperature at <i>x=0</i>, and decayed to 0 at large <i>x</i>. We found a solution such a solution, and it shows that the temperature decays rapidly as we go far into the ground. At this point, there are two questions that pop into mind: 1) Is the solution that we found <i>unique</i>? Or are there other possible solutions? 2) This is all well and good, but what if our days or seasons <i>aren't perfect sines</i>? Can we find a solution that describes this behavior?
+
+I'll give one (1) VirtuosiPoint to the first commenter who can prove to what extent the above solution is unique <a href="#footnote-2">[2]</a>. But how about the second point? Can we solve this for non-sinusoidal time variations? 
+
+Well, at this point most of the readers are rolling their eyes and shouting "Use a <a href="http://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> and move on." So I will. Briefly, it turns out that (more or less) <i>any</i> periodic function can be written as a sum of sines &amp; cosines. So we can just add a bunch of sines and cosines together and construct our final solution.
+
+So just for fun, here is a plot of the temperature of the ground in Ithaca (data from <a href="http://en.wikipedia.org/wiki/Ithaca,_New_York">Wikipedia</a>) over a year. (I used a discrete Fourier transform to compute the coefficients.)
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s1600/IthacaTemp.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="301" src="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s400/IthacaTemp.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The temperature (colorbar) is in degrees C, assuming <a href="http://thevirtuosi.blogspot.com/2012/05/how-cold-is-ground.html"><i>a=0.5 mm^2/s</i>. </a></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-hNPxXpFwZag/T8F30BJbujI/AAAAAAAAAAk/v6Y4pzilvao/s1600/IthacaTemp.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+</a></div>
+Looks pretty boring, but I swear that all the frequencies are in that plot. It just turns out that the seasons in Ithaca are pretty sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty constant 8 C.  
+
+While I was postponing writing this, I wondered what the temperature on Mercury's rocks would be. If we dig deep enough, can we find an area with habitable temperatures? Some <a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml">quick </a><a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29">Googlin</a>' shows that the daytime and nighttime temperatures on Mercury are ~550-700 K and ~110 K at the "equator." While I don't think that Mercury's temperature varies symmetrically, let's assume so for lack of better data.<a href="#footnote-3">[3]</a> Then we'd expect that deep into the surface, the temperature would be fairly constant in time, at the average of these two extremes. Plugging in the numbers (assuming <i>a~0.52 mm^2/s </i> and using a Mercurial solar day as 176 days), we get
+
+<div style="text-align: center;"><span style="font-size: small;"><i>T=94 </i>C, </span><span style="font-size: small;">at</span><span style="font-size: small;"> 2.75 meters into the surface. </span></div>
+
+
+<p id="footnote-1">[1] More precisely, since the heat equation is linear and real, if <i>T(x,t) </i>is a solution to the equation, then so are <i>1/2(T+T*)</i> or <i>1/2i(T-T*). </i> </p> 
+
+
+<p id="footnote-2">[2] Hint: It's not unique. For instance, here is another  solution that satisfies the constraints, with no internal heat sources  or sinks (I'll call it the "freshly buried" solution):
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s1600/buriedAlive.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="241" src="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s320/buriedAlive.png" width="320" /></a></div>
+Can  you prove that all the other solutions decay to the original solution?  Or is there a second or even a spectrum of steady state solutions? </p> 
+<p id="footnote-3">[3] If someone provides me with better data of the time variation of Mercury's surface at some specific latitude, I'll update with a full plot of the temperature as a function of depth and time.</p> 
+
+
+

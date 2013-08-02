@@ -1,0 +1,28 @@
+Title: Onsager's Tour de Force
+Date: 2010-04-15 20:22:00
+Tags: onsager, fun, tour de force
+Category: old
+Slug: onsager-s-tour-de-force
+Author: Alemi
+
+
+In 1943 in a <i>tour de force</i> of mathematical physics, Lars Onsager <a href="http://prola.aps.org/abstract/PR/v65/i3-4/p117_1">solved</a> the 2D <a href="http://en.wikipedia.org/wiki/Ising_model">Ising Model</a>.  
+<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_YOjDhtygcuA/S8esZ-lw1aI/AAAAAAAAAJw/2UTC_JAHg1Q/s1600/onsager.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_YOjDhtygcuA/S8esZ-lw1aI/AAAAAAAAAJw/2UTC_JAHg1Q/s320/onsager.jpg" /></a></div>
+
+His solution has proved crucial in furthering statistical mechanics, allowing theorists to check all of there approximation schemes against analytical results. 
+
+I call his effort a <i>tour de force</i> because it was a huge mathematical exercise, his solution spanning 33 pages.  I also call it a '<i>tour de force</i>' because I have seen it referenced as such in no less than 5 different sources, as well as numerous times in speech.  This got me wondering, just how many times is Onsager's solution called a <i>tour de force</i>...
+<a name='more'></a>
+
+So, first I started with a Google books search, and turned up <a href="http://www.google.com/search?q=%22tour%20de%20force%22%20onsager%20ising&amp;num=30&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;tbo=s&amp;tbs=bks:1&amp;ei=HaTHS_qSNYa0lQer-8jEAQ&amp;sa=X&amp;oi=tool&amp;resnum=0&amp;ct=tlink&amp;ved=0CDAQpwU4Hg">39 Books</a>, among the one's that Google has indexed, which surely represent only the tip of the iceburg.  The books search turns up some of the more popular statistical mechanics books including Kadanoff and Goldenfeld.  And I happen to know its also called a <i>tour de force</i> in Sethna's book and Cardy's.
+
+Interestingly, the earliest mention in the book search is <a href="http://books.google.com/books?ei=HaTHS_qSNYa0lQer-8jEAQ&amp;ct=result&amp;id=McHvAAAAMAAJ&amp;dq=%22tour+de+force%22+onsager+ising&amp;q=%22tour+de+force%22#search_anchor">Magnetism, Volume 2, Part 1 By George Tibor Rado, Harry Suhl</a>, from 1963, 19 years after Onsager's paper.
+
+Next I used Google Scholar to try and turn up some references in papers as well.  I got <a href="http://scholar.google.com/scholar?hl=en&amp;q=%22tour+de+force%22+onsager+ising&amp;btnG=Search&amp;as_sdt=20000000000&amp;as_ylo=&amp;as_vis=0">73 results</a>, the earliest of which I have access to is: <a href="http://adsabs.harvard.edu/abs/1973JSP.....8..265F">Field theory of the two-dimensional Ising model: Equivalence to the free particle one-dimensional Dirac equation, 
+Ferrell, Richard A.</a>
+
+In fact, making a histogram of the appearances, it looks like the term's usage is only increasing.  
+<div style="text-align: center;"><a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8epu8Hr4yI/AAAAAAAAAJo/SH2qQktvO-g/s1600/onsager.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="240" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8epu8Hr4yI/AAAAAAAAAJo/SH2qQktvO-g/s320/onsager.png" width="320" /></a></div>
+I'm not sure what's more impressive.  The fact that Onsager was able to solve the 2D Ising model, or the fact that his solution was so impressive that it has become almost necessary to refer to it as a <i>tour de force</i>.  
+
+If you feel like a challenge, we're still waiting on a solution to the 3D Ising model.  It appears to be a hard problem, in fact it looks as though its <a href="https://docs.google.com/viewer?url=http://www.siam.org/pdf/news/654.pdf">NP Complete</a>.  So get to work!  (Note: the last document doesn't refer to Onsager's solution by its proper name, instead calling it a <i>breakthrough</i>, tsk tsk)

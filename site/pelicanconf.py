@@ -3,14 +3,15 @@
 
 AUTHOR = u'The Virtuosi'
 SITENAME = u'The Physics Virtuosi'
-SITEURL = 'http://thephysicsvirtuosi.com'
+# SITEURL = 'http://thephysicsvirtuosi.com'
+SITEURL = 'http://localhost:8000'
 TIMEZONE = "America/New_York"
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE='fs'
 FALLBACK_ON_FS_DATE = True
 
-MD_EXTENSIONS = (['mathjax'])
+MD_EXTENSIONS = ['extra','mathjax']
 
 FEED_DOMAIN = SITEURL
 FEED_RSS = 'feeds/all.rss.xml'
@@ -19,10 +20,11 @@ FEED_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
 TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
-# GITHUB_URL = "http://github.com/alexalemi/virtuosi/"
-# GITHUB_POSITION = 'left'
+GITHUB_URL = "http://github.com/alexalemi/virtuosi/"
+GITHUB_POSITION = 'right'
 
 STATIC_PATHS = ["images","static",]
+PAGE_DIR = 'content'
 
 # Blogroll
 LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
@@ -41,17 +43,18 @@ DEFAULT_PAGINATION = 10
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
+ARTICLE_EXCLUDES = ('drafts', )
 
 TWITTER_USERNAME = 'thevirtuosi'
 GOOGLE_ANALYTICS = 'UA-15719155-6'
 DISQUS_SITENAME = 'thephysicsvirtuosi'
-GOOGLE_CUSTOM_SEARCH_SIDEBAR = '016118979984514975664:u9tdrwxiom8'
+# GOOGLE_CUSTOM_SEARCH_SIDEBAR = '016118979984514975664:u9tdrwxiom8'
 
 FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
 
 THEME = 'themes/justread'
+# THEME_STATIC_PATHS = ['static','css','less']
 
-ARTICLE_EXCLUDES = ('themes','README.md',)
 TYPOGRIFY = True
 
 TAG_CLOUD_STEPS = 4
@@ -59,8 +62,13 @@ TAG_CLOUD_MAX_ITEMS = 50
 
 SUMMARY_MAX_LENGTH = 150
 
-PLUGINS=['pelican.plugins.sitemap','pelican.plugins.gzip_cache',]
+PLUGIN_PATH = "pelican-plugins"
+PLUGINS=['sitemap','gzip_cache','summary','better_figures_and_images','latex']
 
+#plugin settings
+SUMMARY_END_MARKER = "<!-- more -->"
+SUMMARY_BEGIN_MARKER = "<!-- less -->"
+RESPONSIVE_FIGURES = True
 SITEMAP = {
         'format': 'xml',
         'priorities': {
