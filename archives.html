@@ -23,7 +23,37 @@
 	<link href="/" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi ATOM Feed" />
 		<link href="/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="The Physics Virtuosi RSS Feed" />
 	
-    </head>
+  <!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+        },
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+    });
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript"> -->
+<!--     MathJax.Hub.Config({ -->
+<!--         config: ["MMLorHTML.js"], -->
+<!--         jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"], -->
+<!--         TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } }, -->
+<!--         extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"], -->
+<!--         tex2jax: { --> 
+<!--             inlineMath: [ [\'$\',\'$\'] ], -->
+<!--             displayMath: [ [\'$$\',\'$$\'] ], -->
+<!--             processEscapes: true }, -->
+<!--         "HTML-CSS": { -->
+<!--             styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}} -->
+<!--         } -->
+<!--     }); -->
+<!-- </script> -->
+</head>
 	
 <body>		
 	<header class="clearfix" role="banner">
