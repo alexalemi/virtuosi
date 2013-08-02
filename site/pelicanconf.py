@@ -3,9 +3,7 @@
 
 AUTHOR = u'The Virtuosi'
 SITENAME = u'The Physics Virtuosi'
-SITEURL = 'http://thephysicsvirtuosi.com'
-## USE THIS FOR DEBUGGING ON LOCALHOST
-# SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 TIMEZONE = "America/New_York"
 
 DEFAULT_LANG = u'en'
