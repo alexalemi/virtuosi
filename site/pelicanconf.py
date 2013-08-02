@@ -64,7 +64,7 @@ TAG_CLOUD_MAX_ITEMS = 50
 SUMMARY_MAX_LENGTH = 150
 
 PLUGIN_PATH = "pelican-plugins"
-PLUGINS=['sitemap','gzip_cache','summary','latex']
+PLUGINS=['sitemap','gzip_cache','summary']
 
 #plugin settings
 SUMMARY_END_MARKER = "<!-- more -->"
