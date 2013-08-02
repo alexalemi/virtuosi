@@ -1,130 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.thermodynamics.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 04 May 2010 14:52:00 -0400</lastBuildDate><item><title>Letting Air Out of Tires II</title><link>/posts/letting-air-out-of-tires-ii.html</link><description>&lt;p&gt;In a &lt;a href="http://thevirtuosi.blogspot.com/2010/05/letting-air-out-of-tires.html"&gt;recent
-post&lt;/a&gt;
-I calculated how cold air coming out of bike tires should feel. However,
-at the end of the post, I did note that there are competing explanations
-for why the air cools. There&amp;#8217;s the approach I took, which is adiabatic
-cooling, but there&amp;#8217;s also something called the Joule-Thomson effect. The
-Joule-Thomson effect has the interesting property that helium being let
-out of a bike tire would actually be warmer, which suggests an immediate
-way to test which effect is dominant. We pressurize a bike tire with
-helium, and see if the valve gets cold or hot. This is exactly what I
-did. With the help of Mark and Vince, our local equipment gurus, I was
-able to pressurize a bike tire to 26 psi with helium. Using one of those
-little thermal measurers you can buy at radio shack, we measured the
-initial temperature of the valve as 80 F. We then released the helium,
-and measured the temperature of the valve as 73 F. The adiabatic
-approach is the winner! Our experiment confirms that the dominant effect
-of the cooling is the adiabatic cooling I talked about yesterday. The
-Joule-Thomson effect may be at play, but if so it takes a secondary role
-to the adiabatic cooling. Now, some of you may be saying: wait a second,
-you predicted the air would be -100 F! It doesn&amp;#8217;t feel that cold! Nor
-did your valve cool down to -100 F! To which I reply: Yes, I did predict
-very cold air. But you have to remember that it is mixing with a lot of
-room temperature air, so it won&amp;#8217;t feel as cold as I predicted. Nor will
-it transfer much heat to the valve (recall, we predicted this would be
-an adiabatic process, with absolutely no heat transfer, something that
-is obviously false). Also, I didn&amp;#8217;t have 60 psi of pressure. If we do
-the calculation, 26 psi only gives a temperature of 250K = - 10 F.
-Hopefully that answers your question. And now, dear reader, as I&amp;#8217;ve
-wanted to say for a while: Myth&amp;nbsp;Busted!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Tue, 04 May 2010 14:52:00 -0400</pubDate><guid>tag:,2010-05-04:posts/letting-air-out-of-tires-ii.html</guid><category>bike</category><category>tire</category><category>thermodynamics</category><category>gas</category><category>cold</category><category>experiment</category><category>busted</category></item><item><title>Letting Air Out of Tires</title><link>/posts/letting-air-out-of-tires.html</link><description>&lt;p&gt;Have you ever noticed how when you let air out of a bike tire (or, I
-suppose, a car tire) it feels rather cold? Today we&amp;#8217;re going to explore
-why that is, and just how cold it is. Many people consider the air
-escaping from a tire as a classic example of an adiabatic process. What
-is an adiabatic process? It is a process that happens so quickly there
-is no time for heat flow to occur. For our air in the bike tire this
-means we&amp;#8217;re letting it out of the tire so quickly that no energy can
-move into it from the surrounding air. This may not be exactly true,
-there may be a little energy flow, but there is little enough that we
-can ignore it. Given that, how do we talk about temperature change?
-Let&amp;#8217;s give a physical motivation first. Imagine a gas as a collection of
-hard spheres, like baseballs. Envision this bunch of baseballs in a box.
-Suppose you make the volume of the box smaller, you move the walls in.
-The baseballs will start to bounce around faster. Having trouble
-thinking of this? Think of a single baseball in a box. Imagine it hits a
-wall moving towards it. What happens? That&amp;#8217;s just like what happens when
-a baseball hits a baseball bat moving towards it, it goes flying. That
-is, it starts moving faster. The speed with which these gas particles
-are moving is what we measure as temperature. So shrinking our box
-increases the temperature. Likewise, expanding our box will decrease the
-temperature. The same principle holds here. Our gas is expanding from a
-small volume (the bike tire) into a larger volume (the surrounding
-world). Thus we expect the temperature to decrease.
-Got all that? Good. Now for some math. It turns out that using the ideal
-gas law, we can derive that for an (reversible) adiabatic process
-&lt;mathjax&gt;$$PV\^\\gamma=constant$$&lt;/mathjax&gt;
-where P is the pressure of the gas, V is the volume of the gas, and
-gamma is (for our purposes) just a number. The ideal gas law states that
-&lt;mathjax&gt;$$PV=NkT$$&lt;/mathjax&gt;
-Where N is the number of gas molecules we have, T is the temperature of
-the gas, and k is a constant. Since N doesn&amp;#8217;t change in the process
-we&amp;#8217;re considering, we can use this to rewrite the above equation, by
-substituting for V. This gives
-&lt;mathjax&gt;$$P\^{1-\\gamma}T\^{\\gamma}=constant$$&lt;/mathjax&gt;
-Where the constant is not the same as above.
-Because this is equal to a constant, we can say that our initial
-pressure and temperature are related to our final pressure and
-temperature by
-&lt;mathjax&gt;$$P\_i\^{1-\\gamma}T\_i\^{\\gamma}=P\_f\^{1-\\gamma}T\_f\^{\\gamma}$$&lt;/mathjax&gt;
-We can solve this for the final temperature giving
-&lt;mathjax&gt;$$T\_f=T\_i\\left(\\frac{P\_i}{P\_f}\\right)\^{\\tfrac{1-\\gamma}{\\gamma}}$$&lt;/mathjax&gt;
-Finally, we can plug in some numbers. Gamma is 7/5 for diatomic gases
-(which is most of air). If we assume the air is about room temperature,
-20 C, and the tire is at 60 psi, this gives (1 atmosphere of pressure is
-15 psi):
-&lt;mathjax&gt;$$T\_f=293K\\left(\\frac{60 psi}{15
-psi}\\right)\^{\\tfrac{1-7/5}{7/5}}=197K$$&lt;/mathjax&gt;
-Converting back from Kelvin to C, this is -76 C or -105 F. That&amp;#8217;s cold!
-&lt;strong&gt;For the Expert:&lt;/strong&gt;
-There is actually a debate as to whether or not adiabatic cooling is
-responsible for the chill of air upon being let out of a tire. The
-argument for it is fairly straightforward. The released air does work on
-the surrounding atmosphere as it leaves, lowering the energy of the gas.
-If this is the primary effect, then the change in temperature is given
-above. However, it is possible that we can consider this a free
-adiabatic expansion. In a free adiabatic expansion (like a gas expanding
-into a vacuum), there is no work done, because gas is not acting
-&amp;#8216;against&amp;#8217; anything.
-The other possibility is the &lt;a href="http://en.wikipedia.org/wiki/Joule%E2%80%93Thomson_effect"&gt;Joule-Thomson
-effect&lt;/a&gt;. I
-don&amp;#8217;t claim to understand this effect very thoroughly, but it is another
-mechanism for cooling when air is let out of a well insulated valve.
-I&amp;#8217;ve seen claims both ways as to which process is actually responsible
-for cooling.
-Fortunately, a simple experiment suggests itself. Helium heats up
-through the Joule-Thomson effect (when it starts abot \~50K). It will
-cool down through the above described adiabatic cooling. So, fill a bike
-tire with Helium gas, and let it out. See if the valve/gas feels hot or
-cold. This will determine the dominant effect. As an experimentalist,
-this &lt;a href="http://www.brightlywound.com/?comic=42"&gt;appeals greatly to me&lt;/a&gt;.
-But if any theorists out there have ideas, please speak&amp;nbsp;up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Mon, 03 May 2010 23:21:00 -0400</pubDate><guid>tag:,2010-05-03:posts/letting-air-out-of-tires.html</guid><category>bike</category><category>tire</category><category>thermodynamics</category><category>gas</category><category>cold</category><category>experiment</category></item><item><title>The Beer Diet</title><link>/posts/the-beer-diet.html</link><description>&lt;p&gt;I know it&amp;#8217;s been pretty quiet over here this week. The semester is
-winding down (a week of classes left), and that means that things have
-been kicked up into another gear. We&amp;#8217;ve got four or five ideas bouncing
-around at the moment, so hopefully we&amp;#8217;ll get some up soon. Today I&amp;#8217;d
-like to talk about the beer diet. A while back, there was a rumor going
-around that if you drank ice cold beer your body would burn more
-calories heating the beer than the beer contained. It turns out that
-this false, and I think the claim relied on a lack of knowledge that the
-American food Calorie is actually one thousand calories (note the
-difference in capitalization). Let&amp;#8217;s prove this to ourselves. Let us
-consider 12 fluid oz of beer. To any good approximation we can treat
-this as 12 oz of water. Let us assume that the beer starts at 0C and our
-body raises it to body temperature, 37C. This takes energy Q given by
-&lt;mathjax&gt;$$Q=mc\\Delta T$$&lt;/mathjax&gt; Where m is the mass of the beer, c the specific heat
-of water, and the last term the change in temperature. We convert out of
-the archaic units (thanks google!) to get 12 oz = .35 liters. The
-density of water is 1000kg/m\^3, which is 1kg/liter. This gives us the
-mass of the beer as .35 kg. The specific heat of water is 1 kcal/kg*C
-(note: kcal = kilocalorie = 1 Calorie, i.e. 1000 calories), so the
-energy it takes to change the temperature of our beer is
-&lt;mathjax&gt;$$Q=(.35kg)(1kcal/kg\*C)(37C-0C)$$&lt;/mathjax&gt; &lt;mathjax&gt;$$Q=13kcal$$&lt;/mathjax&gt; If memory serves, some
-beer company recently had ads toting how their light beer was &amp;#8216;under 100
-Calories&amp;#8217;. So, I imagine 100 kcal is a fairly good lower bound on the
-calories in a 12 oz beer. So you can&amp;#8217;t lose weight just by drinking
-beer. Sad, isn&amp;#8217;t it? Finally, we can see that if we didn&amp;#8217;t understand
-the distinction between Calorie and calorie, we might think that, since
-it took 1300 calories to heat up the beer, and beer only contains 100
-Calories, this would be a great way to lose weight! I leave it as a
-question for you, dear readers, as to how much ice water you&amp;#8217;d have to
-drink to have an effective ice water diet. If it does become the next
-fad diet, you heard about it here&amp;nbsp;first!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Fri, 30 Apr 2010 11:35:00 -0400</pubDate><guid>tag:,2010-04-30:posts/the-beer-diet.html</guid><category>diet</category><category>Calories</category><category>beer</category><category>thermodynamics</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.thermodynamics.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 04 May 2010 14:52:00 -0400</lastBuildDate><item><title>Letting Air Out of Tires II</title><link>/posts/letting-air-out-of-tires-ii.html</link><description>&lt;p&gt;In a &lt;a href="http://thevirtuosi.blogspot.com/2010/05/letting-air-out-of-tires.html"&gt;recent post&lt;/a&gt; I calculated how cold air coming out of bike tires should feel.  However, at the end of the post, I did note that there are competing explanations for why the air cools.  There&amp;#8217;s the approach I took, which is adiabatic cooling, but there&amp;#8217;s also something called the Joule-Thomson effect.  The Joule-Thomson effect has the interesting property that helium being let out of a bike tire would actually be warmer, which suggests an immediate way to test which effect is dominant.  We pressurize a bike tire with helium, and see if the valve gets cold or hot.  This is exactly what I&amp;nbsp;did.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;With the help of Mark and Vince, our local equipment gurus, I was able to pressurize a bike tire to 26 psi with helium.  Using one of those little thermal measurers you can buy at radio shack, we measured the initial temperature of the valve as 80 F.  We then released the helium, and measured the temperature of the valve as 73 F.  The adiabatic approach is the winner!  Our experiment confirms that the dominant effect of the cooling is the adiabatic cooling I talked about yesterday.  The Joule-Thomson effect may be at play, but if so it takes a secondary role to the adiabatic&amp;nbsp;cooling.&lt;/p&gt;
+&lt;p&gt;Now, some of you may be saying: wait a second, you predicted the air would be -100 F!  It doesn&amp;#8217;t feel that cold!  Nor did your valve cool down to -100 F!  To which I reply: Yes, I did predict very cold air.  But you have to remember that it is mixing with a lot of room temperature air, so it won&amp;#8217;t feel as cold as I predicted.  Nor will it transfer much heat to the valve (recall, we predicted this would be an adiabatic process, with absolutely no heat transfer, something that is obviously false).  Also, I didn&amp;#8217;t have 60 psi of pressure.  If we do the calculation, 26 psi only gives a temperature of 250K = - 10 F.  Hopefully that answers your&amp;nbsp;question.&lt;/p&gt;
+&lt;p&gt;And now, dear reader, as I&amp;#8217;ve wanted to say for a while: Myth&amp;nbsp;Busted!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Tue, 04 May 2010 14:52:00 -0400</pubDate><guid>tag:,2010-05-04:posts/letting-air-out-of-tires-ii.html</guid><category>bike</category><category>tire</category><category>thermodynamics</category><category>gas</category><category>cold</category><category>experiment</category><category>busted</category></item><item><title>Letting Air Out of Tires</title><link>/posts/letting-air-out-of-tires.html</link><description>&lt;p&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Have you ever noticed how when you let air out of a bike tire (or, I suppose, a car tire) it feels rather cold?  Today we&amp;#8217;re going to explore why that is, and just how cold it is.  Many people consider the air escaping from a tire as a classic example of an adiabatic process.  What is an adiabatic process?  It is a process that happens so quickly there is no time for heat flow to occur.  For our air in the bike tire this means we&amp;#8217;re letting it out of the tire so quickly that no energy can move into it from the surrounding&amp;nbsp;air.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
+&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;This may not be exactly true, there may be a little energy flow, but there is little enough that we can ignore it.  Given that, how do we talk about temperature change?  Let&amp;#8217;s give a physical motivation first.  Imagine a gas as a collection of hard spheres, like baseballs.  Envision this bunch of baseballs in a box.  Suppose you make the volume of the box smaller, you move the walls in.  The baseballs will start to bounce around faster.  Having trouble thinking of this?  Think of a single baseball in a box.  Imagine it hits a wall moving towards it.  What happens?  That&amp;#8217;s just like what happens when a baseball hits a baseball bat moving towards it, it goes flying.  That is, it starts moving faster.  The speed with which these gas particles are moving is what we measure as temperature.  So shrinking our box increases the temperature.  Likewise, expanding our box will decrease the temperature.  The same principle holds here.  Our gas is expanding from a small volume (the bike tire) into a larger volume (the surrounding world).  Thus we expect the temperature to decrease.&lt;/span&gt;
+&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Got all that?  Good.  Now for some math.  It turns out that using the ideal gas law, we can derive that for an (reversible) adiabatic process&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$PV^\gamma=constant$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;where P is the pressure of the gas, V is the volume of the gas, and gamma is (for our purposes) just a number.  The ideal gas law states that&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$PV=NkT$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Where N is the number of gas molecules we have, T is the temperature of the gas, and k is a constant.  Since N doesn&amp;#8217;t change in the process we&amp;#8217;re considering, we can use this to rewrite the above equation, by substituting for V.  This gives&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$P^{1-\gamma}T^{\gamma}=constant$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Where the constant is not the same as above.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Because this is equal to a constant, we can say that our initial pressure and temperature are related to our final pressure and temperature by&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$P_i^{1-\gamma}T_i^{\gamma}=P_f^{1-\gamma}T_f^{\gamma}$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;We can solve this for the final temperature giving&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$T_f=T_i\left(\frac{P_i}{P_f}\right)^{\tfrac{1-\gamma}{\gamma}}$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Finally, we can plug in some numbers.  Gamma is 7/5 for diatomic gases (which is most of air).  If we assume the air is about room temperature, 20 C, and the tire is at 60 psi, this gives (1 atmosphere of pressure is 15 psi):&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;mathjax&gt;$$T_f=293K\left(\frac{60 psi}{15 psi}\right)^{\tfrac{1-7/5}{7/5}}=197K$$&lt;/mathjax&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Converting back from Kelvin to C, this is -76 C or -105 F.  That&amp;#8217;s cold!&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;&lt;b&gt;For the Expert:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;There is actually a debate as to whether or not adiabatic cooling is responsible for the chill of air upon being let out of a tire.  The argument for it is fairly straightforward.  The released air does work on the surrounding atmosphere as it leaves, lowering the energy of the gas.  If this is the primary effect, then the change in temperature is given above.  However, it is possible that we can consider this a free adiabatic expansion.  In a free adiabatic expansion (like a gas expanding into a vacuum), there is no work done, because gas is not acting &amp;#8216;against&amp;#8217; anything.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;The other possibility is the &lt;a href="http://en.wikipedia.org/wiki/Joule%E2%80%93Thomson_effect"&gt;Joule-Thomson effect&lt;/a&gt;.  I don&amp;#8217;t claim to understand this effect very thoroughly, but it is another mechanism for cooling when air is let out of a well insulated valve.  I&amp;#8217;ve seen claims both ways as to which process is actually responsible for cooling.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"&gt;Fortunately, a simple experiment suggests itself.  Helium heats up through the Joule-Thomson effect (when it starts abot ~50K).  It will cool down through the above described adiabatic cooling.  So, fill a bike tire with Helium gas, and let it out.  See if the valve/gas feels hot or cold.  This will determine the dominant effect.  As an experimentalist, this &lt;a href="http://www.brightlywound.com/?comic=42"&gt;appeals greatly to me&lt;/a&gt;.  But if any theorists out there have ideas, please speak up.&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Mon, 03 May 2010 23:21:00 -0400</pubDate><guid>tag:,2010-05-03:posts/letting-air-out-of-tires.html</guid><category>bike</category><category>tire</category><category>thermodynamics</category><category>gas</category><category>cold</category><category>experiment</category></item><item><title>The Beer Diet</title><link>/posts/the-beer-diet.html</link><description>&lt;p&gt;I know it&amp;#8217;s been pretty quiet over here this week.  The semester is winding down (a week of classes left), and that means that things have been kicked up into another gear.  We&amp;#8217;ve got four or five ideas bouncing around at the moment, so hopefully we&amp;#8217;ll get some up soon.  Today I&amp;#8217;d like to talk about the beer diet.  A while back, there was a rumor going around that if you drank ice cold beer your body would burn more calories heating the beer than the beer contained.  It turns out that this false, and I think the claim relied on a lack of knowledge that the American food Calorie is actually one thousand calories (note the difference in capitalization).  Let&amp;#8217;s prove this to&amp;nbsp;ourselves.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;Let us consider 12 fluid oz of beer.  To any good approximation we can treat this as 12 oz of water.  Let us assume that the beer starts at 0C and our body raises it to body temperature, 37C.  This takes energy Q given by
+&lt;mathjax&gt;$$Q=mc\Delta T$$&lt;/mathjax&gt;
+Where m is the mass of the beer, c the specific heat of water, and the last term the change in temperature.  We convert out of the archaic units (thanks google!) to get 12 oz = .35 liters.  The density of water is 1000kg/m^3, which is 1kg/liter.  This gives us the mass of the beer as .35 kg.  The specific heat of water is 1 kcal/kg*C (note: kcal = kilocalorie = 1 Calorie, i.e. 1000 calories), so the energy it takes to change the temperature of our beer is
+&lt;mathjax&gt;$$Q=(.35kg)(1kcal/kg*C)(37C-0C)$$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$Q=13kcal$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;If memory serves, some beer company recently had ads toting how their light beer was &amp;#8216;under 100 Calories&amp;#8217;.  So, I imagine 100 kcal is a fairly good lower bound on the calories in a 12 oz beer.  So you can&amp;#8217;t lose weight just by drinking beer.  Sad, isn&amp;#8217;t it?  Finally, we can see that if we didn&amp;#8217;t understand the distinction between Calorie and calorie, we might think that, since it took 1300 calories to heat up the beer, and beer only contains 100 Calories, this would be a great way to lose&amp;nbsp;weight!&lt;/p&gt;
+&lt;p&gt;I leave it as a question for you, dear readers, as to how much ice water you&amp;#8217;d have to drink to have an effective ice water diet.  If it does become the next fad diet, you heard about it here&amp;nbsp;first!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Fri, 30 Apr 2010 11:35:00 -0400</pubDate><guid>tag:,2010-04-30:posts/the-beer-diet.html</guid><category>diet</category><category>Calories</category><category>beer</category><category>thermodynamics</category></item></channel></rss>

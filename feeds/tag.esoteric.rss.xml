@@ -1,121 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.esoteric.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 25 May 2010 09:04:00 -0400</lastBuildDate><item><title>Flying back</title><link>/posts/flying-back.html</link><description>&lt;p&gt;Those of us originating on the right side of the &lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=Atlantic+Ocean&amp;amp;sll=39.368279,-9.316406&amp;amp;sspn=57.758311,144.316406&amp;amp;dirflg=w&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Atlantic+Ocean&amp;amp;ll=37.857507,-22.675781&amp;amp;spn=62.051619,144.316406&amp;amp;z=3"&gt;atlantic
-ocean&lt;/a&gt;
-are familiar with a little quirk of international flights: the flights
-home are shorter. Specifically, going from Tel Aviv to New York takes
-about one hour longer than going the other way around. This is an
-oddity, and the very first explanation that comes to mind the rotation
-of the Earth. After all, our naive image of a plane going up in the air
-might be something a little like a rock being thrown up from a moving
-cart, and we would imagine the plane to pick up some relative speed by
-not rotating as fast as the Earth. Is this a factor in the plane&amp;#8217;s
-movement? This gives us a perfect chance to use the Earth Units we
-&lt;a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html"&gt;introduced&lt;/a&gt;
-a few weeks ago. Specifically I&amp;#8217;ll use the Earth meter (equal to the
-radius of the Earth, which I&amp;#8217;ll dub e-m) and Earth second (one day,
-e-s). First we want to figure out velocity of the airplane compared to
-the ground. When it is grounded, the plane and the Earth&amp;#8217;s surface both
-have an angular velocity of 2π 1/e-s; they do one revolution per day.
-This means the plane&amp;#8217;s linear velocity is 2π e-m/e-s, and its angular
-velocity once it&amp;#8217;s airborne is &lt;mathjax&gt;$$2 \\pi \\cdot \\frac{(1\\;
-\\rm{m\_\\oplus})}{(1\\; \\rm{m\_\\oplus}+A)}
-\\;\\rm{s\_\\oplus\^{-1}},$$&lt;/mathjax&gt; where A is the altitude. That&amp;#8217;s the one
-number I&amp;#8217;m going to pull out of thin air here; that being the thin air
-of the cabin where they always announce that we have attained a cruising
-altitude of 30,000 feet. In real people units, that&amp;#8217;s about 9,000
-meters, or 9 kilometers - round it up to 10. Going back to the Earth day
-&lt;a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html"&gt;post&lt;/a&gt;
-1 e-m is about 6380 km, so that the angular velocity of the airplane is
-about 0.9984 (2π) 1/e-s, and relative to the ground it is &lt;mathjax&gt;$$0.0016
-\\cdot 2 \\pi \\;\\rm{s\_\\oplus\^{-1}}$$&lt;/mathjax&gt; So, over a journey of length
-of about 0.5 e-s, the overall distance traveled due to this effect would
-come to about &lt;mathjax&gt;$$0.0008 \\cdot 2\\pi \\;\\rm{m\_\\oplus}.$$&lt;/mathjax&gt; Tel Aviv and
-New York are both in the mid-northern hemisphere and seven time zones
-apart, so a first-order estimate of the distance between them would be
-about &lt;mathjax&gt;$$\\frac{7}{24}\\cdot 2\\pi \\;\\rm{m\_\\oplus} \\approx
-0.29\\cdot 2\\pi \\;\\rm{m\_\\oplus}.$$&lt;/mathjax&gt; Overall, it looks like this
-effect is negligible. Indeed, anyone who gives the matter a second
-thought would notice that the planes should go faster when traveling
-westwards, as the Earth spins eastwards toward the rising sun. Anyone
-who looks even further into the matter finds that eastbound and
-westbound planes simply take different routes across the Atlantic,
-leaving us with a rather more mundane and less exciting explanation.
-Still, I won&amp;#8217;t complain if it makes my flight any shorter. Now, if
-you&amp;#8217;ll excuse me, I have some beaches to catch up&amp;nbsp;with.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Tue, 25 May 2010 09:04:00 -0400</pubDate><guid>tag:,2010-05-25:posts/flying-back.html</guid><category>units</category><category>flying</category><category>esoteric</category></item><item><title>Esoteric Physics I - The Hall Effect</title><link>/posts/esoteric-physics-i-the-hall-effect.html</link><description>&lt;p&gt;What we usually do here at the The Virtuosi is take an interesting
-problem, and work out the physical principles behind what we&amp;#8217;re seeing.
-Or pose a question and try to answer it. Now, I&amp;#8217;m a big fan of this kind
-of thing, which is why I&amp;#8217;ve done so much of it. But I worry that it
-might give a slightly skewed view of physics. Sure, physics explains
-things. That&amp;#8217;s why we do it. But not everything in physics is &lt;a href="http://thevirtuosi.blogspot.com/2010/04/laser-gun-recoil-follow-up.html"&gt;laser
-guns&lt;/a&gt;
-and &lt;a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-i.html"&gt;solar
-sails&lt;/a&gt;.
-There are a lot of interesting physics phenomena that the general public
-will never hear about, because they&amp;#8217;re just too, well, esoteric. What
-I&amp;#8217;m going to do is occasionally talk about such effects, and, for some
-of them, give you applications for these strange effects you might see
-on a day-to-day basis. Today I&amp;#8217;m going to examine the Hall effect. The
-Hall effect is simple, as these things go, once we understand the
-pieces. The first piece is that magnetic fields deflect moving
-electrically charged particles. I don&amp;#8217;t think I can give you a good
-simple reason for this, you&amp;#8217;re just going to have to trust me (for those
-interested, I&amp;#8217;d argue that the relativistic transformation of a magnetic
-field is an electric field, and that will certainly deflect an
-electrically charged particle). This is a piece of the Lorentz force.
-The next piece that we need to know is that opposite electrically
-charged particles attract. So a positively charged particle attracts a
-negatively charged particle. Knowing those two things we can detail the
-Hall effect.
-&lt;a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/S_nxJSw3bQI/AAAAAAAAABU/Mi2_jDtskus/s1600/Hall+effect+pos.JPG"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/S_nxJSw3bQI/AAAAAAAAABU/Mi2_jDtskus/s320/Hall+effect+pos.JPG" /&gt;&lt;/a&gt;
-Take the slab pictured above. We run an electric current through it.
-Conventionally we take current as moving positively charged particles.
-There is a magnetic field into the screen. This deflects the positive
-charges up the screen, as shown, with some upward force. Over some time,
-we will accumulate positive charges at the top. Because there is no net
-charge in our slab, this must leave a region of negative charge at the
-bottom. These regions of charge will attract, and cancel out the force
-from the magnetic field. This charge separation results in a voltage
-differential between the two sides of the slab, which is what we
-actually measure. The Hall effect has some nifty consequences
-physically. I mentioned that conventionally we take current to be
-positive particles moving. A microscopic picture of our conductors will
-tell us that, in general, electrons are what we consider to be flowing
-in an electric current. Now, it turns out that our magnetic field will
-deflect electrons moving opposite our current direction (negative
-current moving backwards is the same as positive current moving
-forwards) to the same side as our hypothetical positive particles got
-deflected to. This generates a charge differential with negative and
-positive charges on the opposite sides of the slab (shown below), which
-means the voltage is negative what we would have measured above! This
-means we expect to get a certain sign of the measured Hall voltage,
-which we can predict. This sign would correspond to negative particles
-(electrons) being the moving charge carriers in substances. It turns out
-that there are some substances (some semiconductors) where the sign of
-the Hall voltage is opposite what we expect from electrons. This means
-that in those substances the current is being carried by positive
-particles! I won&amp;#8217;t explain what that means here (I may address that in a
-later post), but I hope you can see why that would be fascinating. We
-expected to have electrons moving, and it turns out that something else
-is really doing the moving. The Hall effect is an experimental result
-that helped suggest a whole new way of thinking about conduction in
-materials.
-&lt;a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S_nxRTxhhoI/AAAAAAAAABc/AJGpkjd-iWU/s1600/Hall+effect+neg.JPG"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S_nxRTxhhoI/AAAAAAAAABc/AJGpkjd-iWU/s320/Hall+effect+neg.JPG" /&gt;&lt;/a&gt;
-Beyond being very interesting physics, there are some applications to
-this effect. It is an easy way to create a magnetic field sensor. Take a
-slab of material, run a current through it, and measure the voltage on
-the sides. Where do we use magnetic field sensors? Well, they sometimes
-show up as a way to tell if something is open or closed. Put a magnet in
-your lid, and a Hall effect sensor in the lip the lid rests on. When it
-is closed, you&amp;#8217;ll measure a voltage, and when it is open you won&amp;#8217;t. Now
-you can tell if it is open or closed. A little imagination, and you can
-see how this would be useful for all kinds of switches. Hit the switch,
-move your magnet, and change your voltage. According to Wikipedia, Hall
-effect switches are used in things as diverse as paintball guns and
-go-cart speed controls. They could also be used as a speed or
-acceleration measurement in a rotating system. Attach a magnet to the
-rotating object, put a sensor at a fixed location, and measure how the
-voltage in your sensor changes as the object sweeps past it. There are
-many more applications, but this is just to give you a taste of how this
-seemingly esoteric physics concept may show up in your everyday life.
-It&amp;#8217;s not just the interesting problems we often work on this blog,
-physics is everywhere. In many different&amp;nbsp;guises&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Sun, 23 May 2010 23:31:00 -0400</pubDate><guid>tag:,2010-05-23:posts/esoteric-physics-i-the-hall-effect.html</guid><category>magnetism</category><category>hall effect</category><category>current</category><category>esoteric</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.esoteric.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 25 May 2010 09:04:00 -0400</lastBuildDate><item><title>Flying back</title><link>/posts/flying-back.html</link><description>&lt;p&gt;Those of us originating on the right side of the &lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=Atlantic+Ocean&amp;amp;sll=39.368279,-9.316406&amp;amp;sspn=57.758311,144.316406&amp;amp;dirflg=w&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Atlantic+Ocean&amp;amp;ll=37.857507,-22.675781&amp;amp;spn=62.051619,144.316406&amp;amp;z=3"&gt;atlantic ocean&lt;/a&gt; are familiar with a little quirk of international flights: the flights home are shorter. Specifically, going from Tel Aviv to New York takes about one hour longer than going the other way&amp;nbsp;around.&lt;/p&gt;
+&lt;p&gt;This is an oddity, and the very first explanation that comes to mind the rotation of the Earth. After all, our naive image of a plane going up in the air might be something a little like a rock being thrown up from a moving cart, and we would imagine the plane to pick up some relative speed by not rotating as fast as the Earth. Is this a factor in the plane&amp;#8217;s&amp;nbsp;movement?&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
+This gives us a perfect chance to use the Earth Units we &lt;a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html"&gt;introduced&lt;/a&gt; a few weeks ago. Specifically I&amp;#8217;ll use the Earth meter (equal to the radius of the Earth, which I&amp;#8217;ll dub &lt;span style="font-style: italic;"&gt;e-m&lt;/span&gt;) and Earth second (one day, &lt;span style="font-style: italic;"&gt;e-s&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;First we want to figure out velocity of the airplane compared to the ground. When it is grounded, the plane and the Earth&amp;#8217;s surface both have an angular velocity of 2π 1/e-s; they do one revolution per day. This means the plane&amp;#8217;s linear velocity is 2π e-m/e-s, and its angular velocity once it&amp;#8217;s airborne is
+&lt;mathjax&gt;$$2 \pi \cdot \frac{(1\; \rm{m_\oplus})}{(1\; \rm{m_\oplus}+A)} \;\rm{s_\oplus^{-1}},$$&lt;/mathjax&gt;
+where A is the altitude. That&amp;#8217;s the one number I&amp;#8217;m going to pull out of thin air here; that being the thin air of the cabin where they always announce that we have attained a cruising altitude of 30,000 feet. In real people units, that&amp;#8217;s about 9,000 meters, or 9 kilometers - round it up to 10. Going back to the Earth day &lt;a href="http://thevirtuosi.blogspot.com/2010/04/earth-day-earth-units.html"&gt;post&lt;/a&gt; 1 e-m is about 6380 km, so that the angular velocity of the airplane is about 0.9984 (2π) 1/e-s, and relative to the ground it is
+&lt;mathjax&gt;$$0.0016 \cdot 2 \pi \;\rm{s_\oplus^{-1}}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So, over a journey of length of about 0.5 e-s, the overall distance traveled due to this effect would come to about
+&lt;mathjax&gt;$$0.0008 \cdot 2\pi \;\rm{m_\oplus}.$$&lt;/mathjax&gt;
+Tel Aviv and New York are both in the mid-northern hemisphere and seven time zones apart, so a first-order estimate of the distance between them would be about
+&lt;mathjax&gt;$$\frac{7}{24}\cdot 2\pi \;\rm{m_\oplus} \approx 0.29\cdot 2\pi \;\rm{m_\oplus}.$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Overall, it looks like this effect is negligible. Indeed, anyone who gives the matter a second thought would notice that the planes should go faster when traveling &lt;span style="font-style: italic;"&gt;westwards&lt;/span&gt;, as the Earth spins eastwards toward the rising sun.  Anyone who looks even further into the matter finds that  eastbound and westbound planes simply take different routes across the Atlantic, leaving us with a rather more mundane and less exciting&amp;nbsp;explanation.&lt;/p&gt;
+&lt;p&gt;Still, I won&amp;#8217;t complain if it makes my flight any shorter. Now, if you&amp;#8217;ll excuse me, I have some beaches to catch up&amp;nbsp;with.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Tue, 25 May 2010 09:04:00 -0400</pubDate><guid>tag:,2010-05-25:posts/flying-back.html</guid><category>units</category><category>flying</category><category>esoteric</category></item><item><title>Esoteric Physics I - The Hall Effect</title><link>/posts/esoteric-physics-i-the-hall-effect.html</link><description>&lt;p&gt;What we usually do here at the The Virtuosi is take an interesting problem, and work out the physical principles behind what we&amp;#8217;re seeing.  Or pose a question and try to answer it.  Now, I&amp;#8217;m a big fan of this kind of thing, which is why I&amp;#8217;ve done so much of it.  But I worry that it might give a slightly skewed view of physics.  Sure, physics explains things.  That&amp;#8217;s why we do it.  But not everything in physics is &lt;a href="http://thevirtuosi.blogspot.com/2010/04/laser-gun-recoil-follow-up.html"&gt;laser guns&lt;/a&gt; and &lt;a href="http://thevirtuosi.blogspot.com/2010/05/solar-sails-i.html"&gt;solar sails&lt;/a&gt;.  There are a lot of interesting physics phenomena that the general public will never hear about, because they&amp;#8217;re just too, well, esoteric.  What I&amp;#8217;m going to do is occasionally talk about such effects, and, for some of them, give you applications for these strange effects you might see on a day-to-day basis.  Today I&amp;#8217;m going to examine the Hall&amp;nbsp;effect.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;The Hall effect is simple, as these things go, once we understand the pieces.  The first piece is that magnetic fields deflect moving electrically charged particles.  I don&amp;#8217;t think I can give you a good simple reason for this, you&amp;#8217;re just going to have to trust me (for those interested, I&amp;#8217;d argue that the relativistic transformation of a magnetic field is an electric field, and that will certainly deflect an electrically charged particle).  This is a piece of the Lorentz force.  The next piece that we need to know is that opposite electrically charged particles attract.  So a positively charged particle attracts a negatively charged particle.  Knowing those two things we can detail the Hall effect.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/S_nxJSw3bQI/AAAAAAAAABU/Mi2_jDtskus/s1600/Hall+effect+pos.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/S_nxJSw3bQI/AAAAAAAAABU/Mi2_jDtskus/s320/Hall+effect+pos.JPG" /&gt;&lt;/a&gt;&lt;/div&gt;Take the slab pictured above.  We run an electric current through it.  Conventionally we take current as moving positively charged particles.  There is a magnetic field into the screen.  This deflects the positive charges up the screen, as shown, with some upward force.  Over some time, we will accumulate positive charges at the top.  Because there is no net charge in our slab, this must leave a region of negative charge at the bottom.  These regions of charge will attract, and cancel out the force from the magnetic field.  This charge separation results in a voltage differential between the two sides of the slab, which is what we actually&amp;nbsp;measure.&lt;/p&gt;
+&lt;p&gt;The Hall effect has some nifty consequences physically.  I mentioned that conventionally we take current to be positive particles moving.  A microscopic picture of our conductors will tell us that, in general, electrons are what we consider to be flowing in an electric current.  Now, it turns out that our magnetic field will deflect electrons moving opposite our current direction (negative current moving backwards is the same as positive current moving forwards) to the same side as our hypothetical positive particles got deflected to.  This generates a charge differential with negative and positive charges on the opposite sides of the slab (shown below), which means the voltage is negative what we would have measured above!  This means we expect to get a certain sign of the measured Hall voltage, which we can predict.  This sign would correspond to negative particles (electrons) being the moving charge carriers in substances.  It turns out that there are some substances (some semiconductors) where the sign of the Hall voltage is opposite what we expect from electrons.  This means that in those substances the current is being carried by positive particles!  I won&amp;#8217;t explain what that means here (I may address that in a later post), but I hope you can see why that would be fascinating.  We expected to have electrons moving, and it turns out that something else is really doing the moving.  The Hall effect is an experimental result that helped suggest a whole new way of thinking about conduction in materials.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S_nxRTxhhoI/AAAAAAAAABc/AJGpkjd-iWU/s1600/Hall+effect+neg.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S_nxRTxhhoI/AAAAAAAAABc/AJGpkjd-iWU/s320/Hall+effect+neg.JPG" /&gt;&lt;/a&gt;&lt;/div&gt;Beyond being very interesting physics, there are some applications to this effect.  It is an easy way to create a magnetic field sensor.  Take a slab of material, run a current through it, and measure the voltage on the sides.  Where do we use magnetic field sensors?  Well, they sometimes show up as a way to tell if something is open or closed.  Put a magnet in your lid, and a Hall effect sensor in the lip the lid rests on.  When it is closed, you&amp;#8217;ll measure a voltage, and when it is open you won&amp;#8217;t.  Now you can tell if it is open or closed.  A little imagination, and you can see how this would be useful for all kinds of switches.  Hit the switch, move your magnet, and change your voltage.  According to Wikipedia, Hall effect switches are used in things as diverse as paintball guns and go-cart speed controls.  They could also be used as a speed or acceleration measurement in a rotating system.  Attach a magnet to the rotating object, put a sensor at a fixed location, and measure how the voltage in your sensor changes as the object sweeps past it.  There are many more applications, but this is just to give you a taste of how this seemingly esoteric physics concept may show up in your everyday life.  It&amp;#8217;s not just the interesting problems we often work on this blog, physics is everywhere.  In many different&amp;nbsp;guises&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Sun, 23 May 2010 23:31:00 -0400</pubDate><guid>tag:,2010-05-23:posts/esoteric-physics-i-the-hall-effect.html</guid><category>magnetism</category><category>hall effect</category><category>current</category><category>esoteric</category></item></channel></rss>

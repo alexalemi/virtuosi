@@ -1,322 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.statistics.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 07 Feb 2011 12:37:00 -0500</lastBuildDate><item><title>Fun Fact: Lebron James Plays Basketball</title><link>/posts/fun-fact-lebron-james-plays-basketball.html</link><description>&lt;p&gt;&lt;a href="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg"&gt;&lt;img alt="image" src="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg" /&gt;&lt;/a&gt;
-Between building airplanes and playfully destroying everyone else in my
-apartment at Super Smash Brothers, my roommate Nathan brought up an
-interesting recent fact about LeBron James. He told me that LeBron
-scored 11 consecutive field goals (not in football&amp;#8230; you know who you
-are) in one game. Apparently this was a pretty special event, but how
-rare is it for a player of LeBron&amp;#8217;s caliber? &lt;span class="caps"&gt;TO&lt;/span&gt; &lt;span class="caps"&gt;THE&lt;/span&gt; &lt;span class="caps"&gt;SCIENCE&lt;/span&gt;-&lt;span class="caps"&gt;MOBILE&lt;/span&gt;! The
-Problem! &lt;a href="http://www.youtube.com/watch?v=kHltCzuwlOs&amp;amp;feature=related"&gt;&lt;span class="caps"&gt;ESPN&lt;/span&gt; 8, The
-Ocho&lt;/a&gt; tells
-me that LeBron&amp;#8217;s career field goal percentage is 47.5%. Considering the
-number of shots he takes, this is a pretty good number. To compare, the
-highest field goal percentage for a single season was Wilt Chamberlin
-with 72.7%, but eye witness testimony says he was around 10 feet tall
-and would wait in the offensive paint all game. Let&amp;#8217;s see how improbable
-this 11 in a row streak is. The generic question we are going to need to
-answer is as follows: If a basketball player takes N shots in one game,
-with a shooting probability of q, what is the probability that the
-player will make &lt;span class="caps"&gt;AT&lt;/span&gt; &lt;span class="caps"&gt;LEAST&lt;/span&gt; k shots in a row? We&amp;#8217;ll call this probability
-P(N) This turns out to be a tricky problem, but let&amp;#8217;s take a shot (awful
-pun&amp;#8230; I sincerely apologize). We can take care of simple cases: If N &amp;lt;
-k, then P(N) = 0. This tells us you can&amp;#8217;t have a streak of k if you
-don&amp;#8217;t take k shots! If N = k, P(N) = q\^k. This is the probability of
-getting k in a row if you take k shots, not too surprising yet. When N
-&gt; k, things get more interesting. Finding the Recurrence Relation Our
-goal is to write a relationship that has this form: P(N) = P(N-1) +
-blank What&amp;#8217;s blank? &amp;#8220;You don&amp;#8217;t worry about blank&amp;#8230; let me worry about
-blank!&amp;#8221; We&amp;#8217;ll need to look at the &lt;a href="http://en.wikipedia.org/wiki/Inclusion_exclusion_principle"&gt;inclusion-exclusion
-principle&lt;/a&gt;.
-This principle basically says that when we want to take all &lt;span class="caps"&gt;DISTINCT&lt;/span&gt;
-items in two sets, we need to take all of the elements in one set, and
-add all elements in the second set which are &lt;span class="caps"&gt;DISTINCT&lt;/span&gt; from the first.
-For example, if A = {0, 1, 2, 3, 4} and B = {3, 4, 5, 6, 7, 8}, then the
-union of A and B is {0, 1, 2, 3, 4, 5, 6, 7, 8}. Note that I did not
-include 3 and 4 twice. Let&amp;#8217;s take a look at the expertly designed (5
-minutes before class) google docs drawing below:
-&lt;a href="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;amp;w=1122&amp;amp;h=485"&gt;&lt;img alt="image" src="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;amp;w=1122&amp;amp;h=485" /&gt;&lt;/a&gt;
-The entire line represents N shots being taken. Each shot gets its own
-little column (not all columns shown). Using the inclusion-exclusion
-principle with the following sets will give us the answer. Choose A to
-be the first N-1 shots, and B to be all N shots. The principle tells us
-first to take everything from A, which is the probability P(N-1) shown
-in red. B will be the entire line, but the principle tells us to only
-add &lt;span class="caps"&gt;DISTINCT&lt;/span&gt; chances from B. Since the only difference in B is one more
-shot than A, the only distinct chance for a streak of k shots will be in
-the last k shots, shown in yellow as P(k). This is only distinct if the
-(k+1)th to last shot shown in green is missed! Otherwise a streak of k
-would have been included in A already. There is one more place for a
-streak to be already included in A. If there was a streak in the blue
-section, we must not include the B streak so we don&amp;#8217;t double count.
-Phew&amp;#8230; Let&amp;#8217;s put this all together by multiplying the probabilities of
-each of those events: P(N) = P(N-1) + (probability of yellow
-streak)*(probability we miss green)*(probability of no streak in blue)
-&lt;mathjax&gt;$$P(N) = P(N-1) + q\^k \\times (1-q) \\times (1 - P(N-k-1))$$&lt;/mathjax&gt; This gives
-us a recurrence relation for the probabilities! This is a general
-statement about the probability of at least one streak of length k out
-of N chances, given each has a probability q. Since I&amp;#8217;m just going to
-plug this into Python anyway to handle the data, this equation is good
-enough. The expectation value of an event is the probability multiplied
-by the number of chances. For example, the expectation value of getting
-heads with 2 tosses is just (1/2)*2 = 1. The plan is to compile a list
-of his field goal attempts in every game LeBron has played in the &lt;span class="caps"&gt;NBA&lt;/span&gt;,
-and sum the expectation values for each N. &lt;mathjax&gt;$$ \\mbox{Expectation} =
-\\sum\_i P(i) \\times \\mbox{(number of games with i shots)} $$&lt;/mathjax&gt; Using
-LeBron&amp;#8217;s actual field goal attempt data for each game (up to February 4,
-2011), we find that LeBron is expected number of games with at least a
-streak of 11 in a row is 1.128. This is a higher expectation value than
-the number of heads in 2 coin flips! So this is &lt;span class="caps"&gt;MORE&lt;/span&gt; expected than the
-number of heads we would see with 2 coin flips. This isn&amp;#8217;t very exciting
-given the number of shots he has taken and his shooting percentage. Data&amp;nbsp;Tables&lt;/p&gt;
-&lt;p&gt;Consecutive&amp;nbsp;Shots&lt;/p&gt;
-&lt;p&gt;Expected out of&amp;nbsp;667&lt;/p&gt;
-&lt;p&gt;Percent of&amp;nbsp;Games&lt;/p&gt;
-&lt;p&gt;1&lt;/p&gt;
-&lt;p&gt;666.9&lt;/p&gt;
-&lt;p&gt;99.99&lt;/p&gt;
-&lt;p&gt;2&lt;/p&gt;
-&lt;p&gt;643.6&lt;/p&gt;
-&lt;p&gt;96.49&lt;/p&gt;
-&lt;p&gt;3&lt;/p&gt;
-&lt;p&gt;489.0&lt;/p&gt;
-&lt;p&gt;73.32&lt;/p&gt;
-&lt;p&gt;4&lt;/p&gt;
-&lt;p&gt;281.8&lt;/p&gt;
-&lt;p&gt;42.25&lt;/p&gt;
-&lt;p&gt;5&lt;/p&gt;
-&lt;p&gt;140.0&lt;/p&gt;
-&lt;p&gt;21.00&lt;/p&gt;
-&lt;p&gt;6&lt;/p&gt;
-&lt;p&gt;65.23&lt;/p&gt;
-&lt;p&gt;9.780&lt;/p&gt;
-&lt;p&gt;7&lt;/p&gt;
-&lt;p&gt;29.55&lt;/p&gt;
-&lt;p&gt;4.431&lt;/p&gt;
-&lt;p&gt;8&lt;/p&gt;
-&lt;p&gt;13.20&lt;/p&gt;
-&lt;p&gt;1.980&lt;/p&gt;
-&lt;p&gt;9&lt;/p&gt;
-&lt;p&gt;5.854&lt;/p&gt;
-&lt;p&gt;0.8778&lt;/p&gt;
-&lt;p&gt;10&lt;/p&gt;
-&lt;p&gt;2.578&lt;/p&gt;
-&lt;p&gt;0.3866&lt;/p&gt;
-&lt;p&gt;11&lt;/p&gt;
-&lt;p&gt;1.128&lt;/p&gt;
-&lt;p&gt;0.1691&lt;/p&gt;
-&lt;p&gt;12&lt;/p&gt;
-&lt;p&gt;0.4898&lt;/p&gt;
-&lt;p&gt;0.07344&lt;/p&gt;
-&lt;p&gt;13&lt;/p&gt;
-&lt;p&gt;0.2110&lt;/p&gt;
-&lt;p&gt;0.03164&lt;/p&gt;
-&lt;p&gt;14&lt;/p&gt;
-&lt;p&gt;0.09011&lt;/p&gt;
-&lt;p&gt;0.01351&lt;/p&gt;
-&lt;p&gt;15&lt;/p&gt;
-&lt;p&gt;0.03807&lt;/p&gt;
-&lt;p&gt;0.005709&lt;/p&gt;
-&lt;p&gt;16&lt;/p&gt;
-&lt;p&gt;0.01592&lt;/p&gt;
-&lt;p&gt;0.002387&lt;/p&gt;
-&lt;p&gt;17&lt;/p&gt;
-&lt;p&gt;0.006560&lt;/p&gt;
-&lt;p&gt;0.0009839&lt;/p&gt;
-&lt;p&gt;18&lt;/p&gt;
-&lt;p&gt;0.002660&lt;/p&gt;
-&lt;p&gt;0.0003995&lt;/p&gt;
-&lt;p&gt;19&lt;/p&gt;
-&lt;p&gt;0.001067&lt;/p&gt;
-&lt;p&gt;0.0001600&lt;/p&gt;
-&lt;p&gt;20&lt;/p&gt;
-&lt;p&gt;0.0004180&lt;/p&gt;
-&lt;p&gt;6.267E-05&lt;/p&gt;
-&lt;p&gt;21&lt;/p&gt;
-&lt;p&gt;0.0001599&lt;/p&gt;
-&lt;p&gt;2.397E-05&lt;/p&gt;
-&lt;p&gt;22&lt;/p&gt;
-&lt;p&gt;6.03E-05&lt;/p&gt;
-&lt;p&gt;9.033E-06&lt;/p&gt;
-&lt;p&gt;23&lt;/p&gt;
-&lt;p&gt;2.22E-05&lt;/p&gt;
-&lt;p&gt;3.328E-06&lt;/p&gt;
-&lt;p&gt;24&lt;/p&gt;
-&lt;p&gt;8.06E-06&lt;/p&gt;
-&lt;p&gt;1.208E-06&lt;/p&gt;
-&lt;p&gt;25&lt;/p&gt;
-&lt;p&gt;2.84E-06&lt;/p&gt;
-&lt;p&gt;4.259E-07&lt;/p&gt;
-&lt;p&gt;26&lt;/p&gt;
-&lt;p&gt;9.98E-07&lt;/p&gt;
-&lt;p&gt;1.495E-07&lt;/p&gt;
-&lt;p&gt;27&lt;/p&gt;
-&lt;p&gt;3.51E-07&lt;/p&gt;
-&lt;p&gt;5.255E-08&lt;/p&gt;
-&lt;p&gt;28&lt;/p&gt;
-&lt;p&gt;1.20E-07&lt;/p&gt;
-&lt;p&gt;1.797E-08&lt;/p&gt;
-&lt;p&gt;29&lt;/p&gt;
-&lt;p&gt;3.92E-08&lt;/p&gt;
-&lt;p&gt;5.870E-09&lt;/p&gt;
-&lt;p&gt;30&lt;/p&gt;
-&lt;p&gt;1.15E-08&lt;/p&gt;
-&lt;p&gt;1.717E-09&lt;/p&gt;
-&lt;p&gt;31&lt;/p&gt;
-&lt;p&gt;3.45E-09&lt;/p&gt;
-&lt;p&gt;5.171E-10&lt;/p&gt;
-&lt;p&gt;32&lt;/p&gt;
-&lt;p&gt;1.06E-09&lt;/p&gt;
-&lt;p&gt;1.589E-10&lt;/p&gt;
-&lt;p&gt;33&lt;/p&gt;
-&lt;p&gt;3.37E-10&lt;/p&gt;
-&lt;p&gt;5.050E-11&lt;/p&gt;
-&lt;p&gt;34&lt;/p&gt;
-&lt;p&gt;7.23E-11&lt;/p&gt;
-&lt;p&gt;1.083E-11&lt;/p&gt;
-&lt;p&gt;35&lt;/p&gt;
-&lt;p&gt;1.70E-11&lt;/p&gt;
-&lt;p&gt;2.554E-12&lt;/p&gt;
-&lt;p&gt;36&lt;/p&gt;
-&lt;p&gt;2.30E-12&lt;/p&gt;
-&lt;p&gt;3.442E-13&lt;/p&gt;
-&lt;p&gt;The streak in question is highlighted in red, so it appears we expect it
-to happen 0.169% of his games. The Realization Of course I did all of
-this before looking up the &lt;a href="http://espn.go.com/nba/truehoop/miamiheat/notebook/_/page/heatreaction-110203/miami-heat-orlando-magic"&gt;actual
-article&lt;/a&gt;.
-I&amp;#8217;ll quote the blurb&amp;nbsp;here:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LeBron James set a personal record by making his first 11 field goals
-to start the game. His previous career-high was 10 straight field
-goals after tip-off, recorded against Chicago in 2008. After hitting
-his first 11 field goal attempts on Thursday night, James shot
-6-for-14&amp;nbsp;thereafter.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Well&amp;#8230; this calculation just got a bit easier. He has played 667 games,
-and the probability of getting 11 straight off the bat is q\^k =
-0.475\^11 = 0.0002777. Multiply this by 667 games to get the expected
-value of 0.185. Sure this is 6 times smaller than our previous
-calculation; however it&amp;#8217;s still not statistically that impressive. How
-would LeBron&amp;#8217;s expected number change if he shot the same percentage
-(72.7%) as Wilt for his record breaking season? The expected number of
-games with 11 in a row during the game would be 72.38 games!! So this is
-incredibly dependent on the shooting percentage. We have a factor of
-q\^k everywhere! Certainly it&amp;#8217;s dependent on the number of shots taken
-in a game too. The probability P(N) is a monotonically increasing
-function! Moral Given LeBron&amp;#8217;s shooting percentage and high number of
-shots per game, we expect that he would have at least 1 of these streak
-of 11 games so far in his career. This is certainly not to diminish this
-feat though. You still need to take 20 some shots a game in the &lt;span class="caps"&gt;NBA&lt;/span&gt; with
-nearly 50% shooting accuracy! We also have a nice formula to apply to
-more sports streaks! More to&amp;nbsp;come&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bohn</dc:creator><pubDate>Mon, 07 Feb 2011 12:37:00 -0500</pubDate><guid>tag:,2011-02-07:posts/fun-fact-lebron-james-plays-basketball.html</guid><category>statistics</category><category>basketball</category><category>Bohn</category><category>lebron james</category></item><item><title>Benford’s Law</title><link>/posts/benford-s-law.html</link><description>&lt;p&gt;Given a large set of data (bank accounts, river lengths, populations,
-etc) what is the probability that the first non-zero digit is a one? My
-first thought was that it would be 1/9. There are nine non-zero numbers
-to choose from and they should be uniformly distributed, right? Turns
-out that for almost all data sets naturally collected, this is not the
-case. In most cases, one occurs as the first digit most frequently, then
-two, then three, etc. That this seemingly paradoxical result should be
-the case is the essence of Benford&amp;#8217;s Law. Benford&amp;#8217;s Law [1] states that
-for most real-life lists of data, the first significant digit in the
-data is distributed in a specific way, namely: &lt;mathjax&gt;$$ P(d) =
-\\mbox{log}\_{10}\\left(1 + \\frac{1}{d}\\right) $$&lt;/mathjax&gt; The probabilities
-for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12,
-P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) =
-0.04. So we would expect the first significant digit to be a one almost
-30% of the time! But where would such a distribution come from? Well, it
-turns out that it comes from a distribution that is logarithmically
-uniform. We can map the interval [1,10) to the interval [0,1) by just
-taking a logarithm (base ten). These logarithms are then distributed
-uniformly on the interval [0,1). We can now get some grasp for why one
-should occur as the first digit more often in a uniform log
-distribution. In the figure below, I have plotted 1-10 on a logarithm
-scale. In a uniform log distribution, a given point is equally likely to
-be found anywhere on the line. So the probability of getting any
-particular first digit is just its length along that line. Clearly, the
-intervals get smaller as the numbers get bigger.
-&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png" /&gt;&lt;/a&gt;
-But we can quantify this, too. For a first digit on the interval [1,10),
-the probability that the first digit is &lt;em&gt;d&lt;/em&gt; is given by:
-&lt;mathjax&gt;$$ P(d) = \\frac{\\mbox{log}\_{10}(d+1)
--\\mbox{log}\_{10}(d)}{\\mbox{log}\_{10}(10) -\\mbox{log}\_{10}(1)} $$&lt;/mathjax&gt;
-which is just &lt;mathjax&gt;$$ P(d) =\\mbox{log}\_{10}(d+1) -\\mbox{log}\_{10}(d) $$&lt;/mathjax&gt;
-or &lt;mathjax&gt;$$ P(d) = \\mbox{log}\_{10}\\left( 1 + \\frac{1}{d} \\right) $$&lt;/mathjax&gt; which
-is the distribution of Benford&amp;#8217;s Law. So how well do different data sets
-follow Benford&amp;#8217;s Law? I decided to test it out on a couple easily
-available data sets: pulsar periods, &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations, &lt;span class="caps"&gt;U.S.&lt;/span&gt; county
-sizes and masses of plant genomes. Let&amp;#8217;s start first with pulsar
-periods. I took 1875 pulsar periods from the &lt;span class="caps"&gt;ATNF&lt;/span&gt; Pulsar Database (found
-&lt;a href="http://www.atnf.csiro.au/research/pulsar/psrcat/"&gt;here&lt;/a&gt;). The results
-are plotted below. The bars represent the fraction of numbers that start
-with a given digit and the red dots are the fractions predicted by
-Benford&amp;#8217;s Law.
-&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png" /&gt;&lt;/a&gt;
-From this plot, we see that the pulsar period data shows the general
-trend of Benford&amp;#8217;s Law, but not exactly. Now let&amp;#8217;s try &lt;span class="caps"&gt;U.S.&lt;/span&gt; city
-populations. This data was taken from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau from the
-2009 census and contains population data for over 81,000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; cities. We
-see from the chart below that there is a near exact correspondence
-between the observed first-digit distribution and Benford&amp;#8217;s Law.
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png" /&gt;&lt;/a&gt;
-Also from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau, I got the data for the land area of
-over 3000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; counties. These data also conform fairly well to
-Benford&amp;#8217;s Law.
-&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png" /&gt;&lt;/a&gt;
-Finally, I found
-&lt;a href="http://data.kew.org/cvalues/CvalServlet?querytype=1"&gt;this&lt;/a&gt; neat website
-that catalogs the genome masses of over 2000 different species of
-plants. I&amp;#8217;m not totally sure &lt;em&gt;why&lt;/em&gt; they do this, but it provided a ton
-of easy-to-access data, so why not?
-&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png" /&gt;&lt;/a&gt;
-Neat, so we see that wide variety of natural data follow Benford&amp;#8217;s Law
-(some more examples
-&lt;a href="http://mathworld.wolfram.com/BenfordsLaw.html"&gt;here&lt;/a&gt;). But why should
-they? Well, as far as I have gathered, there are a few reasons for this.
-The first two come from a paper published by Jeff Boyle [2]. Boyle makes
-(and proves) two claims about this distribution. First, he claims that
-&amp;#8220;the log distribution [Benford&amp;#8217;s Law] is the limiting distribution when
-random variables are repeatedly multiplied, divided, or raised to
-integer powers.&amp;#8221; Second, he claims that once such a distribution is
-achieved, it &amp;#8220;persists under all further multiplications, divisions and
-raising to integer powers.&amp;#8221; Since most data we accumulate (scientific,
-financial, gambling,&amp;#8230;) is the result of many mathematical operations,
-we would expect that they would tend towards the logarithmic
-distribution as described by Boyle. Another reason for why natural data
-should fit Benford&amp;#8217;s Law is given by Roger Pinkham (in &lt;a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf"&gt;this
-paper&lt;/a&gt;).
-Pinkham proves that&lt;em&gt;&amp;#8221;&lt;/em&gt;the only distribution for the first significant
-digits which is invariant under scale change of the underlying
-distribution&amp;#8221; is Benford&amp;#8217;s Law. This means that if we have some data,
-say the lengths of rivers in feet, it will have some distribution in the
-first digit. If we require that this distribution remain the same under
-unit conversion (to meters, yards, cubits, &amp;#8230; ), the only distribution
-that satisfies this distribution would be the uniform logarithmic
-distribution of Benford&amp;#8217;s Law. This &amp;#8220;scale-invariant&amp;#8221; rationale for this
-first digit law is probably the most important when it comes to data
-that we actually measure. If we find some distribution for the first
-digit, we would like it to be the same no matter what units we have
-used. But this should also be really easy to test. The county size data
-used above was given in square miles, so let&amp;#8217;s try some new units.
-First, we can try square kilometers.
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png" /&gt;&lt;/a&gt;
-Slightly different than square miles, but still a very good fit. Now how
-about square furlongs?
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png" /&gt;&lt;/a&gt;
-Neat! Seems like the distribution holds true regardless of the units we
-have used. So it seems like a wide range of data satisfy Benford&amp;#8217;s Law.
-But is this useful in any way or is it just a statistical curiosity?
-Well, it&amp;#8217;s mainly just a curiosity. But people have found some pretty
-neat applications. One field in which it has found use is &lt;a href="http://en.wikipedia.org/wiki/Forensic_accounting"&gt;Forensic
-Accounting&lt;/a&gt;, which I
-can only assume is a totally rad bunch of accountants that dramatically
-remove sunglasses as they go over tax returns. Since certain types of
-financial data (for example, see
-&lt;a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf"&gt;here&lt;/a&gt;)
-should follow Benford&amp;#8217;s Law, inconsistencies in financial returns can be
-found if the data is faked or manipulated in any way. Moral of the
-story: If you&amp;#8217;re going to cook the books, remember Benford! [1]
-Benford&amp;#8217;s Law, in the great tradition of &lt;a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy"&gt;Stigler&amp;#8217;s
-Law,&lt;/a&gt; was
-discovered by Simon Newcomb. [2] Paper can be found
-&lt;a href="http://www.jstor.org/pss/2975136"&gt;here&lt;/a&gt;. Unfortunately, this is only a
-preview as the full version isn&amp;#8217;t publicly available without a library
-license. The two points that I use from this paper are at least stated
-in this&amp;nbsp;preview.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Fri, 31 Dec 2010 14:42:00 -0500</pubDate><guid>tag:,2010-12-31:posts/benford-s-law.html</guid><category>statistics</category><category>benford</category><category>scott bakula</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.statistics.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 07 Feb 2011 12:37:00 -0500</lastBuildDate><item><title>Fun Fact: Lebron James Plays Basketball</title><link>/posts/fun-fact-lebron-james-plays-basketball.html</link><description>&lt;p&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg"&gt;&lt;img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 332px; height: 329px;" src="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg" alt="" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Between building airplanes and playfully destroying everyone else in my apartment at Super Smash Brothers, my roommate Nathan brought up an interesting recent fact about LeBron James.  He told me that LeBron scored 11 consecutive field goals (not in football&amp;#8230; you know who you are) in one game.  Apparently this was a pretty special event, but how rare is it for a player of LeBron&amp;#8217;s caliber?  &lt;span class="caps"&gt;TO&lt;/span&gt; &lt;span class="caps"&gt;THE&lt;/span&gt;&amp;nbsp;&lt;span class="caps"&gt;SCIENCE&lt;/span&gt;-&lt;span class="caps"&gt;MOBILE&lt;/span&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: bold;"&gt;The&amp;nbsp;Problem!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=kHltCzuwlOs&amp;amp;feature=related"&gt;&lt;span class="caps"&gt;ESPN&lt;/span&gt; 8, The Ocho&lt;/a&gt; tells me that LeBron&amp;#8217;s career field goal percentage is 47.5%.  Considering the number of shots he takes, this is a pretty good number.  To compare, the highest field goal percentage for a single season was Wilt Chamberlin with 72.7%, but eye witness testimony says he was around 10 feet tall and would wait in the offensive paint all&amp;nbsp;game.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s see how improbable this 11 in a row streak is.  The generic question we are going to need to answer is as&amp;nbsp;follows:&lt;/p&gt;
+&lt;p&gt;If a basketball player takes N shots in one game, with a shooting probability of q, what is the probability that the player will make &lt;span class="caps"&gt;AT&lt;/span&gt; &lt;span class="caps"&gt;LEAST&lt;/span&gt; k shots in a row?  We&amp;#8217;ll call this probability&amp;nbsp;P(N)&lt;/p&gt;
+&lt;p&gt;This turns out to be a tricky problem, but let&amp;#8217;s take a shot (awful pun&amp;#8230; I sincerely apologize).  We can take care of simple&amp;nbsp;cases:&lt;/p&gt;
+&lt;p&gt;If N &amp;lt; k,  then P(N) = 0.  This tells us you can&amp;#8217;t have a streak of k if you don&amp;#8217;t take k&amp;nbsp;shots!&lt;/p&gt;
+&lt;p&gt;If N = k, P(N) = q^k.  This is the probability of getting k in a row if you take k shots, not too surprising&amp;nbsp;yet.&lt;/p&gt;
+&lt;p&gt;When N &amp;gt; k, things get more&amp;nbsp;interesting.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: bold;"&gt;Finding the Recurrence&amp;nbsp;Relation&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Our goal is to write a relationship that has this&amp;nbsp;form:&lt;/p&gt;
+&lt;p&gt;P(N) = P(N-1) +&amp;nbsp;blank&lt;/p&gt;
+&lt;p&gt;What&amp;#8217;s blank?  &amp;#8220;You don&amp;#8217;t worry about blank&amp;#8230; let me worry about&amp;nbsp;blank!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;ll need to look at the &lt;a href="http://en.wikipedia.org/wiki/Inclusion_exclusion_principle"&gt;inclusion-exclusion principle&lt;/a&gt;.  This principle basically says that when we want to take all &lt;span class="caps"&gt;DISTINCT&lt;/span&gt; items in two sets, we need to take all of the elements in one set, and add all elements in the second set which are &lt;span class="caps"&gt;DISTINCT&lt;/span&gt; from the first.  For example, if A = {0, 1, 2, 3, 4} and B = {3, 4, 5, 6, 7, 8}, then the union of A and B is {0, 1, 2, 3, 4, 5, 6, 7, 8}.  Note that I did not include 3 and 4&amp;nbsp;twice.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s take a look at the expertly designed (5 minutes before class) google docs drawing&amp;nbsp;below:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;amp;w=1122&amp;amp;h=485" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" src="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;amp;w=1122&amp;amp;h=485" style="cursor: pointer; display: block; height: 211px; margin: 0px auto 10px; text-align: center; width: 490px;" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The entire line represents N shots being taken.  Each shot gets its own little column (not all columns shown).  Using the inclusion-exclusion principle with the following sets will give us the answer.  Choose A to be the first N-1 shots, and B to be all N&amp;nbsp;shots.&lt;/p&gt;
+&lt;p&gt;The principle tells us first to take everything from A, which is the probability P(N-1) shown in red.  B will be the entire line, but the principle tells us to only add &lt;span class="caps"&gt;DISTINCT&lt;/span&gt; chances from B.  Since the only difference in B is one more shot than A, the only distinct chance for a streak of k shots will be in the last k shots, shown in yellow as P(k).  This is only distinct if the (k+1)th to last shot shown in green is missed!  Otherwise a streak of k would have been included in A already. There is one more place for a streak to be already included in A.  If there was a streak in the blue section, we must not include the B streak so we don&amp;#8217;t double&amp;nbsp;count.&lt;/p&gt;
+&lt;p&gt;Phew&amp;#8230; Let&amp;#8217;s put this all together by multiplying the probabilities of each of those&amp;nbsp;events:&lt;/p&gt;
+&lt;p&gt;P(N) = P(N-1) + (probability of yellow streak)&lt;em&gt;(probability we miss green)&lt;/em&gt;(probability of no streak in&amp;nbsp;blue)&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$P(N) = P(N-1) + q^k \times (1-q) \times (1 - P(N-k-1))$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;This gives us a recurrence relation for the probabilities!   This is a general statement about the probability of at least one streak of length k out of N chances, given each has a probability q.  Since I&amp;#8217;m just going to plug this into Python anyway to handle the data, this equation is good&amp;nbsp;enough.&lt;/p&gt;
+&lt;p&gt;The expectation value of an event is the probability multiplied by the number of chances.  For example, the expectation value of getting heads with 2 tosses is just (1/2)*2 = 1.  The plan is to compile a list of his field goal attempts in every game LeBron has played in the &lt;span class="caps"&gt;NBA&lt;/span&gt;, and sum the expectation values for each&amp;nbsp;N.&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \mbox{Expectation} = \sum_i P(i) \times \mbox{(number of games with i shots)} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Using LeBron&amp;#8217;s actual field goal attempt data for each game (up to February 4, 2011), we find that LeBron is expected number of games with at least a streak of 11 in a row is 1.128.  This is a higher expectation value than the number of heads in 2 coin flips!   So this is &lt;span class="caps"&gt;MORE&lt;/span&gt; expected than the number of heads we would see with 2 coin flips.  This isn&amp;#8217;t very exciting given the number of shots he has taken and his shooting&amp;nbsp;percentage.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: bold;"&gt;Data&amp;nbsp;Tables&lt;/span&gt;&lt;/p&gt;
+&lt;style&gt;table {  }&lt;span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;"&gt;td&lt;/span&gt; { padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-size: 12pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: &lt;span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;"&gt;Calibri&lt;/span&gt;,sans-serif; vertical-align: bottom; border: medium none; white-space: &lt;span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;"&gt;nowrap&lt;/span&gt;; }.xl63 { text-align: center; }.xl64 { text-align: center; }.xl65 { color: red; text-align: center; }.xl66 { font-weight: 700; }&lt;/style&gt;
+
+&lt;table style="border-collapse: collapse; width: 294px;" border="0" cellpadding="0" cellspacing="0"&gt;&lt;colgroup&gt;&lt;col style="width: 95pt;" width="95"&gt;  &lt;col style="width: 105pt;" width="105"&gt;  &lt;col style="width: 94pt;" width="94"&gt;  &lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl66" style="height: 15pt; width: 95pt;" width="95" height="15"&gt;Consecutive   Shots&lt;/td&gt;   &lt;td class="xl66" style="width: 105pt;" width="105"&gt;Expected out of 667&lt;/td&gt;   &lt;td class="xl66" style="width: 94pt;" width="94"&gt;Percent of Games&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;1&lt;/td&gt;   &lt;td class="xl63"&gt;666.9&lt;/td&gt;   &lt;td class="xl63"&gt;99.99&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;2&lt;/td&gt;   &lt;td class="xl63"&gt;643.6&lt;/td&gt;   &lt;td class="xl63"&gt;96.49&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;3&lt;/td&gt;   &lt;td class="xl63"&gt;489.0&lt;/td&gt;   &lt;td class="xl63"&gt;73.32&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;4&lt;/td&gt;   &lt;td class="xl63"&gt;281.8&lt;/td&gt;   &lt;td class="xl63"&gt;42.25&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;5&lt;/td&gt;   &lt;td class="xl63"&gt;140.0&lt;/td&gt;   &lt;td class="xl63"&gt;21.00&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;6&lt;/td&gt;   &lt;td class="xl63"&gt;65.23&lt;/td&gt;   &lt;td class="xl63"&gt;9.780&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;7&lt;/td&gt;   &lt;td class="xl63"&gt;29.55&lt;/td&gt;   &lt;td class="xl63"&gt;4.431&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;8&lt;/td&gt;   &lt;td class="xl63"&gt;13.20&lt;/td&gt;   &lt;td class="xl63"&gt;1.980&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;9&lt;/td&gt;   &lt;td class="xl63"&gt;5.854&lt;/td&gt;   &lt;td class="xl63"&gt;0.8778&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;10&lt;/td&gt;   &lt;td class="xl63"&gt;2.578&lt;/td&gt;   &lt;td class="xl63"&gt;0.3866&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl65" style="height: 15pt;" height="15"&gt;11&lt;/td&gt;   &lt;td class="xl65"&gt;1.128&lt;/td&gt;   &lt;td class="xl65"&gt;0.1691&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;12&lt;/td&gt;   &lt;td class="xl63"&gt;0.4898&lt;/td&gt;   &lt;td class="xl63"&gt;0.07344&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;13&lt;/td&gt;   &lt;td class="xl63"&gt;0.2110&lt;/td&gt;   &lt;td class="xl63"&gt;0.03164&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;14&lt;/td&gt;   &lt;td class="xl63"&gt;0.09011&lt;/td&gt;   &lt;td class="xl63"&gt;0.01351&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;15&lt;/td&gt;   &lt;td class="xl63"&gt;0.03807&lt;/td&gt;   &lt;td class="xl63"&gt;0.005709&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;16&lt;/td&gt;   &lt;td class="xl63"&gt;0.01592&lt;/td&gt;   &lt;td class="xl63"&gt;0.002387&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;17&lt;/td&gt;   &lt;td class="xl63"&gt;0.006560&lt;/td&gt;   &lt;td class="xl63"&gt;0.0009839&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;18&lt;/td&gt;   &lt;td class="xl63"&gt;0.002660&lt;/td&gt;   &lt;td class="xl63"&gt;0.0003995&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;19&lt;/td&gt;   &lt;td class="xl63"&gt;0.001067&lt;/td&gt;   &lt;td class="xl63"&gt;0.0001600&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;20&lt;/td&gt;   &lt;td class="xl63"&gt;0.0004180&lt;/td&gt;   &lt;td class="xl63"&gt;6.267E-05&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;21&lt;/td&gt;   &lt;td class="xl63"&gt;0.0001599&lt;/td&gt;   &lt;td class="xl63"&gt;2.397E-05&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;22&lt;/td&gt;   &lt;td class="xl64"&gt;6.03E-05&lt;/td&gt;   &lt;td class="xl63"&gt;9.033E-06&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;23&lt;/td&gt;   &lt;td class="xl64"&gt;2.22E-05&lt;/td&gt;   &lt;td class="xl63"&gt;3.328E-06&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;24&lt;/td&gt;   &lt;td class="xl64"&gt;8.06E-06&lt;/td&gt;   &lt;td class="xl63"&gt;1.208E-06&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;25&lt;/td&gt;   &lt;td class="xl64"&gt;2.84E-06&lt;/td&gt;   &lt;td class="xl63"&gt;4.259E-07&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;26&lt;/td&gt;   &lt;td class="xl64"&gt;9.98E-07&lt;/td&gt;   &lt;td class="xl63"&gt;1.495E-07&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;27&lt;/td&gt;   &lt;td class="xl64"&gt;3.51E-07&lt;/td&gt;   &lt;td class="xl63"&gt;5.255E-08&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;28&lt;/td&gt;   &lt;td class="xl64"&gt;1.20E-07&lt;/td&gt;   &lt;td class="xl63"&gt;1.797E-08&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;29&lt;/td&gt;   &lt;td class="xl64"&gt;3.92E-08&lt;/td&gt;   &lt;td class="xl63"&gt;5.870E-09&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;30&lt;/td&gt;   &lt;td class="xl64"&gt;1.15E-08&lt;/td&gt;   &lt;td class="xl63"&gt;1.717E-09&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;31&lt;/td&gt;   &lt;td class="xl64"&gt;3.45E-09&lt;/td&gt;   &lt;td class="xl63"&gt;5.171E-10&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;32&lt;/td&gt;   &lt;td class="xl64"&gt;1.06E-09&lt;/td&gt;   &lt;td class="xl63"&gt;1.589E-10&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;33&lt;/td&gt;   &lt;td class="xl64"&gt;3.37E-10&lt;/td&gt;   &lt;td class="xl63"&gt;5.050E-11&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;34&lt;/td&gt;   &lt;td class="xl64"&gt;7.23E-11&lt;/td&gt;   &lt;td class="xl63"&gt;1.083E-11&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;35&lt;/td&gt;   &lt;td class="xl64"&gt;1.70E-11&lt;/td&gt;   &lt;td class="xl63"&gt;2.554E-12&lt;/td&gt;  &lt;/tr&gt;&lt;tr style="height: 15pt;" height="15"&gt;   &lt;td class="xl63" style="height: 15pt;" height="15"&gt;36&lt;/td&gt;   &lt;td class="xl64"&gt;2.30E-12&lt;/td&gt;   &lt;td class="xl63"&gt;3.442E-13&lt;/td&gt;  &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;The streak in question is highlighted in red, so it appears we expect it to happen 0.169% of his&amp;nbsp;games.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: bold;"&gt;The&amp;nbsp;Realization&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Of course I did all of this before looking up the &lt;a href="http://espn.go.com/nba/truehoop/miamiheat/notebook/_/page/heatreaction-110203/miami-heat-orlando-magic"&gt;actual article&lt;/a&gt;.   I&amp;#8217;ll quote the blurb&amp;nbsp;here:&lt;/p&gt;
+&lt;blockquote&gt;LeBron James set a personal record by making his first 11 field goals to  start the game. His previous career-high was 10 straight field goals  after tip-off, recorded against Chicago in 2008. After hitting his first  11 field goal attempts on Thursday night, James shot 6-for-14  thereafter. &lt;/blockquote&gt;
+
+&lt;p&gt;Well&amp;#8230; this calculation just got a bit easier.  He has played 667 games, and the probability of getting 11 straight off the bat is q^k = 0.475^11 = 0.0002777.  Multiply this by 667 games to get the expected value of 0.185.  Sure this is 6 times smaller than our previous calculation; however it&amp;#8217;s still not statistically &lt;span style="font-style: italic;"&gt;that&lt;/span&gt;&amp;nbsp;impressive.&lt;/p&gt;
+&lt;p&gt;How would LeBron&amp;#8217;s expected number change if he shot the same percentage (72.7%) as Wilt for his record breaking season?  The expected number of games with 11 in a row during the game would be 72.38 games!!  So this is incredibly dependent on the shooting percentage.  We have a factor of q^k everywhere!  Certainly it&amp;#8217;s dependent on the number of shots taken in a game too.  The probability P(N) is a monotonically increasing&amp;nbsp;function!&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: bold;"&gt;Moral&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Given LeBron&amp;#8217;s shooting percentage and high number of shots per game, we expect that he would have at least 1 of these streak of 11 games so far in his career.  This is certainly not to diminish this feat though.  You still need to take 20 some shots a game in the &lt;span class="caps"&gt;NBA&lt;/span&gt; with nearly 50% shooting&amp;nbsp;accuracy!&lt;/p&gt;
+&lt;p&gt;We also have a nice formula to apply to more sports streaks!  More to&amp;nbsp;come&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bohn</dc:creator><pubDate>Mon, 07 Feb 2011 12:37:00 -0500</pubDate><guid>tag:,2011-02-07:posts/fun-fact-lebron-james-plays-basketball.html</guid><category>statistics</category><category>basketball</category><category>Bohn</category><category>lebron james</category></item><item><title>Benford’s Law</title><link>/posts/benford-s-law.html</link><description>&lt;p&gt;Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one?  My first thought was that it would be 1/9.  There are nine non-zero numbers to choose from and they should be uniformly distributed,&amp;nbsp;right? &lt;/p&gt;
+&lt;p&gt;Turns out that for almost all data sets naturally collected, this is not the case.  In most cases, one occurs as the first digit most frequently, then two, then three, etc.  That this seemingly paradoxical result should be the case is the essence of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;Benford&amp;#8217;s Law [1] states that for most real-life lists of data, the first significant digit in the data is distributed in a specific way,&amp;nbsp;namely:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) = \mbox{log}_{10}\left(1 + \frac{1}{d}\right) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;The probabilities for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12, P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) = 0.04.  So we would expect the first significant digit to be a one almost 30% of the&amp;nbsp;time!&lt;/p&gt;
+&lt;p&gt;But where would such a distribution come from?  Well, it turns out that it comes from a distribution that is logarithmically uniform.  We can map the interval [1,10) to the interval [0,1) by just taking a logarithm (base ten).  These logarithms are then distributed uniformly on the interval&amp;nbsp;[0,1). &lt;/p&gt;
+&lt;p&gt;We can now get some grasp for why one should occur as the first digit more often in a uniform log distribution.  In the figure below, I have plotted 1-10 on a logarithm scale.  In a uniform log distribution, a given point is equally likely to be found anywhere on the line.  So the probability of getting any particular first digit is just its length along that line.  Clearly, the intervals get smaller as the numbers get bigger.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="separator" style="clear: both; text-align: left;"&gt;But we can quantify this, too.  For a first digit on the interval [1,10), the probability that the first digit is &lt;i&gt;d&lt;/i&gt; is given by:&lt;/div&gt;
+&lt;mathjax&gt;$$ P(d) = \frac{\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d)}{\mbox{log}_{10}(10) -\mbox{log}_{10}(1)} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;which is&amp;nbsp;just&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) =\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) = \mbox{log}_{10}\left( 1 + \frac{1}{d} \right) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;which is the distribution of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;So how well do different data sets follow Benford&amp;#8217;s Law?  I decided to test it out on a couple easily available data sets: pulsar periods, &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations, &lt;span class="caps"&gt;U.S.&lt;/span&gt; county sizes and masses of plant genomes.  Let&amp;#8217;s start first with pulsar periods.  I took 1875 pulsar periods from the &lt;span class="caps"&gt;ATNF&lt;/span&gt; Pulsar Database (found &lt;a href="http://www.atnf.csiro.au/research/pulsar/psrcat/"&gt;here&lt;/a&gt;).  The results are plotted below.  The bars represent the fraction of numbers that start with a given digit and the red dots are the fractions predicted by Benford&amp;#8217;s Law. 
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;From this plot, we see that the pulsar period data shows the general trend of Benford&amp;#8217;s Law, but not&amp;nbsp;exactly. &lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s try &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations.  This data was taken from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau from the 2009 census and contains population data for over 81,000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; cities.  We see from the chart below that there is a near exact correspondence between the observed first-digit distribution and Benford&amp;#8217;s Law.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Also from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau, I got the data for the land area of over 3000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; counties.  These data also conform fairly well to Benford&amp;#8217;s Law.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Finally, I found &lt;a href="http://data.kew.org/cvalues/CvalServlet?querytype=1"&gt;this&lt;/a&gt; neat website that catalogs the genome masses of over 2000 different species of plants.  I&amp;#8217;m not totally sure &lt;i&gt;why&lt;/i&gt; they do this, but it provided a ton of easy-to-access data, so why not?
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+Neat, so we see that wide variety of natural data follow Benford&amp;#8217;s Law (some more examples &lt;a href="http://mathworld.wolfram.com/BenfordsLaw.html"&gt;here&lt;/a&gt;).  But why should they?  Well, as far as I have gathered, there are a few reasons for this.  The first two come from a paper published by Jeff Boyle [2].  Boyle makes (and proves) two claims about this&amp;nbsp;distribution.&lt;/p&gt;
+&lt;p&gt;First, he claims that &amp;#8220;the log distribution [Benford&amp;#8217;s Law] is the limiting distribution when random variables are repeatedly multiplied, divided, or raised to integer powers.&amp;#8221;  Second, he claims that once such a distribution is achieved, it &amp;#8220;persists under all further multiplications, divisions and raising to integer&amp;nbsp;powers.&amp;#8221;     &lt;/p&gt;
+&lt;p&gt;Since most data we accumulate (scientific, financial, gambling,&amp;#8230;) is the result of many mathematical operations, we would expect that they would tend towards the logarithmic distribution as described by&amp;nbsp;Boyle. &lt;/p&gt;
+&lt;p&gt;Another reason for why natural data should fit Benford&amp;#8217;s Law is given by Roger Pinkham (in &lt;a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf"&gt;this paper&lt;/a&gt;).  Pinkham proves that&lt;i&gt; &amp;#8220;&lt;/i&gt;the only distribution for the first significant digits which is invariant under scale change of the underlying distribution&amp;#8221; is Benford&amp;#8217;s Law.  This means that if we have some data, say the lengths of rivers in feet, it will have some distribution in the first digit.  If we require that this distribution remain the same under unit conversion (to meters, yards, cubits, &amp;#8230; ), the only distribution that satisfies this distribution would be the uniform logarithmic distribution of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;This &amp;#8220;scale-invariant&amp;#8221; rationale for this first digit law is probably the most important when it comes to data that we actually measure.  If we find some distribution for the first digit, we would like it to be the same no matter what units we have used.  But this should also be really easy to test.  The county size data used above was given in square miles, so let&amp;#8217;s try some new units.  First, we can try square kilometers.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Slightly different than square miles, but still a very good fit.  Now how about square furlongs?
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Neat!  Seems like the distribution holds true regardless of the units we have&amp;nbsp;used. &lt;/p&gt;
+&lt;p&gt;So it seems like a wide range of data satisfy Benford&amp;#8217;s Law.  But is this useful in any way or is it just a statistical curiosity?  Well, it&amp;#8217;s mainly just a curiosity.  But people have found some pretty neat applications.  One field in which it has found use is &lt;a href="http://en.wikipedia.org/wiki/Forensic_accounting"&gt;Forensic Accounting&lt;/a&gt;, which I can only assume is a totally rad bunch of accountants that dramatically remove sunglasses as they go over tax returns.  Since certain types of financial data (for example, see &lt;a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf"&gt;here&lt;/a&gt;) should follow Benford&amp;#8217;s Law, inconsistencies in financial returns can be found if the data is faked or manipulated in any&amp;nbsp;way. &lt;/p&gt;
+&lt;p&gt;Moral of the story:  If you&amp;#8217;re going to cook the books, remember&amp;nbsp;Benford!&lt;/p&gt;
+&lt;p&gt;[1]  Benford&amp;#8217;s Law, in the great tradition of &lt;a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy"&gt;Stigler&amp;#8217;s Law,&lt;/a&gt; was discovered by Simon&amp;nbsp;Newcomb.&lt;/p&gt;
+&lt;p&gt;[2]  Paper can be found &lt;a href="http://www.jstor.org/pss/2975136"&gt;here&lt;/a&gt;.  Unfortunately, this is only a preview as the full version isn&amp;#8217;t publicly available without a library license.  The two points that I use from this paper are at least stated in this&amp;nbsp;preview.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Fri, 31 Dec 2010 14:42:00 -0500</pubDate><guid>tag:,2010-12-31:posts/benford-s-law.html</guid><category>statistics</category><category>benford</category><category>scott bakula</category></item></channel></rss>

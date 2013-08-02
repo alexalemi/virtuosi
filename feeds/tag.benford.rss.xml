@@ -1,114 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.benford.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 31 Dec 2010 14:42:00 -0500</lastBuildDate><item><title>Benford’s Law</title><link>/posts/benford-s-law.html</link><description>&lt;p&gt;Given a large set of data (bank accounts, river lengths, populations,
-etc) what is the probability that the first non-zero digit is a one? My
-first thought was that it would be 1/9. There are nine non-zero numbers
-to choose from and they should be uniformly distributed, right? Turns
-out that for almost all data sets naturally collected, this is not the
-case. In most cases, one occurs as the first digit most frequently, then
-two, then three, etc. That this seemingly paradoxical result should be
-the case is the essence of Benford&amp;#8217;s Law. Benford&amp;#8217;s Law [1] states that
-for most real-life lists of data, the first significant digit in the
-data is distributed in a specific way, namely: &lt;mathjax&gt;$$ P(d) =
-\\mbox{log}\_{10}\\left(1 + \\frac{1}{d}\\right) $$&lt;/mathjax&gt; The probabilities
-for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12,
-P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) =
-0.04. So we would expect the first significant digit to be a one almost
-30% of the time! But where would such a distribution come from? Well, it
-turns out that it comes from a distribution that is logarithmically
-uniform. We can map the interval [1,10) to the interval [0,1) by just
-taking a logarithm (base ten). These logarithms are then distributed
-uniformly on the interval [0,1). We can now get some grasp for why one
-should occur as the first digit more often in a uniform log
-distribution. In the figure below, I have plotted 1-10 on a logarithm
-scale. In a uniform log distribution, a given point is equally likely to
-be found anywhere on the line. So the probability of getting any
-particular first digit is just its length along that line. Clearly, the
-intervals get smaller as the numbers get bigger.
-&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png" /&gt;&lt;/a&gt;
-But we can quantify this, too. For a first digit on the interval [1,10),
-the probability that the first digit is &lt;em&gt;d&lt;/em&gt; is given by:
-&lt;mathjax&gt;$$ P(d) = \\frac{\\mbox{log}\_{10}(d+1)
--\\mbox{log}\_{10}(d)}{\\mbox{log}\_{10}(10) -\\mbox{log}\_{10}(1)} $$&lt;/mathjax&gt;
-which is just &lt;mathjax&gt;$$ P(d) =\\mbox{log}\_{10}(d+1) -\\mbox{log}\_{10}(d) $$&lt;/mathjax&gt;
-or &lt;mathjax&gt;$$ P(d) = \\mbox{log}\_{10}\\left( 1 + \\frac{1}{d} \\right) $$&lt;/mathjax&gt; which
-is the distribution of Benford&amp;#8217;s Law. So how well do different data sets
-follow Benford&amp;#8217;s Law? I decided to test it out on a couple easily
-available data sets: pulsar periods, &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations, &lt;span class="caps"&gt;U.S.&lt;/span&gt; county
-sizes and masses of plant genomes. Let&amp;#8217;s start first with pulsar
-periods. I took 1875 pulsar periods from the &lt;span class="caps"&gt;ATNF&lt;/span&gt; Pulsar Database (found
-&lt;a href="http://www.atnf.csiro.au/research/pulsar/psrcat/"&gt;here&lt;/a&gt;). The results
-are plotted below. The bars represent the fraction of numbers that start
-with a given digit and the red dots are the fractions predicted by
-Benford&amp;#8217;s Law.
-&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png" /&gt;&lt;/a&gt;
-From this plot, we see that the pulsar period data shows the general
-trend of Benford&amp;#8217;s Law, but not exactly. Now let&amp;#8217;s try &lt;span class="caps"&gt;U.S.&lt;/span&gt; city
-populations. This data was taken from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau from the
-2009 census and contains population data for over 81,000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; cities. We
-see from the chart below that there is a near exact correspondence
-between the observed first-digit distribution and Benford&amp;#8217;s Law.
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png" /&gt;&lt;/a&gt;
-Also from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau, I got the data for the land area of
-over 3000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; counties. These data also conform fairly well to
-Benford&amp;#8217;s Law.
-&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png" /&gt;&lt;/a&gt;
-Finally, I found
-&lt;a href="http://data.kew.org/cvalues/CvalServlet?querytype=1"&gt;this&lt;/a&gt; neat website
-that catalogs the genome masses of over 2000 different species of
-plants. I&amp;#8217;m not totally sure &lt;em&gt;why&lt;/em&gt; they do this, but it provided a ton
-of easy-to-access data, so why not?
-&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png" /&gt;&lt;/a&gt;
-Neat, so we see that wide variety of natural data follow Benford&amp;#8217;s Law
-(some more examples
-&lt;a href="http://mathworld.wolfram.com/BenfordsLaw.html"&gt;here&lt;/a&gt;). But why should
-they? Well, as far as I have gathered, there are a few reasons for this.
-The first two come from a paper published by Jeff Boyle [2]. Boyle makes
-(and proves) two claims about this distribution. First, he claims that
-&amp;#8220;the log distribution [Benford&amp;#8217;s Law] is the limiting distribution when
-random variables are repeatedly multiplied, divided, or raised to
-integer powers.&amp;#8221; Second, he claims that once such a distribution is
-achieved, it &amp;#8220;persists under all further multiplications, divisions and
-raising to integer powers.&amp;#8221; Since most data we accumulate (scientific,
-financial, gambling,&amp;#8230;) is the result of many mathematical operations,
-we would expect that they would tend towards the logarithmic
-distribution as described by Boyle. Another reason for why natural data
-should fit Benford&amp;#8217;s Law is given by Roger Pinkham (in &lt;a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf"&gt;this
-paper&lt;/a&gt;).
-Pinkham proves that&lt;em&gt;&amp;#8221;&lt;/em&gt;the only distribution for the first significant
-digits which is invariant under scale change of the underlying
-distribution&amp;#8221; is Benford&amp;#8217;s Law. This means that if we have some data,
-say the lengths of rivers in feet, it will have some distribution in the
-first digit. If we require that this distribution remain the same under
-unit conversion (to meters, yards, cubits, &amp;#8230; ), the only distribution
-that satisfies this distribution would be the uniform logarithmic
-distribution of Benford&amp;#8217;s Law. This &amp;#8220;scale-invariant&amp;#8221; rationale for this
-first digit law is probably the most important when it comes to data
-that we actually measure. If we find some distribution for the first
-digit, we would like it to be the same no matter what units we have
-used. But this should also be really easy to test. The county size data
-used above was given in square miles, so let&amp;#8217;s try some new units.
-First, we can try square kilometers.
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png" /&gt;&lt;/a&gt;
-Slightly different than square miles, but still a very good fit. Now how
-about square furlongs?
-&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png" /&gt;&lt;/a&gt;
-Neat! Seems like the distribution holds true regardless of the units we
-have used. So it seems like a wide range of data satisfy Benford&amp;#8217;s Law.
-But is this useful in any way or is it just a statistical curiosity?
-Well, it&amp;#8217;s mainly just a curiosity. But people have found some pretty
-neat applications. One field in which it has found use is &lt;a href="http://en.wikipedia.org/wiki/Forensic_accounting"&gt;Forensic
-Accounting&lt;/a&gt;, which I
-can only assume is a totally rad bunch of accountants that dramatically
-remove sunglasses as they go over tax returns. Since certain types of
-financial data (for example, see
-&lt;a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf"&gt;here&lt;/a&gt;)
-should follow Benford&amp;#8217;s Law, inconsistencies in financial returns can be
-found if the data is faked or manipulated in any way. Moral of the
-story: If you&amp;#8217;re going to cook the books, remember Benford! [1]
-Benford&amp;#8217;s Law, in the great tradition of &lt;a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy"&gt;Stigler&amp;#8217;s
-Law,&lt;/a&gt; was
-discovered by Simon Newcomb. [2] Paper can be found
-&lt;a href="http://www.jstor.org/pss/2975136"&gt;here&lt;/a&gt;. Unfortunately, this is only a
-preview as the full version isn&amp;#8217;t publicly available without a library
-license. The two points that I use from this paper are at least stated
-in this&amp;nbsp;preview.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Fri, 31 Dec 2010 14:42:00 -0500</pubDate><guid>tag:,2010-12-31:posts/benford-s-law.html</guid><category>statistics</category><category>benford</category><category>scott bakula</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.benford.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 31 Dec 2010 14:42:00 -0500</lastBuildDate><item><title>Benford’s Law</title><link>/posts/benford-s-law.html</link><description>&lt;p&gt;Given a large set of data (bank accounts, river lengths, populations, etc) what is the probability that the first non-zero digit is a one?  My first thought was that it would be 1/9.  There are nine non-zero numbers to choose from and they should be uniformly distributed,&amp;nbsp;right? &lt;/p&gt;
+&lt;p&gt;Turns out that for almost all data sets naturally collected, this is not the case.  In most cases, one occurs as the first digit most frequently, then two, then three, etc.  That this seemingly paradoxical result should be the case is the essence of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;Benford&amp;#8217;s Law [1] states that for most real-life lists of data, the first significant digit in the data is distributed in a specific way,&amp;nbsp;namely:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) = \mbox{log}_{10}\left(1 + \frac{1}{d}\right) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;The probabilities for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12, P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) = 0.04.  So we would expect the first significant digit to be a one almost 30% of the&amp;nbsp;time!&lt;/p&gt;
+&lt;p&gt;But where would such a distribution come from?  Well, it turns out that it comes from a distribution that is logarithmically uniform.  We can map the interval [1,10) to the interval [0,1) by just taking a logarithm (base ten).  These logarithms are then distributed uniformly on the interval&amp;nbsp;[0,1). &lt;/p&gt;
+&lt;p&gt;We can now get some grasp for why one should occur as the first digit more often in a uniform log distribution.  In the figure below, I have plotted 1-10 on a logarithm scale.  In a uniform log distribution, a given point is equally likely to be found anywhere on the line.  So the probability of getting any particular first digit is just its length along that line.  Clearly, the intervals get smaller as the numbers get bigger.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="separator" style="clear: both; text-align: left;"&gt;But we can quantify this, too.  For a first digit on the interval [1,10), the probability that the first digit is &lt;i&gt;d&lt;/i&gt; is given by:&lt;/div&gt;
+&lt;mathjax&gt;$$ P(d) = \frac{\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d)}{\mbox{log}_{10}(10) -\mbox{log}_{10}(1)} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;which is&amp;nbsp;just&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) =\mbox{log}_{10}(d+1) -\mbox{log}_{10}(d) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ P(d) = \mbox{log}_{10}\left( 1 + \frac{1}{d} \right) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;which is the distribution of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;So how well do different data sets follow Benford&amp;#8217;s Law?  I decided to test it out on a couple easily available data sets: pulsar periods, &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations, &lt;span class="caps"&gt;U.S.&lt;/span&gt; county sizes and masses of plant genomes.  Let&amp;#8217;s start first with pulsar periods.  I took 1875 pulsar periods from the &lt;span class="caps"&gt;ATNF&lt;/span&gt; Pulsar Database (found &lt;a href="http://www.atnf.csiro.au/research/pulsar/psrcat/"&gt;here&lt;/a&gt;).  The results are plotted below.  The bars represent the fraction of numbers that start with a given digit and the red dots are the fractions predicted by Benford&amp;#8217;s Law. 
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;From this plot, we see that the pulsar period data shows the general trend of Benford&amp;#8217;s Law, but not&amp;nbsp;exactly. &lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s try &lt;span class="caps"&gt;U.S.&lt;/span&gt; city populations.  This data was taken from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau from the 2009 census and contains population data for over 81,000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; cities.  We see from the chart below that there is a near exact correspondence between the observed first-digit distribution and Benford&amp;#8217;s Law.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Also from the &lt;span class="caps"&gt;U.S.&lt;/span&gt; census bureau, I got the data for the land area of over 3000 &lt;span class="caps"&gt;U.S.&lt;/span&gt; counties.  These data also conform fairly well to Benford&amp;#8217;s Law.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Finally, I found &lt;a href="http://data.kew.org/cvalues/CvalServlet?querytype=1"&gt;this&lt;/a&gt; neat website that catalogs the genome masses of over 2000 different species of plants.  I&amp;#8217;m not totally sure &lt;i&gt;why&lt;/i&gt; they do this, but it provided a ton of easy-to-access data, so why not?
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+Neat, so we see that wide variety of natural data follow Benford&amp;#8217;s Law (some more examples &lt;a href="http://mathworld.wolfram.com/BenfordsLaw.html"&gt;here&lt;/a&gt;).  But why should they?  Well, as far as I have gathered, there are a few reasons for this.  The first two come from a paper published by Jeff Boyle [2].  Boyle makes (and proves) two claims about this&amp;nbsp;distribution.&lt;/p&gt;
+&lt;p&gt;First, he claims that &amp;#8220;the log distribution [Benford&amp;#8217;s Law] is the limiting distribution when random variables are repeatedly multiplied, divided, or raised to integer powers.&amp;#8221;  Second, he claims that once such a distribution is achieved, it &amp;#8220;persists under all further multiplications, divisions and raising to integer&amp;nbsp;powers.&amp;#8221;     &lt;/p&gt;
+&lt;p&gt;Since most data we accumulate (scientific, financial, gambling,&amp;#8230;) is the result of many mathematical operations, we would expect that they would tend towards the logarithmic distribution as described by&amp;nbsp;Boyle. &lt;/p&gt;
+&lt;p&gt;Another reason for why natural data should fit Benford&amp;#8217;s Law is given by Roger Pinkham (in &lt;a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf"&gt;this paper&lt;/a&gt;).  Pinkham proves that&lt;i&gt; &amp;#8220;&lt;/i&gt;the only distribution for the first significant digits which is invariant under scale change of the underlying distribution&amp;#8221; is Benford&amp;#8217;s Law.  This means that if we have some data, say the lengths of rivers in feet, it will have some distribution in the first digit.  If we require that this distribution remain the same under unit conversion (to meters, yards, cubits, &amp;#8230; ), the only distribution that satisfies this distribution would be the uniform logarithmic distribution of Benford&amp;#8217;s&amp;nbsp;Law.&lt;/p&gt;
+&lt;p&gt;This &amp;#8220;scale-invariant&amp;#8221; rationale for this first digit law is probably the most important when it comes to data that we actually measure.  If we find some distribution for the first digit, we would like it to be the same no matter what units we have used.  But this should also be really easy to test.  The county size data used above was given in square miles, so let&amp;#8217;s try some new units.  First, we can try square kilometers.
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Slightly different than square miles, but still a very good fit.  Now how about square furlongs?
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="300" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;Neat!  Seems like the distribution holds true regardless of the units we have&amp;nbsp;used. &lt;/p&gt;
+&lt;p&gt;So it seems like a wide range of data satisfy Benford&amp;#8217;s Law.  But is this useful in any way or is it just a statistical curiosity?  Well, it&amp;#8217;s mainly just a curiosity.  But people have found some pretty neat applications.  One field in which it has found use is &lt;a href="http://en.wikipedia.org/wiki/Forensic_accounting"&gt;Forensic Accounting&lt;/a&gt;, which I can only assume is a totally rad bunch of accountants that dramatically remove sunglasses as they go over tax returns.  Since certain types of financial data (for example, see &lt;a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf"&gt;here&lt;/a&gt;) should follow Benford&amp;#8217;s Law, inconsistencies in financial returns can be found if the data is faked or manipulated in any&amp;nbsp;way. &lt;/p&gt;
+&lt;p&gt;Moral of the story:  If you&amp;#8217;re going to cook the books, remember&amp;nbsp;Benford!&lt;/p&gt;
+&lt;p&gt;[1]  Benford&amp;#8217;s Law, in the great tradition of &lt;a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy"&gt;Stigler&amp;#8217;s Law,&lt;/a&gt; was discovered by Simon&amp;nbsp;Newcomb.&lt;/p&gt;
+&lt;p&gt;[2]  Paper can be found &lt;a href="http://www.jstor.org/pss/2975136"&gt;here&lt;/a&gt;.  Unfortunately, this is only a preview as the full version isn&amp;#8217;t publicly available without a library license.  The two points that I use from this paper are at least stated in this&amp;nbsp;preview.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Fri, 31 Dec 2010 14:42:00 -0500</pubDate><guid>tag:,2010-12-31:posts/benford-s-law.html</guid><category>statistics</category><category>benford</category><category>scott bakula</category></item></channel></rss>

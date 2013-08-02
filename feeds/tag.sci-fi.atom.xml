@@ -1,68 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.sci-fi.atom.xml" rel="self"></link><id>/</id><updated>2010-04-15T17:30:00-04:00</updated><entry><title>Another Reason Why The Core is Stupid</title><link href="/posts/another-reason-why-the-core-is-stupid.html" rel="alternate"></link><updated>2010-04-15T17:30:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-04-15:posts/another-reason-why-the-core-is-stupid.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /&gt;&lt;/a&gt;
-I assume everyone has heard of &lt;a href="http://en.wikipedia.org/wiki/The_core"&gt;The
-Core&lt;/a&gt;, the terrible scifi movie
-from 2003. If you haven&amp;#8217;t you&amp;#8217;re missing out on what appears to be,
-according to Discover magazine, &lt;a href="http://discovermagazine.com/2007/nov/none-found"&gt;the worst sci-fi film
-ever&lt;/a&gt;. There are
-already numerous sites that discuss the bad science in the core
-(&lt;a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm"&gt;here&lt;/a&gt;, or over
-at &lt;a href="http://www.badastronomy.com/bad/movies/thecore_review.html"&gt;Bad
-Astronomy&lt;/a&gt;),
-but they all seem to ignore another fundamental problem with the plot. I
-don&amp;#8217;t think I&amp;#8217;ll give too much away if I tell you that the basic premise
-of the movie is that the earth&amp;#8217;s core has stopped rotating, and so the
-earth&amp;#8217;s magnetic field is collapsing, which they claim will mean that
-all of the previously deflected microwaves (note: &lt;span class="caps"&gt;EM&lt;/span&gt; radiation is not
-bent by a magnetic field) will cook us all. Now, a lot of people have
-focused on the microwaves bit, which while bad science, one could argue
-that we would still have some bad effects from loosing our magnetic
-field. The problem I have is that the Earth&amp;#8217;s magnetic field cannot
-change that abruptly. I&amp;#8217;m currently teaching undergraduate honors E&amp;amp;M,
-and we&amp;#8217;re working out of the fantastic texbook (unfortunately now out of
-print) by
-&lt;a href="http://books.google.com/books?ei=tn7HS87OGYKuygS9yqCNCw&amp;amp;cd=1&amp;amp;id=3LYRAQAAIAAJ&amp;amp;dq=Purcell+Electromagnetism&amp;amp;q=#search_anchor"&gt;Purcell&lt;/a&gt;.
-And in the chapter on electromagnetic induction he has an illuminating
-exercise. Lets try and estimate how quickly the magnetic field of the
-earth can change. Well, lets sort of work backwards. We know that if we
-have a conducting ring with a current flowing through it, this will
-create a magnetic field. So, if we can try and model some sort of
-circuit that approximates the earth, and then look at how quickly energy
-is dissipated in that circuit, we can estimate how fast the magnetic
-field decays. So lets imagine a thick torus with height and width a.
-Flowing around this torus is some current I, distributed in a
-complicated way. The torus is made out of a material with some
-conductivity sigma. Now, we know that for a wire made out of some
-material with a conductivity sigma, we can estimate its resistance as &lt;mathjax&gt;$$
-R = \\frac{ L }{ \\sigma A } $$&lt;/mathjax&gt; where L is the length, and A is the
-cross sectional area of the wire. Lets do that with our torus, calling
-&lt;mathjax&gt;$$ A = a\^2 \\qquad L = 2 \\pi a $$&lt;/mathjax&gt; giving us a resistance &lt;mathjax&gt;$$ R \\sim
-\\frac{ 2 \\pi }{ \\sigma a } $$&lt;/mathjax&gt; To estimate the magnetic field of this
-torus, lets just take the magnetic field of a loop with radius a/2. I.e.
-&lt;mathjax&gt;$$ B = \\frac{ \\mu\_0 I }{2 \\pi (a/2) } $$&lt;/mathjax&gt; Now we know that the energy
-stored in the magnetic field is &lt;mathjax&gt;$$ U = \\frac{1}{2 \\mu\_0 } \\int B\^2
-\\ dV \\sim \\frac{1}{2 \\mu\_0} B V $$&lt;/mathjax&gt; where we take the magnetic field
-to be the magnetic field of the simple loop and V to be the volume of a
-fat cylinder or so, i.e. &lt;mathjax&gt;$$ V \\sim \\pi a\^2 \\times a $$&lt;/mathjax&gt; Now if we
-have a circuit with a known resistance we know that the energy is
-dissipated through the resistor &lt;mathjax&gt;$$ \\frac{dU}{dt} = - I\^2 R $$&lt;/mathjax&gt; so if we
-just want an order of magnitude estimate for the characteristic decay
-time, we can take &lt;mathjax&gt;$$ \\tau \\sim \\frac{ U }{ I\^2 R } $$&lt;/mathjax&gt; Putting in our
-approximations from above we have &lt;mathjax&gt;$$ \\tau \\sim \\frac{
-\\frac{1}{2\\mu\_0 } B\^2 V }{ I\^2 \\frac{2 \\pi }{ \\sigma a } } =
-\\frac{ \\frac{1}{2 \\mu\_0 } ( \\pi a\^3 ) \\left( \\frac{ \\mu\_0 I }{
-2 \\pi (a/2) } \\right)\^2 }{ I\^2 \\frac{ 2 \\pi }{\\sigma a} } =
-\\frac{ \\mu\_0 }{4 \\pi\^2 } \\sigma a\^2 $$&lt;/mathjax&gt; where we know &lt;mathjax&gt;$$ \\mu\_0 =
-4 \\pi \\times 10\^{-7} N/A\^2 $$&lt;/mathjax&gt; we obtain roughly (i.e. ignoring the
-other pi) &lt;mathjax&gt;$$ \\tau \\sim \\sigma a\^2 \\times 10\^{-7} (s) $$&lt;/mathjax&gt; Now, lets
-take the radius of the core to be about half the radius of the earth, or
-3000 km or so, and take the conductivity of the core to be about a tenth
-of that of iron at room temperature (iron becomes a worse conductor when
-its heated), i.e. &lt;mathjax&gt;$$ a \\sim 3000 (km) \\qquad \\sigma \\sim 10\^6 (S/m)
-$$&lt;/mathjax&gt; We obtain &lt;mathjax&gt;$$ \\tau \\sim 10\^12 (s) = 300 (centuries) $$&lt;/mathjax&gt; So, even if
-you could magically make the core of the earth stop spinning, the
-magnetic field is not going to change instantaneously, in fact it would
-only be able to change on the order of 300 centuries or so. This is
-really short on geologic time scales, but nothing like the week or so
-that the movie The Core takes place over. Just one more reason why one
-of the worst sci-fi movies of all time is&amp;nbsp;bad.&lt;/p&gt;</summary><category term="the core"></category><category term="order of magnitude"></category><category term="magnetism"></category><category term="fun"></category><category term="fermi problem"></category><category term="sci-fi"></category><category term="bad physics"></category><category term="movie"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.sci-fi.atom.xml" rel="self"></link><id>/</id><updated>2010-04-15T17:30:00-04:00</updated><entry><title>Another Reason Why The Core is Stupid</title><link href="/posts/another-reason-why-the-core-is-stupid.html" rel="alternate"></link><updated>2010-04-15T17:30:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-04-15:posts/another-reason-why-the-core-is-stupid.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;I assume everyone has heard of &lt;a href="http://en.wikipedia.org/wiki/The_core"&gt;The Core&lt;/a&gt;, the terrible scifi movie from&amp;nbsp;2003.  &lt;/p&gt;
+&lt;p&gt;If you haven&amp;#8217;t you&amp;#8217;re missing out on what appears to be, according to Discover magazine, &lt;a href="http://discovermagazine.com/2007/nov/none-found"&gt;the worst sci-fi film ever&lt;/a&gt;.  There are already numerous sites that discuss the bad science in the core (&lt;a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm"&gt;here&lt;/a&gt;, or over at &lt;a href="http://www.badastronomy.com/bad/movies/thecore_review.html"&gt;Bad Astronomy&lt;/a&gt;), but they all seem to ignore another fundamental problem with the&amp;nbsp;plot.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t think I&amp;#8217;ll give too much away if I tell you that the basic premise of the movie is that the earth&amp;#8217;s core has stopped rotating, and so the earth&amp;#8217;s magnetic field is collapsing, which they claim will mean that all of the previously deflected microwaves (note: &lt;span class="caps"&gt;EM&lt;/span&gt; radiation is not bent by a magnetic field) will cook us all.  Now, a lot of people have focused on the microwaves bit, which while bad science, one could argue that we would still have some bad effects from loosing our magnetic&amp;nbsp;field.  &lt;/p&gt;
+&lt;p&gt;The problem I have is that the Earth&amp;#8217;s magnetic field cannot change that abruptly.
+&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m currently teaching undergraduate honors E&amp;amp;M, and we&amp;#8217;re working out of the fantastic texbook (unfortunately now out of print) by &lt;a href="http://books.google.com/books?ei=tn7HS87OGYKuygS9yqCNCw&amp;amp;cd=1&amp;amp;id=3LYRAQAAIAAJ&amp;amp;dq=Purcell+Electromagnetism&amp;amp;q=#search_anchor"&gt;Purcell&lt;/a&gt;.  And in the chapter on electromagnetic induction he has an illuminating&amp;nbsp;exercise.  &lt;/p&gt;
+&lt;p&gt;Lets try and estimate how quickly the magnetic field of the earth can change.  Well, lets sort of work backwards.  We know that if we have a conducting ring with a current flowing through it, this will create a magnetic field.  So, if we can try and model some sort of circuit that approximates the earth, and then look at how quickly energy is dissipated in that circuit, we can estimate how fast the magnetic field&amp;nbsp;decays.  &lt;/p&gt;
+&lt;p&gt;So lets imagine a thick torus with height and width a.  Flowing around this torus is some current I, distributed in a complicated way.  The torus is made out of a material with some conductivity sigma.  Now, we know that for a wire made out of some material with a conductivity sigma, we can estimate its resistance as
+&lt;mathjax&gt;$$ R = \frac{ L }{ \sigma A } $$&lt;/mathjax&gt;
+where L is the length, and A is the cross sectional area of the wire.  Lets do that with our torus, calling 
+&lt;mathjax&gt;$$ A = a^2 \qquad L = 2 \pi a $$&lt;/mathjax&gt;
+giving us a resistance
+&lt;mathjax&gt;$$ R \sim \frac{ 2 \pi }{ \sigma a } $$&lt;/mathjax&gt;
+To estimate the magnetic field of this torus, lets just take the magnetic field of a loop with radius a/2.  I.e.
+&lt;mathjax&gt;$$ B = \frac{ \mu_0 I }{2 \pi (a/2) } $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now we know that the energy stored in the magnetic field is
+&lt;mathjax&gt;$$ U = \frac{1}{2 \mu_0 } \int B^2 \ dV \sim \frac{1}{2 \mu_0} B V $$&lt;/mathjax&gt;
+where we take the magnetic field to be the magnetic field of the simple loop and V to be the volume of a fat cylinder or so, i.e.
+&lt;mathjax&gt;$$ V \sim \pi a^2 \times a   $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now if we have a circuit with a known resistance we know that the energy is dissipated through the resistor
+&lt;mathjax&gt;$$ \frac{dU}{dt} = - I^2 R $$&lt;/mathjax&gt;
+so if we just want an order of magnitude estimate for the characteristic decay time, we can take
+&lt;mathjax&gt;$$ \tau \sim \frac{ U }{ I^2 R } $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Putting in our approximations from above we have
+&lt;mathjax&gt;$$ \tau \sim \frac{  \frac{1}{2\mu_0 } B^2 V   }{ I^2 \frac{2 \pi }{ \sigma a }  } = \frac{  \frac{1}{2 \mu_0 } ( \pi a^3 )  \left( \frac{ \mu_0 I }{ 2 \pi (a/2) } \right)^2  }{ I^2 \frac{ 2 \pi }{\sigma a}  } = \frac{ \mu_0 }{4 \pi^2 } \sigma a^2   $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;where we know
+&lt;mathjax&gt;$$ \mu_0 = 4 \pi \times 10^{-7}  N/A^2 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;we obtain roughly (i.e. ignoring the other pi)
+&lt;mathjax&gt;$$ \tau \sim \sigma a^2 \times 10^{-7}  (s) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now, lets take the radius of the core to be about half the radius of the earth, or 3000 km or so, and take the conductivity of the core to be about a tenth of that of iron at room temperature (iron becomes a worse conductor when its heated), i.e.
+&lt;mathjax&gt;$$ a \sim 3000 (km) \qquad \sigma \sim 10^6 (S/m) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;We obtain
+&lt;mathjax&gt;$$ \tau \sim 10^12 (s) = 300 (centuries) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So, even if you could magically make the core of the earth stop spinning, the magnetic field is not going to change instantaneously, in fact it would only be able to change on the order of 300 centuries or so.  This is really short on geologic time scales, but nothing like the week or so that the movie The Core takes place&amp;nbsp;over.&lt;/p&gt;
+&lt;p&gt;Just one more reason why one of the worst sci-fi movies of all time is&amp;nbsp;bad.&lt;/p&gt;</summary><category term="the core"></category><category term="order of magnitude"></category><category term="magnetism"></category><category term="fun"></category><category term="fermi problem"></category><category term="sci-fi"></category><category term="bad physics"></category><category term="movie"></category></entry></feed>

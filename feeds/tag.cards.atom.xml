@@ -1,124 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.cards.atom.xml" rel="self"></link><id>/</id><updated>2010-05-26T03:17:00-04:00</updated><entry><title>I was born on Wednesday</title><link href="/posts/i-was-born-on-wednesday.html" rel="alternate"></link><updated>2010-05-26T03:17:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-05-26:posts/i-was-born-on-wednesday.html</id><summary type="html">&lt;p&gt;Probability is a tricky thing. There are a lot of nonsensical answers to
-be had. I just read &lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;an
-article&lt;/a&gt;
-about the recent &lt;a href="http://www.g4g4.com/"&gt;Gathering for Gardner&lt;/a&gt; meeting
-that took place. Gathering for Gardner is a unique meeting for
-mathematicians, magicians and puzzle makers where they get together and
-talk about interesting things. The meetings were inspired by &lt;a href="http://en.wikipedia.org/wiki/Martin_Gardner"&gt;Martin
-Gardner&lt;/a&gt;, one of the
-awesomest dudes of our time, who unfortunately just passed away. The
-question put to the floor was the&amp;nbsp;following:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;I have two children. One is a boy born on a Tuesday. What is the
-probability I have two&amp;nbsp;boys?&amp;#8221;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Think about that for a moment. Not too hard though. The answer turns out
-to be surprising. Upon reading the question, I thought about it for a
-long time and managed to confused myself entirely. Thinking I had gone
-crazy, I wrote a little python script to test the riddle, which only
-left me more convinced I had gone insane. I&amp;#8217;ve spent most of the night
-thinking about it, and after making it half way to crazy, I&amp;#8217;ve come
-around and am momentarily convinced the puzzle makes perfect sense. I&amp;#8217;m
-going to attempt to convince you it makes perfect sense, but I plan on
-doing it in steps so as to reduce the&amp;nbsp;bewilderment.&lt;/p&gt;
-&lt;h3&gt;Playing&amp;nbsp;Cards&lt;/h3&gt;
-&lt;p&gt;Forget the question. Lets play a game of cards. You shuffle a deck and
-deal me two&amp;nbsp;cards:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I accidentally flip one of them&amp;nbsp;over.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s1600/23.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s320/23.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Whats the probability that my other card is red? Well, that ones easy,
-its about half. Sure, its not exactly a half, knowing that the deck is
-finite and that the draws are done without replacement, knowing that the
-card showing is a red one means that there are only 52/2 - 1= 26 -1 = 25
-red cards out of a deck of 52-1 = 51 cards giving a probability of 49%.
-But its basically a half. Lets do over, deal me two&amp;nbsp;cards:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Darn, I flipped one of them over&amp;nbsp;again:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s1600/5.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s320/5.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Whats the probability that my other card is red? About a half still.*
-(*Sure, this time its really 26/51 = 51%). Nothing mysterious going on.
-Do over again. Deal me two&amp;nbsp;cards:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This time I&amp;#8217;ll ask a little trickier question. Whats the probability
-that both my cards are red? Ah, well its about 1/2 * 1/2 or about 1/4 =
-25%. (The real answer is 24.5%) Alright smarty pants. Whats the
-probability that I had a red card and a black one? Well, that ought to
-be about 1/2 (Real answer 51%). All in all, I could have a red card,
-then a black one (&lt;span class="caps"&gt;RB&lt;/span&gt;), or a black one, then a red one (&lt;span class="caps"&gt;BR&lt;/span&gt;), or a red one
-then a red one (&lt;span class="caps"&gt;RR&lt;/span&gt;) or a black one then a black one (&lt;span class="caps"&gt;BB&lt;/span&gt;). 4 distinct
-possibilities, each of which are equally likely, so the above two
-answers make complete sense. There is only one way in four to get both
-red cards, but two ways out of four to have both a red and a black. So
-far so good. Lets ask a different question. Now I&amp;#8217;m going to get a bit
-obtuse. You deal me two cards. Now you ask&amp;nbsp;me.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hey Alemi, do you have a red&amp;nbsp;card?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Meaning, do I have at least one red card. I respond, &amp;#8220;Yes.&amp;#8221; Now, go with
-your gut. You know I have at least one red card. What do you reckon the
-color of the other one is? Probably black you say? You&amp;#8217;d be correct.
-Looking at our breakdown above, I could have gotten &lt;span class="caps"&gt;RR&lt;/span&gt;, &lt;span class="caps"&gt;RB&lt;/span&gt;, &lt;span class="caps"&gt;BR&lt;/span&gt;, or &lt;span class="caps"&gt;BB&lt;/span&gt; as
-my cards dealt. Each was equally likely, but now you know something
-else. You know that I have at least one red card, so we only have three
-possibilities left, I either have &lt;span class="caps"&gt;RR&lt;/span&gt;, &lt;span class="caps"&gt;RB&lt;/span&gt;, or &lt;span class="caps"&gt;BR&lt;/span&gt;. Each of which was
-equally likely. So whats the probability that my other card is black?
-About 2/3 or 67%. (Real answer: 67.5%) Alright, same situation. You deal
-me two cards, I reveal that I have at least one red one. Whats the
-probability that my other card is red? Well, obviously 1/3 or 33%
-(Actually 32.5%) since this is the opposite question to the one directly
-above, and follows from the same reasoning. Fine. No problems. All of
-this makes&amp;nbsp;sense.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.cards.atom.xml" rel="self"></link><id>/</id><updated>2010-05-26T03:17:00-04:00</updated><entry><title>I was born on Wednesday</title><link href="/posts/i-was-born-on-wednesday.html" rel="alternate"></link><updated>2010-05-26T03:17:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2010-05-26:posts/i-was-born-on-wednesday.html</id><summary type="html">&lt;p&gt;Probability is a tricky thing.  There are a lot of nonsensical answers to be had.  I just read &lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;an article&lt;/a&gt; about the recent &lt;a href="http://www.g4g4.com/"&gt;Gathering for Gardner&lt;/a&gt; meeting that took place.  Gathering for Gardner is a unique meeting for mathematicians, magicians and puzzle makers where they get together and talk about interesting things.  The meetings were inspired by &lt;a href="http://en.wikipedia.org/wiki/Martin_Gardner"&gt;Martin Gardner&lt;/a&gt;, one of the awesomest dudes of our time, who unfortunately just passed&amp;nbsp;away.&lt;/p&gt;
+&lt;p&gt;The question put to the floor was the following:
+&lt;blockquote&gt;&amp;#8220;I have two children. One is a boy born on a Tuesday. What is the probability I have two boys?&amp;#8221;&lt;/blockquote&gt;
+Think about that for a moment.  Not too hard though.  The answer turns out to be surprising.  Upon reading the question, I thought about it for a long time and managed to confused myself entirely.  Thinking I had gone crazy, I wrote a little python script to test the riddle, which only left me more convinced I had gone insane.  I&amp;#8217;ve spent most of the night thinking about it, and after making it half way to crazy, I&amp;#8217;ve come around and am momentarily convinced the puzzle makes perfect&amp;nbsp;sense.  &lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m going to attempt to convince you it makes perfect sense, but I plan on doing it in steps so as to reduce the&amp;nbsp;bewilderment.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;/div&gt;&lt;div style="text-align: auto;"&gt;
+&lt;/div&gt;&lt;h3&gt;Playing&amp;nbsp;Cards&lt;/h3&gt;
+Forget the question.  Lets play a game of cards.  You shuffle a deck and deal me two cards:
+&lt;div style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+I accidentally flip one of them over.
+&lt;div style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s1600/23.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s320/23.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+Whats the probability that my other card is&amp;nbsp;red?&lt;/p&gt;
+&lt;p&gt;Well, that ones easy, its about&amp;nbsp;half.&lt;/p&gt;
+&lt;p&gt;Sure, its not exactly a half, knowing that the deck is finite and that the draws are done without replacement, knowing that the card showing is a red one means that there are only 52/2 - 1= 26 -1 = 25 red cards out of a deck of 52-1 = 51 cards giving a probability of 49%.  But its basically a&amp;nbsp;half.&lt;/p&gt;
+&lt;p&gt;Lets do over, deal me two cards:
+&lt;div style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+Darn, I flipped one of them over&amp;nbsp;again:&lt;/p&gt;
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s1600/5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s320/5.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Whats the probability that my other card is red?  About a half still.&lt;em&gt; (&lt;/em&gt;Sure, this time its really 26/51 =&amp;nbsp;51%).&lt;/p&gt;
+&lt;p&gt;Nothing mysterious going&amp;nbsp;on.  &lt;/p&gt;
+&lt;p&gt;Do over again.  Deal me two cards:
+&lt;div style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+This time I&amp;#8217;ll ask a little trickier question.  Whats the probability that both my cards are red?  Ah, well its about 1/2 * 1/2 or about 1/4 = 25%.  (The real answer is&amp;nbsp;24.5%)&lt;/p&gt;
+&lt;p&gt;Alright smarty pants.  Whats the probability that I had a red card and a black one?  Well, that ought to be about 1/2 (Real answer&amp;nbsp;51%).&lt;/p&gt;
+&lt;p&gt;All in all, I could have a red card, then a black one (&lt;span class="caps"&gt;RB&lt;/span&gt;), or a black one, then a red one (&lt;span class="caps"&gt;BR&lt;/span&gt;), or a red one then a red one (&lt;span class="caps"&gt;RR&lt;/span&gt;) or a black one then a black one (&lt;span class="caps"&gt;BB&lt;/span&gt;).  4 distinct possibilities, each of which are equally likely, so the above two answers make complete sense.  There is only one way in four to get both red cards, but two ways out of four to have both a red and a&amp;nbsp;black.&lt;/p&gt;
+&lt;p&gt;So far so&amp;nbsp;good.&lt;/p&gt;
+&lt;p&gt;Lets ask a different question.  Now I&amp;#8217;m going to get a bit obtuse.  You deal me two cards.  Now you ask me.
+&lt;blockquote&gt;Hey Alemi, do you have a red card?&lt;/blockquote&gt;
+Meaning, do I have at least one red card.  I respond,&amp;nbsp;&amp;#8220;Yes.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Now, go with your gut.  You know I have at least one red card.  What do you reckon the color of the other one&amp;nbsp;is?  &lt;/p&gt;
+&lt;p&gt;Probably black you say? You&amp;#8217;d be correct.  Looking at our breakdown above, I could have gotten &lt;span class="caps"&gt;RR&lt;/span&gt;, &lt;span class="caps"&gt;RB&lt;/span&gt;, &lt;span class="caps"&gt;BR&lt;/span&gt;, or &lt;span class="caps"&gt;BB&lt;/span&gt; as my cards dealt.  Each was equally likely, but now you know something else.  You know that I have at least one red card, so we only have three possibilities left, I either have &lt;span class="caps"&gt;RR&lt;/span&gt;, &lt;span class="caps"&gt;RB&lt;/span&gt;, or &lt;span class="caps"&gt;BR&lt;/span&gt;.  Each of which was equally likely.  So whats the probability that my other card is black?  About 2/3 or 67%.  (Real answer:&amp;nbsp;67.5%)&lt;/p&gt;
+&lt;p&gt;Alright, same situation.  You deal me two cards, I reveal that I have at least one red one.  Whats the probability that my other card is red?  Well, obviously 1/3 or 33% (Actually 32.5%) since this is the opposite question to the one directly above, and follows from the same&amp;nbsp;reasoning.&lt;/p&gt;
+&lt;p&gt;Fine.  No problems.  All of this makes&amp;nbsp;sense.&lt;/p&gt;
 &lt;h3&gt;Offspring&lt;/h3&gt;
-&lt;p&gt;Instead of playing cards, lets return to offspring. Lets first look at a
-classic probability&amp;nbsp;riddle.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I have exactly two children. At least one of them is a boy. What is
-the probability that the other one is a&amp;nbsp;boy?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;If I were to give you this question straightaway, most people would have
-said the probability would be a 1/2. Their reasoning being that boys and
-girls are equally likely. But having just led you through the playing
-cards, hopefully now it makes some sense how the true answer to this
-question is 1/3 or 33%. Originally my family could have been &lt;span class="caps"&gt;BB&lt;/span&gt;,&lt;span class="caps"&gt;BG&lt;/span&gt;,&lt;span class="caps"&gt;GB&lt;/span&gt;,or
-&lt;span class="caps"&gt;GG&lt;/span&gt;. Each of which was equally likely. Telling you I have at least one
-boy means now we are dealing with only the situations &lt;span class="caps"&gt;BB&lt;/span&gt;, &lt;span class="caps"&gt;BG&lt;/span&gt; or &lt;span class="caps"&gt;GB&lt;/span&gt;,
-still all equally likely, making the probability 1/3. Fine. Now, lets
-reexamine the true question at&amp;nbsp;hand:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;I have two children. One is a boy born on a Tuesday. What is the
-probability I have two&amp;nbsp;boys?&amp;#8221;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Is it a half? Is it 1/3? What do you reckon? At first thought, it seems
-like the Tuesday bit shouldn&amp;#8217;t enter into it at all, but on second
-thought, I&amp;#8217;ve just revealed a lot more information than I did in the
-previous question. I&amp;#8217;ve told you something specific about one of my
-children. This is analogous to when I accidently flipped over one of my
-cards, revealing not only its color but its count as well. Hopefully it
-makes sense that the probability ought to be much closer to a half than
-to a third. In fact the answer is 13/27 = 48.1%. With a little thought,
-you should be able to come up with that number yourself. Otherwise, see
-&lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;the
-article&lt;/a&gt;
-I mentioned at the beginning of this post. They have a nice breakdown at
-the bottom. Hopefully, at this point if you&amp;#8217;ve read this far, you&amp;#8217;d
-should be wondering why this question was so mysterious to begin with,
-and if thats the case, I did my job. If you think the question is
-obvious, and think it would have been obvious even without the card
-analogy, try and ask the boy-born-on-a-tuesday question by itself to one
-of your friends. I guarantee they&amp;#8217;ll be bewildered. Its a fun problem,
-and one that illustrates just how strange and counterintuitive
-probability can be. If you want some other mind twisting mathematical
-puzzles, try your hand at the &lt;a href="http://en.wikipedia.org/wiki/Two_envelopes_problem"&gt;Two envelopes
-problem&lt;/a&gt;, or
-&lt;a href="http://en.wikipedia.org/wiki/Bertrand's_box_paradox"&gt;Bertrands&amp;#8217; box
-paradox&lt;/a&gt;, or &lt;a href="http://en.wikipedia.org/wiki/Birthday_problem"&gt;the
-Birthday problem&lt;/a&gt;, or
-everyone&amp;#8217;s favorite &lt;a href="http://en.wikipedia.org/wiki/Monty_Hall_problem"&gt;the Monty Hall
-problem&lt;/a&gt;. &lt;a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html"&gt;Remember
-though&lt;/a&gt;,
-try your hand at the problem before reading the answer. Super fun bonus
-homework question: Lets do cards again. You deal me two cards, and I
-reveal that I have a red heart. Whats the probability that my other card
-is&amp;nbsp;red?&lt;/p&gt;</summary><category term="odds"></category><category term="fun"></category><category term="cards"></category><category term="probability"></category><category term="birthday"></category><category term="monty hall"></category></entry></feed>
+
+&lt;p&gt;Instead of playing cards, lets return to offspring.  Lets first look at a classic probability&amp;nbsp;riddle.&lt;/p&gt;
+&lt;blockquote&gt;I have exactly two children.  At least one of them is a boy.  What is the probability that the other one is a boy?&lt;/blockquote&gt;
+
+&lt;p&gt;If I were to give you this question straightaway, most people would have said the probability would be a 1/2.  Their reasoning being that boys and girls are equally likely.  But having just led you through the playing cards, hopefully now it makes some sense how the true answer to this question is 1/3 or 33%.  Originally my family could have been &lt;span class="caps"&gt;BB&lt;/span&gt;,&lt;span class="caps"&gt;BG&lt;/span&gt;,&lt;span class="caps"&gt;GB&lt;/span&gt;,or &lt;span class="caps"&gt;GG&lt;/span&gt;.  Each of which was equally likely.  Telling you I have at least one boy means now we are dealing with only the situations &lt;span class="caps"&gt;BB&lt;/span&gt;, &lt;span class="caps"&gt;BG&lt;/span&gt; or &lt;span class="caps"&gt;GB&lt;/span&gt;, still all equally likely, making the probability&amp;nbsp;1/3.&lt;/p&gt;
+&lt;p&gt;Fine.&lt;/p&gt;
+&lt;p&gt;Now, lets reexamine the true question at hand:
+&lt;blockquote&gt;&amp;#8220;I have two children. One is a boy born on a Tuesday. What is the probability I have two boys?&amp;#8221;&lt;/blockquote&gt;
+Is it a half?  Is it 1/3?  What do you reckon?  At first thought, it seems like the Tuesday bit shouldn&amp;#8217;t enter into it at all, but on second thought, I&amp;#8217;ve just revealed a lot more information than I did in the previous question.  I&amp;#8217;ve told you something specific about one of my children.    This is analogous to when I accidently flipped over one of my cards, revealing not only its color but its count as well.  Hopefully it makes sense that the probability ought to be much closer to a half than to a third.  In fact the answer is 13/27 =&amp;nbsp;48.1%.  &lt;/p&gt;
+&lt;p&gt;With a little thought, you should be able to come up with that number yourself.  Otherwise, see &lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;the article&lt;/a&gt; I mentioned at the beginning of this post.  They have a nice breakdown at the&amp;nbsp;bottom.&lt;/p&gt;
+&lt;p&gt;Hopefully, at this point if you&amp;#8217;ve read this far, you&amp;#8217;d should be wondering why this question was so mysterious to begin with, and if thats the case, I did my job.  If you think the question is obvious, and think it would have been obvious even without the card analogy, try and ask the boy-born-on-a-tuesday question by itself to one of your friends.  I guarantee they&amp;#8217;ll be bewildered.  Its a fun problem, and one that illustrates just how strange and counterintuitive probability can&amp;nbsp;be.&lt;/p&gt;
+&lt;p&gt;If you want some other mind twisting mathematical puzzles, try your hand at the &lt;a href="http://en.wikipedia.org/wiki/Two_envelopes_problem"&gt;Two envelopes problem&lt;/a&gt;, or &lt;a href="http://en.wikipedia.org/wiki/Bertrand's_box_paradox"&gt;Bertrands&amp;#8217; box paradox&lt;/a&gt;, or &lt;a href="http://en.wikipedia.org/wiki/Birthday_problem"&gt;the Birthday problem&lt;/a&gt;, or everyone&amp;#8217;s favorite &lt;a href="http://en.wikipedia.org/wiki/Monty_Hall_problem"&gt;the Monty Hall problem&lt;/a&gt;.  &lt;a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html"&gt;Remember though&lt;/a&gt;, try your hand at the problem before reading the&amp;nbsp;answer.&lt;/p&gt;
+&lt;p&gt;Super fun bonus homework question:  Lets do cards again.  You deal me two cards, and I reveal that I have a red heart.  Whats the probability that my other card is&amp;nbsp;red?&lt;/p&gt;</summary><category term="odds"></category><category term="fun"></category><category term="cards"></category><category term="probability"></category><category term="birthday"></category><category term="monty hall"></category></entry></feed>

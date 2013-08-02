@@ -1,51 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.wiki.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 11 Aug 2010 14:04:00 -0400</lastBuildDate><item><title>Teminal Velocity</title><link>/posts/teminal-velocity.html</link><description>&lt;p&gt;The impetus for this post lies with three facts. First, I like to bike
-to work. Second, Cornell sits on a
-&lt;a href="http://www.cornell.edu/search/index.cfm?tab=facts&amp;amp;q=&amp;amp;id=272"&gt;hill&lt;/a&gt;. And
-finally, I&amp;#8217;m not very brave. As a result of all of these, along with
-Ithaca&amp;#8217;s less-than-optimal road maintenance, my semi-daily rides home
-tend to produce a lot of wear on my brakes as I cruise downhill at what
-appears to me to be very high speeds. I began to ponder just how high
-this speed really is, and if I could reduce my use of the brakes or if
-I&amp;#8217;m going to end up using them anyway at the bottom of the hill.
-&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGLwOVisUAI/AAAAAAAACD4/V9TvWzmEv9k/s200/200px-Free_body.svg.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Figure 1: An inclined&amp;nbsp;plane&lt;/p&gt;
-&lt;p&gt;So, I asked myself, what do I remember about bikes going down the hill?
-Well, I remember the good old inclined plane (figure 1), and I remember
-that air resistance is proportional to velocity, so that the equation of
-motion is given by &lt;mathjax&gt;$$ ma = mg\\sin\\theta - \\alpha v. $$&lt;/mathjax&gt; I had no idea
-what α was, though. My first stop in considering it was naturally
-Wikipedia. A quick
-&lt;a href="http://en.wikipedia.org/wiki/Terminal_velocity"&gt;search&lt;/a&gt; came up with
-the formula &lt;mathjax&gt;$$m a = mg\\sin\\theta - \\frac{1}{2}\\rho A C\_d v\^2$$&lt;/mathjax&gt;
-where ρ is the density of air, A the projected area of the body and C~d~
-the drag coefficient The first thing to notice here is that I was wrong
-- drag in a fluid acts like the velocity squared, and not the velocity.
-Second, we can easily determine terminal velocity out of this formula -
-it&amp;#8217;s the speed at which the sum of the forces equals to zero, or &lt;mathjax&gt;$$v\_t
-= \\sqrt{\\frac{2mg\\sin\\theta}{\\rho A C\_d}}.$$&lt;/mathjax&gt; We can throw in some
-numbers into that. ρ = 1.2 kg/m^3^ for air; Wikipedia estimates C~d~ =
-0.9 for a &lt;a href="http://en.wikipedia.org/wiki/Drag_coefficient"&gt;cyclist&lt;/a&gt;. For
-the mass, we need to add up mine (\~75 kg), the bike&amp;#8217;s (15-20 kg) and my
-bag&amp;#8217;s (let&amp;#8217;s say 5 kg). We come to about 100 kg, give or take 5%. A is a
-little harder to estimate, but height times width gives me an initial
-guess of 0.62 m^2^, which I&amp;#8217;ll revise to 0.7 m^2^ to account for the
-bike, flailing arms and fashionable helmet, up to about 10% accuracy.
-We&amp;#8217;re left with sinθ, which varies by road, but in general we expect the
-terminal velocity to look like &lt;mathjax&gt;$$v\_t \\approx \\left(50 \\pm 3
-\\rm{m/s}\\right) \\sqrt{\\sin\\theta}.$$&lt;/mathjax&gt; This appears not-unreasonable.
-For an 8% grade like we have down University avenue this yields about 50
-km/h and for a 13% grade like we have down Buffalo street this will
-bring us up to a respectable 65
-&lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383#miles" title="That's - sigh - about 30 mph and 40 mph, respectively, in crazy units"&gt;km/h&lt;/a&gt;.
-Both, incidentally, are faster than I&amp;#8217;m willing to go down a badly
-maintained, not entire straight road. So we have some numbers, and I
-begin to feel justified about pressing those breaks often, but all of
-this is really an introduction for the next post, in which I go against
-all my theorist instincts and take some data in the field. Stay&amp;nbsp;tuned.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383"&gt;&lt;/a&gt;That&amp;#8217;s&lt;ul&gt;
-&lt;li&gt;sigh - about 30 mph and 40 mph, respectively, in crazy&amp;nbsp;units&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Wed, 11 Aug 2010 14:04:00 -0400</pubDate><guid>tag:,2010-08-11:posts/teminal-velocity.html</guid><category>analysis</category><category>guestimation</category><category>bike</category><category>wiki</category><category>equations</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.wiki.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 11 Aug 2010 14:04:00 -0400</lastBuildDate><item><title>Teminal Velocity</title><link>/posts/teminal-velocity.html</link><description>&lt;p&gt;The impetus for this post lies with three facts. First, I like to bike to work. Second, Cornell sits on a &lt;a href="http://www.cornell.edu/search/index.cfm?tab=facts&amp;amp;q=&amp;amp;id=272"&gt;hill&lt;/a&gt;. And finally, I&amp;#8217;m not very&amp;nbsp;brave.&lt;/p&gt;
+&lt;p&gt;As a result of all of these, along with Ithaca&amp;#8217;s less-than-optimal road maintenance, my semi-daily rides home tend to produce a lot of wear on my brakes as I cruise downhill at what appears to me to be very high speeds. I began to ponder just how high this speed really is, and if I could reduce my use of the brakes or if I&amp;#8217;m going to end up using them anyway at the bottom of the&amp;nbsp;hill.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504225823691657218" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGLwOVisUAI/AAAAAAAACD4/V9TvWzmEv9k/s200/200px-Free_body.svg.png" style="cursor: pointer; display: block; height: 136px; margin: 0px auto 10px; text-align: center; width: 200px;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;span style="font-size: 85%;"&gt;Figure 1: An inclined plane&lt;/span&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;So, I asked myself, what do I remember about bikes going down the hill? Well, I remember the good old inclined plane (figure 1), and I remember that air resistance is proportional to velocity, so that the equation of motion is given by
+&lt;mathjax&gt;$$ ma = mg\sin\theta - \alpha v. $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;I had no idea what &lt;span style="font-style: italic;"&gt;α&lt;/span&gt; was, though. My first stop in considering it was naturally Wikipedia. A quick &lt;a href="http://en.wikipedia.org/wiki/Terminal_velocity"&gt;search&lt;/a&gt; came up with the formula
+&lt;mathjax&gt;$$m a = mg\sin\theta -  \frac{1}{2}\rho A C_d  v^2$$&lt;/mathjax&gt;
+where &lt;span style="font-style: italic;"&gt;ρ&lt;/span&gt; is the density of air, &lt;span style="font-style: italic;"&gt;A&lt;/span&gt; the projected area of the body and &lt;span style="font-style: italic;"&gt;C&lt;sub&gt;d&lt;/sub&gt;&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&lt;span style="font-style: italic;"&gt;&lt;/span&gt;&lt;/span&gt; the drag&amp;nbsp;coefficient&lt;/p&gt;
+&lt;p&gt;The first thing to notice here is that I was wrong - drag in a fluid acts like the velocity squared, and not the velocity. Second, we can easily determine terminal velocity out of this formula - it&amp;#8217;s the speed at which the sum of the forces equals to zero, or
+&lt;mathjax&gt;$$v_t = \sqrt{\frac{2mg\sin\theta}{\rho A C_d}}.$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;We can throw in some numbers into that. &lt;span style="font-style: italic;"&gt;ρ&lt;/span&gt; = 1.2 kg/m&lt;sup&gt;3&lt;/sup&gt; for air; Wikipedia estimates &lt;span style="font-style: italic;"&gt;C&lt;sub&gt;d&lt;/sub&gt;&lt;/span&gt; =  0.9 for a &lt;a href="http://en.wikipedia.org/wiki/Drag_coefficient"&gt;cyclist&lt;/a&gt;. For the mass, we need to add up mine (~75 kg), the bike&amp;#8217;s (15-20 kg) and my bag&amp;#8217;s (let&amp;#8217;s say 5 kg). We come to about 100 kg, give or take 5%. &lt;span style="font-style: italic;"&gt;A&lt;/span&gt; is a little harder to estimate, but height times width gives me an initial guess of 0.62 m&lt;sup&gt;2&lt;/sup&gt;, which I&amp;#8217;ll revise to 0.7 m&lt;sup&gt;2&lt;/sup&gt; to account for the bike, flailing arms and fashionable helmet, up to about 10%&amp;nbsp;accuracy.&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;re left with sinθ, which varies by road, but in general we expect the terminal velocity to look like
+&lt;mathjax&gt;$$v_t \approx \left(50 \pm 3  \rm{m/s}\right) \sqrt{\sin\theta}.$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;This appears not-unreasonable. For an 8% grade like we have down University avenue  this yields about 50  km/h and for a 13% grade like we have down Buffalo street this will bring us up to a respectable 65 &lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383#miles" title="That's - sigh - about 30 mph and 40 mph, respectively, in crazy units"&gt;km/h&lt;/a&gt;. Both, incidentally, are faster than I&amp;#8217;m willing to go down a badly maintained, not entire straight&amp;nbsp;road.&lt;/p&gt;
+&lt;p&gt;So we have some numbers, and I begin to feel justified about pressing those breaks often, but all of this is really an introduction for the next post, in which I go against all my theorist instincts and take some data in the field. Stay tuned.
+&lt;span style="font-size: 78%;"&gt;
+&lt;/span&gt;
+&lt;span style="font-size: 78%;"&gt;&lt;/span&gt;
+&lt;span style="font-size: 78%;"&gt;&lt;ol&gt;&lt;li&gt;&lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383" name="miles"&gt;&lt;/a&gt;That&amp;#8217;s - sigh - about 30 mph and 40 mph, respectively, in crazy&amp;nbsp;units&lt;/li&gt;&lt;/ol&gt;&lt;/span&gt;&lt;span style="font-size: 78%;"&gt;
+&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Wed, 11 Aug 2010 14:04:00 -0400</pubDate><guid>tag:,2010-08-11:posts/teminal-velocity.html</guid><category>analysis</category><category>guestimation</category><category>bike</category><category>wiki</category><category>equations</category></item></channel></rss>

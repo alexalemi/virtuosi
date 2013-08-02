@@ -1,66 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.asteroid.atom.xml" rel="self"></link><id>/</id><updated>2010-04-22T18:45:00-04:00</updated><entry><title>End of the Earth Physics III- Asteroids!</title><link href="/posts/end-of-the-earth-physics-iii-asteroids-.html" rel="alternate"></link><updated>2010-04-22T18:45:00-04:00</updated><author><name>Corky</name></author><id>tag:,2010-04-22:posts/end-of-the-earth-physics-iii-asteroids-.html</id><summary type="html">&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s1600/armageddon.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s200/armageddon.jpg" /&gt;&lt;/a&gt;No
-day of earth destroying celebration would be complete without that
-apocalyptic all-time favorite: the asteroid. And to be fair, it deserves
-to be the favorite. Of all the doomsday predictions out there (nuclear
-holocaust for the cynics, death by snoo-snoo for the optimists) it is
-the only one that is just about certain to occur at some point in the
-geological near future. On top of that, it&amp;#8217;s one that we could
-potentially avoid with enough time and some &lt;a href="http://en.wikipedia.org/wiki/Asteroid_deflection_strategies"&gt;neat
-ideas&lt;/a&gt; .
-Let&amp;#8217;s model an asteroid impact on the earth. We will assume an asteroid
-starting from rest at infinity and falling to the surface of the earth
-due to earth&amp;#8217;s gravity only. Now obviously these assumptions are not
-exactly correct. We can imagine our asteroid not starting from rest or
-feeling some force due to the sun. Each of these would certainly change
-our answer, but should still be within an order of magnitude of our
-result. By conservation of energy, we have that &lt;mathjax&gt;$$ \\text{KE}\_{i} +
-\\text{PE}\_{i} = \\text{KE}\_{f} + \\text{PE}\_{f} $$&lt;/mathjax&gt; Plugging in the
-formulas for kinetic and potential energy, we have &lt;mathjax&gt;$$
-\\frac{1}{2}m{v\_i}\^{2} + \\frac{-GM\_{\\oplus}m\_a}{{r\_{i}}} =
-\\text{KE}\_f + \\frac{-GM\_{\\oplus}m\_a}{{r\_{f}}}$$&lt;/mathjax&gt; Now, plugging in
-our initial conditions of starting at rest at infinity and rearranging,
-we have that &lt;mathjax&gt;$$ \\text{KE}\_f =
-\\frac{GM\_{\\oplus}m\_a}{{R\_{\\oplus}}} $$&lt;/mathjax&gt; Assuming that all of this
-kinetic energy is deposited into the earth as heat, we have that our
-total energy added to the earth is &lt;mathjax&gt;$$ \\text{E} =
-\\frac{GM\_{\\oplus}m\_a}{{R\_{\\oplus}}} = \\frac{(7 \\times 10\^{-11}
-J m kg\^{-2})(6 \\times 10\^{24} kg)}{6 \\times 10\^{6} m}m\_a \\approx
-(10\^{8} J)(\\frac{m\_a}{1kg}) $$&lt;/mathjax&gt; Now let&amp;#8217;s consider an asteroid made
-out of iron. Iron is about 10 times denser that water so it has a
-density of 10\^4 kg/m\^3. If our asteroid is a sphere, we can find its
-radius given &lt;mathjax&gt;$$ m\_a = \\frac{4}{3} \\pi {R\_a}\^{3} \\rho $$&lt;/mathjax&gt; Plugging
-this into our energy equation gives energy as a function of asteroid
-radius: &lt;mathjax&gt;$$ \\text{E} \\approx (4 \\times 10\^{8} J) \\times (
-\\frac{R\_a}{1m} )\^{3} $$&lt;/mathjax&gt;. Now we have the energy released during an
-asteroid impact in terms of either the size or the mass. So let&amp;#8217;s do
-some destruction. We have heard in the last decade or so that even
-relatively small changes in average global temperatures can result in
-catastrophe. So let&amp;#8217;s see how big of an asteroid we would need to
-deposit enough energy to raise global temperatures by 1 degree (&lt;span class="caps"&gt;NOTE&lt;/span&gt;:
-this is very much a toy model. For a more realistic and sadistically
-addicting model, check out
-&lt;a href="http://www.lpl.arizona.edu/impacteffects/"&gt;this&lt;/a&gt; site). To do this,
-let&amp;#8217;s pretend increasing global temperatures is the same as increasing
-ocean temperatures. Since water has a much much higher specific heat
-than air, this seems like a reasonable assumption. Plus, we have already
-made this calculation before. In the first End of the Earth post a bit
-ago, we found that the amount of energy required to raise the
-temperature of the world&amp;#8217;s oceans by 100 degrees is &lt;mathjax&gt;$$ E\_{\\text{100}}
-\\approx 10\^{26} J $$&lt;/mathjax&gt; Since the scaling is linear, we can see that the
-energy to heat up the oceans by 1 degree is just one hundredth of this
-value, or &lt;mathjax&gt;$$ E\_{\\text{heat}} \\approx 10\^{24} J $$&lt;/mathjax&gt; So how big of an
-asteroid is this? Using our equation from before, setting E = Eheat, we
-have that &lt;mathjax&gt;$$ R\_a = \\frac{E\_\\text{heat}}{4 \\times 10\^{8} J m\^{-1}}
-= (\\frac{10\^{24}}{4 \\times 10\^8})\^{1/3}m = (2.5)\^{1/3}
-\\times{10\^5}m \\approx 100 km $$&lt;/mathjax&gt; For comparison, the asteroid that
-killed the dinosaurs was thought to be about 30 km or so. This is a big
-rock. &lt;span class="caps"&gt;FUN&lt;/span&gt; &lt;span class="caps"&gt;FACT&lt;/span&gt; &lt;span class="caps"&gt;FINALE&lt;/span&gt;: We all know that an asteroid killed the
-dinosaurs. But what would happen if instead of an asteroid, we dropped a
-dinosaur from infinity? According to wikipedia, a brontosaurus was about
-30 tons which is about 30,000 kg. Using the equation for energy as a
-function of mass derived earlier, we have that &lt;mathjax&gt;$$\\text{E} = (10\^{8}
-J)(\\frac{m\_a}{1kg}) = 3 \\times 10\^{12} J \\approx 1 \\text{kiloton}
-\\text{TNT} $$&lt;/mathjax&gt; For comparison, the Hiroshima bomb was about 15 kilotons.
-So to reproduce the Hiroshima energy yield we need about 15
-brotosauruses falling from&amp;nbsp;infinity.&lt;/p&gt;</summary><category term="bruce willis"></category><category term="dinosaur"></category><category term="scott bakula"></category><category term="asteroid"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.asteroid.atom.xml" rel="self"></link><id>/</id><updated>2010-04-22T18:45:00-04:00</updated><entry><title>End of the Earth Physics III- Asteroids!</title><link href="/posts/end-of-the-earth-physics-iii-asteroids-.html" rel="alternate"></link><updated>2010-04-22T18:45:00-04:00</updated><author><name>Corky</name></author><id>tag:,2010-04-22:posts/end-of-the-earth-physics-iii-asteroids-.html</id><summary type="html">&lt;p&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s1600/armageddon.jpg"&gt;&lt;img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 157px; height: 200px;" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/S9EZLq8fRRI/AAAAAAAAAAc/pg5n-zg70QE/s200/armageddon.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5463175511274374418" /&gt;&lt;/a&gt;No day of earth destroying celebration would be complete without that apocalyptic all-time favorite: the asteroid.  And to be fair, it deserves to be the favorite.  Of all the doomsday predictions out there (nuclear holocaust for the cynics, death by snoo-snoo for the optimists) it is the only one that is just about certain to occur at some point in the geological near future. On top of that, it&amp;#8217;s one that we could potentially avoid with enough time and some &lt;a href="http://en.wikipedia.org/wiki/Asteroid_deflection_strategies"&gt;neat ideas&lt;/a&gt; .&lt;div&gt;
+Let&amp;#8217;s model an asteroid impact on the earth.  We will assume an asteroid starting from rest at infinity and falling to the surface of the earth due to earth&amp;#8217;s gravity only. Now obviously these assumptions are not exactly correct.  We can imagine our asteroid not starting from rest or feeling some force due to the sun.  Each of these would certainly change our answer, but should still be within an order of magnitude of our&amp;nbsp;result.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;By conservation of energy, we have&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \text{KE}_{i} + \text{PE}_{i} = \text{KE}_{f} + \text{PE}_{f} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Plugging in the formulas for kinetic and potential energy, we&amp;nbsp;have&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{1}{2}m{v_i}^{2}  + \frac{-GM_{\oplus}m_a}{{r_{i}}}  = \text{KE}_f + \frac{-GM_{\oplus}m_a}{{r_{f}}}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now, plugging in our initial conditions of starting at rest at infinity and rearranging, we have&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \text{KE}_f = \frac{GM_{\oplus}m_a}{{R_{\oplus}}} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Assuming that all of this kinetic energy is deposited into the earth as heat, we have that our total energy added to the earth&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \text{E} = \frac{GM_{\oplus}m_a}{{R_{\oplus}}} = \frac{(7 \times 10^{-11} J m kg^{-2})(6 \times 10^{24} kg)}{6 \times 10^{6} m}m_a \approx (10^{8} J)(\frac{m_a}{1kg})  $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s consider an asteroid made out of iron.  Iron is about 10 times denser that water so it has a density of 10^4 kg/m^3. If our asteroid is a sphere, we can find its radius&amp;nbsp;given&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ m_a = \frac{4}{3} \pi {R_a}^{3} \rho $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Plugging this into our energy equation gives energy as a function of asteroid&amp;nbsp;radius:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \text{E} \approx (4 \times 10^{8} J) \times ( \frac{R_a}{1m} )^{3} $$&lt;/mathjax&gt;.&lt;/p&gt;
+&lt;p&gt;Now we have the energy released during an asteroid impact in terms of either the size or the mass.  So let&amp;#8217;s do some destruction. We have heard in the last decade or so that even relatively small changes in average global temperatures can result in catastrophe. So let&amp;#8217;s see how big of an asteroid we would need to deposit enough energy to raise global temperatures by 1 degree (&lt;span class="caps"&gt;NOTE&lt;/span&gt;: this is very much a toy model.  For a more realistic and sadistically addicting model, check out &lt;a href="http://www.lpl.arizona.edu/impacteffects/"&gt;this&lt;/a&gt;&amp;nbsp;site).&lt;/p&gt;
+&lt;p&gt;To do this, let&amp;#8217;s pretend increasing global temperatures is the same as increasing ocean temperatures.  Since water has a much much higher specific heat than air, this seems like a reasonable assumption. Plus, we have already made this calculation before.  In the first End of the Earth post a bit ago, we found that the amount of energy required to raise the temperature of the world&amp;#8217;s oceans by 100 degrees&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ E_{\text{100}} \approx 10^{26} J $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Since the scaling is linear, we can see that the energy to heat up the oceans by 1 degree is just one hundredth of this value,&amp;nbsp;or&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ E_{\text{heat}} \approx 10^{24} J $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So how big of an asteroid is this?  Using our equation from before, setting E = Eheat, we have&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ R_a = \frac{E_\text{heat}}{4 \times 10^{8} J m^{-1}} = (\frac{10^{24}}{4 \times 10^8})^{1/3}m = (2.5)^{1/3} \times{10^5}m \approx 100 km $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;For comparison, the asteroid that killed the dinosaurs was thought to be about 30 km or so.  This is a big&amp;nbsp;rock.&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;FUN&lt;/span&gt; &lt;span class="caps"&gt;FACT&lt;/span&gt; &lt;span class="caps"&gt;FINALE&lt;/span&gt;: We all know that an asteroid killed the dinosaurs.  But what would happen if instead of an asteroid, we dropped a dinosaur from infinity?  According to wikipedia, a brontosaurus was about 30 tons which is about 30,000 kg. Using the equation for energy as a function of mass derived earlier, we have&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$\text{E} = (10^{8} J)(\frac{m_a}{1kg}) = 3 \times 10^{12} J \approx 1 \text{kiloton} \text{TNT} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;For comparison, the Hiroshima bomb was about 15 kilotons.  So to reproduce the Hiroshima energy yield we need about 15 brotosauruses falling from infinity.&lt;div&gt; &lt;/div&gt;&lt;/div&gt;&lt;/p&gt;</summary><category term="bruce willis"></category><category term="dinosaur"></category><category term="scott bakula"></category><category term="asteroid"></category></entry></feed>

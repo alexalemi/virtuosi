@@ -29,7 +29,8 @@
             styles: {
                 ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
         },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],
+          processEscapes: true}
     });
 </script>
 <script type="text/javascript"
@@ -80,82 +81,24 @@
 	<article>
 		<div class="post wrapper">
 			<h1>Cell Phone Brain Damage&#8230; or&nbsp;not.</h1>
-			<p>For better or worse, cell phones are a part of our lives. I say this
-because they can be convenient when needed, but there&#8217;s nothing more
-annoying than a dropped call or an inconveniently timed ring tone. Since
-many people carry their phones with them daily, there has been a number
-of studies which ask what are the long-term health effects of cell phone
-usage. While the <a href="http://www.google.com/search?q=cell+phone+tumor&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">controversy
-rages</a>
-among medical researchers, I decided to find my own answers by doing a
-calculation based on the power output of a simple hand set. The key
-physical idea in this calculation is Faraday&#8217;s law. You can check
-Wikipedia for a lengthy
-<a href="http://en.wikipedia.org/wiki/Faraday%27s_law_of_induction">article</a>
-describing it, but I&#8217;m more interested in getting down to business. Now,
-from the antenna of every cell phone, an electromagnetic wave is
-emitted. This <span class="caps">EM</span> wave, has magnetic and electric components which
-oscillate back and forth across space and through time. To quantify the
-effects of this <span class="caps">EM</span> wave on a human being, I&#8217;m going to focus on just the
-brain. In the simplest case, I would imagine it as a homogeneous blob.
-Unfortunately, this model is too simplistic and looses the all the
-interesting physiology. Instead, I&#8217;m going to treat the brain as a
-collection of loops made by neurons. In this model, I imagine that every
-neuron is connected to many other neurons by electrically conducting
-dendrites and axons. Some neurons will be connected to each other in two
-places, thus creating a small continuous loop. This loop has some area
-<mathjax>$$ A $$</mathjax> and as the <span class="caps">EM</span> wave from the cell phone passes by, it induces an
-<span class="caps">EMF</span> a la Faraday&#8217;s law: <mathjax>$$ \\epsilon = \\frac{ d\\phi}{dt}. $$</mathjax> Well,
-since the flux <mathjax>$$ \\phi = \\textbf{B} \\cdot \\textbf{A} \\approx \\pi
-r\^2 E / c,$$</mathjax> and the electric field is an oscillatory function <mathjax>$$ E =
-E\_0 \\cos \\omega t,$$</mathjax> we have <mathjax>$$ \\epsilon = \\frac{\\pi r\^2 \\omega
-E\_0}{c} \\cos \\omega t, $$</mathjax> where <mathjax>$$r$$</mathjax> is the radius of the neuron
-loop, <mathjax>$$\\omega = 2 \\pi f$$</mathjax> is the frequency of cell phone carrier
-waves and <mathjax>$$c $$</mathjax> is the speed of light. Taking the root mean square gets
-rid of the cosine factor and gives <mathjax>$$ \\epsilon\_{rms} = \\frac{ \\pi
-r\^2 \\omega}{c} E\_{rms}. $$</mathjax> So, if I know the <span class="caps">RMS</span> amplitude of the <span class="caps">EM</span>
-waves coming from my cell phone, then I will be able to calculate the
-induced voltage in a given neuron loop. Fortunately, there&#8217;s a
-convenient set of formulae which relates power output to the <span class="caps">RMS</span>
-amplitude: <mathjax>$$ \\frac{ \\langle P \\rangle}{A} = I = \\langle u\_E
-\\rangle c = \\epsilon\_0 c E\^2\_{RMS} \\quad \\rightarrow \\quad
-E\_{RMS} = \\left( \\frac{ \\langle P \\rangle}{\\epsilon\_0 c A}
-\\right)\^{1/2}. $$</mathjax> This line of gibberish is relating the intensity <mathjax>$$
-I $$</mathjax> to the power per unit area as well as the average energy density,
-which in turn is expressed in terms of <mathjax>$$E\_{RMS}. $$</mathjax> The final
-expression can now be substituted to find <mathjax>$$ \\epsilon\_{rms} = \\frac{2
-l\^2 f}{c} \\left( \\frac{ \\langle P \\rangle}{\\epsilon\_0 c 4 \\pi
-R\^2} \\right)\^{1/2}. $$</mathjax> Here, I&#8217;ve made a few additional substitutions
-to get the formula in terms of real numbers. In particular, I&#8217;ve
-converted from <mathjax>$$r, $$</mathjax> the radius of a neuron loop to <mathjax>$$l, $$</mathjax> the length
-of an individual neuron when two of them form a loop. Also, I&#8217;m using
-<mathjax>$$R$$</mathjax> to denote the distance from the cell phone antenna to the neuron
-loop in your head. I think a reasonable number for this should be about
-10 cm, yeah? Okay, now here comes the fun part. I asked around to look
-at peoples cell phones, and I found that roughly, they all run at 1 W of
-power. Furthermore, according to an introductory physics text, cell
-phones operate at around <mathjax>$$ 10\^9 Hz $$</mathjax> and from a little web browsing,
-<mathjax>$$ l = 10\^{-3} \\sim 10\^1 $$</mathjax> meters. Since the length of neurons seems
-to vary quite a bit, I&#8217;ve written the expression as <mathjax>$$ \\epsilon = l\^2
-\\times (360 V/m\^2). $$</mathjax> So for two neurons about a mm long in the same
-vicinity, there&#8217;s a pretty decent chance they&#8217;ll make contact with each
-other at two points. Thus, the induced voltage is about 0.36 mV. On the
-off chance two longer neurons form a loop (taking <mathjax>$$l \\sim 10\^{-2} $$</mathjax>
-meters), the induced voltage is about 36 mV. Finally if two <span class="caps">REALLY</span> long
-neurons (<mathjax>$$ l \\sim 1$$</mathjax> meter) make a loop (mind you, the chances of
-this are zero since the circular area they would form is bigger than
-your body!), then the induced voltage is 360 V. Electrifying! To compare
-these numbers to something useful, consider that the brain is constantly
-sending electrical signals at around 100 mV (this is called the Action
-Potential). Since the most probbable induced voltage (0.36 mV) in
-significantly smaller than the action potential (less than 1%), we can
-conclude that the cell phonne <span class="caps">EM</span> waves are essentially negligable
-effects. Like I said earlier, this is an extremely simple model for the
-brain, but it does illustrate a particular mechanism by which common
-technology can interfere with our biology. And yes, I trust that the
-calculation is correct, but while the experiments are showing higher
-incidence of tumors coinciding with cell phone use, well, I&#8217;m just limit
-my talk&nbsp;time.</p>
+			<p>For better or worse, cell phones are a part of our lives.  I say this because they can be convenient when needed, but there&#8217;s nothing more annoying than a dropped call or an inconveniently timed ring tone.  Since many people carry their phones with them daily, there has been a number of studies which ask what are the long-term health effects of cell phone usage.  While the <a href="http://www.google.com/search?q=cell+phone+tumor&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">controversy rages</a> among medical researchers, I decided to find my own answers by doing a calculation based on the power output of a simple hand set.
+<a name='more'></a></p>
+<p>The key physical idea in this calculation is Faraday&#8217;s law.   You can check Wikipedia for a lengthy <a href="http://en.wikipedia.org/wiki/Faraday%27s_law_of_induction">article</a> describing it,  but I&#8217;m more interested in getting down to business.  Now, from the antenna of every cell phone, an electromagnetic wave is emitted.  This <span class="caps">EM</span> wave, has magnetic and electric components which oscillate back and forth across space and through&nbsp;time.</p>
+<p>To quantify the effects of this <span class="caps">EM</span> wave on a human being, I&#8217;m going to focus on just the brain.  In the simplest case, I would imagine it as a homogeneous blob.  Unfortunately, this model is too simplistic and looses the all the interesting physiology.  Instead, I&#8217;m going to treat the brain as a collection of loops made by neurons.  In this model, I imagine that every  neuron is connected to many other neurons by electrically conducting dendrites and axons.  Some neurons will be connected to each other in two places, thus creating a small continuous loop.  This loop has some area <mathjax>$$ A $$</mathjax> and as the <span class="caps">EM</span> wave from the cell phone passes by, it induces an <span class="caps">EMF</span> a la Faraday&#8217;s&nbsp;law:</p>
+<p><mathjax>$$ \epsilon = \frac{ d\phi}{dt}. $$</mathjax></p>
+<p>Well, since the flux <mathjax>$$ \phi = \textbf{B} \cdot \textbf{A} \approx \pi r^2 E / c,$$</mathjax> and the electric field is an oscillatory function <mathjax>$$ E = E_0 \cos \omega t,$$</mathjax> we&nbsp;have</p>
+<p><mathjax>$$ \epsilon = \frac{\pi r^2 \omega E_0}{c} \cos \omega t, $$</mathjax></p>
+<p>where <mathjax>$$r$$</mathjax> is the radius of the neuron loop, <mathjax>$$\omega = 2 \pi f$$</mathjax> is the frequency of cell phone carrier waves and <mathjax>$$c $$</mathjax> is the speed of light.  Taking the root mean square gets rid of the cosine factor and&nbsp;gives</p>
+<p><mathjax>$$ \epsilon_{rms} = \frac{ \pi r^2 \omega}{c} E_{rms}. $$</mathjax></p>
+<p>So, if I know the <span class="caps">RMS</span> amplitude of the <span class="caps">EM</span> waves coming from my cell phone, then I will be able to calculate the induced voltage in a given neuron loop.  Fortunately, there&#8217;s a convenient set of formulae which relates power output to the <span class="caps">RMS</span>&nbsp;amplitude:</p>
+<p><mathjax>$$ \frac{ \langle P \rangle}{A} = I = \langle u_E \rangle c = \epsilon_0 c E^2_{RMS} \quad \rightarrow \quad E_{RMS} = \left( \frac{ \langle P \rangle}{\epsilon_0 c A} \right)^{1/2}. $$</mathjax></p>
+<p>This line of gibberish is relating the intensity <mathjax>$$ I $$</mathjax> to the power per unit area as well as the average energy density, which in turn is expressed in terms of <mathjax>$$E_{RMS}. $$</mathjax>  The final expression can now be substituted to&nbsp;find</p>
+<p><mathjax>$$ \epsilon_{rms} = \frac{2 l^2 f}{c} \left( \frac{ \langle P \rangle}{\epsilon_0 c 4 \pi R^2} \right)^{1/2}. $$</mathjax></p>
+<p>Here, I&#8217;ve made a few additional substitutions to get the formula in terms of real numbers.  In particular, I&#8217;ve converted from <mathjax>$$r, $$</mathjax> the radius of a neuron loop to <mathjax>$$l, $$</mathjax> the length of an individual neuron when two of them form a loop.  Also, I&#8217;m using <mathjax>$$R$$</mathjax> to denote the distance from the cell phone antenna to the neuron loop in your head.  I think a reasonable number for this should be about 10 cm, yeah?  Okay, now here comes the fun part.  I asked around to look at peoples cell phones, and I found that roughly, they all run at 1 W of power.  Furthermore, according to an introductory physics text, cell phones operate at around <mathjax>$$ 10^9 Hz $$</mathjax>  and from a little web browsing, <mathjax>$$ l = 10^{-3} \sim 10^1 $$</mathjax> meters.  Since the length of neurons seems to vary quite a bit, I&#8217;ve written the expression&nbsp;as</p>
+<p><mathjax>$$ \epsilon = l^2 \times (360 V/m^2). $$</mathjax></p>
+<p>So for two neurons about a mm long in the same vicinity, there&#8217;s a pretty decent chance they&#8217;ll make contact with each other at two points.  Thus, the induced voltage is about 0.36 mV.  On the off chance two longer neurons form a loop (taking <mathjax>$$l \sim 10^{-2} $$</mathjax> meters), the induced voltage is about 36 mV.  Finally if two <span class="caps">REALLY</span> long neurons (<mathjax>$$ l \sim 1$$</mathjax> meter) make a loop (mind you, the chances of this are zero since the circular area they would form is bigger than your body!), then the induced voltage is 360 V.&nbsp;Electrifying!</p>
+<p>To compare these numbers to something useful, consider that the brain is constantly sending electrical signals at around 100 mV (this is called the Action Potential).  Since the most probbable induced voltage (0.36 mV) in  significantly smaller than the action potential (less than 1%), we can conclude that the cell phonne <span class="caps">EM</span> waves are essentially negligable&nbsp;effects.</p>
+<p>Like I said earlier, this is an extremely simple model for  the brain, but it does illustrate a particular mechanism by which common technology can interfere with our biology.  And yes, I trust that the calculation is correct, but while the experiments are showing higher incidence of tumors coinciding with cell phone use, well, I&#8217;m just limit my talk&nbsp;time.</p>
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

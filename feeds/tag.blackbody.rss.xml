@@ -1,254 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.blackbody.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 04 Feb 2011 16:44:00 -0500</lastBuildDate><item><title>Free data set of the month: Imaging Spectroscopy</title><link>/posts/free-data-set-of-the-month-imaging-spectroscopy.html</link><description>&lt;p&gt;There&amp;#8217;s a lot of free data sets floating around the internet, and while
-things like funny cat videos and the &lt;a href="http://blog.xkcd.com/2010/05/03/color-survey-results/"&gt;results of color-naming
-surveys&lt;/a&gt; get a
-lot of play, many others don&amp;#8217;t get used for much. Recently I&amp;#8217;ve been
-playing around with one such data set: images from the &lt;a href="http://aviris.jpl.nasa.gov/"&gt;Airborne
-Visible/Infrared Imaging Spectrometer
-(&lt;span class="caps"&gt;AVIRIS&lt;/span&gt;)&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve always found it interesting that the way we perceive color is very
-different from how light actually works. Most of us have three different
-types of cones in our eyes and we perceive different colors as different
-combinations of stimuli to these three types of cones. In a very rough
-sense, when we look at a color, our brain gets three different numbers
-to figure out what it is. Light, on the other hand, is a bunch of
-photons with some distribution of wavelengths. To fully describe the
-light coming from an object you need a function that shows how many
-photons are at any given wavelength, which is way more complicated than
-just the three numbers we&amp;nbsp;get.&lt;/p&gt;
-&lt;p&gt;So what about all that information that gets thrown away on the way to
-our brain? Are we missing out on a magical world of super-duper colors
-and wonder? Not really, but skip past the break anyways to find out&amp;nbsp;more.&lt;/p&gt;
-&lt;p&gt;There are a few things our eyes have a hard time distinguishing. For
-example, take a look at this picture of a &lt;a href="http://en.wikipedia.org/wiki/Sodium-vapor_lamp#Low_pressure_sodium"&gt;low-pressure sodium
-lamp&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://commons.wikimedia.org/wiki/File:LPS_Lamp_35W_running.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_f2jEPVoC9C4/TUx02kW16bI/AAAAAAAABI0/vonaPzNiAag/s320/LPS_Lamp_35W_running.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you&amp;#8217;ve ever been in a sketchy parking lot at night or an intro
-physics class you&amp;#8217;ve probably seen one of these in real life. It looks
-just like the picture right? It does to us, but the light coming from
-the picture and the light from the real lamp are totally different. All
-the photons from the real lamp have wavelengths very close to 589
-nanometers, while the ones coming from the picture on your screen have a
-bunch of different wavelengths ranging from 500 to 700 nanometers,
-depending on what type of monitor you have. (It&amp;#8217;s easy to &lt;a href="http://www.cs.cmu.edu/%7Ezhuxj/astro/html/spectrometer.html"&gt;build your
-own
-spectrometer&lt;/a&gt;
-and see this for&amp;nbsp;yourself.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://maps.google.com/maps?gl=us&amp;amp;ie=UTF8&amp;amp;ll=37.432068,-122.017937&amp;amp;spn=0.196834,0.308647&amp;amp;t=h&amp;amp;z=12"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_f2jEPVoC9C4/TUx1kWr0ZpI/AAAAAAAABI8/K7RQ-Qzxa50/s400/Moffett%2BField%2BCrop.jpg" /&gt;&lt;/a&gt;This
-is an extreme example since there are few objects that emit purely
-monochromatic light. What do normal objects look like spectroscopically?
-I wanted to find out, but unfortunately there&amp;#8217;s not too many
-freely-available spectroscopic images of everyday objects floating
-around the internet, and my attempts to make my own were stymied by the
-fact that no one wanted to let me borrow $20,000 worth of optical
-bandpass filters. However, there are a several orbital satellites and
-planes which take spectroscopic images of the earth, and one of them,
-&lt;span class="caps"&gt;AVIRIS&lt;/span&gt;, has a few sample data sets for people to play around with. I
-recently wrote some code to help me look at one data set in particular –
-a spectroscopic image of &lt;a href="http://en.wikipedia.org/wiki/Moffett_Federal_Airfield"&gt;Moffett Federal
-Airfield&lt;/a&gt; in
-California, shown here in a normal picture from Google&amp;nbsp;Earth.&lt;/p&gt;
-&lt;p&gt;&lt;span class="caps"&gt;AVIRIS&lt;/span&gt; acts much like a normal camera, but instead of three wide-band
-filters for distinguishing color it uses 225 narrow bands ranging from
-366 nanometers (near &lt;span class="caps"&gt;UV&lt;/span&gt;) to 2500 nanometers (near &lt;span class="caps"&gt;IR&lt;/span&gt;). Any of these
-bands can be thought of as a single monochromatic image. Here I have
-plotted two bands side by side for comparison. The right image is at 463
-nanometers (a nice blue color) and the other is at 2268 nanometers, well
-into the infrared. (Both images are false-colored to enhance the&amp;nbsp;contrast).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_f2jEPVoC9C4/TUx2M29FDwI/AAAAAAAABJE/lSUTxxI4ZFw/s1600/Img10and200withInsets.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_f2jEPVoC9C4/TUx2M29FDwI/AAAAAAAABJE/lSUTxxI4ZFw/s400/Img10and200withInsets.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The scene looks a lot different at the two different wavelengths. In the
-first image there&amp;#8217;s one area that&amp;#8217;s particularly bright – it is one of
-several settling ponds belonging to a Morton Salt factory, although I
-have no idea what is special about this one that makes it reflect blue
-light so strongly. The second image highlights different features and
-clearly shows the difference between the moving water in the creeks and
-the standing water in the&amp;nbsp;bay.&lt;/p&gt;
-&lt;p&gt;These are just two of the bands, but you can see all of them fly by in
-the movie below. (Note that the color scale is set for each band
-individually, which is why there sometimes seems to be a large change
-between adjacent&amp;nbsp;bands).&lt;/p&gt;
-&lt;p&gt;If you agree with me that the embedded video looks super-crappy you can
-&lt;a href="http://gotfork.net/virtuosi/VariableGain.avi"&gt;download the original
-here&lt;/a&gt; (6.4&amp;nbsp;&lt;span class="caps"&gt;MB&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;One of the things that struck me about this video is that it seems like
-much of the image doesn&amp;#8217;t change too much through the whole visual
-range. Not surprisingly, it&amp;#8217;s a lot easier for us to distinguish between
-the slight differences in color in a normal image than it is for us to
-distinguish between the slight changes of intensity&amp;nbsp;here.&lt;/p&gt;
-&lt;p&gt;So what do the spectra of individual points in the image look like?
-Let&amp;#8217;s focus on a few easily-identifiable objects. (I&amp;#8217;ll talk about how I
-made the roughly-true color image below in a later&amp;nbsp;post).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_f2jEPVoC9C4/TUx7dCumIAI/AAAAAAAABJk/9b8gXeMkqg4/s1600/FiveLocMapCombo.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_f2jEPVoC9C4/TUx7dCumIAI/AAAAAAAABJk/9b8gXeMkqg4/s400/FiveLocMapCombo.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The first thing that stands out is that there&amp;#8217;s a lot of features that
-are common to all of the locations, such as the big gap near 1750
-nanometers. While the sun sends photons with a distribution of
-wavelengths roughly described by &lt;a href="http://en.wikipedia.org/wiki/Planck%27s_law"&gt;Planck&amp;#8217;s
-Law&lt;/a&gt;, certain wavelengths
-are strongly absorbed by gasses in the atmosphere as shown&amp;nbsp;below:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://commons.wikimedia.org/wiki/File:Solar_Spectrum.png"&gt;&lt;img alt="image" src="http://upload.wikimedia.org/wikipedia/commons/4/4c/Solar_Spectrum.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Looking at the different spectra we can see that &lt;a href="http://en.wikipedia.org/wiki/Electromagnetic_absorption_by_water"&gt;liquid water absorbs
-strongly in the
-infrared&lt;/a&gt;,
-and the green grass on the golf course reflects strongly in the
-near-infrared (no clue why). There is also a clear difference in
-intensities for each of the locations in the visual range, but the five
-locations otherwise look quite similar, even though they are very
-different colors in real&amp;nbsp;life.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ll look at a few more interesting things in this data set and talk a
-bit about about how our eyes and brains process color in a later&amp;nbsp;post.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex</dc:creator><pubDate>Fri, 04 Feb 2011 16:44:00 -0500</pubDate><guid>tag:,2011-02-04:posts/free-data-set-of-the-month-imaging-spectroscopy.html</guid><category>reflection</category><category>optics</category><category>how do i get free stuff?</category><category>free data sets</category><category>blackbody</category><category>spectra</category></item><item><title>Freezing in Space II - Turn On The Sun!</title><link>/posts/freezing-in-space-ii-turn-on-the-sun-.html</link><description>&lt;p&gt;Yesterday I considered how long it would take a human to &lt;a href="http://thevirtuosi.blogspot.com/2010/05/freezing-in-space-i-blackest-night.html"&gt;freeze in
-space&lt;/a&gt;.
-However, I considered only what would happen if you were not absorbing
-any radiation from nearby sources. Today we consider what happens if you
-do have hot objects nearby. Namely, the sun. The sun provides a lot of
-energy, even as far away from it as we are. It keeps the earth at a
-comfortable \~20 C, good for us humans, and provides the energy for life
-on earth, also good for us humans. That&amp;#8217;s a lot of energy. So maybe the
-sun can keep you alive when you&amp;#8217;re adrift in space. Or at least keep you
-warm. I still think you&amp;#8217;ll asphyxiate. From here on out we&amp;#8217;re going to
-assume that we are adrift in space near earth. You were out for a
-joyride in that new spaceship of yours and something went horribly
-wrong. We could go through a whole song and dance of calculating how
-much power the sun delivers to the earth, but we won&amp;#8217;t (if you&amp;#8217;re
-interested, let me know, an I can do that later). Instead, we&amp;#8217;ll quote
-the known result, that the sun delivers \~1370W/m\^2 in the vicinity of
-the earth. To find out what temperature we would cool to we set the
-power we absorb from the sun equal to the power we radiate
-&lt;mathjax&gt;$$P\_{sun}=P\_{rad}$$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$1370W/m\^2\*A\_{ab}\*e\_{ab}=e\_{rad}\*A\_{rad}\*\\sigma\*T\^4$$&lt;/mathjax&gt; Where
-A_ab is the surface area absorbing the suns power, e_ab is a factor
-between 0 and 1 that indicates how much of the incident power we
-actually absorb, and e_rad is the emissivity of us, while A_rad is our
-radiating area. Note that the emitting and absorbing areas are not the
-same! Take a simple example. If you put a sheet in space, and face the
-flat side towards the sun, it will only absorb energy from the sun on
-one side, but it will radiate energy from both sides. Likewise e_ab and
-e_rad are not necessarily equal because we are radiating and absorbing
-at different wavelengths. We can solve the above equation for T, giving
-&lt;mathjax&gt;$$T=\\left(\\frac{A\_{ab}}{A\_{rad}}\\right)\^{1/4}\\left(\\frac{e\_{ab}}{e\_{rad}}\\right)\^{1/4}\\left(\\frac{1370W/m\^2}{\\sigma}\\right)\^{1/4}$$&lt;/mathjax&gt;
-For a first pass, we&amp;#8217;ll make the simplifying assumption that
-e_ab=e_rad. Given this,
-&lt;mathjax&gt;$$T=394K\*\\left(\\frac{A\_{ab}}{A\_{rad}}\\right)\^{1/4}$$&lt;/mathjax&gt; Now, the
-absorption area of an object is just the shape of the object flattened
-into the plane the incident radiation is perpendicular to. That is, the
-absorption area of a sphere is a circle (a sphere projected to 2D is
-always a circle), while the absorption area of a cylinder could be a
-sheet or a circle, or something stranger. The best area ratio we can
-ever have is that of a flat sheet, which gives 1/2. For a sphere, like
-the earth, the ratio is 1/4. As an aside, this gives an equilibrium
-temperature of the earth as \~5C, which is too cold. It turns out that
-we shouldn&amp;#8217;t neglect either the emissivity ratio or the natural
-greenhouse effect in the case of the earth. Now, we need to figure out
-the area ratio for us. In a &lt;a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html"&gt;previous
-post&lt;/a&gt; I
-modeled myself as a cylinder with height 1.8 m and radius .14 m. Let us
-assume we are facing the sun dead on, beating down on our chests. This
-gives the cross sectional area of a sheet with width 2*.14 m =.28 m and
-height 1.8 m. This is an area of .5 m\^2, while my total surface area is
-1.7 m\^2. This gives an area ratio of \~.3, or an equilibrium
-temperature of &lt;mathjax&gt;$$T=394K\*(.3)\^{1/4}\\approx292K$$&lt;/mathjax&gt; That is an
-equilibrium temperature of 19 C. Not too cold, but certainly not body
-temperature! So the sun will not save us. We also have to factor in the
-fact that we reflect better in the visual that we do in the infrared, so
-the emissivity ratio we set to 1 probably is less than that, reducing
-our equilibrium temperature even more. It is interesting to note,
-though, that if we model a human as a two sided sheet instead of a
-cylinder, we can bring our equilibrium temperature up to 331 K. That&amp;#8217;s
-\~58 C! So in our model our geometrical assumptions change whether or
-not we freeze or die of heat stroke. Finally, since it looks like the
-sun may not save us, lets see how much it might slow down our
-temperature loss. Instead of a net loss of 860W at body temperature, as
-we calculated yesterday, sticking with our cylindrical human we&amp;#8217;ll have
-a net loss of &lt;mathjax&gt;$$860W-1370W/m\^2(.5m\^2)=175W$$&lt;/mathjax&gt; Similarly at our lowered
-body temperature of \~30 C, we&amp;#8217;ll be losing a net of \~105 W. Once again
-taking a geometric average gives an average power loss of \~135 W. Using
-the energy to cool we found yesterday it would take 16300 s, or 4.5
-hours to freeze! Also note that if you&amp;#8217;re getting too hot or cold, given
-how much the geometry plays into things, by changing your orientation to
-the sun you&amp;#8217;ll be able to have a certain amount of control over how much
-you heat up or cool down. Also, make sure you rotate yourself so that
-you end up evenly heated, and not roasted on one side and frozen on the&amp;nbsp;other!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Thu, 13 May 2010 23:38:00 -0400</pubDate><guid>tag:,2010-05-13:posts/freezing-in-space-ii-turn-on-the-sun-.html</guid><category>power</category><category>space</category><category>freeze</category><category>blackbody</category><category>radiation</category><category>human</category></item><item><title>Freezing in Space I - Blackest Night</title><link>/posts/freezing-in-space-i-blackest-night.html</link><description>&lt;p&gt;In the last post I made, I discussed the fact that &lt;a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html"&gt;humans radiate
-energy&lt;/a&gt;.
-In that post I calculated that we actually radiate quite a lot of power.
-This immediately raises a few questions, the most obvious one being: How
-long would it take you to freeze in space? This question is
-multifaceted, and I&amp;#8217;m going to split it between two parts. This first
-part, &amp;#8216;Blackest Night&amp;#8217; is how quickly we&amp;#8217;d freeze if we were completely
-lost in space, nothing anywhere near. The second part, &amp;#8216;Turn On The
-Sun!&amp;#8217; will address what would happen in near earth orbit. We need to
-clarify what we mean when we say freezing in space. The fatal
-temperature change for a human is (according to the all knowing
-internet), roughly a drop of 7C. If you remember my previous post, we
-calculated that we would radiate about 860 W. Now, we have to ask how
-much energy it takes to change our temperature by 7 C. Well, as I&amp;#8217;ve
-discussed a
-&lt;a href="http://thevirtuosi.blogspot.com/2010/04/beer-diet.html#more"&gt;few&lt;/a&gt;
-&lt;a href="http://thevirtuosi.blogspot.com/2010/04/falling-water-hot-or-cold.html"&gt;times&lt;/a&gt;,
-the energy it takes to change the temperature is given by &lt;mathjax&gt;$$Q=mc\\Delta
-T$$&lt;/mathjax&gt; The mass of a human is \~75 kg. We&amp;#8217;re mostly water, so let&amp;#8217;s just
-assume that we are all water. This gives us a specific heat of 4.2
-kJ/kg*K. The energy needed for our 7 C temperature change is then
-&lt;mathjax&gt;$$Q=(75kg)(4.2kJ/kg\*K)(7K)=2.2 MJ$$&lt;/mathjax&gt; By the time we have dropped to 30
-C, we are only radiating a power of &lt;mathjax&gt;$$P=eA\\sigma
-T\^4\\=(.97)(1.7m\^2)(5.67\\cdot10\^{-8}W/m\^2K\^4)(303K)\^4=790W$$&lt;/mathjax&gt; Let
-us assume that the average power radiated is the geometric average of
-these two powers, &lt;mathjax&gt;$$P\_{avg}=\\sqrt{(860W)(790W)}\\approx825W$$&lt;/mathjax&gt; This
-gives us a time to freeze of &lt;mathjax&gt;$$t=\\frac{2.2MJ}{825W}\\approx2700s$$&lt;/mathjax&gt; This
-is \~45 minutes. So you&amp;#8217;ve got 45 minutes until a deadly freeze in deep
-space. Seems a rather long time, does it not? I&amp;#8217;m fairly certain that
-you&amp;#8217;d freeze much faster in antarctica than deep space. Why? Because in
-Antarctica you have more cooling mechanisms that just radiation, you
-have conduction in the air around you and convection of that warmer air
-away from your skin. If you&amp;#8217;re adrift in space, for all that it is
-rather cold, the good news is that you&amp;#8217;ll asphyxiate before you freeze!
-All of this was done assuming that there&amp;#8217;s no energy gain from anywhere.
-That is, that we&amp;#8217;re stuck somewhere in the deepest space, the blackest
-night. Tomorrow we&amp;#8217;ll consider what would happen if you were in near
-earth orbit, with all of these lovely energy sources around,
-particularly the&amp;nbsp;sun.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Wed, 12 May 2010 22:26:00 -0400</pubDate><guid>tag:,2010-05-12:posts/freezing-in-space-i-blackest-night.html</guid><category>power</category><category>space</category><category>freeze</category><category>blackbody</category><category>radiation</category><category>human</category></item><item><title>Human Radiation</title><link>/posts/human-radiation.html</link><description>&lt;p&gt;Things are still busy here at the Virutosi. Hopefully in a week or so
-we&amp;#8217;ll be back to normal, and much more active than we&amp;#8217;ve been recently
-Anyways, today I&amp;#8217;d like to consider human radiation. It is well known
-that any object will radiate energy based on its temperature. Even more
-interesting, we radiate at all wavelengths, though at the human body
-temperature our radiation is sharply peaked in the infrared. Even so, we
-still put out some x-ray radiation. As a professor of mine once said,
-consider that next time you sleep with someone! Given all this, the
-question on my mind today is: how does the energy we radiate daily
-compare to the energy we consume? That is, why don&amp;#8217;t I lose weight
-sitting here typing on the computer? We physicists call perfect
-radiators black bodies (something that radiates perfectly also must
-absorb perfectly). For perfect radiators, the power radiated is given by
-&lt;mathjax&gt;$$P=\\sigma A T\^4$$&lt;/mathjax&gt; where sigma is the stephan-boltzman constant, A is
-the surface area of the radiator, and T is the temperature of the
-radiator. For objects that are not perfect emitters or perfect
-absorbers, we through in a fudge factor, e the emissivity, which is
-between 0 and 1. This makes the power emitted &lt;mathjax&gt;$$P=e \\sigma A T\^4$$&lt;/mathjax&gt; To
-figure out the power radiated by a human, we need to know three things.
-The first is the emissivity of human skin. It turns out this is .97. The
-second is the temperature of a human body, \~37 C. The third is the
-surface area of a human. This requires a little estimation. I&amp;#8217;m about
-180 cm tall, and I wear 35&amp;#8221; waist pants, so my radius is \~14 cm.
-Modeling myself as a cylinder, I have a surface area of \~1.7 m\^2. Now
-we can estimate my power output: &lt;mathjax&gt;$$P=.97\*5.67\\cdot 10\^{-8}W/m\^2K\^4
-\* 1.7 m\^2 \* (310K)\^4$$&lt;/mathjax&gt; &lt;mathjax&gt;$$P \\approx 860W$$&lt;/mathjax&gt; I&amp;#8217;m powerful! That&amp;#8217;s
-about 14 (60W) lightbulbs! We&amp;#8217;d like to compare that to our daily energy
-intake, so we need to turn this power into an energy. Well, there are
-86400 s in a day. So we radiate 74*10\^6 J per day. If you read my
-&lt;a href="http://thevirtuosi.blogspot.com/2010/04/beer-diet.html"&gt;beer diet&lt;/a&gt;
-post, you&amp;#8217;ll know the conversion between J and Calories (note the
-capitol C). If not, suffice it to say that 1 Calorie = 4.2*10\^3 J. If
-I consume about 2000 Calories a day (typical, right?), then I take in
-about 8.4*10\^6 J per day. So, dear reader, why haven&amp;#8217;t I lost weight
-while typing this post? There are a few answers. I&amp;#8217;m wearing insulating
-layers, clothing which keeps in some of my radiated heat. Also, our skin
-temperature is lower than our internal temperature of 37 C. But more
-than that, I&amp;#8217;m absorbing energy from the surroundings. The earth is a
-fairly good blackbody radiator, with an average temperature of \~20 C.
-This means that my net power loss, with no clothing, would be about
-&lt;mathjax&gt;$$\\Delta P \\approx (5.67\\cdot 10\^{-8}
-W/m\^2K\^4)(1.7m\^2)((310K)\^4-(293K)\^4)$$&lt;/mathjax&gt; &lt;mathjax&gt;$$\\Delta P = 180W$$&lt;/mathjax&gt; This is
-\~15*10\^6 J per day. While still more than my intake, this is much
-closer, and you can imagine that the rest of the difference can be made
-up by our lower skin temperature, and clothing and such instruments of
-men. Of course, these numbers are rough, so I don&amp;#8217;t recommend the &amp;#8216;naked
-diet&amp;#8217;, where you try to lose weight by walking around naked. Or if you
-do try it, don&amp;#8217;t say I told you to when you&amp;#8217;re taken in for indecent&amp;nbsp;exposure!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Sun, 09 May 2010 00:24:00 -0400</pubDate><guid>tag:,2010-05-09:posts/human-radiation.html</guid><category>power</category><category>blackbody</category><category>radiation</category><category>human</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.blackbody.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 04 Feb 2011 16:44:00 -0500</lastBuildDate><item><title>Free data set of the month: Imaging Spectroscopy</title><link>/posts/free-data-set-of-the-month-imaging-spectroscopy.html</link><description>&lt;p&gt;There&amp;#8217;s a lot of free data sets floating around the internet, and while things like funny cat videos and the &lt;a href="http://blog.xkcd.com/2010/05/03/color-survey-results/"&gt;results of color-naming surveys&lt;/a&gt; get a lot of play, many others don&amp;#8217;t get used for much.  Recently I&amp;#8217;ve been playing around with one such data set: images from the &lt;a href="http://aviris.jpl.nasa.gov/"&gt;Airborne Visible/Infrared Imaging Spectrometer (&lt;span class="caps"&gt;AVIRIS&lt;/span&gt;)&lt;/a&gt;. &lt;p style="margin-bottom: 0in;"&gt;I&amp;#8217;ve always found it interesting that the way we perceive color is very different from how light actually works.  Most of us have three different types of cones in our eyes and we perceive different colors as different combinations of stimuli to these three types of cones.  In a very rough sense, when we look at a color, our brain gets three different numbers to figure out what it is. Light, on the other hand, is a bunch of photons with some distribution of wavelengths.  To fully describe the light coming from an object you need a function that shows how many photons are at any given wavelength, which is way more complicated than just the three numbers we&amp;nbsp;get.   &lt;/p&gt;  &lt;p style="margin-bottom: 0in;"&gt;So what about all that information that gets thrown away on the way to our brain?  Are we missing out on a magical world of super-duper colors and wonder?  Not really, but skip past the break anyways to find out&amp;nbsp;more.&lt;/p&gt;
+&lt;a name='more'&gt;&lt;/a&gt;
+&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;There are a few things our eyes have a hard time distinguishing.  For example, take a look at this picture of a &lt;a href="http://en.wikipedia.org/wiki/Sodium-vapor_lamp#Low_pressure_sodium"&gt;low-pressure sodium lamp&lt;/a&gt;:&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://commons.wikimedia.org/wiki/File:LPS_Lamp_35W_running.jpg"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 320px; height: 93px;" src="http://2.bp.blogspot.com/_f2jEPVoC9C4/TUx02kW16bI/AAAAAAAABI0/vonaPzNiAag/s320/LPS_Lamp_35W_running.jpg" alt="" id="BLOGGER_PHOTO_ID_5569955319971703218" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;If you&amp;#8217;ve ever been in a sketchy parking lot at night or an intro physics class you&amp;#8217;ve probably seen one of these in real life.  It looks just like the picture right?  It does to us, but the light coming from the picture and the light from the real lamp are totally different.  All the photons from the real lamp have wavelengths very close to 589 nanometers, while the ones coming from the picture on your screen have a bunch of different wavelengths ranging from 500 to 700 nanometers, depending on what type of monitor you have.  (It&amp;#8217;s easy to &lt;a href="http://www.cs.cmu.edu/%7Ezhuxj/astro/html/spectrometer.html"&gt;build your own spectrometer&lt;/a&gt; and see this for&amp;nbsp;yourself.) &lt;/p&gt;  &lt;p style="margin-bottom: 0in;"&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://maps.google.com/maps?gl=us&amp;amp;ie=UTF8&amp;amp;ll=37.432068,-122.017937&amp;amp;spn=0.196834,0.308647&amp;amp;t=h&amp;amp;z=12"&gt;&lt;img style="float: right; margin: 0pt 0pt 10px 10px; cursor: pointer; width: 174px; height: 400px;" src="http://4.bp.blogspot.com/_f2jEPVoC9C4/TUx1kWr0ZpI/AAAAAAAABI8/K7RQ-Qzxa50/s400/Moffett%2BField%2BCrop.jpg" alt="" id="BLOGGER_PHOTO_ID_5569956106575570578" border="0" /&gt;&lt;/a&gt;This is an extreme example since there are few objects that emit purely monochromatic light.  What do normal objects look like spectroscopically?  I wanted to find out, but unfortunately there&amp;#8217;s not too many freely-available spectroscopic images of everyday objects floating around the internet, and my attempts to make my own were stymied by the fact that no one wanted to let me borrow $20,000 worth of optical bandpass filters.  However, there are a several orbital satellites and planes which take spectroscopic images of the earth, and one of them, &lt;span class="caps"&gt;AVIRIS&lt;/span&gt;, has a few sample data sets for people to play around with.  I recently wrote some code to help me look at one data set in particular – a spectroscopic image of &lt;a href="http://en.wikipedia.org/wiki/Moffett_Federal_Airfield"&gt;Moffett Federal Airfield&lt;/a&gt; in California, shown here in a normal picture from Google&amp;nbsp;Earth.&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;&lt;span class="caps"&gt;AVIRIS&lt;/span&gt; acts much like a normal camera, but instead of three wide-band filters for distinguishing color it uses 225 narrow bands ranging from 366 nanometers (near &lt;span class="caps"&gt;UV&lt;/span&gt;) to 2500 nanometers (near &lt;span class="caps"&gt;IR&lt;/span&gt;).  Any of these bands can be thought of as a single monochromatic image.  Here I have plotted two bands side by side for comparison.  The right image is at 463 nanometers (a nice blue color) and the other is at 2268 nanometers, well into the infrared.  (Both images are false-colored to enhance the&amp;nbsp;contrast).&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_f2jEPVoC9C4/TUx2M29FDwI/AAAAAAAABJE/lSUTxxI4ZFw/s1600/Img10and200withInsets.png"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 355px; height: 400px;" src="http://3.bp.blogspot.com/_f2jEPVoC9C4/TUx2M29FDwI/AAAAAAAABJE/lSUTxxI4ZFw/s400/Img10and200withInsets.png" alt="" id="BLOGGER_PHOTO_ID_5569956802432667394" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;The scene looks a lot different at the two different wavelengths.  In the first image there&amp;#8217;s one area that&amp;#8217;s particularly bright – it is one of several settling ponds belonging to a Morton Salt factory, although I have no idea what is special about this one that makes it reflect blue light so strongly.  The second image highlights different features and clearly shows the difference between the moving water in the creeks and the standing water in the&amp;nbsp;bay.   &lt;/p&gt;  &lt;p style="margin-bottom: 0in;"&gt;These are just two of the bands, but you can see all of them fly by in the movie below.  (Note that the color scale is set for each band individually, which is why there sometimes seems to be a large change between adjacent&amp;nbsp;bands).&lt;/p&gt;&lt;p style="margin-bottom: 0in; text-align: center;"&gt;&lt;object width="320" height="266" class="BLOG_video_class" id="BLOG_video-18b5070271fced2c" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="movie" value="//www.youtube.com/get_player"&gt;&lt;param name="bgcolor" value="#FFFFFF"&gt;&lt;param name="allowfullscreen" value="true"&gt;&lt;param name="flashvars" value="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D18b5070271fced2c%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D951BC27C2F6B93FC5072D1041B70CEB356D764BC.25AA41756A876C1A766E7BECD2E9A86223B7525%26key%3Dck2&amp;amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D18b5070271fced2c%26offsetms%3D5000%26itag%3Dw160%26sigh%3D5MqHW2I4EkMoGsDlHtPtXnDjfvc&amp;amp;autoplay=0&amp;amp;ps=blogger"&gt;&lt;embed src="//www.youtube.com/get_player" type="application/x-shockwave-flash" width="320" height="266" bgcolor="#FFFFFF" flashvars="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D18b5070271fced2c%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D951BC27C2F6B93FC5072D1041B70CEB356D764BC.25AA41756A876C1A766E7BECD2E9A86223B7525%26key%3Dck2&amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D18b5070271fced2c%26offsetms%3D5000%26itag%3Dw160%26sigh%3D5MqHW2I4EkMoGsDlHtPtXnDjfvc&amp;autoplay=0&amp;ps=blogger" allowFullScreen="true" /&gt;&lt;/object&gt;&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;If you agree with me that the embedded video looks super-crappy you can &lt;a href="http://gotfork.net/virtuosi/VariableGain.avi"&gt;download the original here&lt;/a&gt; (6.4&amp;nbsp;&lt;span class="caps"&gt;MB&lt;/span&gt;).&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;One of the things that struck me about this video is that it seems like much of the image doesn&amp;#8217;t change too much through the whole visual range.  Not surprisingly, it&amp;#8217;s a lot easier for us to distinguish between the slight differences in color in a normal image than it is for us to distinguish between the slight changes of intensity&amp;nbsp;here.
+&lt;/p&gt;  &lt;p style="margin-bottom: 0in;"&gt;So what do the spectra of individual points in the image look like?  Let&amp;#8217;s focus on a few easily-identifiable objects.  (I&amp;#8217;ll talk about how I made the roughly-true color image below in a later&amp;nbsp;post).
+&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_f2jEPVoC9C4/TUx7dCumIAI/AAAAAAAABJk/9b8gXeMkqg4/s1600/FiveLocMapCombo.png"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 400px; height: 308px;" src="http://1.bp.blogspot.com/_f2jEPVoC9C4/TUx7dCumIAI/AAAAAAAABJk/9b8gXeMkqg4/s400/FiveLocMapCombo.png" alt="" id="BLOGGER_PHOTO_ID_5569962578029191170" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt; &lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;The first thing that stands out is that there&amp;#8217;s a lot of features that are common to all of the locations, such as the big gap near 1750 nanometers.  While the sun sends photons with a distribution of wavelengths roughly described by &lt;a href="http://en.wikipedia.org/wiki/Planck%27s_law"&gt;Planck&amp;#8217;s Law&lt;/a&gt;, certain wavelengths are strongly absorbed by gasses in the atmosphere as shown&amp;nbsp;below:&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;
+&lt;/p&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://commons.wikimedia.org/wiki/File:Solar_Spectrum.png"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 380px; height: 282px;" src="http://upload.wikimedia.org/wikipedia/commons/4/4c/Solar_Spectrum.png" alt="" border="0" /&gt;&lt;/a&gt; &lt;p style="margin-bottom: 0in;"&gt;Looking at the different spectra we can see that &lt;a href="http://en.wikipedia.org/wiki/Electromagnetic_absorption_by_water"&gt;liquid water absorbs strongly in the infrared&lt;/a&gt;, and the green grass on the golf course reflects strongly in the near-infrared (no clue why).  There is also a clear difference in intensities for each of the locations in the visual range, but the five locations otherwise look quite similar, even though they are very different colors in real&amp;nbsp;life.
+&lt;/p&gt;&lt;p style="margin-bottom: 0in;"&gt;I&amp;#8217;ll look at a few more interesting things in this data set and talk a bit about about how our eyes and brains process color in a later&amp;nbsp;post.
+&lt;/p&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alex</dc:creator><pubDate>Fri, 04 Feb 2011 16:44:00 -0500</pubDate><guid>tag:,2011-02-04:posts/free-data-set-of-the-month-imaging-spectroscopy.html</guid><category>reflection</category><category>optics</category><category>how do i get free stuff?</category><category>free data sets</category><category>blackbody</category><category>spectra</category></item><item><title>Freezing in Space II - Turn On The Sun!</title><link>/posts/freezing-in-space-ii-turn-on-the-sun-.html</link><description>&lt;p&gt;Yesterday I considered how long it would take a human to &lt;a href="http://thevirtuosi.blogspot.com/2010/05/freezing-in-space-i-blackest-night.html"&gt;freeze in space&lt;/a&gt;.  However, I considered only what would happen if you were not absorbing any radiation from nearby sources.  Today we consider what happens if you do have hot objects nearby.  Namely, the sun.  The sun provides a lot of energy, even as far away from it as we are.  It keeps the earth at a comfortable ~20 C, good for us humans, and provides the energy for life on earth, also good for us humans.  That&amp;#8217;s a lot of energy.  So maybe the sun can keep you alive when you&amp;#8217;re adrift in space.  Or at least keep you warm.  I still think you&amp;#8217;ll&amp;nbsp;asphyxiate.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;From here on out we&amp;#8217;re going to assume that we are adrift in space near earth.  You were out for a joyride in that new spaceship of yours and something went horribly wrong.  We could go through a whole song and dance of calculating how much power the sun delivers to the earth, but we won&amp;#8217;t (if you&amp;#8217;re interested, let me know, an I can do that later).  Instead, we&amp;#8217;ll quote the known result, that the sun delivers ~1370W/m^2 in the vicinity of the earth.  To find out what temperature we would cool to we set the power we absorb from the sun equal to the power we radiate
+&lt;mathjax&gt;$$P_{sun}=P_{rad}$$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$1370W/m^2*A_{ab}*e_{ab}=e_{rad}*A_{rad}*\sigma*T^4$$&lt;/mathjax&gt;
+Where A_ab is the surface area absorbing the suns power, e_ab is a factor between 0 and 1 that indicates how much of the incident power we actually absorb, and e_rad is the emissivity of us, while A_rad is our radiating area.  Note that the emitting and absorbing areas are not the same!  Take a simple example.  If you put a sheet in space, and face the flat side towards the sun, it will only absorb energy from the sun on one side, but it will radiate energy from both sides.  Likewise e_ab and e_rad are not necessarily equal because we are radiating and absorbing at different&amp;nbsp;wavelengths.&lt;/p&gt;
+&lt;p&gt;We can solve the above equation for T, giving
+&lt;mathjax&gt;$$T=\left(\frac{A_{ab}}{A_{rad}}\right)^{1/4}\left(\frac{e_{ab}}{e_{rad}}\right)^{1/4}\left(\frac{1370W/m^2}{\sigma}\right)^{1/4}$$&lt;/mathjax&gt;
+For a first pass, we&amp;#8217;ll make the simplifying assumption that e_ab=e_rad.  Given this,
+&lt;mathjax&gt;$$T=394K*\left(\frac{A_{ab}}{A_{rad}}\right)^{1/4}$$&lt;/mathjax&gt;
+Now, the absorption area of an object is just the shape of the object flattened into the plane the incident radiation is perpendicular to.  That is, the absorption area of a sphere is a circle (a sphere projected to 2D is always a circle), while the absorption area of a cylinder could be a sheet or a circle, or something stranger.  The best area ratio we can ever have is that of a flat sheet, which gives 1/2.  For a sphere, like the earth, the ratio is 1/4.  As an aside, this gives an equilibrium temperature of the earth as ~5C, which is too cold.  It turns out that we shouldn&amp;#8217;t neglect either the emissivity ratio or the natural greenhouse effect in the case of the&amp;nbsp;earth.&lt;/p&gt;
+&lt;p&gt;Now, we need to figure out the area ratio for us.  In a &lt;a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html"&gt;previous post&lt;/a&gt; I modeled myself as a cylinder with height 1.8 m and radius .14 m.  Let us assume we are facing the sun dead on, beating down on our chests.  This gives the cross sectional area of a sheet with width 2*.14 m =.28 m and height 1.8 m.  This is an area of .5 m^2, while my total surface area is 1.7 m^2.  This gives an area ratio of ~.3, or an equilibrium temperature of
+&lt;mathjax&gt;$$T=394K*(.3)^{1/4}\approx292K$$&lt;/mathjax&gt;
+That is an equilibrium temperature of 19 C.  Not too cold, but certainly not body temperature!  So the sun will not save us.  We also have to factor in the fact that we reflect better in the visual that we do in the infrared, so the emissivity ratio we set to 1 probably is less than that, reducing our equilibrium temperature even more.  It is interesting to note, though, that if we model a human as a two sided sheet instead of a cylinder, we can bring our equilibrium temperature up to 331 K.  That&amp;#8217;s ~58 C!  So in our model our geometrical assumptions change whether or not we freeze or die of heat&amp;nbsp;stroke.&lt;/p&gt;
+&lt;p&gt;Finally, since it looks like the sun may not save us, lets see how much it might slow down our temperature loss.  Instead of a net loss of 860W at body temperature, as we calculated yesterday, sticking with our cylindrical human we&amp;#8217;ll have a net loss of
+&lt;mathjax&gt;$$860W-1370W/m^2(.5m^2)=175W$$&lt;/mathjax&gt;
+Similarly at our lowered body temperature of ~30 C, we&amp;#8217;ll be losing a net of ~105 W.  Once again taking a geometric average gives an average power loss of ~135 W.  Using the energy to cool we found yesterday it would take 16300 s, or 4.5 hours to freeze!  Also note that if you&amp;#8217;re getting too hot or cold, given how much the geometry plays into things, by changing your orientation to the sun you&amp;#8217;ll be able to have a certain amount of control over how much you heat up or cool down.  Also, make sure you rotate yourself so that you end up evenly heated, and not roasted on one side and frozen on the&amp;nbsp;other!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Thu, 13 May 2010 23:38:00 -0400</pubDate><guid>tag:,2010-05-13:posts/freezing-in-space-ii-turn-on-the-sun-.html</guid><category>power</category><category>space</category><category>freeze</category><category>blackbody</category><category>radiation</category><category>human</category></item><item><title>Freezing in Space I - Blackest Night</title><link>/posts/freezing-in-space-i-blackest-night.html</link><description>&lt;p&gt;In the last post I made, I discussed the fact that &lt;a href="http://thevirtuosi.blogspot.com/2010/05/human-radiation.html"&gt;humans radiate energy&lt;/a&gt;.  In that post I calculated that we actually radiate quite a lot of power.  This immediately raises a few questions, the most obvious one being: How long would it take you to freeze in space?  This question is multifaceted, and I&amp;#8217;m going to split it between two parts.  This first part, &amp;#8216;Blackest Night&amp;#8217; is how quickly we&amp;#8217;d freeze if we were completely lost in space, nothing anywhere near.  The second part, &amp;#8216;Turn On The Sun!&amp;#8217; will address what would happen in near earth&amp;nbsp;orbit.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
+We need to clarify what we mean when we say freezing in space.  The fatal temperature change for a human is (according to the all knowing internet), roughly a drop of 7C.  If you remember my previous post, we calculated that we would radiate about 860 W.  Now, we have to ask how much energy it takes to change our temperature by 7 C.  Well, as I&amp;#8217;ve discussed a &lt;a href="http://thevirtuosi.blogspot.com/2010/04/beer-diet.html#more"&gt;few&lt;/a&gt; &lt;a href="http://thevirtuosi.blogspot.com/2010/04/falling-water-hot-or-cold.html"&gt;times&lt;/a&gt;, the energy it takes to change the temperature is given by
+&lt;mathjax&gt;$$Q=mc\Delta T$$&lt;/mathjax&gt;
+The mass of a human is ~75 kg.  We&amp;#8217;re mostly water, so let&amp;#8217;s just assume that we are all water.  This gives us a specific heat of 4.2 kJ/kg*K.  The energy needed for our 7 C temperature change is then
+&lt;mathjax&gt;$$Q=(75kg)(4.2kJ/kg*K)(7K)=2.2 MJ$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;By the time we have dropped to 30 C, we are only radiating a power of
+&lt;mathjax&gt;$$P=eA\sigma T^4\=(.97)(1.7m^2)(5.67\cdot10^{-8}W/m^2K^4)(303K)^4=790W$$&lt;/mathjax&gt;
+Let us assume that the average power radiated is the geometric average of these two powers,
+&lt;mathjax&gt;$$P_{avg}=\sqrt{(860W)(790W)}\approx825W$$&lt;/mathjax&gt;
+This gives us a time to freeze of
+&lt;mathjax&gt;$$t=\frac{2.2MJ}{825W}\approx2700s$$&lt;/mathjax&gt;
+This is ~45 minutes.  So you&amp;#8217;ve got 45 minutes until a deadly freeze in deep space.  Seems a rather long time, does it not?  I&amp;#8217;m fairly certain that you&amp;#8217;d freeze much faster in antarctica than deep space.  Why?  Because in Antarctica you have more cooling mechanisms that just radiation, you have conduction in the air around you and convection of that warmer air away from your skin.  If you&amp;#8217;re adrift in space, for all that it is rather cold, the good news is that you&amp;#8217;ll asphyxiate before you&amp;nbsp;freeze!&lt;/p&gt;
+&lt;p&gt;All of this was done assuming that there&amp;#8217;s no energy gain from anywhere.  That is, that we&amp;#8217;re stuck somewhere in the deepest space, the blackest night.  Tomorrow we&amp;#8217;ll consider what would happen if you were in near earth orbit, with all of these lovely energy sources around, particularly the&amp;nbsp;sun.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Wed, 12 May 2010 22:26:00 -0400</pubDate><guid>tag:,2010-05-12:posts/freezing-in-space-i-blackest-night.html</guid><category>power</category><category>space</category><category>freeze</category><category>blackbody</category><category>radiation</category><category>human</category></item><item><title>Human Radiation</title><link>/posts/human-radiation.html</link><description>&lt;p&gt;Things are still busy here at the Virutosi.  Hopefully in a week or so we&amp;#8217;ll be back to normal, and much more active than we&amp;#8217;ve been recently  Anyways, today I&amp;#8217;d like to consider human radiation.  It is well known that any object will radiate energy based on its temperature.  Even more interesting, we radiate at all wavelengths, though at the human body temperature our radiation is sharply peaked in the infrared.  Even so, we still put out some x-ray radiation.  As a professor of mine once said, consider that next time you sleep with someone!  Given all this, the question on my mind today is:  how does the energy we radiate daily compare to the energy we consume?  That is, why don&amp;#8217;t I lose weight sitting here typing on the&amp;nbsp;computer?&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;We physicists call perfect radiators black bodies (something that radiates perfectly also must absorb perfectly).  For perfect radiators, the power radiated is given by
+&lt;mathjax&gt;$$P=\sigma A T^4$$&lt;/mathjax&gt;
+where sigma is the stephan-boltzman constant, A is the surface area of the radiator, and T is the temperature of the radiator.  For objects that are not perfect emitters or perfect absorbers, we through in a fudge factor, e the emissivity, which is between 0 and 1.  This makes the power emitted
+&lt;mathjax&gt;$$P=e \sigma A T^4$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;To figure out the power radiated by a human, we need to know three things.  The first is the emissivity of human skin.  It turns out this is .97.  The second is the temperature of a human body, ~37 C.  The third is the surface area of a human.  This requires a little estimation.  I&amp;#8217;m about 180 cm tall, and I wear 35&amp;#8221; waist pants, so my radius is ~14 cm.  Modeling myself as a cylinder, I have a surface area of ~1.7 m^2.  Now we can estimate my power output:
+&lt;mathjax&gt;$$P=.97*5.67\cdot 10^{-8}W/m^2K^4 * 1.7 m^2 * (310K)^4$$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$P \approx 860W$$&lt;/mathjax&gt;
+I&amp;#8217;m powerful!  That&amp;#8217;s about 14 (60W)&amp;nbsp;lightbulbs!&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;d like to compare that to our daily energy intake, so we need to turn this power into an energy.  Well, there are 86400 s in a day.  So we radiate 74&lt;em&gt;10^6 J per day.  If you read my &lt;a href="http://thevirtuosi.blogspot.com/2010/04/beer-diet.html"&gt;beer diet&lt;/a&gt; post, you&amp;#8217;ll know the conversion between J and Calories (note the capitol C).  If not, suffice it to say that 1 Calorie = 4.2&lt;/em&gt;10^3 J.  If I consume about 2000 Calories a day (typical, right?), then I take in about 8.4*10^6 J per day.  So, dear reader, why haven&amp;#8217;t I lost weight while typing this&amp;nbsp;post?&lt;/p&gt;
+&lt;p&gt;There are a few answers.  I&amp;#8217;m wearing insulating layers, clothing which keeps in some of my radiated heat.  Also, our skin temperature is lower than our internal temperature of 37 C.  But more than that, I&amp;#8217;m absorbing energy from the surroundings.  The earth is a fairly good blackbody radiator, with an average temperature of ~20 C.  This means that my net power loss, with no clothing, would be about
+&lt;mathjax&gt;$$\Delta P \approx (5.67\cdot 10^{-8} W/m^2K^4)(1.7m^2)((310K)^4-(293K)^4)$$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$\Delta P = 180W$$&lt;/mathjax&gt;
+This is ~15*10^6 J per day.  While still more than my intake, this is much closer, and you can imagine that the rest of the difference can be made up by our lower skin temperature, and clothing and such instruments of men.  Of course, these numbers are rough, so I don&amp;#8217;t recommend the &amp;#8216;naked diet&amp;#8217;, where you try to lose weight by walking around naked.  Or if you do try it, don&amp;#8217;t say I told you to when you&amp;#8217;re taken in for indecent&amp;nbsp;exposure!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Sun, 09 May 2010 00:24:00 -0400</pubDate><guid>tag:,2010-05-09:posts/human-radiation.html</guid><category>power</category><category>blackbody</category><category>radiation</category><category>human</category></item></channel></rss>

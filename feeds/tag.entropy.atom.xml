@@ -1,155 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.entropy.atom.xml" rel="self"></link><id>/</id><updated>2011-08-30T23:49:00-04:00</updated><entry><title>A Tweet is Worth (at least) 140 Words</title><link href="/posts/a-tweet-is-worth-at-least-140-words.html" rel="alternate"></link><updated>2011-08-30T23:49:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2011-08-30:posts/a-tweet-is-worth-at-least-140-words.html</id><summary type="html">&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s1600/twittercompression.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s400/twittercompression.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;So, I recently read &lt;a href="http://books.google.com/books?id=fXxde44_0zsC&amp;amp;printsec=frontcover&amp;amp;dq=An+Introduction+to+Information+Theory&amp;amp;hl=en&amp;amp;ei=7opdTrjhMMXrOarHmdIC&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CC0Q6AEwAA#v=onepage&amp;amp;q&amp;amp;f=false"&gt;An Introduction to Information Theory: Symbols,
-Signals and
-Noise&lt;/a&gt;.
-It is a very nice popular introduction to &lt;a href="http://en.wikipedia.org/wiki/Information_Theory"&gt;Information
-Theory&lt;/a&gt;, a modern
-scientific pursuit to quantify information started by &lt;a href="http://en.wikipedia.org/wiki/Claude_Shannon"&gt;Claude
-Shannon&lt;/a&gt; in 1948. This got
-me thinking. Increasingly, people try to hold conversations on
-&lt;a href="http://twitter.com/"&gt;Twitter&lt;/a&gt;, where posts are limited to 140
-characters. Just how much information could you convey in 140
-characters? After some coding and investigation, I created
-&lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;this&lt;/a&gt;, an
-experimental twitter English compression algorithm capable of
-compressing around 140 words into 140 characters. So, what&amp;#8217;s the story?
-Warning: It&amp;#8217;s a bit of a story, the juicy bits are at the end. &lt;span class="caps"&gt;UPDATE&lt;/span&gt;:
-Tomo in the comments below made &lt;a href="http://www.saigonist.com/b/twitter-decoder-ring"&gt;a chrome
-extension&lt;/a&gt; for the&amp;nbsp;algorithm&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="/" rel="alternate"></link><link href="http://thephysicsvirtuosi.com/feeds/tag.entropy.atom.xml" rel="self"></link><id>/</id><updated>2011-08-30T23:49:00-04:00</updated><entry><title>A Tweet is Worth (at least) 140 Words</title><link href="/posts/a-tweet-is-worth-at-least-140-words.html" rel="alternate"></link><updated>2011-08-30T23:49:00-04:00</updated><author><name>Alemi</name></author><id>tag:,2011-08-30:posts/a-tweet-is-worth-at-least-140-words.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s1600/twittercompression.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="207" src="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s400/twittercompression.png" width="243" /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;So, I recently read &lt;a href="http://books.google.com/books?id=fXxde44_0zsC&amp;amp;printsec=frontcover&amp;amp;dq=An+Introduction+to+Information+Theory&amp;amp;hl=en&amp;amp;ei=7opdTrjhMMXrOarHmdIC&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CC0Q6AEwAA#v=onepage&amp;amp;q&amp;amp;f=false"&gt;An Introduction to Information Theory: Symbols, Signals and Noise&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;It is a very nice popular introduction to &lt;a href="http://en.wikipedia.org/wiki/Information_Theory"&gt;Information Theory&lt;/a&gt;, a modern scientific pursuit to quantify information started by &lt;a href="http://en.wikipedia.org/wiki/Claude_Shannon"&gt;Claude Shannon&lt;/a&gt; in&amp;nbsp;1948.  &lt;/p&gt;
+&lt;p&gt;This got me thinking.  Increasingly, people try to hold conversations on &lt;a href="http://twitter.com/"&gt;Twitter&lt;/a&gt;, where posts are limited to 140 characters.  Just how much information could you convey in 140&amp;nbsp;characters? &lt;/p&gt;
+&lt;p&gt;After some coding and investigation, I created &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;this&lt;/a&gt;, an experimental twitter English compression algorithm capable of compressing around 140 words into 140&amp;nbsp;characters.&lt;/p&gt;
+&lt;p&gt;So, what&amp;#8217;s the story? Warning: It&amp;#8217;s a bit of a story, the juicy bits are at the&amp;nbsp;end.&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;:  Tomo in the comments below made &lt;a href="http://www.saigonist.com/b/twitter-decoder-ring"&gt;a chrome extension &lt;/a&gt; for the&amp;nbsp;algorithm&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
 &lt;h3&gt;Entropy&lt;/h3&gt;
-&lt;p&gt;Ultimately, we need some way to assess how much information is contained
-in a signal. What does it mean for a signal to contain information
-anyway? Is &amp;#8216;this is a test of twitter compression.&amp;#8217; more meaningful than
-&amp;#8216;歒堙丁顜善咮旮呂&amp;#8217;? The first is understandable by any english speaker,
-and requires 38 characters. You might think the second is meaningful to
-a speaker of chinese, but I&amp;#8217;m fairly certain it is gibberish, and takes
-8 characters. But, the thing is if you put those 8 characters into &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;the
-bottom form here&lt;/a&gt;,
-you&amp;#8217;ll recover the first. So, in some sense to the messages are
-equivalent. They contain the same amount of information. Shannon tried
-to quantify how we could estimate just how much information any message
-contains. Of course it would be very hard to try to track down every
-intelligent being in the universe and ask them if any particular message
-had any meaning to them. Instead, Shannon reserved himself to trying to
-quantify how much information was contained in a message produced by a
-random source. In this regard, the question of how much information a
-message contains becomes a more tractable question: How unlike is a
-particular message from all other messages produced by the same random
-source? This question might sound a little familiar. It is similar to a
-question that comes up a lot in &lt;a href="http://en.wikipedia.org/wiki/Statistical_physics"&gt;Statistical
-Physics&lt;/a&gt;, where we are
-interested in just how unlike a particular configuration of a system is
-from all possible configurations of a system. In Statistical physics,
-the quantity that helps us answer questions like this is the
-&lt;a href="http://en.wikipedia.org/wiki/Entropy"&gt;Entropy&lt;/a&gt;, where the entropy is
-defined as &lt;mathjax&gt;$$ S = -\\sum\_i p\_i \\log p\_i $$&lt;/mathjax&gt; where p_i stands for the
-probability of a particular configuration, and we are supposed to sum
-over all possible configurations of the system. Similarly, for our
-random message source, we can define the entropy in exactly the same
-way, but for convenience, let&amp;#8217;s replace the logarithm with the logarithm
-base 2. &lt;mathjax&gt;$$ S = -\\sum\_i p\_i \\log\_2 p\_i $$&lt;/mathjax&gt; At this point, the
-&lt;a href="http://en.wikipedia.org/wiki/Shannon_entropy"&gt;Shannon Entropy, or Information
-Entropy&lt;/a&gt; takes on a real
-quantitative meaning. It reflects how many bits of information the
-message source produces per character. The result of all of this aligns
-quite well with intuition. If we have a source that outputs two symbols
-0 or 1 randomly, each with probability 1/2. The shannon entropy comes
-out to be 1, meaning each of the symbols of our source is worth one bit,
-which we already new. If instead of two symbols, our source can output
-16 symbols, 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F say, the shannon entropy
-comes out to be 4 bits per symbol, which again we should have suspected
-since with four bits we can count up to the number 16 in &lt;a href="http://en.wikipedia.org/wiki/Binary_numeral_system"&gt;base
-2&lt;/a&gt; (e.g. 0000 - 0,
-0001 - 1, 0010 - 2 , etc ). Where it begins to get interesting is when
-all of our symbols don&amp;#8217;t occur with equal probability. To get a sense of
-this situation, I&amp;#8217;ll show 5 example&amp;nbsp;outputs:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;'000001000100000000010000010000'
-
-'000000000010000000000001000000'
-
-'010100000000000000000000111000'
-
-'010100000000000000000000111000'
-
-'000000000100000000110000000010'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;looking at these examples, it begins to become clear that since we have
-a lot more zeros than ones, each of these messages contain less
-information than the case when 0 and 1 occur with equal probability. In
-fact, in this case, if 0 occurs 90% of the time, and 1 occurs 10% of the
-time, the shannon entropy comes out to be 0.47. Meaning each symbol is
-worth just less than half a bit. We should expect our messages in this
-case to have to be about twice as long to encode the same amount of
-information. In an extreme example, imagine you were trying to transmit
-a message to someone in binary, but for some reason, your device had a
-sticky 0 key so that every time you pushed 0, it transmitted 0 10 times
-in a row. It should be clear in this case that as far as the receiver is
-concerned, this is not a very efficient transmission&amp;nbsp;scheme.&lt;/p&gt;
+Ultimately, we need some way to assess how much information is contained in a signal.  What does it mean for a signal to contain information anyway?  Is &amp;#8216;this is a test of twitter compression.&amp;#8217; more meaningful than &amp;#8216;歒堙丁顜善咮旮呂&amp;#8217;?  The first is understandable by any english speaker, and requires 38 characters.  You might think the second is meaningful to a speaker of chinese, but I&amp;#8217;m fairly certain it is gibberish, and takes 8 characters.  But, the thing is if you put those 8 characters into &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;the bottom form here&lt;/a&gt;, you&amp;#8217;ll recover the first.  So, in some sense to the messages are equivalent.  They contain the same amount of&amp;nbsp;information.&lt;/p&gt;
+&lt;p&gt;Shannon tried to quantify how we could estimate just how much information any message contains. Of course it would be very hard to try to track down every intelligent being in the universe and ask them if any particular message had any meaning to them.  Instead, Shannon reserved himself to trying to quantify how much information was contained in a message produced by a random source.  In this regard, the question of how much information a message contains becomes a more tractable question:  How unlike is a particular message from all other messages produced by the same random&amp;nbsp;source?  &lt;/p&gt;
+&lt;p&gt;This question might sound a little familiar.  It is similar to a question that comes up a lot in &lt;a href="http://en.wikipedia.org/wiki/Statistical_physics"&gt;Statistical Physics&lt;/a&gt;, where we are interested in just how unlike a particular configuration of a system is from all possible configurations of a system. In Statistical physics, the quantity that helps us answer questions like this is the &lt;a href="http://en.wikipedia.org/wiki/Entropy"&gt;Entropy&lt;/a&gt;, where the entropy is defined as
+&lt;mathjax&gt;$$ S = -\sum_i p_i \log p_i $$&lt;/mathjax&gt;
+where p_i stands for the probability of a particular configuration, and we are supposed to sum over all possible configurations of the&amp;nbsp;system.  &lt;/p&gt;
+&lt;p&gt;Similarly, for our random message source, we can define the entropy in exactly the same way, but for convenience, let&amp;#8217;s replace the logarithm with the logarithm base&amp;nbsp;2.&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ S = -\sum_i p_i \log_2 p_i $$&lt;/mathjax&gt;
+At this point, the &lt;a href="http://en.wikipedia.org/wiki/Shannon_entropy"&gt;Shannon Entropy, or Information Entropy&lt;/a&gt; takes on a real quantitative meaning.  It reflects how many bits of information the message source produces per&amp;nbsp;character.&lt;/p&gt;
+&lt;p&gt;The result of all of this aligns quite well with intuition.  If we have a source that outputs two symbols 0 or 1 randomly, each with probability 1/2.  The shannon entropy comes out to be 1, meaning each of the symbols of our source is worth one bit, which we already new.  If instead of two symbols, our source can output 16 symbols, 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F say, the shannon entropy comes out to be 4 bits per symbol, which again we should have suspected since with four bits we can count up to the number 16 in &lt;a href="http://en.wikipedia.org/wiki/Binary_numeral_system"&gt;base 2&lt;/a&gt; (e.g. 0000 - 0, 0001 - 1, 0010 - 2 , etc&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;Where it begins to get interesting is when all of our symbols don&amp;#8217;t occur with equal probability.  To get a sense of this situation, I&amp;#8217;ll show 5 example outputs:
+&lt;pre&gt;&lt;span class="quo"&gt;'&lt;/span&gt;000001000100000000010000010000'&lt;/p&gt;
+&lt;p&gt;&lt;span class="quo"&gt;'&lt;/span&gt;000000000010000000000001000000'&lt;/p&gt;
+&lt;p&gt;&lt;span class="quo"&gt;'&lt;/span&gt;010100000000000000000000111000'&lt;/p&gt;
+&lt;p&gt;&lt;span class="quo"&gt;'&lt;/span&gt;010100000000000000000000111000'&lt;/p&gt;
+&lt;p&gt;&lt;span class="quo"&gt;'&lt;/span&gt;000000000100000000110000000010'&lt;/p&gt;
+&lt;p&gt;&lt;/pre&gt;looking at these examples, it begins to become clear that since we have a lot more zeros than ones, each of these messages contain less information than the case when 0 and 1 occur with equal&amp;nbsp;probability.&lt;/p&gt;
+&lt;p&gt;In fact, in this case, if 0 occurs 90% of the time, and 1 occurs 10% of the time, the shannon entropy comes out to be 0.47.  Meaning each symbol is worth just less than half a bit.  We should expect our messages in this case to have to be about twice as long to encode the same amount of&amp;nbsp;information.&lt;/p&gt;
+&lt;p&gt;In an extreme example, imagine you were trying to transmit a message to someone in binary, but for some reason, your device had a sticky 0 key so that every time you pushed 0, it transmitted 0 10 times in a row.  It should be clear in this case that as far as the receiver is concerned, this is not a very efficient transmission&amp;nbsp;scheme.&lt;/p&gt;
 &lt;h3&gt;English&lt;/h3&gt;
-&lt;p&gt;What does this have to do with anything? Well, all of that and I really
-only wanted to build up a fact you already know. The fact is, the
-English language is not very efficient on a per symbol basis. For
-example, I&amp;#8217;m sure everyone knows exactly what word will come at the end
-of this _______. There you go, I was able to express exactly the
-same thought with at least 8 fewer characters. n fct, w cn d _ lt bttr
-[in fact, we can do a lot better], using 22 characters to express a
-thought that normally takes 31 characters. In fact, Shannon has a &lt;a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf"&gt;nice
-paper&lt;/a&gt; where he
-attempted to measure the entropy of the english language itself. Using
-more sophisticated methods, he concludes that english has an information
-entropy of between 0.6 and 1.3 bits per character, let&amp;#8217;s call it 1 bit
-per character. Whereas, if each of the 27 symbols (26 letters + space)
-we commonly use each showed up equally frequently, we would have 4.75
-bits per character possible. Of course, from a practical communication
-standpoint, having redundancies in human language can be a useful thing,
-as it allows us to still understand one another even over noisy phone
-lines and with very bad handwriting. But, with modern computers and
-faithful transmission of information, we really ought to be able to do&amp;nbsp;better.&lt;/p&gt;
+
+&lt;p&gt;What does this have to do with anything?  Well, all of that and I really only wanted to build up a fact you already know.  The fact is, the English language is not very efficient on a per symbol basis.  For example, I&amp;#8217;m sure everyone knows exactly what word will come at the end of this &lt;strong&gt;&lt;em&gt;_&lt;/em&gt;&lt;/strong&gt;.  There you go, I was able to express exactly the same thought with at least 8 fewer characters.  n fct, w cn d _ lt bttr [in fact, we can do a lot better], using 22 characters to express a thought that normally takes 31&amp;nbsp;characters.&lt;/p&gt;
+&lt;p&gt;In fact, Shannon has a &lt;a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf"&gt;nice paper&lt;/a&gt; where he attempted to measure the entropy of the english language itself.  Using more sophisticated methods, he concludes that english has an information entropy of between 0.6 and 1.3 bits per character, let&amp;#8217;s call it 1 bit per character.  Whereas, if each of the 27 symbols (26 letters + space) we commonly use each showed up equally frequently, we would have 4.75 bits per character&amp;nbsp;possible.  &lt;/p&gt;
+&lt;p&gt;Of course, from a practical communication standpoint, having redundancies in human language can be a useful thing, as it allows us to still understand one another even over noisy phone lines and with very bad&amp;nbsp;handwriting.  &lt;/p&gt;
+&lt;p&gt;But, with modern computers and faithful transmission of information, we really ought to be able to do&amp;nbsp;better.&lt;/p&gt;
 &lt;h3&gt;Twitter&lt;/h3&gt;
-&lt;p&gt;This brings me back to &lt;a href="http://twitter.com/"&gt;twitter&lt;/a&gt;. If you are
-unaware, twitter allows users to post short, 140 character messages for
-the rest of the world to enjoy. 140 characters is not a lot to go on.
-Assuming 4.5 characters per word, this means that in traditionally
-written english you&amp;#8217;re lucky to fit 25 words in a standard tweet. But,
-we know now that we can do better. In fact, if we could come up with
-some kind of crazy scheme to compress english in such a way as to use
-each of the 27 usual characters so that each of those characters
-appeared with roughly equal probability, we&amp;#8217;ve seen that we could get
-4.75 bits per character, with 140 characters and 5.5 symbols per word,
-this would allow us to fit not 25 words in a tweet but 120 words. A
-factor of 4.8 improvement. Of course we would have to discover this
-miraculous encryption transformation. Which to my knowledge remains
-undiscovered. But, we can do better. It turns out that twitter allows
-you to use &lt;a href="http://en.wikipedia.org/wiki/Unicode"&gt;Unicode&lt;/a&gt; characters in
-your tweets. Beyond enabling you to talk about Lagrangians (ℒ) and play
-cards (♣), it enables international communication, by including foreign
-alphabets. So, in fact we don&amp;#8217;t need to limit ourselves to the 27
-commonly used English symbols. We could use a much larger alphabet,
-Chinese say. I choose Chinese because there are over 20,900 Chinese
-alphabet symbols in Unicode. Using all of these characters, we could
-theoretically encode 14.3 bits of information per character, with 140
-characters, and 1 bit per English character, and 5.5 symbols per English
-word, we could theoretically fit over 365 English words in a single
-tweet. But alas, we would have to discover some magical encoding
-algorithm that could map typed English to the Chinese alphabet such that
-each of the Chinese symbols occurred with equal probability. I wasn&amp;#8217;t
-able to do that well, but I did make an&amp;nbsp;attempt.&lt;/p&gt;
+
+&lt;p&gt;This brings me back to &lt;a href="http://twitter.com/"&gt;twitter&lt;/a&gt;.  If you are unaware, twitter allows users to post short, 140 character messages for the rest of the world to enjoy.  140 characters is not a lot to go on.  Assuming 4.5 characters per word, this means that in traditionally written english you&amp;#8217;re lucky to fit 25 words in a standard&amp;nbsp;tweet.  &lt;/p&gt;
+&lt;p&gt;But, we know now that we can do better.  In fact, if we could come up with some kind of crazy scheme to compress english in such a way as to use each of the 27 usual characters so that each of those characters appeared with roughly equal probability, we&amp;#8217;ve seen that we could get 4.75 bits per character, with 140 characters and 5.5 symbols per word, this would allow us to fit not 25 words in a tweet but 120 words. A factor of 4.8&amp;nbsp;improvement.&lt;/p&gt;
+&lt;p&gt;Of course we would have to discover this miraculous encryption transformation.  Which to my knowledge remains&amp;nbsp;undiscovered.  &lt;/p&gt;
+&lt;p&gt;But, we can do better.  It turns out that twitter allows you to use &lt;a href="http://en.wikipedia.org/wiki/Unicode"&gt;Unicode&lt;/a&gt; characters in your tweets.  Beyond enabling you to talk about Lagrangians (ℒ) and play cards (♣), it enables international communication, by including foreign&amp;nbsp;alphabets.&lt;/p&gt;
+&lt;p&gt;So, in fact we don&amp;#8217;t need to limit ourselves to the 27 commonly used English symbols.  We could use a much larger alphabet, Chinese say.  I choose Chinese because there are over 20,900 Chinese alphabet symbols in Unicode.  Using all of these characters, we could theoretically encode 14.3 bits of information per character, with 140 characters, and 1 bit per English character, and 5.5 symbols per English word, we could theoretically fit over 365 English words in a single tweet.  But alas, we would have to discover some magical encoding algorithm that could map typed English to the Chinese alphabet such that each of the Chinese symbols occurred with equal&amp;nbsp;probability.&lt;/p&gt;
+&lt;p&gt;I wasn&amp;#8217;t able to do that well, but I did make an&amp;nbsp;attempt.&lt;/p&gt;
 &lt;h3&gt;My&amp;nbsp;Attempt&lt;/h3&gt;
-&lt;p&gt;So, I tried to compress the English language, an design an effective
-mapping from written English to the Chinese character set of Unicode. We
-know that we aim to have each of these Chinese characters occur with
-equal probability, so my algorithm was quite simple. Let&amp;#8217;s just look at
-a bunch of English and see which pair of characters occur with the
-highest probability, and map these to the first Chinese character in the
-Unicode set. Replace their occurring in the text, rinse, and repeat.
-This technique is guaranteed to reduce the probability at which the most
-common character occurs at every step, by taking some if its occurrences
-and replacing them, so it at least aims to achieve our ultimate goal.
-That&amp;#8217;s it. Of course, I tried to bootstrap the algorithm a little bit by
-first mapping the most common 1500 words to their own symbols. For
-example, consider the first stanza of the &lt;a href="http://en.wikipedia.org/wiki/The_raven"&gt;Raven by Edger Allen&amp;nbsp;Poe&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Once upon a midnight dreary, while I pondered, weak and weary,
+
+&lt;p&gt;So, I tried to compress the English language, an design an effective mapping from written English to the Chinese character set of Unicode.  We know that we aim to have each of these Chinese characters occur with equal probability, so my algorithm was quite simple.  Let&amp;#8217;s just look at a bunch of English and see which pair of characters occur with the highest probability, and map these to the first Chinese character in the Unicode set.  Replace their occurring in the text, rinse, and repeat.  This technique is guaranteed to reduce the probability at which the most common character occurs at every step, by taking some if its occurrences and replacing them, so it at least aims to achieve our ultimate goal.  That&amp;#8217;s it.  Of course, I tried to bootstrap the algorithm a little bit by first mapping the most common 1500 words to their own&amp;nbsp;symbols.  &lt;/p&gt;
+&lt;p&gt;For example, consider the first stanza of the &lt;a href="http://en.wikipedia.org/wiki/The_raven"&gt;Raven by Edger Allen&amp;nbsp;Poe&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;Once upon a midnight dreary, while I pondered, weak and weary,
 
 Over many a quaint and curious volume of forgotten lore--
 
@@ -160,11 +56,11 @@ As of some one gently rapping, rapping at my chamber door.
 "'Tis some visiter," I muttered, "tapping at my chamber door--
 
                      Only this and nothing more."
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The most common character is &amp;#8216; &amp;#8216; (the space). The most common pair is &amp;#8216;e
-&amp;#8216; (e followed by space), so let&amp;#8217;s replace &amp;#8216;e &amp;#8216; with the first Chinese
-Unicode character &amp;#8216;一&amp;#8217; we&amp;nbsp;obtain:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
+
+&lt;/pre&gt;
+
+&lt;p&gt;The most common character is &amp;#8216; &amp;#8216; (the space).  The most common pair is &amp;#8216;e &amp;#8216; (e followed by space), so let&amp;#8217;s replace &amp;#8216;e &amp;#8216; with the first Chinese Unicode character &amp;#8216;一&amp;#8217; we&amp;nbsp;obtain:&lt;/p&gt;
+&lt;pre&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
 
 Over many a quaint and curious volum一of forgotten lore--
 
@@ -175,10 +71,11 @@ As of som一on一gently rapping, rapping at my chamber door.
 "'Tis som一visiter," I muttered, "tapping at my chamber door--
 
                      Only this and nothing more.'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So we&amp;#8217;ve reduced the number of spaces a bit. Doing one more step, now
-the most common pair of characters is &amp;#8216;in&amp;#8217;, which we replace by &amp;#8216;丁&amp;#8217;&amp;nbsp;obtaining:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
+
+&lt;/pre&gt;
+
+&lt;p&gt;So we&amp;#8217;ve reduced the number of spaces a bit.  Doing one more step, now the most common pair of characters is &amp;#8216;in&amp;#8217;, which we replace by &amp;#8216;丁&amp;#8217;&amp;nbsp;obtaining:&lt;/p&gt;
+&lt;pre&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
 
 Over many a qua丁t and curious volum一of forgotten lore--
 
@@ -189,13 +86,12 @@ As of som一on一gently rapp丁g, rapp丁g at my chamber door.
 "'Tis som一visiter," I muttered, "tapp丁g at my chamber door--
 
                      Only this and noth丁g more.'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;etc. The end results of the effort are &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;demo-ed
-here&lt;/a&gt;. Feel free to
-play around with it. For the most part, typing some standard English, I
-seem to be able to get compression ratios around 5 or so. Let me know
-how it does for you. I&amp;#8217;ll leave you with this final&amp;nbsp;message:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;儌咹乺悃巄格丌凣亥乄叜
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Python code that I used to do the heavy lifting is available as &lt;a href="https://gist.github.com/1182747"&gt;a
-gist&lt;/a&gt;.&lt;/p&gt;</summary><category term="entropy"></category><category term="information theory"></category><category term="python"></category><category term="twitter"></category></entry></feed>
+
+&lt;/pre&gt;
+
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;p&gt;The end results of the effort are &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;demo-ed here&lt;/a&gt;.  Feel free to play around with it. For the most part, typing some standard English, I seem to be able to get compression ratios around 5 or so.  Let me know how it does for&amp;nbsp;you.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll leave you with this final message:
+&lt;pre&gt;儌咹乺悃巄格丌凣亥乄叜&lt;/p&gt;
+&lt;p&gt;&lt;/pre&gt;
+Python code that I used to do the heavy lifting is available as &lt;a href="https://gist.github.com/1182747"&gt;a gist&lt;/a&gt;.&lt;/p&gt;</summary><category term="entropy"></category><category term="information theory"></category><category term="python"></category><category term="twitter"></category></entry></feed>

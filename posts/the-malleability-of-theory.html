@@ -29,7 +29,8 @@
             styles: {
                 ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
         },
-        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+        tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],
+          processEscapes: true}
     });
 </script>
 <script type="text/javascript"
@@ -80,54 +81,26 @@
 	<article>
 		<div class="post wrapper">
 			<h1>The malleability of&nbsp;theory</h1>
-			<p>There were some undergrads in my office for office hours the other day,
-asking questions for the midterm. I&#8217;m teaching the engineering course on
-optics and waves (also known as Things that go Sine) and the students
-were looking at a problem dealing with quarter-wave plates. A
-quarter-wave plate, the question goes, is a kind of optical instrument
-that turns light with linear polarization into circular polarization.
-Show, it continues, that it also turns light with circular polarization
-linear. After a minute or two of discussing how a quarter-wave plate
-work (&#8220;what, does it act differently on different axes?&#8221; giggled one,
-and everybody gasped when I said yes) we went to the math. I wrote down
-the equations for light with linear and circular polarization, <mathjax>$$ E\_0
-\\hat{x} \\cos\\left(kz-\\omega t\\right) \\to
-\\frac{E\_0}{\\sqrt{2}}\\hat{x}\\cos\\left(kz-\\omega t\\right) +
-\\frac{E\_0}{\\sqrt{2}}\\hat{y}\\sin\\left(kz-\\omega t\\right) $$</mathjax> with
-a little arrow in between them to signify that the quarter-wave plate
-turns one into the other. This was acceptable, so we continued. What
-happens when light with circular polarization enters the plate? Well, we
-start out the other way:
-<mathjax>$$\\frac{E\_0}{\\sqrt{2}}\\hat{x}\\cos\\left(kz-\\omega t\\right) +
-\\frac{E\_0}{\\sqrt{2}}\\hat{y}\\sin\\left(kz-\\omega t\\right) $$</mathjax> and
-then break it up into components. The first term obviously behaves
-exactly the same as in the previous case,
-<mathjax>$$\\frac{E\_0}{\\sqrt{2}}\\hat{x}\\cos\\left(kz-\\omega t\\right) \\to
-\\frac{E\_0}{2}\\hat{x}\\cos\\left(kz-\\omega t\\right) +
-\\frac{E\_0}{2}\\hat{y}\\sin\\left(kz-\\omega t\\right) $$</mathjax> while the
-second term is easy to extrapolate from there,
-<mathjax>$$\\frac{E\_0}{\\sqrt{2}}\\hat{y}\\sin\\left(kz-\\omega t\\right) \\to
--\\frac{E\_0}{2}\\hat{x}\\cos\\left(kz-\\omega t\\right) +
-\\frac{E\_0}{2}\\hat{y}\\sin\\left(kz-\\omega t\\right) $$</mathjax> and adding
-them both up, we get on the other side of the quarter-wave plate
-<mathjax>$$E\_0\\hat{y}\\sin\\left(kz-\\omega t\\right)$$</mathjax> a linearly polarized
-wave. Simple, right? Almost simple. There&#8217;s one trick in there, which
-you may have noticed if you were following. My student noticed it - but
-she&#8217;s a clever one - and she asked me why I put that minus sign in the
-second transformation equation. And my honest answer was that I put it
-there to get the result I wanted. Sure, I can back it up with more math
-(handedness, or maybe I can figure it out by redrawing the axes) but
-when I was writing those equations on the board, I put that minus sign
-there because I was expecting a certain result. And really, we do this
-all the time. The math isn&#8217;t neutral; it&#8217;s an ally (or an enemy,
-sometimes) that we&#8217;re bending to get the result we want - because of
-intuition, because of a previous results, because this is a homework
-problem with a known solution - or because we have an experimental
-result that we really want to be in accord with. This isn&#8217;t a problem,
-necessarily. Sometimes it leads us to wrong results, sometimes it helps
-us reach the correct ones. It usually makes our life easier, and
-sometimes makes them a lot harder. Keeping this bias in mind when we do
-our math should hopefully lead to more of the first and less of the&nbsp;second.</p>
+			<p>There were some undergrads in my office for office hours the other day, asking questions for the  midterm. I&#8217;m teaching  the engineering course on optics and waves (also known as <span style="font-style: italic;">Things that go Sine</span>) and the students were looking at a problem dealing with  quarter-wave&nbsp;plates.</p>
+<p>A quarter-wave plate, the question goes, is a kind of optical  instrument that turns light with linear polarization into circular polarization. Show, it continues, that it also turns light with circular polarization&nbsp;linear.</p>
+<p>After a minute or two of discussing how a quarter-wave plate work (&#8220;what, does it act  differently on different <span style="font-style: italic;">axes</span>?&#8221; giggled one, and everybody gasped when I said yes) we went to the math. I wrote down the equations for light with linear and circular&nbsp;polarization,</p>
+<p><mathjax>$$ E_0 \hat{x} \cos\left(kz-\omega t\right) \to \frac{E_0}{\sqrt{2}}\hat{x}\cos\left(kz-\omega t\right) + \frac{E_0}{\sqrt{2}}\hat{y}\sin\left(kz-\omega t\right) $$</mathjax></p>
+<p>with a little arrow in between them to signify that the quarter-wave plate turns one into the&nbsp;other.</p>
+<p><a name='more'></a></p>
+<p>This was acceptable, so we continued. What happens when light with circular polarization enters the plate? Well, we start out the other way:
+<mathjax>$$\frac{E_0}{\sqrt{2}}\hat{x}\cos\left(kz-\omega t\right) +  \frac{E_0}{\sqrt{2}}\hat{y}\sin\left(kz-\omega t\right) $$</mathjax>
+and then break it up into components. The first term obviously behaves exactly the same as in the previous case,
+<mathjax>$$\frac{E_0}{\sqrt{2}}\hat{x}\cos\left(kz-\omega t\right) \to \frac{E_0}{2}\hat{x}\cos\left(kz-\omega t\right) +  \frac{E_0}{2}\hat{y}\sin\left(kz-\omega t\right) $$</mathjax>
+while the second term is easy to extrapolate from there,
+<mathjax>$$\frac{E_0}{\sqrt{2}}\hat{y}\sin\left(kz-\omega t\right) \to -\frac{E_0}{2}\hat{x}\cos\left(kz-\omega t\right) +  \frac{E_0}{2}\hat{y}\sin\left(kz-\omega t\right) $$</mathjax>
+and adding them both up, we get on the other side of the quarter-wave plate
+<mathjax>$$E_0\hat{y}\sin\left(kz-\omega t\right)$$</mathjax>
+a linearly polarized&nbsp;wave.</p>
+<p>Simple,&nbsp;right?</p>
+<p>Almost simple. There&#8217;s one trick in there, which you may have noticed if you were following. My student noticed it - but she&#8217;s a clever one - and she asked me why I put that minus sign in the second transformation equation. And my honest answer was that I put it there to get the result I&nbsp;wanted.</p>
+<p>Sure, I can back it up with more math (handedness, or maybe I can figure it out by redrawing the axes) but when I was writing those equations on the board, I put that minus sign there because I was expecting a certain&nbsp;result.</p>
+<p>And really, we do this all the time. The math isn&#8217;t neutral; it&#8217;s an ally (or an enemy, sometimes) that we&#8217;re bending to get the result we want - because of intuition, because of a previous results, because this is a homework problem with a known solution - or because we have an experimental result that we really want to be in accord&nbsp;with.</p>
+<p>This isn&#8217;t a problem, necessarily. Sometimes it leads us to wrong results, sometimes it helps us reach the correct ones. It usually makes our life easier, and sometimes makes them a lot harder. Keeping this bias in mind when we do our math should hopefully lead to more of the first and less of the&nbsp;second.</p>
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

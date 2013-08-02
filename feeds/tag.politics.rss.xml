@@ -1,293 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.politics.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 06 Mar 2012 14:37:00 -0500</lastBuildDate><item><title>Proofiness: A look into how mathematics relates to American political life</title><link>/posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</link><description>&lt;p&gt;Dearest readers,
-This is my first post on The Virtuosi, so I thought I’d take a moment to
-introduce myself. I’m a first year physics graduate student at Cornell,
-recently joined after 2 years working as an engineer first at a private
-firm and then at a national lab. I myself have had lots of fun following
-the exploits of my estimable colleagues here on The Virtuosi, and I
-thought I could bring a new angle to the content here. I would like to
-use this space to discuss how science interacts with everyday life in a
-cultural sense. How does science appear in popular culture? How do
-political or social issues relate back to science? Those sorts of
-questions. (I understand that there are plenty of other resources
-elsewhere that offer far more intelligent insight into these matters
-than I can, but in the very least this will give people a chance point
-them out to me as they yell at me in the forum below.)
-Enough intro, here begins my very first blog post:
-Being interested in how science is communicated to the public, I am an
-avid reader of popular science. While academic types sometimes dismiss
-this kind of writing as shallow or otherwise uninteresting, I think
-science writers perform a very important function serving as a way to
-convey information about conceptually challenging topics to a general
-audience. At their best, I find that these books serve as examples for
-how I can communicate my own ideas better, and in addition challenge my
-understanding of how science relates back to society in general.
-This being said, I cannot recommend Charles Seife’s &lt;em&gt;Proofiness&lt;/em&gt; enough.
-The basic premise of this book is to explore the way that good
-mathematics is hijacked, twisted, or ignored in everyday life, and the
-ugly consequences of the tendency to misunderstand numbers and
-measurements.
-Seife gives a number of fascinating examples of the ways in which
-numbers and math connect to American democracy. American government
-functions through representation, and so the
-“&lt;a href="http://www.archives.gov/exhibits/charters/constitution_transcript.html"&gt;enumeration&lt;/a&gt;”
-of citizens and their opinions through the Census and elections is an
-essential part of the democratic process. This “enumeration” is a
-counting measurement, subject to errors like any other. And yet, the
-laws that govern how Censuses and elections are run ignore this fact.
-Seife’s discussion of elections (and in particular &lt;em&gt;Bush v. Gore&lt;/em&gt;) is
-fascinating, but I won’t spoil that here. Here’s my take on the
-discussion of the Census that appears in &lt;em&gt;Proofiness&lt;/em&gt;:
-Consider a (vague) physics experiment. I want to know how many particles
-are inside a box. To figure this out, I have a detector that goes
-*ping* every time a particle passes through it. I set up my detector
-inside the box and count the number of times that it goes *ping* in a
-certain amount of time. I can then use that count to guess at the number
-of particles that I have in my box. My measurement will let me estimate
-N to within some margin of error. This process is perhaps unnecessary if
-I have only five particles in my box (in which case, I might just open
-the box and count what I see inside), but if I have 300 million
-particles in my box, it would be totally impractical for me to reach
-into the box 300 million times and count each one individually.
-We can consider the Census to be just like this physics experiment. I
-have N inhabitants (particles) living in my country (box), and I can use
-my detector (census replies) to count a certain number of people. In
-principle, using well-understood statistical techniques of regression
-and error analysis, I can estimate to within a very good margin of error
-how many people live in each region of the country. Instead, what the
-Census requires is that we reach inside the box (send representatives to
-every household that doesn’t reply by mail) and count every single
-person. The whole process ignores the fact that even if we send a
-representative to every single household there will still be some margin
-of error in our counting measurements. No such measurement can be made
-without errors.
-The consequences of ignoring these errors, says Seife, can be that we
-waste money in attempting the impossible and trying to count everybody.
-From a civic-minded perspective, this attitude towards the perfection of
-the Census can backfire. For example, if undercounting occurs (i.e.,
-certain households do not respond for some reason), the Census has no
-mechanism for correcting that miscount. Counter-intuitively, the Census
-laws actually prohibit the use of any statistical techniques to correct
-miscounting. The result is that those slow to respond are ignored and
-not taken into account when allotting seats in the legislature to
-represent them.
-&lt;em&gt;Proofiness&lt;/em&gt; is a fascinating book and a fun read, and I recommend you
-all look it up. In addition, it serves as an excellent example of
-science writing that helped me to rethink how scientific ideas relate to
-everyday life. I hope to invite consideration of these topics here and
-in future posts. If you want to know more about the inspiration for this
-post, go &lt;a href="http://journalism.nyu.edu/faculty/charles-seife/"&gt;here&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">DTC</dc:creator><pubDate>Tue, 06 Mar 2012 14:37:00 -0500</pubDate><guid>tag:,2012-03-06:posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</guid><category>Census</category><category>culture</category><category>elections</category><category>Proofiness</category><category>math</category><category>politics</category></item><item><title>A Sense of Scale (in Dollars and Cents)</title><link>/posts/a-sense-of-scale-in-dollars-and-cents-.html</link><description>&lt;p&gt;I hate politics, but for some reason I obsessively read about it. I
-don&amp;#8217;t know why I do this, but I assume it&amp;#8217;s the same reason people slow
-down for car wrecks and pay to see the geek [1]. Anyway, the big thing
-in political news now is that if Congress can&amp;#8217;t pass a budget [2] by the
-end of the day Friday, the government will shut down. Shutting down the
-government means that 800,000 federal employees will go without pay [3],
-lots of services will be put on hold and you won&amp;#8217;t be able to go to the
-Smithsonian or the Grand Canyon. So it&amp;#8217;s kind of a big deal. Since the
-ramifications of a government shutdown are so serious, there must be
-some really important disagreements holding it up, right? Right? A quick
-search (for example,
-&lt;a href="http://www.guardian.co.uk/world/2011/apr/07/us-congress-staff-government-shutdown"&gt;here&lt;/a&gt;),
-shows that the big hold-up in passing the budget comes over a
-disagreement on how much money should be cut from the budget.
-Republicans want to cut &lt;mathjax&gt;$40 billion dollars and Democrats are willing to
-cut $&lt;/mathjax&gt;34.5 billion dollars. So the hold-up is over &lt;mathjax&gt;$5.5 billion. Let's
-consider how utterly and stupidly insignificant this is. We shall take
-as our inspiration Alemi's
-[post](http://thevirtuosi.blogspot.com/2010/12/law-and-large-numbers.html)
-a while back offering several ways to help visualize the large and scary
-sounding numbers thrown around in government budgets. The first thing
-we'd like to do is find out what fraction this $&lt;/mathjax&gt;5.5 billion discrepancy
-is compared to the total budget. Alemi cites the total budget of the
-&lt;span class="caps"&gt;U.S.&lt;/span&gt; government in the 2010 fiscal year to be &lt;mathjax&gt;$3.55 trillion. Hot dog!
-So we see that: $&lt;/mathjax&gt;&lt;mathjax&gt;$ \\frac{\\mbox{Disputed Difference}}{\\mbox{Total
-Budget}} = \\frac{\\$&lt;/mathjax&gt;5.5 \times 10\^9}{\$3.55 \times 10\^{12}} =
-0.0015 &lt;mathjax&gt;$$ So the disputed part amounts to 0.15% of the total budget or
-one and half parts in a thousand. Let's compare this to some things for
-which we have a better sense of scale. Let's pretend we are looking to
-buy a car. We need it to get to work and, you know, get stuff done. If
-our car costs $10,000 dollars then 0.15% of our total costs will be $$&lt;/mathjax&gt;
-\mbox{\$10,000} \times 0.0015 = \$15 &lt;mathjax&gt;$$ So the current budget
-situation is like arguing for 6 months over a $15 charge on your $10,000
-car. Sounds reasonable! Now let's switch gears and consider a timescale.
-Let's consider a 40 hour work week. What's 0.15% of 40 hours? This comes
-to $$&lt;/mathjax&gt; 40 \mbox{ hr} \times 0.0015 = 0.06 \mbox{ hr} &lt;mathjax&gt;$$ or, if you
-prefer, $$&lt;/mathjax&gt; 0.06 \mbox{ hr} \times \frac{60 \mbox{ min}}{1 \mbox{
-hr}} = 3.6 \mbox{ minutes} &lt;mathjax&gt;$$ So the current budget problem is like
-arguing for six months over about three and a half extra minutes to your
-work week. Now let's consider a length scale. Consider the US $1 bill.
-According to
-[Wikipedia](http://en.wikipedia.org/wiki/United_States_one-dollar_bill#Small_size_notes),
-the dollar bill is 6.14 inches long, 2.61 inches wide and 0.0043 inches
-thick. That means that the ratio of the thickness to the width of a
-dollar bill is $$&lt;/mathjax&gt; \frac{\mbox{Thickness}}{\mbox{Width}} =
-\frac{0.0043 \mbox{ inches}}{2.61 \mbox{ inches}} = 0.0016 $$ or
-slightly &lt;em&gt;more&lt;/em&gt; than the disputed fraction of the budget. Hooray!
-&amp;#8220;That&amp;#8217;s all well and nice,&amp;#8221; you say, lowering your voice and leaning
-over in a way that makes me uncomfortable, &amp;#8220;but who is to &lt;em&gt;blame&lt;/em&gt;?&amp;#8221;
-That&amp;#8217;s a great question! My answer will take the form of an experiment.
-First, get a coin. Got it? Great. Now if you&amp;#8217;re Republican, let heads be
-&amp;#8220;The Republicans&amp;#8221; and tails be &amp;#8220;The Democrats.&amp;#8221; If you&amp;#8217;re a Democrat,
-let heads be &amp;#8220;The Democrats&amp;#8221; and tails be &amp;#8220;The Republicans.&amp;#8221; If you are
-neither, then randomly assign a party to heads and allow the other to be
-tails. Ready? The coin is to blame. [1] I use this in its original
-meaning. That is, the guy whose job it was to do horribly gross things
-at a carnival for money, not the guy whose main form of social
-interaction is debating scenes in Star Wars on internet forums. A more
-up-to-date comparison would have been to say &amp;#8220;for the same reason that
-people watch &lt;em&gt;Jersey Shore&lt;/em&gt;.&amp;#8221; [2] That is, the budget for the 2011
-fiscal year, which started on October 1st 2010. [3] Don&amp;#8217;t worry, all
-members of Congress would be exempt from this and would still pick up&amp;nbsp;paychecks!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Thu, 07 Apr 2011 21:42:00 -0400</pubDate><guid>tag:,2011-04-07:posts/a-sense-of-scale-in-dollars-and-cents-.html</guid><category>large numbers</category><category>scott bakula</category><category>politics</category></item><item><title>The Law and Large Numbers</title><link>/posts/the-law-and-large-numbers.html</link><description>&lt;p&gt;Human beings are not equipped for dealing with large numbers. Honestly,
-7 thousand, 7 million, 7 billion and 7 trillion all register about the
-same in my mind, namely 7 big. Unfortunately, there is a world a
-different between each of these, three whole orders of magnitude, a
-thousand, the difference between lifting me and a &lt;span class="caps"&gt;US&lt;/span&gt; quarter. This lack
-of respect for orders of magnitude has really been rearing its head
-recently with most of the political discussions surrounding the &lt;span class="caps"&gt;US&lt;/span&gt;
-budget. Turns out the &lt;span class="caps"&gt;US&lt;/span&gt; Budget is really large. In 2010 it weighed in
-at &lt;mathjax&gt;$3.55 trillion. Thats big. Really big. So big that I can't fathom it.
-Without getting too political, there has been a site going around
-recently; the [You Cut
-program](http://republicanwhip.house.gov/YouCut/week13.htm), which
-invites public suggestions for cuts to be made to the budget to try and
-fix the deficit. Now, personally, I believe we ought to do something
-about the deficit. To this end, I think it is useful to point out the
-scales involved. In particular, the link I gave above is to one of the
-suggested cuts: federal funding of NPR (Disclaimer alert: I love NPR),
-which weighs in at 7 million dollars. Seven million dollars is a lot of
-money. A lot of money, more than I can imagine having personally. But to
-suggest that a 7 million dollar cut is any sort of progress towards
-solving a $&lt;/mathjax&gt;1.2 trillion dollar deficit is a little amusing. As a
-fraction, this comes out to &lt;mathjax&gt;$$ \\frac{ 7 \\text{ million} }{ 3.55
-\\text{ trillion} } = 2 \\times 10\^{-6} $$&lt;/mathjax&gt; Two parts in a million. To
-give a sense of scale to this, the gravitational influence of the moon
-on my weight is: &lt;mathjax&gt;$$ \\frac{ \\frac{ G M\_{\\text{moon}} }{
-R\_{\\text{earth-moon}}\^2 } }{ 10 \\text{ m/s}\^2 } = 3 \\times
-10\^{-6} $$&lt;/mathjax&gt; Three parts in a million. So, suggesting that you have made
-real gains in reducing the &lt;span class="caps"&gt;US&lt;/span&gt; budget by cutting federal funding for &lt;span class="caps"&gt;NPR&lt;/span&gt;
-is as silly as suggesting that if I want to lose weight, my first
-concern should be the current tides. [I want to point out that I don&amp;#8217;t
-really mean to get too political, and that I&amp;#8217;ve noticed both parties
-pulling these kinds of numbers tricks.] So, wanting to get a little
-better understanding of the numbers at stake, I collected some data (all
-from the 2010 budget). My goal is to attempt to represent how the &lt;span class="caps"&gt;US&lt;/span&gt;
-government spends its money. Before I begin I need to plug two great
-tools towards this end:
-&lt;a href="http://www.nytimes.com/interactive/2010/02/01/us/budget.html"&gt;Here&lt;/a&gt; the
-NYTimes graphically represents government spending, helping to give a
-sense of scale to different categories.
-&lt;a href="http://www.nytimes.com/interactive/2010/11/13/weekinreview/deficits-graphic.html"&gt;Here&lt;/a&gt;
-the NYTimes lets you try and balance the budget, not only for next year
-but down the line, letting you choose from a wide array of proposed
-changes. The Data So, below is a list of some of the relevant numbers I
-could thing of, and some reference numbers (trillion, billion, million),
-as well as the &lt;span class="caps"&gt;US&lt;/span&gt; debt, and total deficit. In addition to just reporting
-the numbers (which you can find anywhere), in the second column I give
-the fraction of total spending in scientific&amp;nbsp;units.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Name             $               Fraction
-  &lt;span class="caps"&gt;US&lt;/span&gt; Debt          13.8 trillion   3.9
-  Total Spending   3.55 trillion   1.0
-  Budget Deficit   1.17 trillion   3.3E-1
-  1 trillion       1 trillion      2.8E-1
-  &lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt;    730 billion     2.1E-1
-  Education        93 billion      2.6E-2
-  Taxes (250G+)    54 billion      1.5E-2
-  Science          31 billion      8.7E-3
-  1 billion        1 billion       2.8E-4
-  &lt;span class="caps"&gt;NPR&lt;/span&gt;              7 million       2.0E-6
-  1 million        1 million&amp;nbsp;2.8E-7&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;So here, &lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; means each of Social Security, Defense spending
-and Medicare and Medicaid, which each comes in at about the same per
-program. We spend 730 billion on each of these. To first glance, these
-three programs are how the &lt;span class="caps"&gt;US&lt;/span&gt; spends money, each of these coming in at
-21%. Notice also just how large the deficit is, coming in at 33% of
-total spending. The rather cryptic &amp;#8220;Taxes (250G+)&amp;#8221; is how much money
-would be saved by letting the Bush tax cuts expire for those making more
-than 250,000 a year, a currently hotly debated topic. Notice that it
-would only ease the burden by 15%. So this alone would only cut the
-budget deficit in half. The above table shows the power of scientific
-notation. (Even though I had to use the ugly &amp;#8220;E&amp;#8221; notation). A number
-like &amp;#8220;2.8E-4&amp;#8221; is really 2.9 x 10\^(-4). But honestly, even a list like
-this doesn&amp;#8217;t really make an impact for me. So, I thought of a couple
-other ways to represent the same numbers, scaling them to some &amp;#8216;big&amp;#8217;
-things I can conceive&amp;nbsp;of:&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>/</link><description></description><atom:link href="http://thephysicsvirtuosi.com/feeds/tag.politics.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 06 Mar 2012 14:37:00 -0500</lastBuildDate><item><title>Proofiness: A look into how mathematics relates to American political life</title><link>/posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</link><description>&lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;Dearest readers,&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;span style="font-size: 100%;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;span style="font-size: 100%;"&gt;This is my first post on The Virtuosi, so I thought I’d take a moment to introduce myself.  I’m a first year physics graduate student at Cornell, recently joined after 2 years working as an engineer first at a private firm and then at a national lab.  I myself have had lots of fun following the exploits of my estimable colleagues here on The Virtuosi, and I thought I could bring a new angle to the content here.   I would like to use this space to discuss how science interacts with everyday life in a cultural sense.  How does science appear in popular culture?   How do political or social issues relate back to science?  Those sorts of questions.  (I understand that there are plenty of other resources elsewhere that offer far more intelligent insight into these matters than I can, but in the very least this will give people a chance point them out to me as they yell at me in the forum below.)&lt;/span&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;Enough intro, here begins my very first blog post:&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;Being interested in how science is communicated to the public, I am an avid reader of popular science.   While academic types sometimes dismiss this kind of writing as shallow or otherwise uninteresting, I think science writers perform a very important function serving as a way to convey information about conceptually challenging topics to a general audience.   At their best, I find that these books serve as examples for how I can communicate my own ideas better, and in addition challenge my understanding of how science relates back to society in general.&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;/div&gt;&lt;a name='more'&gt;&lt;/a&gt;
+&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;This being said, I cannot recommend Charles Seife’s &lt;i&gt;Proofiness&lt;/i&gt; enough.  The basic premise of this book is to explore the way that good mathematics is hijacked, twisted, or ignored in everyday life, and the ugly consequences of the tendency to misunderstand numbers and measurements.&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;Seife gives a number of fascinating examples of the ways in which numbers and math connect to American democracy.   American government functions through representation, and so the “&lt;a href="http://www.archives.gov/exhibits/charters/constitution_transcript.html"&gt;enumeration&lt;/a&gt;” of citizens and their opinions through the Census and elections is an essential part of the democratic process.  This “enumeration” is a counting measurement, subject to errors like any other.   And yet, the laws that govern how Censuses and elections are run ignore this fact.  Seife’s discussion of elections (and in particular &lt;i&gt;Bush v. Gore&lt;/i&gt;) is fascinating, but I won’t spoil that here.   Here’s my take on the discussion of the Census that appears in &lt;i&gt;Proofiness&lt;/i&gt;:&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;Consider a (vague) physics experiment.   I want to know how many particles are inside a box.  To figure this out, I have a detector that goes *ping* every time a particle passes through it.  I set up my detector inside the box and count the number of times that it goes *ping* in a certain amount of time.  I can then use that count to guess at the number of particles that I have in my box.   My measurement will let me estimate N to within some margin of error.  This process is perhaps unnecessary if I have only five particles in my box (in which case, I might just open the box and count what I see inside), but if I have 300 million particles in my box, it would be totally impractical for me to reach into the box 300 million times and count each one individually.&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;We can consider the Census to be just like this physics experiment.   I have N inhabitants (particles) living in my country (box), and I can use my detector (census replies) to count a certain number of people.  In principle, using well-understood statistical techniques of regression and error analysis, I can estimate to within a very good margin of error how many people live in each region of the country.   Instead, what the Census requires is that we reach inside the box (send representatives to every household that doesn’t reply by mail) and count every single person.   The whole process ignores the fact that even if we send a representative to every single household there will still be some margin of error in our counting measurements.   No such measurement can be made without errors.  &lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;The consequences of ignoring these errors, says Seife, can be that we waste money in attempting the impossible and trying to count everybody.  From a civic-minded perspective, this attitude towards the perfection of the Census can backfire.  For example, if undercounting occurs (i.e., certain households do not respond for some reason), the Census has no mechanism for correcting that miscount.   Counter-intuitively, the Census laws actually prohibit the use of any statistical techniques to correct miscounting.   The result is that those slow to respond are ignored and not taken into account when allotting seats in the legislature to represent them.&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;
+&lt;/div&gt;&lt;div class="MsoNormal" style="margin-bottom: 0.0001pt;"&gt;&lt;o:p&gt; &lt;/o:p&gt;&lt;/div&gt;&lt;i&gt;Proofiness&lt;/i&gt; is a fascinating book and a fun read, and I recommend you all look it up.  In addition, it serves as an excellent example of science writing that helped me to rethink how scientific ideas relate to everyday life.  I hope to invite consideration of these topics here and in future posts.
+
+If you want to know more about the inspiration for this post, go &lt;a href="http://journalism.nyu.edu/faculty/charles-seife/"&gt;here&lt;/a&gt;.&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">DTC</dc:creator><pubDate>Tue, 06 Mar 2012 14:37:00 -0500</pubDate><guid>tag:,2012-03-06:posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</guid><category>Census</category><category>culture</category><category>elections</category><category>Proofiness</category><category>math</category><category>politics</category></item><item><title>A Sense of Scale (in Dollars and Cents)</title><link>/posts/a-sense-of-scale-in-dollars-and-cents-.html</link><description>&lt;p&gt;I hate politics, but for some reason I obsessively read about it.  I don&amp;#8217;t know why I do this, but I assume it&amp;#8217;s the same reason people slow down for car wrecks and pay to see the geek [1].  Anyway, the big thing in political news now is that if Congress can&amp;#8217;t pass a budget [2] by the end of the day Friday, the government will shut&amp;nbsp;down. &lt;/p&gt;
+&lt;p&gt;Shutting down the government means that 800,000 federal employees will go without pay [3], lots of services will be put on hold and you won&amp;#8217;t be able to go to the Smithsonian or the Grand Canyon.  So it&amp;#8217;s kind of a big deal.  Since the ramifications of a government shutdown are so serious, there must be some really important disagreements holding it up, right?&amp;nbsp;Right?&lt;/p&gt;
+&lt;p&gt;A quick search (for example, &lt;a href="http://www.guardian.co.uk/world/2011/apr/07/us-congress-staff-government-shutdown"&gt;here&lt;/a&gt;), shows that the big hold-up in passing the budget comes over a disagreement on how much money should be cut from the budget.  Republicans want to cut &lt;mathjax&gt;$40 billion dollars and Democrats are willing to cut $&lt;/mathjax&gt;34.5 billion&amp;nbsp;dollars. &lt;/p&gt;
+&lt;p&gt;So the hold-up is over $5.5 billion.  Let&amp;#8217;s consider how utterly and stupidly insignificant this is.
+&lt;a name='more'&gt;&lt;/a&gt;
+We shall take as our inspiration Alemi&amp;#8217;s &lt;a href="http://thevirtuosi.blogspot.com/2010/12/law-and-large-numbers.html"&gt;post&lt;/a&gt; a while back offering several ways to help visualize the large and scary sounding numbers thrown around in government&amp;nbsp;budgets.&lt;/p&gt;
+&lt;p&gt;The first thing we&amp;#8217;d like to do is find out what fraction this &lt;mathjax&gt;$5.5 billion discrepancy is compared to the total budget.  Alemi cites the total budget of the U.S. government in the 2010 fiscal year to be $&lt;/mathjax&gt;3.55 trillion.  Hot dog!  So we see&amp;nbsp;that:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{\mbox{Disputed Difference}}{\mbox{Total Budget}} = \frac{$5.5 \times 10^9}{$3.55 \times 10^{12}} = 0.0015 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So the disputed part amounts to 0.15% of the total budget or one and half parts in a thousand.  Let&amp;#8217;s compare this to some things for which we have a better sense of&amp;nbsp;scale. &lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s pretend we are looking to buy a car.  We need it to get to work and, you know, get stuff done.  If our car costs $10,000 dollars then 0.15% of our total costs will&amp;nbsp;be&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \mbox{$10,000} \times 0.0015 = $15 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So the current budget situation is like arguing for 6 months over a &lt;mathjax&gt;$15 charge on your $&lt;/mathjax&gt;10,000 car.  Sounds&amp;nbsp;reasonable!&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s switch gears and consider a timescale.  Let&amp;#8217;s consider a 40 hour work week.  What&amp;#8217;s 0.15% of 40 hours?  This comes&amp;nbsp;to&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ 40 \mbox{ hr} \times 0.0015 = 0.06 \mbox{ hr} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;or, if you&amp;nbsp;prefer,&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ 0.06 \mbox{ hr} \times \frac{60 \mbox{ min}}{1 \mbox{ hr}} = 3.6 \mbox{ minutes} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;So the current budget problem is like arguing for six months over about three and a half extra minutes to your work&amp;nbsp;week.&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s consider a length scale.  Consider the &lt;span class="caps"&gt;US&lt;/span&gt; $1 bill.  According to &lt;a href="http://en.wikipedia.org/wiki/United_States_one-dollar_bill#Small_size_notes"&gt;Wikipedia&lt;/a&gt;, the dollar bill is 6.14 inches long, 2.61 inches wide and 0.0043 inches thick.  That means that the ratio of the thickness to the width of a dollar bill&amp;nbsp;is&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{\mbox{Thickness}}{\mbox{Width}} = \frac{0.0043 \mbox{ inches}}{2.61 \mbox{ inches}} = 0.0016 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;or slightly &lt;i&gt;more&lt;/i&gt; than the disputed fraction of the budget.&amp;nbsp;Hooray!&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;That&amp;#8217;s all well and nice,&amp;#8221; you say, lowering your voice and leaning over in a way that makes me uncomfortable, &amp;#8220;but who is to &lt;i&gt;blame&lt;/i&gt;?&amp;#8221;&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s a great question!  My answer will take the form of an&amp;nbsp;experiment. &lt;/p&gt;
+&lt;p&gt;First, get a coin.  Got it?  Great.  Now if you&amp;#8217;re Republican, let heads be &amp;#8220;The Republicans&amp;#8221; and tails be &amp;#8220;The Democrats.&amp;#8221;  If you&amp;#8217;re a Democrat, let heads be &amp;#8220;The Democrats&amp;#8221; and tails be &amp;#8220;The Republicans.&amp;#8221;  If you are neither, then randomly assign a party to heads and allow the other to be&amp;nbsp;tails.&lt;/p&gt;
+&lt;p&gt;Ready?&lt;/p&gt;
+&lt;p&gt;The coin is to&amp;nbsp;blame.&lt;/p&gt;
+&lt;p&gt;[1]  I use this in its original meaning.  That is, the guy whose job it was to do horribly gross things at a carnival for money, not the guy whose main form of social interaction is debating scenes in Star Wars on internet forums.  A more up-to-date comparison would have been to say &amp;#8220;for the same reason that people watch &lt;i&gt;Jersey Shore&lt;/i&gt;.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;[2]  That is, the budget for the 2011 fiscal year, which started on October 1st&amp;nbsp;2010. &lt;/p&gt;
+&lt;p&gt;[3]  Don&amp;#8217;t worry, all members of Congress would be exempt from this and would still pick up&amp;nbsp;paychecks!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Corky</dc:creator><pubDate>Thu, 07 Apr 2011 21:42:00 -0400</pubDate><guid>tag:,2011-04-07:posts/a-sense-of-scale-in-dollars-and-cents-.html</guid><category>large numbers</category><category>scott bakula</category><category>politics</category></item><item><title>The Law and Large Numbers</title><link>/posts/the-law-and-large-numbers.html</link><description>&lt;p&gt;Human beings are not equipped for dealing with large numbers.  Honestly, 7 thousand, 7 million, 7 billion and 7 trillion all register about the same in my mind, namely 7 big.  Unfortunately, there is a world a different between each of these, three whole orders of magnitude, a thousand, the difference between lifting me and a &lt;span class="caps"&gt;US&lt;/span&gt;&amp;nbsp;quarter.&lt;/p&gt;
+&lt;p&gt;This lack of respect for orders of magnitude has really been rearing its head recently with most of the political discussions surrounding the &lt;span class="caps"&gt;US&lt;/span&gt;&amp;nbsp;budget.  &lt;/p&gt;
+&lt;p&gt;Turns out the &lt;span class="caps"&gt;US&lt;/span&gt; Budget is really large.  In 2010 it weighed in at $3.55 trillion.  Thats big.  Really big.  So big that I can&amp;#8217;t fathom&amp;nbsp;it.  &lt;/p&gt;
+&lt;p&gt;Without getting too political, there has been a site going around recently; the &lt;a href="http://republicanwhip.house.gov/YouCut/week13.htm"&gt;You Cut program&lt;/a&gt;, which invites public suggestions for cuts to be made to the budget to try and fix the deficit.  Now, personally, I believe we ought to do something about the deficit.  To this end, I think it is useful to point out the scales involved.  In particular, the link I gave above is to one of the suggested cuts: federal funding of &lt;span class="caps"&gt;NPR&lt;/span&gt; (Disclaimer alert: I love &lt;span class="caps"&gt;NPR&lt;/span&gt;), which weighs in at 7 million&amp;nbsp;dollars.  &lt;/p&gt;
+&lt;p&gt;Seven million dollars is a lot of money.  A lot of money, more than I can imagine having personally.  But to suggest that a 7 million dollar cut is any sort of progress towards solving a $1.2 trillion dollar deficit is a little amusing.  As a fraction, this comes out&amp;nbsp;to&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{ 7 \text{ million} }{ 3.55 \text{ trillion} } = 2 \times 10^{-6} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Two parts in a million.  To give a sense of scale to this, the gravitational influence of the moon on my weight&amp;nbsp;is:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{  \frac{ G M_{\text{moon}} }{ R_{\text{earth-moon}}^2 }  }{ 10 \text{ m/s}^2 } = 3 \times 10^{-6} $$&lt;/mathjax&gt;
+Three parts in a million.  So, suggesting that you have made real gains in reducing the &lt;span class="caps"&gt;US&lt;/span&gt; budget by cutting federal funding for &lt;span class="caps"&gt;NPR&lt;/span&gt; is as silly as suggesting that if I want to lose weight, my first concern should be the current&amp;nbsp;tides.  &lt;/p&gt;
+&lt;p&gt;[I want to point out that I don&amp;#8217;t really mean to get too political, and that I&amp;#8217;ve noticed both parties pulling these kinds of numbers&amp;nbsp;tricks.]&lt;/p&gt;
+&lt;p&gt;So, wanting to get a little better understanding of the numbers at stake, I collected some data (all from the 2010 budget).  My goal is to attempt to represent how the &lt;span class="caps"&gt;US&lt;/span&gt; government spends its&amp;nbsp;money.  &lt;/p&gt;
+&lt;p&gt;Before I begin I need to plug two great tools towards this end:  &lt;a href="http://www.nytimes.com/interactive/2010/02/01/us/budget.html"&gt;Here&lt;/a&gt; the NYTimes graphically represents government spending, helping to give a sense of scale to different categories.  &lt;a href="http://www.nytimes.com/interactive/2010/11/13/weekinreview/deficits-graphic.html"&gt;Here&lt;/a&gt; the NYTimes lets you try and balance the budget, not only for next year but down the line, letting you choose from a wide array of proposed&amp;nbsp;changes.&lt;/p&gt;
+&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
+&lt;span class="Apple-style-span" style="font-size: 24px; font-weight: bold;"&gt;The&amp;nbsp;Data&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So, below is a list of some of the relevant numbers I could thing of, and some reference numbers (trillion, billion, million), as well as the &lt;span class="caps"&gt;US&lt;/span&gt; debt, and total deficit.  In addition to just reporting the numbers (which you can find anywhere), in the second column I give the fraction of total spending in scientific&amp;nbsp;units.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;&lt;tbody&gt;&lt;tr&gt; &lt;td&gt;Name &lt;/td&gt;&lt;td&gt;$ &lt;/td&gt;&lt;td&gt;Fraction &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;US&lt;/span&gt; Debt &lt;/td&gt;&lt;td&gt;13.8 trillion &lt;/td&gt;&lt;td&gt;3.9 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Total Spending &lt;/td&gt;&lt;td&gt;3.55 trillion &lt;/td&gt;&lt;td&gt;1.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Budget Deficit &lt;/td&gt;&lt;td&gt;1.17 trillion &lt;/td&gt;&lt;td&gt;3.3E-1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;2.8E-1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; &lt;/td&gt;&lt;td&gt;730 billion &lt;/td&gt;&lt;td&gt;2.1E-1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Education &lt;/td&gt;&lt;td&gt;93 billion &lt;/td&gt;&lt;td&gt;2.6E-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Taxes (250G+) &lt;/td&gt;&lt;td&gt;54 billion &lt;/td&gt;&lt;td&gt;1.5E-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Science &lt;/td&gt;&lt;td&gt;31 billion &lt;/td&gt;&lt;td&gt;8.7E-3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;2.8E-4 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;NPR&lt;/span&gt; &lt;/td&gt;&lt;td&gt;7 million &lt;/td&gt;&lt;td&gt;2.0E-6 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;2.8E-7&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;So here, &lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; means each of Social Security, Defense spending and Medicare and Medicaid, which each comes in at about the same per program.  We spend 730 billion on each of these.  To first glance, these three programs are how the &lt;span class="caps"&gt;US&lt;/span&gt; spends money, each of these coming in at 21%.  Notice also just how large the deficit is, coming in at 33% of total spending.  The rather cryptic &amp;#8220;Taxes (250G+)&amp;#8221; is how much money would be saved by letting the Bush tax cuts expire for those making more than 250,000 a year, a currently hotly debated topic.  Notice that it would only ease the burden by 15%.  So this alone would only cut the budget deficit in&amp;nbsp;half.&lt;/p&gt;
+&lt;p&gt;The above table shows the power of scientific notation.  (Even though I had to use the ugly &amp;#8220;E&amp;#8221; notation).  A number like &amp;#8220;2.8E-4&amp;#8221; is really 2.9 x&amp;nbsp;10^(-4).  &lt;/p&gt;
+&lt;p&gt;But honestly, even a list like this doesn&amp;#8217;t really make an impact for me.  So, I thought of a couple other ways to represent the same numbers, scaling them to some &amp;#8216;big&amp;#8217; things I can conceive&amp;nbsp;of:&lt;/p&gt;
 &lt;h3&gt;Barry&amp;#8217;s&amp;nbsp;Budget&lt;/h3&gt;
-&lt;p&gt;Now, this might not be a fair comparison, but let&amp;#8217;s scale down the &lt;span class="caps"&gt;US&lt;/span&gt;
-budget to sizes that a person can understand. By scaling by a factor of
-$100 million, we end up with the story of my friend&amp;nbsp;Barry.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Name             &lt;mathjax&gt;$               Fraction   Barry
-  US Debt          13.8 trillion   3.9        $&lt;/mathjax&gt;138,495.50
-  Total Spending   3.55 trillion   1.0        &lt;mathjax&gt;$35,500.00
-  Budget Deficit   1.17 trillion   3.3E-1     $&lt;/mathjax&gt;11,690.0
-  1 trillion       1 trillion      2.8E-1     &lt;mathjax&gt;$10,000.00
-  SS / Def / MM    730 billion     2.1E-1     $&lt;/mathjax&gt;7,296.67
-  Education        93 billion      2.6E-2     &lt;mathjax&gt;$930.00
-  Taxes (250G+)    54 billion      1.5E-2     $&lt;/mathjax&gt;540.00
-  Science          31 billion      8.7E-3     &lt;mathjax&gt;$310.00
-  1 billion        1 billion       2.8E-4     $&lt;/mathjax&gt;10.00
-  &lt;span class="caps"&gt;NPR&lt;/span&gt;              7 million       2.0E-6     &lt;mathjax&gt;$0.07
-  1 million        1 million       2.8E-7     $&lt;/mathjax&gt;0.01&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;As you&amp;#8217;ll notice, Barry makes &lt;mathjax&gt;$23,810.00 a year (total receipts)[he's a
-grad student], but spends $&lt;/mathjax&gt;35,500 a year. This has created his current
-debt problem. Barry has &lt;mathjax&gt;$138,495 in credit card debt, and still
-overspends by $&lt;/mathjax&gt;11,690 a year. How does Barry spend his money? Well,
-every year Barry buys some &lt;mathjax&gt;$7,300 in guns, spends another $&lt;/mathjax&gt;14,600 mostly
-taking care of his grandma. He pays a tuition of &lt;mathjax&gt;$930 a year at school,
-and $&lt;/mathjax&gt;310 on science books. Every year he donates 7 cents to &lt;span class="caps"&gt;NPR&lt;/span&gt;. Every
-million &lt;span class="caps"&gt;US&lt;/span&gt; dollars is 1 penny in Barry&amp;nbsp;dollars.&lt;/p&gt;
+
+&lt;p&gt;Now, this might not be a fair comparison, but let&amp;#8217;s scale down the &lt;span class="caps"&gt;US&lt;/span&gt; budget to sizes that a person can understand.  By scaling by a factor of $100 million, we end up with the story of my friend&amp;nbsp;Barry.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;&lt;tbody&gt;&lt;tr&gt; &lt;td&gt;Name &lt;/td&gt;&lt;td&gt;$ &lt;/td&gt;&lt;td&gt;Fraction &lt;/td&gt;&lt;td&gt;Barry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;US&lt;/span&gt; Debt &lt;/td&gt;&lt;td&gt;13.8 trillion &lt;/td&gt;&lt;td&gt;3.9 &lt;/td&gt;&lt;td&gt;$138,495.50&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Total Spending &lt;/td&gt;&lt;td&gt;3.55 trillion &lt;/td&gt;&lt;td&gt;1.0 &lt;/td&gt;&lt;td&gt;$35,500.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Budget Deficit &lt;/td&gt;&lt;td&gt;1.17 trillion &lt;/td&gt;&lt;td&gt;3.3E-1 &lt;/td&gt;&lt;td&gt;$11,690.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;2.8E-1 &lt;/td&gt;&lt;td&gt;$10,000.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; &lt;/td&gt;&lt;td&gt;730 billion &lt;/td&gt;&lt;td&gt;2.1E-1 &lt;/td&gt;&lt;td&gt;$7,296.67&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Education &lt;/td&gt;&lt;td&gt;93 billion &lt;/td&gt;&lt;td&gt;2.6E-2  &lt;/td&gt;&lt;td&gt;$930.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Taxes (250G+) &lt;/td&gt;&lt;td&gt;54 billion &lt;/td&gt;&lt;td&gt;1.5E-2 &lt;/td&gt;&lt;td&gt;$540.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Science &lt;/td&gt;&lt;td&gt;31 billion &lt;/td&gt;&lt;td&gt;8.7E-3 &lt;/td&gt;&lt;td&gt;$310.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;2.8E-4  &lt;/td&gt;&lt;td&gt;$10.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;NPR&lt;/span&gt; &lt;/td&gt;&lt;td&gt;7 million &lt;/td&gt;&lt;td&gt;2.0E-6  &lt;/td&gt;&lt;td&gt;$0.07&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;2.8E-7 &lt;/td&gt;&lt;td&gt;$0.01&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;As you&amp;#8217;ll notice, Barry makes &lt;mathjax&gt;$23,810.00 a year (total receipts)[he's a grad student], but spends $&lt;/mathjax&gt;35,500 a year.  This has created his current debt problem.  Barry has &lt;mathjax&gt;$138,495 in credit card debt, and still overspends by $&lt;/mathjax&gt;11,690 a&amp;nbsp;year.  &lt;/p&gt;
+&lt;p&gt;How does Barry spend his money?  Well, every year Barry buys some &lt;mathjax&gt;$7,300 in guns, spends another $&lt;/mathjax&gt;14,600 mostly taking care of his grandma.  He pays a tuition of &lt;mathjax&gt;$930 a year at school, and $&lt;/mathjax&gt;310 on science books.  Every year he donates 7 cents to&amp;nbsp;&lt;span class="caps"&gt;NPR&lt;/span&gt;. &lt;/p&gt;
+&lt;p&gt;Every million &lt;span class="caps"&gt;US&lt;/span&gt; dollars is 1 penny in Barry&amp;nbsp;dollars.  &lt;/p&gt;
 &lt;h3&gt;Work&amp;nbsp;Week&lt;/h3&gt;
-&lt;p&gt;That might not have been fair. This time, lets scale the &lt;span class="caps"&gt;US&lt;/span&gt; government
-spending to a work week of 40 hours. I think a work week is a large
-amount of time that I still have a real grasp&amp;nbsp;for.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Name             $               Work Time      Guess at time
-  &lt;span class="caps"&gt;US&lt;/span&gt; Debt          13.8 trillion   156 hours      Work month
-  Total Spending   3.55 trillion   40 hours       Work week
-  Budget Deficit   1.17 trillion   13 hours       All Mon and Tue morn
-  1 trillion       1 trillion      11.3 hours     two days of good work
-  &lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt;    730 billion     8.2 hour       true work in a day
-  Education        93 billion      63 minutes     lunch break
-  Taxes (250G+)    54 billion      36 minutes     cooler chat
-  Science          31 billion      21 minutes     Show on Hulu
-  1 billion        1 billion       40 seconds     Stretching at desk
-  &lt;span class="caps"&gt;NPR&lt;/span&gt;              7 million       0.3 seconds    mouse click
-  1 million        1 million       0.04 seconds&amp;nbsp;blink&lt;/p&gt;
-&lt;hr /&gt;
+
+&lt;p&gt;That might not have been fair.  This time, lets scale the &lt;span class="caps"&gt;US&lt;/span&gt; government spending to a work week of 40 hours.  I think a work week is a large amount of time that I still have a real grasp&amp;nbsp;for.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;&lt;tbody&gt;&lt;tr&gt; &lt;td&gt;Name &lt;/td&gt;&lt;td&gt;$  &lt;/td&gt;&lt;td&gt;Work Time &lt;/td&gt;&lt;td&gt;Guess at time&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;US&lt;/span&gt; Debt &lt;/td&gt;&lt;td&gt;13.8 trillion &lt;/td&gt;&lt;td&gt;156 hours &lt;/td&gt;&lt;td&gt;Work month&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Total Spending &lt;/td&gt;&lt;td&gt;3.55 trillion  &lt;/td&gt;&lt;td&gt;40 hours &lt;/td&gt;&lt;td&gt;Work week&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Budget Deficit &lt;/td&gt;&lt;td&gt;1.17 trillion  &lt;/td&gt;&lt;td&gt;13 hours &lt;/td&gt;&lt;td&gt;All Mon and Tue morn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;11.3 hours &lt;/td&gt;&lt;td&gt;two days of good work&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; &lt;/td&gt;&lt;td&gt;730 billion &lt;/td&gt;&lt;td&gt;8.2 hour&lt;/td&gt;&lt;td&gt;true work in a day&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Education &lt;/td&gt;&lt;td&gt;93 billion  &lt;/td&gt;&lt;td&gt;63 minutes &lt;/td&gt;&lt;td&gt;lunch break&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Taxes (250G+) &lt;/td&gt;&lt;td&gt;54 billion  &lt;/td&gt;&lt;td&gt;36 minutes &lt;/td&gt;&lt;td&gt;cooler chat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Science &lt;/td&gt;&lt;td&gt;31 billion  &lt;/td&gt;&lt;td&gt;21 minutes &lt;/td&gt;&lt;td&gt;Show on Hulu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;1 billion   &lt;/td&gt;&lt;td&gt;40 seconds &lt;/td&gt;&lt;td&gt;Stretching at desk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;NPR&lt;/span&gt; &lt;/td&gt;&lt;td&gt;7 million   &lt;/td&gt;&lt;td&gt;0.3 seconds &lt;/td&gt;&lt;td&gt;mouse click&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;1 million  &lt;/td&gt;&lt;td&gt;0.04 seconds &lt;/td&gt;&lt;td&gt;blink&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;h3&gt;Cross&amp;nbsp;Country&lt;/h3&gt;
-&lt;p&gt;Now lets scale to a distance. The longest drive I&amp;#8217;ve ever done is from
-Los Angeles, &lt;span class="caps"&gt;CA&lt;/span&gt; to Orlando, Fl, which was 2511 miles. In terms of this
-scale, the budget breaks down&amp;nbsp;as:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Name             $               Dist    &lt;br /&gt;
-  &lt;span class="caps"&gt;US&lt;/span&gt; Debt          13.8 trillion   9796 mi   &lt;span class="caps"&gt;NY&lt;/span&gt; - Sydney
-  Total Spending   3.55 trillion   2511 mi   &lt;span class="caps"&gt;LA&lt;/span&gt; - Orlando
-  Budget Deficit   1.17 trillion   827 mi    Texas
-  1 trillion       1 trillion      707 mi  &lt;br /&gt;
-  &lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt;    730 billion     516 mi    Orlando - Mobile
-  Education        93 billion      66 mi   &lt;br /&gt;
-  Taxes (250G+)    54 billion      38 mi   &lt;br /&gt;
-  Science          31 billion      22 mi     Cross town
-  1 billion        1 billion       0.7 mi    14 blocks
-  &lt;span class="caps"&gt;NPR&lt;/span&gt;              7 million       9 yards &lt;br /&gt;
-  1 million        1 million       4&amp;nbsp;feet    &lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;(So I just want to point out again, claiming that cutting &lt;span class="caps"&gt;NPR&lt;/span&gt; funding
-makes a dent in the &lt;span class="caps"&gt;US&lt;/span&gt; budget is similar to claiming you&amp;#8217;ve moved closer
-to Orlando (while in &lt;span class="caps"&gt;LA&lt;/span&gt;) by crossing the&amp;nbsp;room.)&lt;/p&gt;
+
+&lt;p&gt;Now lets scale to a distance.  The longest drive I&amp;#8217;ve ever done is from Los Angeles, &lt;span class="caps"&gt;CA&lt;/span&gt; to Orlando, Fl, which was 2511 miles.  In terms of this scale, the budget breaks down&amp;nbsp;as:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;&lt;tbody&gt;&lt;tr&gt; &lt;td&gt;Name &lt;/td&gt;&lt;td&gt;$  &lt;/td&gt;&lt;td&gt;Dist &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;US&lt;/span&gt; Debt &lt;/td&gt;&lt;td&gt;13.8 trillion &lt;/td&gt;&lt;td&gt;9796 mi &lt;/td&gt;&lt;td&gt;&lt;span class="caps"&gt;NY&lt;/span&gt; - Sydney&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Total Spending &lt;/td&gt;&lt;td&gt;3.55 trillion  &lt;/td&gt;&lt;td&gt;2511 mi &lt;/td&gt;&lt;td&gt;&lt;span class="caps"&gt;LA&lt;/span&gt; - Orlando&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Budget Deficit &lt;/td&gt;&lt;td&gt;1.17 trillion  &lt;/td&gt;&lt;td&gt;827 mi &lt;/td&gt;&lt;td&gt;Texas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;1 trillion &lt;/td&gt;&lt;td&gt;707 mi &lt;/td&gt;&lt;td&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span class="caps"&gt;SS&lt;/span&gt; / Def / &lt;span class="caps"&gt;MM&lt;/span&gt; &lt;/td&gt;&lt;td&gt;730 billion &lt;/td&gt;&lt;td&gt;516 mi &lt;/td&gt;&lt;td&gt;Orlando - Mobile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Education &lt;/td&gt;&lt;td&gt;93 billion  &lt;/td&gt;&lt;td&gt;66 mi &lt;/td&gt;&lt;td&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Taxes (250G+) &lt;/td&gt;&lt;td&gt;54 billion  &lt;/td&gt;&lt;td&gt;38 mi &lt;/td&gt;&lt;td&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;Science &lt;/td&gt;&lt;td&gt;31 billion  &lt;/td&gt;&lt;td&gt;22 mi &lt;/td&gt;&lt;td&gt;Cross town&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 billion &lt;/td&gt;&lt;td&gt;1 billion   &lt;/td&gt;&lt;td&gt;0.7 mi &lt;/td&gt;&lt;td&gt;14 blocks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;&lt;span class="caps"&gt;NPR&lt;/span&gt; &lt;/td&gt;&lt;td&gt;7 million   &lt;/td&gt;&lt;td&gt;9 yards &lt;/td&gt;&lt;td&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt; &lt;td&gt;1 million &lt;/td&gt;&lt;td&gt;1 million  &lt;/td&gt;&lt;td&gt;4 feet &lt;/td&gt;&lt;td&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;(So I just want to point out again, claiming that cutting &lt;span class="caps"&gt;NPR&lt;/span&gt; funding makes a dent in the &lt;span class="caps"&gt;US&lt;/span&gt; budget is similar to claiming you&amp;#8217;ve moved closer to Orlando (while in &lt;span class="caps"&gt;LA&lt;/span&gt;) by crossing the&amp;nbsp;room.)&lt;/p&gt;
 &lt;h2&gt;The&amp;nbsp;Lesson&lt;/h2&gt;
-&lt;p&gt;So, without getting too political&amp;#8230; I&amp;#8217;d just like to point out that if
-our politicians are serious about solving the budget crisis, they need
-to stop talking about million dollar programs, and start taking about
-100 billion dollar ones. The problem is that it&amp;#8217;s hard to either slash
-funding for large programs like defense, or social security, and it&amp;#8217;s
-even harder raise taxes (really at all). But if we never consider those
-options, we&amp;#8217;re never going to get out of the rut. In my undergraduate
-physics lab, the instructor had a mantra: &amp;#8220;A number without context is
-meaningless&amp;#8221;. Now, he originally meant the statement to be a lesson on
-how important it is to quote errors on your measurements, but I think I
-can adapt it to apply to giving out numbers like 7 billion without a
-sense of&amp;nbsp;scale.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Thu, 09 Dec 2010 22:34:00 -0500</pubDate><guid>tag:,2010-12-09:posts/the-law-and-large-numbers.html</guid><category>large numbers</category><category>budget</category><category>politics</category></item></channel></rss>
+
+&lt;p&gt;So, without getting too political&amp;#8230;  I&amp;#8217;d just like to point out that if our politicians are serious about solving the budget crisis, they need to stop talking about million dollar programs, and start taking about 100 billion dollar ones.  The problem is that it&amp;#8217;s hard to either slash funding for large programs like defense, or social security, and it&amp;#8217;s even harder raise taxes (really at all).  But if we never consider those options, we&amp;#8217;re never going to get out of the&amp;nbsp;rut.&lt;/p&gt;
+&lt;p&gt;In my undergraduate physics lab, the instructor had a mantra:  &amp;#8220;A number without context is meaningless&amp;#8221;.  Now, he originally meant the statement to be a lesson on how important it is to quote errors on your measurements, but I think I can adapt it to apply to giving out numbers like 7 billion without a sense of&amp;nbsp;scale.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Thu, 09 Dec 2010 22:34:00 -0500</pubDate><guid>tag:,2010-12-09:posts/the-law-and-large-numbers.html</guid><category>large numbers</category><category>budget</category><category>politics</category></item></channel></rss>
