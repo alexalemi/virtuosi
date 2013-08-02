@@ -6,3 +6,6 @@ site/output/
 tools/old-content/
 old-copy/
 
+# Except
+!site/output/.gitkeep
+
