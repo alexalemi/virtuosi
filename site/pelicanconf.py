@@ -64,12 +64,12 @@ TAG_CLOUD_MAX_ITEMS = 50
 SUMMARY_MAX_LENGTH = 150
 
 PLUGIN_PATH = "pelican-plugins"
-PLUGINS=['sitemap','gzip_cache','summary','better_figures_and_images','latex']
+PLUGINS=['sitemap','gzip_cache','summary','latex']
 
 #plugin settings
 SUMMARY_END_MARKER = "<!-- more -->"
 SUMMARY_BEGIN_MARKER = "<!-- less -->"
-RESPONSIVE_FIGURES = True
+# RESPONSIVE_FIGURES = True
 SITEMAP = {
         'format': 'xml',
         'priorities': {
