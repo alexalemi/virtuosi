@@ -36,6 +36,9 @@ From here:
  * If you like what you see, commit the change and submit a pull request at github.
  * your post will be reviewed and possibly accepted.
 
+Note that you might want to change the SITEURL in pelicanconf.py to be
+`http://localhost:8000` while you are editing, so that your links all work.
+
 Checkout `post_template.md` for an example post in markdown format, 
 fill out as many tags as you can to make the post behave well.
 
