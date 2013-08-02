@@ -49,7 +49,7 @@ GOOGLE_ANALYTICS = 'UA-15719155-6'
 DISQUS_SITENAME = 'thephysicsvirtuosi'
 # GOOGLE_CUSTOM_SEARCH_SIDEBAR = '016118979984514975664:u9tdrwxiom8'
 
-FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), )
+FILES_TO_COPY = ( ('extra/CNAME','CNAME' ), ('extra/.gitkeep', '.gitkeep' ) )
 
 THEME = 'themes/justread'
 # THEME_STATIC_PATHS = ['static','css','less']
