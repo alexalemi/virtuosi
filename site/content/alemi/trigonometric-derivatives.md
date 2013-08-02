@@ -26,7 +26,7 @@ $$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$
 Summed up on one diagram:
 <center>
     <a href="/static/images/trigdiff.pdf">
-    <img src="/static/images/trigdiff.png" width=600px alt="Trigonometic Derivatives">
+    <img src="/static/images/trigdiff.png" width="100%" alt="Trigonometic Derivatives">
     </a>
 </center>
 
