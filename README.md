@@ -15,7 +15,7 @@ Feel free to contribute your post ideas.
 
 Before you begin, make sure you have virtualenv and python installed.
 
-To create the virtualenvironment we'll use, use the script `create_env`, 
+To create the virtualenvironment we'll use, use the script `make create_env`, 
 but run it with source, i.e. `source create_env`
 this will create a virtual environment in the directory `.env` that we will 
 use to develop, and source the virtual env for you, you should see your 
@@ -41,13 +41,11 @@ fill out as many tags as you can to make the post behave well.
 
 Code Outline
 ------------
-
+ * `Makefile` - some useful make utilities, try running `make`
  * `create_env` - create the virtual environment defined in `requirements.txt` in the `.env` directory
- * `install_python_markdown_mathjax` - inject the [python-markdown-mathjax](https://github.com/mayoff/python-markdown-mathjax) plugin
  * `post_template.md` - an example post in markdown format with metadata defined at the top
  * `requirements.txt` - the packages used in the virtual environment
  * `source_env` - sources the virtual environment, same as `source .env/bin/activate`
- * `update_site` - does a pelican build and [ghp-import](https://github.com/davisp/ghp-import). Replaces the actual site, don't expect this to work, you probably don't have permissions.
  * `/tools` - miscellaneous scripts used during the migration from blogspot.
  * `/site` - the site itself
    * `/content` - the posts in markdown, restructured text or html format.
