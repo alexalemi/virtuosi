@@ -24,10 +24,11 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '                                                                       '
 
-create_env: mathjax
-	virtualenv --no-site-packages --distribute .env && source .env/bin/activate && pip install -r requirements.txt
+create_env: 
+	virtualenv --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
+	make mathjax
 
-mathjax: source_env
+mathjax: 
 	wget https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py -O .env/local/lib/python2.7/site-packages/markdown/extensions/mathjax.py
 
 html: clean $(OUTPUTDIR)/index.html
