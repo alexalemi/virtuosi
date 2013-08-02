@@ -42,7 +42,7 @@ DEFAULT_PAGINATION = 10
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
-ARTICLE_EXCLUDES = ('drafts', )
+ARTICLE_EXCLUDES = ('drafts', 'oldhtml',)
 
 TWITTER_USERNAME = 'thevirtuosi'
 GOOGLE_ANALYTICS = 'UA-15719155-6'
