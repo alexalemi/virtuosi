@@ -6,142 +6,325 @@ Slug: fun-fact-lebron-james-plays-basketball
 Author: Bohn
 
 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg"><img style="float: left; margin: 0pt 10px 10px 0pt; cursor: pointer; width: 332px; height: 329px;" src="http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg" alt="" border="0" /></a>
+[![image](http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg)](http://turbo.inquisitr.com/wp-content/2010/07/lebron-james.jpg)
+Between building airplanes and playfully destroying everyone else in my
+apartment at Super Smash Brothers, my roommate Nathan brought up an
+interesting recent fact about LeBron James. He told me that LeBron
+scored 11 consecutive field goals (not in football... you know who you
+are) in one game. Apparently this was a pretty special event, but how
+rare is it for a player of LeBron's caliber? TO THE SCIENCE-MOBILE! The
+Problem! [ESPN 8, The
+Ocho](http://www.youtube.com/watch?v=kHltCzuwlOs&feature=related) tells
+me that LeBron's career field goal percentage is 47.5%. Considering the
+number of shots he takes, this is a pretty good number. To compare, the
+highest field goal percentage for a single season was Wilt Chamberlin
+with 72.7%, but eye witness testimony says he was around 10 feet tall
+and would wait in the offensive paint all game. Let's see how improbable
+this 11 in a row streak is. The generic question we are going to need to
+answer is as follows: If a basketball player takes N shots in one game,
+with a shooting probability of q, what is the probability that the
+player will make AT LEAST k shots in a row? We'll call this probability
+P(N) This turns out to be a tricky problem, but let's take a shot (awful
+pun... I sincerely apologize). We can take care of simple cases: If N <
+k, then P(N) = 0. This tells us you can't have a streak of k if you
+don't take k shots! If N = k, P(N) = q^k. This is the probability of
+getting k in a row if you take k shots, not too surprising yet. When N
+\> k, things get more interesting. Finding the Recurrence Relation Our
+goal is to write a relationship that has this form: P(N) = P(N-1) +
+blank What's blank? "You don't worry about blank... let me worry about
+blank!" We'll need to look at the [inclusion-exclusion
+principle](http://en.wikipedia.org/wiki/Inclusion_exclusion_principle).
+This principle basically says that when we want to take all DISTINCT
+items in two sets, we need to take all of the elements in one set, and
+add all elements in the second set which are DISTINCT from the first.
+For example, if A = {0, 1, 2, 3, 4} and B = {3, 4, 5, 6, 7, 8}, then the
+union of A and B is {0, 1, 2, 3, 4, 5, 6, 7, 8}. Note that I did not
+include 3 and 4 twice. Let's take a look at the expertly designed (5
+minutes before class) google docs drawing below:
+[![image](https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&w=1122&h=485)](https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&w=1122&h=485)
+The entire line represents N shots being taken. Each shot gets its own
+little column (not all columns shown). Using the inclusion-exclusion
+principle with the following sets will give us the answer. Choose A to
+be the first N-1 shots, and B to be all N shots. The principle tells us
+first to take everything from A, which is the probability P(N-1) shown
+in red. B will be the entire line, but the principle tells us to only
+add DISTINCT chances from B. Since the only difference in B is one more
+shot than A, the only distinct chance for a streak of k shots will be in
+the last k shots, shown in yellow as P(k). This is only distinct if the
+(k+1)th to last shot shown in green is missed! Otherwise a streak of k
+would have been included in A already. There is one more place for a
+streak to be already included in A. If there was a streak in the blue
+section, we must not include the B streak so we don't double count.
+Phew... Let's put this all together by multiplying the probabilities of
+each of those events: P(N) = P(N-1) + (probability of yellow
+streak)*(probability we miss green)*(probability of no streak in blue)
+$$P(N) = P(N-1) + q^k \times (1-q) \times (1 - P(N-k-1))$$ This gives
+us a recurrence relation for the probabilities! This is a general
+statement about the probability of at least one streak of length k out
+of N chances, given each has a probability q. Since I'm just going to
+plug this into Python anyway to handle the data, this equation is good
+enough. The expectation value of an event is the probability multiplied
+by the number of chances. For example, the expectation value of getting
+heads with 2 tosses is just (1/2)*2 = 1. The plan is to compile a list
+of his field goal attempts in every game LeBron has played in the NBA,
+and sum the expectation values for each N. $$ \mbox{Expectation} =
+\sum_i P(i) \times \mbox{(number of games with i shots)} $$ Using
+LeBron's actual field goal attempt data for each game (up to February 4,
+2011), we find that LeBron is expected number of games with at least a
+streak of 11 in a row is 1.128. This is a higher expectation value than
+the number of heads in 2 coin flips! So this is MORE expected than the
+number of heads we would see with 2 coin flips. This isn't very exciting
+given the number of shots he has taken and his shooting percentage. Data
+Tables
 
-Between building airplanes and playfully destroying everyone else in my apartment at Super Smash Brothers, my roommate Nathan brought up an interesting recent fact about LeBron James.  He told me that LeBron scored 11 consecutive field goals (not in football... you know who you are) in one game.  Apparently this was a pretty special event, but how rare is it for a player of LeBron's caliber?  TO THE SCIENCE-MOBILE!
+Consecutive Shots
 
+Expected out of 667
 
+Percent of Games
 
+1
 
+666.9
 
+99.99
 
+2
 
-<a name='more'></a>
+643.6
 
+96.49
 
+3
 
-<span style="font-weight: bold;">The Problem!</span>
+489.0
 
+73.32
 
+4
 
+281.8
 
+42.25
 
-<a href="http://www.youtube.com/watch?v=kHltCzuwlOs&amp;feature=related">ESPN 8, The Ocho</a> tells me that LeBron's career field goal percentage is 47.5%.  Considering the number of shots he takes, this is a pretty good number.  To compare, the highest field goal percentage for a single season was Wilt Chamberlin with 72.7%, but eye witness testimony says he was around 10 feet tall and would wait in the offensive paint all game.
+5
 
+140.0
 
+21.00
 
-Let's see how improbable this 11 in a row streak is.  The generic question we are going to need to answer is as follows:
+6
 
+65.23
 
+9.780
 
-If a basketball player takes N shots in one game, with a shooting probability of q, what is the probability that the player will make AT LEAST k shots in a row?  We'll call this probability P(N)
+7
 
+29.55
 
+4.431
 
-This turns out to be a tricky problem, but let's take a shot (awful pun... I sincerely apologize).  We can take care of simple cases:
+8
 
+13.20
 
+1.980
 
-If N &lt; k,  then P(N) = 0.  This tells us you can't have a streak of k if you don't take k shots!
+9
 
-If N = k, P(N) = q^k.  This is the probability of getting k in a row if you take k shots, not too surprising yet.
+5.854
 
-When N &gt; k, things get more interesting.
+0.8778
 
+10
 
+2.578
 
-<span style="font-weight: bold;">Finding the Recurrence Relation</span>
+0.3866
 
+11
 
+1.128
 
-Our goal is to write a relationship that has this form:
+0.1691
 
-P(N) = P(N-1) + blank
+12
 
-What's blank?  "You don't worry about blank... let me worry about blank!"
+0.4898
 
+0.07344
 
+13
 
-We'll need to look at the <a href="http://en.wikipedia.org/wiki/Inclusion_exclusion_principle">inclusion-exclusion principle</a>.  This principle basically says that when we want to take all DISTINCT items in two sets, we need to take all of the elements in one set, and add all elements in the second set which are DISTINCT from the first.  For example, if A = {0, 1, 2, 3, 4} and B = {3, 4, 5, 6, 7, 8}, then the union of A and B is {0, 1, 2, 3, 4, 5, 6, 7, 8}.  Note that I did not include 3 and 4 twice.
+0.2110
 
+0.03164
 
+14
 
-Let's take a look at the expertly designed (5 minutes before class) google docs drawing below:
+0.09011
 
+0.01351
 
+15
 
-<a href="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;w=1122&amp;h=485" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" src="https://docs.google.com/drawings/pub?id=1Ef34hZJ9mtF-GDUSpmJA4Ke2mS3BAHLsDwAk1GX19Dc&amp;w=1122&amp;h=485" style="cursor: pointer; display: block; height: 211px; margin: 0px auto 10px; text-align: center; width: 490px;" border="0" /></a>
+0.03807
 
-The entire line represents N shots being taken.  Each shot gets its own little column (not all columns shown).  Using the inclusion-exclusion principle with the following sets will give us the answer.  Choose A to be the first N-1 shots, and B to be all N shots.
+0.005709
 
+16
 
+0.01592
 
-The principle tells us first to take everything from A, which is the probability P(N-1) shown in red.  B will be the entire line, but the principle tells us to only add DISTINCT chances from B.  Since the only difference in B is one more shot than A, the only distinct chance for a streak of k shots will be in the last k shots, shown in yellow as P(k).  This is only distinct if the (k+1)th to last shot shown in green is missed!  Otherwise a streak of k would have been included in A already. There is one more place for a streak to be already included in A.  If there was a streak in the blue section, we must not include the B streak so we don't double count.
+0.002387
 
+17
 
+0.006560
 
-Phew... Let's put this all together by multiplying the probabilities of each of those events:
+0.0009839
 
+18
 
+0.002660
 
-P(N) = P(N-1) + (probability of yellow streak)*(probability we miss green)*(probability of no streak in blue)
+0.0003995
 
+19
 
+0.001067
 
-$$P(N) = P(N-1) + q^k \times (1-q) \times (1 - P(N-k-1))$$
+0.0001600
 
+20
 
+0.0004180
 
-This gives us a recurrence relation for the probabilities!   This is a general statement about the probability of at least one streak of length k out of N chances, given each has a probability q.  Since I'm just going to plug this into Python anyway to handle the data, this equation is good enough.
+6.267E-05
 
+21
 
+0.0001599
 
-The expectation value of an event is the probability multiplied by the number of chances.  For example, the expectation value of getting heads with 2 tosses is just (1/2)*2 = 1.  The plan is to compile a list of his field goal attempts in every game LeBron has played in the NBA, and sum the expectation values for each N.
+2.397E-05
 
+22
 
+6.03E-05
 
-$$ \mbox{Expectation} = \sum_i P(i) \times \mbox{(number of games with i shots)} $$
+9.033E-06
 
+23
 
+2.22E-05
 
-Using LeBron's actual field goal attempt data for each game (up to February 4, 2011), we find that LeBron is expected number of games with at least a streak of 11 in a row is 1.128.  This is a higher expectation value than the number of heads in 2 coin flips!   So this is MORE expected than the number of heads we would see with 2 coin flips.  This isn't very exciting given the number of shots he has taken and his shooting percentage.
+3.328E-06
 
+24
 
+8.06E-06
 
-<span style="font-weight: bold;">Data Tables</span>
+1.208E-06
 
+25
 
+2.84E-06
 
-<style>table {  }<span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">td</span> { padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-size: 12pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: <span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">Calibri</span>,sans-serif; vertical-align: bottom; border: medium none; white-space: <span class="goog-spellcheck-word"  style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background- background-position: initial initial; background-repeat: initial initial; color:yellow;">nowrap</span>; }.xl63 { text-align: center; }.xl64 { text-align: center; }.xl65 { color: red; text-align: center; }.xl66 { font-weight: 700; }</style>
+4.259E-07
 
-<table style="border-collapse: collapse; width: 294px;" border="0" cellpadding="0" cellspacing="0"><colgroup><col style="width: 95pt;" width="95">  <col style="width: 105pt;" width="105">  <col style="width: 94pt;" width="94">  </colgroup><tbody><tr style="height: 15pt;" height="15">   <td class="xl66" style="height: 15pt; width: 95pt;" width="95" height="15">Consecutive   Shots</td>   <td class="xl66" style="width: 105pt;" width="105">Expected out of 667</td>   <td class="xl66" style="width: 94pt;" width="94">Percent of Games</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">1</td>   <td class="xl63">666.9</td>   <td class="xl63">99.99</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">2</td>   <td class="xl63">643.6</td>   <td class="xl63">96.49</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">3</td>   <td class="xl63">489.0</td>   <td class="xl63">73.32</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">4</td>   <td class="xl63">281.8</td>   <td class="xl63">42.25</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">5</td>   <td class="xl63">140.0</td>   <td class="xl63">21.00</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">6</td>   <td class="xl63">65.23</td>   <td class="xl63">9.780</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">7</td>   <td class="xl63">29.55</td>   <td class="xl63">4.431</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">8</td>   <td class="xl63">13.20</td>   <td class="xl63">1.980</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">9</td>   <td class="xl63">5.854</td>   <td class="xl63">0.8778</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">10</td>   <td class="xl63">2.578</td>   <td class="xl63">0.3866</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl65" style="height: 15pt;" height="15">11</td>   <td class="xl65">1.128</td>   <td class="xl65">0.1691</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">12</td>   <td class="xl63">0.4898</td>   <td class="xl63">0.07344</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">13</td>   <td class="xl63">0.2110</td>   <td class="xl63">0.03164</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">14</td>   <td class="xl63">0.09011</td>   <td class="xl63">0.01351</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">15</td>   <td class="xl63">0.03807</td>   <td class="xl63">0.005709</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">16</td>   <td class="xl63">0.01592</td>   <td class="xl63">0.002387</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">17</td>   <td class="xl63">0.006560</td>   <td class="xl63">0.0009839</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">18</td>   <td class="xl63">0.002660</td>   <td class="xl63">0.0003995</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">19</td>   <td class="xl63">0.001067</td>   <td class="xl63">0.0001600</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">20</td>   <td class="xl63">0.0004180</td>   <td class="xl63">6.267E-05</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">21</td>   <td class="xl63">0.0001599</td>   <td class="xl63">2.397E-05</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">22</td>   <td class="xl64">6.03E-05</td>   <td class="xl63">9.033E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">23</td>   <td class="xl64">2.22E-05</td>   <td class="xl63">3.328E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">24</td>   <td class="xl64">8.06E-06</td>   <td class="xl63">1.208E-06</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">25</td>   <td class="xl64">2.84E-06</td>   <td class="xl63">4.259E-07</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">26</td>   <td class="xl64">9.98E-07</td>   <td class="xl63">1.495E-07</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">27</td>   <td class="xl64">3.51E-07</td>   <td class="xl63">5.255E-08</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">28</td>   <td class="xl64">1.20E-07</td>   <td class="xl63">1.797E-08</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">29</td>   <td class="xl64">3.92E-08</td>   <td class="xl63">5.870E-09</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">30</td>   <td class="xl64">1.15E-08</td>   <td class="xl63">1.717E-09</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">31</td>   <td class="xl64">3.45E-09</td>   <td class="xl63">5.171E-10</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">32</td>   <td class="xl64">1.06E-09</td>   <td class="xl63">1.589E-10</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">33</td>   <td class="xl64">3.37E-10</td>   <td class="xl63">5.050E-11</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">34</td>   <td class="xl64">7.23E-11</td>   <td class="xl63">1.083E-11</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">35</td>   <td class="xl64">1.70E-11</td>   <td class="xl63">2.554E-12</td>  </tr><tr style="height: 15pt;" height="15">   <td class="xl63" style="height: 15pt;" height="15">36</td>   <td class="xl64">2.30E-12</td>   <td class="xl63">3.442E-13</td>  </tr></tbody></table>
+26
 
-The streak in question is highlighted in red, so it appears we expect it to happen 0.169% of his games.
+9.98E-07
 
+1.495E-07
 
+27
 
-<span style="font-weight: bold;">The Realization</span>
+3.51E-07
 
+5.255E-08
 
+28
 
-Of course I did all of this before looking up the <a href="http://espn.go.com/nba/truehoop/miamiheat/notebook/_/page/heatreaction-110203/miami-heat-orlando-magic">actual article</a>.   I'll quote the blurb here:
+1.20E-07
 
+1.797E-08
 
+29
 
-<blockquote>LeBron James set a personal record by making his first 11 field goals to  start the game. His previous career-high was 10 straight field goals  after tip-off, recorded against Chicago in 2008. After hitting his first  11 field goal attempts on Thursday night, James shot 6-for-14  thereafter. </blockquote>Well... this calculation just got a bit easier.  He has played 667 games, and the probability of getting 11 straight off the bat is q^k = 0.475^11 = 0.0002777.  Multiply this by 667 games to get the expected value of 0.185.  Sure this is 6 times smaller than our previous calculation; however it's still not statistically <span style="font-style: italic;">that</span> impressive.
+3.92E-08
 
+5.870E-09
 
+30
 
-How would LeBron's expected number change if he shot the same percentage (72.7%) as Wilt for his record breaking season?  The expected number of games with 11 in a row during the game would be 72.38 games!!  So this is incredibly dependent on the shooting percentage.  We have a factor of q^k everywhere!  Certainly it's dependent on the number of shots taken in a game too.  The probability P(N) is a monotonically increasing function!
+1.15E-08
 
+1.717E-09
 
+31
 
-<span style="font-weight: bold;">Moral</span>
+3.45E-09
 
+5.171E-10
 
+32
 
-Given LeBron's shooting percentage and high number of shots per game, we expect that he would have at least 1 of these streak of 11 games so far in his career.  This is certainly not to diminish this feat though.  You still need to take 20 some shots a game in the NBA with nearly 50% shooting accuracy!
+1.06E-09
 
+1.589E-10
 
+33
 
-We also have a nice formula to apply to more sports streaks!  More to come...
+3.37E-10
+
+5.050E-11
+
+34
+
+7.23E-11
+
+1.083E-11
+
+35
+
+1.70E-11
+
+2.554E-12
+
+36
+
+2.30E-12
+
+3.442E-13
+
+The streak in question is highlighted in red, so it appears we expect it
+to happen 0.169% of his games. The Realization Of course I did all of
+this before looking up the [actual
+article](http://espn.go.com/nba/truehoop/miamiheat/notebook/_/page/heatreaction-110203/miami-heat-orlando-magic).
+I'll quote the blurb here:
+
+> LeBron James set a personal record by making his first 11 field goals
+> to start the game. His previous career-high was 10 straight field
+> goals after tip-off, recorded against Chicago in 2008. After hitting
+> his first 11 field goal attempts on Thursday night, James shot
+> 6-for-14 thereafter.
+
+Well... this calculation just got a bit easier. He has played 667 games,
+and the probability of getting 11 straight off the bat is q^k =
+0.475^11 = 0.0002777. Multiply this by 667 games to get the expected
+value of 0.185. Sure this is 6 times smaller than our previous
+calculation; however it's still not statistically that impressive. How
+would LeBron's expected number change if he shot the same percentage
+(72.7%) as Wilt for his record breaking season? The expected number of
+games with 11 in a row during the game would be 72.38 games!! So this is
+incredibly dependent on the shooting percentage. We have a factor of
+q^k everywhere! Certainly it's dependent on the number of shots taken
+in a game too. The probability P(N) is a monotonically increasing
+function! Moral Given LeBron's shooting percentage and high number of
+shots per game, we expect that he would have at least 1 of these streak
+of 11 games so far in his career. This is certainly not to diminish this
+feat though. You still need to take 20 some shots a game in the NBA with
+nearly 50% shooting accuracy! We also have a nice formula to apply to
+more sports streaks! More to come...

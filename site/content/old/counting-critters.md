@@ -6,114 +6,127 @@ Slug: counting-critters
 Author: Corky
 
 
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s1600/marx_horse.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="254" src="http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s320/marx_horse.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This picture allows us to set a lower bound on the number
-of <a href="http://www.youtube.com/watch?v=9IrCgCKrv8U">creatures</a> that ever lived of ~4.</td></tr></tbody></table>We recently had a big book sale [1] here in town where books were being sold for about a quarter.  Needless to say, I bought far more than I'll probably ever need or read.  One of the books I bought was called <i>General Paleontology</i> by A. Brouwer [2].
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  [![image](http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s320/marx_horse.jpg)](http://4.bp.blogspot.com/-H4DbCndvDRw/TgfuQZt7aJI/AAAAAAAAAM8/WLfVRd4USK8/s1600/marx_horse.jpg)
+  This picture allows us to set a lower bound on the number of [creatures](http://www.youtube.com/watch?v=9IrCgCKrv8U) that ever lived of \~4.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Anyways, I didn't really make it too far in the book.  In fact, I only made it to the first sentence of the second paragraph of the first chapter, when I encountered this line:
+We recently had a big book sale [1] here in town where books were being
+sold for about a quarter. Needless to say, I bought far more than I'll
+probably ever need or read. One of the books I bought was called
+*General Paleontology* by A. Brouwer [2]. Anyways, I didn't really make
+it too far in the book. In fact, I only made it to the first sentence of
+the second paragraph of the first chapter, when I encountered this line:
+*"The number of individuals which has populated the Earth since life
+began is beyond estimation."* ** Horse feathers, I say! Horse Feathers!
+The number of things that ever lived may very well be *unknowable*, but
+it's certainly not beyond estimation. So below, Alemi and I each provide
+an estimate for the total number of creatures that have ever lived on
+Earth. We flipped a coin and I lost, so I guess I'll go first. My
+estimation will be a genuine guess-y kind of estimate that doesn't draw
+too heavily on too many physical considerations. Instead, I will
+formulate a series of assumptions and base my final answer on that. So
+assuming my assumptions are valid, the answer should give a reasonable
+estimate to the total number of creatures that have ever lived. My
+assumptions are as follows: (1) The number of individuals that have ever
+lived will be almost entirely dominated by the number of bacteria that
+have ever lived on Earth. So to leading order, all the life that has
+ever lived on Earth is bacteria (or something similar). (2) Life began
+at some time, T, in the past and immediately spread to all places on
+Earth. Hey, man, it's the power of geometric progression! (3) The
+majority of life is found within h = 1 m from the surface of water. I
+picked this number since it's roughly (order of magnitude) how far down
+I can see in really clear water. Most of the life will be photosynthetic
+and thus need a fair amount of sunlight. (4) The number density of
+organisms in water is n \~ 10^5. I have no real justification for this.
+(5) The average lifetime of an organism is t \~ 1 hr. Alright, so if
+these assumptions are valid (a big if [3]), then the following
+prediction should be fairly accurate. So the total volume in which these
+creatures may live is just the shell of the Earth down to about a meter:
+$$ V = 4 \pi R_{\oplus}^2 h $$ where R = 6 * 10^6 m is the radius
+of the Earth. Alright, so the number of creatures at any given moment
+will be the volume times the number density which I will take to be n \~
+10^5. That will give us the total number of creatures at any given
+moment. But we want it for *all* the moments. So I will take the total
+number of "generations" to be the time life has been around divided by
+the average lifetime of a given organism. Putting this all together
+gives $$N = 4 \pi R_{\oplus}^2 h \times \frac{T}{t} $$ Plugging in
+some numbers I get: $$ N \sim 10^{39}
+\left(\frac{h}{1\~\mbox{m}}\right)\left(\frac{n}{10^5\~\mbox{cm}^{-3}}\right)\left(\frac{T}{3\times10^9\~\mbox{yrs}}
+\right)\left(\frac{t}{1\~\mbox{hr}} \right)^{-1}$$ So for the
+nominal values I've plugged in, I'll get that about 10^39 creatures
+have ever lived on Earth [4]. I've left my equation in a dimensionless
+form above, so if you think my individual estimates are garbage, you can
+easily plug in your own estimates to see how things change. Except for
+the completely arbitrary factor for the average number density of
+organisms per cubic centimeter of water, I feel alright about this
+estimate. And I'm fairly confident that the number density will not be
+off more than about 3 orders of magnitude either high or low. So my
+final estimate is: $$ N \sim 10^{39 \pm 3} $$ I promised that there
+would be two estimates, so I present below in picture form, Alemi's
+back-of-the-wrapper estimate.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  [![image](http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s400/jj_phys.jpg)](http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s1600/jj_phys.jpg)
+  Click for the full Jimmy Johns experience
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<i>"The number of individuals which has populated the Earth since life began is beyond estimation."</i>
-<i>
-</i>
-Horse feathers, I say!  Horse Feathers!
-
-The number of things that ever lived may very well be <i>unknowable</i>, but it's certainly not beyond estimation.  So below, Alemi and I each provide an estimate for the total number of creatures that have ever lived on Earth.
-
-<a name='more'></a>We flipped a coin and I lost, so I guess I'll go first.  My estimation will be a genuine guess-y kind of estimate that doesn't draw too heavily on too many physical considerations.  Instead, I will formulate a series of assumptions and base my final answer on that.  So assuming my assumptions are valid, the answer should give a reasonable estimate to the total number of creatures that have ever lived. 
-
-My assumptions are as follows:
-
-(1)  The number of individuals that have ever lived will be almost entirely dominated by the number of bacteria that have ever lived on Earth.  So to leading order, all the life that has ever lived on Earth is bacteria (or something similar).
-
-(2)  Life began at some time, T, in the past and immediately spread to all places on Earth.  Hey, man, it's the power of geometric progression!
-
-(3)  The majority of life is found within h = 1 m from the surface of water.  I picked this number since it's roughly (order of magnitude) how far down I can see in really clear water.  Most of the life will be photosynthetic and thus need a fair amount of sunlight.
-
-(4)  The number density of organisms in water is  n ~ 10^5.  I have no real justification for this.
-
-(5)  The average lifetime of an organism is t ~ 1 hr.
-
-Alright, so if these assumptions are valid (a big if [3]), then the following prediction should be fairly accurate.  So the total volume in which these creatures may live is just the shell of the Earth down to about a meter:
-
-$$ V = 4 \pi R_{\oplus}^2 h $$
-
-where R = 6 * 10^6 m is the radius of the Earth.  Alright, so the number of creatures at any given moment will be the volume times the number density which I will take to be n ~ 10^5.  That will give us the total number of creatures at any given moment.  But we want it for <i>all</i> the moments.  So I will take the total number of "generations" to be the time life has been around divided by the average lifetime of a given organism.  Putting this all together gives
-
-$$N = 4 \pi R_{\oplus}^2 h \times \frac{T}{t} $$
-
-Plugging in some numbers I get:
-
-$$ N \sim 10^{39} \left(\frac{h}{1~\mbox{m}}\right)\left(\frac{n}{10^5~\mbox{cm}^{-3}}\right)\left(\frac{T}{3\times10^9~\mbox{yrs}} \right)\left(\frac{t}{1~\mbox{hr}} \right)^{-1}$$
-
-So for the nominal values I've plugged in, I'll get that about 10^39 creatures have ever lived on Earth [4].  I've left my equation in a dimensionless form above, so if you think my individual estimates are garbage, you can easily plug in your own estimates to see how things change. 
-
-Except for the completely arbitrary factor for the average number density of organisms per cubic centimeter of water, I feel alright about this estimate.  And I'm fairly confident that the number density will not be off more than about 3 orders of magnitude either high or low.  So my final estimate is:
-
-$$ N \sim 10^{39 \pm 3} $$
-
-I promised that there would be two estimates, so I present below in picture form, Alemi's back-of-the-wrapper estimate.
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s1600/jj_phys.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="238" src="http://2.bp.blogspot.com/-Eq37GVo3d8A/TggHx19J1pI/AAAAAAAAANA/Y0H3DTVb2so/s400/jj_phys.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Click for the full Jimmy Johns experience</td></tr></tbody></table>To explain these scribbles, I now cede the floor (and the mic) to Alemi. 
-
-[ SEAMLESS TRANSITION ]
-
-So, when Corky posed this question to me while we ate some tasty sandwiches, another approach came to mind.  
-
-Namely, I wanted to try to estimate the number of critters that have ever lived by putting some kind of energy bound on the number.
-
-Ultimately, all critters come from the sun.  That is, all life on Earth is only able to exist in so much as it consumes energy, and for almost all life [ignoring the under ocean heat vent guys], the energy they consume, one way or another comes from the sun.
-
-So, let's estimate the number of critters in three parts (1) We need the energy the Earth recieves from the sun.  (2) We need to estimate the energy density of life (3) These two things, combined with a characteristic length or volume scale for a critter would enable us to figure out the rate at which the Earth could produce critters. (4) Assuming this rate and a time scale for how long life has been around on the Earth would give us a total number of critters.
-
-Let's begin
-
-(1) Energy from the sun.
-
-Corky and I happen to know that the solar flux on the sun is roughly 1000 W/m^2.  Multiplying this by half the surface area of the earth gives us a rough total solar flux
-
-$$ (1000 \text{ W/m}^2) ( 2\pi R_{\oplus}^2) \sim 2 \times 10^{17} \text{ W} $$
-
-(2) Energy density of critters
-
-For this we used the bag of potato chips we had on hand, assuming that all life matter has roughly the same energy content.  The bag of chips was 150 calories in a serving size of 28 grams.  This and assuming that life forms are the density of water gives us a life energy density
-
-$$  \left( \frac{ 150 \text{ kcal} }{ 28 \text{ g}} \right)\left( \frac{ 1 \text{ g}}{ \text{ cm}^3} \right)  \sim  2 \times 10^4 \text{ J/cm}^3  $$
-
-
-(3) Length scale of critters
-
-We assumed that bacteria are the most abundant life form, so we chose a length scale of 100 microns.
-
-
-Putting these pieces together gives
-
-$$ \frac{ 2 \times 10^{17} \text{ W} }{ \left(  2 \times 10^4 \text{ J/cm}^3 \right) \left( 100\ \mu\text{m} \right)^3 }  \sim 10^{19} \text{ 1/s}  $$
-
-Which is our estimated critter creation rate
-
-(4) Time scale for life generation
-
-Finally, we estimate that life creation has been chugging along on earth for about 3 billion years, this gives us our final estimate for the number of critters that have every lived
-
-$$  \left(  10^{19} \text{ 1/s} \right) \left( 3 \times 10^9 \text{ years} \right) \sim 10^{36} $$
-
-So, there we have it.  If the Earth was 100% efficient at converting solar energy into life, and that life is characteristically the energy density of a potato chip and the size of a bacteria, we should have had 1 billion billion billion billion critters ever.  To make us feel a little better we would like to tack on a 10% efficiency, since we don't actually expect the Earth to be 100% efficient, and because 10% seems to be the rule of thumb efficiency estimation used when it comes to food chains and the like, so our final estimate, motivated purely by physics is
-
-$$ \boxed{ \text{ Total number of critters ever } = 10^{35\pm 3} } $$
-
-This number seems pretty good, and is in general agreement with Corky's earlier method.  Notice that the only parameter we are a little worried about the is the length scale, especially because our final answer depends on the inverse cube of this number, so, our error is probably something around 3 orders of magnitude, as before, since an order of magnitude goof in the size would cause 3 orders of magnitude error in the final estimate.
-
-So there you have it.  Two not-egregiously-horrible estimates for the total number of critters that have ever lived.  All in all, I think that book was a quarter well spent!
-
-
-
-Unnecessary footnotes:
-
-[1]  This is a bit misleading.  They actually sold books of all sizes.
-
-[2]  I like to read about paleontology and such just in case I'm ever sent back in time.  This way, I'll know what dinosaurs are safe to eat.
-
-[3]  Here's a bigger if:  <span class="Apple-style-span" style="font-size: large;">if</span>
-<span class="Apple-style-span" style="font-size: large;">
-</span>
-[4]  FUN FACT:  The total number of atoms in all the people on Earth is roughly 10^39.  A proof of this is left as an exercise for the reader.
-<span class="Apple-style-span" style="font-size: large;">
-</span>
+To explain these scribbles, I now cede the floor (and the mic) to Alemi.
+[ SEAMLESS TRANSITION ] So, when Corky posed this question to me while
+we ate some tasty sandwiches, another approach came to mind. Namely, I
+wanted to try to estimate the number of critters that have ever lived by
+putting some kind of energy bound on the number. Ultimately, all
+critters come from the sun. That is, all life on Earth is only able to
+exist in so much as it consumes energy, and for almost all life
+[ignoring the under ocean heat vent guys], the energy they consume, one
+way or another comes from the sun. So, let's estimate the number of
+critters in three parts (1) We need the energy the Earth recieves from
+the sun. (2) We need to estimate the energy density of life (3) These
+two things, combined with a characteristic length or volume scale for a
+critter would enable us to figure out the rate at which the Earth could
+produce critters. (4) Assuming this rate and a time scale for how long
+life has been around on the Earth would give us a total number of
+critters. Let's begin (1) Energy from the sun. Corky and I happen to
+know that the solar flux on the sun is roughly 1000 W/m^2. Multiplying
+this by half the surface area of the earth gives us a rough total solar
+flux $$ (1000 \text{ W/m}^2) ( 2\pi R_{\oplus}^2) \sim 2 \times
+10^{17} \text{ W} $$ (2) Energy density of critters For this we used
+the bag of potato chips we had on hand, assuming that all life matter
+has roughly the same energy content. The bag of chips was 150 calories
+in a serving size of 28 grams. This and assuming that life forms are the
+density of water gives us a life energy density $$ \left( \frac{ 150
+\text{ kcal} }{ 28 \text{ g}} \right)\left( \frac{ 1 \text{ g}}{
+\text{ cm}^3} \right) \sim 2 \times 10^4 \text{ J/cm}^3 $$ (3)
+Length scale of critters We assumed that bacteria are the most abundant
+life form, so we chose a length scale of 100 microns. Putting these
+pieces together gives $$ \frac{ 2 \times 10^{17} \text{ W} }{
+\left( 2 \times 10^4 \text{ J/cm}^3 \right) \left( 100\
+\mu\text{m} \right)^3 } \sim 10^{19} \text{ 1/s} $$ Which is our
+estimated critter creation rate (4) Time scale for life generation
+Finally, we estimate that life creation has been chugging along on earth
+for about 3 billion years, this gives us our final estimate for the
+number of critters that have every lived $$ \left( 10^{19} \text{
+1/s} \right) \left( 3 \times 10^9 \text{ years} \right) \sim
+10^{36} $$ So, there we have it. If the Earth was 100% efficient at
+converting solar energy into life, and that life is characteristically
+the energy density of a potato chip and the size of a bacteria, we
+should have had 1 billion billion billion billion critters ever. To make
+us feel a little better we would like to tack on a 10% efficiency, since
+we don't actually expect the Earth to be 100% efficient, and because 10%
+seems to be the rule of thumb efficiency estimation used when it comes
+to food chains and the like, so our final estimate, motivated purely by
+physics is $$ \boxed{ \text{ Total number of critters ever } =
+10^{35\pm 3} } $$ This number seems pretty good, and is in general
+agreement with Corky's earlier method. Notice that the only parameter we
+are a little worried about the is the length scale, especially because
+our final answer depends on the inverse cube of this number, so, our
+error is probably something around 3 orders of magnitude, as before,
+since an order of magnitude goof in the size would cause 3 orders of
+magnitude error in the final estimate. So there you have it. Two
+not-egregiously-horrible estimates for the total number of critters that
+have ever lived. All in all, I think that book was a quarter well spent!
+Unnecessary footnotes: [1] This is a bit misleading. They actually sold
+books of all sizes. [2] I like to read about paleontology and such just
+in case I'm ever sent back in time. This way, I'll know what dinosaurs
+are safe to eat. [3] Here's a bigger if: if [4] FUN FACT: The total
+number of atoms in all the people on Earth is roughly 10^39. A proof of
+this is left as an exercise for the reader.
