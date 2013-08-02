@@ -30,6 +30,7 @@ LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
         ('Uncertain Principles', 'http://scienceblogs.com/principles/'),
         ('Dot Physics', 'http://www.wired.com/wiredscience/'),
         ('Swans on Tea', 'http://blogs.scienceforums.net/swansont/'),
+        ('Old Virtuosi', 'http://thevirtuosi.blogspot.com'),
         )
 
 # Social widget
