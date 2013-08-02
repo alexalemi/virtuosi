@@ -81,101 +81,208 @@
 	<article>
 		<div class="post wrapper">
 			<h1>Creating an&nbsp;Earth</h1>
-			<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s1600/116.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="200" src="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s200/116.png" width="200" /></a></div>
-
-<p>A while ago I decided I wanted to create something that looks like the surface of a planet, complete with continents <span class="amp">&amp;</span> oceans and all. Since I&#8217;ve only been on a small handful of planets, I decided that I&#8217;d approximate this by creating something like the Earth on the computer (without cheating and just copying the real&nbsp;Earth).  </p>
-<p>Where should I start? Well, let&#8217;s see what the facts we know about the Earth tell us about how to create a new planet on the&nbsp;computer. </p>
-<p><a name='more'></a><b>Observation 1</b>: Looking at a map of the Earth, we only see the heights of the&nbsp;surface. </p>
-<p>So let&#8217;s describe just the heights of the Earth&#8217;s&nbsp;surface. </p>
-<p><b>Observation 2 </b>: The Earth is a&nbsp;sphere. </p>
-<p>So (wait for it) we need to describe the height on a spherical&nbsp;surface. </p>
-<p>Now we can recast our problem of making an Earth more precisely mathematically. We want to know the heights of the planet&#8217;s surface at each point on the Earth. So we&#8217;re looking for field (the height of the planet) defined on the surface of a sphere (the different spots on the&nbsp;planet). </p>
-<p>Just like a function on the real line can be expanded in terms of its Fourier components, almost any function on the surface of a sphere can be expanded as a sum of spherical harmonics Y<span style="font-size: x-small;"><i>lm</i></span>. This means we can write the height <i>h</i> of our planets surfaces&nbsp;as </p>
-<p><mathjax>$$
-h(\theta, \phi) = \sum A_{lm}Y_l^m(\theta, \phi) \quad (1)
-$$</mathjax>
-If we figure out what the coefficients A of the sum should be, then we can start making some Earths! Let&#8217;s see if we can use some other facts about the Earth&#8217;s surface to get get a handle on what coefficients to&nbsp;use. </p>
-<p><b> Observation 3</b>: I don&#8217;t know every detail of the Earth&#8217;s surface, whose history is impossibly&nbsp;complicated. </p>
-<p>I&#8217;ll capture this lack-of-knowledge by describing the surface of our imaginary planet as some sort of random variable. Equation (1) suggests that we can do this by making the coefficients <i>A</i> random variables. At some point we need to make an executive decision on what type of random variable we&#8217;ll use. For various reasons, <a href='#footnote1'>[1]</a> I decided I&#8217;d use a Gaussian random variable with mean 0 and standard deviation <i>a<span style="font-size: x-small;">lm</span></i>:
-<mathjax>$$
-A_{lm} = a_{lm} N(0,1)
-$$</mathjax>
-(Here I&#8217;m using the notation that <i>N(m,v)</i> is a normal or Gaussian random variable with mean <i>m</i> and variance <i>v</i>. If you multiply a Gaussian random variable by a constant <i>a</i>, it&#8217;s the same as multiplying the variance by <i>a^2</i>, so <i>a*N(0,1)</i> and <i>N(0,a^2)</i> are the same&nbsp;thing.)</p>
-<p><b> Observation 4</b>: The heights of the surface of the Earth are more-or-less independent of their position on the&nbsp;Earth. </p>
-<p>In keeping with this, I&#8217;ll try to use coefficients <i>a<span style="font-size: x-small;">lm</span></i> that will give me a random field that is is isotropic on average. This seems hard at first, so let&#8217;s just make a hand-waving argument. Looking at some <a href="http://en.wikipedia.org/wiki/Spherical_harmonics">pretty pictures</a> of spherical harmonics, we can see that each spherical harmonic of degree l has about l stripes on it, independent of m. So let&#8217;s try using alm&#8217;s that depend only on l, and are constant if just m changes. <a href='footnote2'>[2]</a>. Just for convenience, we&#8217;ll pick this constant to be <i>l</i> to some power <i>-p</i>:
-<mathjax>$$
-a_{lm} = l^{-p} \quad \textrm{ or}
-$$</mathjax><mathjax>$$
-h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta, \phi) \quad (2)
-$$</mathjax></p>
-<p>At this point I got bored <span class="amp">&amp;</span> decided to see what a planet would look like if we didn&#8217;t know what value of p to use. So below is a movie of a randomly generated &#8220;planet&#8221; with a fixed choice of random numbers, but with the power<i> p</i> changing. 
-<div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOG_video_class" id="BLOG_video-35e95347156e2467" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="movie" value="//www.youtube.com/get_player"><param name="bgcolor" value="#FFFFFF"><param name="allowfullscreen" value="true"><param name="flashvars" value="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D35e95347156e2467%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3DAF98EECA6723029623AA4A4FD1B6F8916C6F45BE.B069BD3B47D585FF3F379B7FC023C17C3FB0C764%26key%3Dck2&amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D35e95347156e2467%26offsetms%3D5000%26itag%3Dw160%26sigh%3D3tMKuCkA0PvX3Rh_465wdL2miwg&amp;autoplay=0&amp;ps=blogger"><embed src="//www.youtube.com/get_player" type="application/x-shockwave-flash" width="320" height="266" bgcolor="#FFFFFF" flashvars="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D35e95347156e2467%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3DAF98EECA6723029623AA4A4FD1B6F8916C6F45BE.B069BD3B47D585FF3F379B7FC023C17C3FB0C764%26key%3Dck2&iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D35e95347156e2467%26offsetms%3D5000%26itag%3Dw160%26sigh%3D3tMKuCkA0PvX3Rh_465wdL2miwg&autoplay=0&ps=blogger" allowFullScreen="true" /></object></div>
-As the movie starts (p=0), we see random uncorrelated heights on the surface <a href='footnote3'>[5]</a>. As the movie continues and p increases, we see the surface smooth out rapidly. Eventually, after p=2 or so, the planet becomes very smooth and doesn&#8217;t look at all like a planet. So the &#8220;correct&#8221; value for p is somewhere above 0 (too bumpy) and below 2 (too smooth). Can we use more observations about Earth to predict what a good value of p should&nbsp;be?</p>
-<p><b>Observation 5</b>: The elevation of the Earth&#8217;s surface exists everywhere on Earth&nbsp;(duh). </p>
-<p>So we&#8217;re going to need our sum to exist. How the hell are we going to sum that series though! Not only is it random, but it also depends on where we are on the&nbsp;planet! </p>
-<p>Rather than try to evaluate that sum everywhere on the sphere, I decided that it would be easiest to evaluate the sum at the &#8220;North Pole&#8221; at <i>theta=0</i>. Then, if we picked our coefficients right, this should be statistically the same as any other point on the&nbsp;planet. </p>
-<p>Why do we want to look at <i>theta = 0</i>? Well, if we look back at the <a href="http://en.wikipedia.org/wiki/Spherical_harmonics">wikipedia entry</a> for spherical harmonics, we see that 
-<mathjax>$$
-Y_l^m = \sqrt{ \frac{2 l + 1}{4\pi}\frac{(l-m)!}{(l+m)!}} e^{im\phi}P^m _ l(\cos\theta) \quad (3)
-$$</mathjax></p>
-<p>That doesn&#8217;t look too helpful &#8212; we&#8217;ve just picked up another special function Plm that we need to worry about. But there is a trick with these special functions Plm: at theta = 0, Plm is 0 if m isn&#8217;t 0, and Pl0 is 1. So at theta = 0 this is simply:
-<mathjax>$$
-Y_l^m(\theta = 0) = \bigg \{ ^{\sqrt{(2l+1)/4\pi},\, m=0}_{0,\,m \ne 0}
-$$</mathjax></p>
-<p>Now we just have, from every equation we&#8217;ve written down:
-<mathjax>$$
-h(\theta = 0) = \sum_l \times l^{-p} \times \sqrt{(2l+1)/4\pi }\times N(0,1) $$</mathjax><mathjax>$$
-\quad \qquad =  \times \frac 1 {\sqrt{4\pi}} \times \sum_l N(0,l^{-2p}(2l+1)) $$</mathjax><mathjax>$$
-\quad \qquad =  \times \frac 1 {\sqrt{4\pi}} \times N(0,\sum_l l^{-2p}(2l+1) ) $$</mathjax> <mathjax>$$
-\quad \qquad = \times \frac 1 {\sqrt{4\pi}} \sqrt{\sum_l l^{-2p}(2l+1)}
-\times N(0,1) $$</mathjax> <mathjax>$$
-\quad \qquad \sim \sqrt{\sum_l l^{-2p+1}} N(0,1) \qquad (4)
-$$</mathjax> </p>
-<p>So for the surface of our imaginary planet to exist, we had better have that sum converge, or <i>-2p+1 &lt; -1 (p &gt; 1)</i>. </p>
-<p>And we&#8217;ve also learned something else!!! Our model always gives back a Gaussian height distribution on the surface. Changing the coefficients changes the variance of distribution of heights, but that&#8217;s all it does to the distribution. Evidently if we want to get a non-Gaussian distribution of heights, we&#8217;d need to stretch our surface after evaluating the&nbsp;sum.</p>
-<p>Well, what does the height distribution look like from my simulated planets? Just for the hell of it, I went ahead and generated ~400 independent surfaces at ~40 different values for the exponent <i>p</i>, looking at the first 22,499 terms in the series. From these surfaces I reconstructed the measured distributions; I&#8217;ve combined them into a movie which you can see below. 
-<div class="separator" style="clear: both; text-align: center;">
-<object width="320" height="266" class="BLOG_video_class" id="BLOG_video-31e5890cc071aa2f" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="movie" value="//www.youtube.com/get_player"><param name="bgcolor" value="#FFFFFF"><param name="allowfullscreen" value="true"><param name="flashvars" value="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D31e5890cc071aa2f%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D5521ED1527A9440D68709DEDB1AFDE082DC7D49F.388560830F4B1E249D8B9436D8E429D7540E9E07%26key%3Dck2&amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D31e5890cc071aa2f%26offsetms%3D5000%26itag%3Dw160%26sigh%3DkgENNT4M2p-G8XR472t6cu_O3Mo&amp;autoplay=0&amp;ps=blogger"><embed src="//www.youtube.com/get_player" type="application/x-shockwave-flash" width="320" height="266" bgcolor="#FFFFFF" flashvars="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D31e5890cc071aa2f%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D5521ED1527A9440D68709DEDB1AFDE082DC7D49F.388560830F4B1E249D8B9436D8E429D7540E9E07%26key%3Dck2&iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D31e5890cc071aa2f%26offsetms%3D5000%26itag%3Dw160%26sigh%3DkgENNT4M2p-G8XR472t6cu_O3Mo&autoplay=0&ps=blogger" allowFullScreen="true" /></object></div>
-As you can see from the movie, the distributions look like Gaussians. The fits from Eq. (4) are overlaid in black dotted lines. (Since I can&#8217;t sum an infinite number of spherical harmonics with a computer, I&#8217;ve plotted the fit I&#8217;d expect from just the terms I&#8217;ve summed. ) As you can see, they are all close to Gaussians. Not bad. Let&#8217;s see what else we can&nbsp;get. </p>
-<p><b>Observation 6</b>: According to some famous people, the <a href="http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension">Earth&#8217;s surface is probably a fractal whose coastlines are non-differentiable</a>.</p>
-<p>This means that we want a value of p that will make our surface rough enough so that its gradient doesn&#8217;t exist (the derivative of the sum of Eq. (2) doesn&#8217;t converge). At this point I&#8217;m getting bored with writing out calculations, so I&#8217;m just going to make some scaling&nbsp;arguments. </p>
-<p>From Eq. (3), we know that each of the spherical harmonics Ylm is related to a polynomial of degree l in cos(theta). So if we take a derivative, I&#8217;d expect us to pick up another factor of l each time. Following through all the steps of Eq. (4) we find
-<mathjax>$$
-\vec{\nabla}h \sim \sqrt{\sum_l l^{-2p+3}}\vec{N}(0,1) \quad ,
-$$</mathjax>
-which converges for p &gt; 2. So for our planet to be &#8220;fractal,&#8221; we want <i>1&lt;p&lt;2</i>. Looking at the first movie, this seems&nbsp;reasonable. </p>
-<p><b>Observation 7</b>: 70% of the Earth&#8217;s surface is under&nbsp;water. </p>
-<p>On Earth, we can think of the points underwater as all those points below a certain threshold height. So let&#8217;s threshold the heights on our sphere. If we want 70% of our generated planet&#8217;s surface to be under water, Eq (4) and the <a href="http://en.wikipedia.org/wiki/Cumulative_distribution_function">cumulative distribution function </a>of a <a href="http://en.wikipedia.org/wiki/Normal_distribution">Gaussian distribution</a> tells us that we want to pick a critical height <i>H</i> such that 
-<mathjax>$$
-\frac 1 2 \left[ 1 + \textrm{erf}(H/\sqrt{2\sigma^2}) \right] = 0.7 \quad \textrm{or}
-$$</mathjax> <mathjax>$$
-H = \sqrt{2\sigma^2}\textrm{erf}^{-1}(0.4)
-$$</mathjax> <mathjax>$$
-\sigma^2 = \frac 1 {4\pi} \sum_l l^{-2p}(2l+1) \quad (5)\, ,
-$$</mathjax>
-where <i>erf()</i> is a special function called the error function, and erf-1 is its inverse. We can evaluate these numerically (or by using some <a href="http://en.wikipedia.org/wiki/Error_Function#Asymptotic_expansion">dirty tricks</a> if we&#8217;re feeling especially&nbsp;masochistic).</p>
-<p>So for our generated planet, let&#8217;s call all the points with a height larger than H &#8220;land,&#8221; and all the points with a height less than H &#8220;ocean.&#8221; Here is what it looks like for a planet with<i> p=0, p=1</i>, and <i>p=2</i>, plotted with the same <a href="http://en.wikipedia.org/wiki/Sinusoidal_projection">Sanson projection</a> as before. 
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s1600/allContinents.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="400" src="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s400/allContinents.png" width="258" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Top to bottom: p=0, p=1, and p=2. I&#8217;ve colored all the &#8220;water&#8221; (positions with heights &lt; <i>H </i>as given in Eq. (5) ) blue and all the land (heights &gt; <i>H</i>) green. </td></tr></tbody></table></p>
-<p>You can see that the the total amount of land area is roughly constant among the three images, but we haven&#8217;t fixed how it&#8217;s distributed. Looking at the map above for <i>p=0</i>, there are lots of small &#8220;islands&#8221; but no large contiguous land masses. For <i>p=2</i>, we see only one contiguous land mass (plus one 5-pixel island), and <i>p=1</i> sits somewhere in between the two extremes. None of these look like the Earth, where there are a few large landmasses but many small islands. From our previous arguments, we&#8217;d expect something between p=1 and p=2 to look like the Earth, which is in line with the above picture. But how do we decide which value of p to&nbsp;use? </p>
-<p><b>Observation 8</b>: The Earth has 7&nbsp;continents </p>
-<p>This one is more vague than the others, but I think it&#8217;s the coolest of all the&nbsp;arguments.</p>
-<p>How do we compare our generated planets to the Earth? The Earth has 7 continents that comprise 4 different contiguous landmasses. In order, these are 1) Europe-Asia-Africa, 2) North- and South- America, 3) Antartica, and 4) Australia, with a 5th Greenland barely missing out. In terms of fractions of the Earth&#8217;s surface, Google tells us that Australia covers 0.15% of the Earth&#8217;s total surface area, and Greenland covers 0.04%. So let&#8217;s define a &#8220;continent&#8221; as any contiguous landmass that accounts for more than 0.1% of the planet&#8217;s total area. Then we can ask: What value of <i>p</i> gives us a planet with 4&nbsp;continents? </p>
-<p>I have no idea how to calculate exactly what that number would be from our model, but I can certainly measure it from the simulated results. I went ahead and counted the number of continents in the generated planets. 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s1600/numContinents.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s400/numContinents.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-W3qT-_LOlT4/UIxaxqd1b9I/AAAAAAAAABs/HZEMht7uzlU/s1600/numContinents.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-</a></div>
-The results are plotted above. The solid red line is the median values of the number of continents, as measured over 400 distinct worlds at 40 different values of p. The red shaded region around it is the band containing the upper and lower quartiles of the number of continents. For comparison, in black on the right y-axis I&#8217;ve also plotted the log of the total number of landmasses at the resolution I&#8217;ve&nbsp;used. </p>
-<p>The number of continents has a resonant value of p &#8212; if p is too small, then there are many landmasses, but none are big enough to be continents. Conversely, if p is too large, then there is only one huge landmass. Somewhere in the middle, around p=0.5, there are about 20 continents, at least when only the first ~23000 terms in the series are&nbsp;summed. </p>
-<p>Looking at the curve, we see that there are roughly two places where there are 4 continents in the world &#8212; at p=0.1 and at p=1.3. Since p=0.1 doesn&#8217;t converge, and since p=0.1 will have way too many landmasses, it looks like a generated Earth will look the best if we use a value of <i>p=</i>1.3</p>
-<p>And that&#8217;s it. For your viewing pleasure, here is a video of three of these planets below, complete with water, continents, and mountains. <a href='footnote4'>[4]</a></p>
-<div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOG_video_class" id="BLOG_video-6a9be1177a34c1ac" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="movie" value="//www.youtube.com/get_player"><param name="bgcolor" value="#FFFFFF"><param name="allowfullscreen" value="true"><param name="flashvars" value="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D6a9be1177a34c1ac%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D747E6D5470929B602967CF18E2AF6C1141FB406F.A5B1C4914DC5A85D8DEC317B3A43388B3B433287%26key%3Dck2&amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D6a9be1177a34c1ac%26offsetms%3D5000%26itag%3Dw160%26sigh%3DSmKLwfsySkqrRT1--7zWT17HMfI&amp;autoplay=0&amp;ps=blogger"><embed src="//www.youtube.com/get_player" type="application/x-shockwave-flash" width="320" height="266" bgcolor="#FFFFFF" flashvars="flvurl=http://redirector.googlevideo.com/videoplayback?id%3D6a9be1177a34c1ac%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1363446061%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D747E6D5470929B602967CF18E2AF6C1141FB406F.A5B1C4914DC5A85D8DEC317B3A43388B3B433287%26key%3Dck2&iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D6a9be1177a34c1ac%26offsetms%3D5000%26itag%3Dw160%26sigh%3DSmKLwfsySkqrRT1--7zWT17HMfI&autoplay=0&ps=blogger" allowFullScreen="true" /></object></div>
-
-<p id='footnote1'>[1] Since I wanted a random surface, I wanted to make the mean of each coefficient 0. Otherwise we&#8217;d get a deterministic part of our surface heights. I picked a distribution that&#8217;s symmetric about 0 because on Earth the bottom of the oceans seem roughly similar in terms of changes in elevation. I wanted to pick a stable distribution <span class="amp">&amp;</span> independent coefficients because it makes the sums that come up easier to evalutate. Finally, I picked a Gaussian, as opposed to another stable distribution like a Lorentzian, because the tallest points on Earth are finite, and I wanted the variance of the planet&#8217;s height to be&nbsp;defined. </p>
-
-<p id='footnote2'>[2] We could make this rigorous by showing that a rotated spherical harmonic is orthogonal to other spherical harmonics of a different degree <i>l</i>, but you don&#8217;t want to see me&nbsp;try.</p>
-
-<p id='footnote3'>[3]Actually p=0 should correspond to completely uncorrelated delta-function noise. (You can convince yourself by looking at the spherical harmonic expansion for a delta-function.) The reason that the bumps have a finite width is that I only summed the first 22,499 terms in the series (l=150 and below). So the size of the bumps gives a rough idea of my&nbsp;resolution. </p>
-
-<p id='foonote4'>[4] For those of you keeping score at home, it took me more than 6 days to figure out how to make these&nbsp;planets.
+			<p><a href="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s1600/116.png"><img alt="image" src="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s200/116.png" /></a></p>
+<p>A while ago I decided I wanted to create something that looks like the
+surface of a planet, complete with continents <span class="amp">&amp;</span> oceans and all. Since
+I&#8217;ve only been on a small handful of planets, I decided that I&#8217;d
+approximate this by creating something like the Earth on the computer
+(without cheating and just copying the real Earth). Where should I
+start? Well, let&#8217;s see what the facts we know about the Earth tell us
+about how to create a new planet on the computer. <strong>Observation 1</strong>:
+Looking at a map of the Earth, we only see the heights of the surface.
+So let&#8217;s describe just the heights of the Earth&#8217;s surface. <strong>Observation
+2</strong>: The Earth is a sphere. So (wait for it) we need to describe the
+height on a spherical surface. Now we can recast our problem of making
+an Earth more precisely mathematically. We want to know the heights of
+the planet&#8217;s surface at each point on the Earth. So we&#8217;re looking for
+field (the height of the planet) defined on the surface of a sphere (the
+different spots on the planet). Just like a function on the real line
+can be expanded in terms of its Fourier components, almost any function
+on the surface of a sphere can be expanded as a sum of spherical
+harmonics Y<em>lm</em>. This means we can write the height <em>h</em> of our planets
+surfaces as <mathjax>$$ h(\theta, \phi) = \sum A_{lm}Y_l^m(\theta, \phi)
+\quad (1) $$</mathjax> If we figure out what the coefficients A of the sum should
+be, then we can start making some Earths! Let&#8217;s see if we can use some
+other facts about the Earth&#8217;s surface to get get a handle on what
+coefficients to use. <strong>Observation 3</strong>: I don&#8217;t know every detail of the
+Earth&#8217;s surface, whose history is impossibly complicated. I&#8217;ll capture
+this lack-of-knowledge by describing the surface of our imaginary planet
+as some sort of random variable. Equation (1) suggests that we can do
+this by making the coefficients <em>A</em> random variables. At some point we
+need to make an executive decision on what type of random variable we&#8217;ll
+use. For various reasons, <a href="#footnote1">[1]</a> I decided I&#8217;d use a Gaussian
+random variable with mean 0 and standard deviation <em>alm</em>: <mathjax>$$ A_{lm} =
+a_{lm} N(0,1) $$</mathjax> (Here I&#8217;m using the notation that <em>N(m,v)</em> is a normal
+or Gaussian random variable with mean <em>m</em> and variance <em>v</em>. If you
+multiply a Gaussian random variable by a constant <em>a</em>, it&#8217;s the same as
+multiplying the variance by <em>a^2</em>, so <em>a</em>N(0,1)<em> and </em>N(0,a^2)<em> are
+the same thing.) <strong>Observation 4</strong>: The heights of the surface of the
+Earth are more-or-less independent of their position on the Earth. In
+keeping with this, I&#8217;ll try to use coefficients </em>alm<em> that will give me
+a random field that is is isotropic on average. This seems hard at
+first, so let&#8217;s just make a hand-waving argument. Looking at some
+<a href="http://en.wikipedia.org/wiki/Spherical_harmonics">pretty pictures</a> of
+spherical harmonics, we can see that each spherical harmonic of degree l
+has about l stripes on it, independent of m. So let&#8217;s try using alm&#8217;s
+that depend only on l, and are constant if just m changes.
+<a href="footnote2">[2]</a>. Just for convenience, we&#8217;ll pick this constant to be
+</em>l<em> to some power </em>-p<em>: <mathjax>$$ a_{lm} = l^{-p} \quad \textrm{ or} $$</mathjax><mathjax>$$
+h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta,
+\phi) \quad (2) $$</mathjax> At this point I got bored <span class="amp">&amp;</span> decided to see what a
+planet would look like if we didn&#8217;t know what value of p to use. So
+below is a movie of a randomly generated &#8220;planet&#8221; with a fixed choice of
+random numbers, but with the power</em>p*&nbsp;changing.</p>
+<p>As the movie starts (p=0), we see random uncorrelated heights on the
+surface <a href="footnote3">[5]</a>. As the movie continues and p increases, we see
+the surface smooth out rapidly. Eventually, after p=2 or so, the planet
+becomes very smooth and doesn&#8217;t look at all like a planet. So the
+&#8220;correct&#8221; value for p is somewhere above 0 (too bumpy) and below 2 (too
+smooth). Can we use more observations about Earth to predict what a good
+value of p should be? <strong>Observation 5</strong>: The elevation of the Earth&#8217;s
+surface exists everywhere on Earth (duh). So we&#8217;re going to need our sum
+to exist. How the hell are we going to sum that series though! Not only
+is it random, but it also depends on where we are on the planet! Rather
+than try to evaluate that sum everywhere on the sphere, I decided that
+it would be easiest to evaluate the sum at the &#8220;North Pole&#8221; at
+<em>theta=0</em>. Then, if we picked our coefficients right, this should be
+statistically the same as any other point on the planet. Why do we want
+to look at <em>theta = 0</em>? Well, if we look back at the <a href="http://en.wikipedia.org/wiki/Spherical_harmonics">wikipedia
+entry</a> for spherical
+harmonics, we see that <mathjax>$$ Y_l^m = \sqrt{ \frac{2 l +
+1}{4\pi}\frac{(l-m)!}{(l+m)!}} e^{im\phi}P^m _ l(\cos\theta)
+\quad (3) $$</mathjax> That doesn&#8217;t look too helpful &#8212; we&#8217;ve just picked up
+another special function Plm that we need to worry about. But there is a
+trick with these special functions Plm: at theta = 0, Plm is 0 if m
+isn&#8217;t 0, and Pl0 is 1. So at theta = 0 this is simply: <mathjax>$$
+Y_l^m(\theta = 0) = \bigg \{ ^{\sqrt{(2l+1)/4\pi},\,
+m=0}_{0,\,m \ne 0} $$</mathjax> Now we just have, from every equation we&#8217;ve
+written down: <mathjax>$$ h(\theta = 0) = \sum_l \times l^{-p} \times
+\sqrt{(2l+1)/4\pi }\times N(0,1) $$</mathjax><mathjax>$$ \quad \qquad = \times \frac
+1 {\sqrt{4\pi}} \times \sum_l N(0,l^{-2p}(2l+1)) $$</mathjax><mathjax>$$ \quad
+\qquad = \times \frac 1 {\sqrt{4\pi}} \times N(0,\sum_l
+l^{-2p}(2l+1) ) $$</mathjax> <mathjax>$$ \quad \qquad = \times \frac 1 {\sqrt{4\pi}}
+\sqrt{\sum_l l^{-2p}(2l+1)} \times N(0,1) $$</mathjax> <mathjax>$$ \quad \qquad
+\sim \sqrt{\sum_l l^{-2p+1}} N(0,1) \qquad (4) $$</mathjax> So for the
+surface of our imaginary planet to exist, we had better have that sum
+converge, or <em>-2p+1 &lt; -1 (p > 1)</em>. And we&#8217;ve also learned something
+else!!! Our model always gives back a Gaussian height distribution on
+the surface. Changing the coefficients changes the variance of
+distribution of heights, but that&#8217;s all it does to the distribution.
+Evidently if we want to get a non-Gaussian distribution of heights, we&#8217;d
+need to stretch our surface after evaluating the sum. Well, what does
+the height distribution look like from my simulated planets? Just for
+the hell of it, I went ahead and generated \~400 independent surfaces at
+\~40 different values for the exponent <em>p</em>, looking at the first 22,499
+terms in the series. From these surfaces I reconstructed the measured
+distributions; I&#8217;ve combined them into a movie which you can see&nbsp;below.</p>
+<p>As you can see from the movie, the distributions look like Gaussians.
+The fits from Eq. (4) are overlaid in black dotted lines. (Since I can&#8217;t
+sum an infinite number of spherical harmonics with a computer, I&#8217;ve
+plotted the fit I&#8217;d expect from just the terms I&#8217;ve summed. ) As you can
+see, they are all close to Gaussians. Not bad. Let&#8217;s see what else we
+can get. <strong>Observation 6</strong>: According to some famous people, the
+<a href="http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension">Earth&#8217;s surface is probably a fractal whose coastlines are
+non-differentiable</a>.
+This means that we want a value of p that will make our surface rough
+enough so that its gradient doesn&#8217;t exist (the derivative of the sum of
+Eq. (2) doesn&#8217;t converge). At this point I&#8217;m getting bored with writing
+out calculations, so I&#8217;m just going to make some scaling arguments. From
+Eq. (3), we know that each of the spherical harmonics Ylm is related to
+a polynomial of degree l in cos(theta). So if we take a derivative, I&#8217;d
+expect us to pick up another factor of l each time. Following through
+all the steps of Eq. (4) we find <mathjax>$$ \vec{\nabla}h \sim
+\sqrt{\sum_l l^{-2p+3}}\vec{N}(0,1) \quad , $$</mathjax> which converges for
+p > 2. So for our planet to be &#8220;fractal,&#8221; we want <em>1&lt;p&lt;2</em>. Looking at
+the first movie, this seems reasonable. <strong>Observation 7</strong>: 70% of the
+Earth&#8217;s surface is under water. On Earth, we can think of the points
+underwater as all those points below a certain threshold height. So
+let&#8217;s threshold the heights on our sphere. If we want 70% of our
+generated planet&#8217;s surface to be under water, Eq (4) and the <a href="http://en.wikipedia.org/wiki/Cumulative_distribution_function">cumulative
+distribution
+function</a>of
+a <a href="http://en.wikipedia.org/wiki/Normal_distribution">Gaussian
+distribution</a> tells us
+that we want to pick a critical height <em>H</em> such that <mathjax>$$ \frac 1 2
+\left[ 1 + \textrm{erf}(H/\sqrt{2\sigma^2}) \right] = 0.7 \quad
+\textrm{or} $$</mathjax> <mathjax>$$ H = \sqrt{2\sigma^2}\textrm{erf}^{-1}(0.4) $$</mathjax> <mathjax>$$
+\sigma^2 = \frac 1 {4\pi} \sum_l l^{-2p}(2l+1) \quad (5)\, , $$</mathjax>
+where <em>erf()</em> is a special function called the error function, and erf-1
+is its inverse. We can evaluate these numerically (or by using some
+<a href="http://en.wikipedia.org/wiki/Error_Function#Asymptotic_expansion">dirty
+tricks</a>
+if we&#8217;re feeling especially masochistic). So for our generated planet,
+let&#8217;s call all the points with a height larger than H &#8220;land,&#8221; and all
+the points with a height less than H &#8220;ocean.&#8221; Here is what it looks like
+for a planet with<em>p=0, p=1</em>, and <em>p=2</em>, plotted with the same <a href="http://en.wikipedia.org/wiki/Sinusoidal_projection">Sanson
+projection</a> as&nbsp;before.</p>
+<hr />
+<p><a href="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s1600/allContinents.png"><img alt="image" src="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s400/allContinents.png" /></a>
+  Top to bottom: p=0, p=1, and p=2. I&#8217;ve colored all the &#8220;water&#8221; (positions with heights &lt; <em>H</em>as given in Eq. (5) ) blue and all the land (heights > <em>H</em>)&nbsp;green.</p>
+<hr />
+<p>You can see that the the total amount of land area is roughly constant
+among the three images, but we haven&#8217;t fixed how it&#8217;s distributed.
+Looking at the map above for <em>p=0</em>, there are lots of small &#8220;islands&#8221;
+but no large contiguous land masses. For <em>p=2</em>, we see only one
+contiguous land mass (plus one 5-pixel island), and <em>p=1</em> sits somewhere
+in between the two extremes. None of these look like the Earth, where
+there are a few large landmasses but many small islands. From our
+previous arguments, we&#8217;d expect something between p=1 and p=2 to look
+like the Earth, which is in line with the above picture. But how do we
+decide which value of p to use? <strong>Observation 8</strong>: The Earth has 7
+continents This one is more vague than the others, but I think it&#8217;s the
+coolest of all the arguments. How do we compare our generated planets to
+the Earth? The Earth has 7 continents that comprise 4 different
+contiguous landmasses. In order, these are 1) Europe-Asia-Africa, 2)
+North- and South- America, 3) Antartica, and 4) Australia, with a 5th
+Greenland barely missing out. In terms of fractions of the Earth&#8217;s
+surface, Google tells us that Australia covers 0.15% of the Earth&#8217;s
+total surface area, and Greenland covers 0.04%. So let&#8217;s define a
+&#8220;continent&#8221; as any contiguous landmass that accounts for more than 0.1%
+of the planet&#8217;s total area. Then we can ask: What value of <em>p</em> gives us
+a planet with 4 continents? I have no idea how to calculate exactly what
+that number would be from our model, but I can certainly measure it from
+the simulated results. I went ahead and counted the number of continents
+in the generated&nbsp;planets.</p>
+<p><a href="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s1600/numContinents.png"><img alt="image" src="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s400/numContinents.png" /></a></p>
+<p><a href="http://1.bp.blogspot.com/-W3qT-_LOlT4/UIxaxqd1b9I/AAAAAAAAABs/HZEMht7uzlU/s1600/numContinents.png"></a></p>
+<p>The results are plotted above. The solid red line is the median values
+of the number of continents, as measured over 400 distinct worlds at 40
+different values of p. The red shaded region around it is the band
+containing the upper and lower quartiles of the number of continents.
+For comparison, in black on the right y-axis I&#8217;ve also plotted the log
+of the total number of landmasses at the resolution I&#8217;ve used. The
+number of continents has a resonant value of p &#8212; if p is too small,
+then there are many landmasses, but none are big enough to be
+continents. Conversely, if p is too large, then there is only one huge
+landmass. Somewhere in the middle, around p=0.5, there are about 20
+continents, at least when only the first \~23000 terms in the series are
+summed. Looking at the curve, we see that there are roughly two places
+where there are 4 continents in the world &#8212; at p=0.1 and at p=1.3.
+Since p=0.1 doesn&#8217;t converge, and since p=0.1 will have way too many
+landmasses, it looks like a generated Earth will look the best if we use
+a value of <em>p=</em>1.3 And that&#8217;s it. For your viewing pleasure, here is a
+video of three of these planets below, complete with water, continents,
+and mountains. <a href="footnote4">[4]</a></p>
+<p>[1] Since I wanted a random surface, I wanted to make the mean of each
+coefficient 0. Otherwise we&#8217;d get a deterministic part of our surface
+heights. I picked a distribution that&#8217;s symmetric about 0 because on
+Earth the bottom of the oceans seem roughly similar in terms of changes
+in elevation. I wanted to pick a stable distribution <span class="amp">&amp;</span> independent
+coefficients because it makes the sums that come up easier to evalutate.
+Finally, I picked a Gaussian, as opposed to another stable distribution
+like a Lorentzian, because the tallest points on Earth are finite, and I
+wanted the variance of the planet&#8217;s height to be&nbsp;defined.</p>
+<p>[2] We could make this rigorous by showing that a rotated spherical
+harmonic is orthogonal to other spherical harmonics of a different
+degree <em>l</em>, but you don&#8217;t want to see me&nbsp;try.</p>
+<p>[3]Actually p=0 should correspond to completely uncorrelated
+delta-function noise. (You can convince yourself by looking at the
+spherical harmonic expansion for a delta-function.) The reason that the
+bumps have a finite width is that I only summed the first 22,499 terms
+in the series (l=150 and below). So the size of the bumps gives a rough
+idea of my&nbsp;resolution.</p>
+<p>[4] For those of you keeping score at home, it took me more than 6 days
+to figure out how to make these&nbsp;planets.</p>
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

@@ -81,20 +81,42 @@
 	<article>
 		<div class="post wrapper">
 			<h1>Bubbles!</h1>
-			<p><a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s1600/good-small.jpg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5459713766600368034" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s320/good-small.jpg" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" /></a>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Ever wonder why don&#8217;t you see a standard rainbow when looking at a thin film such as soap stretched across a membrane ready for bubble making?  Well, I encountered this problem when I presented my intro physics section with a quiz question today.  Properly stated, the question was&#8230;</span>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<a name='more'></a><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span>
-<div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">&#8220;</span><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">Suppose white light is incident on a thin film (a soap bubble of n=1.33) hanging vertically inside of a square loop.  The minimum thickness of the film at the top of the loop is 900nm and it increases linearly (due to gravity) to 1300nm by the bottom of the loop which is 10cm away.  This means that the thickness as a function of distance from the top of the loop is</span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span> </div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><mathjax>$$ d(x) = \text{900nm} + \text{400nm} * \left( \frac{x}{\text{10cm}} \right) $$</mathjax></span></div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">
-</span> </div><div><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">What wavelengths will be most strongly reflected as a function of distance along our bubble film?&#8221;</span></div><div>
-<span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span"></span></span>
-<span class="Apple-style-span" style="font-size: 15px;"><span class="Apple-style-span" style="font-family: 'times new roman';"></span></span>
-<span class="Apple-style-span" style="font-size: 15px;"><span class="Apple-style-span" style="font-family: 'times new roman';"></span></span>
-<span class="Apple-style-span" style="font-size: 15px;"><span class="Apple-style-span" style="font-family: 'times new roman';"><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">So I got to thinking - don&#8217;t the partially interfering wavelengths also contribute to the image that our eyes see?  Isn&#8217;t there a better mass profile to use such as an exponential?  Linear is just silly.</span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">As for the first question, if you consider a single ray entering the thin film and reflecting off both the first interface as well as the second, then there is a phase difference between the two reflected waves,</span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;"><mathjax>$$ \Delta \phi = \pi + 2\pi * \frac{2d}{\lambda} $$</mathjax></span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">where d is the thickness of the film and lambda is the wavelength.  If we consider these two waves as two standing waves added together with a phase then we see that the superposition of their electric fields, for example, is</span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;"><mathjax>$$ E_{tot} = E_0 \cos(\omega t) + E_0 \cos(\omega t + \Delta \phi) $$</mathjax></span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;"><mathjax>$$ E_{tot} = E_0 \sin(\omega t) \cos(\Delta \phi) $$</mathjax></span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">The intensity that our eyes see then goes like the square of this giving an effective damping to certain wavelengths as given by</span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;"><mathjax>$$ \delta = \cos^2(\Delta \phi) $$</mathjax></span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;"><span class="Apple-style-span" style="font-size: small;">Using a more realistic exponential mass profile and this damping factor for wavelengths in the visible spectrum, I created the top image using OpenIL (maybe it&#8217;s called DevIL, hard to say).  </span></span></div><div align="LEFT" style="margin-bottom: 0in;"><span class="Apple-style-span" style="font-family: georgia;">
-</span></div></span></span></div><div align="LEFT" style="margin-bottom: 0in;"></div></p>
+			<p><a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s1600/good-small.jpg"><img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s320/good-small.jpg" /></a>
+Ever wonder why don&#8217;t you see a standard rainbow when looking at a thin
+film such as soap stretched across a membrane ready for bubble making?
+Well, I encountered this problem when I presented my intro physics
+section with a quiz question today. Properly stated, the question was&#8230;
+&#8220;Suppose white light is incident on a thin film (a soap bubble of
+n=1.33) hanging vertically inside of a square loop. The minimum
+thickness of the film at the top of the loop is 900nm and it increases
+linearly (due to gravity) to 1300nm by the bottom of the loop which is
+10cm away. This means that the thickness as a function of distance from
+the top of the loop is
+<mathjax>$$ d(x) = \text{900nm} + \text{400nm} * \left(
+\frac{x}{\text{10cm}} \right) $$</mathjax>
+What wavelengths will be most strongly reflected as a function of
+distance along our bubble film?&#8221;
+So I got to thinking - don&#8217;t the partially interfering wavelengths also
+contribute to the image that our eyes see? Isn&#8217;t there a better mass
+profile to use such as an exponential? Linear is just silly.
+As for the first question, if you consider a single ray entering the
+thin film and reflecting off both the first interface as well as the
+second, then there is a phase difference between the two reflected
+waves,
+<mathjax>$$ \Delta \phi = \pi + 2\pi * \frac{2d}{\lambda} $$</mathjax>
+where d is the thickness of the film and lambda is the wavelength. If we
+consider these two waves as two standing waves added together with a
+phase then we see that the superposition of their electric fields, for
+example, is
+<mathjax>$$ E_{tot} = E_0 \cos(\omega t) + E_0 \cos(\omega t + \Delta
+\phi) $$</mathjax>
+<mathjax>$$ E_{tot} = E_0 \sin(\omega t) \cos(\Delta \phi) $$</mathjax>
+The intensity that our eyes see then goes like the square of this giving
+an effective damping to certain wavelengths as given by
+<mathjax>$$ \delta = \cos^2(\Delta \phi) $$</mathjax>
+Using a more realistic exponential mass profile and this damping factor
+for wavelengths in the visible spectrum, I created the top image using
+OpenIL (maybe it&#8217;s called DevIL, hard to&nbsp;say).</p>
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

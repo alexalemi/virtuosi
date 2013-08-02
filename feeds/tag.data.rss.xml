@@ -1,45 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://localhost:8000/feeds/tag.data.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 12 Aug 2010 17:23:00 -0400</lastBuildDate><item><title>Terminal Velocity 2: A Theorist’s Experimental Experiment</title><link>http://thephysicsvirtuosi.com/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</link><description>&lt;p&gt;Yesterday we rode down Ithaca&amp;#8217;s hills in an attempt to estimate the terminal velocity of a bike rider braving the city&amp;#8217;s potholes. But estimations are easy, and we relied on a number of factors - the drag coefficient and area of the bicyclist, in particular - to get them. To see how well we did, it&amp;#8217;s time to move on to the experimental portion this exercise. Our tools? My bike (figure 1), and my beloved accelerometer (figure 2), with Google&amp;#8217;s &lt;a href="http://mytracks.appspot.com/"&gt;My Tracks&lt;/a&gt; app&amp;nbsp;installed.&lt;/p&gt;
-&lt;div style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s1600/bike.jpg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504651746862872386" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s200/bike.jpg" style="cursor: pointer; display: block; height: 143px; margin: 0px auto 10px; text-align: center; width: 200px;" /&gt;&lt;/a&gt;&lt;span style="font-size: 85%;"&gt;Figure 1: Our vehicle&lt;/span&gt;
-
-&lt;div style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s1600/Droid+2.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504638979057058722" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s200/Droid+2.png" style="cursor: pointer; height: 150px; width: 200px;" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div style="text-align: center;"&gt;&lt;span style="font-size: 85%;"&gt;Figure 2: Our instrumentation&lt;/span&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I took data twelve times while driving down two paths (&lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=University+and+Cornell,+Ithaca+NY&amp;amp;sll=42.44395,-76.485014&amp;amp;sspn=0.016721,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=University+Ave+%26+Cornell+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.447243,-76.493082&amp;amp;spn=0.01672,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;University avenue&lt;/a&gt;  and &lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=State+and+Stewart,+Ithaca,+NY&amp;amp;sll=42.447243,-76.493082&amp;amp;sspn=0.01672,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=E+State+St+%26+Stewart+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.439262,-76.489692&amp;amp;spn=0.016722,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;State street&lt;/a&gt;), measuring both the speed and elevation as a function of time. I came up with a lot of noisy data, some of it useful and a lot of it not. A typical plot out of the software looks something like (figure 3); out of those I identified moments of what seemed to be free acceleration, where I was not applying the brakes. I then calculated the slope and the acceleration at each point by subtracting subsequent measurements; this resulted in much noisier data, as seen on (figure&amp;nbsp;4).&lt;/p&gt;
-&lt;div style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s1600/University7.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504639585056092034" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s400/University7.png" style="cursor: pointer; display: block; height: 300px; margin: 0px auto 10px; text-align: center; width: 400px;" /&gt;&lt;/a&gt;&lt;span style="font-size: 85%;"&gt;Figure 3: Typical data riding downhill&lt;/span&gt;
-
-&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s1600/University7DiffFocus.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504639898211872034" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s400/University7DiffFocus.png" style="cursor: pointer; display: block; height: 298px; margin: 0px auto 10px; text-align: center; width: 400px;" /&gt;&lt;/a&gt;&lt;span style="font-size: 85%;"&gt;Figure 4: Derivatives&lt;/span&gt;&lt;/div&gt;
-
-&lt;p&gt;The next question was what to fit these graphs to. I can&amp;#8217;t compare directly to the formula I had for terminal velocity, since I don&amp;#8217;t believe I achieve it at any point and we never see the velocity graph plateau. What we do have is the formula for the acceleration, which depends on both the angle and the&amp;nbsp;velocity:&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ a = g\sin\theta -  \frac{1}{2}\frac{\rho A C_d}{m}  v^2. $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;#8217;s a little hard to plot three-dimensional surfaces like this, but I can try to plot the acceleration as a function of the velocity squared. Assuming that the slope of each of my routes is constant and that they are both different, this should give me two straight lines offset by a constant. Seen in (figure 5), this yields less than optimal result. A first correction would be to account for the differing slope at different measurement points. Once we do that the data looks a little more linear, and we can fit a line through it, as seen in (figure&amp;nbsp;6).&lt;/p&gt;
-&lt;div style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s1600/avv.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504640180056187314" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s400/avv.png" style="cursor: pointer; display: block; height: 300px; margin: 0px auto 10px; text-align: center; width: 400px;" /&gt;&lt;/a&gt;&lt;span style="font-size: 85%;"&gt;Figure 5: Acceleration vs. velocity&lt;/span&gt;
-
-&lt;/div&gt;
-
-&lt;div style="text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s1600/avvfixed.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"&gt;&lt;img alt="" border="0" id="BLOGGER_PHOTO_ID_5504640232783510098" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s400/avvfixed.png" style="cursor: pointer; display: block; height: 300px; margin: 0px auto 10px; text-align: center; width: 400px;" /&gt;&lt;/a&gt;&lt;span style="font-size: 85%;"&gt;Figure 6: Adjusted for slope and fitted&lt;/span&gt;&lt;/div&gt;
-
-&lt;p&gt;The fits are given&amp;nbsp;by:&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ a = (1.022 \rm{m}) - (0.00427 \rm{1/m}) v^2\;\; \rm{(University)} $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ a = (1.465 \rm{m}) - (0.00572 \rm{1/m}) v^2\;\; \rm{(State)} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;and we can quickly extract the terminal velocity out of the coefficients to get a factor of 47.9 m/s for the first line and 41.4 m/s for the second. These both fall within 20% of our initial estimate, which is quite satisfying considering how bad the data&amp;nbsp;looks.&lt;/p&gt;
-&lt;p&gt;A few final&amp;nbsp;thoughts:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Why is the data so noisy? I can think of a lot of reasons. My Droid phone is not quite a scientific measuring device to begin with, and we did some numerical derivation of the initial data we got from it. On top of that, the way I sit on the bike, the weight of the bag I carry with me and other factors like the wind changed from ride to&amp;nbsp;ride.&lt;/li&gt;&lt;li&gt;I tried to avoid biasing the analysis and I was quite relieved when the final numbers came out so close to my original estimate. I did play around a little with a different presentation that didn&amp;#8217;t look linear at all, but other than that I think what I did was pretty&amp;nbsp;straightforward.&lt;/li&gt;&lt;li&gt;The one thing that I don&amp;#8217;t like about the final results is the constant addition to both acceleration fits, or put another way, the fact that after subtracting the gravitational pull from the acceleration I still get &lt;span style="font-style: italic;"&gt;positive&lt;/span&gt; numbers, while the drag force should work to reduce it. I suspect this implies that my cancellation of the sinθ term was less than&amp;nbsp;perfect.&lt;/li&gt;&lt;li&gt;Can you figure out what the trajectory the bike as a function of time looks like? There&amp;#8217;s a (non-trivial) analytic&amp;nbsp;expression.
-&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Thu, 12 Aug 2010 17:23:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-08-12:posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</guid><category>data</category><category>bike</category><category>measurement</category><category>fun</category></item><item><title>Steak Dinner</title><link>http://thephysicsvirtuosi.com/posts/steak-dinner.html</link><description>&lt;p&gt;Sorry about the blog hiatus.  During the summer, without teaching classes, inspiration is harder to come by.  But, tonight I cooked a steak.  I recently got a new digital meat thermometer.  My plan was to slowly cook the steak until the internal temperature got to be about 140 degrees Fahrenheit with the oven at 200 degrees, take it out, wrap in tin foil, crank the oven to 500 degrees, stick it back in, and give it a nice exterior, reaching an internal temperature of about 150 degrees which would put it at about&amp;nbsp;medium.&lt;/p&gt;
-&lt;p&gt;After I put the steak into the oven though, I started to watch the temperature go up on my digital thermometer and thought, why not take data.  And so I did.  Here are the results.
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi924poROI/AAAAAAAAAMg/VSSuNTCh30g/s1600/steakdinner.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="186" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi924poROI/AAAAAAAAAMg/VSSuNTCh30g/s400/steakdinner.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
-Above you see the internal temperature of the steak as a function of time.  First some comments about the&amp;nbsp;graph.&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt; The steak started at 37 degrees, the temperature of my&amp;nbsp;refrigerator.
-&lt;/li&gt;&lt;li&gt; I didn&amp;#8217;t start taking data until about 20 minutes&amp;nbsp;in. &lt;/li&gt;&lt;li&gt; The red dashed lines mark where I turned up the temperature of the oven.  It started at 200 degrees, then 250, then 300, and in the final stretch, 500 with the&amp;nbsp;broiler. &lt;/li&gt;&lt;li&gt; The green dotted lines mark where I got impatient and opened the door to the over to check on the&amp;nbsp;food. &lt;/li&gt;&lt;li&gt; The yellow background denotes where the steak was outside of the oven resting in&amp;nbsp;tinfoil. &lt;/li&gt;&lt;/ul&gt;
-
-&lt;p&gt;Now some comments on the data
-&lt;ul&gt;&lt;li&gt; You can clearly see a change in the data when I changed the oven&amp;nbsp;temperature. &lt;/li&gt;&lt;li&gt; Opening the oven door really seems to slow down the cooking&amp;nbsp;process &lt;/li&gt;&lt;li&gt; The temperature of the center of the steak continues to rise after you take it out of the&amp;nbsp;oven. &lt;/li&gt;&lt;li&gt; In fact, curiously enough, the temperature of the center of the steak seems to have risen the quickest after it was taken out of the&amp;nbsp;oven. &lt;/li&gt;&lt;/ul&gt;
-Next I decided to look at the heating rate, computed by taking the finite differences of my data points and propagating the errors.
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi97yIEe9I/AAAAAAAAAMo/EzZ_kvRdb7U/s1600/heatrate.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="223" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi97yIEe9I/AAAAAAAAAMo/EzZ_kvRdb7U/s400/heatrate.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
-As you&amp;#8217;ll see, I really didn&amp;#8217;t have enough data points or a precise enough thermometer to really see the changes in the heating&amp;nbsp;rate.&lt;/p&gt;
-&lt;p&gt;Finally some comments about the food.
-&lt;ul&gt;&lt;li&gt; The steak was good.  You&amp;#8217;ll notice I shot past 150, ended up with a temperature of about 160, and a steak that was nearly medium&amp;nbsp;well. &lt;/li&gt;&lt;li&gt; Cooking the steak slowly like this yielded as pretty soft texture, akin to a roast.  Heck, I essentially roasted the&amp;nbsp;steak. &lt;/li&gt;&lt;li&gt; The steak was served with asparagus and baked potatoes. As an interesting aside, the baked potatoes were in the oven along with the steak the whole time, but did not cook all the way through.  I normally bake potatoes at 350 for about an hour, and here they were in a hot oven for over an hour and a half, half an hour of which was above 300, but they didn&amp;#8217;t cook&amp;nbsp;through.&lt;/li&gt;&lt;/ul&gt;
-I clearly have too much time on my hands.  I have one more steak, and I think I&amp;#8217;ll try a different cooking method.  Maybe I&amp;#8217;ll have the patience to take data again, we&amp;#8217;ll&amp;nbsp;see.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Tue, 03 Aug 2010 21:20:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-08-03:posts/steak-dinner.html</guid><category>data</category><category>steak</category><category>fun</category><category>graph</category><category>experiment</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://localhost:8000/feeds/tag.data.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 12 Aug 2010 17:23:00 -0400</lastBuildDate><item><title>Terminal Velocity 2: A Theorist’s Experimental Experiment</title><link>http://thephysicsvirtuosi.com/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</link><description>&lt;p&gt;Yesterday we rode down Ithaca&amp;#8217;s hills in an attempt to estimate the
+terminal velocity of a bike rider braving the city&amp;#8217;s potholes. But
+estimations are easy, and we relied on a number of factors - the drag
+coefficient and area of the bicyclist, in particular - to get them. To
+see how well we did, it&amp;#8217;s time to move on to the experimental portion
+this exercise. Our tools? My bike (figure 1), and my beloved
+accelerometer (figure 2), with Google&amp;#8217;s &lt;a href="http://mytracks.appspot.com/"&gt;My
+Tracks&lt;/a&gt; app&amp;nbsp;installed.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s1600/bike.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s200/bike.jpg" /&gt;&lt;/a&gt;Figure
+1: Our&amp;nbsp;vehicle&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s1600/Droid+2.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s200/Droid+2.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Figure 2: Our&amp;nbsp;instrumentation&lt;/p&gt;
+&lt;p&gt;I took data twelve times while driving down two paths (&lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=University+and+Cornell,+Ithaca+NY&amp;amp;sll=42.44395,-76.485014&amp;amp;sspn=0.016721,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=University+Ave+%26+Cornell+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.447243,-76.493082&amp;amp;spn=0.01672,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;University
+avenue&lt;/a&gt;
+and &lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=State+and+Stewart,+Ithaca,+NY&amp;amp;sll=42.447243,-76.493082&amp;amp;sspn=0.01672,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=E+State+St+%26+Stewart+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.439262,-76.489692&amp;amp;spn=0.016722,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;State
+street&lt;/a&gt;),
+measuring both the speed and elevation as a function of time. I came up
+with a lot of noisy data, some of it useful and a lot of it not. A
+typical plot out of the software looks something like (figure 3); out of
+those I identified moments of what seemed to be free acceleration, where
+I was not applying the brakes. I then calculated the slope and the
+acceleration at each point by subtracting subsequent measurements; this
+resulted in much noisier data, as seen on (figure&amp;nbsp;4).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s1600/University7.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s400/University7.png" /&gt;&lt;/a&gt;Figure
+3: Typical data riding downhill
+&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s1600/University7DiffFocus.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s400/University7DiffFocus.png" /&gt;&lt;/a&gt;Figure
+4:&amp;nbsp;Derivatives&lt;/p&gt;
+&lt;p&gt;The next question was what to fit these graphs to. I can&amp;#8217;t compare
+directly to the formula I had for terminal velocity, since I don&amp;#8217;t
+believe I achieve it at any point and we never see the velocity graph
+plateau. What we do have is the formula for the acceleration, which
+depends on both the angle and the velocity: &lt;mathjax&gt;$$ a = g\sin\theta -
+\frac{1}{2}\frac{\rho A C_d}{m} v^2. $$&lt;/mathjax&gt; It&amp;#8217;s a little hard to plot
+three-dimensional surfaces like this, but I can try to plot the
+acceleration as a function of the velocity squared. Assuming that the
+slope of each of my routes is constant and that they are both different,
+this should give me two straight lines offset by a constant. Seen in
+(figure 5), this yields less than optimal result. A first correction
+would be to account for the differing slope at different measurement
+points. Once we do that the data looks a little more linear, and we can
+fit a line through it, as seen in (figure&amp;nbsp;6).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s1600/avv.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s400/avv.png" /&gt;&lt;/a&gt;Figure
+5: Acceleration vs.&amp;nbsp;velocity&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s1600/avvfixed.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s400/avvfixed.png" /&gt;&lt;/a&gt;Figure
+6: Adjusted for slope and&amp;nbsp;fitted&lt;/p&gt;
+&lt;p&gt;The fits are given by: &lt;mathjax&gt;$$ a = (1.022 \rm{m}) - (0.00427 \rm{1/m})
+v^2\;\; \rm{(University)} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ a = (1.465 \rm{m}) - (0.00572
+\rm{1/m}) v^2\;\; \rm{(State)} $$&lt;/mathjax&gt; and we can quickly extract the
+terminal velocity out of the coefficients to get a factor of 47.9 m/s
+for the first line and 41.4 m/s for the second. These both fall within
+20% of our initial estimate, which is quite satisfying considering how
+bad the data looks. A few final&amp;nbsp;thoughts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is the data so noisy? I can think of a lot of reasons. My Droid
+    phone is not quite a scientific measuring device to begin with, and
+    we did some numerical derivation of the initial data we got from it.
+    On top of that, the way I sit on the bike, the weight of the bag I
+    carry with me and other factors like the wind changed from ride to&amp;nbsp;ride.&lt;/li&gt;
+&lt;li&gt;I tried to avoid biasing the analysis and I was quite relieved when
+    the final numbers came out so close to my original estimate. I did
+    play around a little with a different presentation that didn&amp;#8217;t look
+    linear at all, but other than that I think what I did was pretty&amp;nbsp;straightforward.&lt;/li&gt;
+&lt;li&gt;The one thing that I don&amp;#8217;t like about the final results is the
+    constant addition to both acceleration fits, or put another way, the
+    fact that after subtracting the gravitational pull from the
+    acceleration I still get positive numbers, while the drag force
+    should work to reduce it. I suspect this implies that my
+    cancellation of the sinθ term was less than&amp;nbsp;perfect.&lt;/li&gt;
+&lt;li&gt;Can you figure out what the trajectory the bike as a function of
+    time looks like? There&amp;#8217;s a (non-trivial) analytic&amp;nbsp;expression.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yariv</dc:creator><pubDate>Thu, 12 Aug 2010 17:23:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-08-12:posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</guid><category>data</category><category>bike</category><category>measurement</category><category>fun</category></item><item><title>Steak Dinner</title><link>http://thephysicsvirtuosi.com/posts/steak-dinner.html</link><description>&lt;p&gt;Sorry about the blog hiatus. During the summer, without teaching
+classes, inspiration is harder to come by. But, tonight I cooked a
+steak. I recently got a new digital meat thermometer. My plan was to
+slowly cook the steak until the internal temperature got to be about 140
+degrees Fahrenheit with the oven at 200 degrees, take it out, wrap in
+tin foil, crank the oven to 500 degrees, stick it back in, and give it a
+nice exterior, reaching an internal temperature of about 150 degrees
+which would put it at about medium. After I put the steak into the oven
+though, I started to watch the temperature go up on my digital
+thermometer and thought, why not take data. And so I did. Here are the&amp;nbsp;results.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi924poROI/AAAAAAAAAMg/VSSuNTCh30g/s1600/steakdinner.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi924poROI/AAAAAAAAAMg/VSSuNTCh30g/s400/steakdinner.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above you see the internal temperature of the steak as a function of
+time. First some comments about the&amp;nbsp;graph.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The steak started at 37 degrees, the temperature of my&amp;nbsp;refrigerator.&lt;/li&gt;
+&lt;li&gt;I didn&amp;#8217;t start taking data until about 20 minutes&amp;nbsp;in.&lt;/li&gt;
+&lt;li&gt;The red dashed lines mark where I turned up the temperature of the
+    oven. It started at 200 degrees, then 250, then 300, and in the
+    final stretch, 500 with the&amp;nbsp;broiler.&lt;/li&gt;
+&lt;li&gt;The green dotted lines mark where I got impatient and opened the
+    door to the over to check on the&amp;nbsp;food.&lt;/li&gt;
+&lt;li&gt;The yellow background denotes where the steak was outside of the
+    oven resting in&amp;nbsp;tinfoil.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now some comments on the&amp;nbsp;data&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can clearly see a change in the data when I changed the oven&amp;nbsp;temperature.&lt;/li&gt;
+&lt;li&gt;Opening the oven door really seems to slow down the cooking&amp;nbsp;process&lt;/li&gt;
+&lt;li&gt;The temperature of the center of the steak continues to rise after
+    you take it out of the&amp;nbsp;oven.&lt;/li&gt;
+&lt;li&gt;In fact, curiously enough, the temperature of the center of the
+    steak seems to have risen the quickest after it was taken out of the&amp;nbsp;oven.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next I decided to look at the heating rate, computed by taking the
+finite differences of my data points and propagating the&amp;nbsp;errors.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi97yIEe9I/AAAAAAAAAMo/EzZ_kvRdb7U/s1600/heatrate.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFi97yIEe9I/AAAAAAAAAMo/EzZ_kvRdb7U/s400/heatrate.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As you&amp;#8217;ll see, I really didn&amp;#8217;t have enough data points or a precise
+enough thermometer to really see the changes in the heating rate.
+Finally some comments about the&amp;nbsp;food.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The steak was good. You&amp;#8217;ll notice I shot past 150, ended up with a
+    temperature of about 160, and a steak that was nearly medium&amp;nbsp;well.&lt;/li&gt;
+&lt;li&gt;Cooking the steak slowly like this yielded as pretty soft texture,
+    akin to a roast. Heck, I essentially roasted the&amp;nbsp;steak.&lt;/li&gt;
+&lt;li&gt;The steak was served with asparagus and baked potatoes. As an
+    interesting aside, the baked potatoes were in the oven along with
+    the steak the whole time, but did not cook all the way through. I
+    normally bake potatoes at 350 for about an hour, and here they were
+    in a hot oven for over an hour and a half, half an hour of which was
+    above 300, but they didn&amp;#8217;t cook&amp;nbsp;through.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I clearly have too much time on my hands. I have one more steak, and I
+think I&amp;#8217;ll try a different cooking method. Maybe I&amp;#8217;ll have the patience
+to take data again, we&amp;#8217;ll&amp;nbsp;see.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alemi</dc:creator><pubDate>Tue, 03 Aug 2010 21:20:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-08-03:posts/steak-dinner.html</guid><category>data</category><category>steak</category><category>fun</category><category>graph</category><category>experiment</category></item></channel></rss>

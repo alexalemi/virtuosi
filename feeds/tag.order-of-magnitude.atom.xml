@@ -1,189 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.order-of-magnitude.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2012-03-14T11:52:00-04:00</updated><entry><title>Pi-rithmetic</title><link href="http://thephysicsvirtuosi.com/posts/pi-rithmetic.html" rel="alternate"></link><updated>2012-03-14T11:52:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2012-03-14:posts/pi-rithmetic.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;/div&gt;
-
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;/div&gt;
-
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="188" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Fun fact:  pi squared is very close to 10.  How close?  Well, &lt;a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2"&gt;Wolfram Alpha&lt;/a&gt; tells me that it is only about 1%&amp;nbsp;off.&lt;/p&gt;
-&lt;p&gt;I first realized this fact when looking at my slide rule, pictured to the left (click to embiggen), just another reason why slide rules are&amp;nbsp;awesome.&lt;/p&gt;
-&lt;p&gt;It turns out I use this fact all of the time.  How&amp;#8217;s that you ask?  Well, I use this fast to enable me to do very quick mental arithmetic. 
-&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It goes like this.  For every number you come across in a calculation, drop all of the information save two parts, first, what&amp;#8217;s its order of magnitude, that is, how many digits does it have, and second, is it closest to 1, pi, or&amp;nbsp;10?&lt;/p&gt;
-&lt;p&gt;The first part amounts to thinking of every number you come across as it looks in scientific notation, so a number like 2342 turns into 2.342 x 10^3, so that I&amp;#8217;ve captured its magnitude in a power of 10.  As for the next part, the rules I usually use&amp;nbsp;are:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;If the remaining bit is between 1 and 2, make it&amp;nbsp;1&lt;/li&gt;&lt;li&gt;If its between 2 and 6.5 make it&amp;nbsp;pi&lt;/li&gt;&lt;li&gt;if its bigger than 6.5, make it another&amp;nbsp;10&lt;/li&gt;&lt;/ul&gt;
-
-&lt;div&gt;Another way to think of this is to estimate every number to be a power of ten, and then either 1, a few, or 10.  The reason I choose pi is because if I use pi, I know how the rest of the arithmetic should work, namely, I only need to know a few rules, plus when I use this to estimate answers of physics formulae, making a bunch of pis show up tends to help me cancel other natural pis that are in the formulae.&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;$$ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim \frac{\pi}{10} \qquad \sqrt{10} \sim \pi $$&lt;/div&gt;
-
-&lt;div&gt;Which you might notice is just the same approximation written in 3 different ways.&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Let&amp;#8217;s work an example&lt;/div&gt;
-
-&lt;div&gt;   $$  \begin{align*}  23 \times 78 / 13 \times 2133  &amp;amp;= ? \ \pi \times 10 \times 100 / 10 \times \pi \times 10^3 &amp;amp;= ? \ \pi^2 \times 10^5 &amp;amp;\sim 10^6 \ \end{align*}$$&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;of course the &lt;a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133"&gt;real answer&lt;/a&gt; is 294,354, so you&amp;#8217;ll notice I got the answer wrong, but I only got it wrong by a factor of 3, which is pretty good for mental arithmetic, and in particular mental arithmetic that takes no time flat.&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;In fact, the average error I introduce by using this approximation is just 30% or so for each number, which I&amp;#8217;ve shown below [the script that produced this plot for those interested is &lt;a href="https://gist.github.com/2037431"&gt;here&lt;/a&gt;].&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="231" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;So, there you go, now you can impress all of your friends with a simple mental arithmetic that gets you within a factor of 3 or so on average.&lt;/div&gt;</summary><category term="order of magnitude"></category><category term="pi day"></category><category term="approximation"></category><category term="pi-rithmetic"></category></entry><entry><title>Grains of Sand</title><link href="http://thephysicsvirtuosi.com/posts/grains-of-sand.html" rel="alternate"></link><updated>2011-07-18T11:33:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-07-18:posts/grains-of-sand.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s1600/SandUDunesUSoft.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="256" src="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s320/SandUDunesUSoft.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Have you ever sat on a beach and wondered how many grains of sand there were?  I have, but I may be a special case.  Today we&amp;#8217;re going to take that a step further, and figure out how many grains of sand there are on the entire earth.  (Caveat: I&amp;#8217;m only going to consider sand above the water level, since I don&amp;#8217;t have any idea what the composition of the ocean floor&amp;nbsp;is).&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;I&amp;#8217;m going to start by figuring out how much beach there is in the world.  If you look at a map of the world, there are four main coasts that run, essentially, a half circumference of the world.  We&amp;#8217;ll say the total length of coast the world has is roughly two circumferences.  As an order of magnitude, I would say that the average beach width is 100 m, and the average depth is 10 m.  This gives a total beach volume&amp;nbsp;of&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ (100 m)(10 m)(4 \pi (6500 km) )= 82 km^3$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s not a whole lot of volume.  Let&amp;#8217;s think about deserts.  The Sahara desert is by far the largest sandy desert in the world.  Just as a guess, we&amp;#8217;ll assume that the rest of the sandy deserts amount to 20% (arbitrary number picked staring at a map) as much area as the Sahara.  According to wikipedia the area of the Sahara is 9.4 million km^2.  We&amp;#8217;ll take, to an order of magnitude, that the sand is 100 m deep.  10 m seems to little, and 1 km too much.  That amounts to ~1 million km^3 of&amp;nbsp;sand.&lt;/p&gt;
-&lt;p&gt;We&amp;#8217;re going to assume that a grain of sand is about 1 mm in radius  The volume occupied by a grain of sand is then 1 mm^3.  Putting that together with our previous number for the occupied volume&amp;nbsp;gives&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ \frac{1\cdot 10^6 km^3}{1 mm^3}=\frac{1 \cdot 10^{15}}{1\cdot 10^{-9}}=1\cdot 10^{24}$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s a lot of grains of&amp;nbsp;sand.&lt;/p&gt;
-&lt;p&gt;Addendum:
-Carl Sagan is quoted as saying
-&lt;blockquote&gt;&lt;span class="Apple-style-span" style="font-family: sans-serif; line-height: 20px;"&gt;&amp;#8220;The total number of stars in the Universe is larger than all the grains of sand on all the beaches of the planet Earth&amp;#8221;&lt;/span&gt;&lt;/blockquote&gt;If we just use our beach volume, that gives a total number of grains of sand as ~1*10^20, which is large, but not as large as what we found above.  Is that less than the number of stars in in the universe?  Well, that&amp;#8217;s a question for another day (or google), but the answer is, to our best estimate/count,&amp;nbsp;yes.&lt;/p&gt;</summary><category term="sand"></category><category term="order of magnitude"></category><category term="carl sagan"></category></entry><entry><title>Lifetime of Liquid Water</title><link href="http://thephysicsvirtuosi.com/posts/lifetime-of-liquid-water.html" rel="alternate"></link><updated>2011-07-10T22:07:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-07-10:posts/lifetime-of-liquid-water.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="240" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Apologies for the hiatus recently, it&amp;#8217;s been a busy time (when isn&amp;#8217;t it).  I hope to get back to talking about experiments soon, but for now I wanted to write up a quick problem I thought up a while back.  The question is this: how long does a molecule of &lt;span class="caps"&gt;H2O&lt;/span&gt; on earth remain in the liquid state, on&amp;nbsp;average?&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;I&amp;#8217;m going to treat this purely as an order of magnitude problem.  I&amp;#8217;m also going to have to start with one assumption that is almost certainly inaccurate, but makes things a lot easier.  I&amp;#8217;m going to assume perfect mixing of all of the water on&amp;nbsp;earth.&lt;/p&gt;
-&lt;p&gt;Given that assumption, I really only need to figure out two things.  The first is how much liquid water there is on earth.  The second is now much liquid water leaves the liquid phase each year.  Let&amp;#8217;s start with the total amount of liquid water on earth.  This is relatively easy to estimate.  I happen to know that about 70% of the earth&amp;#8217;s surface is covered in water.  Most all of that is ocean.  To an order of magnitude, the average depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km [1].  For a thin spherically shell, the volume of the shell is&amp;nbsp;roughly&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ 4 \pi r_e^2 \Delta r $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where r_e is the radius of the earth.  Thus, the total volume of water on the earth&amp;nbsp;is&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$.7*4 \pi r_e^2 (1 km)$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Now, we need to figure out how much H20 leaves the liquid phase every year.  To an order of magnitude, it rains 1 m everywhere on earth each year, it&amp;#8217;s not .1 m or 10 m [2].  I&amp;#8217;m going to ignore any freezing/melting in the ice caps, assuming that is small fraction of the water that leaves the liquid phase each year.  Since we have a closed system, all the water that rains must have left the liquid phase.  So, on average, the total volume of water that leaves the liquid phase&amp;nbsp;is&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$4 \pi r_e^2 (1 m) $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Thus, the fraction of liquid water that changes phase per year&amp;nbsp;is&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ \frac{4 \pi r_e^2 (1m)}{.7*4\pi r_e^2 (1 km)} = .0014 $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;This means that, given my assumption of perfect mixing,  in somewhere around 1/.0014 = 700 yr all of the water on earth will have cycled through the vapor phase.  Since we&amp;#8217;re only operating to an order of magnitude, I&amp;#8217;ll call this 1000 years.  This is the answer to our question if every molecule has been in the vapor phase once in 1000 years, then we expect a molecule to stay in the liquid phase for 1000&amp;nbsp;years&lt;/p&gt;
-&lt;p&gt;[1] According to wikipedia, this is really about 4 km, so we&amp;#8217;re underestimating a&amp;nbsp;bit.&lt;/p&gt;
-&lt;p&gt;[2] According to wikipedia, this is spot on (.99 m on&amp;nbsp;average).&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fun"></category><category term="water"></category><category term="physics"></category></entry><entry><title>Blown Away</title><link href="http://thephysicsvirtuosi.com/posts/blown-away.html" rel="alternate"></link><updated>2011-03-24T17:46:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-03-24:posts/blown-away.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s1600/wind-turbine-2.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="150" src="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s200/wind-turbine-2.jpg" width="200" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;I was reading a discussion on green energy recently, in particular wind power, where the following claim was made
-&lt;blockquote&gt;&lt;i&gt;enough wind turbines to power the world would cover the surface of the world.&lt;/i&gt;&lt;/blockquote&gt;Now, this was quickly decried by supporters of wind power, but the claim has stuck with me.  The question on my mind today is: How much of the earth&amp;#8217;s surface would have to be covered to power the earth with wind&amp;nbsp;turbines?&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;We can&amp;#8217;t hope to put an exact number on this, the best we&amp;#8217;ll be able to do is an order of magnitude.  I also don&amp;#8217;t know much about wind turbines, so I&amp;#8217;ll be making liberal use of &lt;a href="http://en.wikipedia.org/wiki/Wind_turbine"&gt;wikipedia&lt;/a&gt; as I go.  Let&amp;#8217;s start with the size of the wind turbine.  According to wikipedia the largest wind turbine has a rotor sweep diameter of 128 m.  To an order of magnitude, we&amp;#8217;ll say that our average wind turbine has a diameter of 100 m.  Next we need to know how much power this puts out.  The maximum power of this turbine is ~8 &lt;span class="caps"&gt;MW&lt;/span&gt;.  However, it certainly wouldn&amp;#8217;t be producing that at all times.  Current wind farms produce around 20-30% maximum capacity.  However, these turbines are careful placed in areas of high wind.  We&amp;#8217;re not going to get that lucky with our wind dose when we place our turbines haphazardly, so we&amp;#8217;ll assume they produce at 1% maximum&amp;nbsp;capacity. &lt;/p&gt;
-&lt;p&gt;According to &lt;a href="http://en.wikipedia.org/wiki/World_energy_resources_and_consumption"&gt;wikipedia&lt;/a&gt;, the world energy consumption in 2008 was 474 &lt;span class="caps"&gt;EJ&lt;/span&gt; (exajoules), or an average power use in 2008 of 15 &lt;span class="caps"&gt;TW&lt;/span&gt;.  To an order of magnitude then, the area we&amp;#8217;d have to occupy with wind turbines to power the world would&amp;nbsp;be:&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$\left( \frac{(100\text{ m})^2}{1\text{ turbine}}\right)\left(\frac{1\text{ turbine}}{.01*8 \text{ MW}}\right)15 \text{TW} = 2\cdot 10^{12}\text{ m}^2$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s 2*10^6 km^2, or, in english, 2 million square kilometers.  For comparison, the land area of the united states is roughly 10 millon square kilometers.  So we&amp;#8217;d only have to cover 1/5th of the united states with wind turbines to power the entire world (in 2008, no doubt power use has risen since&amp;nbsp;then)!&lt;/p&gt;
-&lt;p&gt;While that is a lot of space taken up, it is nowhere near the entire surface of the&amp;nbsp;world. &lt;/p&gt;
-&lt;p&gt;There are, of course, &lt;a href="http://xkcd.com/556/"&gt;other concerns&lt;/a&gt; about wind&amp;nbsp;power.&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;Note:  maybe the wind turbines are less efficient overall.  Also, I assumed that the footprint was just the square area of the turbine diameter.  I know this is the size of the face of the turbine, but to an order of magnitude I imagine it is correct for the space occupied on the&amp;nbsp;ground.&lt;/i&gt;&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="wind"></category><category term="green power"></category></entry><entry><title>Fishy Calculation Followup &amp; New Contest</title><link href="http://thephysicsvirtuosi.com/posts/fishy-calculation-followup-new-contest.html" rel="alternate"></link><updated>2010-05-25T03:03:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-05-25:posts/fishy-calculation-followup-new-contest.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s1600/hamster.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="154" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s200/hamster.jpg" width="200" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;So, some you may remember when I attempted to calculate how much the oceans would lower if you took out all of the fish in an &lt;a href="http://thevirtuosi.blogspot.com/2010/04/fishy-calculation.html"&gt;earlier post&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Well, the results came in a while ago, but I forgot to mention that &lt;a href="http://diaryofnumbers.blogspot.com/2010/05/we-have-winner.html"&gt;I lost&lt;/a&gt; the contest.  I was about two orders of magnitude off from the winning&amp;nbsp;answer.&lt;/p&gt;
-&lt;p&gt;In light of my failure, I&amp;#8217;m going to try again in the &lt;a href="http://diaryofnumbers.blogspot.com/2010/05/hamster-powered-mansions.html"&gt;newest contest&lt;/a&gt;.  This time the question is a bit&amp;nbsp;stranger:&lt;/p&gt;
-&lt;blockquote&gt;How many buff hamsters would it take to completely power a mansion?  &lt;/blockquote&gt;
-
-&lt;p&gt;I encourage all of The Virtuosi readers to enter as well, it only takes a minute to come up with some&amp;nbsp;number.&lt;/p&gt;
-&lt;p&gt;Good luck one and&amp;nbsp;all.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fermi problem"></category><category term="fish"></category><category term="contest"></category></entry><entry><title>Physics of Baseball: Batting</title><link href="http://thephysicsvirtuosi.com/posts/physics-of-baseball-batting.html" rel="alternate"></link><updated>2010-05-19T18:21:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-05-19:posts/physics-of-baseball-batting.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s1600/baseball.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s320/baseball.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Summer is upon us, and so that means that we here at the Virtuosi have started talking about baseball. In fact, Corky and I did some simple calculations that illuminate just how impressive batting in baseball can&amp;nbsp;be.&lt;/p&gt;
-&lt;p&gt;We were interested in just how hard it is to hit a pitch with the bat.  So we thought we&amp;#8217;d model hitting the ball with a rather simple approximation of a robot swinging a cylindrical bat, horizontally with some rotational speed and at a random height.  The question then becomes, if the robot chooses a random height and a random time to swing, what are the chances that it gets a&amp;nbsp;hit?&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Spatial&amp;nbsp;Resolution &lt;/h3&gt;
-
-&lt;p&gt;So the first thing to consider is how much of the strike zone the bat takes&amp;nbsp;up. &lt;/p&gt;
-&lt;p&gt;In order to be a strike, the ball needs to be over home plate, which is 17 inches wide, and between the knees and logo on the batters jersey.  Estimating this height as 0.7 m or 28 inches or so, we have the area of the strike zone
-&lt;mathjax&gt;$$ A_S = (17") \times (0.7 m) = 0.3 \text{ m}^2 $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;when you swing, how much of this area does the bat take up?  Well, treat it as a cylinder, with a diameter of 10 cm, and assume it runs the length of the strike zone, when the area that the bat takes up is
-&lt;mathjax&gt;$$ A_B = (10\text{ cm}) \times (17" ) = 0.043 \text{ m}^2 $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So that the fractional area that the bat takes up during our idealized swing is 
-&lt;mathjax&gt;$$ \frac{A_B}{A_S} \approx 14\% $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So already, if our robot is guessing where inside the strike zone to place the bat, and doing so randomly, assuming the pitch is a strike to begin with, it will be able to bunt successfully about 14% of the&amp;nbsp;time.&lt;/p&gt;
-&lt;h3&gt;Time&amp;nbsp;Resolution &lt;/h3&gt;
-
-&lt;p&gt;But getting a hit on a swing is different than getting a bunt.  Not only do you have to have your bat at the right height, but you need to time the swing correctly.  Lets first look at how much time we are dealing with&amp;nbsp;here.&lt;/p&gt;
-&lt;p&gt;Most major league pitchers pitch the ball at about 90 mph or so.  The pitchers mound is 60.5 feet away from home base.  This means that the pitch is in the air for
-&lt;mathjax&gt;$$ t = \frac{ 60.5 \text{ ft} }{ 90 \text{ mph} } \approx \frac{1}{2} \text{ second} $$&lt;/mathjax&gt;
-i.e. from the time the pitcher releases the ball to the time it crosses home plate is only about half a second.    Compare this with human reaction times.  My drivers ed course told me that human reaction times are typically a third of a second or so.  So, baseball happens&amp;nbsp;quick!&lt;/p&gt;
-&lt;p&gt;Alright, but we were interested in how well you have to time your swing.  Successfully hitting the ball means that you&amp;#8217;ve made contact with the ball such that it lands somewhere in the field.  I.e. you&amp;#8217;ve got a 90 degree play in when you make contact.  How does this translate to time?  We would need to know how fast you&amp;nbsp;swing.&lt;/p&gt;
-&lt;h4&gt;Estimating the speed of a&amp;nbsp;swing &lt;/h4&gt;
-
-&lt;p&gt;I don&amp;#8217;t know how fast you can swing a baseball bat, but I can estimate it.  I know that if you land your swing just right, you have a pretty good shot at a home run.  Fields are typically 300 feet long.  So, I can ask, if I launch a projectile at a 45 degree angle, how fast does it need to be going in order to make it 300 feet.  Well, we can solve this projectile problem if we remember some of our introductory&amp;nbsp;physics.  &lt;/p&gt;
-&lt;p&gt;We decouple the horizontal and vertical motions of the ball, the ball travels horizontally 300 feet, so we know
-&lt;mathjax&gt;$$ v_x t = 300 \text{ ft} $$&lt;/mathjax&gt;
-where t is the time the ball is in the air, similarly we know that it is gravity that makes the ball fall, and so as far the vertical motion is concerned, in half the total flight time, we need the vertical velocity to go from its initial value to zero, i.e.
-&lt;mathjax&gt;$$ g \frac{t}{2} = v_y $$&lt;/mathjax&gt;
-where g is the acceleration due to&amp;nbsp;gravity.&lt;/p&gt;
-&lt;p&gt;Furthermore, I&amp;#8217;m assuming that I am launching this projectile at a 45 degree angle, for which I know from trig that
-&lt;mathjax&gt;$$ v_x = v_y = \frac{v}{\sqrt 2} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So I can stick these equations into one another and solve for the velocity needed to get the ball going 300&amp;nbsp;feet.&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ \frac{v^2}{ g} = 300 \text{ ft} = \frac{ v^2}{ 9.8 \text{ m/s}^2 }  $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ v \approx 30 \text{ m/s} \sim 67 \text{ mph}$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So it looks like the ball needs to leave the bat going about 70 mph in order to clear the park.  ( This was of course neglecting air resistance, which ought to be important for baseballs&amp;nbsp;).  &lt;/p&gt;
-&lt;p&gt;Great that tells us how fast the ball needs to be going when it leaves the bat, but how fast was the bat going in order to get the ball going that fast?  Well, lets work worst case and assume that the baseball - bat interaction is inelastic.  I.e. I reckon that if I throw a baseball at about 100 mph towards a wooden wall, it doesn&amp;#8217;t bounce a whole lot.  In that case, the bat needs to take the ball from coming at it at 90 mph to leaving at 70 mph or so, i.e. the place where the ball hits the bat needs to be going at about 160&amp;nbsp;mph.&lt;/p&gt;
-&lt;p&gt;That seems fast, but when you think about it, if a pitcher can pitch a ball at 90 mph, that means their hand is moving at 90 mph during the last bits of the pitch, so you expect that a batter can move their hands about that fast, and we have the added advantage of the bat being a&amp;nbsp;lever.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.order-of-magnitude.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2012-03-14T11:52:00-04:00</updated><entry><title>Pi-rithmetic</title><link href="http://thephysicsvirtuosi.com/posts/pi-rithmetic.html" rel="alternate"></link><updated>2012-03-14T11:52:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2012-03-14:posts/pi-rithmetic.html</id><summary type="html">&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fun fact: pi squared is very close to 10. How close? Well, &lt;a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2"&gt;Wolfram
+Alpha&lt;/a&gt;
+tells me that it is only about 1% off. I first realized this fact when
+looking at my slide rule, pictured to the left (click to embiggen), just
+another reason why slide rules are awesome. It turns out I use this fact
+all of the time. How&amp;#8217;s that you ask? Well, I use this fast to enable me
+to do very quick mental arithmetic. It goes like this. For every number
+you come across in a calculation, drop all of the information save two
+parts, first, what&amp;#8217;s its order of magnitude, that is, how many digits
+does it have, and second, is it closest to 1, pi, or 10? The first part
+amounts to thinking of every number you come across as it looks in
+scientific notation, so a number like 2342 turns into 2.342 x 10^3, so
+that I&amp;#8217;ve captured its magnitude in a power of 10. As for the next part,
+the rules I usually use&amp;nbsp;are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the remaining bit is between 1 and 2, make it&amp;nbsp;1&lt;/li&gt;
+&lt;li&gt;If its between 2 and 6.5 make it&amp;nbsp;pi&lt;/li&gt;
+&lt;li&gt;if its bigger than 6.5, make it another&amp;nbsp;10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Another way to think of this is to estimate every number to be a power
+of ten, and then either 1, a few, or 10. The reason I choose pi is
+because if I use pi, I know how the rest of the arithmetic should work,
+namely, I only need to know a few rules, plus when I use this to
+estimate answers of physics formulae, making a bunch of pis show up
+tends to help me cancel other natural pis that are in the&amp;nbsp;formulae.&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim
+\frac{\pi}{10} \qquad \sqrt{10} \sim \pi $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Which you might notice is just the same approximation written in 3
+different&amp;nbsp;ways.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s work an&amp;nbsp;example&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \begin{align*} 23 \times 78 / 13 \times 2133 &amp;amp;= ? \\ \pi
+\times 10 \times 100 / 10 \times \pi \times 10^3 &amp;amp;= ? \\ \pi^2
+\times 10^5 &amp;amp;\sim 10^6 \\ \end{align*}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;of course the &lt;a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133"&gt;real
+answer&lt;/a&gt; is
+294,354, so you&amp;#8217;ll notice I got the answer wrong, but I only got it
+wrong by a factor of 3, which is pretty good for mental arithmetic, and
+in particular mental arithmetic that takes no time&amp;nbsp;flat.&lt;/p&gt;
+&lt;p&gt;In fact, the average error I introduce by using this approximation is
+just 30% or so for each number, which I&amp;#8217;ve shown below [the script that
+produced this plot for those interested is
+&lt;a href="https://gist.github.com/2037431"&gt;here&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, there you go, now you can impress all of your friends with a simple
+mental arithmetic that gets you within a factor of 3 or so on&amp;nbsp;average.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="pi day"></category><category term="approximation"></category><category term="pi-rithmetic"></category></entry><entry><title>Grains of Sand</title><link href="http://thephysicsvirtuosi.com/posts/grains-of-sand.html" rel="alternate"></link><updated>2011-07-18T11:33:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-07-18:posts/grains-of-sand.html</id><summary type="html">&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s1600/SandUDunesUSoft.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-87-vnzGa9Po/TiRR2qFWprI/AAAAAAAAAF0/KsfRQhoL5Ds/s320/SandUDunesUSoft.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Have you ever sat on a beach and wondered how many grains of sand there
+were? I have, but I may be a special case. Today we&amp;#8217;re going to take
+that a step further, and figure out how many grains of sand there are on
+the entire earth. (Caveat: I&amp;#8217;m only going to consider sand above the
+water level, since I don&amp;#8217;t have any idea what the composition of the
+ocean floor is). I&amp;#8217;m going to start by figuring out how much beach there
+is in the world. If you look at a map of the world, there are four main
+coasts that run, essentially, a half circumference of the world. We&amp;#8217;ll
+say the total length of coast the world has is roughly two
+circumferences. As an order of magnitude, I would say that the average
+beach width is 100 m, and the average depth is 10 m. This gives a total
+beach volume of &lt;mathjax&gt;$$ (100 m)(10 m)(4 \pi (6500 km) )= 82 km^3$$&lt;/mathjax&gt; That&amp;#8217;s
+not a whole lot of volume. Let&amp;#8217;s think about deserts. The Sahara desert
+is by far the largest sandy desert in the world. Just as a guess, we&amp;#8217;ll
+assume that the rest of the sandy deserts amount to 20% (arbitrary
+number picked staring at a map) as much area as the Sahara. According to
+wikipedia the area of the Sahara is 9.4 million km^2. We&amp;#8217;ll take, to an
+order of magnitude, that the sand is 100 m deep. 10 m seems to little,
+and 1 km too much. That amounts to \~1 million km^3 of sand. We&amp;#8217;re
+going to assume that a grain of sand is about 1 mm in radius The volume
+occupied by a grain of sand is then 1 mm^3. Putting that together with
+our previous number for the occupied volume gives &lt;mathjax&gt;$$ \frac{1\cdot
+10^6 km^3}{1 mm^3}=\frac{1 \cdot 10^{15}}{1\cdot
+10^{-9}}=1\cdot 10^{24}$$&lt;/mathjax&gt; That&amp;#8217;s a lot of grains of sand. Addendum:
+Carl Sagan is quoted as&amp;nbsp;saying&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;The total number of stars in the Universe is larger than all the
+grains of sand on all the beaches of the planet&amp;nbsp;Earth&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If we just use our beach volume, that gives a total number of grains of
+sand as \~1*10^20, which is large, but not as large as what we found
+above. Is that less than the number of stars in in the universe? Well,
+that&amp;#8217;s a question for another day (or google), but the answer is, to our
+best estimate/count,&amp;nbsp;yes.&lt;/p&gt;</summary><category term="sand"></category><category term="order of magnitude"></category><category term="carl sagan"></category></entry><entry><title>Lifetime of Liquid Water</title><link href="http://thephysicsvirtuosi.com/posts/lifetime-of-liquid-water.html" rel="alternate"></link><updated>2011-07-10T22:07:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-07-10:posts/lifetime-of-liquid-water.html</id><summary type="html">&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg" /&gt;&lt;/a&gt;
+Apologies for the hiatus recently, it&amp;#8217;s been a busy time (when isn&amp;#8217;t
+it). I hope to get back to talking about experiments soon, but for now I
+wanted to write up a quick problem I thought up a while back. The
+question is this: how long does a molecule of &lt;span class="caps"&gt;H2O&lt;/span&gt; on earth remain in the
+liquid state, on average? I&amp;#8217;m going to treat this purely as an order of
+magnitude problem. I&amp;#8217;m also going to have to start with one assumption
+that is almost certainly inaccurate, but makes things a lot easier. I&amp;#8217;m
+going to assume perfect mixing of all of the water on earth. Given that
+assumption, I really only need to figure out two things. The first is
+how much liquid water there is on earth. The second is now much liquid
+water leaves the liquid phase each year. Let&amp;#8217;s start with the total
+amount of liquid water on earth. This is relatively easy to estimate. I
+happen to know that about 70% of the earth&amp;#8217;s surface is covered in
+water. Most all of that is ocean. To an order of magnitude, the average
+depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km
+[1]. For a thin spherically shell, the volume of the shell is roughly &lt;mathjax&gt;$$
+4 \pi r_e^2 \Delta r $$&lt;/mathjax&gt; where r_e is the radius of the earth. Thus,
+the total volume of water on the earth is &lt;mathjax&gt;$$.7*4 \pi r_e^2 (1 km)$$&lt;/mathjax&gt;
+Now, we need to figure out how much H20 leaves the liquid phase every
+year. To an order of magnitude, it rains 1 m everywhere on earth each
+year, it&amp;#8217;s not .1 m or 10 m [2]. I&amp;#8217;m going to ignore any
+freezing/melting in the ice caps, assuming that is small fraction of the
+water that leaves the liquid phase each year. Since we have a closed
+system, all the water that rains must have left the liquid phase. So, on
+average, the total volume of water that leaves the liquid phase is &lt;mathjax&gt;$$4
+\pi r_e^2 (1 m) $$&lt;/mathjax&gt; Thus, the fraction of liquid water that changes
+phase per year is &lt;mathjax&gt;$$ \frac{4 \pi r_e^2 (1m)}{.7*4\pi r_e^2 (1
+km)} = .0014 $$&lt;/mathjax&gt; This means that, given my assumption of perfect mixing,
+in somewhere around 1/.0014 = 700 yr all of the water on earth will have
+cycled through the vapor phase. Since we&amp;#8217;re only operating to an order
+of magnitude, I&amp;#8217;ll call this 1000 years. This is the answer to our
+question if every molecule has been in the vapor phase once in 1000
+years, then we expect a molecule to stay in the liquid phase for 1000
+years [1] According to wikipedia, this is really about 4 km, so we&amp;#8217;re
+underestimating a bit. [2] According to wikipedia, this is spot on (.99
+m on&amp;nbsp;average).&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fun"></category><category term="water"></category><category term="physics"></category></entry><entry><title>Blown Away</title><link href="http://thephysicsvirtuosi.com/posts/blown-away.html" rel="alternate"></link><updated>2011-03-24T17:46:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2011-03-24:posts/blown-away.html</id><summary type="html">&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s1600/wind-turbine-2.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-NFVShpYzscc/TYutYtPSIVI/AAAAAAAAAEM/vRA8KbFV6tc/s200/wind-turbine-2.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I was reading a discussion on green energy recently, in particular wind
+power, where the following claim was&amp;nbsp;made&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;enough wind turbines to power the world would cover the surface of
+the&amp;nbsp;world.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, this was quickly decried by supporters of wind power, but the claim
+has stuck with me. The question on my mind today is: How much of the
+earth&amp;#8217;s surface would have to be covered to power the earth with wind
+turbines? We can&amp;#8217;t hope to put an exact number on this, the best we&amp;#8217;ll
+be able to do is an order of magnitude. I also don&amp;#8217;t know much about
+wind turbines, so I&amp;#8217;ll be making liberal use of
+&lt;a href="http://en.wikipedia.org/wiki/Wind_turbine"&gt;wikipedia&lt;/a&gt; as I go. Let&amp;#8217;s
+start with the size of the wind turbine. According to wikipedia the
+largest wind turbine has a rotor sweep diameter of 128 m. To an order of
+magnitude, we&amp;#8217;ll say that our average wind turbine has a diameter of 100
+m. Next we need to know how much power this puts out. The maximum power
+of this turbine is \~8 &lt;span class="caps"&gt;MW&lt;/span&gt;. However, it certainly wouldn&amp;#8217;t be producing
+that at all times. Current wind farms produce around 20-30% maximum
+capacity. However, these turbines are careful placed in areas of high
+wind. We&amp;#8217;re not going to get that lucky with our wind dose when we place
+our turbines haphazardly, so we&amp;#8217;ll assume they produce at 1% maximum
+capacity. According to
+&lt;a href="http://en.wikipedia.org/wiki/World_energy_resources_and_consumption"&gt;wikipedia&lt;/a&gt;,
+the world energy consumption in 2008 was 474 &lt;span class="caps"&gt;EJ&lt;/span&gt; (exajoules), or an
+average power use in 2008 of 15 &lt;span class="caps"&gt;TW&lt;/span&gt;. To an order of magnitude then, the
+area we&amp;#8217;d have to occupy with wind turbines to power the world would be:
+&lt;mathjax&gt;$$\left( \frac{(100\text{ m})^2}{1\text{
+turbine}}\right)\left(\frac{1\text{ turbine}}{.01*8 \text{
+MW}}\right)15 \text{TW} = 2\cdot 10^{12}\text{ m}^2$$&lt;/mathjax&gt; That&amp;#8217;s
+2&lt;em&gt;10^6 km^2, or, in english, 2 million square kilometers. For
+comparison, the land area of the united states is roughly 10 millon
+square kilometers. So we&amp;#8217;d only have to cover 1/5th of the united states
+with wind turbines to power the entire world (in 2008, no doubt power
+use has risen since then)! While that is a lot of space taken up, it is
+nowhere near the entire surface of the world. There are, of course,
+&lt;a href="http://xkcd.com/556/"&gt;other concerns&lt;/a&gt; about wind power. &lt;/em&gt;Note: maybe
+the wind turbines are less efficient overall. Also, I assumed that the
+footprint was just the square area of the turbine diameter. I know this
+is the size of the face of the turbine, but to an order of magnitude I
+imagine it is correct for the space occupied on the&amp;nbsp;ground.*&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="wind"></category><category term="green power"></category></entry><entry><title>Fishy Calculation Followup &amp; New Contest</title><link href="http://thephysicsvirtuosi.com/posts/fishy-calculation-followup-new-contest.html" rel="alternate"></link><updated>2010-05-25T03:03:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-05-25:posts/fishy-calculation-followup-new-contest.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s1600/hamster.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_t2IHW-7EI/AAAAAAAAAKw/nbtBQnQnpWI/s200/hamster.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, some you may remember when I attempted to calculate how much the
+oceans would lower if you took out all of the fish in an &lt;a href="http://thevirtuosi.blogspot.com/2010/04/fishy-calculation.html"&gt;earlier
+post&lt;/a&gt;.
+Well, the results came in a while ago, but I forgot to mention that &lt;a href="http://diaryofnumbers.blogspot.com/2010/05/we-have-winner.html"&gt;I
+lost&lt;/a&gt;
+the contest. I was about two orders of magnitude off from the winning
+answer. In light of my failure, I&amp;#8217;m going to try again in the &lt;a href="http://diaryofnumbers.blogspot.com/2010/05/hamster-powered-mansions.html"&gt;newest
+contest&lt;/a&gt;.
+This time the question is a bit&amp;nbsp;stranger:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How many buff hamsters would it take to completely power a&amp;nbsp;mansion?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I encourage all of The Virtuosi readers to enter as well, it only takes
+a minute to come up with some number. Good luck one and&amp;nbsp;all.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fermi problem"></category><category term="fish"></category><category term="contest"></category></entry><entry><title>Physics of Baseball: Batting</title><link href="http://thephysicsvirtuosi.com/posts/physics-of-baseball-batting.html" rel="alternate"></link><updated>2010-05-19T18:21:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-05-19:posts/physics-of-baseball-batting.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s1600/baseball.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S_RkXXs4DpI/AAAAAAAAAKo/jPSgwpl4qHA/s320/baseball.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Summer is upon us, and so that means that we here at the Virtuosi have
+started talking about baseball. In fact, Corky and I did some simple
+calculations that illuminate just how impressive batting in baseball can
+be. We were interested in just how hard it is to hit a pitch with the
+bat. So we thought we&amp;#8217;d model hitting the ball with a rather simple
+approximation of a robot swinging a cylindrical bat, horizontally with
+some rotational speed and at a random height. The question then becomes,
+if the robot chooses a random height and a random time to swing, what
+are the chances that it gets a&amp;nbsp;hit?&lt;/p&gt;
+&lt;h3&gt;Spatial&amp;nbsp;Resolution&lt;/h3&gt;
+&lt;p&gt;So the first thing to consider is how much of the strike zone the bat
+takes up. In order to be a strike, the ball needs to be over home plate,
+which is 17 inches wide, and between the knees and logo on the batters
+jersey. Estimating this height as 0.7 m or 28 inches or so, we have the
+area of the strike zone &lt;mathjax&gt;$$ A_S = (17") \times (0.7 m) = 0.3 \text{
+m}^2 $$&lt;/mathjax&gt; when you swing, how much of this area does the bat take up?
+Well, treat it as a cylinder, with a diameter of 10 cm, and assume it
+runs the length of the strike zone, when the area that the bat takes up
+is &lt;mathjax&gt;$$ A_B = (10\text{ cm}) \times (17" ) = 0.043 \text{ m}^2 $$&lt;/mathjax&gt; So
+that the fractional area that the bat takes up during our idealized
+swing is &lt;mathjax&gt;$$ \frac{A_B}{A_S} \approx 14\% $$&lt;/mathjax&gt; So already, if our
+robot is guessing where inside the strike zone to place the bat, and
+doing so randomly, assuming the pitch is a strike to begin with, it will
+be able to bunt successfully about 14% of the&amp;nbsp;time.&lt;/p&gt;
+&lt;h3&gt;Time&amp;nbsp;Resolution&lt;/h3&gt;
+&lt;p&gt;But getting a hit on a swing is different than getting a bunt. Not only
+do you have to have your bat at the right height, but you need to time
+the swing correctly. Lets first look at how much time we are dealing
+with here. Most major league pitchers pitch the ball at about 90 mph or
+so. The pitchers mound is 60.5 feet away from home base. This means that
+the pitch is in the air for &lt;mathjax&gt;$$ t = \frac{ 60.5 \text{ ft} }{ 90
+\text{ mph} } \approx \frac{1}{2} \text{ second} $$&lt;/mathjax&gt; i.e. from the
+time the pitcher releases the ball to the time it crosses home plate is
+only about half a second. Compare this with human reaction times. My
+drivers ed course told me that human reaction times are typically a
+third of a second or so. So, baseball happens quick! Alright, but we
+were interested in how well you have to time your swing. Successfully
+hitting the ball means that you&amp;#8217;ve made contact with the ball such that
+it lands somewhere in the field. I.e. you&amp;#8217;ve got a 90 degree play in
+when you make contact. How does this translate to time? We would need to
+know how fast you&amp;nbsp;swing.&lt;/p&gt;
+&lt;h4&gt;Estimating the speed of a&amp;nbsp;swing&lt;/h4&gt;
+&lt;p&gt;I don&amp;#8217;t know how fast you can swing a baseball bat, but I can estimate
+it. I know that if you land your swing just right, you have a pretty
+good shot at a home run. Fields are typically 300 feet long. So, I can
+ask, if I launch a projectile at a 45 degree angle, how fast does it
+need to be going in order to make it 300 feet. Well, we can solve this
+projectile problem if we remember some of our introductory physics. We
+decouple the horizontal and vertical motions of the ball, the ball
+travels horizontally 300 feet, so we know &lt;mathjax&gt;$$ v_x t = 300 \text{ ft} $$&lt;/mathjax&gt;
+where t is the time the ball is in the air, similarly we know that it is
+gravity that makes the ball fall, and so as far the vertical motion is
+concerned, in half the total flight time, we need the vertical velocity
+to go from its initial value to zero, i.e. &lt;mathjax&gt;$$ g \frac{t}{2} = v_y $$&lt;/mathjax&gt;
+where g is the acceleration due to gravity. Furthermore, I&amp;#8217;m assuming
+that I am launching this projectile at a 45 degree angle, for which I
+know from trig that &lt;mathjax&gt;$$ v_x = v_y = \frac{v}{\sqrt 2} $$&lt;/mathjax&gt; So I can
+stick these equations into one another and solve for the velocity needed
+to get the ball going 300 feet. &lt;mathjax&gt;$$ \frac{v^2}{ g} = 300 \text{ ft} =
+\frac{ v^2}{ 9.8 \text{ m/s}^2 } $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ v \approx 30 \text{ m/s}
+\sim 67 \text{ mph}$$&lt;/mathjax&gt; So it looks like the ball needs to leave the bat
+going about 70 mph in order to clear the park. ( This was of course
+neglecting air resistance, which ought to be important for baseballs ).
+Great that tells us how fast the ball needs to be going when it leaves
+the bat, but how fast was the bat going in order to get the ball going
+that fast? Well, lets work worst case and assume that the baseball - bat
+interaction is inelastic. I.e. I reckon that if I throw a baseball at
+about 100 mph towards a wooden wall, it doesn&amp;#8217;t bounce a whole lot. In
+that case, the bat needs to take the ball from coming at it at 90 mph to
+leaving at 70 mph or so, i.e. the place where the ball hits the bat
+needs to be going at about 160 mph. That seems fast, but when you think
+about it, if a pitcher can pitch a ball at 90 mph, that means their hand
+is moving at 90 mph during the last bits of the pitch, so you expect
+that a batter can move their hands about that fast, and we have the
+added advantage of the bat being a&amp;nbsp;lever.&lt;/p&gt;
 &lt;h4&gt;Coming back to&amp;nbsp;timing&lt;/h4&gt;
-
-&lt;p&gt;So, we have an estimate for how fast the bat is going. Knowing this and estimating the length between the sweet spot and the pivot point of the bat to be about 0.75 m or so, we can obtain the angular frequency of the bat.
-&lt;mathjax&gt;$$ v  = \omega r $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ \omega = \frac{ 160 \text{ mph} }{ 0.75 \text{ m} } \approx 100 \text{ Hz} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So, if we need to have a 90 degree resolution in our swing timing to hit the ball in the park, this means that if our swing near the end is happening at 100 \text{ Hz}, we need to get the timing down to within
-&lt;mathjax&gt;$$ t = \frac{ 90 \text{ degree}}{ 100 \text{ Hz} } \sim 15 \text{ ms} $$&lt;/mathjax&gt;
-So we need to get the timing of our swing to within about 15 milliseconds to land the&amp;nbsp;hit.  &lt;/p&gt;
-&lt;p&gt;So if our robot randomly swung at some point during the duration of the pitch, it would only hit with probability
-&lt;mathjax&gt;$$ \frac{\text{time to land hit} }{ \text{time of pitch}} = \frac{ 15 \text{ ms}}{500 \text{ ms}} \sim 3\% $$&lt;/mathjax&gt;
-or only 3% of the time.  If we take both the spatial placement, and timing of the swing as independent, the probability that our robot gets a hit would be something about
-&lt;mathjax&gt;$$ p = 0.03 \times 0.14 = 0.004 = 0.4 \% $$&lt;/mathjax&gt;
-or our robot would only get a hit 1 time out of 250&amp;nbsp;tries.  &lt;/p&gt;
-&lt;p&gt;Suddenly hitting looks pretty&amp;nbsp;impressive.&lt;/p&gt;
-&lt;h3&gt;Experiment &lt;/h3&gt;
-
-&lt;p&gt;Saying that the robot swings at some random time during the duration of the pitch is pretty bad.  So I decided to do a little experiment to see how good people are at judging times on half second scales.  I had some friends of mine start a stop watch and while looking try to stop it as close as they could at the half second mark.  Collecting their deviations, I obtained a standard deviation of about 41 milliseconds, which suggests a window of about 100 milliseconds over which people can reliably judge half second intervals.  Now, I have to admit, this wasn&amp;#8217;t done in any very rigorous sort of way, I had them do this while walking to dinner, but it ought to give a rough estimate of the relevant time scale for landing a hit.  So instead of comparing our 15 millisecond &amp;#8216;get a hit&amp;#8217; window to the full half second pitch duration, lets compare it instead to the 100 &amp;#8216;humans trying to judge when to hit&amp;#8217; window.  This gives us a temporal resolution of about
-&lt;mathjax&gt;$$ p = \frac{ 15}{100} = 15 \%.  $$&lt;/mathjax&gt;
-So that now we obtain an overall hit probability of
-&lt;mathjax&gt;$$ p = 0.15 * 0.14 = 0.021 = 2 \% $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So that it seems like a poor baseball player, more or less randomly swinging should have a batting average of about 2\%.  Compare this with typical baseball batting averages of 250 or so, denoting 0.25 or 25% probability of a hit.  I think this is a much better estimate of how much better over random baseball players can do with&amp;nbsp;training.&lt;/p&gt;
-&lt;p&gt;So it looks like practice can improve your ability to do a task by about an order of magnitude or&amp;nbsp;so.&lt;/p&gt;
-&lt;p&gt;Either way, baseball is pretty darn impressive when you think about&amp;nbsp;it.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fun"></category><category term="baseball"></category></entry><entry><title>Another Reason Why The Core is Stupid</title><link href="http://thephysicsvirtuosi.com/posts/another-reason-why-the-core-is-stupid.html" rel="alternate"></link><updated>2010-04-15T17:30:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-04-15:posts/another-reason-why-the-core-is-stupid.html</id><summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;I assume everyone has heard of &lt;a href="http://en.wikipedia.org/wiki/The_core"&gt;The Core&lt;/a&gt;, the terrible scifi movie from&amp;nbsp;2003.  &lt;/p&gt;
-&lt;p&gt;If you haven&amp;#8217;t you&amp;#8217;re missing out on what appears to be, according to Discover magazine, &lt;a href="http://discovermagazine.com/2007/nov/none-found"&gt;the worst sci-fi film ever&lt;/a&gt;.  There are already numerous sites that discuss the bad science in the core (&lt;a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm"&gt;here&lt;/a&gt;, or over at &lt;a href="http://www.badastronomy.com/bad/movies/thecore_review.html"&gt;Bad Astronomy&lt;/a&gt;), but they all seem to ignore another fundamental problem with the&amp;nbsp;plot.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t think I&amp;#8217;ll give too much away if I tell you that the basic premise of the movie is that the earth&amp;#8217;s core has stopped rotating, and so the earth&amp;#8217;s magnetic field is collapsing, which they claim will mean that all of the previously deflected microwaves (note: &lt;span class="caps"&gt;EM&lt;/span&gt; radiation is not bent by a magnetic field) will cook us all.  Now, a lot of people have focused on the microwaves bit, which while bad science, one could argue that we would still have some bad effects from loosing our magnetic&amp;nbsp;field.  &lt;/p&gt;
-&lt;p&gt;The problem I have is that the Earth&amp;#8217;s magnetic field cannot change that abruptly.
-&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m currently teaching undergraduate honors E&amp;amp;M, and we&amp;#8217;re working out of the fantastic texbook (unfortunately now out of print) by &lt;a href="http://books.google.com/books?ei=tn7HS87OGYKuygS9yqCNCw&amp;amp;cd=1&amp;amp;id=3LYRAQAAIAAJ&amp;amp;dq=Purcell+Electromagnetism&amp;amp;q=#search_anchor"&gt;Purcell&lt;/a&gt;.  And in the chapter on electromagnetic induction he has an illuminating&amp;nbsp;exercise.  &lt;/p&gt;
-&lt;p&gt;Lets try and estimate how quickly the magnetic field of the earth can change.  Well, lets sort of work backwards.  We know that if we have a conducting ring with a current flowing through it, this will create a magnetic field.  So, if we can try and model some sort of circuit that approximates the earth, and then look at how quickly energy is dissipated in that circuit, we can estimate how fast the magnetic field&amp;nbsp;decays.  &lt;/p&gt;
-&lt;p&gt;So lets imagine a thick torus with height and width a.  Flowing around this torus is some current I, distributed in a complicated way.  The torus is made out of a material with some conductivity sigma.  Now, we know that for a wire made out of some material with a conductivity sigma, we can estimate its resistance as
-&lt;mathjax&gt;$$ R = \frac{ L }{ \sigma A } $$&lt;/mathjax&gt;
-where L is the length, and A is the cross sectional area of the wire.  Lets do that with our torus, calling 
-&lt;mathjax&gt;$$ A = a^2 \qquad L = 2 \pi a $$&lt;/mathjax&gt;
-giving us a resistance
-&lt;mathjax&gt;$$ R \sim \frac{ 2 \pi }{ \sigma a } $$&lt;/mathjax&gt;
-To estimate the magnetic field of this torus, lets just take the magnetic field of a loop with radius a/2.  I.e.
-&lt;mathjax&gt;$$ B = \frac{ \mu_0 I }{2 \pi (a/2) } $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Now we know that the energy stored in the magnetic field is
-&lt;mathjax&gt;$$ U = \frac{1}{2 \mu_0 } \int B^2 \ dV \sim \frac{1}{2 \mu_0} B V $$&lt;/mathjax&gt;
-where we take the magnetic field to be the magnetic field of the simple loop and V to be the volume of a fat cylinder or so, i.e.
-&lt;mathjax&gt;$$ V \sim \pi a^2 \times a   $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Now if we have a circuit with a known resistance we know that the energy is dissipated through the resistor
-&lt;mathjax&gt;$$ \frac{dU}{dt} = - I^2 R $$&lt;/mathjax&gt;
-so if we just want an order of magnitude estimate for the characteristic decay time, we can take
-&lt;mathjax&gt;$$ \tau \sim \frac{ U }{ I^2 R } $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Putting in our approximations from above we have
-&lt;mathjax&gt;$$ \tau \sim \frac{  \frac{1}{2\mu_0 } B^2 V   }{ I^2 \frac{2 \pi }{ \sigma a }  } = \frac{  \frac{1}{2 \mu_0 } ( \pi a^3 )  \left( \frac{ \mu_0 I }{ 2 \pi (a/2) } \right)^2  }{ I^2 \frac{ 2 \pi }{\sigma a}  } = \frac{ \mu_0 }{4 \pi^2 } \sigma a^2   $$&lt;/mathjax&gt; &lt;/p&gt;
-&lt;p&gt;where we know
-&lt;mathjax&gt;$$ \mu_0 = 4 \pi \times 10^{-7}  N/A^2 $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;we obtain roughly (i.e. ignoring the other pi)
-&lt;mathjax&gt;$$ \tau \sim \sigma a^2 \times 10^{-7}  (s) $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Now, lets take the radius of the core to be about half the radius of the earth, or 3000 km or so, and take the conductivity of the core to be about a tenth of that of iron at room temperature (iron becomes a worse conductor when its heated), i.e.
-&lt;mathjax&gt;$$ a \sim 3000 (km) \qquad \sigma \sim 10^6 (S/m) $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;We obtain
-&lt;mathjax&gt;$$ \tau \sim 10^12 (s) = 300 (centuries) $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;So, even if you could magically make the core of the earth stop spinning, the magnetic field is not going to change instantaneously, in fact it would only be able to change on the order of 300 centuries or so.  This is really short on geologic time scales, but nothing like the week or so that the movie The Core takes place&amp;nbsp;over.&lt;/p&gt;
-&lt;p&gt;Just one more reason why one of the worst sci-fi movies of all time is&amp;nbsp;bad.&lt;/p&gt;</summary><category term="the core"></category><category term="order of magnitude"></category><category term="magnetism"></category><category term="fun"></category><category term="fermi problem"></category><category term="sci-fi"></category><category term="bad physics"></category><category term="movie"></category></entry></feed>
+&lt;p&gt;So, we have an estimate for how fast the bat is going. Knowing this and
+estimating the length between the sweet spot and the pivot point of the
+bat to be about 0.75 m or so, we can obtain the angular frequency of the
+bat. &lt;mathjax&gt;$$ v = \omega r $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ \omega = \frac{ 160 \text{ mph} }{ 0.75
+\text{ m} } \approx 100 \text{ Hz} $$&lt;/mathjax&gt; So, if we need to have a 90
+degree resolution in our swing timing to hit the ball in the park, this
+means that if our swing near the end is happening at 100 \text{ Hz}, we
+need to get the timing down to within &lt;mathjax&gt;$$ t = \frac{ 90 \text{
+degree}}{ 100 \text{ Hz} } \sim 15 \text{ ms} $$&lt;/mathjax&gt; So we need to get
+the timing of our swing to within about 15 milliseconds to land the hit.
+So if our robot randomly swung at some point during the duration of the
+pitch, it would only hit with probability &lt;mathjax&gt;$$ \frac{\text{time to land
+hit} }{ \text{time of pitch}} = \frac{ 15 \text{ ms}}{500 \text{
+ms}} \sim 3\% $$&lt;/mathjax&gt; or only 3% of the time. If we take both the spatial
+placement, and timing of the swing as independent, the probability that
+our robot gets a hit would be something about &lt;mathjax&gt;$$ p = 0.03 \times 0.14 =
+0.004 = 0.4 \% $$&lt;/mathjax&gt; or our robot would only get a hit 1 time out of 250
+tries. Suddenly hitting looks pretty&amp;nbsp;impressive.&lt;/p&gt;
+&lt;h3&gt;Experiment&lt;/h3&gt;
+&lt;p&gt;Saying that the robot swings at some random time during the duration of
+the pitch is pretty bad. So I decided to do a little experiment to see
+how good people are at judging times on half second scales. I had some
+friends of mine start a stop watch and while looking try to stop it as
+close as they could at the half second mark. Collecting their
+deviations, I obtained a standard deviation of about 41 milliseconds,
+which suggests a window of about 100 milliseconds over which people can
+reliably judge half second intervals. Now, I have to admit, this wasn&amp;#8217;t
+done in any very rigorous sort of way, I had them do this while walking
+to dinner, but it ought to give a rough estimate of the relevant time
+scale for landing a hit. So instead of comparing our 15 millisecond &amp;#8216;get
+a hit&amp;#8217; window to the full half second pitch duration, lets compare it
+instead to the 100 &amp;#8216;humans trying to judge when to hit&amp;#8217; window. This
+gives us a temporal resolution of about &lt;mathjax&gt;$$ p = \frac{ 15}{100} = 15
+\%. $$&lt;/mathjax&gt; So that now we obtain an overall hit probability of &lt;mathjax&gt;$$ p = 0.15
+* 0.14 = 0.021 = 2 \% $$&lt;/mathjax&gt; So that it seems like a poor baseball player,
+more or less randomly swinging should have a batting average of about
+2\%. Compare this with typical baseball batting averages of 250 or so,
+denoting 0.25 or 25% probability of a hit. I think this is a much better
+estimate of how much better over random baseball players can do with
+training. So it looks like practice can improve your ability to do a
+task by about an order of magnitude or so. Either way, baseball is
+pretty darn impressive when you think about&amp;nbsp;it.&lt;/p&gt;</summary><category term="order of magnitude"></category><category term="fun"></category><category term="baseball"></category></entry><entry><title>Another Reason Why The Core is Stupid</title><link href="http://thephysicsvirtuosi.com/posts/another-reason-why-the-core-is-stupid.html" rel="alternate"></link><updated>2010-04-15T17:30:00-04:00</updated><author><name>Alemi</name></author><id>tag:thephysicsvirtuosi.com,2010-04-15:posts/another-reason-why-the-core-is-stupid.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s1600/The_Core_poster.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/S8d8LoMoWHI/AAAAAAAAAJg/3HSwL_rBMFE/s320/The_Core_poster.jpg" /&gt;&lt;/a&gt;
+I assume everyone has heard of &lt;a href="http://en.wikipedia.org/wiki/The_core"&gt;The
+Core&lt;/a&gt;, the terrible scifi movie
+from 2003. If you haven&amp;#8217;t you&amp;#8217;re missing out on what appears to be,
+according to Discover magazine, &lt;a href="http://discovermagazine.com/2007/nov/none-found"&gt;the worst sci-fi film
+ever&lt;/a&gt;. There are
+already numerous sites that discuss the bad science in the core
+(&lt;a href="http://geolor.com/The_Core_Movie-Facts_and_Fiction.htm"&gt;here&lt;/a&gt;, or over
+at &lt;a href="http://www.badastronomy.com/bad/movies/thecore_review.html"&gt;Bad
+Astronomy&lt;/a&gt;),
+but they all seem to ignore another fundamental problem with the plot. I
+don&amp;#8217;t think I&amp;#8217;ll give too much away if I tell you that the basic premise
+of the movie is that the earth&amp;#8217;s core has stopped rotating, and so the
+earth&amp;#8217;s magnetic field is collapsing, which they claim will mean that
+all of the previously deflected microwaves (note: &lt;span class="caps"&gt;EM&lt;/span&gt; radiation is not
+bent by a magnetic field) will cook us all. Now, a lot of people have
+focused on the microwaves bit, which while bad science, one could argue
+that we would still have some bad effects from loosing our magnetic
+field. The problem I have is that the Earth&amp;#8217;s magnetic field cannot
+change that abruptly. I&amp;#8217;m currently teaching undergraduate honors E&amp;amp;M,
+and we&amp;#8217;re working out of the fantastic texbook (unfortunately now out of
+print) by
+&lt;a href="http://books.google.com/books?ei=tn7HS87OGYKuygS9yqCNCw&amp;amp;cd=1&amp;amp;id=3LYRAQAAIAAJ&amp;amp;dq=Purcell+Electromagnetism&amp;amp;q=#search_anchor"&gt;Purcell&lt;/a&gt;.
+And in the chapter on electromagnetic induction he has an illuminating
+exercise. Lets try and estimate how quickly the magnetic field of the
+earth can change. Well, lets sort of work backwards. We know that if we
+have a conducting ring with a current flowing through it, this will
+create a magnetic field. So, if we can try and model some sort of
+circuit that approximates the earth, and then look at how quickly energy
+is dissipated in that circuit, we can estimate how fast the magnetic
+field decays. So lets imagine a thick torus with height and width a.
+Flowing around this torus is some current I, distributed in a
+complicated way. The torus is made out of a material with some
+conductivity sigma. Now, we know that for a wire made out of some
+material with a conductivity sigma, we can estimate its resistance as &lt;mathjax&gt;$$
+R = \frac{ L }{ \sigma A } $$&lt;/mathjax&gt; where L is the length, and A is the
+cross sectional area of the wire. Lets do that with our torus, calling
+&lt;mathjax&gt;$$ A = a^2 \qquad L = 2 \pi a $$&lt;/mathjax&gt; giving us a resistance &lt;mathjax&gt;$$ R \sim
+\frac{ 2 \pi }{ \sigma a } $$&lt;/mathjax&gt; To estimate the magnetic field of this
+torus, lets just take the magnetic field of a loop with radius a/2. I.e.
+&lt;mathjax&gt;$$ B = \frac{ \mu_0 I }{2 \pi (a/2) } $$&lt;/mathjax&gt; Now we know that the energy
+stored in the magnetic field is &lt;mathjax&gt;$$ U = \frac{1}{2 \mu_0 } \int B^2
+\ dV \sim \frac{1}{2 \mu_0} B V $$&lt;/mathjax&gt; where we take the magnetic field
+to be the magnetic field of the simple loop and V to be the volume of a
+fat cylinder or so, i.e. &lt;mathjax&gt;$$ V \sim \pi a^2 \times a $$&lt;/mathjax&gt; Now if we
+have a circuit with a known resistance we know that the energy is
+dissipated through the resistor &lt;mathjax&gt;$$ \frac{dU}{dt} = - I^2 R $$&lt;/mathjax&gt; so if we
+just want an order of magnitude estimate for the characteristic decay
+time, we can take &lt;mathjax&gt;$$ \tau \sim \frac{ U }{ I^2 R } $$&lt;/mathjax&gt; Putting in our
+approximations from above we have &lt;mathjax&gt;$$ \tau \sim \frac{
+\frac{1}{2\mu_0 } B^2 V }{ I^2 \frac{2 \pi }{ \sigma a } } =
+\frac{ \frac{1}{2 \mu_0 } ( \pi a^3 ) \left( \frac{ \mu_0 I }{
+2 \pi (a/2) } \right)^2 }{ I^2 \frac{ 2 \pi }{\sigma a} } =
+\frac{ \mu_0 }{4 \pi^2 } \sigma a^2 $$&lt;/mathjax&gt; where we know &lt;mathjax&gt;$$ \mu_0 =
+4 \pi \times 10^{-7} N/A^2 $$&lt;/mathjax&gt; we obtain roughly (i.e. ignoring the
+other pi) &lt;mathjax&gt;$$ \tau \sim \sigma a^2 \times 10^{-7} (s) $$&lt;/mathjax&gt; Now, lets
+take the radius of the core to be about half the radius of the earth, or
+3000 km or so, and take the conductivity of the core to be about a tenth
+of that of iron at room temperature (iron becomes a worse conductor when
+its heated), i.e. &lt;mathjax&gt;$$ a \sim 3000 (km) \qquad \sigma \sim 10^6 (S/m)
+$$&lt;/mathjax&gt; We obtain &lt;mathjax&gt;$$ \tau \sim 10^12 (s) = 300 (centuries) $$&lt;/mathjax&gt; So, even if
+you could magically make the core of the earth stop spinning, the
+magnetic field is not going to change instantaneously, in fact it would
+only be able to change on the order of 300 centuries or so. This is
+really short on geologic time scales, but nothing like the week or so
+that the movie The Core takes place over. Just one more reason why one
+of the worst sci-fi movies of all time is&amp;nbsp;bad.&lt;/p&gt;</summary><category term="the core"></category><category term="order of magnitude"></category><category term="magnetism"></category><category term="fun"></category><category term="fermi problem"></category><category term="sci-fi"></category><category term="bad physics"></category><category term="movie"></category></entry></feed>

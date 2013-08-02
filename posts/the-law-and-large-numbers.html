@@ -81,62 +81,160 @@
 	<article>
 		<div class="post wrapper">
 			<h1>The Law and Large&nbsp;Numbers</h1>
-			<p>Human beings are not equipped for dealing with large numbers.  Honestly, 7 thousand, 7 million, 7 billion and 7 trillion all register about the same in my mind, namely 7 big.  Unfortunately, there is a world a different between each of these, three whole orders of magnitude, a thousand, the difference between lifting me and a <span class="caps">US</span>&nbsp;quarter.</p>
-<p>This lack of respect for orders of magnitude has really been rearing its head recently with most of the political discussions surrounding the <span class="caps">US</span>&nbsp;budget.  </p>
-<p>Turns out the <span class="caps">US</span> Budget is really large.  In 2010 it weighed in at $3.55 trillion.  Thats big.  Really big.  So big that I can&#8217;t fathom&nbsp;it.  </p>
-<p>Without getting too political, there has been a site going around recently; the <a href="http://republicanwhip.house.gov/YouCut/week13.htm">You Cut program</a>, which invites public suggestions for cuts to be made to the budget to try and fix the deficit.  Now, personally, I believe we ought to do something about the deficit.  To this end, I think it is useful to point out the scales involved.  In particular, the link I gave above is to one of the suggested cuts: federal funding of <span class="caps">NPR</span> (Disclaimer alert: I love <span class="caps">NPR</span>), which weighs in at 7 million&nbsp;dollars.  </p>
-<p>Seven million dollars is a lot of money.  A lot of money, more than I can imagine having personally.  But to suggest that a 7 million dollar cut is any sort of progress towards solving a $1.2 trillion dollar deficit is a little amusing.  As a fraction, this comes out&nbsp;to</p>
-<p><mathjax>$$ \frac{ 7 \text{ million} }{ 3.55 \text{ trillion} } = 2 \times 10^{-6} $$</mathjax></p>
-<p>Two parts in a million.  To give a sense of scale to this, the gravitational influence of the moon on my weight&nbsp;is:</p>
-<p><mathjax>$$ \frac{  \frac{ G M_{\text{moon}} }{ R_{\text{earth-moon}}^2 }  }{ 10 \text{ m/s}^2 } = 3 \times 10^{-6} $$</mathjax>
-Three parts in a million.  So, suggesting that you have made real gains in reducing the <span class="caps">US</span> budget by cutting federal funding for <span class="caps">NPR</span> is as silly as suggesting that if I want to lose weight, my first concern should be the current&nbsp;tides.  </p>
-<p>[I want to point out that I don&#8217;t really mean to get too political, and that I&#8217;ve noticed both parties pulling these kinds of numbers&nbsp;tricks.]</p>
-<p>So, wanting to get a little better understanding of the numbers at stake, I collected some data (all from the 2010 budget).  My goal is to attempt to represent how the <span class="caps">US</span> government spends its&nbsp;money.  </p>
-<p>Before I begin I need to plug two great tools towards this end:  <a href="http://www.nytimes.com/interactive/2010/02/01/us/budget.html">Here</a> the NYTimes graphically represents government spending, helping to give a sense of scale to different categories.  <a href="http://www.nytimes.com/interactive/2010/11/13/weekinreview/deficits-graphic.html">Here</a> the NYTimes lets you try and balance the budget, not only for next year but down the line, letting you choose from a wide array of proposed&nbsp;changes.</p>
-<p><a name='more'></a>
-<span class="Apple-style-span" style="font-size: 24px; font-weight: bold;">The&nbsp;Data</span></p>
-<p>So, below is a list of some of the relevant numbers I could thing of, and some reference numbers (trillion, billion, million), as well as the <span class="caps">US</span> debt, and total deficit.  In addition to just reporting the numbers (which you can find anywhere), in the second column I give the fraction of total spending in scientific&nbsp;units.</p>
-<p><center></p>
-<table border="1" cellpadding="5" cellspacing="0"><tbody><tr> <td>Name </td><td>$ </td><td>Fraction </td></tr><tr> <td><span class="caps">US</span> Debt </td><td>13.8 trillion </td><td>3.9 </td></tr><tr> <td>Total Spending </td><td>3.55 trillion </td><td>1.0</td></tr><tr> <td>Budget Deficit </td><td>1.17 trillion </td><td>3.3E-1</td></tr><tr> <td>1 trillion </td><td>1 trillion </td><td>2.8E-1</td></tr><tr><td><span class="caps">SS</span> / Def / <span class="caps">MM</span> </td><td>730 billion </td><td>2.1E-1</td></tr><tr> <td>Education </td><td>93 billion </td><td>2.6E-2</td></tr><tr> <td>Taxes (250G+) </td><td>54 billion </td><td>1.5E-2</td></tr><tr> <td>Science </td><td>31 billion </td><td>8.7E-3</td></tr><tr> <td>1 billion </td><td>1 billion </td><td>2.8E-4 </td></tr><tr> <td><span class="caps">NPR</span> </td><td>7 million </td><td>2.0E-6 </td></tr><tr> <td>1 million </td><td>1 million </td><td>2.8E-7</td></tr></tbody></table>
-
-<p></center></p>
-<p>So here, <span class="caps">SS</span> / Def / <span class="caps">MM</span> means each of Social Security, Defense spending and Medicare and Medicaid, which each comes in at about the same per program.  We spend 730 billion on each of these.  To first glance, these three programs are how the <span class="caps">US</span> spends money, each of these coming in at 21%.  Notice also just how large the deficit is, coming in at 33% of total spending.  The rather cryptic &#8220;Taxes (250G+)&#8221; is how much money would be saved by letting the Bush tax cuts expire for those making more than 250,000 a year, a currently hotly debated topic.  Notice that it would only ease the burden by 15%.  So this alone would only cut the budget deficit in&nbsp;half.</p>
-<p>The above table shows the power of scientific notation.  (Even though I had to use the ugly &#8220;E&#8221; notation).  A number like &#8220;2.8E-4&#8221; is really 2.9 x&nbsp;10^(-4).  </p>
-<p>But honestly, even a list like this doesn&#8217;t really make an impact for me.  So, I thought of a couple other ways to represent the same numbers, scaling them to some &#8216;big&#8217; things I can conceive&nbsp;of:</p>
+			<p>Human beings are not equipped for dealing with large numbers. Honestly,
+7 thousand, 7 million, 7 billion and 7 trillion all register about the
+same in my mind, namely 7 big. Unfortunately, there is a world a
+different between each of these, three whole orders of magnitude, a
+thousand, the difference between lifting me and a <span class="caps">US</span> quarter. This lack
+of respect for orders of magnitude has really been rearing its head
+recently with most of the political discussions surrounding the <span class="caps">US</span>
+budget. Turns out the <span class="caps">US</span> Budget is really large. In 2010 it weighed in
+at <mathjax>$3.55 trillion. Thats big. Really big. So big that I can't fathom it.
+Without getting too political, there has been a site going around
+recently; the [You Cut
+program](http://republicanwhip.house.gov/YouCut/week13.htm), which
+invites public suggestions for cuts to be made to the budget to try and
+fix the deficit. Now, personally, I believe we ought to do something
+about the deficit. To this end, I think it is useful to point out the
+scales involved. In particular, the link I gave above is to one of the
+suggested cuts: federal funding of NPR (Disclaimer alert: I love NPR),
+which weighs in at 7 million dollars. Seven million dollars is a lot of
+money. A lot of money, more than I can imagine having personally. But to
+suggest that a 7 million dollar cut is any sort of progress towards
+solving a $</mathjax>1.2 trillion dollar deficit is a little amusing. As a
+fraction, this comes out to <mathjax>$$ \frac{ 7 \text{ million} }{ 3.55
+\text{ trillion} } = 2 \times 10^{-6} $$</mathjax> Two parts in a million. To
+give a sense of scale to this, the gravitational influence of the moon
+on my weight is: <mathjax>$$ \frac{ \frac{ G M_{\text{moon}} }{
+R_{\text{earth-moon}}^2 } }{ 10 \text{ m/s}^2 } = 3 \times
+10^{-6} $$</mathjax> Three parts in a million. So, suggesting that you have made
+real gains in reducing the <span class="caps">US</span> budget by cutting federal funding for <span class="caps">NPR</span>
+is as silly as suggesting that if I want to lose weight, my first
+concern should be the current tides. [I want to point out that I don&#8217;t
+really mean to get too political, and that I&#8217;ve noticed both parties
+pulling these kinds of numbers tricks.] So, wanting to get a little
+better understanding of the numbers at stake, I collected some data (all
+from the 2010 budget). My goal is to attempt to represent how the <span class="caps">US</span>
+government spends its money. Before I begin I need to plug two great
+tools towards this end:
+<a href="http://www.nytimes.com/interactive/2010/02/01/us/budget.html">Here</a> the
+NYTimes graphically represents government spending, helping to give a
+sense of scale to different categories.
+<a href="http://www.nytimes.com/interactive/2010/11/13/weekinreview/deficits-graphic.html">Here</a>
+the NYTimes lets you try and balance the budget, not only for next year
+but down the line, letting you choose from a wide array of proposed
+changes. The Data So, below is a list of some of the relevant numbers I
+could thing of, and some reference numbers (trillion, billion, million),
+as well as the <span class="caps">US</span> debt, and total deficit. In addition to just reporting
+the numbers (which you can find anywhere), in the second column I give
+the fraction of total spending in scientific&nbsp;units.</p>
+<hr />
+<p>Name             $               Fraction
+  <span class="caps">US</span> Debt          13.8 trillion   3.9
+  Total Spending   3.55 trillion   1.0
+  Budget Deficit   1.17 trillion   3.3E-1
+  1 trillion       1 trillion      2.8E-1
+  <span class="caps">SS</span> / Def / <span class="caps">MM</span>    730 billion     2.1E-1
+  Education        93 billion      2.6E-2
+  Taxes (250G+)    54 billion      1.5E-2
+  Science          31 billion      8.7E-3
+  1 billion        1 billion       2.8E-4
+  <span class="caps">NPR</span>              7 million       2.0E-6
+  1 million        1 million&nbsp;2.8E-7</p>
+<hr />
+<p>So here, <span class="caps">SS</span> / Def / <span class="caps">MM</span> means each of Social Security, Defense spending
+and Medicare and Medicaid, which each comes in at about the same per
+program. We spend 730 billion on each of these. To first glance, these
+three programs are how the <span class="caps">US</span> spends money, each of these coming in at
+21%. Notice also just how large the deficit is, coming in at 33% of
+total spending. The rather cryptic &#8220;Taxes (250G+)&#8221; is how much money
+would be saved by letting the Bush tax cuts expire for those making more
+than 250,000 a year, a currently hotly debated topic. Notice that it
+would only ease the burden by 15%. So this alone would only cut the
+budget deficit in half. The above table shows the power of scientific
+notation. (Even though I had to use the ugly &#8220;E&#8221; notation). A number
+like &#8220;2.8E-4&#8221; is really 2.9 x 10^(-4). But honestly, even a list like
+this doesn&#8217;t really make an impact for me. So, I thought of a couple
+other ways to represent the same numbers, scaling them to some &#8216;big&#8217;
+things I can conceive&nbsp;of:</p>
 <h3>Barry&#8217;s&nbsp;Budget</h3>
-
-<p>Now, this might not be a fair comparison, but let&#8217;s scale down the <span class="caps">US</span> budget to sizes that a person can understand.  By scaling by a factor of $100 million, we end up with the story of my friend&nbsp;Barry.</p>
-<p><center></p>
-<table border="1" cellpadding="5" cellspacing="0"><tbody><tr> <td>Name </td><td>$ </td><td>Fraction </td><td>Barry</td></tr><tr> <td><span class="caps">US</span> Debt </td><td>13.8 trillion </td><td>3.9 </td><td>$138,495.50</td></tr><tr> <td>Total Spending </td><td>3.55 trillion </td><td>1.0 </td><td>$35,500.00</td></tr><tr> <td>Budget Deficit </td><td>1.17 trillion </td><td>3.3E-1 </td><td>$11,690.0</td></tr><tr> <td>1 trillion </td><td>1 trillion </td><td>2.8E-1 </td><td>$10,000.00</td></tr><tr><td><span class="caps">SS</span> / Def / <span class="caps">MM</span> </td><td>730 billion </td><td>2.1E-1 </td><td>$7,296.67</td></tr><tr> <td>Education </td><td>93 billion </td><td>2.6E-2  </td><td>$930.00</td></tr><tr> <td>Taxes (250G+) </td><td>54 billion </td><td>1.5E-2 </td><td>$540.00</td></tr><tr> <td>Science </td><td>31 billion </td><td>8.7E-3 </td><td>$310.00</td></tr><tr> <td>1 billion </td><td>1 billion </td><td>2.8E-4  </td><td>$10.00</td></tr><tr> <td><span class="caps">NPR</span> </td><td>7 million </td><td>2.0E-6  </td><td>$0.07</td></tr><tr> <td>1 million </td><td>1 million </td><td>2.8E-7 </td><td>$0.01</td></tr></tbody></table>
-
-<p></center></p>
-<p>As you&#8217;ll notice, Barry makes <mathjax>$23,810.00 a year (total receipts)[he's a grad student], but spends $</mathjax>35,500 a year.  This has created his current debt problem.  Barry has <mathjax>$138,495 in credit card debt, and still overspends by $</mathjax>11,690 a&nbsp;year.  </p>
-<p>How does Barry spend his money?  Well, every year Barry buys some <mathjax>$7,300 in guns, spends another $</mathjax>14,600 mostly taking care of his grandma.  He pays a tuition of <mathjax>$930 a year at school, and $</mathjax>310 on science books.  Every year he donates 7 cents to&nbsp;<span class="caps">NPR</span>. </p>
-<p>Every million <span class="caps">US</span> dollars is 1 penny in Barry&nbsp;dollars.  </p>
+<p>Now, this might not be a fair comparison, but let&#8217;s scale down the <span class="caps">US</span>
+budget to sizes that a person can understand. By scaling by a factor of
+$100 million, we end up with the story of my friend&nbsp;Barry.</p>
+<hr />
+<p>Name             <mathjax>$               Fraction   Barry
+  US Debt          13.8 trillion   3.9        $</mathjax>138,495.50
+  Total Spending   3.55 trillion   1.0        <mathjax>$35,500.00
+  Budget Deficit   1.17 trillion   3.3E-1     $</mathjax>11,690.0
+  1 trillion       1 trillion      2.8E-1     <mathjax>$10,000.00
+  SS / Def / MM    730 billion     2.1E-1     $</mathjax>7,296.67
+  Education        93 billion      2.6E-2     <mathjax>$930.00
+  Taxes (250G+)    54 billion      1.5E-2     $</mathjax>540.00
+  Science          31 billion      8.7E-3     <mathjax>$310.00
+  1 billion        1 billion       2.8E-4     $</mathjax>10.00
+  <span class="caps">NPR</span>              7 million       2.0E-6     <mathjax>$0.07
+  1 million        1 million       2.8E-7     $</mathjax>0.01</p>
+<hr />
+<p>As you&#8217;ll notice, Barry makes <mathjax>$23,810.00 a year (total receipts)[he's a
+grad student], but spends $</mathjax>35,500 a year. This has created his current
+debt problem. Barry has <mathjax>$138,495 in credit card debt, and still
+overspends by $</mathjax>11,690 a year. How does Barry spend his money? Well,
+every year Barry buys some <mathjax>$7,300 in guns, spends another $</mathjax>14,600 mostly
+taking care of his grandma. He pays a tuition of <mathjax>$930 a year at school,
+and $</mathjax>310 on science books. Every year he donates 7 cents to <span class="caps">NPR</span>. Every
+million <span class="caps">US</span> dollars is 1 penny in Barry&nbsp;dollars.</p>
 <h3>Work&nbsp;Week</h3>
-
-<p>That might not have been fair.  This time, lets scale the <span class="caps">US</span> government spending to a work week of 40 hours.  I think a work week is a large amount of time that I still have a real grasp&nbsp;for.</p>
-<p><center></p>
-<table border="1" cellpadding="5" cellspacing="0"><tbody><tr> <td>Name </td><td>$  </td><td>Work Time </td><td>Guess at time</td></tr><tr> <td><span class="caps">US</span> Debt </td><td>13.8 trillion </td><td>156 hours </td><td>Work month</td></tr><tr> <td>Total Spending </td><td>3.55 trillion  </td><td>40 hours </td><td>Work week</td></tr><tr> <td>Budget Deficit </td><td>1.17 trillion  </td><td>13 hours </td><td>All Mon and Tue morn</td></tr><tr> <td>1 trillion </td><td>1 trillion </td><td>11.3 hours </td><td>two days of good work</td></tr><tr><td><span class="caps">SS</span> / Def / <span class="caps">MM</span> </td><td>730 billion </td><td>8.2 hour</td><td>true work in a day</td></tr><tr> <td>Education </td><td>93 billion  </td><td>63 minutes </td><td>lunch break</td></tr><tr> <td>Taxes (250G+) </td><td>54 billion  </td><td>36 minutes </td><td>cooler chat</td></tr><tr> <td>Science </td><td>31 billion  </td><td>21 minutes </td><td>Show on Hulu</td></tr><tr> <td>1 billion </td><td>1 billion   </td><td>40 seconds </td><td>Stretching at desk</td></tr><tr> <td><span class="caps">NPR</span> </td><td>7 million   </td><td>0.3 seconds </td><td>mouse click</td></tr><tr> <td>1 million </td><td>1 million  </td><td>0.04 seconds </td><td>blink</td></tr></tbody></table>
-
-<p></center></p>
+<p>That might not have been fair. This time, lets scale the <span class="caps">US</span> government
+spending to a work week of 40 hours. I think a work week is a large
+amount of time that I still have a real grasp&nbsp;for.</p>
+<hr />
+<p>Name             $               Work Time      Guess at time
+  <span class="caps">US</span> Debt          13.8 trillion   156 hours      Work month
+  Total Spending   3.55 trillion   40 hours       Work week
+  Budget Deficit   1.17 trillion   13 hours       All Mon and Tue morn
+  1 trillion       1 trillion      11.3 hours     two days of good work
+  <span class="caps">SS</span> / Def / <span class="caps">MM</span>    730 billion     8.2 hour       true work in a day
+  Education        93 billion      63 minutes     lunch break
+  Taxes (250G+)    54 billion      36 minutes     cooler chat
+  Science          31 billion      21 minutes     Show on Hulu
+  1 billion        1 billion       40 seconds     Stretching at desk
+  <span class="caps">NPR</span>              7 million       0.3 seconds    mouse click
+  1 million        1 million       0.04 seconds&nbsp;blink</p>
+<hr />
 <h3>Cross&nbsp;Country</h3>
-
-<p>Now lets scale to a distance.  The longest drive I&#8217;ve ever done is from Los Angeles, <span class="caps">CA</span> to Orlando, Fl, which was 2511 miles.  In terms of this scale, the budget breaks down&nbsp;as:</p>
-<p><center></p>
-<table border="1" cellpadding="5" cellspacing="0"><tbody><tr> <td>Name </td><td>$  </td><td>Dist </td><td></td></tr><tr> <td><span class="caps">US</span> Debt </td><td>13.8 trillion </td><td>9796 mi </td><td><span class="caps">NY</span> - Sydney</td></tr><tr> <td>Total Spending </td><td>3.55 trillion  </td><td>2511 mi </td><td><span class="caps">LA</span> - Orlando</td></tr><tr> <td>Budget Deficit </td><td>1.17 trillion  </td><td>827 mi </td><td>Texas</td></tr><tr> <td>1 trillion </td><td>1 trillion </td><td>707 mi </td><td>
-</td></tr><tr><td><span class="caps">SS</span> / Def / <span class="caps">MM</span> </td><td>730 billion </td><td>516 mi </td><td>Orlando - Mobile</td></tr><tr> <td>Education </td><td>93 billion  </td><td>66 mi </td><td>
-</td></tr><tr> <td>Taxes (250G+) </td><td>54 billion  </td><td>38 mi </td><td>
-</td></tr><tr> <td>Science </td><td>31 billion  </td><td>22 mi </td><td>Cross town</td></tr><tr> <td>1 billion </td><td>1 billion   </td><td>0.7 mi </td><td>14 blocks</td></tr><tr> <td><span class="caps">NPR</span> </td><td>7 million   </td><td>9 yards </td><td>
-</td></tr><tr> <td>1 million </td><td>1 million  </td><td>4 feet </td><td>
-</td></tr></tbody></table>
-
-<p></center></p>
-<p>(So I just want to point out again, claiming that cutting <span class="caps">NPR</span> funding makes a dent in the <span class="caps">US</span> budget is similar to claiming you&#8217;ve moved closer to Orlando (while in <span class="caps">LA</span>) by crossing the&nbsp;room.)</p>
+<p>Now lets scale to a distance. The longest drive I&#8217;ve ever done is from
+Los Angeles, <span class="caps">CA</span> to Orlando, Fl, which was 2511 miles. In terms of this
+scale, the budget breaks down&nbsp;as:</p>
+<hr />
+<p>Name             $               Dist    <br />
+  <span class="caps">US</span> Debt          13.8 trillion   9796 mi   <span class="caps">NY</span> - Sydney
+  Total Spending   3.55 trillion   2511 mi   <span class="caps">LA</span> - Orlando
+  Budget Deficit   1.17 trillion   827 mi    Texas
+  1 trillion       1 trillion      707 mi  <br />
+  <span class="caps">SS</span> / Def / <span class="caps">MM</span>    730 billion     516 mi    Orlando - Mobile
+  Education        93 billion      66 mi   <br />
+  Taxes (250G+)    54 billion      38 mi   <br />
+  Science          31 billion      22 mi     Cross town
+  1 billion        1 billion       0.7 mi    14 blocks
+  <span class="caps">NPR</span>              7 million       9 yards <br />
+  1 million        1 million       4&nbsp;feet    </p>
+<hr />
+<p>(So I just want to point out again, claiming that cutting <span class="caps">NPR</span> funding
+makes a dent in the <span class="caps">US</span> budget is similar to claiming you&#8217;ve moved closer
+to Orlando (while in <span class="caps">LA</span>) by crossing the&nbsp;room.)</p>
 <h2>The&nbsp;Lesson</h2>
-
-<p>So, without getting too political&#8230;  I&#8217;d just like to point out that if our politicians are serious about solving the budget crisis, they need to stop talking about million dollar programs, and start taking about 100 billion dollar ones.  The problem is that it&#8217;s hard to either slash funding for large programs like defense, or social security, and it&#8217;s even harder raise taxes (really at all).  But if we never consider those options, we&#8217;re never going to get out of the&nbsp;rut.</p>
-<p>In my undergraduate physics lab, the instructor had a mantra:  &#8220;A number without context is meaningless&#8221;.  Now, he originally meant the statement to be a lesson on how important it is to quote errors on your measurements, but I think I can adapt it to apply to giving out numbers like 7 billion without a sense of&nbsp;scale.</p>
+<p>So, without getting too political&#8230; I&#8217;d just like to point out that if
+our politicians are serious about solving the budget crisis, they need
+to stop talking about million dollar programs, and start taking about
+100 billion dollar ones. The problem is that it&#8217;s hard to either slash
+funding for large programs like defense, or social security, and it&#8217;s
+even harder raise taxes (really at all). But if we never consider those
+options, we&#8217;re never going to get out of the rut. In my undergraduate
+physics lab, the instructor had a mantra: &#8220;A number without context is
+meaningless&#8221;. Now, he originally meant the statement to be a lesson on
+how important it is to quote errors on your measurements, but I think I
+can adapt it to apply to giving out numbers like 7 billion without a
+sense of&nbsp;scale.</p>
 			
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="thevirtuosi" data-lang="en" data-size="large" data-related="thevirtuosi">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

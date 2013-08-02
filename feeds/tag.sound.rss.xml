@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://localhost:8000/feeds/tag.sound.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 21 Apr 2010 16:31:00 -0400</lastBuildDate><item><title>Laser Gun Recoil: Follow-up</title><link>http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html</link><description>&lt;p&gt;Matt Springer over at &lt;a href="http://scienceblogs.com/builtonfacts/"&gt;Built on Fact&lt;/a&gt;s has a &lt;a href="http://scienceblogs.com/builtonfacts/2010/04/laser_rifle_recoil.php"&gt;very nice post&lt;/a&gt; following up on my earlier analysis of &lt;a href="http://thevirtuosi.blogspot.com/2010/04/today-id-like-to-approach-question-near.html"&gt;whether or not a laser gun would recoil&lt;/a&gt;.  In my analysis I came to the conclusion that the momentum delivered was much less than that of a conventional gun, but that the impulse, and hence the force delivered, was about the same.  However, that force was delivered over a ~30ns timescale, which left open the question of whether or not the wielder would be able to feel that&amp;nbsp;recoil.&lt;/p&gt;
-&lt;p&gt;While I had thought to possibly return to this issue at some point, Matt has beat me to it.  This is fortuitous, because I wasn&amp;#8217;t sure quite where to start with the question, while he approaches it in a very sensible, clear manner.  The gist of his post is that he compares our response to short time scale forces to our ability to sense sound.  I won&amp;#8217;t go through his calculations, you can check those out for yourself, but he concludes that it is very unlikely that we could feel the recoil of our laser&amp;nbsp;gun.&lt;/p&gt;
-&lt;p&gt;Case closed.  Though, like any good scientist, we may choose to reopen it later if more evidence comes to&amp;nbsp;light.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Wed, 21 Apr 2010 16:31:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-04-21:posts/laser-gun-recoil-follow-up.html</guid><category>recoil</category><category>laser</category><category>sound</category><category>momentum</category><category>gun</category></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://localhost:8000/feeds/tag.sound.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 21 Apr 2010 16:31:00 -0400</lastBuildDate><item><title>Laser Gun Recoil: Follow-up</title><link>http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html</link><description>&lt;p&gt;Matt Springer over at &lt;a href="http://scienceblogs.com/builtonfacts/"&gt;Built on
+Fact&lt;/a&gt;s has a &lt;a href="http://scienceblogs.com/builtonfacts/2010/04/laser_rifle_recoil.php"&gt;very nice
+post&lt;/a&gt;
+following up on my earlier analysis of &lt;a href="http://thevirtuosi.blogspot.com/2010/04/today-id-like-to-approach-question-near.html"&gt;whether or not a laser gun would
+recoil&lt;/a&gt;.
+In my analysis I came to the conclusion that the momentum delivered was
+much less than that of a conventional gun, but that the impulse, and
+hence the force delivered, was about the same. However, that force was
+delivered over a \~30ns timescale, which left open the question of
+whether or not the wielder would be able to feel that recoil. While I
+had thought to possibly return to this issue at some point, Matt has
+beat me to it. This is fortuitous, because I wasn&amp;#8217;t sure quite where to
+start with the question, while he approaches it in a very sensible,
+clear manner. The gist of his post is that he compares our response to
+short time scale forces to our ability to sense sound. I won&amp;#8217;t go
+through his calculations, you can check those out for yourself, but he
+concludes that it is very unlikely that we could feel the recoil of our
+laser gun. Case closed. Though, like any good scientist, we may choose
+to reopen it later if more evidence comes to&amp;nbsp;light.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jesse</dc:creator><pubDate>Wed, 21 Apr 2010 16:31:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2010-04-21:posts/laser-gun-recoil-follow-up.html</guid><category>recoil</category><category>laser</category><category>sound</category><category>momentum</category><category>gun</category></item></channel></rss>

@@ -1,66 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.magnetar.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2011-01-30T17:22:00-05:00</updated><entry><title>The Magnetar Credit Card Swipe</title><link href="http://thephysicsvirtuosi.com/posts/the-magnetar-credit-card-swipe.html" rel="alternate"></link><updated>2011-01-30T17:22:00-05:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2011-01-30:posts/the-magnetar-credit-card-swipe.html</id><summary type="html">&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s1600/nedflanderscredit.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="214" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s320/nedflanderscredit.jpg" width="320" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Ned Flanders&amp;#8217; credit card doesn&amp;#8217;t satisfy the &lt;a href="http://en.wikipedia.org/wiki/Luhn_algorithm"&gt;Luhn&lt;/a&gt; checksum, 
-but could probably still be erased by a magnetar. &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;Hello, Internet!  Today I&amp;#8217;d like to talk about the Magnetar Credit Card Swipe.  Sounds like some sinister short on a derivatives deal, doesn&amp;#8217;t it?  Well, no need to worry, we don&amp;#8217;t deal with scary things like that here.  Instead, we are going to talk about a super-magnetized neutron star speeding past&amp;nbsp;Earth. &lt;/p&gt;
-&lt;p&gt;A while ago I heard that a magnetar can erase all the world&amp;#8217;s credit cards from half the distance to the moon.  I did a little research and it seems like this is the go-to &amp;#8220;fun fact&amp;#8221; about magnetars.  Almost every time they are brought up in a popular science article, their credit card-erasing prowess is sure to get a mention.  So let&amp;#8217;s check it&amp;nbsp;out!&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;
-First things first, though.  What the heck is a magnetar [1]?  Well, &amp;#8220;magnetar&amp;#8221; is just a spiffy name for a particular flavor of neutron star.  Now, neutron stars are already pretty extreme objects.  They&amp;#8217;ve got a little more than the mass of the sun squished down to the size of a big city with a central density over 10 trillion times greater than&amp;nbsp;lead.    &lt;/p&gt;
-&lt;table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TUXMdXcrmoI/AAAAAAAAAJI/K2MVmanh5g4/s1600/earthmag.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"&gt;&lt;img border="0" height="187" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TUXMdXcrmoI/AAAAAAAAAJI/K2MVmanh5g4/s200/earthmag.png" width="200" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;Dipolar magnetic field&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;What makes magnetars truly name-worthy (and more extreme than Doritos and Mountain Dew at the X-Games) is the fact that they have strong magnetic fields.  And when I say strong, I mean &lt;i&gt;really&lt;/i&gt; strong.  Taking the magnetic field to be dipolar (like the Earth&amp;#8217;s, see figure), the field at the poles of a magnetar can be as high as 10^15 gauss [2].  For comparison, the magnetic field of the Earth is about half a gauss and the big magnets used in MRIs are about 10^4 gauss.  So we&amp;#8217;re talking about some big&amp;nbsp;fields!&lt;/p&gt;
-&lt;p&gt;Looking up the specs for a typical credit card, it looks like most take about 1000 gauss to erase.  And now we can get&amp;nbsp;started.&lt;/p&gt;
-&lt;p&gt;I always forget the exact form of the magnetic field of a dipole, but Jackson doesn&amp;#8217;t.  He tells me that it&amp;nbsp;is&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ \vec{B}\left(\vec{r}\right) = \frac{3\vec{n}\left(\vec{n}\cdot\vec{m}\right) - \vec{m}}{|\vec{r} |^3}$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where m is the magnetic dipole moment, r is the displacement vector to where we are measuring the field, and n is a unit vector that points to where we are&amp;nbsp;measuring. &lt;/p&gt;
-&lt;p&gt;To find the magnitude (which is what we really care about), we just take the dot product of the vector with itself and take the square root.  Working this out we&amp;nbsp;get&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ B\left(\vec{r}\right) = \frac{|\vec{m}|}{r^3}{\left[ 3\cos^2{\theta}+1\right]}^{1/2} $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where theta is the angle between the magnetic moment vector and the direction vector n.  But we are just looking for a rough estimate here so let&amp;#8217;s just set the cosine term to one.  Now we&amp;nbsp;have&lt;/p&gt;
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;$$ B\left(r\right) = \frac{2|\vec{m}|}{r^3}$$&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;
-&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;We can now use the above to our advantage.  Since we are assuming we know the polar magnetic field strength, we can rearrange and solve for the magnetic moment.  At the pole of a star the distance is just going to be the radius, so for radius R and field strength Bp, we get&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;
-&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;$$ |\vec{m}|} = \frac{1}{2}B_{p}R^3 $$&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;
-&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;Plugging this back in, we get a nice little formula for the strength of the magnetic field in terms of the stellar radius and the polar field strength&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;
-&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;$$B(r) = B_{p}{\left(\frac{R}{r}\right)}^3 $$&lt;/div&gt;
-
-&lt;div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"&gt;
-&lt;/div&gt;
-
-&lt;div&gt;And we are almost there!  Rearranging now for r, we get
-
-$$r = R{\left[\frac{B_p}{B(r)}\right]}^{1/3} $$
-
-Huzzah!  Now we just need to plug in some values.  Well, we&amp;#8217;ll use Bp  = 10^15 gauss, B(r) = 1000 gauss (strong enough field to erase credit cards) and R = 10 km, which gives&amp;#8230;
-
-$$ r \approx 10km \times {\left(\frac{10^{15}gauss}{10^{3}gauss}\right)}^{1/3} $$
-
-so
-
-$$ r \approx \mbox{100,000 km} $$
-
-The moon is about 380,000 km away.  So we find that the magnetar will erase all credit cards up to a little over a quarter the distance to the moon.  Not bad!  However, all this talk of &amp;#8220;half&amp;#8221; and &amp;#8220;quarter&amp;#8221; is a bit misleading given that our best guesses here will be order of magnitude.
-
-But, overall, we see that a magnetar at roughly the Earth-Moon distance would have a good shot at erasing your credit cards.  Fun fact confirmed!
-
-&lt;/div&gt;
-
-&lt;div&gt;[1]  For a really nice Scientific American article about magnetars, see &lt;a href="http://solomon.as.utexas.edu/~duncan/sciam.pdf"&gt;here&lt;/a&gt;.  For more information than you could probably ever want, see &lt;a href="http://solomon.as.utexas.edu/~duncan/magnetar.html"&gt;here&lt;/a&gt;.
-
-&lt;/div&gt;
-
-&lt;div&gt;[2]  For those of you who prefer your magnetic field strengths given in units named after someone played by David Bowie in a &lt;a href="http://en.wikipedia.org/wiki/The_Prestige_(film)#Cast"&gt;movie&lt;/a&gt;, you may note the conversion:  1 gauss = 10^-4 tesla.&lt;/div&gt;</summary><category term="magnetar"></category><category term="credit cards"></category><category term="scott bakula"></category><category term="neutron star"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.magnetar.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2011-01-30T17:22:00-05:00</updated><entry><title>The Magnetar Credit Card Swipe</title><link href="http://thephysicsvirtuosi.com/posts/the-magnetar-credit-card-swipe.html" rel="alternate"></link><updated>2011-01-30T17:22:00-05:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2011-01-30:posts/the-magnetar-credit-card-swipe.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s1600/nedflanderscredit.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TTumQ-3TLgI/AAAAAAAAAJE/BI366RfOTR0/s320/nedflanderscredit.jpg" /&gt;&lt;/a&gt;
+  Ned Flanders&amp;#8217; credit card doesn&amp;#8217;t satisfy the &lt;a href="http://en.wikipedia.org/wiki/Luhn_algorithm"&gt;Luhn&lt;/a&gt; checksum, but could probably still be erased by a&amp;nbsp;magnetar.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Hello, Internet! Today I&amp;#8217;d like to talk about the Magnetar Credit Card
+Swipe. Sounds like some sinister short on a derivatives deal, doesn&amp;#8217;t
+it? Well, no need to worry, we don&amp;#8217;t deal with scary things like that
+here. Instead, we are going to talk about a super-magnetized neutron
+star speeding past Earth. A while ago I heard that a magnetar can erase
+all the world&amp;#8217;s credit cards from half the distance to the moon. I did a
+little research and it seems like this is the go-to &amp;#8220;fun fact&amp;#8221; about
+magnetars. Almost every time they are brought up in a popular science
+article, their credit card-erasing prowess is sure to get a mention. So
+let&amp;#8217;s check it out! First things first, though. What the heck is a
+magnetar [1]? Well, &amp;#8220;magnetar&amp;#8221; is just a spiffy name for a particular
+flavor of neutron star. Now, neutron stars are already pretty extreme
+objects. They&amp;#8217;ve got a little more than the mass of the sun squished
+down to the size of a big city with a central density over 10 trillion
+times greater than&amp;nbsp;lead.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TUXMdXcrmoI/AAAAAAAAAJI/K2MVmanh5g4/s1600/earthmag.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TUXMdXcrmoI/AAAAAAAAAJI/K2MVmanh5g4/s200/earthmag.png" /&gt;&lt;/a&gt;
+  Dipolar magnetic&amp;nbsp;field&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What makes magnetars truly name-worthy (and more extreme than Doritos
+and Mountain Dew at the X-Games) is the fact that they have strong
+magnetic fields. And when I say strong, I mean &lt;em&gt;really&lt;/em&gt; strong. Taking
+the magnetic field to be dipolar (like the Earth&amp;#8217;s, see figure), the
+field at the poles of a magnetar can be as high as 10^15 gauss [2]. For
+comparison, the magnetic field of the Earth is about half a gauss and
+the big magnets used in MRIs are about 10^4 gauss. So we&amp;#8217;re talking
+about some big fields! Looking up the specs for a typical credit card,
+it looks like most take about 1000 gauss to erase. And now we can get
+started. I always forget the exact form of the magnetic field of a
+dipole, but Jackson doesn&amp;#8217;t. He tells me that it is &lt;mathjax&gt;$$
+\vec{B}\left(\vec{r}\right) =
+\frac{3\vec{n}\left(\vec{n}\cdot\vec{m}\right) -
+\vec{m}}{|\vec{r} |^3}$$&lt;/mathjax&gt; where m is the magnetic dipole moment, r is
+the displacement vector to where we are measuring the field, and n is a
+unit vector that points to where we are measuring. To find the magnitude
+(which is what we really care about), we just take the dot product of
+the vector with itself and take the square root. Working this out we get
+&lt;mathjax&gt;$$ B\left(\vec{r}\right) = \frac{|\vec{m}|}{r^3}{\left[
+3\cos^2{\theta}+1\right]}^{1/2} $$&lt;/mathjax&gt; where theta is the angle between
+the magnetic moment vector and the direction vector n. But we are just
+looking for a rough estimate here so let&amp;#8217;s just set the cosine term to
+one. Now we have
+&lt;mathjax&gt;$$ B\left(r\right) = \frac{2|\vec{m}|}{r^3}$$&lt;/mathjax&gt;
+We can now use the above to our advantage. Since we are assuming we know
+the polar magnetic field strength, we can rearrange and solve for the
+magnetic moment. At the pole of a star the distance is just going to be
+the radius, so for radius R and field strength Bp, we get
+&lt;mathjax&gt;$$ |\vec{m}|} = \frac{1}{2}B_{p}R^3 $$&lt;/mathjax&gt;
+Plugging this back in, we get a nice little formula for the strength of
+the magnetic field in terms of the stellar radius and the polar field
+strength
+&lt;mathjax&gt;$$B(r) = B_{p}{\left(\frac{R}{r}\right)}^3 $$&lt;/mathjax&gt;
+And we are almost there! Rearranging now for r, we get &lt;mathjax&gt;$$r =
+R{\left[\frac{B_p}{B(r)}\right]}^{1/3} $$&lt;/mathjax&gt; Huzzah! Now we just need
+to plug in some values. Well, we&amp;#8217;ll use Bp = 10^15 gauss, B(r) = 1000
+gauss (strong enough field to erase credit cards) and R = 10 km, which
+gives&amp;#8230; &lt;mathjax&gt;$$ r \approx 10km \times
+{\left(\frac{10^{15}gauss}{10^{3}gauss}\right)}^{1/3} $$&lt;/mathjax&gt; so &lt;mathjax&gt;$$ r
+\approx \mbox{100,000 km} $$&lt;/mathjax&gt; The moon is about 380,000 km away. So we
+find that the magnetar will erase all credit cards up to a little over a
+quarter the distance to the moon. Not bad! However, all this talk of
+&amp;#8220;half&amp;#8221; and &amp;#8220;quarter&amp;#8221; is a bit misleading given that our best guesses
+here will be order of magnitude. But, overall, we see that a magnetar at
+roughly the Earth-Moon distance would have a good shot at erasing your
+credit cards. Fun fact confirmed!
+[1] For a really nice Scientific American article about magnetars, see
+&lt;a href="http://solomon.as.utexas.edu/~duncan/sciam.pdf"&gt;here&lt;/a&gt;. For more
+information than you could probably ever want, see
+&lt;a href="http://solomon.as.utexas.edu/~duncan/magnetar.html"&gt;here&lt;/a&gt;.
+[2] For those of you who prefer your magnetic field strengths given in
+units named after someone played by David Bowie in a
+&lt;a href="http://en.wikipedia.org/wiki/The_Prestige_(film)#Cast"&gt;movie&lt;/a&gt;, you may
+note the conversion: 1 gauss = 10^-4&amp;nbsp;tesla.&lt;/p&gt;</summary><category term="magnetar"></category><category term="credit cards"></category><category term="scott bakula"></category><category term="neutron star"></category></entry></feed>

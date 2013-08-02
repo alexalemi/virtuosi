@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.momentum.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2010-04-21T16:31:00-04:00</updated><entry><title>Laser Gun Recoil: Follow-up</title><link href="http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html" rel="alternate"></link><updated>2010-04-21T16:31:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2010-04-21:posts/laser-gun-recoil-follow-up.html</id><summary type="html">&lt;p&gt;Matt Springer over at &lt;a href="http://scienceblogs.com/builtonfacts/"&gt;Built on Fact&lt;/a&gt;s has a &lt;a href="http://scienceblogs.com/builtonfacts/2010/04/laser_rifle_recoil.php"&gt;very nice post&lt;/a&gt; following up on my earlier analysis of &lt;a href="http://thevirtuosi.blogspot.com/2010/04/today-id-like-to-approach-question-near.html"&gt;whether or not a laser gun would recoil&lt;/a&gt;.  In my analysis I came to the conclusion that the momentum delivered was much less than that of a conventional gun, but that the impulse, and hence the force delivered, was about the same.  However, that force was delivered over a ~30ns timescale, which left open the question of whether or not the wielder would be able to feel that&amp;nbsp;recoil.&lt;/p&gt;
-&lt;p&gt;While I had thought to possibly return to this issue at some point, Matt has beat me to it.  This is fortuitous, because I wasn&amp;#8217;t sure quite where to start with the question, while he approaches it in a very sensible, clear manner.  The gist of his post is that he compares our response to short time scale forces to our ability to sense sound.  I won&amp;#8217;t go through his calculations, you can check those out for yourself, but he concludes that it is very unlikely that we could feel the recoil of our laser&amp;nbsp;gun.&lt;/p&gt;
-&lt;p&gt;Case closed.  Though, like any good scientist, we may choose to reopen it later if more evidence comes to&amp;nbsp;light.&lt;/p&gt;</summary><category term="recoil"></category><category term="laser"></category><category term="sound"></category><category term="momentum"></category><category term="gun"></category></entry><entry><title>Would a laser gun recoil?</title><link href="http://thephysicsvirtuosi.com/posts/would-a-laser-gun-recoil-.html" rel="alternate"></link><updated>2010-04-08T23:16:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2010-04-08:posts/would-a-laser-gun-recoil-.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;d like to approach a question near and dear to many a geek heart: do laser guns have recoil?
-&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s1600/19990814dogfight.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="150" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s200/19990814dogfight.jpg" width="200" /&gt;&lt;/a&gt;&lt;/div&gt;
-Let&amp;#8217;s motivate our question a little bit.  I&amp;#8217;ve wondered about this question since I saw star wars.  Though I&amp;#8217;m no firearms expert, the recoil in guns must come from conservation of momentum principles.  Momentum is conserved in a system.  The gun starts with zero momentum.  We fire, give the bullet momentum, and so to keep the system at zero momentum, the gun must gain equal and opposite momentum.  That is, the gun will move&amp;nbsp;backwards.&lt;/p&gt;
-&lt;p&gt;All of that was for conventional guns.  Light carries momentum, so if we fire a pulse of light, we expect our laser gun to recoil.  So yes, they do have recoil.  Satisfied, dear readers?  Neither am I.  The question we really mean to ask is, does a laser gun have noticeable&amp;nbsp;recoil?&lt;/p&gt;
-&lt;p&gt;&lt;a name='more'&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We need to make a few reasonable assumptions.  Let&amp;#8217;s assume that the laser gun fires a pulse with as much energy as a bullet has kinetic energy, &lt;span class="caps"&gt;KE&lt;/span&gt;.  The energy, E, of light is related to its momentum, p, by E=pc, where c is the speed of light.  This gives a momentum&amp;nbsp;of&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ E=KE=pc $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ p=\frac{KE}{c}$$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;What is the kinetic energy of a bullet?  A little searching reveals that a .22 bullet is ~2.5g and fires with a muzzle velocity of ~330m/s.  Kinetic energy is given by &lt;span class="caps"&gt;KE&lt;/span&gt;=1/2mv^2, where m is mass and v velocity.  So, the momentum of a laser pulse with equal energy would&amp;nbsp;be&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$ p=\frac{mv^2}{2c} $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ p=\frac{.0025kg*(330m/s)^2}{2*3\cdot 10^8m/s} $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ p=4.5\cdot10^{-7}kg \cdot m/s $$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;For comparison, the momentum (p=mv) of a .22 bullet is .83 kg*m/s.  The momentum of a laser gun is 2 million times less than the momentum of a .22.  But is momentum all we should consider?  I suspect the &amp;#8216;kick&amp;#8217; we feel on the recoil is directly related to the force that the gun exerts on the holder.  This means that instead of momentum we need to consider impulse, momentum per time.  We estimate the time it takes to fire a .22 is ~.1s, so the force delivered 8.3&amp;nbsp;N. &lt;/p&gt;
-&lt;p&gt;Let&amp;#8217;s estimate the time it takes a laser gun to fire.  Unfortunately, not having a laser gun to fire (feel free to send me one, dear readers), we&amp;#8217;re more or less going to have to guess at the firing time.  Most movies with laser guns show pulses of light (which, incidentally would move so fast we wouldn&amp;#8217;t see them) on the order of a meter or two long.  Given the speed of light, this would give a firing time of ~30 nanoseconds.  This would give a force delivered of 15 N.  This is close to what we estimated or a .22.  So, if movies are to be believed (and really, why wouldn&amp;#8217;t we believe them?), it seems like laser guns may well have&amp;nbsp;recoil.&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;Note:  It is worth questioning if we need the same energy for a laser as for a bullet.  That could certainly change our estimate.  Maybe we&amp;#8217;ll return to this question&amp;nbsp;again.&lt;/i&gt;&lt;/p&gt;</summary><category term="recoil"></category><category term="laser"></category><category term="momentum"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Physics Virtuosi</title><link href="http://thephysicsvirtuosi.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/tag.momentum.atom.xml" rel="self"></link><id>http://thephysicsvirtuosi.com/</id><updated>2010-04-21T16:31:00-04:00</updated><entry><title>Laser Gun Recoil: Follow-up</title><link href="http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html" rel="alternate"></link><updated>2010-04-21T16:31:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2010-04-21:posts/laser-gun-recoil-follow-up.html</id><summary type="html">&lt;p&gt;Matt Springer over at &lt;a href="http://scienceblogs.com/builtonfacts/"&gt;Built on
+Fact&lt;/a&gt;s has a &lt;a href="http://scienceblogs.com/builtonfacts/2010/04/laser_rifle_recoil.php"&gt;very nice
+post&lt;/a&gt;
+following up on my earlier analysis of &lt;a href="http://thevirtuosi.blogspot.com/2010/04/today-id-like-to-approach-question-near.html"&gt;whether or not a laser gun would
+recoil&lt;/a&gt;.
+In my analysis I came to the conclusion that the momentum delivered was
+much less than that of a conventional gun, but that the impulse, and
+hence the force delivered, was about the same. However, that force was
+delivered over a \~30ns timescale, which left open the question of
+whether or not the wielder would be able to feel that recoil. While I
+had thought to possibly return to this issue at some point, Matt has
+beat me to it. This is fortuitous, because I wasn&amp;#8217;t sure quite where to
+start with the question, while he approaches it in a very sensible,
+clear manner. The gist of his post is that he compares our response to
+short time scale forces to our ability to sense sound. I won&amp;#8217;t go
+through his calculations, you can check those out for yourself, but he
+concludes that it is very unlikely that we could feel the recoil of our
+laser gun. Case closed. Though, like any good scientist, we may choose
+to reopen it later if more evidence comes to&amp;nbsp;light.&lt;/p&gt;</summary><category term="recoil"></category><category term="laser"></category><category term="sound"></category><category term="momentum"></category><category term="gun"></category></entry><entry><title>Would a laser gun recoil?</title><link href="http://thephysicsvirtuosi.com/posts/would-a-laser-gun-recoil-.html" rel="alternate"></link><updated>2010-04-08T23:16:00-04:00</updated><author><name>Jesse</name></author><id>tag:thephysicsvirtuosi.com,2010-04-08:posts/would-a-laser-gun-recoil-.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;d like to approach a question near and dear to many a geek
+heart: do laser guns have recoil?
+&lt;a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s1600/19990814dogfight.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S76cWh0vVrI/AAAAAAAAAA8/3AVsx5suF0A/s200/19990814dogfight.jpg" /&gt;&lt;/a&gt;
+Let&amp;#8217;s motivate our question a little bit. I&amp;#8217;ve wondered about this
+question since I saw star wars. Though I&amp;#8217;m no firearms expert, the
+recoil in guns must come from conservation of momentum principles.
+Momentum is conserved in a system. The gun starts with zero momentum. We
+fire, give the bullet momentum, and so to keep the system at zero
+momentum, the gun must gain equal and opposite momentum. That is, the
+gun will move backwards. All of that was for conventional guns. Light
+carries momentum, so if we fire a pulse of light, we expect our laser
+gun to recoil. So yes, they do have recoil. Satisfied, dear readers?
+Neither am I. The question we really mean to ask is, does a laser gun
+have noticeable recoil? We need to make a few reasonable assumptions.
+Let&amp;#8217;s assume that the laser gun fires a pulse with as much energy as a
+bullet has kinetic energy, &lt;span class="caps"&gt;KE&lt;/span&gt;. The energy, E, of light is related to its
+momentum, p, by E=pc, where c is the speed of light. This gives a
+momentum of &lt;mathjax&gt;$$ E=KE=pc $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ p=\frac{KE}{c}$$&lt;/mathjax&gt; What is the kinetic
+energy of a bullet? A little searching reveals that a .22 bullet is
+\~2.5g and fires with a muzzle velocity of \~330m/s. Kinetic energy is
+given by &lt;span class="caps"&gt;KE&lt;/span&gt;=1/2mv^2, where m is mass and v velocity. So, the momentum
+of a laser pulse with equal energy would be &lt;mathjax&gt;$$ p=\frac{mv^2}{2c} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$
+p=\frac{.0025kg*(330m/s)^2}{2*3\cdot 10^8m/s} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$
+p=4.5\cdot10^{-7}kg \cdot m/s $$&lt;/mathjax&gt; For comparison, the momentum (p=mv)
+of a .22 bullet is .83 kg&lt;em&gt;m/s. The momentum of a laser gun is 2 million
+times less than the momentum of a .22. But is momentum all we should
+consider? I suspect the &amp;#8216;kick&amp;#8217; we feel on the recoil is directly related
+to the force that the gun exerts on the holder. This means that instead
+of momentum we need to consider impulse, momentum per time. We estimate
+the time it takes to fire a .22 is \~.1s, so the force delivered 8.3 N.
+Let&amp;#8217;s estimate the time it takes a laser gun to fire. Unfortunately, not
+having a laser gun to fire (feel free to send me one, dear readers),
+we&amp;#8217;re more or less going to have to guess at the firing time. Most
+movies with laser guns show pulses of light (which, incidentally would
+move so fast we wouldn&amp;#8217;t see them) on the order of a meter or two long.
+Given the speed of light, this would give a firing time of \~30
+nanoseconds. This would give a force delivered of 15 N. This is close to
+what we estimated or a .22. So, if movies are to be believed (and
+really, why wouldn&amp;#8217;t we believe them?), it seems like laser guns may
+well have recoil. &lt;/em&gt;Note: It is worth questioning if we need the same
+energy for a laser as for a bullet. That could certainly change our
+estimate. Maybe we&amp;#8217;ll return to this question&amp;nbsp;again.*&lt;/p&gt;</summary><category term="recoil"></category><category term="laser"></category><category term="momentum"></category></entry></feed>
