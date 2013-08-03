@@ -5,3 +5,14 @@
   width: 15em;
 }
 
+body {
+    text-rendering: optimizeLegibility;
+}
+
+.twitter-share-button {
+    float: right;
+}
+
+.btn {
+    float: right;
+}

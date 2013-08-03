@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Physics Virtuosi</title><link>http://thephysicsvirtuosi.com/</link><description></description><atom:link href="http://localhost:8000/feeds/tag.war.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 23 Jun 2013 23:48:00 -0400</lastBuildDate><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>http://thephysicsvirtuosi.com/posts/modeling-international-war.html</link><description>&lt;div style="float: right;"&gt;
+&lt;img src="/static/images/tgpp.jpg"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Recently I finished reading John Mearsheimer&amp;#8217;s excellent political science book
+The Tragedy of Great Power Politics. In this book, Mearscheimer lays out his
+&amp;#8220;offensive realism&amp;#8221; theory of how countries interact with each other in the
+world. The book is quite readable and well-thought-out &amp;#8212; I&amp;#8217;d recommend it to
+anyone who has an inkling for political history and geopolitics. However, as I
+was reading this book, I decided that there was a point of Mearsheimer&amp;#8217;s
+argument which could be improved by a little mathematical&amp;nbsp;analysis.&lt;/p&gt;
+&lt;p&gt;The main tenant of the book is that states are rational actors who act to to
+maximize their standing in the international system. However, states don&amp;#8217;t seek
+to maximize their absolute power, but instead their relative power as compared
+to the other states in the system. In other words, according to this logic the
+United Kingdom position in the early 19th century &amp;#8212; when its army and navy
+could trounce most of the other countries on the globe &amp;#8212; was better than it is
+now &amp;#8212; when many other countries&amp;#8217; armies and navies are comparable to that of
+the &lt;span class="caps"&gt;UK&lt;/span&gt;, despite the &lt;span class="caps"&gt;UK&lt;/span&gt; current army and navy being much better now than they
+were in the early 19th century. According to Mearsheimer, the main determinant
+of state&amp;#8217;s international actions is simply maximizing its relative power in its
+region. All other considerations &amp;#8212; capitalist or communist economy, democratic
+or totalitarian government, even desire for economic growth &amp;#8212; matter little in
+a state&amp;#8217;s choice of what actions it will take. (Perhaps it was this
+simplification of the problem which made the book really appeal to me as a&amp;nbsp;physicist.)&lt;/p&gt;
+
+
+&lt;p&gt;Most of Mearsheimer&amp;#8217;s book is spent exploring the logical corollaries of his
+main tenant, along with some historical examples. He claims that his idea has
+three different predictions for three different possible systems. 1) A balanced
+bipolar system (one where two states have roughly the same amount of power and
+no other state has much to speak of) is the most stable. War will probably not
+break out since, according to Mearsheimer, each state has little to gain from a
+war. (His example is the Cold War, which didn&amp;#8217;t see any actual conflict between
+the &lt;span class="caps"&gt;US&lt;/span&gt; and the &lt;span class="caps"&gt;USSR&lt;/span&gt;.) 2) A balanced multipolar system (N&amp;gt;2 states each share
+roughly the same amount of power) is more prone to war than a bipolar system,
+since a) there is a higher chance that two states are mismatched in power,
+allowing the more powerful to push the less around, and b) there are more
+states to fight. (One of his examples is Europe between 1815 and 1900, when
+there were several great-power wars but nothing that involved the entire
+continent at once.) 3) An unbalanced multipolar system (N&amp;gt;2 states with power,
+but one that has more power than the rest) is the most prone to war of all. In
+this case, the biggest state on the block is almost able to push all the other
+states around. The other states don&amp;#8217;t want that, so two or more of them collude
+to stop the big state from becoming a hegemon &amp;#8212; i.e. they start a war.
+Likewise, the big state is also looking to make itself more relatively
+powerful, so it tries to start wars with the little states, one at a time, to
+reduce their power. (His examples here are Europe immediately before and
+leading up to the Napoleonic Wars, &lt;span class="caps"&gt;WWI&lt;/span&gt;, and &lt;span class="caps"&gt;WWII&lt;/span&gt;.) There is another case, which
+is unipolarity &amp;#8212; one state has all the power &amp;#8212; but there&amp;#8217;s nothing
+interesting there. The big state does what it&amp;nbsp;wants.&lt;/p&gt;
+&lt;p&gt;While I liked Mearsheimer&amp;#8217;s argument in general, something irked me about the
+statement about bipolarity being stable. I didn&amp;#8217;t think that the stability of
+bipolarity (corollary 1 above) actually followed from his main hypothesis.
+After spending some extra time thinking in the shower, I decided how I could
+model Mearsheimer&amp;#8217;s main tenant quantitatively, and that it actually suggested
+that bipolarity was actually&amp;nbsp;unstable!!&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s see if we can&amp;#8217;t quantify Mearsheimer&amp;#8217;s ideas with a model. Each state in
+the system has some power, which we&amp;#8217;ll call P_i. Obviously in reality there are
+plenty of different definitions of power, but in accordance with Mearsheimer&amp;#8217;s
+definition, we&amp;#8217;ll define power simply in a way that if State 1 has power &lt;mathjax&gt;$P_1$&lt;/mathjax&gt;
+&amp;gt; &lt;mathjax&gt;$P_2$&lt;/mathjax&gt;, the power of State 2, then State 1 can beat State 2 in a war. [1]
+Each state does not seek to maximize their total power &lt;mathjax&gt;$P_i$&lt;/mathjax&gt;, but instead their
+relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt;, relative to the total power of the rest of the states, So
+the relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt; would be
+ &lt;mathjax&gt;$$ R_i = P_i / \left( \sum_{j=1}^N P_j \right) \qquad , $$&lt;/mathjax&gt;
+where we take the sum over the relevant players in the system. If there was
+some action that changed the power of some of the players in the system (say a
+war), then the relative power would also change with time &lt;mathjax&gt;$t$&lt;/mathjax&gt;:
+&lt;mathjax&gt;$$ \frac {dR_i}{dt} = \frac {dP_i} {dt} \times \left( \sum_{j=1}^N P_j \right)^{-1} - P_i \times \left( \sum_{j=1}^N P_j \right)^{-2} \times \left(\sum_{j=1}^N \frac {dP_j}{dt} \right) \qquad (1) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;A state will pursue an action that increases its relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt;. So if we
+want to decide whether or not State A will go to war with State B, we need to
+know how war affects a state&amp;#8217;s individual powers. While this seems intractable,
+since we can&amp;#8217;t even precisely define power, a few observations will help us
+narrow down the allowed possibilities to make definitive statements on when war
+is beneficial to a&amp;nbsp;state:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;War always reduces a state&amp;#8217;s absolute power. This is simply a statement that
+in general, war is destructive. Many people die and buildings are bombed,
+neither of which is good for a state. Mathematically, this statement is that in
+wartime, &lt;mathjax&gt;$dP_i/dt &amp;lt; 0$&lt;/mathjax&gt; always. Note that this doesn&amp;#8217;t imply that that &lt;mathjax&gt;$dR_i/dt$&lt;/mathjax&gt;
+is always&amp;nbsp;negative.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The change in power of two states A &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; B in a war should depend only on
+how much power A &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; B have. In addition, it should be independent of the
+labeling of states. Mathematically, &lt;mathjax&gt;$dP_a/dt = f(P_a, P_b)$&lt;/mathjax&gt;, and &lt;mathjax&gt;$dP_b/dt = f(P_b,
+P_a)$&lt;/mathjax&gt; with the same function &lt;mathjax&gt;$f$&lt;/mathjax&gt;.&amp;nbsp;[2]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If State A has more absolute power than State B, and both states are in a
+war, then State B will lose power more rapidly than State A. This is almost a
+re-statement of our definition of power. We defined power such that if State A
+has more absolute power than State B, then State A will win a war against State
+B. So we&amp;#8217;d expect that power translates to the ability to reduce another
+state&amp;#8217;s power, and more power means the ability to reduce another state&amp;#8217;s power
+more&amp;nbsp;rapidly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For simplicity, we&amp;#8217;ll also notice that the decrease of a State A&amp;#8217;s absolute
+power in wartime is largely dependent on the power of State B attacking it, and
+is not so much dependent on how much power State A&amp;nbsp;has.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In general, I think that assumptions 1-3 are usually true, and assumption 4 is
+pretty reasonable. But to simplify the math a little more, I&amp;#8217;m going to pick a
+definite form for the change of power. The simplest possible behavior that
+capture all 4 of the above assumptions is:
+&lt;mathjax&gt;$$ \frac {dx}{dt} = -y \qquad \frac {dy}{dt} = -x \qquad (2) $$&lt;/mathjax&gt;
+where &lt;mathjax&gt;$x$&lt;/mathjax&gt; is the absolute power of State X and &lt;mathjax&gt;$y$&lt;/mathjax&gt; is the absolute power of State
+y. (I&amp;#8217;m switching notation because I want to avoid using too many subscripts.)
+[3] Here I&amp;#8217;m assuming that the rate of change of State X&amp;#8217;s power is directly
+proportional to State Y&amp;#8217;s power, and depends on nothing else (including how
+much power State Y actually has). We&amp;#8217;ll also call &lt;mathjax&gt;$r$&lt;/mathjax&gt; the relative power of State
+X, and &lt;mathjax&gt;$s$&lt;/mathjax&gt; the relative power of State Y. [4] Now we&amp;#8217;re equipped to see when war
+is a good idea, according to our&amp;nbsp;hypotheses.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s examine the case that was bothering me most &amp;#8212; a balanced bipolar system.
+Now we have only two states in the system, X and Y. For starters, let&amp;#8217;s address
+the case where both states start out with equal power &lt;mathjax&gt;$(x = y)$&lt;/mathjax&gt;. If State X goes
+to war with State Y,  how will the relative powers &lt;mathjax&gt;$r =x/(x+y)$&lt;/mathjax&gt; &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; &lt;mathjax&gt;$s=y/(x+y)$&lt;/mathjax&gt;
+change? Looking at Eq. (1), we see that by symmetry both states have to lose
+absolute power equally, so &lt;mathjax&gt;$x(t) = y(t)$&lt;/mathjax&gt; always, and thus &lt;mathjax&gt;$r(t) = s(t)$&lt;/mathjax&gt; always. In
+other words, from a relative power perspective it doesn&amp;#8217;t matter whether the
+states go to war! For our system to be stable against war, we&amp;#8217;d expect that a
+state will get punished if it goes to war, which isn&amp;#8217;t what we have! So our
+system is a neutral equilibrium at&amp;nbsp;best.&lt;/p&gt;
+&lt;p&gt;But it gets worse. For a real balanced bipolar system, both states won&amp;#8217;t have
+exactly the same power, but will instead be approximately equal. Let&amp;#8217;s say that
+the relative power between the two states differs by some small (positive)
+number &lt;mathjax&gt;$e$&lt;/mathjax&gt;, such that &lt;mathjax&gt;$x(0) = x0$&lt;/mathjax&gt; and &lt;mathjax&gt;$y(0) = x0 + e$&lt;/mathjax&gt;. Now what will happen? Looking
+at Eq. (2), we see that, at &lt;mathjax&gt;$t=0$&lt;/mathjax&gt;,
+&lt;mathjax&gt;$$ \frac {dr}{dt} = -(x_0 + e) / (2x_0 + e) + x_0(2x_0 + e) / (2x_0 + e)^2  = -e/(x_0 + e) $$&lt;/mathjax&gt;
+&lt;mathjax&gt;$$ \frac {ds}{dt} = -(x_0) / (2x_0 + e) + (x_0+e)(2x_0 + e) / (2x_0 + e)^2 = + e/(x_0 + e) \qquad .  $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;In other words, if the power balance is slightly upset, even by an
+infinitesimal amount, then the more powerful state should go to war! For a
+balanced bipolar system, peace is unstable, and the two countries should always
+go to war according to this simple model of Mearsheimer&amp;#8217;s realist&amp;nbsp;world.&lt;/p&gt;
+&lt;p&gt;Of course, we&amp;#8217;ve just considered the simplest possible case &amp;#8212; only two states
+in the system (whereas even in a bipolar world there are other, smaller states
+around) who act with perfect information (i.e. both know the power of the other
+state) and can control when they go to war. Also, we&amp;#8217;ve assumed that relative
+power can change only through a decrease of absolute power, and in a
+deterministic way (as opposed to something like economic growth). To really say
+whether bipolarity is stable against war, we&amp;#8217;d need to address all of these in
+our model. A little thought should convince you which of these either a) makes
+a bipolar system stable against war, and b) makes a bipolar system more or less
+stable compared to a multipolar system. Maybe I&amp;#8217;ll address these, as well as
+balanced and unbalanced multipolar systems, in another blog post if people are&amp;nbsp;interested.&lt;/p&gt;
+&lt;p&gt;[1] &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; has some units (not watts). My definition of power is strictly
+comparative, so it might seem that any new scale of power &lt;mathjax&gt;$p_i = f(P_i)$&lt;/mathjax&gt; with an
+arbitrary monotonic function &lt;mathjax&gt;$f(x)$&lt;/mathjax&gt; would also be an appropriate definition.
+However, we would like a scale that facilitates power comparisons if multiple
+states gang up on another. So we would need a new scale such that &lt;mathjax&gt;$p_(i+j) =
+f(P_i + P_j) = f(P_i) + f(P_j) = p_i + p_j$&lt;/mathjax&gt; for all &lt;mathjax&gt;$P_i, P_j$&lt;/mathjax&gt; . The only function
+that behaves like this is a linear function of &lt;mathjax&gt;$P: p_i = A*P_i $&lt;/mathjax&gt;, where A is some
+constant. So our definition of power is basically fixed up to what &amp;#8220;units&amp;#8221; we
+choose. Of course, defining &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; in terms of tangibles (e.g. army size or &lt;span class="caps"&gt;GDP&lt;/span&gt; or
+population size or number of nuclear warheads) would be a difficult task.
+Incidentally, I&amp;#8217;ve also implicitly assumed here that there is a power scale,
+such that if &lt;mathjax&gt;$P_1 &amp;gt; P_2$&lt;/mathjax&gt;, and &lt;mathjax&gt;$P_2 &amp;gt; P_3$&lt;/mathjax&gt;, then &lt;mathjax&gt;$P_1 &amp;gt; P_3$&lt;/mathjax&gt;. But I think
+that&amp;#8217;s a fairly benign&amp;nbsp;assumption.&lt;/p&gt;
+&lt;p&gt;[2] This implicity assumes that it doesn&amp;#8217;t matter which state attacked the
+other, or where the war is taking place, or other things like&amp;nbsp;that.&lt;/p&gt;
+&lt;p&gt;[3] Incidentally this form for the rate-of-change of the power also has the
+advantage that it is scale-free, which we might expect since there is no
+intrinsic &amp;#8220;power scale&amp;#8221; to the problem. Of course there are other forms with
+this property that follow some or all of the assumptions above. For instance,
+something of the form &lt;mathjax&gt;$dx/dt = -xy = dy/dt$&lt;/mathjax&gt; would also be i) scale-invariant, and
+ii) in line with assumptions 1 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 2 and partially inline with assumption 3.
+However I didn&amp;#8217;t use this since a) it&amp;#8217;s nonlinear, and hence a little harder to
+solve the resulting differential equations analytically, and b) the rate of
+decrease of both state&amp;#8217;s power is the same, in contrast to my intuitive feeling
+that the state with less power should lose power more&amp;nbsp;rapidly.&lt;/p&gt;
+&lt;p&gt;[4] Homework for those who are not satisfied with my assumptions: Show that any
+functional form for &lt;mathjax&gt;$dP_i/dt$&lt;/mathjax&gt; that follows assumptions 1-3 above does not change
+the stability of a balanced bipolar&amp;nbsp;system. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brian</dc:creator><pubDate>Sun, 23 Jun 2013 23:48:00 -0400</pubDate><guid>tag:thephysicsvirtuosi.com,2013-06-23:posts/modeling-international-war.html</guid><category>books</category><category>modeling</category><category>war</category></item></channel></rss>

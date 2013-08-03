@@ -14,11 +14,9 @@ the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete
 Marrying these two together, we can give a simple geometric proof of the basic trigonometric&amp;nbsp;derivatives:&lt;/p&gt;
 &lt;p&gt;&lt;mathjax&gt;$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$&lt;/mathjax&gt;&lt;/p&gt;
 &lt;p&gt;Summed up on one diagram:
-&lt;center&gt;
-    &lt;a href="/static/images/trigdiff.pdf"&gt;
-    &lt;img src="/static/images/trigdiff.png" width="100%" alt="Trigonometic Derivatives"&gt;
-    &lt;/a&gt;
-&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/static/images/trigdiff.pdf"&gt;
+    &lt;img src="/static/images/trigdiff.png" width="100\\%" alt="Trigonometic Derivatives"&gt;
+&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 &lt;h3&gt;Short&amp;nbsp;version&lt;/h3&gt;
 &lt;p&gt;By looking at how the line &lt;mathjax&gt;$\sin \alpha$&lt;/mathjax&gt; and &lt;mathjax&gt;$\cos \alpha$&lt;/mathjax&gt; change when we change &lt;mathjax&gt;$\alpha$&lt;/mathjax&gt; a little bit (&lt;mathjax&gt;$d\alpha$&lt;/mathjax&gt;) and noting that we form a similar triangle, we know exactly what those lengths&amp;nbsp;are.&lt;/p&gt;
 
