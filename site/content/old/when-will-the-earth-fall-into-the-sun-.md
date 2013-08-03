@@ -1,6 +1,5 @@
 Title: When will the Earth fall into the Sun? 
 Date: 2012-11-29 22:58:00
-Tags: 
 Category: old
 Slug: when-will-the-earth-fall-into-the-sun-
 Author: Brian
