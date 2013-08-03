@@ -5,3 +5,7 @@
   width: 15em;
 }
 
+body {
+    text-rendering: optimizeLegibility;
+}
+
