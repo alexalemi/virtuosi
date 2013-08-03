@@ -38,6 +38,9 @@ LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),
 # Social widget
 SOCIAL = (('twitter','https://twitter.com/thevirtuosi'),
         ('facebook','https://www.facebook.com/thevirtuosi'),
+        ('github', GITHUB_URL),
+        ('rss', FEED_RSS),
+        ('atom', FEED_ATOM),
         )
 
 

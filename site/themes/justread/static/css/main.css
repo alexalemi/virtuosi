@@ -493,6 +493,11 @@ p[role="contentinfo"] {
   margin-right: 2px;
   vertical-align: -3px;
 }
+.social a[href*='atom.xml']:before {
+  content: url('../images/icons/atom.png');
+  margin-right: 2px;
+  vertical-align: -3px;
+}
 .social a[href*='stackoverflow.com']:before {
   content: url('../images/icons/stackoverflow.png');
   margin-right: 2px;
