@@ -23,7 +23,9 @@ GITHUB_URL = "http://github.com/alexalemi/virtuosi/"
 GITHUB_POSITION = 'right'
 
 STATIC_PATHS = ["images","static",]
-PAGE_DIR = 'content'
+PATH = "content"
+PAGE_DIR = 'pages'
+DISPLAY_PAGES_ON_MENU = True
 
 # Blogroll
 LINKS =  (('Built on Facts', 'http://scienceblogs.com/builtonfacts/'),

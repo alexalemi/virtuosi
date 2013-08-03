@@ -24,11 +24,9 @@ Marrying these two together, we can give a simple geometric proof of the basic t
 $$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$
 
 Summed up on one diagram:
-<center>
-    <a href="/static/images/trigdiff.pdf">
-    <img src="/static/images/trigdiff.png" width="100%" alt="Trigonometic Derivatives">
-    </a>
-</center>
+<p><a href="/static/images/trigdiff.pdf">
+    <img src="/static/images/trigdiff.png" width="100\%" alt="Trigonometic Derivatives">
+</a></p>
 
 ###Short version
 
