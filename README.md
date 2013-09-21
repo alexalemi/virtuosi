@@ -13,31 +13,36 @@ Contributing
 
 Feel free to contribute your post ideas.
 
-Before you begin, make sure you have virtualenv and python installed.
+Before you begin, make sure you have virtualenv and Python installed.  Due
+to updates in `pelican`, it is recommended to have Python 2.7.x or later.  
 
-To create the virtualenvironment we'll use, use the script `make create_env`, 
-but run it with source, i.e. `source create_env`
-this will create a virtual environment in the directory `.env` that we will 
-use to develop, and source the virtual env for you, you should see your 
-command line change so that it starts with a `(.env)` at the start of the prompt, 
-this shows that you are in the virtual environment.
+To create the virtual environment, use the script `make create_env`, which will
+create a folder `./.env` which contains pelican and its dependencies which we
+will use to develop.  If you have side by side installations of Python, you can
+specify which to use in this environment by making sure `which python` returns
+the one you expect by modifying the PATH environment variable, e.g.
+`PATH=/your/path/to/python/bin:${PATH} make create_env`.
 
-To source this environment, if you are coming back later, that is you've already 
-created the environment but are starting a new editing session, use `source source_env` 
-or `source .env/bin/activate`. 
-To exit the virtual environment, use `deactivate`.
+Every time you come back to modify the site, you should switch your Python
+environment back to the one we just created.  To do so, run `source source_env`
+or `source .env/bin/activate` in the root directory or the project.  When you
+do this, you should see your command line change so that it starts with a
+`(.env)` at the start of the prompt, this shows that you are in the virtual
+environment.  To exit the virtual environment, use `deactivate`.
 
 From here:
 
- * write a markdown or restructed text file somewhere in `site/content/`
- * test your build with `make devserver` in the /site/ directory
- * this will serve the site at `http://localhost:8000/`
- * make sure you haven't broken anything.
+ * Write a markdown or restructed text file somewhere in `site/content/`
+ * In the root directory, run `make html` to build the pages
+ * Test your build with `make serve` or `make devserver` in the /site/ directory
+ * This will serve the site at `http://localhost:8000/`
+ * Make sure you haven't broken anything.
  * If you like what you see, commit the change and submit a pull request at github.
- * your post will be reviewed and possibly accepted.
+ * Your post will be reviewed and possibly accepted.
 
-Note that you might want to change the SITEURL in pelicanconf.py to be
-`http://localhost:8000` while you are editing, so that your links all work.
+Note if you are using the devserver, you might want to change the SITEURL in
+pelicanconf.py to be `http://localhost:8000` while you are editing, so that
+your links all work.
 
 Checkout `post_template.md` for an example post in markdown format, 
 fill out as many tags as you can to make the post behave well.
