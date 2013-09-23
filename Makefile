@@ -7,6 +7,11 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+WGET:=$(shell which wget)
+PYTHON:=$(shell which python)
+MATHJAXURL=https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py
+MATHJAXFILE=$(shell find .env -iname site-packages)/markdown/extensions/mathjax.py
+
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
 
 help:
@@ -25,11 +30,15 @@ help:
 	@echo '                                                                       '
 
 create_env: 
-	virtualenv --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
+	virtualenv -p ${PYTHON} --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
 	make mathjax
 
 mathjax: 
-	wget https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py -O .env/local/lib/python2.7/site-packages/markdown/extensions/mathjax.py
+ifdef WGET
+	wget ${MATHJAXURL} -O ${MATHJAXFILE}
+else
+	curl ${MATHJAXURL} > ${MATHJAXFILE}
+endif
 
 html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
