@@ -30,12 +30,13 @@ help:
 	@echo '                                                                       '
 
 create_env: 
-	virtualenv -p ${PYTHON} --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
+	# virtualenv -p ${PYTHON} --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
+	virtualenv .env && . .env/bin/activate && pip install -r requirements.txt
 	make mathjax
 
 mathjax: 
 ifdef WGET
-	wget ${MATHJAXURL} -O ${MATHJAXFILE}
+	wget ${MATHJAXURL} -O - > ${MATHJAXFILE}
 else
 	curl ${MATHJAXURL} > ${MATHJAXFILE}
 endif
