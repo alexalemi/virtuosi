@@ -6,13 +6,12 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-
 WGET:=$(shell which wget)
 PYTHON:=$(shell which python)
 MATHJAXURL=https://raw.github.com/mayoff/python-markdown-mathjax/master/mdx_mathjax.py
 MATHJAXFILE=$(shell find .env -iname site-packages)/markdown/extensions/mathjax.py
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github virtualenv
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -29,9 +28,11 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '                                                                       '
 
-create_env: 
-	# virtualenv -p ${PYTHON} --no-site-packages --distribute .env && . .env/bin/activate && pip install -r requirements.txt
-	virtualenv .env && . .env/bin/activate && pip install -r requirements.txt
+virtualenv:
+	virtualenv -p ${PYTHON} --setuptools .env
+
+create_env:
+	. .env/bin/activate && pip install -r requirements.txt
 	make mathjax
 
 mathjax: 
