@@ -5,18 +5,23 @@
 <div role="main" class="content clearfix">
 {% for article in articles %}
 
-	{% if loop.index == 1 %}
+	{% if loop.index <= 3 %}
+    <div>
 	<article class="wrapper main">
-		<h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+		<h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            <small> By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> </small>
+        </h1>
 		{{ article.summary }} <a class="btn" href="{{ SITEURL }}/{{ article.url }}">read more →</a>
 	</article>
+    </div>
+    <br><br>
 
-	{% if loop.length  > 1 %}
-	<div class="wrapper main">		
-		<h3>Recent posts</h3>
-		<ol class="archive">
-	{% endif %}
-	{% elif loop.index < 7 %}
+    {% elif 3 < loop.index < 10 %}
+        {% if loop.index == 4 %}
+        <div class="wrapper main">		
+            <h3>Recent posts</h3>
+            <ol class="archive">
+        {% endif %}
 			<li class="clearfix"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}"><time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> {{ article.title }}</a></li>
 	{% endif %}
 	{% endfor %}
