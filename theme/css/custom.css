@@ -17,6 +17,12 @@ body {
     float: right;
 }
 
-mathjax {
-    font-family: serif;
+/* mathjax { */
+/*     font-family: serif; */
+/* } */
+
+.mainpostinfo {
+    width: 100%;
+    text-align: right;
 }
+
