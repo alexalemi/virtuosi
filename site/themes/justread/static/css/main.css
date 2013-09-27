@@ -641,11 +641,11 @@ p,
     margin-top: 144px;
   }
   h1 {
-    font-size: 48px;
-    margin-bottom: 48px;
+    font-size: 24px;
+    margin-bottom: 24px;
   }
   h2, header .huge {
-    font-size: 36px;
+    font-size: 24px;
   }
   h2 {
     margin-top: 72px;
@@ -656,7 +656,7 @@ p,
   }
   h4, h5, h6 {
     font-size: 18px;
-    margin-top: 48px;
+    margin-top: 24px;
   }
   .meta, .pages {
     padding-left: 6.25%;
@@ -679,7 +679,7 @@ p,
   }
   code, .codehilite {
     line-height: 1.5;
-    font-size: 36px;
+    font-size: 18px;
   }
   .post > p,
   .post blockquote,
