@@ -1,5 +1,12 @@
 <div class="meta wrapper">
 	<time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+    {% if article.author %}
+    <div>
+    <address class="vcard author">
+        By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+    </address>
+    </div>
+    {% endif %}
 	<ul class="tag clearfix">
 		<li><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></li>
 {% if article.tags %}
