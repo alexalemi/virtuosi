@@ -17,3 +17,6 @@ body {
     float: right;
 }
 
+mathjax {
+    font-family: serif;
+}

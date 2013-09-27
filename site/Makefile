@@ -41,6 +41,7 @@ html: clean $(OUTPUTDIR)/index.html
 
 $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	pelican content -o output -s pelicanconf.py publishconf.py
 
 clean:
 	find $(OUTPUTDIR) -mindepth 1 -delete
