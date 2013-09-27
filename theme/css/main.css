@@ -522,6 +522,7 @@ p[role="contentinfo"] {
 }
 .content {
   margin: 0 5.555555555555555%;
+  /* margin: 0 0em; */
 }
 .meta {
   background: #fafafa;

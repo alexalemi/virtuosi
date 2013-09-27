@@ -28,32 +28,17 @@
     MathJax.Hub.Config({
         "HTML-CSS": {
             styles: {
-                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-        },
+              ".MathJax .mo, .MathJax .mi": {color: "black ! important"}},
+            extensions: ["handle-floats.js"]
+          },
         tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],
-          processEscapes: true}
+          processEscapes: true},
+        delayStartupUntil: "onload"
     });
 </script>
 <script type="text/javascript"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript"> -->
-<!--     MathJax.Hub.Config({ -->
-<!--         config: ["MMLorHTML.js"], -->
-<!--         jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"], -->
-<!--         TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } }, -->
-<!--         extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"], -->
-<!--         tex2jax: { --> 
-<!--             inlineMath: [ [\'$\',\'$\'] ], -->
-<!--             displayMath: [ [\'$$\',\'$$\'] ], -->
-<!--             processEscapes: true }, -->
-<!--         "HTML-CSS": { -->
-<!--             styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}} -->
-<!--         } -->
-<!--     }); -->
-<!-- </script> -->
-</head>
+</script></head>
 	
 <body>		
 	<header class="clearfix" role="banner">
@@ -168,7 +153,7 @@ Marrying these two together, we can give a simple geometric proof of the basic t
 <p><mathjax>$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$</mathjax></p>
 <p>Summed up on one diagram:
 <p><a href="/static/images/trigdiff.pdf">
-    <img src="/static/images/trigdiff.png" width="100\\%" alt="Trigonometic Derivatives">
+    <img src="/static/images/trigdiff.png" width=500px alt="Trigonometic Derivatives">
 </a></p></p>
 <h3>Short&nbsp;version</h3>
 <p>By looking at how the line <mathjax>$\sin \alpha$</mathjax> and <mathjax>$\cos \alpha$</mathjax> change when we change <mathjax>$\alpha$</mathjax> a little bit (<mathjax>$d\alpha$</mathjax>) and noting that we form a similar triangle, we know exactly what those lengths&nbsp;are.</p>
