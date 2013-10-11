@@ -5,8 +5,9 @@ Category: old
 Slug: the-skeleton-supporting-search-engine-ranking-systems
 Author: DTC
 
-
-[![image](http://4.bp.blogspot.com/-z1oh7tJnNUY/UN-9ySbMF5I/AAAAAAAAAGQ/Cn7od-q1n3U/s640/Skeleton_image_1.tiff)](http://4.bp.blogspot.com/-z1oh7tJnNUY/UN-9ySbMF5I/AAAAAAAAAGQ/Cn7od-q1n3U/s1600/Skeleton_image_1.tiff)
+<p>
+<img src="/static/images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center">
+</p>
 
 A lot of the research I’m interested in relates to networks – measuring
 the properties of networks and figuring out what those properties mean.
@@ -28,7 +29,7 @@ websites belong at the top of the search page.
 
 Suppose you look something up on Google (looking for YouTube videos of
 your favorite band, [looking for edifying science
-writing](http://thevirtuosi.blogspot.com/), tips on octopus pet care,
+writing](http://thephysicsvirtuosi.com/author/corky.html), tips on octopus pet care,
 etc): the search service returns a whole spate of results. Usually, the
 pages that Google recommends first end up being the most useful. How on
 earth does the search engine get it right?
@@ -72,7 +73,9 @@ Here is an example of what a network visualization of a website map of a
 large portion of the WWW looks like. (Original full-size image
 [here](http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg)[](http://www.blogger.com/).)
 
-[![image](http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg)](http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg)
+<p>
+<img src="/static/images/skeleton-search/Internet_map_1024.jpg" width="100%" alt="internet map" style="float:center">
+</p>
 
 Here is a site map for a group of websites that connect to the main page
 of English Wikipedia. (Original image from
@@ -80,7 +83,9 @@ of English Wikipedia. (Original image from
 closer to the type of site map used when making a search using a search
 engine.
 
-[![image](http://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png)](http://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png)
+<p>
+<img src="/static/images/skeleton-search/Main_Page_Usability.png" width="100%" alt="internet map" style="float:center">
+</p>
 
 So, how does knowing the underlying network of the search results help
 one to find the best website on octopus care (or any other topic)? The
@@ -114,11 +119,13 @@ structure assumption, we may now actually find which of the websites are
 most central to the network (in the core), and therefore determine which
 websites to rank highly.
 
+<a id="note1"></a>
 Let’s begin by assigning a quantitative “centrality” score to each of
 the nodes (websites) in the network, initially guessing that all of the
 search results are equally important. (This, of course, is probably not
-true. It’s just an initial guess.) Each node then transfers all* of its
-centrality score to its neighbors, dividing it evenly between them.
+true. It’s just an initial guess.) Each node then transfers all of its 
+centrality score to its neighbors, dividing it evenly between 
+them[<sup>[1]</sup>](#fnote1).
 (Starting with a centrality score of 1 with three neighbors, each of
 those neighbors receives 1/3.) Each node also receives a some centrality
 from each neighbor that links in to it. Following this first step, we
@@ -156,12 +163,18 @@ operate using slightly different methods, but all of them depend on
 understanding the list of search results within the context of a
 network.
 
-\
+-------------
 
-* It's not always all - there are other variations where nodes only
+**Notes**
+
+<a id="fnote1"></a>
+1. [^](#note1) It's not always all - there are other variations where nodes only
 transfer a fraction of their centrality score at each step.
 
-Sources (and further reading): I wanted to include no mathematics in
+
+**Sources (and further reading)**
+
+I wanted to include no mathematics in
 this post simply because I cannot explain the mathematics behind these
 algorithms and their convergence properties better than my sources can.
 For those of you who want to see the mathematical side of the argument
@@ -169,21 +182,22 @@ for yourselves (which involves treating the network adjacency matrix as
 a Markov process and finding its nontrivial steady state eigenvector),
 do consult the following two textbooks:
 
-> • Easley, David, and Jon Kleinberg. *Networks, Crowds, and Markets:
-> Reasoning about a Highly Connected World*. Cambridge University Press,
-> 2010 ([Chapter
-> 14](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf)
-> in particular) • Newman, Mark. *Networks: an Introduction*. Oxford
-> University Press, 2010 (Chapter 7 in particular)
+Easley, David, and Jon Kleinberg. *Networks, Crowds, and Markets:
+Reasoning about a Highly Connected World*. Cambridge University Press,
+2010 ([Chapter 14](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf)
+in particular) 
+
+Newman, Mark. *Networks: an Introduction*. Oxford
+University Press, 2010 (Chapter 7 in particular)
 
 A popular book on the early development of network science that contains
 a lot of information on the structure of the WWW:
 
-> • Barabasi, Albert-Laszlo. *Linked: How Everything is Connected to
-> Everything Else and What It Means*. Plume, 2003.
+Barabasi, Albert-Laszlo. *Linked: How Everything is Connected to
+Everything Else and What It Means*. Plume, 2003.
 
 A book on the history of modern computing that contains an interesting
 passage on how search engines learn adaptively from their users (that
 deserves a shout-out in this blog post).
 
-> • Dyson, George. *Turing's Cathedral*. Pantheon, 2012.
+Dyson, George. *Turing's Cathedral*. Pantheon, 2012.
