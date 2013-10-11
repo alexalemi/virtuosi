@@ -70,93 +70,128 @@
 			<p>Stirring a bowl of honey is much more difficult than stirring a bowl of
 water. But why? The mass density of the honey is about the same as that
 of water, so we aren&#8217;t moving more material. If we were to write out
-Newton&#8217;s equation, <em>ma</em> would be about the same, but yet we still need
-to put in much more force. Why? And can we measure it? The reason that
+Newton&#8217;s equation, <mathjax>$ma$</mathjax> would be about the same, but yet we still need
+to put in much more force. Why? And can we measure&nbsp;it? </p>
+<p>The reason that
 honey is harder to stir is of course that the drag on our spoon depends
 on more than just the density of the fluid. The drag also depends on the
 viscosity of the fluid &#8212; loosely speaking, how thick it is &#8212; and the
 viscosity of honey is about 400 times that of water, depending on the
 conditions. In fact, a quick perusal of the Wikipedia article on
-<a href="http://en.wikipedia.org/wiki/Viscosity">viscosity</a> shows that
-viscosities can vary by a fantastic amount &#8212; some 13 orders of
-magnitude, from easy-to-move gases to <a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment">thick pitch that behaves like a
-solid except</a> on
+<a href="http://en.wikipedia.org/wiki/Viscosity">viscosity</a> 
+shows that viscosities can vary by a fantastic amount &#8212; some 13 orders of
+magnitude, from easy-to-move gases to 
+<a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment">thick pitch</a> 
+that behaves like a solid except on
 long time scales. The situation is even more complicated than this, as
-some fluids can have a <a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid">viscosity that changes depending on the
-flow</a>. I wanted to
+<a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid">some fluids</a>
+can have a viscosity that changes depending on the flow. I wanted to
 find a way to measure the viscosities of the stuff around me, so I made
 the <a href="http://en.wikipedia.org/wiki/Viscometer">viscometer</a> pictured below
-for about $1.75 (the vending machines in Clark Hall are pretty
-expensive). How? Well,&nbsp;I</p>
-<hr />
-<p><a href="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s1600/DSCF4438.JPG"><img alt="image" src="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s400/DSCF4438.JPG" /></a>
-  My homemade viscometer, taking data on the viscosity of&nbsp;water.</p>
-<hr />
+for about $1.75 (the vending machines in Clark Hall are pretty&nbsp;expensive).</p>
+<div style="float: center">
+<figure>
+<img src="/static/images/viscometer1/visc_fig1.jpg" alt="A PLOT???" width="40%">
+<figcaption> My homemade viscometer, taking data on the viscosity of water. </figcaption>
+</figure>
+</div>
+
+<p>To do this,&nbsp;I </p>
 <ol>
-<li>Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz
-    bottle (come on,&nbsp;sponsorships).</li>
-<li>Cut the top and bottom off the bottle, so all that was left was a
-    straight&nbsp;tube.</li>
-<li>Mounted the bottle with on top of a small piece of flat&nbsp;plastic.</li>
-<li>Mounted a single-tubed coffee stirrer horizontally out of the bottle
-    (I placed the end towards the middle of the bottle to avoid end&nbsp;effects).</li>
-<li>Epoxied or glued the entire edge&nbsp;shut.</li>
-<li>Marked evenly-spaced lines on the side of the&nbsp;bottle.</li>
+<li>
+<p>Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz 
+    bottle (come on,&nbsp;sponsorships).</p>
+</li>
+<li>
+<p>Cut the top and bottom off the bottle, so all that was left was a
+    straight&nbsp;tube.</p>
+</li>
+<li>
+<p>Mounted the bottle with on top of a small piece of flat&nbsp;plastic.</p>
+</li>
+<li>
+<p>Mounted a single-tubed coffee stirrer horizontally out of the bottle
+    (I placed the end towards the middle of the bottle to avoid end&nbsp;effects).</p>
+</li>
+<li>
+<p>Epoxied or glued the entire edge&nbsp;shut.</p>
+</li>
+<li>
+<p>Marked evenly-spaced lines on the side of the&nbsp;bottle.</p>
+</li>
 </ol>
 <p>I can load my &#8220;sample&#8221; fluid in the top of the Pepsi bottle, and time
 how long it takes for the sample level to drop to a certain point. A
 more viscous fluid will take more time to leave the bottle, with the
 time directly proportional to the viscosity. (This is a consequence of
 Stokes flow and the equation for flow in a pipe. It will always be true,
-as long as my fluid is viscous enough and my apparatus isn&#8217;t too big.)
-So we&#8217;re done! All we need to do is calibrate our viscometer with one
+as long as my fluid is viscous enough and my apparatus isn&#8217;t too&nbsp;big.)</p>
+<p>So we&#8217;re done! All we need to do is calibrate our viscometer with one
 sample, measure the times, and then we can go out and measure stuff in
 the world! No need to stick around for the boring calculations! We can
-do some fun science over the next few blog posts! But this is a physics
+do some fun science over the next few blog&nbsp;posts! </p>
+<p>But this is a physics
 blog written by a bunch of grad students, so I&#8217;m assuming that a few of
 you want to see the details. (I won&#8217;t judge you if you don&#8217;t though.) If
 we think about the problem for a bit, we basically have flow of a liquid
 through a pipe (i.e. the coffee stirrer), plus a bunch of other crap
-which hopefully doesn&#8217;t matter much. We first need to think about how
+which hopefully doesn&#8217;t matter&nbsp;much. </p>
+<p>We first need to think about how
 the fluid moves. We want to find the velocity of the fluid at every
 position. This is best cast in the language of vector calculus &#8212; we
-have a (vector) velocity field <strong><em>u</em></strong> at a (vector) position <strong><em>x</em></strong>.
+have a (vector) velocity field <mathjax>$\vec{u}$</mathjax> at a position <mathjax>$x$</mathjax>.
 There are two things we know: 1) We don&#8217;t (globally) gain or lose any
-fluid, and 2) Newton&#8217;s laws <em>F=ma</em> hold. We can write these equations as
-the Navier-Stokes equations: <mathjax>$$ \vec{\nabla}\cdot \vec{u} = 0 \quad
-(1) $$</mathjax> <mathjax>$$ \ \rho \left( \frac {\partial \vec{u}} {\partial t} +
-(\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p +
-\eta \nabla^2 \vec{u} \quad (2) $$</mathjax> The first equation basically
+fluid, and 2) Newton&#8217;s laws <mathjax>$F=ma$</mathjax> hold. We can write these equations as
+the Navier-Stokes&nbsp;equations: </p>
+<p><mathjax>$$ \vec{\nabla}\cdot \vec{u} = 0 \quad (1) $$</mathjax> </p>
+<p><mathjax>$$ \rho \left( \frac {\partial \vec{u}} {\partial t} + (\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p + \eta \nabla^2 \vec{u} \quad (2) $$</mathjax> </p>
+<p>The first equation basically
 says that we don&#8217;t have any fluid appearing or disappearing out of
-nowhere, and the second is basically <em>m<strong>a</strong>=<strong>F<strong><em>, except written per
-unit volume. (The fluid&#8217;s mass-per-unit-volume is <em>rho</em>, the rate of
-change of our velocity is <em>d<strong>u</strong>/dt</em>, and our force per unit volume is</em></strong>grad</strong>(p)</em>, plus a viscous term <em>laplacian(<strong>u</strong>)</em>. The only
-complication is that <em>d<strong>u</strong>/dt</em> is a total derivative, which we need to
-write as <em>d<strong>u</strong>/dt + d<strong>u</strong>/d<strong>x</strong></em>d<strong>x</strong>/dt<em>.) I won&#8217;t drag you
-through the <a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory
-details</a>,
+nowhere, and the second is basically <mathjax>$m \vec{a}=\vec{F}$</mathjax>, except written per
+unit volume. (The fluid&#8217;s mass-per-unit-volume is <mathjax>$\rho$</mathjax>, the rate of
+change of our velocity is <mathjax>$\frac{d\vec{u}}{dt}$</mathjax>, and our force per unit volume is
+<mathjax>$\vec{\nabla}p$</mathjax>, plus a viscous term <mathjax>$\nabla^2 \vec{u}$</mathjax>. The only
+complication is that <mathjax>$\frac{d\vec{u}}{dt}$</mathjax> is a total derivative, which we need to
+write&nbsp;as </p>
+<p><mathjax>$$ \frac{d\vec{u}}{dt} =  \frac{\partial \vec{u}}{\partial t} + \frac{\partial \vec{u}}{\partial x} \frac{d x}{d t}$$</mathjax></p>
+<p>I won&#8217;t drag you through the 
+<a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory details</a>,
 unless you want to see them, but it turns out that for my system the
-height of the fluid </em>h<em> (measured from the coffee stirrer) versus time
-</em>t* is <mathjax>$$ h(t) = h(0)e^{- t/T}, \quad T= 60.7 \textrm{sec} \times
-[\eta / \textrm{1 mPa*s}] \times [\textrm{ 1 g/cc} / \rho] $$</mathjax> [For
-my viscometer, the coffee stirrer has length 13.34 cm and inside
+height of the fluid <mathjax>$h$</mathjax> (measured from the coffee stirrer) versus time
+<mathjax>$t$</mathjax> is </p>
+<p><mathjax>$$ h(t) = h(0)e^{-t/T}, \quad T= 60.7 \textrm{sec} \times [\eta / \textrm{1 mPa s}] \times [\textrm{ 1 g/cc} / \rho] $$</mathjax> </p>
+<p>[For my viscometer, the coffee stirrer has length 13.34 cm and inside
 diameter 2.4 mm, and the Pepsi bottle has a cross-sectional area of 36.3
 square centimeters (3.4 cm inner radius). You can see how the timescale
-scales with these properties in the <a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory details
-section</a>.]</p>
-<hr />
-<p><a href="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s1600/5.png"><img alt="image" src="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s400/5.png" /></a>
-  A run with measured heights vs times <span class="amp">&amp;</span> error bars. The majority of the uncertainty turns out to come from not knowing the exact proportions of the viscometer. I don&#8217;t know exactly why the heights are systematically deviating from the fit, but I suspect it&#8217;s that my gridlines aren&#8217;t perfectly lined up with the bottom of my viscometer (it looks like \~5 mm off would do it, which I can totally believe looking at the picture of my viscometer). However, because of the linearity of the equations for steady flow in a pipe, we know that the time scales linearly with the viscosity, so we should be able to accurately measure relative&nbsp;viscosities.</p>
-<hr />
+scales with these properties in the 
+<a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url">gory details section</a>.]</p>
+<div style="float: center;">
+<figure>
+<img src="/static/images/viscometer1/visc_fig2.png" alt="A PLOT" width="70%">
+<figcaption style="font-size:small;">
+     A run with measured heights vs times <span class="amp">&amp;</span> error bars. The
+     majority of the uncertainty turns out to come from not knowing the
+     exact proportions of the viscometer. I don&#8217;t know exactly why the
+     heights are systematically deviating from the fit, but I suspect it&#8217;s
+     that my gridlines aren&#8217;t perfectly lined up with the bottom of my
+     viscometer (it looks like $\sim 5$ mm off would do it, which I can totally
+     believe looking at the picture of my viscometer). However, because of
+     the linearity of the equations for steady flow in a pipe, we know that
+     the time scales linearly with the viscosity, so we should be able to
+     accurately measure relative viscosities.
+</figcaption>
+</figure>
+</div>
+
 <p>Well, how well does it work? Above is a plot of the height of water in
 my viscometer versus time, with a best-fit value from the equations
 above. To get a sense of my random errors (such as how good I am at
 timing the flow), I measured this curve 5 separate times. If I take into
 account the uncertainties in my apparatus setup as systematic errors, I
-find a value for my viscosity as <mathjax>$$ \eta \approx 1.429 \textrm{mPa*
-s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} $$</mathjax> The actual
-value of the viscosity of water at room temperature (T=25 C) is about
-0.86 mPa*s, which is more-or-less within my systematic errors. So it
+find a value for my viscosity&nbsp;as </p>
+<p><mathjax>$$ \eta \approx 1.429 \textrm{mPa s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} $$</mathjax> </p>
+<p>The actual value of the viscosity of water at room temperature (T=25 C) is about
+<mathjax>$0.86~\textrm{mPa s}$</mathjax>, which is more-or-less within my systematic errors. So it
 looks like I won&#8217;t be able to measure absolute values of viscosity
 accurately without a more precise apparatus. But if I look at the
 variation of my measured viscosity, I see that I should probably be able

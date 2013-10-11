@@ -67,39 +67,46 @@
 	<article>
 		<div class="post wrapper">
 			<h1>Batman, Helicopters, and Center of&nbsp;Mass</h1>
-			<p><a href="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg"><img alt="image" src="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" /></a>
-A couple weeks ago, I came home after a long day at work looking for a
-break. I thought to myself, “What’s more fun than physics? Batman*.” I
-sat down to play the <a href="http://en.wikipedia.org/wiki/Arkham_City">latest Batman
+			<div style="float: right; margin: 0px 0px 0px 10px">
+<img src="/static/images/batman/wiki_batman.jpg">
+</div>
+
+<p>A couple weeks ago, I came home after a long day at work looking for a
+break. I thought to myself, &#8220;What’s more fun than&nbsp;physics?&#8221; </p>
+<p><a id="note1"></a>
+Batman.<a href="#fnote1"><sup>[1]</sup></a></p>
+<p>I sat down to play the <a href="http://en.wikipedia.org/wiki/Arkham_City">latest Batman
 videogame</a>, in which Batman’s
 current objective was to use his grappling hook to jump onto an enemy
 helicopter to steal an electronic MacGuffin. As awesome as this was, it
 occurred to me that something was very wrong about the way the
-helicopter moved while Batman zipped through the air. <a href="http://youtu.be/81qN-PHucqM?t=3m12s">See if you can
-spot it too</a>. (Watch for about 5
+helicopter moved while Batman zipped through the&nbsp;air. </p>
+<p><a href="http://youtu.be/81qN-PHucqM?t=3m12s">See if you can spot it too</a>. (Watch for about 5
 seconds after the video starts. Ignore the commentary. Note: The
-grunting noises are the sounds that Batman makes if you shoot him with
-bullets.) What occurred to me was this: If the helicopter’s rotors
+grunting noises are the sounds that Batman makes if you shoot him with&nbsp;bullets.) </p>
+<p>What occurred to me was this: If the helicopter’s rotors
 provided enough lift to balance the force of gravity, wouldn’t Batman’s
 sudden additional weight cause the helicopter to fall out of the sky?
 Also, to get lifted up into the air, the helicopter must be pulling up
 on Batman: shouldn’t Batman also be pulling down on the helicopter? By
-how much should we expect to see the helicopter’s altitude change? To
-address the first question, let&#8217;s go to Newton&#8217;s second law: <mathjax>$$ \sum
-\vec{F} = m\vec{a} $$</mathjax> Let’s assume that the helicopter is hovering
+how much should we expect to see the helicopter’s altitude&nbsp;change? </p>
+<p>To address the first question, let&#8217;s go to Newton&#8217;s second&nbsp;law: </p>
+<p><mathjax>$$ \sum \vec{F} = m\vec{a} $$</mathjax> </p>
+<p>Let’s assume that the helicopter is hovering
 stationary, minding its own business, when Batman jumps onto it. Let&#8217;s
 also assume the helicopter pilots are totally oblivious to Batman and
 make no flight corrections after Batman jumps onto it. In order to
-hover, the lift from the helicopter&#8217;s rotors exactly matched the pull of
-gravity. <mathjax>$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} =
-0 $$</mathjax> Batman&#8217;s sudden additional weight would cause the helicopter to
-start falling, as the forces would no longer balance: <mathjax>$$ \sum \vec{F}
-= \vec{F}_{rotors} - \vec{F}_{gravity} - \vec{F}_{Batman} &lt; 0 $$</mathjax>
-So the helicopter does accelerate (and move) when Batman jumps onto it.
+hover, the lift from the helicopter&#8217;s rotors exactly matched the pull of&nbsp;gravity. </p>
+<p><mathjax>$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} = 0 $$</mathjax> </p>
+<p>Batman&#8217;s sudden additional weight would cause the helicopter to
+start falling, as the forces would no longer&nbsp;balance: </p>
+<p><mathjax>$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} - \vec{F}_{Batman} &lt; 0 $$</mathjax></p>
+<p>So the helicopter does accelerate (and move) when Batman jumps onto it.
 How much does it move? Let’s assume there are no crazy winds or other
 external forces acting on the helicopter or Batman while Batman grapples
 onto the helicopter. “No external forces” means that momentum of
-helicopter + Batman does not change during Batman&#8217;s flight. Let&#8217;s make
+helicopter + Batman does not change during Batman&#8217;s&nbsp;flight. </p>
+<p>Let&#8217;s make
 things a little simpler and assume that neither Batman nor the
 helicopter had any vertical momentum before Batman used his grappling
 hook. (I can choose to approach this problem from a reference frame
@@ -107,35 +114,36 @@ where the center of mass is stationary. Choosing a frame where the
 center of mass moves won&#8217;t change the results, it will just make the
 calculation more complicated.) Because the momentum of helicopter +
 Batman does not change, then the center of mass does not move while
-Batman zips through the air: <mathjax>$$ \frac{d}{dt} y_{COM} = \frac{d}{dt}
-\frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} +
-m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$</mathjax>
-The center of mass must remain stationary, so we can find how much the
+Batman zips through the&nbsp;air: </p>
+<p><mathjax>$$ \frac{d}{dt} y_{COM} = \frac{d}{dt} \frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} + m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$</mathjax></p>
+<p>The center of mass must remain stationary, so we can find how much the
 helicopter&#8217;s height changes by if Batman starts on the ground (y = 0)
-and both end up at the same height with Batman hanging from the
-helicopter: <mathjax>$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat}
-(0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat}
-y_{final}}{m_{Bat} + m_{Copter}} $$</mathjax> <mathjax>$$ \Delta y = y_{Copter} -
-y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$</mathjax>
-Now, some numbers: The police helicopters in the game are pretty small,
-probably about <a href="http://en.wikipedia.org/wiki/Bell_206">1500 kg</a>. Batman
-is a big guy who works out and probably weighs around 100 kg (220 lb).
+and both end up at the same height with Batman hanging from the&nbsp;helicopter: </p>
+<p><mathjax>$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat} (0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat} y_{final}}{m_{Bat} + m_{Copter}} $$</mathjax> </p>
+<p><mathjax>$$ \Delta y = y_{Copter} - y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$</mathjax></p>
+<p>Now, some numbers: The police helicopters in the game are pretty small,
+probably about 
+<a href="http://en.wikipedia.org/wiki/Bell_206">1500 kg</a>. </p>
+<p>Batman is a big guy who works out and probably weighs around 100 kg (220 lb).
 Plus, he’s wearing body armor (hence surviving when bullets hit him) and
 a utility belt and all of those other Bat-gadgets, which probably adds
-about 30 kg (\~30 lb for the gadgets, <a href="http://www.nationaldefensemagazine.org/archive/2011/February/Pages/ManufacturersAnswerMilitary%E2%80%99sCalltoReduceBodyArmorWeight.aspx">\~30 lb for the
-armor</a>).
+about 30 kg (<mathjax>$\sim 30$</mathjax> lb for the gadgets, 
+<mathjax>$\sim30$</mathjax> lb for the <a href="http://www.nationaldefensemagazine.org/archive/2011/February/Pages/ManufacturersAnswerMilitary%E2%80%99sCalltoReduceBodyArmorWeight.aspx">armor</a>).
 If Batman has to grapple onto a helicopter 30 meters above him, then the
 helicopter should drop out of the air by about 2.4 m. This is greater
 than the height of Batman himself, and would be noticeable if the
 helicopter physics in the game were perfect. Of course, if the
 helicopters appearing in the game were the giant army helicopters (they
 do carry rockets, after all), their mass would be much larger
-(\~5000-10000 kg) so the effect of Batman’s additional weight would be
+<mathjax>$(\sim 5000-10000~{\rm kg})$</mathjax> so the effect of Batman’s additional weight would be
 much smaller. None of these considerations detracted from the fun I had
 playing the game, but it did seem odd that the helicopters appeared to
 be nailed to the sky instead of moving freely through the air. I’ll be
-writing the game developers a strongly-worded letter directly. * The <span class="caps">DC</span>
-superhero, not the <a href="http://en.wikipedia.org/wiki/Batman,_Turkey">city</a>
+writing the game developers a strongly-worded letter&nbsp;directly. </p>
+<hr />
+<p><strong>Notes</strong></p>
+<p><a id="fnote1"></a>
+1. <a href="#note1">^</a> The <span class="caps">DC</span> superhero, not the <a href="http://en.wikipedia.org/wiki/Batman,_Turkey">city</a>
 or the
 <a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/">fish</a>.</p>
 			

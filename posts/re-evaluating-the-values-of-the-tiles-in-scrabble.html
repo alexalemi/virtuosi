@@ -67,7 +67,10 @@
 	<article>
 		<div class="post wrapper">
 			<h1>Re-evaluating the values of the tiles in&nbsp;Scrabble™</h1>
-			<p><a href="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG"><img alt="image" src="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG" /></a></p>
+			<p>
+<img src="/static/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center">
+</p>
+
 <p>Recently I have seen quite a few blog posts written about re-evaluating
 the points values assigned to the different letter tiles in the
 Scrabble™ brand Crossword Game. The premise behind these posts is that
@@ -82,11 +85,12 @@ the English lexicon of the late 1930’s. Now, some 70 years later, that
 lexicon has changed considerably, having gained many new words (e.g.:
 <span class="caps">EMAIL</span>) and lost a few old ones. So, if one were to repeat the analysis
 of the game designer in the present day, would one come to different
-conclusions regarding how points should be assigned to various&nbsp;letters?</p>
+conclusions regarding how points should be assigned to various letters?
+<a id="note1"></a></p>
 <p>I’ve decided to add my own analysis to the recent development because I
 have found most of the other blog posts to be unsatisfactory for a
-variety of reasons.* <a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system">One
-article</a>
+variety of reasons<a href="#fnote1"><sup>[1]</sup></a>.<br />
+One <a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system">article</a>
 calculated letters’ relative frequencies by counting the number of times
 each letter appeared in each word in the Scrabble™ dictionary. But this
 analysis is faulty, since it ignores the probability with which
@@ -95,8 +99,7 @@ draw <span class="caps">QI</span> than <span class="caps">AE</span> during a Scr
 bag, but many A&#8217;s and E&#8217;s). Similarly, very long words like
 <span class="caps">ZOOGEOGRAPHICAL</span> have a vanishingly small probability of appearing in the
 game: the A’s in the long words and the A’s in the short words cannot be
-treated equally. <a href="http://blog.useost.com/2012/12/30/valett/">A second
-article</a> I saw calculated
+treated equally. A second <a href="http://blog.useost.com/2012/12/30/valett/">article</a> I saw calculated
 letter frequencies based on their occurrence in the Scrabble™ dictionary
 and did attempt to weight frequencies based on word length. The author
 of this second article also claimed to have quantified the extent to
@@ -152,7 +155,9 @@ The potential usefulness of individual letter tiles should reflect
 whether or not it is even possible to play them, not whether or not a
 player decides that using a particular group of tiles constitutes an
 optimal&nbsp;move.)</p>
-<p>To give an example, suppose I draw the rack <span class="caps">BEHIWXY</span>. I can generate**
+<p><a id="note2"></a>
+To give an example, suppose I draw the rack <span class="caps">BEHIWXY</span>. I can 
+generate<a href="#fnote2"><sup>[2]</sup></a> 
 the full list of words available to be played given this rack: <span class="caps">BE</span>, <span class="caps">BEY</span>,
 <span class="caps">BI</span>, <span class="caps">BY</span>, <span class="caps">BYE</span>, <span class="caps">EH</span>, <span class="caps">EX</span>, <span class="caps">HE</span>, <span class="caps">HEW</span>, <span class="caps">HEX</span>, <span class="caps">HEY</span>, <span class="caps">HI</span>, <span class="caps">HIE</span>, <span class="caps">IBEX</span>, <span class="caps">WE</span>, <span class="caps">WEB</span>, <span class="caps">WHEY</span>,
 <span class="caps">WHY</span>, <span class="caps">WYE</span>, <span class="caps">XI</span>, <span class="caps">YE</span>, <span class="caps">YEH</span>, <span class="caps">YEW</span>. Counting the number of occurrences of each
@@ -160,13 +165,15 @@ letter, I see that the letter E appears 18 times, while the letter W
 only appears 7 times. This example tells me that the letter E is
 probably much more potentially useful than the letter&nbsp;W.</p>
 <p>The example above is only one of the many, many possible racks that one
-can see in a game of Scrabble™. I can use a <a href="http://en.wikipedia.org/wiki/Monte_Carlo_method">Monte
-Carlo</a>-type simulation
+can see in a game of Scrabble™. I can use a 
+<a href="http://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo</a>-type simulation
 to estimate the average usefulness of the different letters by drawing
-many example racks. Monte Carlo is a technique used to estimate
+many example racks.
+<a id="note3"></a>
+Monte Carlo is a technique used to estimate
 numerical properties of complicated things without explicit calculation.
 For example, suppose I want to know the probability of drawing a
-straight flush in poker.*** I can calculate that probability
+straight flush in poker.<a href="#fnote3"><sup>[3]</sup></a>  I can calculate that probability
 explicitly by using combinatorics, or I can use a Monte Carlo method to
 deal a large number of hypothetical possible poker hands and count the
 number of straight flushes that appear. If I deal a large enough number
@@ -188,7 +195,10 @@ and once with a 100-tile pool that does include blanks. In the latter
 case, I make sure to not count the blanks used to stand in for different
 letters as instances of those letters appearing in the game. The results
 are summarized in the table&nbsp;below.</p>
-<p><a href="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s1600/scrabble+tiles+table+small+3.jpg"><img alt="image" src="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s400/scrabble+tiles+table+small+3.jpg" /></a></p>
+<p>
+<img src="/static/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center">
+</p>
+
 <p>There are two key observations to be made here. First, it does not seem
 to matter whether or not there are blanks in the bag! The results are
 very similar in both cases. Second, it would be completely reasonable to
@@ -226,8 +236,7 @@ difficult to use even when combining with letters to make longer words.
 Repeating the simulation yet again without 2- or 3-letter words yielded
 the same&nbsp;results.</p>
 <p>As a final note, I would like to respond directly to to Stefan Fatsis&#8217;s
-<a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html">excellent
-article</a>
+<a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html">excellent article</a>
 about the so-called controversy surrounding re-calculating tile values
 and say that I am fully aware that this is indeed a &#8220;statistical
 exercise,&#8221; motivated mostly by my desire to do the calculation made by
@@ -241,15 +250,18 @@ used to learn how to play the game any better. (If anything, I&#8217;ve only
 confirmed some things that many experienced Scrabble players already
 know about the game, such as that the V is a tricky tile, or that the H,
 X, and Z tiles, in spite of their high point values, are quite&nbsp;flexible.)</p>
-<ul>
-<li>To state my own credentials, I have played Scrabble™competitively for
+<hr />
+<p><strong>Notes</strong></p>
+<p><a id="fnote1"></a>
+1. <a href="#note1">^</a> To state my own credentials, I have played Scrabble™competitively for
 4 years, and am quite familiar with the mechanics of the game, as well
-as contemporary&nbsp;strategy.</li>
-</ul>
-<p>** Credit where credit is due: Alemi provided the code used to
+as contemporary&nbsp;strategy.</p>
+<p><a id="fnote2"></a>
+2. <a href="#note2">^</a> Credit where credit is due: Alemi provided the code used to
 generate the list of available words given any set of tiles. Thanks&nbsp;Alemi!</p>
-<p>*<em><em> Monte Carlo has a long history of being used to estimate the
-properties of games. As recounted by George Dyson in </em>Turing’s
+<p><a id="fnote3"></a>
+3. <a href="#note3">^</a> Monte Carlo has a long history of being used to estimate the
+properties of games. As recounted by George Dyson in <em>Turing’s
 Cathedral</em>, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
 suffered a severe bout of encephalitis that resulted in an emergency
 trepanation. While recovering in the hospital, he played many games of
@@ -260,7 +272,8 @@ complex, so Ulam proposed the idea of generating many possible solitaire
 deals and merely counting how many of them resulted in victory. This
 proved to be much simpler than an explicit calculation, and the rest is
 history: Monte Carlo is used today in a wide variety of&nbsp;applications.</p>
-<p>Additional&nbsp;References:</p>
+<hr />
+<p><strong>Additional&nbsp;References:</strong></p>
 <p>The photo at top of a Scrabble™ board was taken during the 2012 National
 Scrabble™ Championship. Check out the 9-letter double-blank&nbsp;<span class="caps">BINOCULAR</span>.</p>
 <p>For anyone interested in learning more about the fascinating world of

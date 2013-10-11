@@ -33,13 +33,13 @@ bipolar system (one where two states have roughly the same amount of power and
 no other state has much to speak of) is the most stable. War will probably not
 break out since, according to Mearsheimer, each state has little to gain from a
 war. (His example is the Cold War, which didn&amp;#8217;t see any actual conflict between
-the &lt;span class="caps"&gt;US&lt;/span&gt; and the &lt;span class="caps"&gt;USSR&lt;/span&gt;.) 2) A balanced multipolar system (N&amp;gt;2 states each share
+the &lt;span class="caps"&gt;US&lt;/span&gt; and the &lt;span class="caps"&gt;USSR&lt;/span&gt;.) 2) A balanced multipolar system (&lt;mathjax&gt;$N&amp;gt;2$&lt;/mathjax&gt; states each share
 roughly the same amount of power) is more prone to war than a bipolar system,
 since a) there is a higher chance that two states are mismatched in power,
 allowing the more powerful to push the less around, and b) there are more
 states to fight. (One of his examples is Europe between 1815 and 1900, when
 there were several great-power wars but nothing that involved the entire
-continent at once.) 3) An unbalanced multipolar system (N&amp;gt;2 states with power,
+continent at once.) 3) An unbalanced multipolar system (&lt;mathjax&gt;$N&amp;gt;2$&lt;/mathjax&gt; states with power,
 but one that has more power than the rest) is the most prone to war of all. In
 this case, the biggest state on the block is almost able to push all the other
 states around. The other states don&amp;#8217;t want that, so two or more of them collude
@@ -56,19 +56,21 @@ bipolarity (corollary 1 above) actually followed from his main hypothesis.
 After spending some extra time thinking in the shower, I decided how I could
 model Mearsheimer&amp;#8217;s main tenant quantitatively, and that it actually suggested
 that bipolarity was actually&amp;nbsp;unstable!!&lt;/p&gt;
-&lt;p&gt;Let&amp;#8217;s see if we can&amp;#8217;t quantify Mearsheimer&amp;#8217;s ideas with a model. Each state in
-the system has some power, which we&amp;#8217;ll call P_i. Obviously in reality there are
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Let&amp;#8217;s see if we can&amp;#8217;t quantify Mearsheimer&amp;#8217;s ideas with a model. Each state in
+the system has some power, which we&amp;#8217;ll call &lt;mathjax&gt;$P_i$&lt;/mathjax&gt;. Obviously in reality there are
 plenty of different definitions of power, but in accordance with Mearsheimer&amp;#8217;s
-definition, we&amp;#8217;ll define power simply in a way that if State 1 has power &lt;mathjax&gt;$P_1$&lt;/mathjax&gt;
-&amp;gt; &lt;mathjax&gt;$P_2$&lt;/mathjax&gt;, the power of State 2, then State 1 can beat State 2 in a war. [1]
+definition, we&amp;#8217;ll define power simply in a way that if State 1 has power 
+&lt;mathjax&gt;$P_1 &amp;gt; P_2$&lt;/mathjax&gt;, the power of State 2, then State 1 can beat State 2 in a 
+war&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 Each state does not seek to maximize their total power &lt;mathjax&gt;$P_i$&lt;/mathjax&gt;, but instead their
 relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt;, relative to the total power of the rest of the states, So
-the relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt; would be
- &lt;mathjax&gt;$$ R_i = P_i / \left( \sum_{j=1}^N P_j \right) \qquad , $$&lt;/mathjax&gt;
-where we take the sum over the relevant players in the system. If there was
+the relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt; would&amp;nbsp;be&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ R_i = P_i / \left( \sum_{j=1}^N P_j \right) \qquad , $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;where we take the sum over the relevant players in the system. If there was
 some action that changed the power of some of the players in the system (say a
-war), then the relative power would also change with time &lt;mathjax&gt;$t$&lt;/mathjax&gt;:
-&lt;mathjax&gt;$$ \frac {dR_i}{dt} = \frac {dP_i} {dt} \times \left( \sum_{j=1}^N P_j \right)^{-1} - P_i \times \left( \sum_{j=1}^N P_j \right)^{-2} \times \left(\sum_{j=1}^N \frac {dP_j}{dt} \right) \qquad (1) $$&lt;/mathjax&gt;&lt;/p&gt;
+war), then the relative power would also change with time &lt;mathjax&gt;$t$&lt;/mathjax&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{dR_i}{dt} = \frac{dP_i}{dt} \times \left( \sum_{j=1}^N P_j \right)^{-1} - P_i \times \left( \sum_{j=1}^N P_j \right)^{-2} \times \left(\sum_{j=1}^N \frac{dP_j}{dt} \right) \qquad (1) $$&lt;/mathjax&gt;&lt;/p&gt;
 &lt;p&gt;A state will pursue an action that increases its relative power &lt;mathjax&gt;$R_i$&lt;/mathjax&gt;. So if we
 want to decide whether or not State A will go to war with State B, we need to
 know how war affects a state&amp;#8217;s individual powers. While this seems intractable,
@@ -76,18 +78,19 @@ since we can&amp;#8217;t even precisely define power, a few observations will he
 narrow down the allowed possibilities to make definitive statements on when war
 is beneficial to a&amp;nbsp;state:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;War always reduces a state&amp;#8217;s absolute power. This is simply a statement that
+&lt;li&gt;War always reduces a state&amp;#8217;s absolute power. This is simply a statement that
 in general, war is destructive. Many people die and buildings are bombed,
 neither of which is good for a state. Mathematically, this statement is that in
 wartime, &lt;mathjax&gt;$dP_i/dt &amp;lt; 0$&lt;/mathjax&gt; always. Note that this doesn&amp;#8217;t imply that that &lt;mathjax&gt;$dR_i/dt$&lt;/mathjax&gt;
-is always&amp;nbsp;negative.&lt;/p&gt;
-&lt;/li&gt;
+is always&amp;nbsp;negative.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;The change in power of two states A &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; B in a war should depend only on
 how much power A &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; B have. In addition, it should be independent of the
-labeling of states. Mathematically, &lt;mathjax&gt;$dP_a/dt = f(P_a, P_b)$&lt;/mathjax&gt;, and &lt;mathjax&gt;$dP_b/dt = f(P_b,
-P_a)$&lt;/mathjax&gt; with the same function &lt;mathjax&gt;$f$&lt;/mathjax&gt;.&amp;nbsp;[2]&lt;/p&gt;
+labeling of states. Mathematically, &lt;mathjax&gt;$dP_a / dt = f(P_a, P_b)$&lt;/mathjax&gt;, and 
+&lt;mathjax&gt;$dP_b/dt = f(P_b, P_a)$&lt;/mathjax&gt; with the same function &lt;mathjax&gt;$f$&lt;/mathjax&gt;&lt;a href="#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If State A has more absolute power than State B, and both states are in a
@@ -107,14 +110,18 @@ is not so much dependent on how much power State A&amp;nbsp;has.&lt;/p&gt;
 &lt;p&gt;In general, I think that assumptions 1-3 are usually true, and assumption 4 is
 pretty reasonable. But to simplify the math a little more, I&amp;#8217;m going to pick a
 definite form for the change of power. The simplest possible behavior that
-capture all 4 of the above assumptions is:
-&lt;mathjax&gt;$$ \frac {dx}{dt} = -y \qquad \frac {dy}{dt} = -x \qquad (2) $$&lt;/mathjax&gt;
+capture all 4 of the above assumptions&amp;nbsp;is:&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{dx}{dt} = -y \qquad \frac{dy}{dt} = -x \qquad (2) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
 where &lt;mathjax&gt;$x$&lt;/mathjax&gt; is the absolute power of State X and &lt;mathjax&gt;$y$&lt;/mathjax&gt; is the absolute power of State
-y. (I&amp;#8217;m switching notation because I want to avoid using too many subscripts.)
-[3] Here I&amp;#8217;m assuming that the rate of change of State X&amp;#8217;s power is directly
+y. (I&amp;#8217;m switching notation because I want to avoid using too many 
+subscripts&lt;a href="#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I&amp;#8217;m assuming that the rate of 
+change of State X&amp;#8217;s power is directly
 proportional to State Y&amp;#8217;s power, and depends on nothing else (including how
-much power State Y actually has). We&amp;#8217;ll also call &lt;mathjax&gt;$r$&lt;/mathjax&gt; the relative power of State
-X, and &lt;mathjax&gt;$s$&lt;/mathjax&gt; the relative power of State Y. [4] Now we&amp;#8217;re equipped to see when war
+much power State Y actually has). &lt;a id="note4"&gt;&lt;/a&gt;
+We&amp;#8217;ll also call &lt;mathjax&gt;$r$&lt;/mathjax&gt; the relative power of State
+X, and &lt;mathjax&gt;$s$&lt;/mathjax&gt; the relative power of State Y&lt;a href="#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
+Now we&amp;#8217;re equipped to see when war
 is a good idea, according to our&amp;nbsp;hypotheses.&lt;/p&gt;
 &lt;p&gt;Let&amp;#8217;s examine the case that was bothering me most &amp;#8212; a balanced bipolar system.
 Now we have only two states in the system, X and Y. For starters, let&amp;#8217;s address
@@ -130,9 +137,9 @@ system is a neutral equilibrium at&amp;nbsp;best.&lt;/p&gt;
 exactly the same power, but will instead be approximately equal. Let&amp;#8217;s say that
 the relative power between the two states differs by some small (positive)
 number &lt;mathjax&gt;$e$&lt;/mathjax&gt;, such that &lt;mathjax&gt;$x(0) = x0$&lt;/mathjax&gt; and &lt;mathjax&gt;$y(0) = x0 + e$&lt;/mathjax&gt;. Now what will happen? Looking
-at Eq. (2), we see that, at &lt;mathjax&gt;$t=0$&lt;/mathjax&gt;,
-&lt;mathjax&gt;$$ \frac {dr}{dt} = -(x_0 + e) / (2x_0 + e) + x_0(2x_0 + e) / (2x_0 + e)^2  = -e/(x_0 + e) $$&lt;/mathjax&gt;
-&lt;mathjax&gt;$$ \frac {ds}{dt} = -(x_0) / (2x_0 + e) + (x_0+e)(2x_0 + e) / (2x_0 + e)^2 = + e/(x_0 + e) \qquad .  $$&lt;/mathjax&gt;&lt;/p&gt;
+at Eq. (2), we see that, at &lt;mathjax&gt;$t=0$&lt;/mathjax&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{dr}{dt} = -(x_0 + e) / (2x_0 + e) + x_0(2x_0 + e) / (2x_0 + e)^2  = -e/(x_0 + e) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{ds}{dt} = -(x_0) / (2x_0 + e) + (x_0+e)(2x_0 + e) / (2x_0 + e)^2 = + e/(x_0 + e) \qquad .  $$&lt;/mathjax&gt;&lt;/p&gt;
 &lt;p&gt;In other words, if the power balance is slightly upset, even by an
 infinitesimal amount, then the more powerful state should go to war! For a
 balanced bipolar system, peace is unstable, and the two countries should always
@@ -148,22 +155,25 @@ our model. A little thought should convince you which of these either a) makes
 a bipolar system stable against war, and b) makes a bipolar system more or less
 stable compared to a multipolar system. Maybe I&amp;#8217;ll address these, as well as
 balanced and unbalanced multipolar systems, in another blog post if people are&amp;nbsp;interested.&lt;/p&gt;
-&lt;p&gt;[1] &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; has some units (not watts). My definition of power is strictly
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; has some units (not watts). My definition of power is strictly
 comparative, so it might seem that any new scale of power &lt;mathjax&gt;$p_i = f(P_i)$&lt;/mathjax&gt; with an
 arbitrary monotonic function &lt;mathjax&gt;$f(x)$&lt;/mathjax&gt; would also be an appropriate definition.
 However, we would like a scale that facilitates power comparisons if multiple
-states gang up on another. So we would need a new scale such that &lt;mathjax&gt;$p_(i+j) =
-f(P_i + P_j) = f(P_i) + f(P_j) = p_i + p_j$&lt;/mathjax&gt; for all &lt;mathjax&gt;$P_i, P_j$&lt;/mathjax&gt; . The only function
-that behaves like this is a linear function of &lt;mathjax&gt;$P: p_i = A*P_i $&lt;/mathjax&gt;, where A is some
-constant. So our definition of power is basically fixed up to what &amp;#8220;units&amp;#8221; we
-choose. Of course, defining &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; in terms of tangibles (e.g. army size or &lt;span class="caps"&gt;GDP&lt;/span&gt; or
-population size or number of nuclear warheads) would be a difficult task.
-Incidentally, I&amp;#8217;ve also implicitly assumed here that there is a power scale,
+states gang up on another. So we would need a new scale such&amp;nbsp;that &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ p_{i+j} = f(P_i + P_j) = f(P_i) + f(P_j) = p_i + p_j $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;for all &lt;mathjax&gt;$P_i, P_j$&lt;/mathjax&gt; . The only function that behaves like this is a linear function of 
+&lt;mathjax&gt;$P(p_i) = A \times P_i $&lt;/mathjax&gt;, where A is some constant. So our definition of power is 
+basically fixed up to what &amp;#8220;units&amp;#8221; we choose. Of course, defining &lt;mathjax&gt;$P_i$&lt;/mathjax&gt; in terms 
+of tangibles (e.g. army size or &lt;span class="caps"&gt;GDP&lt;/span&gt; or population size or number of nuclear warheads) 
+would be a difficult task. Incidentally, I&amp;#8217;ve also implicitly assumed here that there is a power scale,
 such that if &lt;mathjax&gt;$P_1 &amp;gt; P_2$&lt;/mathjax&gt;, and &lt;mathjax&gt;$P_2 &amp;gt; P_3$&lt;/mathjax&gt;, then &lt;mathjax&gt;$P_1 &amp;gt; P_3$&lt;/mathjax&gt;. But I think
 that&amp;#8217;s a fairly benign&amp;nbsp;assumption.&lt;/p&gt;
-&lt;p&gt;[2] This implicity assumes that it doesn&amp;#8217;t matter which state attacked the
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn&amp;#8217;t matter which state attacked the
 other, or where the war is taking place, or other things like&amp;nbsp;that.&lt;/p&gt;
-&lt;p&gt;[3] Incidentally this form for the rate-of-change of the power also has the
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
 advantage that it is scale-free, which we might expect since there is no
 intrinsic &amp;#8220;power scale&amp;#8221; to the problem. Of course there are other forms with
 this property that follow some or all of the assumptions above. For instance,
@@ -173,9 +183,13 @@ However I didn&amp;#8217;t use this since a) it&amp;#8217;s nonlinear, and hence
 solve the resulting differential equations analytically, and b) the rate of
 decrease of both state&amp;#8217;s power is the same, in contrast to my intuitive feeling
 that the state with less power should lose power more&amp;nbsp;rapidly.&lt;/p&gt;
-&lt;p&gt;[4] Homework for those who are not satisfied with my assumptions: Show that any
+&lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
+4. &lt;a href="#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
 functional form for &lt;mathjax&gt;$dP_i/dt$&lt;/mathjax&gt; that follows assumptions 1-3 above does not change
-the stability of a balanced bipolar&amp;nbsp;system. &lt;/p&gt;</summary><category term="books"></category><category term="modeling"></category><category term="war"></category></entry><entry><title>Re-evaluating the values of the tiles in Scrabble™</title><link href="http://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html" rel="alternate"></link><updated>2013-01-20T22:52:00-05:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2013-01-20:posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG"&gt;&lt;img alt="image" src="http://www.scrabbleassociation.com/tourneys/2012/nsc/build2/photo/21/PH1_8830.JPG" /&gt;&lt;/a&gt;&lt;/p&gt;
+the stability of a balanced bipolar&amp;nbsp;system.&lt;/p&gt;</summary><category term="books"></category><category term="modeling"></category><category term="war"></category></entry><entry><title>Re-evaluating the values of the tiles in Scrabble™</title><link href="http://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html" rel="alternate"></link><updated>2013-01-20T22:52:00-05:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2013-01-20:posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html</id><summary type="html">&lt;p&gt;
+&lt;img src="/static/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Recently I have seen quite a few blog posts written about re-evaluating
 the points values assigned to the different letter tiles in the
 Scrabble™ brand Crossword Game. The premise behind these posts is that
@@ -190,11 +204,12 @@ the English lexicon of the late 1930’s. Now, some 70 years later, that
 lexicon has changed considerably, having gained many new words (e.g.:
 &lt;span class="caps"&gt;EMAIL&lt;/span&gt;) and lost a few old ones. So, if one were to repeat the analysis
 of the game designer in the present day, would one come to different
-conclusions regarding how points should be assigned to various&amp;nbsp;letters?&lt;/p&gt;
+conclusions regarding how points should be assigned to various letters?
+&lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I’ve decided to add my own analysis to the recent development because I
 have found most of the other blog posts to be unsatisfactory for a
-variety of reasons.* &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;One
-article&lt;/a&gt;
+variety of reasons&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
 calculated letters’ relative frequencies by counting the number of times
 each letter appeared in each word in the Scrabble™ dictionary. But this
 analysis is faulty, since it ignores the probability with which
@@ -203,8 +218,7 @@ draw &lt;span class="caps"&gt;QI&lt;/span&gt; than &lt;span class="caps"&gt;AE&l
 bag, but many A&amp;#8217;s and E&amp;#8217;s). Similarly, very long words like
 &lt;span class="caps"&gt;ZOOGEOGRAPHICAL&lt;/span&gt; have a vanishingly small probability of appearing in the
 game: the A’s in the long words and the A’s in the short words cannot be
-treated equally. &lt;a href="http://blog.useost.com/2012/12/30/valett/"&gt;A second
-article&lt;/a&gt; I saw calculated
+treated equally. A second &lt;a href="http://blog.useost.com/2012/12/30/valett/"&gt;article&lt;/a&gt; I saw calculated
 letter frequencies based on their occurrence in the Scrabble™ dictionary
 and did attempt to weight frequencies based on word length. The author
 of this second article also claimed to have quantified the extent to
@@ -260,7 +274,9 @@ The potential usefulness of individual letter tiles should reflect
 whether or not it is even possible to play them, not whether or not a
 player decides that using a particular group of tiles constitutes an
 optimal&amp;nbsp;move.)&lt;/p&gt;
-&lt;p&gt;To give an example, suppose I draw the rack &lt;span class="caps"&gt;BEHIWXY&lt;/span&gt;. I can generate**
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
+To give an example, suppose I draw the rack &lt;span class="caps"&gt;BEHIWXY&lt;/span&gt;. I can 
+generate&lt;a href="#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
 the full list of words available to be played given this rack: &lt;span class="caps"&gt;BE&lt;/span&gt;, &lt;span class="caps"&gt;BEY&lt;/span&gt;,
 &lt;span class="caps"&gt;BI&lt;/span&gt;, &lt;span class="caps"&gt;BY&lt;/span&gt;, &lt;span class="caps"&gt;BYE&lt;/span&gt;, &lt;span class="caps"&gt;EH&lt;/span&gt;, &lt;span class="caps"&gt;EX&lt;/span&gt;, &lt;span class="caps"&gt;HE&lt;/span&gt;, &lt;span class="caps"&gt;HEW&lt;/span&gt;, &lt;span class="caps"&gt;HEX&lt;/span&gt;, &lt;span class="caps"&gt;HEY&lt;/span&gt;, &lt;span class="caps"&gt;HI&lt;/span&gt;, &lt;span class="caps"&gt;HIE&lt;/span&gt;, &lt;span class="caps"&gt;IBEX&lt;/span&gt;, &lt;span class="caps"&gt;WE&lt;/span&gt;, &lt;span class="caps"&gt;WEB&lt;/span&gt;, &lt;span class="caps"&gt;WHEY&lt;/span&gt;,
 &lt;span class="caps"&gt;WHY&lt;/span&gt;, &lt;span class="caps"&gt;WYE&lt;/span&gt;, &lt;span class="caps"&gt;XI&lt;/span&gt;, &lt;span class="caps"&gt;YE&lt;/span&gt;, &lt;span class="caps"&gt;YEH&lt;/span&gt;, &lt;span class="caps"&gt;YEW&lt;/span&gt;. Counting the number of occurrences of each
@@ -268,13 +284,15 @@ letter, I see that the letter E appears 18 times, while the letter W
 only appears 7 times. This example tells me that the letter E is
 probably much more potentially useful than the letter&amp;nbsp;W.&lt;/p&gt;
 &lt;p&gt;The example above is only one of the many, many possible racks that one
-can see in a game of Scrabble™. I can use a &lt;a href="http://en.wikipedia.org/wiki/Monte_Carlo_method"&gt;Monte
-Carlo&lt;/a&gt;-type simulation
+can see in a game of Scrabble™. I can use a 
+&lt;a href="http://en.wikipedia.org/wiki/Monte_Carlo_method"&gt;Monte Carlo&lt;/a&gt;-type simulation
 to estimate the average usefulness of the different letters by drawing
-many example racks. Monte Carlo is a technique used to estimate
+many example racks.
+&lt;a id="note3"&gt;&lt;/a&gt;
+Monte Carlo is a technique used to estimate
 numerical properties of complicated things without explicit calculation.
 For example, suppose I want to know the probability of drawing a
-straight flush in poker.*** I can calculate that probability
+straight flush in poker.&lt;a href="#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
 explicitly by using combinatorics, or I can use a Monte Carlo method to
 deal a large number of hypothetical possible poker hands and count the
 number of straight flushes that appear. If I deal a large enough number
@@ -296,7 +314,10 @@ and once with a 100-tile pool that does include blanks. In the latter
 case, I make sure to not count the blanks used to stand in for different
 letters as instances of those letters appearing in the game. The results
 are summarized in the table&amp;nbsp;below.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s1600/scrabble+tiles+table+small+3.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-FXxaPgNpk7Y/UPyeMh8pe6I/AAAAAAAAAHo/x3m0XvORWGw/s400/scrabble+tiles+table+small+3.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="/static/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;There are two key observations to be made here. First, it does not seem
 to matter whether or not there are blanks in the bag! The results are
 very similar in both cases. Second, it would be completely reasonable to
@@ -334,8 +355,7 @@ difficult to use even when combining with letters to make longer words.
 Repeating the simulation yet again without 2- or 3-letter words yielded
 the same&amp;nbsp;results.&lt;/p&gt;
 &lt;p&gt;As a final note, I would like to respond directly to to Stefan Fatsis&amp;#8217;s
-&lt;a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html"&gt;excellent
-article&lt;/a&gt;
+&lt;a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html"&gt;excellent article&lt;/a&gt;
 about the so-called controversy surrounding re-calculating tile values
 and say that I am fully aware that this is indeed a &amp;#8220;statistical
 exercise,&amp;#8221; motivated mostly by my desire to do the calculation made by
@@ -349,15 +369,18 @@ used to learn how to play the game any better. (If anything, I&amp;#8217;ve only
 confirmed some things that many experienced Scrabble players already
 know about the game, such as that the V is a tricky tile, or that the H,
 X, and Z tiles, in spite of their high point values, are quite&amp;nbsp;flexible.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;To state my own credentials, I have played Scrabble™competitively for
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
 4 years, and am quite familiar with the mechanics of the game, as well
-as contemporary&amp;nbsp;strategy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;** Credit where credit is due: Alemi provided the code used to
+as contemporary&amp;nbsp;strategy.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
 generate the list of available words given any set of tiles. Thanks&amp;nbsp;Alemi!&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;&lt;em&gt; Monte Carlo has a long history of being used to estimate the
-properties of games. As recounted by George Dyson in &lt;/em&gt;Turing’s
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
 Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
 suffered a severe bout of encephalitis that resulted in an emergency
 trepanation. While recovering in the hospital, he played many games of
@@ -368,7 +391,8 @@ complex, so Ulam proposed the idea of generating many possible solitaire
 deals and merely counting how many of them resulted in victory. This
 proved to be much simpler than an explicit calculation, and the rest is
 history: Monte Carlo is used today in a wide variety of&amp;nbsp;applications.&lt;/p&gt;
-&lt;p&gt;Additional&amp;nbsp;References:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Additional&amp;nbsp;References:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The photo at top of a Scrabble™ board was taken during the 2012 National
 Scrabble™ Championship. Check out the 9-letter double-blank&amp;nbsp;&lt;span class="caps"&gt;BINOCULAR&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;For anyone interested in learning more about the fascinating world of
@@ -377,7 +401,10 @@ This book has become more or less the definitive documentation upon this
 subculture. If you don&amp;#8217;t have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
 Wars&lt;/a&gt;, a documentary that
 follows many of the same people as Fatsis&amp;#8217;s book. (It still may be
-available streaming on Netflix if you&amp;nbsp;hurry.)&lt;/p&gt;</summary><category term="Scrabble"></category><category term="fun"></category><category term="monte carlo"></category></entry><entry><title>The Skeleton Supporting Search Engine Ranking Systems</title><link href="http://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems.html" rel="alternate"></link><updated>2013-01-01T19:09:00-05:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2013-01-01:posts/the-skeleton-supporting-search-engine-ranking-systems.html</id><summary type="html">&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-z1oh7tJnNUY/UN-9ySbMF5I/AAAAAAAAAGQ/Cn7od-q1n3U/s1600/Skeleton_image_1.tiff"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-z1oh7tJnNUY/UN-9ySbMF5I/AAAAAAAAAGQ/Cn7od-q1n3U/s640/Skeleton_image_1.tiff" /&gt;&lt;/a&gt;&lt;/p&gt;
+available streaming on Netflix if you&amp;nbsp;hurry.)&lt;/p&gt;</summary><category term="Scrabble"></category><category term="fun"></category><category term="monte carlo"></category></entry><entry><title>The Skeleton Supporting Search Engine Ranking Systems</title><link href="http://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems.html" rel="alternate"></link><updated>2013-01-01T19:09:00-05:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2013-01-01:posts/the-skeleton-supporting-search-engine-ranking-systems.html</id><summary type="html">&lt;p&gt;
+&lt;img src="/static/images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;A lot of the research I’m interested in relates to networks – measuring
 the properties of networks and figuring out what those properties mean.
 While doing some background reading, I stumbled upon some discussion of
@@ -395,7 +422,7 @@ is organized and using the properties of the network to detect where
 that information is centered are the key components to figuring out what
 websites belong at the top of the search&amp;nbsp;page.&lt;/p&gt;
 &lt;p&gt;Suppose you look something up on Google (looking for YouTube videos of
-your favorite band, &lt;a href="http://thevirtuosi.blogspot.com/"&gt;looking for edifying science
+your favorite band, &lt;a href="http://thephysicsvirtuosi.com/author/corky.html"&gt;looking for edifying science
 writing&lt;/a&gt;, tips on octopus pet care,
 etc): the search service returns a whole spate of results. Usually, the
 pages that Google recommends first end up being the most useful. How on
@@ -434,12 +461,18 @@ website to another by clicking through&amp;nbsp;links.&lt;/p&gt;
 &lt;p&gt;Here is an example of what a network visualization of a website map of a
 large portion of the &lt;span class="caps"&gt;WWW&lt;/span&gt; looks like. (Original full-size image
 &lt;a href="http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg"&gt;here&lt;/a&gt;&lt;a href="http://www.blogger.com/"&gt;&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg"&gt;&lt;img alt="image" src="http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="/static/images/skeleton-search/Internet_map_1024.jpg" width="100%" alt="internet map" style="float:center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Here is a site map for a group of websites that connect to the main page
 of English Wikipedia. (Original image from
 &lt;a href="http://en.wikipedia.org/wiki/Site_map"&gt;here&lt;/a&gt;.) This smaller site map is
 closer to the type of site map used when making a search using a search&amp;nbsp;engine.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png"&gt;&lt;img alt="image" src="http://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="/static/images/skeleton-search/Main_Page_Usability.png" width="100%" alt="internet map" style="float:center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;So, how does knowing the underlying network of the search results help
 one to find the best website on octopus care (or any other topic)? The
 search engine assumes that behind the seemingly random, hodgepodge
@@ -470,11 +503,13 @@ between the different relevant websites and the core-periphery network
 structure assumption, we may now actually find which of the websites are
 most central to the network (in the core), and therefore determine which
 websites to rank&amp;nbsp;highly.&lt;/p&gt;
-&lt;p&gt;Let’s begin by assigning a quantitative “centrality” score to each of
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Let’s begin by assigning a quantitative “centrality” score to each of
 the nodes (websites) in the network, initially guessing that all of the
 search results are equally important. (This, of course, is probably not
-true. It’s just an initial guess.) Each node then transfers all* of its
-centrality score to its neighbors, dividing it evenly between them.
+true. It’s just an initial guess.) Each node then transfers all of its 
+centrality score to its neighbors, dividing it evenly between 
+them&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 (Starting with a centrality score of 1 with three neighbors, each of
 those neighbors receives 1/3.) Each node also receives a some centrality
 from each neighbor that links in to it. Following this first step, we
@@ -508,41 +543,39 @@ directly from the way users themselves prioritize which search results
 they pursue. Still, these different search engine ranking systems may
 operate using slightly different methods, but all of them depend on
 understanding the list of search results within the context of a&amp;nbsp;network.&lt;/p&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It&amp;#8217;s not always all - there are other variations where nodes only
-transfer a fraction of their centrality score at each&amp;nbsp;step.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sources (and further reading): I wanted to include no mathematics in
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; It&amp;#8217;s not always all - there are other variations where nodes only
+transfer a fraction of their centrality score at each&amp;nbsp;step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources (and further&amp;nbsp;reading)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to include no mathematics in
 this post simply because I cannot explain the mathematics behind these
 algorithms and their convergence properties better than my sources can.
 For those of you who want to see the mathematical side of the argument
 for yourselves (which involves treating the network adjacency matrix as
 a Markov process and finding its nontrivial steady state eigenvector),
 do consult the following two&amp;nbsp;textbooks:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;• Easley, David, and Jon Kleinberg. &lt;em&gt;Networks, Crowds, and Markets:
+&lt;p&gt;Easley, David, and Jon Kleinberg. &lt;em&gt;Networks, Crowds, and Markets:
 Reasoning about a Highly Connected World&lt;/em&gt;. Cambridge University Press,
-2010 (&lt;a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf"&gt;Chapter
-14&lt;/a&gt;
-in particular) • Newman, Mark. &lt;em&gt;Networks: an Introduction&lt;/em&gt;. Oxford
+2010 (&lt;a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf"&gt;Chapter 14&lt;/a&gt;
+in&amp;nbsp;particular) &lt;/p&gt;
+&lt;p&gt;Newman, Mark. &lt;em&gt;Networks: an Introduction&lt;/em&gt;. Oxford
 University Press, 2010 (Chapter 7 in&amp;nbsp;particular)&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;A popular book on the early development of network science that contains
 a lot of information on the structure of the&amp;nbsp;&lt;span class="caps"&gt;WWW&lt;/span&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;• Barabasi, Albert-Laszlo. &lt;em&gt;Linked: How Everything is Connected to
+&lt;p&gt;Barabasi, Albert-Laszlo. &lt;em&gt;Linked: How Everything is Connected to
 Everything Else and What It Means&lt;/em&gt;. Plume,&amp;nbsp;2003.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;A book on the history of modern computing that contains an interesting
 passage on how search engines learn adaptively from their users (that
 deserves a shout-out in this blog&amp;nbsp;post).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;• Dyson, George. &lt;em&gt;Turing&amp;#8217;s Cathedral&lt;/em&gt;. Pantheon,&amp;nbsp;2012.&lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="centrality measures"></category><category term="search engines"></category><category term="octopodes"></category><category term="search engine ranking"></category><category term="networks"></category></entry><entry><title>When will the Earth fall into the Sun?</title><link href="http://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-.html" rel="alternate"></link><updated>2012-11-29T22:58:00-05:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-11-29:posts/when-will-the-earth-fall-into-the-sun-.html</id><summary type="html">&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s1600/RetardedPic.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s200/RetardedPic.png" /&gt;&lt;/a&gt;
-  The time I spent making this poster could have been spent doing&amp;nbsp;research.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;p&gt;Dyson, George. &lt;em&gt;Turing&amp;#8217;s Cathedral&lt;/em&gt;. Pantheon,&amp;nbsp;2012.&lt;/p&gt;</summary><category term="centrality measures"></category><category term="search engines"></category><category term="octopodes"></category><category term="search engine ranking"></category><category term="networks"></category></entry><entry><title>When will the Earth fall into the Sun?</title><link href="http://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-.html" rel="alternate"></link><updated>2012-11-29T22:58:00-05:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-11-29:posts/when-will-the-earth-fall-into-the-sun-.html</id><summary type="html">&lt;p style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/earth-fall-sun/BrianWastesHisTime.png" alt="the sun giveth, the sun taketh away" width="50%"&gt;
+  &lt;figcaption&gt;The time I spent making this poster could have been spent doing research&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Since December 2012 is coming up, I thought I&amp;#8217;d help the Mayans out with
 a look at a possible end of the world scenario. (I know, it&amp;#8217;s not Earth
 Day yet, but we at the Virtuosi can only go so long without fantasizing
@@ -566,32 +599,43 @@ moving, there can&amp;#8217;t be any drag. We also expect that a wider object
 feels more drag, so the drag force should depend on the radius of the
 Earth R. Finally, the density of the heliosphere might have something to
 do with it. If we fudge around with these, we see that there is only 1
-combination that gives units of force: &lt;mathjax&gt;$$ F_{drag} \sim \rho v^2
-R^2 $$&lt;/mathjax&gt; Now that we have the force, the energy dissipated from the Earth
-to the heliosphere after moving a distance &lt;em&gt;d&lt;/em&gt; is &lt;em&gt;E_lost = F&lt;/em&gt;d&lt;em&gt;. If
-the Earth moves with speed v for time t, then we can write &lt;/em&gt;E_lost =
-F&lt;em&gt;v&lt;/em&gt;t&lt;em&gt;. So we can get an idea of the time scale over which the Earth
-starts to fall into the Sun by taking &lt;/em&gt;E_lost = E_Earth \~ 1/2
-M_Earth v^2&lt;em&gt;. Rearranging and dropping factors of 1/2 gives &lt;mathjax&gt;$$
-T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v)
-\\ \qquad \sim M_{Earth} / (\rho R^2 v) $$&lt;/mathjax&gt; Using the velocity of
-the Earth as &lt;/em&gt;2&lt;em&gt;pi &lt;/em&gt;* 1 Astronomical unit/year, Googlin&amp;#8217; for some
-numbers, and taking the &lt;a href="http://web.mit.edu/space/www/helio.review/axford.suess.html"&gt;density of the
-heliosphere&lt;/a&gt;
-to be 10^-23 g/cc we get&amp;#8230; &lt;mathjax&gt;$$ T \approx 10^{19} \textrm{ years} $$&lt;/mathjax&gt;
-Looks like this won&amp;#8217;t be the cause of the Mayan apocalypse. (By
-comparison, the &lt;a href="http://en.wikipedia.org/wiki/Sun#Life_cycle"&gt;Sun will burn
-out&lt;/a&gt;after only \~10^9&amp;nbsp;years.)&lt;/p&gt;</summary></entry><entry><title>Creating an Earth</title><link href="http://thephysicsvirtuosi.com/posts/creating-an-earth.html" rel="alternate"></link><updated>2012-10-27T19:07:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-10-27:posts/creating-an-earth.html</id><summary type="html">&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s1600/116.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-GIQN6QGw6T8/UIxWmYKvaRI/AAAAAAAAABU/vltgjZeUJus/s200/116.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+combination that gives units of&amp;nbsp;force: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ F_{drag} \sim \rho v^2 R^2 $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Now that we have the force, the energy dissipated from the Earth
+to the heliosphere after moving a distance &lt;mathjax&gt;$d$&lt;/mathjax&gt; is &lt;mathjax&gt;$E_\textrm{lost} = F\times d$&lt;/mathjax&gt;. If
+the Earth moves with speed v for time t, then we can write 
+&lt;mathjax&gt;$E_\textrm{lost} = F v t$&lt;/mathjax&gt;. So we can get an idea of the time scale over which the Earth
+starts to fall into the Sun by&amp;nbsp;taking &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$E_\textrm{lost} = E_\textrm{Earth} \sim 1/2 M_\textrm{Earth} v^2$&lt;/mathjax&gt;. 
+Rearranging and dropping factors of 1/2&amp;nbsp;gives &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \\ 
+\qquad \sim M_{Earth} / (\rho R^2 v) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Using the velocity of the Earth as &lt;mathjax&gt;$2\pi \times 1 \mbox{Astronomical unit/year}$&lt;/mathjax&gt;, 
+Googlin&amp;#8217; for some numbers, and taking the 
+&lt;a href="http://web.mit.edu/space/www/helio.review/axford.suess.html"&gt;density of the heliosphere&lt;/a&gt;
+to be &lt;mathjax&gt;$10^{-23}$&lt;/mathjax&gt; g/cc we&amp;nbsp;get&amp;#8230; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ T \approx 10^{19} \textrm{ years} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Looks like this won&amp;#8217;t be the cause of the Mayan apocalypse. (By comparison, the 
+&lt;a href="http://en.wikipedia.org/wiki/Sun#Life_cycle"&gt;Sun will burnout&lt;/a&gt; 
+after only &lt;mathjax&gt;$\sim10^9$&lt;/mathjax&gt; years.)&lt;/p&gt;</summary></entry><entry><title>Creating an Earth</title><link href="http://thephysicsvirtuosi.com/posts/creating-an-earth.html" rel="alternate"></link><updated>2012-10-27T19:07:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-10-27:posts/creating-an-earth.html</id><summary type="html">&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/creating-an-earth/116.png" alt="GAH!" width="50%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;&lt;span class="caps"&gt;GAAAAAAAAH&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;A while ago I decided I wanted to create something that looks like the
 surface of a planet, complete with continents &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; oceans and all. Since
 I&amp;#8217;ve only been on a small handful of planets, I decided that I&amp;#8217;d
 approximate this by creating something like the Earth on the computer
 (without cheating and just copying the real Earth). Where should I
 start? Well, let&amp;#8217;s see what the facts we know about the Earth tell us
-about how to create a new planet on the computer. &lt;strong&gt;Observation 1&lt;/strong&gt;:
+about how to create a new planet on the&amp;nbsp;computer. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 1&lt;/strong&gt;:
 Looking at a map of the Earth, we only see the heights of the surface.
-So let&amp;#8217;s describe just the heights of the Earth&amp;#8217;s surface. &lt;strong&gt;Observation
-2&lt;/strong&gt;: The Earth is a sphere. So (wait for it) we need to describe the
+So let&amp;#8217;s describe just the heights of the Earth&amp;#8217;s&amp;nbsp;surface. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 2&lt;/strong&gt;: 
+The Earth is a sphere. So (wait for it) we need to describe the
 height on a spherical surface. Now we can recast our problem of making
 an Earth more precisely mathematically. We want to know the heights of
 the planet&amp;#8217;s surface at each point on the Earth. So we&amp;#8217;re looking for
@@ -599,137 +643,153 @@ field (the height of the planet) defined on the surface of a sphere (the
 different spots on the planet). Just like a function on the real line
 can be expanded in terms of its Fourier components, almost any function
 on the surface of a sphere can be expanded as a sum of spherical
-harmonics Y&lt;em&gt;lm&lt;/em&gt;. This means we can write the height &lt;em&gt;h&lt;/em&gt; of our planets
-surfaces as &lt;mathjax&gt;$$ h(\theta, \phi) = \sum A_{lm}Y_l^m(\theta, \phi)
-\quad (1) $$&lt;/mathjax&gt; If we figure out what the coefficients A of the sum should
+harmonics &lt;mathjax&gt;$Y_{lm}$&lt;/mathjax&gt;. This means we can write the height &lt;mathjax&gt;$h$&lt;/mathjax&gt; of our planets
+surfaces&amp;nbsp;as &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ h(\theta, \phi) = \sum A_{lm}Y_l^m(\theta, \phi) \quad (1) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;If we figure out what the coefficients &lt;mathjax&gt;$A$&lt;/mathjax&gt; of the sum should
 be, then we can start making some Earths! Let&amp;#8217;s see if we can use some
 other facts about the Earth&amp;#8217;s surface to get get a handle on what
-coefficients to use. &lt;strong&gt;Observation 3&lt;/strong&gt;: I don&amp;#8217;t know every detail of the
-Earth&amp;#8217;s surface, whose history is impossibly complicated. I&amp;#8217;ll capture
+coefficients to&amp;nbsp;use. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 3&lt;/strong&gt;: 
+I don&amp;#8217;t know every detail of the Earth&amp;#8217;s surface, whose history 
+is impossibly complicated. I&amp;#8217;ll capture
 this lack-of-knowledge by describing the surface of our imaginary planet
 as some sort of random variable. Equation (1) suggests that we can do
-this by making the coefficients &lt;em&gt;A&lt;/em&gt; random variables. At some point we
+this by making the coefficients &lt;mathjax&gt;$A$&lt;/mathjax&gt; random variables. At some point we
 need to make an executive decision on what type of random variable we&amp;#8217;ll
-use. For various reasons, &lt;a href="#footnote1"&gt;[1]&lt;/a&gt; I decided I&amp;#8217;d use a Gaussian
-random variable with mean 0 and standard deviation &lt;em&gt;alm&lt;/em&gt;: &lt;mathjax&gt;$$ A_{lm} =
-a_{lm} N(0,1) $$&lt;/mathjax&gt; (Here I&amp;#8217;m using the notation that &lt;em&gt;N(m,v)&lt;/em&gt; is a normal
-or Gaussian random variable with mean &lt;em&gt;m&lt;/em&gt; and variance &lt;em&gt;v&lt;/em&gt;. If you
-multiply a Gaussian random variable by a constant &lt;em&gt;a&lt;/em&gt;, it&amp;#8217;s the same as
-multiplying the variance by &lt;em&gt;a^2&lt;/em&gt;, so &lt;em&gt;a&lt;/em&gt;N(0,1)&lt;em&gt; and &lt;/em&gt;N(0,a^2)&lt;em&gt; are
-the same thing.) &lt;strong&gt;Observation 4&lt;/strong&gt;: The heights of the surface of the
+use. &lt;a id="note1"&gt;&lt;/a&gt;For various reasons,&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; 
+I decided I&amp;#8217;d use a Gaussian
+random variable with mean 0 and standard deviation &lt;mathjax&gt;$a_{lm}$&lt;/mathjax&gt;: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ A_{lm} = a_{lm} N(0,1) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;(Here I&amp;#8217;m using the notation that &lt;mathjax&gt;$N(m,v)$&lt;/mathjax&gt; is a normal
+or Gaussian random variable with mean &lt;mathjax&gt;$m$&lt;/mathjax&gt; and variance &lt;mathjax&gt;$v$&lt;/mathjax&gt;. If you
+multiply a Gaussian random variable by a constant &lt;mathjax&gt;$a$&lt;/mathjax&gt;, it&amp;#8217;s the same as
+multiplying the variance by &lt;mathjax&gt;$a^2$&lt;/mathjax&gt;, so &lt;mathjax&gt;$a N(0,1)$&lt;/mathjax&gt; and &lt;mathjax&gt;$N(0,a^2)$&lt;/mathjax&gt; are
+the same&amp;nbsp;thing.) &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 4&lt;/strong&gt;: 
+The heights of the surface of the
 Earth are more-or-less independent of their position on the Earth. In
-keeping with this, I&amp;#8217;ll try to use coefficients &lt;/em&gt;alm&lt;em&gt; that will give me
+keeping with this, I&amp;#8217;ll try to use coefficients &lt;mathjax&gt;$a_{lm}$&lt;/mathjax&gt; that will give me
 a random field that is is isotropic on average. This seems hard at
 first, so let&amp;#8217;s just make a hand-waving argument. Looking at some
-&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;pretty pictures&lt;/a&gt; of
-spherical harmonics, we can see that each spherical harmonic of degree l
-has about l stripes on it, independent of m. So let&amp;#8217;s try using alm&amp;#8217;s
-that depend only on l, and are constant if just m changes.
-&lt;a href="footnote2"&gt;[2]&lt;/a&gt;. Just for convenience, we&amp;#8217;ll pick this constant to be
-&lt;/em&gt;l&lt;em&gt; to some power &lt;/em&gt;-p&lt;em&gt;: &lt;mathjax&gt;$$ a_{lm} = l^{-p} \quad \textrm{ or} $$&lt;/mathjax&gt;&lt;mathjax&gt;$$
-h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta,
-\phi) \quad (2) $$&lt;/mathjax&gt; At this point I got bored &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; decided to see what a
-planet would look like if we didn&amp;#8217;t know what value of p to use. So
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;pretty pictures&lt;/a&gt; 
+of spherical harmonics, we can see that each spherical harmonic of degree &lt;mathjax&gt;$l$&lt;/mathjax&gt;
+has about &lt;mathjax&gt;$l$&lt;/mathjax&gt; stripes on it, independent of &lt;mathjax&gt;$m$&lt;/mathjax&gt;. &lt;a id="note2"&gt;&lt;/a&gt;
+So let&amp;#8217;s try using &lt;mathjax&gt;$a_{lm}$&lt;/mathjax&gt;&amp;#8216;s
+that depend only on &lt;mathjax&gt;$l$&lt;/mathjax&gt;, and are constant if just 
+&lt;mathjax&gt;$m$&lt;/mathjax&gt; changes&lt;a href="#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. Just for convenience, 
+we&amp;#8217;ll pick this constant to be &lt;mathjax&gt;$l$&lt;/mathjax&gt; to some power &lt;mathjax&gt;$-p$&lt;/mathjax&gt;: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ a_{lm} = l^{-p} \quad \textrm{ or} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta, \phi) \quad (2) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;At this point I got bored &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; decided to see what a
+planet would look like if we didn&amp;#8217;t know what value of &lt;mathjax&gt;$p$&lt;/mathjax&gt; to use. So
 below is a movie of a randomly generated &amp;#8220;planet&amp;#8221; with a fixed choice of
-random numbers, but with the power&lt;/em&gt;p*&amp;nbsp;changing.&lt;/p&gt;
-&lt;p&gt;As the movie starts (p=0), we see random uncorrelated heights on the
-surface &lt;a href="footnote3"&gt;[5]&lt;/a&gt;. As the movie continues and p increases, we see
-the surface smooth out rapidly. Eventually, after p=2 or so, the planet
+random numbers, but with the power &lt;mathjax&gt;$p$&lt;/mathjax&gt; changing.&lt;/p&gt;
+&lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
+As the movie starts (&lt;mathjax&gt;$p=0$&lt;/mathjax&gt;), we see random uncorrelated heights on the
+surface.&lt;a href="#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; As the movie continues and &lt;mathjax&gt;$p$&lt;/mathjax&gt; increases, we see
+the surface smooth out rapidly. Eventually, after &lt;mathjax&gt;$p=2$&lt;/mathjax&gt; or so, the planet
 becomes very smooth and doesn&amp;#8217;t look at all like a planet. So the
 &amp;#8220;correct&amp;#8221; value for p is somewhere above 0 (too bumpy) and below 2 (too
 smooth). Can we use more observations about Earth to predict what a good
-value of p should be? &lt;strong&gt;Observation 5&lt;/strong&gt;: The elevation of the Earth&amp;#8217;s
+value of &lt;mathjax&gt;$p$&lt;/mathjax&gt; should&amp;nbsp;be? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 5&lt;/strong&gt;: 
+The elevation of the Earth&amp;#8217;s
 surface exists everywhere on Earth (duh). So we&amp;#8217;re going to need our sum
 to exist. How the hell are we going to sum that series though! Not only
 is it random, but it also depends on where we are on the planet! Rather
 than try to evaluate that sum everywhere on the sphere, I decided that
 it would be easiest to evaluate the sum at the &amp;#8220;North Pole&amp;#8221; at
-&lt;em&gt;theta=0&lt;/em&gt;. Then, if we picked our coefficients right, this should be
+&lt;mathjax&gt;$\theta=0$&lt;/mathjax&gt;. Then, if we picked our coefficients right, this should be
 statistically the same as any other point on the planet. Why do we want
-to look at &lt;em&gt;theta = 0&lt;/em&gt;? Well, if we look back at the &lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;wikipedia
-entry&lt;/a&gt; for spherical
-harmonics, we see that &lt;mathjax&gt;$$ Y_l^m = \sqrt{ \frac{2 l +
-1}{4\pi}\frac{(l-m)!}{(l+m)!}} e^{im\phi}P^m _ l(\cos\theta)
-\quad (3) $$&lt;/mathjax&gt; That doesn&amp;#8217;t look too helpful &amp;#8212; we&amp;#8217;ve just picked up
-another special function Plm that we need to worry about. But there is a
-trick with these special functions Plm: at theta = 0, Plm is 0 if m
-isn&amp;#8217;t 0, and Pl0 is 1. So at theta = 0 this is simply: &lt;mathjax&gt;$$
-Y_l^m(\theta = 0) = \bigg \{ ^{\sqrt{(2l+1)/4\pi},\,
-m=0}_{0,\,m \ne 0} $$&lt;/mathjax&gt; Now we just have, from every equation we&amp;#8217;ve
-written down: &lt;mathjax&gt;$$ h(\theta = 0) = \sum_l \times l^{-p} \times
-\sqrt{(2l+1)/4\pi }\times N(0,1) $$&lt;/mathjax&gt;&lt;mathjax&gt;$$ \quad \qquad = \times \frac
-1 {\sqrt{4\pi}} \times \sum_l N(0,l^{-2p}(2l+1)) $$&lt;/mathjax&gt;&lt;mathjax&gt;$$ \quad
-\qquad = \times \frac 1 {\sqrt{4\pi}} \times N(0,\sum_l
-l^{-2p}(2l+1) ) $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ \quad \qquad = \times \frac 1 {\sqrt{4\pi}}
-\sqrt{\sum_l l^{-2p}(2l+1)} \times N(0,1) $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ \quad \qquad
-\sim \sqrt{\sum_l l^{-2p+1}} N(0,1) \qquad (4) $$&lt;/mathjax&gt; So for the
-surface of our imaginary planet to exist, we had better have that sum
-converge, or &lt;em&gt;-2p+1 &amp;lt; -1 (p &gt; 1)&lt;/em&gt;. And we&amp;#8217;ve also learned something
+to look at &lt;mathjax&gt;$\theta = 0$&lt;/mathjax&gt;? Well, if we look back at the 
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;wikipedia entry&lt;/a&gt; 
+for spherical harmonics, we see&amp;nbsp;that &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ Y_l^m = \sqrt{ \frac{2l +1}{4\pi}\frac{(l-m)!}{(l+m)!}} e^{im\phi}P^m_l(\cos\theta) \quad (3)$$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;That doesn&amp;#8217;t look too helpful &amp;#8212; we&amp;#8217;ve just picked up
+another special function &lt;mathjax&gt;$P_l^m$&lt;/mathjax&gt; that we need to worry about. But there is a
+trick with these special functions &lt;mathjax&gt;$P_l^m$&lt;/mathjax&gt;: at &lt;mathjax&gt;$\theta = 0$&lt;/mathjax&gt;, &lt;mathjax&gt;$P_l^m$&lt;/mathjax&gt; is 0 if &lt;mathjax&gt;$m$&lt;/mathjax&gt;
+isn&amp;#8217;t 0, and &lt;mathjax&gt;$P_l^0$&lt;/mathjax&gt; is 1. So at &lt;mathjax&gt;$\theta = 0$&lt;/mathjax&gt; this is&amp;nbsp;simply: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ Y_l^m(\theta = 0) = \bigg \{ ^{\sqrt{(2l+1)/4\pi},\,m=0}_{0,\,m \ne 0} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Now we just have, from every equation we&amp;#8217;ve written&amp;nbsp;down: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ h(\theta = 0) = \sum_l \times l^{-p} \times \sqrt{(2l+1)/4\pi }\times N(0,1) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \times \sum_l N(0,l^{-2p}(2l+1)) $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \times N(0,\sum_l l^{-2p}(2l+1) ) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \sqrt{\sum_l l^{-2p}(2l+1)} \times N(0,1) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \quad \qquad \sim \sqrt{\sum_l l^{-2p+1}} N(0,1) \qquad (4) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;So for the surface of our imaginary planet to exist, we had better have that sum
+converge, or &lt;mathjax&gt;$-2p+1 &amp;lt; -1 ~ (p &amp;gt; 1)$&lt;/mathjax&gt;. And we&amp;#8217;ve also learned something
 else!!! Our model always gives back a Gaussian height distribution on
 the surface. Changing the coefficients changes the variance of
 distribution of heights, but that&amp;#8217;s all it does to the distribution.
 Evidently if we want to get a non-Gaussian distribution of heights, we&amp;#8217;d
 need to stretch our surface after evaluating the sum. Well, what does
 the height distribution look like from my simulated planets? Just for
-the hell of it, I went ahead and generated \~400 independent surfaces at
-\~40 different values for the exponent &lt;em&gt;p&lt;/em&gt;, looking at the first 22,499
+the hell of it, I went ahead and generated &lt;mathjax&gt;${\sim}400$&lt;/mathjax&gt; independent surfaces at
+&lt;mathjax&gt;${\sim}40$&lt;/mathjax&gt; different values for the exponent &lt;mathjax&gt;$p$&lt;/mathjax&gt;, looking at the first 22,499
 terms in the series. From these surfaces I reconstructed the measured
 distributions; I&amp;#8217;ve combined them into a movie which you can see&amp;nbsp;below.&lt;/p&gt;
 &lt;p&gt;As you can see from the movie, the distributions look like Gaussians.
 The fits from Eq. (4) are overlaid in black dotted lines. (Since I can&amp;#8217;t
 sum an infinite number of spherical harmonics with a computer, I&amp;#8217;ve
-plotted the fit I&amp;#8217;d expect from just the terms I&amp;#8217;ve summed. ) As you can
+plotted the fit I&amp;#8217;d expect from just the terms I&amp;#8217;ve summed.) As you can
 see, they are all close to Gaussians. Not bad. Let&amp;#8217;s see what else we
-can get. &lt;strong&gt;Observation 6&lt;/strong&gt;: According to some famous people, the
-&lt;a href="http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension"&gt;Earth&amp;#8217;s surface is probably a fractal whose coastlines are
-non-differentiable&lt;/a&gt;.
-This means that we want a value of p that will make our surface rough
+can&amp;nbsp;get. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 6&lt;/strong&gt;: 
+According to some famous people, the Earth&amp;#8217;s surface is 
+&lt;a href="http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension"&gt;probably a fractal&lt;/a&gt;
+whose coastlines are non-differentiable. 
+This means that we want a value of &lt;mathjax&gt;$p$&lt;/mathjax&gt; that will make our surface rough
 enough so that its gradient doesn&amp;#8217;t exist (the derivative of the sum of
 Eq. (2) doesn&amp;#8217;t converge). At this point I&amp;#8217;m getting bored with writing
 out calculations, so I&amp;#8217;m just going to make some scaling arguments. From
-Eq. (3), we know that each of the spherical harmonics Ylm is related to
-a polynomial of degree l in cos(theta). So if we take a derivative, I&amp;#8217;d
-expect us to pick up another factor of l each time. Following through
-all the steps of Eq. (4) we find &lt;mathjax&gt;$$ \vec{\nabla}h \sim
-\sqrt{\sum_l l^{-2p+3}}\vec{N}(0,1) \quad , $$&lt;/mathjax&gt; which converges for
-p &gt; 2. So for our planet to be &amp;#8220;fractal,&amp;#8221; we want &lt;em&gt;1&amp;lt;p&amp;lt;2&lt;/em&gt;. Looking at
-the first movie, this seems reasonable. &lt;strong&gt;Observation 7&lt;/strong&gt;: 70% of the
-Earth&amp;#8217;s surface is under water. On Earth, we can think of the points
+Eq. (3), we know that each of the spherical harmonics &lt;mathjax&gt;$Y_l^m$&lt;/mathjax&gt; is related to
+a polynomial of degree &lt;mathjax&gt;$l$&lt;/mathjax&gt; in &lt;mathjax&gt;$\cos \theta$&lt;/mathjax&gt;. So if we take a derivative, I&amp;#8217;d
+expect us to pick up another factor of &lt;mathjax&gt;$l$&lt;/mathjax&gt; each time. Following through
+all the steps of Eq. (4) we&amp;nbsp;find &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \vec{\nabla}h \sim \sqrt{\sum_l l^{-2p+3}}\vec{N}(0,1) \quad , $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;which converges for &lt;mathjax&gt;$p &amp;gt; 2$&lt;/mathjax&gt;. So for our planet to be &amp;#8220;fractal,&amp;#8221; we want &lt;mathjax&gt;$1&amp;lt;p&amp;lt;2$&lt;/mathjax&gt;. 
+Looking at the first movie, this seems&amp;nbsp;reasonable. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 7&lt;/strong&gt;: 
+70% of the Earth&amp;#8217;s surface is under water. On Earth, we can think of the points
 underwater as all those points below a certain threshold height. So
 let&amp;#8217;s threshold the heights on our sphere. If we want 70% of our
-generated planet&amp;#8217;s surface to be under water, Eq (4) and the &lt;a href="http://en.wikipedia.org/wiki/Cumulative_distribution_function"&gt;cumulative
-distribution
-function&lt;/a&gt;of
-a &lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;Gaussian
-distribution&lt;/a&gt; tells us
-that we want to pick a critical height &lt;em&gt;H&lt;/em&gt; such that &lt;mathjax&gt;$$ \frac 1 2
-\left[ 1 + \textrm{erf}(H/\sqrt{2\sigma^2}) \right] = 0.7 \quad
-\textrm{or} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ H = \sqrt{2\sigma^2}\textrm{erf}^{-1}(0.4) $$&lt;/mathjax&gt; &lt;mathjax&gt;$$
-\sigma^2 = \frac 1 {4\pi} \sum_l l^{-2p}(2l+1) \quad (5)\, , $$&lt;/mathjax&gt;
-where &lt;em&gt;erf()&lt;/em&gt; is a special function called the error function, and erf-1
-is its inverse. We can evaluate these numerically (or by using some
-&lt;a href="http://en.wikipedia.org/wiki/Error_Function#Asymptotic_expansion"&gt;dirty
-tricks&lt;/a&gt;
+generated planet&amp;#8217;s surface to be under water, Eq (4) and the 
+&lt;a href="http://en.wikipedia.org/wiki/Cumulative_distribution_function"&gt;cumulative distribution function&lt;/a&gt;
+of a 
+&lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;Gaussian distribution&lt;/a&gt; 
+tells us that we want to pick a critical height &lt;mathjax&gt;$H$&lt;/mathjax&gt; such&amp;nbsp;that &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{1}{2} \left[ 1 + \textrm{erf}(H \sqrt{2\sigma^2}) \right] = 0.7 \quad \textrm{or} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ H = \sqrt{2\sigma^2}\textrm{erf}^{-1}(0.4) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$\sigma^2 = \frac 1 {4\pi} \sum_l l^{-2p}(2l+1) \quad (5)\, , $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;mathjax&gt;$\textrm{erf}()$&lt;/mathjax&gt; is a special function called the error function, 
+and &lt;mathjax&gt;$\textrm{erf}^{-1}$&lt;/mathjax&gt; is its inverse. We can evaluate these numerically (or by using some
+&lt;a href="http://en.wikipedia.org/wiki/Error_Function#Asymptotic_expansion"&gt;dirty tricks&lt;/a&gt;
 if we&amp;#8217;re feeling especially masochistic). So for our generated planet,
-let&amp;#8217;s call all the points with a height larger than H &amp;#8220;land,&amp;#8221; and all
-the points with a height less than H &amp;#8220;ocean.&amp;#8221; Here is what it looks like
-for a planet with&lt;em&gt;p=0, p=1&lt;/em&gt;, and &lt;em&gt;p=2&lt;/em&gt;, plotted with the same &lt;a href="http://en.wikipedia.org/wiki/Sinusoidal_projection"&gt;Sanson
-projection&lt;/a&gt; as&amp;nbsp;before.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s1600/allContinents.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-bWQBhSTYGAc/UIxZyk1d9dI/AAAAAAAAABk/FSZtM2jZ24g/s400/allContinents.png" /&gt;&lt;/a&gt;
-  Top to bottom: p=0, p=1, and p=2. I&amp;#8217;ve colored all the &amp;#8220;water&amp;#8221; (positions with heights &amp;lt; &lt;em&gt;H&lt;/em&gt;as given in Eq. (5) ) blue and all the land (heights &gt; &lt;em&gt;H&lt;/em&gt;)&amp;nbsp;green.&lt;/p&gt;
-&lt;hr /&gt;
+let&amp;#8217;s call all the points with a height larger than &lt;mathjax&gt;$H$&lt;/mathjax&gt; &amp;#8220;land,&amp;#8221; and all
+the points with a height less than &lt;mathjax&gt;$H$&lt;/mathjax&gt; &amp;#8220;ocean.&amp;#8221; Here is what it looks like
+for a planet with &lt;mathjax&gt;$p=0$&lt;/mathjax&gt;, &lt;mathjax&gt;$p=1$&lt;/mathjax&gt;, and &lt;mathjax&gt;$p=2$&lt;/mathjax&gt;, plotted with the same 
+&lt;a href="http://en.wikipedia.org/wiki/Sinusoidal_projection"&gt;Sanson projection&lt;/a&gt; 
+as&amp;nbsp;before.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="/static/images/creating-an-earth/allContinents.png" width="50%" alt="allContinents" align="center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;
+Top to bottom: p=0, p=1, and p=2. I&amp;#8217;ve colored all the &amp;#8220;water&amp;#8221; (positions with heights &amp;lt; &lt;mathjax&gt;$H$&lt;/mathjax&gt; as given in Eq. (5) ) blue and all the land (heights &amp;gt; &lt;mathjax&gt;$H$&lt;/mathjax&gt;) green.
+&lt;/sub&gt;&lt;/p&gt;
 &lt;p&gt;You can see that the the total amount of land area is roughly constant
 among the three images, but we haven&amp;#8217;t fixed how it&amp;#8217;s distributed.
-Looking at the map above for &lt;em&gt;p=0&lt;/em&gt;, there are lots of small &amp;#8220;islands&amp;#8221;
-but no large contiguous land masses. For &lt;em&gt;p=2&lt;/em&gt;, we see only one
-contiguous land mass (plus one 5-pixel island), and &lt;em&gt;p=1&lt;/em&gt; sits somewhere
+Looking at the map above for &lt;mathjax&gt;$p=0$&lt;/mathjax&gt;, there are lots of small &amp;#8220;islands&amp;#8221;
+but no large contiguous land masses. For &lt;mathjax&gt;$p=2$&lt;/mathjax&gt;, we see only one
+contiguous land mass (plus one 5-pixel island), and &lt;mathjax&gt;$p=1$&lt;/mathjax&gt; sits somewhere
 in between the two extremes. None of these look like the Earth, where
 there are a few large landmasses but many small islands. From our
-previous arguments, we&amp;#8217;d expect something between p=1 and p=2 to look
+previous arguments, we&amp;#8217;d expect something between &lt;mathjax&gt;$p=1$&lt;/mathjax&gt; and &lt;mathjax&gt;$p=2$&lt;/mathjax&gt; to look
 like the Earth, which is in line with the above picture. But how do we
-decide which value of p to use? &lt;strong&gt;Observation 8&lt;/strong&gt;: The Earth has 7
-continents This one is more vague than the others, but I think it&amp;#8217;s the
+decide which value of p to&amp;nbsp;use? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 8&lt;/strong&gt;: 
+The Earth has 7 continents This one is more vague than the others, but I think it&amp;#8217;s the
 coolest of all the arguments. How do we compare our generated planets to
 the Earth? The Earth has 7 continents that comprise 4 different
 contiguous landmasses. In order, these are 1) Europe-Asia-Africa, 2)
@@ -743,27 +803,32 @@ a planet with 4 continents? I have no idea how to calculate exactly what
 that number would be from our model, but I can certainly measure it from
 the simulated results. I went ahead and counted the number of continents
 in the generated&amp;nbsp;planets.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s1600/numContinents.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-eGMLLNCMVRU/UIxbi6MYw9I/AAAAAAAAAB8/BFVHUaEctBA/s400/numContinents.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-W3qT-_LOlT4/UIxaxqd1b9I/AAAAAAAAABs/HZEMht7uzlU/s1600/numContinents.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="/static/images/creating-an-earth/numContinents.png" width="50%" alt="allContinents" align="center"&gt;
+&lt;/p&gt;
+
 &lt;p&gt;The results are plotted above. The solid red line is the median values
 of the number of continents, as measured over 400 distinct worlds at 40
-different values of p. The red shaded region around it is the band
+different values of &lt;mathjax&gt;$p$&lt;/mathjax&gt;. The red shaded region around it is the band
 containing the upper and lower quartiles of the number of continents.
 For comparison, in black on the right y-axis I&amp;#8217;ve also plotted the log
 of the total number of landmasses at the resolution I&amp;#8217;ve used. The
-number of continents has a resonant value of p &amp;#8212; if p is too small,
+number of continents has a resonant value of &lt;mathjax&gt;$p$&lt;/mathjax&gt; &amp;#8212; if &lt;mathjax&gt;$p$&lt;/mathjax&gt; is too small,
 then there are many landmasses, but none are big enough to be
-continents. Conversely, if p is too large, then there is only one huge
-landmass. Somewhere in the middle, around p=0.5, there are about 20
-continents, at least when only the first \~23000 terms in the series are
+continents. Conversely, if &lt;mathjax&gt;$p$&lt;/mathjax&gt; is too large, then there is only one huge
+landmass. Somewhere in the middle, around &lt;mathjax&gt;$p=0.5$&lt;/mathjax&gt;, there are about 20
+continents, at least when only the first &lt;mathjax&gt;${\sim}23000$&lt;/mathjax&gt; terms in the series are
 summed. Looking at the curve, we see that there are roughly two places
-where there are 4 continents in the world &amp;#8212; at p=0.1 and at p=1.3.
-Since p=0.1 doesn&amp;#8217;t converge, and since p=0.1 will have way too many
+where there are 4 continents in the world &amp;#8212; at &lt;mathjax&gt;$p=0.1$&lt;/mathjax&gt; and at &lt;mathjax&gt;$p=1.3$&lt;/mathjax&gt;.
+Since &lt;mathjax&gt;$p=0.1$&lt;/mathjax&gt; doesn&amp;#8217;t converge, and since &lt;mathjax&gt;$p=0.1$&lt;/mathjax&gt; will have way too many
 landmasses, it looks like a generated Earth will look the best if we use
-a value of &lt;em&gt;p=&lt;/em&gt;1.3 And that&amp;#8217;s it. For your viewing pleasure, here is a
-video of three of these planets below, complete with water, continents,
-and mountains. &lt;a href="footnote4"&gt;[4]&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[1] Since I wanted a random surface, I wanted to make the mean of each
+a value of &lt;mathjax&gt;$p=1.3$&lt;/mathjax&gt; And that&amp;#8217;s it. &lt;a id='note4'&gt;&lt;/a&gt; 
+For your viewing pleasure, here is a video of three of these planets below, 
+complete with water, continents, and mountains.&lt;a href="#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; Since I wanted a random surface, I wanted to make the mean of each
 coefficient 0. Otherwise we&amp;#8217;d get a deterministic part of our surface
 heights. I picked a distribution that&amp;#8217;s symmetric about 0 because on
 Earth the bottom of the oceans seem roughly similar in terms of changes
@@ -772,22 +837,26 @@ coefficients because it makes the sums that come up easier to evalutate.
 Finally, I picked a Gaussian, as opposed to another stable distribution
 like a Lorentzian, because the tallest points on Earth are finite, and I
 wanted the variance of the planet&amp;#8217;s height to be&amp;nbsp;defined.&lt;/p&gt;
-&lt;p&gt;[2] We could make this rigorous by showing that a rotated spherical
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="#note2"&gt;^&lt;/a&gt; We could make this rigorous by showing that a rotated spherical
 harmonic is orthogonal to other spherical harmonics of a different
-degree &lt;em&gt;l&lt;/em&gt;, but you don&amp;#8217;t want to see me&amp;nbsp;try.&lt;/p&gt;
-&lt;p&gt;[3]Actually p=0 should correspond to completely uncorrelated
+degree &lt;mathjax&gt;$l$&lt;/mathjax&gt;, but you don&amp;#8217;t want to see me&amp;nbsp;try.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="#note3"&gt;^&lt;/a&gt; Actually &lt;mathjax&gt;$p=0$&lt;/mathjax&gt; should correspond to completely uncorrelated
 delta-function noise. (You can convince yourself by looking at the
 spherical harmonic expansion for a delta-function.) The reason that the
 bumps have a finite width is that I only summed the first 22,499 terms
-in the series (l=150 and below). So the size of the bumps gives a rough
+in the series (&lt;mathjax&gt;$l=150$&lt;/mathjax&gt; and below). So the size of the bumps gives a rough
 idea of my&amp;nbsp;resolution.&lt;/p&gt;
-&lt;p&gt;[4] For those of you keeping score at home, it took me more than 6 days
-to figure out how to make these&amp;nbsp;planets.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>A Curious Footprint</title><link href="http://thephysicsvirtuosi.com/posts/a-curious-footprint.html" rel="alternate"></link><updated>2012-08-04T04:56:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2012-08-04:posts/a-curious-footprint.html</id><summary type="html">&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-nW-i5yFeM6Y/UByrmMDEVbI/AAAAAAAAAZM/rBD78ulDQj0/s1600/msl_laser.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-nW-i5yFeM6Y/UByrmMDEVbI/AAAAAAAAAZM/rBD78ulDQj0/s320/msl_laser.jpg" /&gt;&lt;/a&gt;
-  Lasers! &lt;em&gt;Credit:&amp;nbsp;&lt;span class="caps"&gt;JPL&lt;/span&gt;/Caltech&lt;/em&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;In less than two days, &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s Mars Science Laboratory (&lt;span class="caps"&gt;MSL&lt;/span&gt;) /
-&lt;em&gt;Curiosity&lt;/em&gt; rover will begin its harrowing descent to the Martian
+&lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
+4. &lt;a href="#note4"&gt;^&lt;/a&gt; For those of you keeping score at home, it took me more than 6 days
+to figure out how to make these&amp;nbsp;planets.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>A Curious Footprint</title><link href="http://thephysicsvirtuosi.com/posts/a-curious-footprint.html" rel="alternate"></link><updated>2012-08-04T04:56:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2012-08-04:posts/a-curious-footprint.html</id><summary type="html">&lt;figure style="float:center; margin:0px 0px 10px 0px" width=50%&gt;
+&lt;img src="/static/images/a-curious-footprint/msl_laser.jpg" alt="msl laser"; /&gt;
+&lt;figcaption&gt; Lasers! &lt;i&gt;Credit: &lt;span class="caps"&gt;JPL&lt;/span&gt;/Caltech&lt;/i&gt; &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In less than two days, &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s Mars Science Laboratory (&lt;span class="caps"&gt;MSL&lt;/span&gt;) / &lt;em&gt;Curiosity&lt;/em&gt; 
+rover will begin its harrowing descent to the Martian
 surface. If everything goes according to the
 kind-of-crazy-what-the-heck-is-a-sky-crane plan, this process will be
 referred to as &amp;#8220;landing&amp;#8221; (otherwise, more crashy/explodey gerunds will
@@ -800,18 +869,17 @@ not working on this project, so I don&amp;#8217;t have a lot to add that
 &lt;span class="caps"&gt;BUT&lt;/span&gt; I do feel an authority-by-proximity kind of fallacy kicking in, so
 how about a post why&amp;nbsp;not?&lt;/p&gt;
 &lt;h3&gt;Preliminaries&lt;/h3&gt;
-&lt;p&gt;Before we get started, I feel obligated to link to &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s &lt;em&gt;&lt;a href="http://www.youtube.com/watch?v=Ki_Af_o9Q9s"&gt;Seven
-Minutes of Terror&lt;/a&gt;&lt;/em&gt;video. If
-you haven&amp;#8217;t seen it yet, I highly recommend watching it right now (my
+&lt;p&gt;Before we get started, I feel obligated to link to &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s 
+&lt;em&gt;&lt;a href="http://www.youtube.com/watch?v=Ki_Af_o9Q9s"&gt;Seven Minutes of Terror&lt;/a&gt;&lt;/em&gt;
+video. If you haven&amp;#8217;t seen it yet, I highly recommend watching it right now (my
 favorite part is the subtitles). It has over a million views on YouTube
 and seems to have done a pretty good job at generating interest in the
 mission. Although, it&amp;#8217;s a shame they had to interview the first guy in
 what appears to be a police interrogation room. Oh&amp;nbsp;well.&lt;/p&gt;
 &lt;h3&gt;About the&amp;nbsp;Rover&lt;/h3&gt;
 &lt;p&gt;This thing is &lt;em&gt;big&lt;/em&gt;. It&amp;#8217;s the size of a car and is jam-packed with
-&lt;a href="http://mars.jpl.nasa.gov/msl/mission/instruments/"&gt;scientific
-equipment&lt;/a&gt;. There&amp;#8217;s a
-couple different spectrometers, a bunch of cameras, a drill for
+&lt;a href="http://mars.jpl.nasa.gov/msl/mission/instruments/"&gt;scientific equipment&lt;/a&gt;. 
+There&amp;#8217;s a couple different spectrometers, a bunch of cameras, a drill for
 collecting rock samples, and radiation detectors. Probably the coolest
 instrument onboard &lt;em&gt;Curiosity&lt;/em&gt; is called the ChemCam. The ChemCam uses a
 laser to vaporize small regions of rock, which allows it to study the
@@ -819,18 +887,21 @@ composition of things about 20 feet&amp;nbsp;away.&lt;/p&gt;
 &lt;p&gt;In addition to the scientific payload, &lt;em&gt;Curiosity&lt;/em&gt; also needs some way
 to generate power. Previous rovers had been powered by solar panels, but
 there don&amp;#8217;t appear to be any here. Instead, &lt;em&gt;Curiosity&lt;/em&gt; is
-&lt;a href="http://www.ne.doe.gov/pdfFiles/MMRTG_Jan2008.pdf"&gt;powered&lt;/a&gt; by the heat
-released from the radioactive decay of about 10 pounds of plutonium
-dioxide. This source will power the rover for ~~about a Martian year~~
+&lt;a href="http://www.ne.doe.gov/pdfFiles/MMRTG_Jan2008.pdf"&gt;powered&lt;/a&gt; 
+by the heat released from the radioactive decay of about 10 pounds of plutonium
+dioxide. This source will power the rover for 
+&lt;strike&gt;about a Martian year&lt;/strike&gt;
 well beyond the currently planned mission duration of one Martian year
-(about 687 Earth days) &lt;em&gt;[Thanks to Nathan in the comments for pointing
-this out!]&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;To summarize, the rover is a nuclear-powered lab-on-wheels that &lt;em&gt;shoots
-lasers out of its head&lt;/em&gt;. This is pretty&amp;nbsp;cool.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-jLOpoGLY6Yk/UBzbYgwRMKI/AAAAAAAAAZg/lViBtW_vQgM/s1600/msl2.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-jLOpoGLY6Yk/UBzbYgwRMKI/AAAAAAAAAZg/lViBtW_vQgM/s400/msl2.jpg" /&gt;&lt;/a&gt;
-  In non-&lt;span class="caps"&gt;SI&lt;/span&gt; units, the &lt;span class="caps"&gt;MSL&lt;/span&gt; is roughly one handsome man (1 hm)&amp;nbsp;tall&lt;/p&gt;
-&lt;hr /&gt;
+(about 687 Earth days) [Thanks to Nathan in the comments for pointing
+this&amp;nbsp;out!].&lt;/p&gt;
+&lt;p&gt;To summarize, the rover is a nuclear-powered lab-on-wheels that 
+&lt;em&gt;shoots lasers out of its head&lt;/em&gt;. This is pretty&amp;nbsp;cool.&lt;/p&gt;
+&lt;figure style="width:70%"&gt;
+    &lt;img src="/static/images/a-curious-footprint/msl2.jpg" width="100%" alt="msl laser 2" align="center" style="margin:0px 0px 0px 0px"&gt;
+
+   &lt;figcaption&gt;In non-&lt;span class="caps"&gt;SI&lt;/span&gt; units, the &lt;span class="caps"&gt;MSL&lt;/span&gt; is roughly one handsome man (1 hm) tall&lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;h3&gt;A Curious&amp;nbsp;Footprint&lt;/h3&gt;
 &lt;p&gt;There&amp;#8217;s been a lot of preparation at &lt;span class="caps"&gt;JPL&lt;/span&gt; this week for the upcoming
 landing. All the shiny rover models have been taken out of the visitor&amp;#8217;s
@@ -840,147 +911,190 @@ backdrop for press reports and the&amp;nbsp;like.&lt;/p&gt;
 today when someone pointed out something cool about the tires on
 &lt;em&gt;Curiosity&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s a&amp;nbsp;close-up:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-ZAritHZ1usE/UBzfOUrM_oI/AAAAAAAAAZ0/meA5wgE6HCM/s1600/MSL_tire.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-ZAritHZ1usE/UBzfOUrM_oI/AAAAAAAAAZ0/meA5wgE6HCM/s400/MSL_tire.jpg" /&gt;&lt;/a&gt;
-  Hole-y&amp;nbsp;Tires&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Each tire on the rover is has &amp;#8220;&lt;span class="caps"&gt;JPL&lt;/span&gt;&amp;#8221; punched out in &lt;a href="http://en.wikipedia.org/wiki/File:International_Morse_Code.svg"&gt;Morse
-code&lt;/a&gt;!
+&lt;figure style="width:70%"&gt;
+  &lt;img src="/static/images/a-curious-footprint/MSL_tire.jpg" width="100%" alt="msl tire" align="center" style="margin:0px 0px 0px 0px"&gt;
+  &lt;figcaption&gt; Hole-y Tires &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Each tire on the rover is has &amp;#8220;&lt;span class="caps"&gt;JPL&lt;/span&gt;&amp;#8221; punched out in 
+&lt;a href="http://en.wikipedia.org/wiki/File:International_Morse_Code.svg"&gt;Morse code&lt;/a&gt;!
 Makes sense, though. If you&amp;#8217;re going to spend $2.5 billion on something,
 you might as well put your name on&amp;nbsp;it.&lt;/p&gt;
 &lt;h3&gt;Watch the&amp;nbsp;Landing&lt;/h3&gt;
-&lt;p&gt;If you want to watch the landing, check out the &lt;a href="http://www.nasa.gov/multimedia/nasatv/index.html"&gt;&lt;span class="caps"&gt;NASA&lt;/span&gt; &lt;span class="caps"&gt;TV&lt;/span&gt;
-stream&lt;/a&gt;. The landing
-is scheduled for Sunday night at 10:31 pm &lt;span class="caps"&gt;PDT&lt;/span&gt; (1:31 am &lt;span class="caps"&gt;EDT&lt;/span&gt;). Until then,
+&lt;p&gt;If you want to watch the landing, check out the 
+&lt;a href="http://www.nasa.gov/multimedia/nasatv/index.html"&gt;&lt;span class="caps"&gt;NASA&lt;/span&gt; &lt;span class="caps"&gt;TV&lt;/span&gt; stream&lt;/a&gt;. 
+The landing is scheduled for Sunday night at 10:31 pm &lt;span class="caps"&gt;PDT&lt;/span&gt; (1:31 am &lt;span class="caps"&gt;EDT&lt;/span&gt;). Until then,
 it looks like they are showing a lot of interviews and other cool
 behind-the-scenes kind of&amp;nbsp;stuff.&lt;/p&gt;</summary><category term="mars"></category><category term="curiosity"></category><category term="MSL"></category><category term="scott bakula"></category></entry><entry><title>A Homemade Viscometer I</title><link href="http://thephysicsvirtuosi.com/posts/a-homemade-viscometer-i.html" rel="alternate"></link><updated>2012-07-24T22:32:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-07-24:posts/a-homemade-viscometer-i.html</id><summary type="html">&lt;p&gt;Stirring a bowl of honey is much more difficult than stirring a bowl of
 water. But why? The mass density of the honey is about the same as that
 of water, so we aren&amp;#8217;t moving more material. If we were to write out
-Newton&amp;#8217;s equation, &lt;em&gt;ma&lt;/em&gt; would be about the same, but yet we still need
-to put in much more force. Why? And can we measure it? The reason that
+Newton&amp;#8217;s equation, &lt;mathjax&gt;$ma$&lt;/mathjax&gt; would be about the same, but yet we still need
+to put in much more force. Why? And can we measure&amp;nbsp;it? &lt;/p&gt;
+&lt;p&gt;The reason that
 honey is harder to stir is of course that the drag on our spoon depends
 on more than just the density of the fluid. The drag also depends on the
 viscosity of the fluid &amp;#8212; loosely speaking, how thick it is &amp;#8212; and the
 viscosity of honey is about 400 times that of water, depending on the
 conditions. In fact, a quick perusal of the Wikipedia article on
-&lt;a href="http://en.wikipedia.org/wiki/Viscosity"&gt;viscosity&lt;/a&gt; shows that
-viscosities can vary by a fantastic amount &amp;#8212; some 13 orders of
-magnitude, from easy-to-move gases to &lt;a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment"&gt;thick pitch that behaves like a
-solid except&lt;/a&gt; on
+&lt;a href="http://en.wikipedia.org/wiki/Viscosity"&gt;viscosity&lt;/a&gt; 
+shows that viscosities can vary by a fantastic amount &amp;#8212; some 13 orders of
+magnitude, from easy-to-move gases to 
+&lt;a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment"&gt;thick pitch&lt;/a&gt; 
+that behaves like a solid except on
 long time scales. The situation is even more complicated than this, as
-some fluids can have a &lt;a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid"&gt;viscosity that changes depending on the
-flow&lt;/a&gt;. I wanted to
+&lt;a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid"&gt;some fluids&lt;/a&gt;
+can have a viscosity that changes depending on the flow. I wanted to
 find a way to measure the viscosities of the stuff around me, so I made
 the &lt;a href="http://en.wikipedia.org/wiki/Viscometer"&gt;viscometer&lt;/a&gt; pictured below
-for about $1.75 (the vending machines in Clark Hall are pretty
-expensive). How? Well,&amp;nbsp;I&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s1600/DSCF4438.JPG"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-3R2mNiV_-KY/UA4pOLSKLSI/AAAAAAAAABA/X4MHVcrh93M/s400/DSCF4438.JPG" /&gt;&lt;/a&gt;
-  My homemade viscometer, taking data on the viscosity of&amp;nbsp;water.&lt;/p&gt;
-&lt;hr /&gt;
+for about $1.75 (the vending machines in Clark Hall are pretty&amp;nbsp;expensive).&lt;/p&gt;
+&lt;div style="float: center"&gt;
+&lt;figure&gt;
+&lt;img src="/static/images/viscometer1/visc_fig1.jpg" alt="A PLOT???" width="40%"&gt;
+&lt;figcaption&gt; My homemade viscometer, taking data on the viscosity of water. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To do this,&amp;nbsp;I &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz
-    bottle (come on,&amp;nbsp;sponsorships).&lt;/li&gt;
-&lt;li&gt;Cut the top and bottom off the bottle, so all that was left was a
-    straight&amp;nbsp;tube.&lt;/li&gt;
-&lt;li&gt;Mounted the bottle with on top of a small piece of flat&amp;nbsp;plastic.&lt;/li&gt;
-&lt;li&gt;Mounted a single-tubed coffee stirrer horizontally out of the bottle
-    (I placed the end towards the middle of the bottle to avoid end&amp;nbsp;effects).&lt;/li&gt;
-&lt;li&gt;Epoxied or glued the entire edge&amp;nbsp;shut.&lt;/li&gt;
-&lt;li&gt;Marked evenly-spaced lines on the side of the&amp;nbsp;bottle.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz 
+    bottle (come on,&amp;nbsp;sponsorships).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cut the top and bottom off the bottle, so all that was left was a
+    straight&amp;nbsp;tube.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mounted the bottle with on top of a small piece of flat&amp;nbsp;plastic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mounted a single-tubed coffee stirrer horizontally out of the bottle
+    (I placed the end towards the middle of the bottle to avoid end&amp;nbsp;effects).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Epoxied or glued the entire edge&amp;nbsp;shut.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Marked evenly-spaced lines on the side of the&amp;nbsp;bottle.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I can load my &amp;#8220;sample&amp;#8221; fluid in the top of the Pepsi bottle, and time
 how long it takes for the sample level to drop to a certain point. A
 more viscous fluid will take more time to leave the bottle, with the
 time directly proportional to the viscosity. (This is a consequence of
 Stokes flow and the equation for flow in a pipe. It will always be true,
-as long as my fluid is viscous enough and my apparatus isn&amp;#8217;t too big.)
-So we&amp;#8217;re done! All we need to do is calibrate our viscometer with one
+as long as my fluid is viscous enough and my apparatus isn&amp;#8217;t too&amp;nbsp;big.)&lt;/p&gt;
+&lt;p&gt;So we&amp;#8217;re done! All we need to do is calibrate our viscometer with one
 sample, measure the times, and then we can go out and measure stuff in
 the world! No need to stick around for the boring calculations! We can
-do some fun science over the next few blog posts! But this is a physics
+do some fun science over the next few blog&amp;nbsp;posts! &lt;/p&gt;
+&lt;p&gt;But this is a physics
 blog written by a bunch of grad students, so I&amp;#8217;m assuming that a few of
 you want to see the details. (I won&amp;#8217;t judge you if you don&amp;#8217;t though.) If
 we think about the problem for a bit, we basically have flow of a liquid
 through a pipe (i.e. the coffee stirrer), plus a bunch of other crap
-which hopefully doesn&amp;#8217;t matter much. We first need to think about how
+which hopefully doesn&amp;#8217;t matter&amp;nbsp;much. &lt;/p&gt;
+&lt;p&gt;We first need to think about how
 the fluid moves. We want to find the velocity of the fluid at every
 position. This is best cast in the language of vector calculus &amp;#8212; we
-have a (vector) velocity field &lt;strong&gt;&lt;em&gt;u&lt;/em&gt;&lt;/strong&gt; at a (vector) position &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt;.
+have a (vector) velocity field &lt;mathjax&gt;$\vec{u}$&lt;/mathjax&gt; at a position &lt;mathjax&gt;$x$&lt;/mathjax&gt;.
 There are two things we know: 1) We don&amp;#8217;t (globally) gain or lose any
-fluid, and 2) Newton&amp;#8217;s laws &lt;em&gt;F=ma&lt;/em&gt; hold. We can write these equations as
-the Navier-Stokes equations: &lt;mathjax&gt;$$ \vec{\nabla}\cdot \vec{u} = 0 \quad
-(1) $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ \ \rho \left( \frac {\partial \vec{u}} {\partial t} +
-(\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p +
-\eta \nabla^2 \vec{u} \quad (2) $$&lt;/mathjax&gt; The first equation basically
+fluid, and 2) Newton&amp;#8217;s laws &lt;mathjax&gt;$F=ma$&lt;/mathjax&gt; hold. We can write these equations as
+the Navier-Stokes&amp;nbsp;equations: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \vec{\nabla}\cdot \vec{u} = 0 \quad (1) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \rho \left( \frac {\partial \vec{u}} {\partial t} + (\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p + \eta \nabla^2 \vec{u} \quad (2) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;The first equation basically
 says that we don&amp;#8217;t have any fluid appearing or disappearing out of
-nowhere, and the second is basically &lt;em&gt;m&lt;strong&gt;a&lt;/strong&gt;=&lt;strong&gt;F&lt;strong&gt;&lt;em&gt;, except written per
-unit volume. (The fluid&amp;#8217;s mass-per-unit-volume is &lt;em&gt;rho&lt;/em&gt;, the rate of
-change of our velocity is &lt;em&gt;d&lt;strong&gt;u&lt;/strong&gt;/dt&lt;/em&gt;, and our force per unit volume is&lt;/em&gt;&lt;/strong&gt;grad&lt;/strong&gt;(p)&lt;/em&gt;, plus a viscous term &lt;em&gt;laplacian(&lt;strong&gt;u&lt;/strong&gt;)&lt;/em&gt;. The only
-complication is that &lt;em&gt;d&lt;strong&gt;u&lt;/strong&gt;/dt&lt;/em&gt; is a total derivative, which we need to
-write as &lt;em&gt;d&lt;strong&gt;u&lt;/strong&gt;/dt + d&lt;strong&gt;u&lt;/strong&gt;/d&lt;strong&gt;x&lt;/strong&gt;&lt;/em&gt;d&lt;strong&gt;x&lt;/strong&gt;/dt&lt;em&gt;.) I won&amp;#8217;t drag you
-through the &lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory
-details&lt;/a&gt;,
+nowhere, and the second is basically &lt;mathjax&gt;$m \vec{a}=\vec{F}$&lt;/mathjax&gt;, except written per
+unit volume. (The fluid&amp;#8217;s mass-per-unit-volume is &lt;mathjax&gt;$\rho$&lt;/mathjax&gt;, the rate of
+change of our velocity is &lt;mathjax&gt;$\frac{d\vec{u}}{dt}$&lt;/mathjax&gt;, and our force per unit volume is
+&lt;mathjax&gt;$\vec{\nabla}p$&lt;/mathjax&gt;, plus a viscous term &lt;mathjax&gt;$\nabla^2 \vec{u}$&lt;/mathjax&gt;. The only
+complication is that &lt;mathjax&gt;$\frac{d\vec{u}}{dt}$&lt;/mathjax&gt; is a total derivative, which we need to
+write&amp;nbsp;as &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{d\vec{u}}{dt} =  \frac{\partial \vec{u}}{\partial t} + \frac{\partial \vec{u}}{\partial x} \frac{d x}{d t}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;I won&amp;#8217;t drag you through the 
+&lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory details&lt;/a&gt;,
 unless you want to see them, but it turns out that for my system the
-height of the fluid &lt;/em&gt;h&lt;em&gt; (measured from the coffee stirrer) versus time
-&lt;/em&gt;t* is &lt;mathjax&gt;$$ h(t) = h(0)e^{- t/T}, \quad T= 60.7 \textrm{sec} \times
-[\eta / \textrm{1 mPa*s}] \times [\textrm{ 1 g/cc} / \rho] $$&lt;/mathjax&gt; [For
-my viscometer, the coffee stirrer has length 13.34 cm and inside
+height of the fluid &lt;mathjax&gt;$h$&lt;/mathjax&gt; (measured from the coffee stirrer) versus time
+&lt;mathjax&gt;$t$&lt;/mathjax&gt; is &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ h(t) = h(0)e^{-t/T}, \quad T= 60.7 \textrm{sec} \times [\eta / \textrm{1 mPa s}] \times [\textrm{ 1 g/cc} / \rho] $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;[For my viscometer, the coffee stirrer has length 13.34 cm and inside
 diameter 2.4 mm, and the Pepsi bottle has a cross-sectional area of 36.3
 square centimeters (3.4 cm inner radius). You can see how the timescale
-scales with these properties in the &lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory details
-section&lt;/a&gt;.]&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s1600/5.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-RsGC2KaafVA/UA4pwpCbz6I/AAAAAAAAABI/S740sriRWg4/s400/5.png" /&gt;&lt;/a&gt;
-  A run with measured heights vs times &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; error bars. The majority of the uncertainty turns out to come from not knowing the exact proportions of the viscometer. I don&amp;#8217;t know exactly why the heights are systematically deviating from the fit, but I suspect it&amp;#8217;s that my gridlines aren&amp;#8217;t perfectly lined up with the bottom of my viscometer (it looks like \~5 mm off would do it, which I can totally believe looking at the picture of my viscometer). However, because of the linearity of the equations for steady flow in a pipe, we know that the time scales linearly with the viscosity, so we should be able to accurately measure relative&amp;nbsp;viscosities.&lt;/p&gt;
-&lt;hr /&gt;
+scales with these properties in the 
+&lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory details section&lt;/a&gt;.]&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+&lt;img src="/static/images/viscometer1/visc_fig2.png" alt="A PLOT" width="70%"&gt;
+&lt;figcaption style="font-size:small;"&gt;
+     A run with measured heights vs times &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; error bars. The
+     majority of the uncertainty turns out to come from not knowing the
+     exact proportions of the viscometer. I don&amp;#8217;t know exactly why the
+     heights are systematically deviating from the fit, but I suspect it&amp;#8217;s
+     that my gridlines aren&amp;#8217;t perfectly lined up with the bottom of my
+     viscometer (it looks like $\sim 5$ mm off would do it, which I can totally
+     believe looking at the picture of my viscometer). However, because of
+     the linearity of the equations for steady flow in a pipe, we know that
+     the time scales linearly with the viscosity, so we should be able to
+     accurately measure relative viscosities.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Well, how well does it work? Above is a plot of the height of water in
 my viscometer versus time, with a best-fit value from the equations
 above. To get a sense of my random errors (such as how good I am at
 timing the flow), I measured this curve 5 separate times. If I take into
 account the uncertainties in my apparatus setup as systematic errors, I
-find a value for my viscosity as &lt;mathjax&gt;$$ \eta \approx 1.429 \textrm{mPa*
-s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} $$&lt;/mathjax&gt; The actual
-value of the viscosity of water at room temperature (T=25 C) is about
-0.86 mPa*s, which is more-or-less within my systematic errors. So it
+find a value for my viscosity&amp;nbsp;as &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \eta \approx 1.429 \textrm{mPa s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;The actual value of the viscosity of water at room temperature (T=25 C) is about
+&lt;mathjax&gt;$0.86~\textrm{mPa s}$&lt;/mathjax&gt;, which is more-or-less within my systematic errors. So it
 looks like I won&amp;#8217;t be able to measure absolute values of viscosity
 accurately without a more precise apparatus. But if I look at the
 variation of my measured viscosity, I see that I should probably be able
 to measure changes in viscosity to 0.5% !! That&amp;#8217;s pretty good! Hopefully
 over the next couple weeks I&amp;#8217;ll try to use my viscometer to measure some
-interesting physics in the viscosity of&amp;nbsp;fluids.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Batman, Helicopters, and Center of Mass</title><link href="http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html" rel="alternate"></link><updated>2012-06-26T11:10:00-04:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2012-06-26:posts/batman-helicopters-and-center-of-mass.html</id><summary type="html">&lt;p&gt;&lt;a href="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg"&gt;&lt;img alt="image" src="http://cdn.medialib.computerandvideogames.com/screens/screenshot_263713.jpg" /&gt;&lt;/a&gt;
-A couple weeks ago, I came home after a long day at work looking for a
-break. I thought to myself, “What’s more fun than physics? Batman*.” I
-sat down to play the &lt;a href="http://en.wikipedia.org/wiki/Arkham_City"&gt;latest Batman
+interesting physics in the viscosity of&amp;nbsp;fluids.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>Batman, Helicopters, and Center of Mass</title><link href="http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html" rel="alternate"></link><updated>2012-06-26T11:10:00-04:00</updated><author><name>DTC</name></author><id>tag:thephysicsvirtuosi.com,2012-06-26:posts/batman-helicopters-and-center-of-mass.html</id><summary type="html">&lt;div style="float: right; margin: 0px 0px 0px 10px"&gt;
+&lt;img src="/static/images/batman/wiki_batman.jpg"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A couple weeks ago, I came home after a long day at work looking for a
+break. I thought to myself, &amp;#8220;What’s more fun than&amp;nbsp;physics?&amp;#8221; &lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Batman.&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I sat down to play the &lt;a href="http://en.wikipedia.org/wiki/Arkham_City"&gt;latest Batman
 videogame&lt;/a&gt;, in which Batman’s
 current objective was to use his grappling hook to jump onto an enemy
 helicopter to steal an electronic MacGuffin. As awesome as this was, it
 occurred to me that something was very wrong about the way the
-helicopter moved while Batman zipped through the air. &lt;a href="http://youtu.be/81qN-PHucqM?t=3m12s"&gt;See if you can
-spot it too&lt;/a&gt;. (Watch for about 5
+helicopter moved while Batman zipped through the&amp;nbsp;air. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://youtu.be/81qN-PHucqM?t=3m12s"&gt;See if you can spot it too&lt;/a&gt;. (Watch for about 5
 seconds after the video starts. Ignore the commentary. Note: The
-grunting noises are the sounds that Batman makes if you shoot him with
-bullets.) What occurred to me was this: If the helicopter’s rotors
+grunting noises are the sounds that Batman makes if you shoot him with&amp;nbsp;bullets.) &lt;/p&gt;
+&lt;p&gt;What occurred to me was this: If the helicopter’s rotors
 provided enough lift to balance the force of gravity, wouldn’t Batman’s
 sudden additional weight cause the helicopter to fall out of the sky?
 Also, to get lifted up into the air, the helicopter must be pulling up
 on Batman: shouldn’t Batman also be pulling down on the helicopter? By
-how much should we expect to see the helicopter’s altitude change? To
-address the first question, let&amp;#8217;s go to Newton&amp;#8217;s second law: &lt;mathjax&gt;$$ \sum
-\vec{F} = m\vec{a} $$&lt;/mathjax&gt; Let’s assume that the helicopter is hovering
+how much should we expect to see the helicopter’s altitude&amp;nbsp;change? &lt;/p&gt;
+&lt;p&gt;To address the first question, let&amp;#8217;s go to Newton&amp;#8217;s second&amp;nbsp;law: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \sum \vec{F} = m\vec{a} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Let’s assume that the helicopter is hovering
 stationary, minding its own business, when Batman jumps onto it. Let&amp;#8217;s
 also assume the helicopter pilots are totally oblivious to Batman and
 make no flight corrections after Batman jumps onto it. In order to
-hover, the lift from the helicopter&amp;#8217;s rotors exactly matched the pull of
-gravity. &lt;mathjax&gt;$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} =
-0 $$&lt;/mathjax&gt; Batman&amp;#8217;s sudden additional weight would cause the helicopter to
-start falling, as the forces would no longer balance: &lt;mathjax&gt;$$ \sum \vec{F}
-= \vec{F}_{rotors} - \vec{F}_{gravity} - \vec{F}_{Batman} &amp;lt; 0 $$&lt;/mathjax&gt;
-So the helicopter does accelerate (and move) when Batman jumps onto it.
+hover, the lift from the helicopter&amp;#8217;s rotors exactly matched the pull of&amp;nbsp;gravity. &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} = 0 $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Batman&amp;#8217;s sudden additional weight would cause the helicopter to
+start falling, as the forces would no longer&amp;nbsp;balance: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \sum \vec{F} = \vec{F}_{rotors} - \vec{F}_{gravity} - \vec{F}_{Batman} &amp;lt; 0 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;So the helicopter does accelerate (and move) when Batman jumps onto it.
 How much does it move? Let’s assume there are no crazy winds or other
 external forces acting on the helicopter or Batman while Batman grapples
 onto the helicopter. “No external forces” means that momentum of
-helicopter + Batman does not change during Batman&amp;#8217;s flight. Let&amp;#8217;s make
+helicopter + Batman does not change during Batman&amp;#8217;s&amp;nbsp;flight. &lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s make
 things a little simpler and assume that neither Batman nor the
 helicopter had any vertical momentum before Batman used his grappling
 hook. (I can choose to approach this problem from a reference frame
@@ -988,40 +1102,44 @@ where the center of mass is stationary. Choosing a frame where the
 center of mass moves won&amp;#8217;t change the results, it will just make the
 calculation more complicated.) Because the momentum of helicopter +
 Batman does not change, then the center of mass does not move while
-Batman zips through the air: &lt;mathjax&gt;$$ \frac{d}{dt} y_{COM} = \frac{d}{dt}
-\frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} +
-m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$&lt;/mathjax&gt;
-The center of mass must remain stationary, so we can find how much the
+Batman zips through the&amp;nbsp;air: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{d}{dt} y_{COM} = \frac{d}{dt} \frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} + m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;The center of mass must remain stationary, so we can find how much the
 helicopter&amp;#8217;s height changes by if Batman starts on the ground (y = 0)
-and both end up at the same height with Batman hanging from the
-helicopter: &lt;mathjax&gt;$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat}
-(0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat}
-y_{final}}{m_{Bat} + m_{Copter}} $$&lt;/mathjax&gt; &lt;mathjax&gt;$$ \Delta y = y_{Copter} -
-y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$&lt;/mathjax&gt;
-Now, some numbers: The police helicopters in the game are pretty small,
-probably about &lt;a href="http://en.wikipedia.org/wiki/Bell_206"&gt;1500 kg&lt;/a&gt;. Batman
-is a big guy who works out and probably weighs around 100 kg (220 lb).
+and both end up at the same height with Batman hanging from the&amp;nbsp;helicopter: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat} (0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat} y_{final}}{m_{Bat} + m_{Copter}} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \Delta y = y_{Copter} - y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Now, some numbers: The police helicopters in the game are pretty small,
+probably about 
+&lt;a href="http://en.wikipedia.org/wiki/Bell_206"&gt;1500 kg&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Batman is a big guy who works out and probably weighs around 100 kg (220 lb).
 Plus, he’s wearing body armor (hence surviving when bullets hit him) and
 a utility belt and all of those other Bat-gadgets, which probably adds
-about 30 kg (\~30 lb for the gadgets, &lt;a href="http://www.nationaldefensemagazine.org/archive/2011/February/Pages/ManufacturersAnswerMilitary%E2%80%99sCalltoReduceBodyArmorWeight.aspx"&gt;\~30 lb for the
-armor&lt;/a&gt;).
+about 30 kg (&lt;mathjax&gt;$\sim 30$&lt;/mathjax&gt; lb for the gadgets, 
+&lt;mathjax&gt;$\sim30$&lt;/mathjax&gt; lb for the &lt;a href="http://www.nationaldefensemagazine.org/archive/2011/February/Pages/ManufacturersAnswerMilitary%E2%80%99sCalltoReduceBodyArmorWeight.aspx"&gt;armor&lt;/a&gt;).
 If Batman has to grapple onto a helicopter 30 meters above him, then the
 helicopter should drop out of the air by about 2.4 m. This is greater
 than the height of Batman himself, and would be noticeable if the
 helicopter physics in the game were perfect. Of course, if the
 helicopters appearing in the game were the giant army helicopters (they
 do carry rockets, after all), their mass would be much larger
-(\~5000-10000 kg) so the effect of Batman’s additional weight would be
+&lt;mathjax&gt;$(\sim 5000-10000~{\rm kg})$&lt;/mathjax&gt; so the effect of Batman’s additional weight would be
 much smaller. None of these considerations detracted from the fun I had
 playing the game, but it did seem odd that the helicopters appeared to
 be nailed to the sky instead of moving freely through the air. I’ll be
-writing the game developers a strongly-worded letter directly. * The &lt;span class="caps"&gt;DC&lt;/span&gt;
-superhero, not the &lt;a href="http://en.wikipedia.org/wiki/Batman,_Turkey"&gt;city&lt;/a&gt;
-or the
-&lt;a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/"&gt;fish&lt;/a&gt;.&lt;/p&gt;</summary><category term="Center of Mass"></category><category term="Batman"></category></entry><entry><title>Tales from the Transit of Venus</title><link href="http://thephysicsvirtuosi.com/posts/tales-from-the-transit-of-venus.html" rel="alternate"></link><updated>2012-06-05T00:50:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2012-06-05:posts/tales-from-the-transit-of-venus.html</id><summary type="html">&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s1600/sad_transit.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s200/sad_transit.png" /&gt;&lt;/a&gt;
-  Sad Old&amp;nbsp;Sun&lt;/p&gt;
+writing the game developers a strongly-worded letter&amp;nbsp;directly. &lt;/p&gt;
 &lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; The &lt;span class="caps"&gt;DC&lt;/span&gt; superhero, not the &lt;a href="http://en.wikipedia.org/wiki/Batman,_Turkey"&gt;city&lt;/a&gt;
+or the
+&lt;a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/"&gt;fish&lt;/a&gt;.&lt;/p&gt;</summary><category term="Center of Mass"></category><category term="Batman"></category></entry><entry><title>Tales from the Transit of Venus</title><link href="http://thephysicsvirtuosi.com/posts/tales-from-the-transit-of-venus.html" rel="alternate"></link><updated>2012-06-05T00:50:00-04:00</updated><author><name>Corky</name></author><id>tag:thephysicsvirtuosi.com,2012-06-05:posts/tales-from-the-transit-of-venus.html</id><summary type="html">&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/venus-transit/sad_transit.png" alt="sad old sun" width="30%"&gt;
+  &lt;figcaption&gt;Sad Old Sun&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Today is the transit of Venus, which, aside from being a totally rad
 astronomical event, is also the perfect excuse to tell my favorite story
 of an unlucky Frenchman (I have many). This is by no means new and, if
@@ -1030,7 +1148,8 @@ It is perhaps the closest thing Astronomy has to a ghost story, told
 though the glow of a flashlight on moonless nights to scare the
 children. This is the story of Guillaume Le Gentil, a dude that just
 couldn&amp;#8217;t catch a&amp;nbsp;break.&lt;/p&gt;
-&lt;hr /&gt;
+
+
 &lt;p&gt;Guillaume Joseph Hyacinthe Jean-Baptiste Le Gentil de la Galaisière was
 a Frenchman with an incredibly long name. He was also an astronomer,
 though he hadn&amp;#8217;t started out that way. Monsieur Le Gentil (as his
@@ -1176,106 +1295,145 @@ most important (and violent) &lt;a href="http://en.wikipedia.org/wiki/Reign_of_T
 event&lt;/a&gt; of his&amp;nbsp;time.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
-&lt;hr /&gt;
 &lt;p&gt;I have mainly used a very nice series of historical papers of Le
 Gentil&amp;#8217;s misadventures with the transit of Venus written by Helen Sawyer
 Hogg. The papers were originally published in the &lt;em&gt;Journal of the Royal
-Astronomical Society of Canada&lt;/em&gt; and can be accessed through &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s &lt;span class="caps"&gt;ADS&lt;/span&gt; (
-&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...37S"&gt;Part 1&lt;/a&gt;, &lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...89S"&gt;Part
-2&lt;/a&gt;, &lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..127S"&gt;Part
-3&lt;/a&gt;, &lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..173S"&gt;Part
-4&lt;/a&gt;).&lt;/p&gt;
+Astronomical Society of Canada&lt;/em&gt; and can be accessed through &lt;span class="caps"&gt;NASA&lt;/span&gt;&amp;#8217;s &lt;span class="caps"&gt;ADS&lt;/span&gt; 
+(&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...37S"&gt;Part 1&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...89S"&gt;Part2&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..127S"&gt;Part 3&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..173S"&gt;Part 4&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;More Transit of&amp;nbsp;Venus:&lt;/strong&gt;&lt;/p&gt;
-&lt;hr /&gt;
 &lt;p&gt;If you want to see the Transit of Venus without having to go on an
 eleven year voyage (or even leaving your room), check out the &lt;span class="caps"&gt;NASA&lt;/span&gt;
-&lt;a href="http://sunearthday.nasa.gov/transitofvenus/"&gt;live-feed&lt;/a&gt; from Mauna&amp;nbsp;Kea.&lt;/p&gt;</summary><category term="transit of venus"></category><category term="bummer"></category><category term="scott bakula"></category></entry><entry><title>How Cold is the Ground II</title><link href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-ii.html" rel="alternate"></link><updated>2012-05-26T21:28:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-05-26:posts/how-cold-is-the-ground-ii.html</id><summary type="html">&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s1600/mainImage.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-NE8upI-YG1I/T8F4TvyfkyI/AAAAAAAAAA0/YmQ_KLlOseA/s200/mainImage.png" /&gt;&lt;/a&gt;
-  Images &lt;a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG"&gt;from&lt;/a&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg"&gt;Wikipedia&lt;/a&gt;                                           &lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Last week (ok, it was a little more than a few days ago&amp;#8230;.) I used
+&lt;a href="http://sunearthday.nasa.gov/transitofvenus/"&gt;live-feed&lt;/a&gt; from Mauna&amp;nbsp;Kea.&lt;/p&gt;</summary><category term="transit of venus"></category><category term="bummer"></category><category term="scott bakula"></category></entry><entry><title>How Cold is the Ground II</title><link href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-ii.html" rel="alternate"></link><updated>2012-05-26T21:28:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-05-26:posts/how-cold-is-the-ground-ii.html</id><summary type="html">&lt;div style="float: right; margin: 0px 0px 0px 10px"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/how-cold-is-the-ground-ii/mainImage.png" alt="GAH!" width="40%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Images &lt;a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG"&gt;from&lt;/a&gt;
+  &lt;a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg"&gt; Wikipedia
+  &lt;/a&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html"&gt;Last week&lt;/a&gt; 
+(ok, it was a little more than a few days ago&amp;#8230;) I used
 dimensional analysis to figure out how the ground&amp;#8217;s temperature changes
 with time. But although dimensional analysis can give us information
 about the length scales in the problem, it doesn&amp;#8217;t tell us what the
 solution looks like. From dimensional analysis, we don&amp;#8217;t even know what
 the solution does at large times and distances. (Although we can usually
 see the asymptotic behavior directly from the equation.) So let&amp;#8217;s go
-ahead and solve the the heat equation exactly: &lt;mathjax&gt;$$ \frac {\partial
-T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)
-$$&lt;/mathjax&gt; Well, what type of solution do we want to this equation? We want the
-temperature at the Earth&amp;#8217;s surface &lt;em&gt;x=0&lt;/em&gt; to change with the days or the
+ahead and solve the the heat equation&amp;nbsp;exactly: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac {\partial T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)$$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Well, what type of solution do we want to this equation? We want the
+temperature at the Earth&amp;#8217;s surface &lt;mathjax&gt;$x=0$&lt;/mathjax&gt; to change with the days or the
 seasons. So let&amp;#8217;s start out modeling this with a sinusoidal dependence
-&amp;#8212; we&amp;#8217;ll look for a solution of the form &lt;mathjax&gt;$$ T(x,t) = A(x)e^{i wt} $$&lt;/mathjax&gt;
-for some function &lt;em&gt;A(x)&lt;/em&gt;, then we can take the real part for our
-solution. Plugging this into Eq. (1) gives &lt;em&gt;A&amp;#8221; = iw/a * A&lt;/em&gt;, or &lt;mathjax&gt;$$ A(x)
-= e^{ \pm \sqrt{w/2a } (1+i) x} $$&lt;/mathjax&gt; Since we have a second-order
-ordinary differential equation for &lt;em&gt;A&lt;/em&gt;, we have two possible solutions,
-which are like &lt;em&gt;exp(+x)&lt;/em&gt;or &lt;em&gt;exp(-x)&lt;/em&gt;. Which one do we choose? Well, we
-want the temperature very far away from the surface of the ground to be
+&amp;#8212; we&amp;#8217;ll look for a solution of the&amp;nbsp;form &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ T(x,t) = A(x)e^{i wt} $$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;for some function &lt;mathjax&gt;$A(x)$&lt;/mathjax&gt;, then we can take the real part for our
+solution. Plugging this into Eq. (1) gives 
+&lt;mathjax&gt;$A^{\prime\prime} = i\omega/a \times A$&lt;/mathjax&gt;,&amp;nbsp;or &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ A(x) = e^{ \pm \sqrt{w/2a } (1+i) x} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Since we have a second-order
+ordinary differential equation for &lt;mathjax&gt;$A$&lt;/mathjax&gt;, we have two possible solutions,
+which are like &lt;mathjax&gt;$\exp(+x)$&lt;/mathjax&gt; or &lt;mathjax&gt;$\exp(-x)$&lt;/mathjax&gt;. Which one do we&amp;nbsp;choose? &lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Well, we want the temperature very far away from the surface of the ground to be
 constant, so we need the solution that decays with distance,
-&lt;em&gt;A\~exp(-x)&lt;/em&gt;. Taking the real part of this solution, we find
-&lt;a href="#footnote-1"&gt;[1]&lt;/a&gt; &lt;mathjax&gt;$$T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x )
-e^{-\sqrt{w/2a}x} \quad (2) $$&lt;/mathjax&gt; Well, what does this solution &lt;em&gt;say&lt;/em&gt;?
+&lt;mathjax&gt;$A\exp(-x)$&lt;/mathjax&gt;. Taking the real part of this solution, we 
+find&lt;a href="#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x ) e^{-\sqrt{w/2a}x} \quad (2) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Well, what does this solution &lt;em&gt;say&lt;/em&gt;?
 As we expected from our scaling arguments last week, the distance scale
 depends on the &lt;em&gt;square root&lt;/em&gt; of the time scale &amp;#8212; if we decrease our
 frequency by 4 (say, looking at changes over a season vs over a month),
-the ground gets cooler only 2x deeper. We also see that the temperature
+the ground gets cooler only &lt;mathjax&gt;$2{\times}$&lt;/mathjax&gt; deeper. We also see that the temperature
 oscillation drops off quite rapidly as we go deeper into the ground, and
 that there is a &amp;#8220;lag&amp;#8221; the farther you go into the ground. In particular,
 we see that at distances deep into the ground, the temperature drops to
 its average value at the surface. You can see this all in the pretty
 plot below (generated with&amp;nbsp;Python):&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s1600/SingleFrequency.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-sqMX0J6IxWE/T8FWTQUcMQI/AAAAAAAAAAM/_esX_l0VLjs/s400/SingleFrequency.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/how-cold-is-the-ground-ii/SingleFrequency.png" alt="GAH!" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Single frequency plot
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Let&amp;#8217;s recap. To model the temperature of the ground, we looked for a
 solution to the heat equation which had a sinusoidally oscillating
-temperature at &lt;em&gt;x=0&lt;/em&gt;, and decayed to 0 at large &lt;em&gt;x&lt;/em&gt;. We found a solution
+temperature at &lt;mathjax&gt;$x=0$&lt;/mathjax&gt;, and decayed to 0 at large &lt;mathjax&gt;$x$&lt;/mathjax&gt;. We found a solution
 such a solution, and it shows that the temperature decays rapidly as we
 go far into the ground. At this point, there are two questions that pop
-into mind: 1) Is the solution that we found &lt;em&gt;unique&lt;/em&gt;? Or are there other
-possible solutions? 2) This is all well and good, but what if our days
+into&amp;nbsp;mind: &lt;/p&gt;
+&lt;p&gt;1) Is the solution that we found &lt;em&gt;unique&lt;/em&gt;? Or are there other
+possible&amp;nbsp;solutions? &lt;/p&gt;
+&lt;p&gt;2) This is all well and good, but what if our days
 or seasons &lt;em&gt;aren&amp;#8217;t perfect sines&lt;/em&gt;? Can we find a solution that describes
-this behavior? I&amp;#8217;ll give one (1) VirtuosiPoint to the first commenter
-who can prove to what extent the above solution is unique
-&lt;a href="#footnote-2"&gt;[2]&lt;/a&gt;. But how about the second point? Can we solve this
+this&amp;nbsp;behavior? &lt;/p&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
+I&amp;#8217;ll give one (1) VirtuosiPoint to the first commenter
+who can prove to what extent the above solution is 
+unique&lt;a href="#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. But how about the second point? Can we solve this
 for non-sinusoidal time variations? Well, at this point most of the
-readers are rolling their eyes and shouting &amp;#8220;Use a &lt;a href="http://en.wikipedia.org/wiki/Fourier_series"&gt;Fourier
-series&lt;/a&gt; and move on.&amp;#8221; So I
+readers are rolling their eyes and shouting &amp;#8220;Use a 
+&lt;a href="http://en.wikipedia.org/wiki/Fourier_series"&gt;Fourier series&lt;/a&gt; and move on.&amp;#8221; So I
 will. Briefly, it turns out that (more or less) &lt;em&gt;any&lt;/em&gt; periodic function
 can be written as a sum of sines &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; cosines. So we can just add a bunch
 of sines and cosines together and construct our final solution. So just
 for fun, here is a plot of the temperature of the ground in Ithaca (data
 from &lt;a href="http://en.wikipedia.org/wiki/Ithaca,_New_York"&gt;Wikipedia&lt;/a&gt;) over a
 year. (I used a discrete Fourier transform to compute the&amp;nbsp;coefficients.)&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s1600/IthacaTemp.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-sYVDb4CwX9I/T8F4KNeQuqI/AAAAAAAAAAs/K12tb4CCrpc/s400/IthacaTemp.png" /&gt;&lt;/a&gt;
-  The temperature (colorbar) is in degrees C, assuming &lt;a href="http://thevirtuosi.blogspot.com/2012/05/how-cold-is-ground.html"&gt;&lt;em&gt;a=0.5 mm^2/s&lt;/em&gt;.&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-hNPxXpFwZag/T8F30BJbujI/AAAAAAAAAAk/v6Y4pzilvao/s1600/IthacaTemp.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/how-cold-is-the-ground-ii/IthacaTemp.png" alt="ithaca temp!" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  The temperature (colorbar) is in degrees C, assuming a=0.5 mm^2/s from &lt;a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html"&gt;before&lt;/a&gt;.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Looks pretty boring, but I swear that all the frequencies are in that
 plot. It just turns out that the seasons in Ithaca are pretty
 sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty
 constant 8 C. While I was postponing writing this, I wondered what the
 temperature on Mercury&amp;#8217;s rocks would be. If we dig deep enough, can we
 find an area with habitable temperatures? Some
-&lt;a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml"&gt;quick&lt;/a&gt;&lt;a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29"&gt;Googlin&lt;/a&gt;&amp;#8216;
+&lt;a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml"&gt;quick&lt;/a&gt;
+&lt;a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29"&gt;Googlin&lt;/a&gt;&amp;#8216;
 shows that the daytime and nighttime temperatures on Mercury are
-\~550-700 K and \~110 K at the &amp;#8220;equator.&amp;#8221; While I don&amp;#8217;t think that
-Mercury&amp;#8217;s temperature varies symmetrically, let&amp;#8217;s assume so for lack of
-better data.&lt;a href="#footnote-3"&gt;[3]&lt;/a&gt; Then we&amp;#8217;d expect that deep into the
+&lt;mathjax&gt;${\sim}550-700~{\rm K}$&lt;/mathjax&gt; and &lt;mathjax&gt;${\sim}110~{\rm K}$&lt;/mathjax&gt; at the &amp;#8220;equator.&amp;#8221; 
+While I don&amp;#8217;t think that Mercury&amp;#8217;s temperature varies symmetrically, let&amp;#8217;s assume so for lack of
+better data.&lt;a href="#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; Then we&amp;#8217;d expect that deep into the
 surface, the temperature would be fairly constant in time, at the
-average of these two extremes. Plugging in the numbers (assuming
-&lt;em&gt;a\~0.52 mm^2/s&lt;/em&gt; and using a Mercurial solar day as 176 days), we&amp;nbsp;get&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;T=94&lt;/em&gt;C, at 2.75 meters into the&amp;nbsp;surface.&lt;/p&gt;
-&lt;p&gt;[1] More precisely, since the heat equation is linear and real, if
-&lt;em&gt;T(x,t)&lt;/em&gt;is a solution to the equation, then so are &lt;em&gt;1/2(T+T&lt;/em&gt;)&lt;em&gt; or
-&lt;/em&gt;1/2i(T-T&lt;em&gt;).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;[2] Hint: It&amp;#8217;s not unique. For instance, here is another solution that
-satisfies the constraints, with no internal heat sources or sinks (I&amp;#8217;ll
-call it the &amp;#8220;freshly buried&amp;#8221;&amp;nbsp;solution):&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s1600/buriedAlive.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-KiwBKp4WarU/T8FdnaHDloI/AAAAAAAAAAY/naHre8kRVIQ/s320/buriedAlive.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+average of these two extremes. Plugging in the numbers 
+(assuming &lt;mathjax&gt;$a\approx0.52~{\rm mm}^2 / s$&lt;/mathjax&gt; and using a Mercurial solar day as 176 days), we&amp;nbsp;get&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$T=94~{\rm C}$&lt;/mathjax&gt; at 2.75 meters into the&amp;nbsp;surface.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="#note1"&gt;^&lt;/a&gt; More precisely, since the heat equation is linear and real, if
+&lt;mathjax&gt;$T(x,t)$&lt;/mathjax&gt; is a solution to the equation, then so are &lt;mathjax&gt;$\frac{1}{2}(T+T^{*})$&lt;/mathjax&gt; or
+&lt;mathjax&gt;$\frac{1}{2i}(T-T^{*})$&lt;/mathjax&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="#note2"&gt;^&lt;/a&gt; Hint: It&amp;#8217;s not unique. For instance, here is another solution that
+satisfies the constraints, with no internal heat sources or sinks 
+(I&amp;#8217;ll call it the &amp;#8220;freshly buried&amp;#8221;&amp;nbsp;solution):&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="/static/images/how-cold-is-the-ground-ii/buriedAlive.png" alt="buried alive" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Freshly buried.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Can you prove that all the other solutions decay to the original
 solution? Or is there a second or even a spectrum of steady state&amp;nbsp;solutions?&lt;/p&gt;
-&lt;p&gt;[3] If someone provides me with better data of the time variation of
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+[3] &lt;a href="#note3"&gt;^&lt;/a&gt; If someone provides me with better data of the time variation of
 Mercury&amp;#8217;s surface at some specific latitude, I&amp;#8217;ll update with a full
 plot of the temperature as a function of depth and&amp;nbsp;time.&lt;/p&gt;</summary><category term=""></category></entry><entry><title>How Cold is the Ground?</title><link href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html" rel="alternate"></link><updated>2012-05-18T00:20:00-04:00</updated><author><name>Brian</name></author><id>tag:thephysicsvirtuosi.com,2012-05-18:posts/how-cold-is-the-ground-.html</id><summary type="html">&lt;p&gt;It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it
 had been warm for the previous few days, and the ground was still warm
@@ -1283,60 +1441,108 @@ so the snow melted fast. Aside from letting me enjoy the absurd
 arguments against global warming that snow in April birthed, this got me
 thinking: How cold is the ground throughout the year? At night vs.
 during the day? And the corollary: How cold is my basement? If I dig a
-deeper basement, can I save on heating and cooling? (I&amp;#8217;m very cheap.)
-Well, we want to know the temperature distribution &lt;em&gt;T&lt;/em&gt; of the ground as
-a function of time &lt;em&gt;t&lt;/em&gt; and position &lt;em&gt;x&lt;/em&gt;. So some googlin&amp;#8217; or previous
-knowledge shows that we need to solve the &lt;a href="http://en.wikipedia.org/wiki/Heat_equation"&gt;heat
-equation&lt;/a&gt;. For our purposes,
+deeper basement, can I save on heating and cooling? (I&amp;#8217;m very&amp;nbsp;cheap.)&lt;/p&gt;
+&lt;p&gt;Well, we want to know the temperature distribution &lt;mathjax&gt;$T$&lt;/mathjax&gt; of the ground as
+a function of time &lt;mathjax&gt;$t$&lt;/mathjax&gt; and position &lt;mathjax&gt;$x$&lt;/mathjax&gt;. So some googlin&amp;#8217; or previous
+knowledge shows that we need to solve the 
+&lt;a href="http://en.wikipedia.org/wiki/Heat_equation"&gt;heat equation&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;For our purposes,
 we can treat the Earth as flat (I don&amp;#8217;t plan on digging a basement deep
 enough to see the curvature of the Earth), so we can assume the
-temperature only changes with the depth into the ground &lt;em&gt;x&lt;/em&gt;: &lt;mathjax&gt;$$ \frac
-{\partial T}{\partial t} = a \frac {\partial^2 T} {\partial x^2}
-\qquad (1) $$&lt;/mathjax&gt; where &lt;em&gt;a&lt;/em&gt; is the thermal diffusivity of the material, in
+temperature only changes with the depth into the ground &lt;mathjax&gt;$x$&lt;/mathjax&gt;: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{\partial T}{\partial t} = a \frac{\partial^2 T}{\partial x^2}\qquad (1) $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;where &lt;mathjax&gt;$a$&lt;/mathjax&gt; is the thermal diffusivity of the material, in
 units of square meters per second. It looks like we&amp;#8217;re going to have to
 solve some partial differential equations! Or will we? We can get a very
 good estimate of how much the temperature changes with depth just by
-dimensional analysis. Let&amp;#8217;s measure our time &lt;em&gt;t&lt;/em&gt; in terms of a
-characteristic time of our problem &lt;em&gt;w&lt;/em&gt; (it could be 1 year if we were
-trying to see the change in the ground&amp;#8217;s temperature from summer to
-winter, or 1 day if we were looking at the change from day to night).
-Then we can write: &lt;mathjax&gt;$$ \frac {\partial T } {\partial t} = \frac 1 w
-\frac {\partial T} {\partial t/w} $$&lt;/mathjax&gt; &amp;#8230; plugging this in Eq. (1),
-rearranging, and calling &lt;em&gt;l&lt;/em&gt;= sqrt(&lt;em&gt;w&lt;/em&gt;a&lt;em&gt;) gives&amp;#8230;. &lt;mathjax&gt;$$ \frac
-{\partial T}{\partial (t/w)} = \frac {\partial ^2 T} {\partial (x/
-l )^2} $$&lt;/mathjax&gt; Now let&amp;#8217;s say we didn&amp;#8217;t know how to or didn&amp;#8217;t want to solve
+dimensional&amp;nbsp;analysis. &lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s measure our time &lt;mathjax&gt;$t$&lt;/mathjax&gt; in terms of a
+characteristic time of our problem &lt;mathjax&gt;$w$&lt;/mathjax&gt; 
+(it could be 1 year if we were trying to see the change in the ground&amp;#8217;s temperature from summer to winter, 
+or 1 day if we were looking at the change from day to night).
+Then we can&amp;nbsp;write: &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{\partial T }{\partial t} = \frac{1}{w} \frac {\partial T} {\partial t/w} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;plugging this in Eq. (1),
+rearranging, and calling &lt;mathjax&gt;$l= \sqrt{wa}$&lt;/mathjax&gt; gives&amp;#8230;. &lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$ \frac{\partial T}{\partial (t/w)} = \frac{\partial ^2 T}{\partial (x/l )^2} $$&lt;/mathjax&gt; &lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s say we didn&amp;#8217;t know how to or didn&amp;#8217;t want to solve
 this equation. (Don&amp;#8217;t worry, we do &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; we will). From rearranging this
 equation, we see right away there is only one &amp;#8220;length scale&amp;#8221; in the
-problem, &lt;/em&gt;l&lt;em&gt;. So if we had to guess, we could guess that the ground
-changes temperature a distance &lt;/em&gt;l&lt;em&gt; into the ground. A quick look at
-Wikipedia for &lt;a href="http://en.wikipedia.org/wiki/Thermal_diffusivity"&gt;thermal
-diffusivities&lt;/a&gt; gives
-us the following table, for materials we&amp;#8217;d find in the ground:
-Material
-&lt;/em&gt;a&lt;em&gt;, mm^2/s
-&lt;/em&gt;l&lt;em&gt; (cm), &lt;/em&gt;w&lt;em&gt; = 1 day
-&lt;/em&gt;l&lt;em&gt; (cm), &lt;/em&gt;w* = 1 year
-Polycrystalline Silica (glass, sand)
-0.83
-27 cm
-5.1 meters
-Crystalline Silica (quartz)
-1.4
-35
-6.6
-Sandstone
-1.15
-32
-6.0
-Brick
-0.52
-21
-4.0
-&lt;a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf"&gt;Soil&lt;/a&gt;
-0.3-1.25
-16-33
-3.1-6.3
-So we would expect that the temperature of the ground doesn&amp;#8217;t change
+problem, &lt;mathjax&gt;$l$&lt;/mathjax&gt;. So if we had to guess, we could guess that the ground
+changes temperature a distance &lt;mathjax&gt;$l$&lt;/mathjax&gt; into the ground. A quick look at
+Wikipedia for 
+&lt;a href="http://en.wikipedia.org/wiki/Thermal_diffusivity"&gt;thermal diffusivities&lt;/a&gt; 
+gives us the following table, for materials we&amp;#8217;d find in the&amp;nbsp;ground:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tables&lt;/th&gt;
+&lt;th align="center"&gt;Are&lt;/th&gt;
+&lt;th align="right"&gt;Cool&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;col 3 is&lt;/td&gt;
+&lt;td align="center"&gt;right-aligned&lt;/td&gt;
+&lt;td align="right"&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;col 2 is&lt;/td&gt;
+&lt;td align="center"&gt;centered&lt;/td&gt;
+&lt;td align="right"&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;zebra stripes&lt;/td&gt;
+&lt;td align="center"&gt;are neat&lt;/td&gt;
+&lt;td align="right"&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;blloop&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Material&lt;/th&gt;
+&lt;th align="center"&gt;&lt;mathjax&gt;$a$&lt;/mathjax&gt; (&lt;mathjax&gt;${\rm mm}^2 / {\rm s}$&lt;/mathjax&gt;)&lt;/th&gt;
+&lt;th align="center"&gt;&lt;mathjax&gt;$l$&lt;/mathjax&gt; (&lt;mathjax&gt;$\rm{cm}$&lt;/mathjax&gt;, &lt;mathjax&gt;$1~{\rm day}$&lt;/mathjax&gt;)&lt;/th&gt;
+&lt;th align="center"&gt;&lt;mathjax&gt;$l$&lt;/mathjax&gt;  (&lt;mathjax&gt;$\rm{m}$&lt;/mathjax&gt;, &lt;mathjax&gt;$1~{\rm year}$&lt;/mathjax&gt;)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Polycrystalline Silica (glass, sand)&lt;/td&gt;
+&lt;td align="center"&gt;0.83&lt;/td&gt;
+&lt;td align="center"&gt;27&lt;/td&gt;
+&lt;td align="center"&gt;5.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Crystalline Silica (quartz)&lt;/td&gt;
+&lt;td align="center"&gt;1.4&lt;/td&gt;
+&lt;td align="center"&gt;35&lt;/td&gt;
+&lt;td align="center"&gt;6.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sandstone&lt;/td&gt;
+&lt;td align="center"&gt;1.15&lt;/td&gt;
+&lt;td align="center"&gt;32&lt;/td&gt;
+&lt;td align="center"&gt;6.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Brick&lt;/td&gt;
+&lt;td align="center"&gt;0.52&lt;/td&gt;
+&lt;td align="center"&gt;21&lt;/td&gt;
+&lt;td align="center"&gt;4.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf"&gt;Soil&lt;/a&gt;&lt;/td&gt;
+&lt;td align="center"&gt;0.3-1.25&lt;/td&gt;
+&lt;td align="center"&gt;16-33&lt;/td&gt;
+&lt;td align="center"&gt;3.1-6.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;So we would expect that the temperature of the ground doesn&amp;#8217;t change
 much on a daily basis a foot or so below the ground, and doesn&amp;#8217;t change
 ever about 15-20 feet into the ground. Just to pat ourselves on the back
 for our skills at dimensional analysis, a quick check shows that

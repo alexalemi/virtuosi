@@ -73,60 +73,108 @@ so the snow melted fast. Aside from letting me enjoy the absurd
 arguments against global warming that snow in April birthed, this got me
 thinking: How cold is the ground throughout the year? At night vs.
 during the day? And the corollary: How cold is my basement? If I dig a
-deeper basement, can I save on heating and cooling? (I&#8217;m very cheap.)
-Well, we want to know the temperature distribution <em>T</em> of the ground as
-a function of time <em>t</em> and position <em>x</em>. So some googlin&#8217; or previous
-knowledge shows that we need to solve the <a href="http://en.wikipedia.org/wiki/Heat_equation">heat
-equation</a>. For our purposes,
+deeper basement, can I save on heating and cooling? (I&#8217;m very&nbsp;cheap.)</p>
+<p>Well, we want to know the temperature distribution <mathjax>$T$</mathjax> of the ground as
+a function of time <mathjax>$t$</mathjax> and position <mathjax>$x$</mathjax>. So some googlin&#8217; or previous
+knowledge shows that we need to solve the 
+<a href="http://en.wikipedia.org/wiki/Heat_equation">heat equation</a>. </p>
+<p>For our purposes,
 we can treat the Earth as flat (I don&#8217;t plan on digging a basement deep
 enough to see the curvature of the Earth), so we can assume the
-temperature only changes with the depth into the ground <em>x</em>: <mathjax>$$ \frac
-{\partial T}{\partial t} = a \frac {\partial^2 T} {\partial x^2}
-\qquad (1) $$</mathjax> where <em>a</em> is the thermal diffusivity of the material, in
+temperature only changes with the depth into the ground <mathjax>$x$</mathjax>: </p>
+<p><mathjax>$$ \frac{\partial T}{\partial t} = a \frac{\partial^2 T}{\partial x^2}\qquad (1) $$</mathjax> </p>
+<p>where <mathjax>$a$</mathjax> is the thermal diffusivity of the material, in
 units of square meters per second. It looks like we&#8217;re going to have to
 solve some partial differential equations! Or will we? We can get a very
 good estimate of how much the temperature changes with depth just by
-dimensional analysis. Let&#8217;s measure our time <em>t</em> in terms of a
-characteristic time of our problem <em>w</em> (it could be 1 year if we were
-trying to see the change in the ground&#8217;s temperature from summer to
-winter, or 1 day if we were looking at the change from day to night).
-Then we can write: <mathjax>$$ \frac {\partial T } {\partial t} = \frac 1 w
-\frac {\partial T} {\partial t/w} $$</mathjax> &#8230; plugging this in Eq. (1),
-rearranging, and calling <em>l</em>= sqrt(<em>w</em>a<em>) gives&#8230;. <mathjax>$$ \frac
-{\partial T}{\partial (t/w)} = \frac {\partial ^2 T} {\partial (x/
-l )^2} $$</mathjax> Now let&#8217;s say we didn&#8217;t know how to or didn&#8217;t want to solve
+dimensional&nbsp;analysis. </p>
+<p>Let&#8217;s measure our time <mathjax>$t$</mathjax> in terms of a
+characteristic time of our problem <mathjax>$w$</mathjax> 
+(it could be 1 year if we were trying to see the change in the ground&#8217;s temperature from summer to winter, 
+or 1 day if we were looking at the change from day to night).
+Then we can&nbsp;write: </p>
+<p><mathjax>$$ \frac{\partial T }{\partial t} = \frac{1}{w} \frac {\partial T} {\partial t/w} $$</mathjax> </p>
+<p>plugging this in Eq. (1),
+rearranging, and calling <mathjax>$l= \sqrt{wa}$</mathjax> gives&#8230;. </p>
+<p><mathjax>$$ \frac{\partial T}{\partial (t/w)} = \frac{\partial ^2 T}{\partial (x/l )^2} $$</mathjax> </p>
+<p>Now let&#8217;s say we didn&#8217;t know how to or didn&#8217;t want to solve
 this equation. (Don&#8217;t worry, we do <span class="amp">&amp;</span> we will). From rearranging this
 equation, we see right away there is only one &#8220;length scale&#8221; in the
-problem, </em>l<em>. So if we had to guess, we could guess that the ground
-changes temperature a distance </em>l<em> into the ground. A quick look at
-Wikipedia for <a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal
-diffusivities</a> gives
-us the following table, for materials we&#8217;d find in the ground:
-Material
-</em>a<em>, mm^2/s
-</em>l<em> (cm), </em>w<em> = 1 day
-</em>l<em> (cm), </em>w* = 1 year
-Polycrystalline Silica (glass, sand)
-0.83
-27 cm
-5.1 meters
-Crystalline Silica (quartz)
-1.4
-35
-6.6
-Sandstone
-1.15
-32
-6.0
-Brick
-0.52
-21
-4.0
-<a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil</a>
-0.3-1.25
-16-33
-3.1-6.3
-So we would expect that the temperature of the ground doesn&#8217;t change
+problem, <mathjax>$l$</mathjax>. So if we had to guess, we could guess that the ground
+changes temperature a distance <mathjax>$l$</mathjax> into the ground. A quick look at
+Wikipedia for 
+<a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal diffusivities</a> 
+gives us the following table, for materials we&#8217;d find in the&nbsp;ground:</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>blloop</p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th align="center"><mathjax>$a$</mathjax> (<mathjax>${\rm mm}^2 / {\rm s}$</mathjax>)</th>
+<th align="center"><mathjax>$l$</mathjax> (<mathjax>$\rm{cm}$</mathjax>, <mathjax>$1~{\rm day}$</mathjax>)</th>
+<th align="center"><mathjax>$l$</mathjax>  (<mathjax>$\rm{m}$</mathjax>, <mathjax>$1~{\rm year}$</mathjax>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Polycrystalline Silica (glass, sand)</td>
+<td align="center">0.83</td>
+<td align="center">27</td>
+<td align="center">5.1</td>
+</tr>
+<tr>
+<td>Crystalline Silica (quartz)</td>
+<td align="center">1.4</td>
+<td align="center">35</td>
+<td align="center">6.6</td>
+</tr>
+<tr>
+<td>Sandstone</td>
+<td align="center">1.15</td>
+<td align="center">32</td>
+<td align="center">6.0</td>
+</tr>
+<tr>
+<td>Brick</td>
+<td align="center">0.52</td>
+<td align="center">21</td>
+<td align="center">4.0</td>
+</tr>
+<tr>
+<td><a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil</a></td>
+<td align="center">0.3-1.25</td>
+<td align="center">16-33</td>
+<td align="center">3.1-6.3</td>
+</tr>
+</tbody>
+</table>
+<p>So we would expect that the temperature of the ground doesn&#8217;t change
 much on a daily basis a foot or so below the ground, and doesn&#8217;t change
 ever about 15-20 feet into the ground. Just to pat ourselves on the back
 for our skills at dimensional analysis, a quick check shows that
