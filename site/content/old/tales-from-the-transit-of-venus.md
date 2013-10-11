@@ -6,10 +6,13 @@ Slug: tales-from-the-transit-of-venus
 Author: Corky
 
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![image](http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s200/sad_transit.png)](http://4.bp.blogspot.com/-JNVfkJwnAyY/T81XzasS8iI/AAAAAAAAAYU/eCerOIwvHxA/s1600/sad_transit.png)
-  Sad Old Sun
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<div style="float: center;">
+<figure>
+  <img src="/static/images/venus-transit/sad_transit.png" alt="sad old sun" width="30%">
+  <figcaption>Sad Old Sun</figcaption>
+</figure>
+</div>
+
 
 Today is the transit of Venus, which, aside from being a totally rad
 astronomical event, is also the perfect excuse to tell my favorite story
@@ -20,7 +23,7 @@ though the glow of a flashlight on moonless nights to scare the
 children. This is the story of Guillaume Le Gentil, a dude that just
 couldn't catch a break.
 
-------
+<!-- more -->
 
 Guillaume Joseph Hyacinthe Jean-Baptiste Le Gentil de la Galaisière was
 a Frenchman with an incredibly long name. He was also an astronomer,
@@ -178,20 +181,16 @@ event](http://en.wikipedia.org/wiki/Reign_of_Terror) of his time.
 
 **References:**
 
-****
-
 I have mainly used a very nice series of historical papers of Le
 Gentil's misadventures with the transit of Venus written by Helen Sawyer
 Hogg. The papers were originally published in the *Journal of the Royal
-Astronomical Society of Canada* and can be accessed through NASA's ADS (
-[Part 1](http://adsabs.harvard.edu/abs/1951JRASC..45...37S), [Part
-2](http://adsabs.harvard.edu/abs/1951JRASC..45...89S), [Part
-3](http://adsabs.harvard.edu/abs/1951JRASC..45..127S), [Part
-4](http://adsabs.harvard.edu/abs/1951JRASC..45..173S)).
+Astronomical Society of Canada* and can be accessed through NASA's ADS 
+([Part 1](http://adsabs.harvard.edu/abs/1951JRASC..45...37S), 
+[Part2](http://adsabs.harvard.edu/abs/1951JRASC..45...89S), 
+[Part 3](http://adsabs.harvard.edu/abs/1951JRASC..45..127S), 
+[Part 4](http://adsabs.harvard.edu/abs/1951JRASC..45..173S)).
 
 **More Transit of Venus:**
-
-****
 
 If you want to see the Transit of Venus without having to go on an
 eleven year voyage (or even leaving your room), check out the NASA
