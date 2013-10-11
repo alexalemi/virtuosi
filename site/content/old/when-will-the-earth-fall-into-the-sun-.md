@@ -4,11 +4,12 @@ Category: old
 Slug: when-will-the-earth-fall-into-the-sun-
 Author: Brian
 
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![image](http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s200/RetardedPic.png)](http://4.bp.blogspot.com/-_71xzP94MDc/ULgp7n5LP3I/AAAAAAAAACM/WU5UgsRyUYg/s1600/RetardedPic.png)
-  The time I spent making this poster could have been spent doing research.
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p style="float: center;">
+<figure>
+  <img src="/static/images/earth-fall-sun/BrianWastesHisTime.png" alt="the sun giveth, the sun taketh away" width="50%">
+  <figcaption>The time I spent making this poster could have been spent doing research</figcaption>
+</figure>
+</p>
 
 Since December 2012 is coming up, I thought I'd help the Mayans out with
 a look at a possible end of the world scenario. (I know, it's not Earth
@@ -33,20 +34,29 @@ moving, there can't be any drag. We also expect that a wider object
 feels more drag, so the drag force should depend on the radius of the
 Earth R. Finally, the density of the heliosphere might have something to
 do with it. If we fudge around with these, we see that there is only 1
-combination that gives units of force: $$ F_{drag} \sim \rho v^2
-R^2 $$ Now that we have the force, the energy dissipated from the Earth
-to the heliosphere after moving a distance *d* is *E_lost = F*d*. If
-the Earth moves with speed v for time t, then we can write *E_lost =
-F*v*t*. So we can get an idea of the time scale over which the Earth
-starts to fall into the Sun by taking *E_lost = E_Earth \~ 1/2
-M_Earth v^2*. Rearranging and dropping factors of 1/2 gives $$
-T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v)
-\\ \qquad \sim M_{Earth} / (\rho R^2 v) $$ Using the velocity of
-the Earth as *2*pi ** 1 Astronomical unit/year, Googlin' for some
-numbers, and taking the [density of the
-heliosphere](http://web.mit.edu/space/www/helio.review/axford.suess.html)
-to be 10^-23 g/cc we get... $$ T \approx 10^{19} \textrm{ years} $$
-Looks like this won't be the cause of the Mayan apocalypse. (By
-comparison, the [Sun will burn
-out](http://en.wikipedia.org/wiki/Sun#Life_cycle)after only \~10^9
-years.)
+combination that gives units of force: 
+
+$$ F_{drag} \sim \rho v^2 R^2 $$ 
+
+Now that we have the force, the energy dissipated from the Earth
+to the heliosphere after moving a distance $d$ is $E_\textrm{lost} = F\times d$. If
+the Earth moves with speed v for time t, then we can write 
+$E_\textrm{lost} = F v t$. So we can get an idea of the time scale over which the Earth
+starts to fall into the Sun by taking 
+
+$E_\textrm{lost} = E_\textrm{Earth} \sim 1/2 M_\textrm{Earth} v^2$. 
+Rearranging and dropping factors of 1/2 gives 
+
+$$ T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \\ 
+\qquad \sim M_{Earth} / (\rho R^2 v) $$ 
+
+Using the velocity of the Earth as $2\pi \times 1 \mbox{Astronomical unit/year}$, 
+Googlin' for some numbers, and taking the 
+[density of the heliosphere](http://web.mit.edu/space/www/helio.review/axford.suess.html)
+to be $10^{-23}$ g/cc we get... 
+
+$$ T \approx 10^{19} \textrm{ years} $$
+
+Looks like this won't be the cause of the Mayan apocalypse. (By comparison, the 
+[Sun will burnout](http://en.wikipedia.org/wiki/Sun#Life_cycle) 
+after only $\sim10^9$ years.)
