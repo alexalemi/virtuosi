@@ -27,7 +27,7 @@ roommate responded, "You must have a special kind of brain for that."
 
 <p align="center">
 <img src = "/static/images/special_brain/profx.jpg" alt="A special brain." id="back_up1"> 
-<a href="#footnote1"><sup>[1]</sup></a>
+  <p style="text-align: center; color: #999">A special brain. <a href="#footnote1"><sup>[1]</sup></a></p>
 </p>
 
 This anecdote has stuck with me for a couple of reasons-- first because
@@ -70,8 +70,8 @@ research, working as a scientist is not so special.
 <p align="center">
 <a href = "http://www.imdb.com/title/tt0021884/">
 <img src = "/static/images/special_brain/frankenstein.jpg" alt="My office definitely does not look like this."
-width="240" height="180" id="back_up2"/></a> 
-<a href="#footnote2"><sup>[2]</sup></a>
+width="100%" height="auto" id="back_up2"/></a> 
+  <p style="text-align: center; color: #999">I work in a cubicle. Not here.<a href="#footnote2"><sup>[2]</sup></a></p>
 </p>
 
 
