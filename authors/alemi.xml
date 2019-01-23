@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Alemi)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/alemi.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Trigonometric Derivatives</title><link>https://virtuosi.alexalemi.com/posts/alemi/trigonometric-derivatives/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
+where he responded to a post over at 
+&lt;a href="http://mathmamawrites.blogspot.com/2013/02/derivatives-of-sine-and-cosine.html"&gt;Math Mama Writes&lt;/a&gt;
+about teaching the derivatives of the trigonometric functions.&lt;/p&gt;
+&lt;p&gt;I decided to weigh in on the issue.&lt;/p&gt;
+&lt;p&gt;In my experience, 
+&lt;a href="http://en.wikipedia.org/wiki/Calculus"&gt;Calculus&lt;/a&gt; is always best taught
+in terms of infinitesimals, as in 
+&lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=calculus+made+easy&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;amp;ved=0CD4Q6AEwAA"&gt;Thompson's Book&lt;/a&gt;, 
+(which I've &lt;a href="https://virtuosi.alexalemi.com/posts/alemi/trigonometric-derivatives/%7Cfilename%7C../old/four-fantastic-books-3-of-which-are-free.md"&gt;already talked about&lt;/a&gt; ) 
+and &lt;a href="http://en.wikipedia.org/wiki/Trigonometry"&gt;Trigonometry&lt;/a&gt; is best taught using 
+the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;.
+Marrying these two together, we can give a simple geometric proof of the basic trigonometric derivatives:&lt;/p&gt;
+&lt;p&gt;$$ \frac{ d }{dx } \sin x = \cos x \qquad \frac{d}{dx} \cos x = -\sin x $$&lt;/p&gt;
+&lt;p&gt;Summed up on one diagram:
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://virtuosi.alexalemi.com/static/trigdiff.pdf"&gt;
+    &lt;img src="https://virtuosi.alexalemi.com/images/trigdiff.png" width="500px" alt="Trigonometic Derivatives"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Short version&lt;/h4&gt;
+&lt;p&gt;By looking at how the line $\sin \alpha$ and $\cos \alpha$ change when we change $\alpha$ a little bit ($d\alpha$) and noting that we form a similar triangle, we know exactly what those lengths are.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;h4&gt;Long version&lt;/h4&gt;
+&lt;p&gt;You'll notice I've drawn a unit circle in the bottom right, chosen an angle $\alpha$, and shown both $\sin \alpha$ and $\cos \alpha$ on the plot.&lt;/p&gt;
+&lt;p&gt;We are interested in how $\sin \alpha$ changes when we make a very small change in $\alpha$, so I've done just that.  I've moved the blue line from and angle of $\alpha$ to the dotted line at an angle of $\alpha + d\alpha$.  Don't get caught up on the $d$ symbol here, it just means 'a little bit of'.&lt;/p&gt;
+&lt;p&gt;Since we've only moved the angle a little bit, I've included a zoomed in picture in the upper right so that we can continue.  Here, we see the solid and dashed lines again where they meet our unit circle.  Notice that since we've zoomed in quite a bit the circle's edge doesn't look very circley anymore, it looks like a straight line.&lt;/p&gt;
+&lt;p&gt;In fact that is the first thing we'll note, namely that the arc of the circle we trace when we change the angle a little bit has the length $d\alpha$.  We know this is the case because we know that we've only gone an angle $d\alpha$, which is a small fraction $d\alpha/2\pi$ of the total circumference of the circle.  The total circumference is itself $2\pi$ so at the end of the day, the length of that little bit of arc is just:&lt;/p&gt;
+&lt;p&gt;$$ \frac{ d\alpha }{2\pi} 2\pi = d\alpha $$&lt;/p&gt;
+&lt;p&gt;which we may have remembered anyway from our trig classes. What is important here is that even though $d \alpha$ is the length of the arc, when we are this zoomed in,
+we can treat the arc as a straight line.  In fact if we imagine taking our change $d\alpha$ smaller and smaller,
+approximating the segment of arc as a line gets better and better. [Technically it should be noted that what is important is that the correction between the arc length and line length is higher order in $d\alpha$, so it can be ignored to linear order]&lt;/p&gt;
+&lt;p&gt;You'll notice that in the zoomed in picture, we can see the yellow and green segments,
+which correspond to the changes in the length of the dotted yellow and green segments
+from the zoomed out picture.  These are the segments I've marked $d(\sin \alpha)$ and $-d(\cos \alpha)$, because the represent the change in the length of the $\sin \alpha$ line
+and $\cos \alpha$ line respectively.  The green segment is marked $-d(\cos \alpha)$ because the $\cos \alpha$ line actually shrinks when we increase $\alpha$ a little bit.&lt;/p&gt;
+&lt;p&gt;Now for the kicker.  Notice the right triangle formed by the green, yellow and red sements?  That is similar to the larger triangle in the zoomed out picture.  I've marked the similar angle in red.  If you stare at the picture for a bit, you can convince yourself of this fact.  If all else fails, just compute all of the angles involved in the intersection of the circle with the blue line, they can all be resolved.&lt;/p&gt;
+&lt;p&gt;Knowing that the two triangles are similar, we know that the lengths of theirs sides are equal except for some scale factor, in particular:&lt;/p&gt;
+&lt;p&gt;$$ \frac{ d(\sin \alpha) }{\cos \alpha} = \frac{ d\alpha }{ 1} $$
+or 
+$$ d(\sin \alpha) = \cos \alpha \ d\alpha $$
+And we've done it! Shown the derivative of $\sin \alpha$ with a little picture.&lt;br&gt;
+In particular, the change in the sine of the angle ($d(\sin \alpha)$) is equal to the cosine of that angle $\cos \alpha$ times the amount we change it.  In the limit of very tiny angle changes, this tells us the derivative of $\sin \alpha$:
+$$ \frac{d}{d\alpha} \sin \alpha = \cos \alpha $$&lt;/p&gt;
+&lt;p&gt;Doing the same for the $d(\cos \alpha)$ segment gives
+$$ d(\cos \alpha) = -\sin\alpha \ d\alpha $$
+and we even get the sign right.  &lt;/p&gt;
+&lt;p&gt;From here, the other trigonometric derivates are easy to obtain, either by making similar pictures al la the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;,
+or by using the regular rules relating all of the trigonometric function to one another.&lt;/p&gt;&lt;/div&gt;</description><category>calculus</category><category>trig</category><category>trigonometry</category><guid>https://virtuosi.alexalemi.com/posts/alemi/trigonometric-derivatives/</guid><pubDate>Fri, 22 Feb 2013 16:52:00 GMT</pubDate></item><item><title>Pi storage</title><link>https://virtuosi.alexalemi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let me share my worst "best idea ever" moment. Sometime during my
+undergraduate I thought I had solved all the world's problems. You see,
+on this fateful day, my hard drive was full. I hate it when my hard
+drive fills up, it means I have to go and get rid of some of my stuff. I
+hate getting rid of my stuff. But what can someone do? And then it hit
+me, I had the bright idea:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What if we didn't have to &lt;em&gt;store&lt;/em&gt; things, what if we could just
+&lt;em&gt;compute&lt;/em&gt; files whenever we wanted them back?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds like an awesome idea, right? I know. But how could we compute our
+files? Well, as you may know pi is conjectured to be a &lt;a href="http://en.wikipedia.org/wiki/Normal_number"&gt;normal
+number&lt;/a&gt;, meaning its digits
+are probably random. We also know that it is irrational, meaning pi
+never ends.... Since its digits are random, and they never end, in
+principle any sequence you could ever imagine should show up in pi
+eventually. In fact there is a nifty website
+&lt;a href="http://pi.nersc.gov/"&gt;here&lt;/a&gt; that will let you search for arbitrary
+strings (using a 5-bit format) in first 4 billion digits, for example
+"alemi" &lt;a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;amp;format=char"&gt;seems to show
+up&lt;/a&gt; at around
+digit 3149096356. So in principle, I could send you just an index, and a
+length, and you could compute the resulting file. But wait you cry,
+isn't computing digits of pi hard, don't people work really hard to
+compute pi farther and farther? Hold on I claim, first of all, I'm
+imagining a future where computation is cheap. Secondly, there is a
+really neat algorithm, the &lt;a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula"&gt;BBP
+algorithm&lt;/a&gt;,
+that enables you to compute the kth binary digit of pi without knowing
+any of the preceding digits. In other words, in principle if you wanted
+to know the 4 billionth digit of pi, you can compute it without having
+to first compute the first 4 billion other digits. Cool, this is
+beginning to sound like a really good idea. What's the catch? Perhaps
+you've already gotten a taste of it. Let's try to estimate just how far
+along in pi we would have to look before our message of interest shows
+up. Let's assume we have written our file in binary, and are computing
+pi in binary e.g.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;00100100 00111111 01101010 10001000 10000101 10100011 00001000
+11010011&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;etc. So, if the sequence is random, there is a 1/2 chance that at any
+point we get the right starting bit of our file, and then a 1/2 chance
+we get the next one, etc. So the chance that we would create our file if
+we were randomly flipping coins would be $$ P = \left( \frac{1}{2}
+\right)^N = 2^{-N} $$ if our file was N bits long. So where do we
+expect this sequence to first show up in the digits of pi? Well, this
+turns out to be a &lt;a href="http://mathworld.wolfram.com/CoinTossing.html"&gt;subtle
+problem&lt;/a&gt;, but we can get
+a feel for it by assuming that we compute N digits of pi at a time and
+see if its right or not. If its not, we move on to the next group of N
+digits, if its right, we're done. If this were the case, we should
+expect to have to draw about $$ \frac{1}{P} = 2^N $$ times until we
+have a success, and since each trial ate up N digits, we should expect
+to see our file show up after about $$ N 2^N $$ digits of pi. Great, so
+instead of handing you the file, I could just hand you the index the
+file is located. But how many bits would I need to tell you that index.
+Well, just like we know that 10^3 takes 4 digits to express in decimal,
+and 6 x 10^7 takes 8 digits to express, in general it takes $$ d =
+\log_b x + 1 $$ digits to express a number in base b, in this case it
+takes $$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N
++ \log_2 N + 1 $$ digits to express this index in binary. And there's
+the rub. Instead of sending you N bits of information contained in the
+file, all my genius compression algorithm has manged to do is replace N
+bits of information in the file, with a number that takes ( \~ N +
+\log_2 N ) bits to express. I've actually managed to make the files
+larger not smaller! You may have noticed above, that even for the simple
+case of "alemi", all I managed to do was swap the binary message&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alemi -&amp;gt; 0000101100001010110101001 with the index 3149096356 -&amp;gt;
+10111011101100110110010110100100&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;which is longer in binary! As an aside, you may have felt uncomfortable
+with my estimation for how long we have to wait to see our message, and
+you would be right. Just because all N digits I draw at a time don't
+match up doesn't mean that the second half isn't useful. For instance if
+I was looking for 010, lets say some of the digits are 101,010. While
+both of those sequences didn't match, if I was looking at every digit at
+a time, I would have found a match. And you'd be right. &lt;a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf"&gt;Smarter people
+than I&lt;/a&gt; have
+computed just how long you should have to wait, and end up with the
+better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
+pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://virtuosi.alexalemi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>Calculator Pi</title><link>https://virtuosi.alexalemi.com/posts/old/calculator-pi/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;There is a very fast converging algorithm for computing pi that you can
+do on a desktop calculator.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set x = 3&lt;/li&gt;
+&lt;li&gt;Now set x = x + sin(x)&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This converges ridiculously fast, after 1 step you get 4 digits right,
+after 2 steps you get 11 correct, in general we find:&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;# steps   Digits right
+  1          4
+  2          11
+  3          33
+  4          100
+  5          301
+  6          903
+  7          2708
+  8          8124&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;of course on a pocket calculator, you only need to do 2 steps to have an
+accuracy greater than the calculator can display. To make this chart I
+had to trick a computer into doing high precision arithmetic, the code
+is &lt;a href="https://gist.github.com/2038329"&gt;here&lt;/a&gt;. Granted, this approximation
+is really cheating, since sin is a hard function to compute, and
+basically being able to compute sin means you know what pi is already.
+Really, this is just &lt;a href="http://en.wikipedia.org/wiki/Newton's_method"&gt;Newton's
+method&lt;/a&gt; for computing the
+root of sin(x) in disguise&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/calculator-pi/</guid><pubDate>Wed, 14 Mar 2012 14:16:00 GMT</pubDate></item><item><title>Pi-rithmetic</title><link>https://virtuosi.alexalemi.com/posts/old/pi-rithmetic/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fun fact: pi squared is very close to 10. How close? Well, &lt;a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2"&gt;Wolfram
+Alpha&lt;/a&gt;
+tells me that it is only about 1% off. I first realized this fact when
+looking at my slide rule, pictured to the left (click to embiggen), just
+another reason why slide rules are awesome. It turns out I use this fact
+all of the time. How's that you ask? Well, I use this fast to enable me
+to do very quick mental arithmetic. It goes like this. For every number
+you come across in a calculation, drop all of the information save two
+parts, first, what's its order of magnitude, that is, how many digits
+does it have, and second, is it closest to 1, pi, or 10? The first part
+amounts to thinking of every number you come across as it looks in
+scientific notation, so a number like 2342 turns into 2.342 x 10^3, so
+that I've captured its magnitude in a power of 10. As for the next part,
+the rules I usually use are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the remaining bit is between 1 and 2, make it 1&lt;/li&gt;
+&lt;li&gt;If its between 2 and 6.5 make it pi&lt;/li&gt;
+&lt;li&gt;if its bigger than 6.5, make it another 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Another way to think of this is to estimate every number to be a power
+of ten, and then either 1, a few, or 10. The reason I choose pi is
+because if I use pi, I know how the rest of the arithmetic should work,
+namely, I only need to know a few rules, plus when I use this to
+estimate answers of physics formulae, making a bunch of pis show up
+tends to help me cancel other natural pis that are in the formulae.&lt;/p&gt;
+&lt;p&gt;$$ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim
+\frac{\pi}{10} \qquad \sqrt{10} \sim \pi $$&lt;/p&gt;
+&lt;p&gt;Which you might notice is just the same approximation written in 3
+different ways.&lt;/p&gt;
+&lt;p&gt;Let's work an example&lt;/p&gt;
+&lt;p&gt;$$ \begin{align&lt;em&gt;} 23 \times 78 / 13 \times 2133 &amp;amp;= ? \ \pi
+\times 10 \times 100 / 10 \times \pi \times 10^3 &amp;amp;= ? \ \pi^2
+\times 10^5 &amp;amp;\sim 10^6 \ \end{align&lt;/em&gt;}$$&lt;/p&gt;
+&lt;p&gt;of course the &lt;a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133"&gt;real
+answer&lt;/a&gt; is
+294,354, so you'll notice I got the answer wrong, but I only got it
+wrong by a factor of 3, which is pretty good for mental arithmetic, and
+in particular mental arithmetic that takes no time flat.&lt;/p&gt;
+&lt;p&gt;In fact, the average error I introduce by using this approximation is
+just 30% or so for each number, which I've shown below [the script that
+produced this plot for those interested is
+&lt;a href="https://gist.github.com/2037431"&gt;here&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, there you go, now you can impress all of your friends with a simple
+mental arithmetic that gets you within a factor of 3 or so on average.&lt;/p&gt;&lt;/div&gt;</description><category>approximation</category><category>order of magnitude</category><category>pi day</category><category>pi-rithmetic</category><guid>https://virtuosi.alexalemi.com/posts/old/pi-rithmetic/</guid><pubDate>Wed, 14 Mar 2012 11:52:00 GMT</pubDate></item><item><title>Primes in Pi</title><link>https://virtuosi.alexalemi.com/posts/old/primes-in-pi/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s1600/repunit.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s320/repunit.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recently, I've been concerned with the fact that I don't know many large
+primes. Why? I don't know. This has led to a search for easy to remember
+prime numbers. I've found a few goods ones, namely&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;867-5309 - &lt;a href="http://en.wikipedia.org/wiki/867-5309/Jenny"&gt;Jenny's
+    number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the digit 1 - 1031 times, in the style of the picture to above, and
+    the largest known &lt;a href="http://en.wikipedia.org/wiki/Repunit_prime#Repunit_primes"&gt;repunit
+    prime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1987 (my birth year), 2011 (last year), 1999 (&lt;a href="http://en.wikipedia.org/wiki/1999_(song)"&gt;the party
+    year&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But then I remembered that I already know 50 digits of pi, memorized one
+boring day in grade school, so this got me wondering whether there were
+any primes among the digits of pi&lt;/p&gt;
+&lt;p&gt;Lo an behold, I wrote a &lt;a href="https://gist.github.com/2033970"&gt;little
+script&lt;/a&gt;, and found a few:&lt;/p&gt;
+&lt;p&gt;Found one, with 1 digits, is: 3 Found one, with 2 digits, is: 31 Found
+one, with 6 digits, is: 314159 Found a rounded one with 12 digits, is:
+314159265359 Found one, with 38 digits, is:
+31415926535897932384626433832795028841&lt;/p&gt;
+&lt;p&gt;I think it's usual for most science geeks to know pi to at least
+3.14159, if you're one of those people, now you know a 6 digit prime!
+for free!&lt;/p&gt;&lt;/div&gt;</description><category>pi day</category><category>primes</category><guid>https://virtuosi.alexalemi.com/posts/old/primes-in-pi/</guid><pubDate>Wed, 14 Mar 2012 03:14:00 GMT</pubDate></item><item><title>The Linear Theory of Battleship</title><link>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recently I set out to hold a
+&lt;a href="http://en.wikipedia.org/wiki/Battleship_(game)"&gt;Battleship&lt;/a&gt; programming
+tournament here among some of the undergraduates. Naturally, I myself
+wanted to win. So, I got to thinking about the game, and developed what
+I like to call "the linear theory of battleship". A demonstration of the
+fruits of my efforts can be found
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;here&lt;/a&gt;. Below, my
+aim is to guide you through how I developed this theory, as an exercise
+in using physics to solve an interesting unknown problem. This is one of
+the things I really love about physics, the fact that obtaining an
+education in physics is essentially an education in reasoning and
+thinking through complicated problems, along with an honestly short list
+of tips and tricks that have proven successful for tackling a wide range
+of problems. So, how do we develop the linear theory of battleship?
+First we need to quantify what we know, and what we want to know.&lt;/p&gt;
+&lt;h4&gt;The Goal&lt;/h4&gt;
+&lt;p&gt;So, how does one win Battleship? Since the game is about sinking your
+opponents ships before they can sink yours, it would seem that a good
+strategy would be to try to maximize your probability of getting a hit
+every turn. Or, if we knew the probabilities of there being a hit on
+every square, we could guess each square with that probability, to keep
+things a little random. So, let's try to represent what we are after. We
+are after a whole set of numbers $$ P_{i,\alpha} $$ where i ranges
+from 0 to 99 and denotes a particular square on the board, and alpha can
+take the values C,B,S,D,P for carrier, battleship, submarine, destroyer,
+and patrol boat respectively. This matrix should tell us the probability
+of there being the given ship on the given square. E.g. $$ P_{53,B} $$
+would be the probability of there being a battleship on the 53rd square.
+If we had such a matrix, we could figure out the probability of there
+being at hit on every square by summing over all of the ships we have
+left, i.e. $$ P_i = \sum_{\text{ships left}} P_{i, \alpha } $$&lt;/p&gt;
+&lt;h4&gt;The Background&lt;/h4&gt;
+&lt;p&gt;Alright, we seem to have a goal in mind, now we need to quantify what we
+have to work with. Minimally, we should try to measure the probabilities
+for the ships to be on each square given a random board configuration.
+Let's codify that information in another matrix $$ B_{i,\alpha} $$
+where B stands for 'background', i runs from 0 to 99, and alpha is
+either C,B,S,D, or P again, and stands for a ship. This matrix should
+tell us the probability of a particular ship being on a particular spot
+on the board assuming our opponent generated a completely random board.
+This is something we can measure. In fact, I wrote a little code to
+generate random Battleship boards, and counted where each of the ships
+appeared. I did this billions of times to get good statistics, and what
+I ended up with is a little interesting. You can see the results for
+yourself over at my &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;results exploration
+page&lt;/a&gt; by changing
+the radio buttons for the ship you are interested in, but I have some
+screen caps below. Click on any of them to embiggen.&lt;/p&gt;
+&lt;h5&gt;All&lt;/h5&gt;
+&lt;p&gt;First of all, lets look at the sum of all of the ship probabilities, so
+that we have the probability of getting a hit on any square for any ship
+given a random board configuration, or in our new parlance $$ B_i =
+\sum_{\alpha={C,B,S,D,P} } B_{i,\alpha} $$ The results:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s1600/all.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s200/all.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;shouldn't be too surprising. Notice first that we can see that my
+statistics are fairly good, because our probabilities look more or less
+smooth, as they ought to be, and show nice left/right up/down symmetry,
+which it ought to have. But as you'll notice, on the whole there is
+greater probability to get a hit near the center of the board than near
+the edges, an especially low probability of getting a hit in the
+corners. Why is that? Well, there are a lot more ways to lay down a ship
+such that there is a hit in a center square than there are ways to lay a
+ship so that it gives a hit in a corner. In fact, for a particular ship
+there are only two ways to lay it so that it registers a hit in the
+corner. But, for a particular square in the center, for the Carrier for
+example there are 5 different ways to lay it horizontally to register a
+hit, and 5 ways to lay it vertically, or 10 ways total. Neat. We see
+entropy in action.&lt;/p&gt;
+&lt;h5&gt;Carrier&lt;/h5&gt;
+&lt;p&gt;Next let's look just at the Carrier:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s1600/carrier.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s200/carrier.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Woah. This time the center is very heavily favored versus the edges.
+This reflects the fact that the Carrier is a large ship, occupying 5
+spaces, basically no matter how you lay it, it is going to have a part
+that lies near the center.&lt;/p&gt;
+&lt;h5&gt;Battleship&lt;/h5&gt;
+&lt;p&gt;Now for the Battleship:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s1600/battleship.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s200/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is interesting. This time, the most probable squares are not the
+center ones, but the not quite center ones. Why is that? Well, we saw
+that for the Carrier, the probability of finding it in the center was
+very large, and so respectfully, our battleship cannot be in the center
+as often, as a lot of the time it would collide with the Carrier. Now,
+this is not because I lay down the Carrier first, my board generation
+algorithm assigns all of the boards at once, and just weeds out invalid
+ones, this is a real entropic effect. So here we begin to see some
+interesting Ship-Ship interactions in our probability distributions. But
+notice again that on the whole, the battleship should also be found near
+the center as it is also a large ship.&lt;/p&gt;
+&lt;h5&gt;Sub / Destroyer&lt;/h5&gt;
+&lt;p&gt;Next let's look at the sub / destroyer. First thing to note is that our
+plot should be the same for both of these ships as they are both the
+same length.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s1600/sub.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s200/sub.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here we see an even more pronounced effect near the center. The Subs and
+Destroyers are 'pushed' out of the center because the Carriers and
+Battleships like to be there. This is a sort of entropic repulsion.&lt;/p&gt;
+&lt;h5&gt;Patrol Boat&lt;/h5&gt;
+&lt;p&gt;Finally, let's look at the patrol boat:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s1600/patrol.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s200/patrol.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The patrol boat is a tiny ship. At only two squares long, it can fit in
+just about anywhere, and so we see it being strongly affected by the
+affection the other ships have for the center. Neat stuff. So, we've
+experimentally measured where we are likely to find all of the
+battleship ships if we have a completely random board configuration.
+Already we could use this to make our game play a little more effective,
+but I think we can do better.&lt;/p&gt;
+&lt;h4&gt;The Info&lt;/h4&gt;
+&lt;p&gt;In fact, as a game of battleship unfolds, we learn a good deal of
+information about the board. In fact on every turn we get a great deal
+of information about a particular spot on the board, our guess. Can we
+incorporate this information into our theory of battleship? Of course we
+can, but first we need to come up with a good way to represent this
+information. I suggest we invent another matrix! Let's call this one $$
+I_{j,\beta} $$ Where I is for 'information', j goes from 0 to 99 and
+beta marks the kind of information we have about a square, let's let it
+take the values M,H,C,B,S,D,P, where M means a miss, H means a hit, but
+we don't know which ship, and CBSDP mark a particular ship hit, which we
+would know once we sink a ship. This matrix will be a binary one, where
+for any particular value of j, the elements will all be 0 or 1, with
+only one 1 sitting at the spot marking our information about the square,
+if we have any. That was confusing. What do I mean? Well, let's say its
+the start of the game and we don't know a darn thing about spot 34 on
+the board, then I would set $$
+I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0
+$$ that is, all of the columns are zero because we don't have any
+information. Now let's say we guess spot 34 and are told we missed, now
+that row of our matrix would be $$ I_{34,M} = 1 \quad
+I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$ so that
+we put a 1 in the column we know is right, instead, if we were told it
+was a hit, but don't know which ship it was: $$ I_{34,H} = 1 \quad
+I_{34,M}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$ and
+finally, lets say a few turns later we sink our opponents sub, and we
+know that spot 34 was one of the spots the sub occupied, we would set:
+$$ I_{34,S} = 1 \quad
+I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,D}=I_{34,P}=0 $$ This
+may seem like a silly way to codify the information, but I promise it
+will pay off. As far as my &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Battleship Data
+Explorer&lt;/a&gt; goes,
+you don't have to worry about all this nonsense, instead you can just
+click on squares to set their information content. Note: shift-clicking
+will let you cycle through the particular ships, if you just regular
+click it will let you shuffle between no information, hit, and miss.&lt;/p&gt;
+&lt;h4&gt;The Theory&lt;/h4&gt;
+&lt;p&gt;Alright if we decide to go with my silly way of codifying the
+information, at this point we have two pieces of data, $$ B_{i,\alpha}
+$$ our background probability matrix, and $$ I_{j,\beta} $$ our
+information matrix, where what we want is $$ P_{i,\alpha} $$ the
+probability matrix. Here is where the linear part comes in. Why don't we
+adopt the time honored tradition in science of saying that the
+relationship between all of these things is just a linear one? In matrix
+language that means we will choose our theory to be $$ P_{i,\alpha} =
+B_{i,\alpha} + \sum_{j=[0,..,99],\beta={M,H,C,B,S,D,P}}
+W_{i,\alpha,j,\beta} I_{j,\beta} $$ Whoa! What the heck is that!?
+Well, that is my linear theory of battleship. What the equation is
+trying to say is that I will try to predict the probability of a
+particular ship being in a particular square by (1) noting the
+background probability of that being true, and (2) adding up all of the
+information I have, weighting it by the appropriate factor. So here, P
+is our probability matrix, B is our background info matrix, I is our
+information matrix, and W is our weight matrix, which is supposed to
+apply the appropriate weights. That W guy seems like quite the monster.
+It has four indexes! It does, so let's try to walk through what they all
+mean. Here: $$ W_{i,\alpha,j,\beta} $$ is supposed to tell us: "the
+extra probability of there being ship alpha at location i, given the
+fact that we have the situation beta going on at location j" Read that
+sentence a few times. I'm sorry its confusing, but it is the best way I
+could come up with explaining W in english. Perhaps a visual would help.
+Behold the following: (click to embiggen)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s1600/W1.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s400/W1.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That is a picture of $$ W_{i,C,33,M} $$ that is, that is a picture of
+the extra probabilities for each square (i is all of them), of there
+being a carrier, (alpha=C) given that we got a miss (beta=M) on square
+33, (j=33). You'll notice that the fact that we saw a miss affects some
+of the squares nearby. In fact, knowing that there was a miss on square
+33 means that the probability that the carrier will be found on the
+adjacent squares is a little lower (notice on the scale that the nearby
+values are negative), because there are now fewer ways the carrier could
+be on those squares without it overlapping over into square 33. Let's
+try another:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s1600/W2.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s400/W2.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That is a picture of $$ W_{i,S,65,H} $$ that is, it's showing the extra
+probability of there being a submarine (alpha=S), at each square (i is
+all of them, since its a picture with 100 squares), given that we
+registered a hit (beta=H) on square 65 (j=65). Here you'll notice that
+since we marked a hit on square 65, it is very likely that we will also
+get hits on the squares just next to this one, as we could have
+suspected. In the end, by assuming our theory has this linear form, the
+benefit we gain is that by doing the same sort of simulations I did to
+generate the background information, I can back out what the proper
+values should be for this W matrix. By doing billions and billions of
+simulations, I can ask, for any particular set of information, I, what
+the probabilities are P, and solve for W. Given that the problem is
+linear, this solving step is particularly easy for me to do.&lt;/p&gt;
+&lt;h4&gt;The Results&lt;/h4&gt;
+&lt;p&gt;In the end, this is exactly what I did. I had my computer create
+billions of different battleship boards, and figure out what the proper
+values of B and W should be for every square of the matrix. I put all of
+those results together in a way that I hope is easy to explore up at the
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Fancy Battleship Results
+Page&lt;/a&gt;, where you
+are free to explore all of the results yourself. In fact, the way it's
+set up, you can even use the &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Superduper Results
+Page&lt;/a&gt; as a sort of
+Battleship Cheat Sheet. Have it open while you play a game of
+battleship, and it will show you the probabilities associated with all
+of the squares, helping you make your next guess. I've used the page
+while playing a few games of battleship online, and have had some
+success, winning 9 of the 10 games I played against the computer player.
+Of course, this linear theory isn't everything...&lt;/p&gt;
+&lt;h4&gt;Why Linear isn't everything&lt;/h4&gt;
+&lt;p&gt;But at the end of the day, we've made a pretty glaring assumption about
+the game of battleship, namely that all of the information on the board
+adds in a linear way. Another way to say that is that in our theory of
+battleship, we have a principle of superposition. Another way to say
+that is that in this theory, what you think is happening in a particular
+square is just the sum of the results from all of the squares,
+independent of one another. Another way to say that is to show it with
+another picture. Consider the following:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s1600/nonlin.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s400/nonlin.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here, I've specified a bunch of misses, and am asking for the
+probability of there being a Carrier on all of the positions of the
+board. If you look in the center of that cluster of misses, especially
+in the inner left of the bunch, you'll see that the linear theory tells
+me that there is a small but finite chance that the Carrier is located
+on those squares. But if you stop to look at the board a little bit,
+you'll notice that I've arranged the misses such that there is a large
+swatch of squares in the center of the cluster where the Carrier is
+strictly forbidden. There is no way it can fit such that it touches a
+lot of those central squares. This is an example of the failure of the
+linear model. All the linear model knows is that in the spots nearby
+misses there is a lower probability of the ship being there, but what it
+doesn't know to do is look at the arrangement of misses and check to see
+whether there is any possible way the ship can fit. This is a nonlinear
+effect, involving information at more than one square at a time. It is
+these kinds of effects that this theory will miss, but as you'll notice,
+it still does pretty well. Even though it reports a finite positive
+probability of the Carrier being inside the cluster, the value it
+reports is a very small one, about 1 percent at most. So the linear
+theory will have corrections at the 1 percent level or so, but that's
+pretty good if you ask me.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;p&gt;And so it is. I've tried to develop a linear theory for the game
+Battleship, and display the results in a &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Handy Dandy Data
+Explorer&lt;/a&gt;. I
+encourage you to play around with the website, use it to win games of
+Battleship, and in the comments, point out interesting effects, things
+you think I've missed, or ideas for how to come up with linear theories
+of other things.&lt;/p&gt;&lt;/div&gt;</description><category>battleship</category><category>fun</category><category>linear algebra</category><guid>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</guid><pubDate>Mon, 03 Oct 2011 00:48:00 GMT</pubDate></item><item><title>A Tweet is Worth (at least) 140 Words</title><link>https://virtuosi.alexalemi.com/posts/old/a-tweet-is-worth-at-least-140-words/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s1600/twittercompression.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-VJ3MBvt13Z4/Tl2Q7Z4J5WI/AAAAAAAAAWw/GG50fsyHvoo/s400/twittercompression.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, I recently read &lt;a href="http://books.google.com/books?id=fXxde44_0zsC&amp;amp;printsec=frontcover&amp;amp;dq=An+Introduction+to+Information+Theory&amp;amp;hl=en&amp;amp;ei=7opdTrjhMMXrOarHmdIC&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CC0Q6AEwAA#v=onepage&amp;amp;q&amp;amp;f=false"&gt;An Introduction to Information Theory: Symbols,
+Signals and
+Noise&lt;/a&gt;.
+It is a very nice popular introduction to &lt;a href="http://en.wikipedia.org/wiki/Information_Theory"&gt;Information
+Theory&lt;/a&gt;, a modern
+scientific pursuit to quantify information started by &lt;a href="http://en.wikipedia.org/wiki/Claude_Shannon"&gt;Claude
+Shannon&lt;/a&gt; in 1948. This got
+me thinking. Increasingly, people try to hold conversations on
+&lt;a href="http://twitter.com/"&gt;Twitter&lt;/a&gt;, where posts are limited to 140
+characters. Just how much information could you convey in 140
+characters? After some coding and investigation, I created
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;this&lt;/a&gt;, an
+experimental twitter English compression algorithm capable of
+compressing around 140 words into 140 characters. So, what's the story?
+Warning: It's a bit of a story, the juicy bits are at the end. UPDATE:
+Tomo in the comments below made &lt;a href="http://www.saigonist.com/b/twitter-decoder-ring"&gt;a chrome
+extension&lt;/a&gt; for the
+algorithm&lt;/p&gt;
+&lt;h4&gt;Entropy&lt;/h4&gt;
+&lt;p&gt;Ultimately, we need some way to assess how much information is contained
+in a signal. What does it mean for a signal to contain information
+anyway? Is 'this is a test of twitter compression.' more meaningful than
+'歒堙丁顜善咮旮呂'? The first is understandable by any english speaker,
+and requires 38 characters. You might think the second is meaningful to
+a speaker of chinese, but I'm fairly certain it is gibberish, and takes
+8 characters. But, the thing is if you put those 8 characters into &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;the
+bottom form here&lt;/a&gt;,
+you'll recover the first. So, in some sense to the messages are
+equivalent. They contain the same amount of information. Shannon tried
+to quantify how we could estimate just how much information any message
+contains. Of course it would be very hard to try to track down every
+intelligent being in the universe and ask them if any particular message
+had any meaning to them. Instead, Shannon reserved himself to trying to
+quantify how much information was contained in a message produced by a
+random source. In this regard, the question of how much information a
+message contains becomes a more tractable question: How unlike is a
+particular message from all other messages produced by the same random
+source? This question might sound a little familiar. It is similar to a
+question that comes up a lot in &lt;a href="http://en.wikipedia.org/wiki/Statistical_physics"&gt;Statistical
+Physics&lt;/a&gt;, where we are
+interested in just how unlike a particular configuration of a system is
+from all possible configurations of a system. In Statistical physics,
+the quantity that helps us answer questions like this is the
+&lt;a href="http://en.wikipedia.org/wiki/Entropy"&gt;Entropy&lt;/a&gt;, where the entropy is
+defined as $$ S = -\sum_i p_i \log p_i $$ where p_i stands for the
+probability of a particular configuration, and we are supposed to sum
+over all possible configurations of the system. Similarly, for our
+random message source, we can define the entropy in exactly the same
+way, but for convenience, let's replace the logarithm with the logarithm
+base 2. $$ S = -\sum_i p_i \log_2 p_i $$ At this point, the
+&lt;a href="http://en.wikipedia.org/wiki/Shannon_entropy"&gt;Shannon Entropy, or Information
+Entropy&lt;/a&gt; takes on a real
+quantitative meaning. It reflects how many bits of information the
+message source produces per character. The result of all of this aligns
+quite well with intuition. If we have a source that outputs two symbols
+0 or 1 randomly, each with probability 1/2. The shannon entropy comes
+out to be 1, meaning each of the symbols of our source is worth one bit,
+which we already new. If instead of two symbols, our source can output
+16 symbols, 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F say, the shannon entropy
+comes out to be 4 bits per symbol, which again we should have suspected
+since with four bits we can count up to the number 16 in &lt;a href="http://en.wikipedia.org/wiki/Binary_numeral_system"&gt;base
+2&lt;/a&gt; (e.g. 0000 - 0,
+0001 - 1, 0010 - 2 , etc ). Where it begins to get interesting is when
+all of our symbols don't occur with equal probability. To get a sense of
+this situation, I'll show 5 example outputs:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;'000001000100000000010000010000'
+
+'000000000010000000000001000000'
+
+'010100000000000000000000111000'
+
+'010100000000000000000000111000'
+
+'000000000100000000110000000010'
+&lt;/pre&gt;
+
+
+&lt;p&gt;looking at these examples, it begins to become clear that since we have
+a lot more zeros than ones, each of these messages contain less
+information than the case when 0 and 1 occur with equal probability. In
+fact, in this case, if 0 occurs 90% of the time, and 1 occurs 10% of the
+time, the shannon entropy comes out to be 0.47. Meaning each symbol is
+worth just less than half a bit. We should expect our messages in this
+case to have to be about twice as long to encode the same amount of
+information. In an extreme example, imagine you were trying to transmit
+a message to someone in binary, but for some reason, your device had a
+sticky 0 key so that every time you pushed 0, it transmitted 0 10 times
+in a row. It should be clear in this case that as far as the receiver is
+concerned, this is not a very efficient transmission scheme.&lt;/p&gt;
+&lt;h4&gt;English&lt;/h4&gt;
+&lt;p&gt;What does this have to do with anything? Well, all of that and I really
+only wanted to build up a fact you already know. The fact is, the
+English language is not very efficient on a per symbol basis. For
+example, I'm sure everyone knows exactly what word will come at the end
+of this &lt;strong&gt;&lt;em&gt;_&lt;/em&gt;&lt;/strong&gt;. There you go, I was able to express exactly the
+same thought with at least 8 fewer characters. n fct, w cn d _ lt bttr
+[in fact, we can do a lot better], using 22 characters to express a
+thought that normally takes 31 characters. In fact, Shannon has a &lt;a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf"&gt;nice
+paper&lt;/a&gt; where he
+attempted to measure the entropy of the english language itself. Using
+more sophisticated methods, he concludes that english has an information
+entropy of between 0.6 and 1.3 bits per character, let's call it 1 bit
+per character. Whereas, if each of the 27 symbols (26 letters + space)
+we commonly use each showed up equally frequently, we would have 4.75
+bits per character possible. Of course, from a practical communication
+standpoint, having redundancies in human language can be a useful thing,
+as it allows us to still understand one another even over noisy phone
+lines and with very bad handwriting. But, with modern computers and
+faithful transmission of information, we really ought to be able to do
+better.&lt;/p&gt;
+&lt;h4&gt;Twitter&lt;/h4&gt;
+&lt;p&gt;This brings me back to &lt;a href="http://twitter.com/"&gt;twitter&lt;/a&gt;. If you are
+unaware, twitter allows users to post short, 140 character messages for
+the rest of the world to enjoy. 140 characters is not a lot to go on.
+Assuming 4.5 characters per word, this means that in traditionally
+written english you're lucky to fit 25 words in a standard tweet. But,
+we know now that we can do better. In fact, if we could come up with
+some kind of crazy scheme to compress english in such a way as to use
+each of the 27 usual characters so that each of those characters
+appeared with roughly equal probability, we've seen that we could get
+4.75 bits per character, with 140 characters and 5.5 symbols per word,
+this would allow us to fit not 25 words in a tweet but 120 words. A
+factor of 4.8 improvement. Of course we would have to discover this
+miraculous encryption transformation. Which to my knowledge remains
+undiscovered. But, we can do better. It turns out that twitter allows
+you to use &lt;a href="http://en.wikipedia.org/wiki/Unicode"&gt;Unicode&lt;/a&gt; characters in
+your tweets. Beyond enabling you to talk about Lagrangians (ℒ) and play
+cards (♣), it enables international communication, by including foreign
+alphabets. So, in fact we don't need to limit ourselves to the 27
+commonly used English symbols. We could use a much larger alphabet,
+Chinese say. I choose Chinese because there are over 20,900 Chinese
+alphabet symbols in Unicode. Using all of these characters, we could
+theoretically encode 14.3 bits of information per character, with 140
+characters, and 1 bit per English character, and 5.5 symbols per English
+word, we could theoretically fit over 365 English words in a single
+tweet. But alas, we would have to discover some magical encoding
+algorithm that could map typed English to the Chinese alphabet such that
+each of the Chinese symbols occurred with equal probability. I wasn't
+able to do that well, but I did make an attempt.&lt;/p&gt;
+&lt;h4&gt;My Attempt&lt;/h4&gt;
+&lt;p&gt;So, I tried to compress the English language, an design an effective
+mapping from written English to the Chinese character set of Unicode. We
+know that we aim to have each of these Chinese characters occur with
+equal probability, so my algorithm was quite simple. Let's just look at
+a bunch of English and see which pair of characters occur with the
+highest probability, and map these to the first Chinese character in the
+Unicode set. Replace their occurring in the text, rinse, and repeat.
+This technique is guaranteed to reduce the probability at which the most
+common character occurs at every step, by taking some if its occurrences
+and replacing them, so it at least aims to achieve our ultimate goal.
+That's it. Of course, I tried to bootstrap the algorithm a little bit by
+first mapping the most common 1500 words to their own symbols. For
+example, consider the first stanza of the &lt;a href="http://en.wikipedia.org/wiki/The_raven"&gt;Raven by Edger Allen
+Poe&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Once upon a midnight dreary, while I pondered, weak and weary,
+
+Over many a quaint and curious volume of forgotten lore--
+
+While I nodded, nearly napping, suddenly there came a tapping,
+
+As of some one gently rapping, rapping at my chamber door.
+
+"'Tis some visiter," I muttered, "tapping at my chamber door--
+
+                     Only this and nothing more."
+&lt;/pre&gt;
+
+
+&lt;p&gt;The most common character is ' ' (the space). The most common pair is 'e
+' (e followed by space), so let's replace 'e ' with the first Chinese
+Unicode character '一' we obtain:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
+
+Over many a quaint and curious volum一of forgotten lore--
+
+Whil一I nodded, nearly napping, suddenly ther一cam一a tapping,
+
+As of som一on一gently rapping, rapping at my chamber door.
+
+"'Tis som一visiter," I muttered, "tapping at my chamber door--
+
+                     Only this and nothing more.'
+&lt;/pre&gt;
+
+
+&lt;p&gt;So we've reduced the number of spaces a bit. Doing one more step, now
+the most common pair of characters is 'in', which we replace by '丁'
+obtaining:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Onc一upon a midnight dreary, whil一I pondered, weak and weary,
+
+Over many a qua丁t and curious volum一of forgotten lore--
+
+Whil一I nodded, nearly napp丁g, suddenly ther一cam一a tapp丁g,
+
+As of som一on一gently rapp丁g, rapp丁g at my chamber door.
+
+"'Tis som一visiter," I muttered, "tapp丁g at my chamber door--
+
+                     Only this and noth丁g more.'
+&lt;/pre&gt;
+
+
+&lt;p&gt;etc. The end results of the effort are &lt;a href="http://pages.physics.cornell.edu/~aalemi/twitter/"&gt;demo-ed
+here&lt;/a&gt;. Feel free to
+play around with it. For the most part, typing some standard English, I
+seem to be able to get compression ratios around 5 or so. Let me know
+how it does for you. I'll leave you with this final message:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;儌咹乺悃巄格丌凣亥乄叜
+&lt;/pre&gt;
+
+
+&lt;p&gt;Python code that I used to do the heavy lifting is available as &lt;a href="https://gist.github.com/1182747"&gt;a
+gist&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>entropy</category><category>information theory</category><category>python</category><category>twitter</category><guid>https://virtuosi.alexalemi.com/posts/old/a-tweet-is-worth-at-least-140-words/</guid><pubDate>Tue, 30 Aug 2011 23:49:00 GMT</pubDate></item><item><title>End of the Earth VI: Nanobot destruction</title><link>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let's destroy the earth with technology. A while ago, I read the novel
+&lt;em&gt;Postsingular&lt;/em&gt; by Rudy Rucker, and in the first chapter the Earth gets
+destroyed, and then undestroyed, and then the novel unfolds and the
+Earth's likelihood is threatened again, and it looks like the Earth will
+be destroyed, but it isn't. How does all of this craziness happen you
+might ask: nanobots! The story revolves around little self-replicating
+robots. The story explores what it would be like to live in a world
+where every surface on Earth was coated in little computers, all of
+which were networked together. It's certainly a neat idea, but whenever
+you have self-replicating things, you need to worry a bit about what
+might happen if they get out of control. So, let's assume we, evil
+scientists that we are, have managed to create a little self-replicating
+nanobot. This little guy can scurry around, running off something
+ubiquitous, probably some combination of solar, and some kind of
+infrared photovoltaics. This little guy, call him Bob, his only mission
+in life is to create a friend. He scurries around collecting the various
+ingredients necessary, and using his little robot arms, he slices and
+dices up the pieces and welds them together to create another copy of
+himself, Rob. Not satisfied with his work; Bob found Rob quite the bore,
+and honestly Rob didn't too much like Bob either, both of them part ways
+and try to fashion a new friend. How long until Bob and Rob and their
+cohorts manage to chew through all of the material on Earth? What we
+have here is the setup to a problem in &lt;a href="http://en.wikipedia.org/wiki/Exponential_growth"&gt;Exponential
+Growth&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Exponential Growth&lt;/h4&gt;
+&lt;p&gt;Let's simplify things a bit and assume that the nanobots always take a
+fixed amount to time to make a new copy of themselves, call that time T.
+We'll start with one guy, so we know that at t =0, we have 1 bot $$ N(t
+=0 ) = 1 $$ And we know that after T seconds we should have 2 $$ N(T) =
+2 $$ and after 2T seconds, we've managed to double twice and get 4 $$
+N(2T) = 4 $$ after 3T seconds we'll double again to 8, etc. In fact,
+after nT seconds, so m repetitions we should have doubled m times $$
+N(nT) = 2^n $$ So if we want to describe all times, we need only ask
+how many doublings can fit into t seconds $$ t = n T $$ which gives us
+$$ N(t) = 2^{t/T} $$ At this point you might object, as this formula
+doesn't always give an integer, so we could ask things like how many
+bots are there after 0.5T seconds? We know the true answer is still 1,
+Bob hasn't finished Rob yet, but our formula tells us the answer is
+1.414... What we've done is made a continuous approximation to a
+discrete function. Certainly, we've paid a price, in that our new
+formula doesn't get answers right in fractions of T, but its a small
+price to pay for the mathematical simplicity afforded by the nice
+continuous function, and as long as we don't really care about time
+scales smaller than T in the long run, we haven't done any real harm.
+These kinds of approximations show up all over the place in physics, and
+going both ways too. Sometimes it is advantageous to treat some discrete
+quantity as continuous, and sometimes it might be beneficial to treat
+some continuous quantity as discrete. These kinds of approximations are
+more than adequate, provided you don't really take the answers they give
+you in the cases where your approximation starts to break too seriously.
+In this case, as long as we don't try to seriously predict the number of
+nanobots to an exact count in time scales less than a fraction of their
+doubling time, we will have a nice prediction of the number of bots
+running around.&lt;/p&gt;
+&lt;h4&gt;Earth Destruction&lt;/h4&gt;
+&lt;p&gt;As promised, we wanted to calculate the time it would take the nanobots
+to devour the earth. For this we need a little bit more to our model.
+How will the nanobots eat the earth, I reckon it will be through using
+up its mass. Assuming the bots are made out of elements that are rich
+enough, something like iron, they ought to have a field day on Earth,
+seeing as it's composed of about 5% iron on the surface, and with an
+interior that is probably about 32% iron overall
+&lt;a href="http://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements#Abundance_of_elements_in_the_Earth"&gt;[ref]&lt;/a&gt;.
+So, we need to estimate the mass of a single nanobot. Let's say the
+nanobot is roughly a 1 micron sized cube, made out of iron. This gives
+us a nanobot mass of $$ m = (\text{ density of iron }) * (\text{ 1
+micron} )^3 = \rho_{\text{Fe}} L^3 \sim 8 \text{ picograms} $$
+From here we can estimate the time it would take to chew through the
+earth, as the time for the nanobots to be as massive as the earth. $$
+\frac{M_{\oplus}}{\rho_{\text{Fe}} L^3 } = N(t) = 2^{t/T} $$
+Solving for t we obtain $$ t = T \log_2 \frac{ M_{\oplus}}{
+\rho_{\text{Fe}} L^3 } $$&lt;/p&gt;
+&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Let's say it takes Bob one month to make Rob, which I don't think is a
+completely unrealistic time for nanobot replication, assuming Bob and
+Rob and all of their cohorts are 1 micron in size, I calculate that in
+10 years time they would chew through the Earth. The power of
+exponential growth! Even with a 1 month gestation, if left unabashed,
+the self-replicating robots would eat the entire earth in 10 years time.
+They could eat through Mars in about 2. In fact in &lt;em&gt;Postsingular&lt;/em&gt; this
+is what the humans planned. They wanted a Dyson sphere, so they sent
+some self-replicating robots to Mars, let them chew through it a couple
+years, and they had 10^37 little robots to do their bidding. That is of
+course until the nants set their sites on Earth as their next target...
+In order to let you play around with the doubling time and bot size,
+I've created a Wolfram Alpha widget that solves the above equation, feel
+free to play around with the parameters and see how long Earth would
+survive.&lt;/p&gt;
+&lt;p&gt;The widget should be right above this text. If it isn't working for some
+reason, here's a
+&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>earth day</category><category>end of the earth</category><category>fun</category><category>nanobots</category><guid>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</guid><pubDate>Fri, 22 Apr 2011 13:11:00 GMT</pubDate></item><item><title>Problem of the Month: Gilligan Physics</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s1600/coconut.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s320/coconut.jpg"&gt;&lt;/a&gt;
+So, some of us over here at Virtuosi Central have organized a challenge
+problem for the physics community here at Cornell. Well, we thought we
+would open up the challenge to the great wide world. The more
+submissions the merrier. The deadline is March 1, and submissions can be
+sent to our email. Details can be found at
+&lt;a href="http://bit.ly/physicschallenge"&gt;bit.ly/physicschallenge&lt;/a&gt;. Good luck and
+happy hunting.&lt;/p&gt;</description><category>CRC</category><category>fun</category><category>gilligan</category><category>physics challenge</category><category>standards</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</guid><pubDate>Sun, 06 Feb 2011 12:55:00 GMT</pubDate></item><item><title>Darts</title><link>https://virtuosi.alexalemi.com/posts/old/darts/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Over break I went out with a buddy of mine and played some darts. This
+got me to thinking, where exactly should someone aim in order to get the
+largest expected number of points? Now, obviously when you are playing a
+game like &lt;a href="http://en.wikipedia.org/wiki/Cricket_(darts)"&gt;Cricket&lt;/a&gt;, where
+you should aim is fairly obvious, you are trying to hit particular
+numbers on the board, but in the most popular darts game
+-&lt;a href="http://en.wikipedia.org/wiki/Darts#Playing_darts"&gt;501&lt;/a&gt;, for most of
+the game you are just trying to accumulate points. So, where should you
+shoot on the board to get the most points? Well, something that I didn't
+quite realize before I started this adventure is that while the double
+bullseye in the center is worth 50 points, the triple 20 is worth more:
+60 points. For the uninitiated, in games like 501 you score points based
+on where the dart falls. The center is the bullseye, where the inner
+most circle is worth 50 and the ring around it is worth 25, after that
+you score depending on which of the pie slice things you fall in, the
+points being the number on the slice. The little ring around the outside
+is worth double points, and the little ring at about half the board
+radius is worth triple points. So perhaps the triple 20 is where you
+should be aiming all the time. But you'll notice that to the left and
+right of the 20 section are low numbers 1 and 5. So you might suspect
+that if you can't throw all that accurately, you'll be paying a price
+for shooting at the triple 20.&lt;/p&gt;
+&lt;h4&gt;The Model&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s1600/dartsdistsig1p0.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s320/dartsdistsig1p0.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In order to answer a question like that, we need to develop a model for
+dart throwing. In this case, I thought it was safe to assume that dart
+throws are &lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;normally
+distributed&lt;/a&gt; about the
+place you aim, with some sigma determined by your skill level. To the
+left is an example of what normally-distributed dart throws look like
+when the aim is at the center, and with a 1 inch standard deviation in
+the throws. The dashed line marks a one inch ring to give a sense of how
+scattered darts can be from 1 standard deviation.&lt;/p&gt;
+&lt;h4&gt;Results&lt;/h4&gt;
+&lt;p&gt;So, off I went, having drawn a dart board (to regulation) in Gimp, and
+coloring each section in gray scale according to its point values, I
+used python to perform all of the necessary computations (using
+primarily the ndimage package in scipy). The result can be seen below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s1600/dartscircleplusdot.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s400/dartscircleplusdot.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This image shows the optimal position on the board to aim for as a
+function of how good of a player you are. The rings denote the sigmas,
+and the dots the center point to aim for. The colorscale gives a
+quantitative measure of the sigma, in inches. As you can see, the best
+players should (and do according to youtube) aim for the triple 20,
+since they are good enough to hit it most of the time, but once you're
+throw is at about a 1 inch sigma, you should be aiming for the triple 19
+in the bottom left. As you can see on the numbered board at the top, the
+triple 19 is buffered on either side by the 3 and the 7, which are both
+2 points above the 20 section's neighbors (1 and 5). So as you might
+expect if you have a reasonable chance of hitting the sections to either
+side, the triple 19 offers a higher expected score in the long run. The
+other limit we can understand is the limit of really bad throws. If you
+have a nontrivial chance of missing the board altogether, then obviously
+you should just aim for the center of the board, in the hopes that you
+at least hit the thing. But interestingly, in between the track that the
+optimal aiming point takes is a little interesting. It tends to the
+center (as we should expect), but it takes a curvy sort of root along
+the bottom left quadrant of the board. Neat.&lt;/p&gt;
+&lt;h4&gt;Heat Maps&lt;/h4&gt;
+&lt;p&gt;In order to get a little better of a feel for why the track takes the
+path it does, I decided to look at the heat maps for the expected score
+at every location on the board for a set of given sigmas. So, in the
+images below, the colors above the board indicate the relative score
+expected if you aimed at that point.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s1600/darts-sig0p25flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s200/darts-sig0p25flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is for a quarter inch sigma throw [Click to zoom]. Notice that the
+triple 20 is the place to hit, as expected.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s1600/darts-sig0p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s200/darts-sig0p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a half inch sigma throw. The triple 20 is still in the lead,
+but not by a whole lot. You can really see how if your aim is as good as
+a half inch sigma, you can really still see the triple spots as true
+features.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s1600/darts-sig1p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s200/darts-sig1p00flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1 inch sigma throw. Now the lower left hand quadrant has
+taken over as the optimal place to throw. Notice that both the triple 16
+and triple 19 make decent targets. The triple 14 also makes a showing,
+due probably to its large neighbors.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s1600/darts-sig1p50flair.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s200/darts-sig1p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1.5" sigma. The triple 20 is nearly gone as a place of
+interest on the board, since we are no longer good enough to really
+capitalize on it. The lower left hand portion of the board is the place
+to be. We've really sort of lost any distinct features of the triple
+spots, and now are just looking at quadrants of the board as a whole.
+Our aim seems to tend to center a bit, as we are now in a little danger
+of falling off the board.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s1600/darts-sig2p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s200/darts-sig2p00flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At 2" sigma, we can really only hope to aim left-of-center.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s1600/darts-sig2p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s200/darts-sig2p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At 2.5" sigma, we really just want to hit the board.&lt;/p&gt;
+&lt;h4&gt;Lesson&lt;/h4&gt;
+&lt;p&gt;So, now I know, personally, I really just ought to aim just left of
+center.&lt;/p&gt;&lt;/div&gt;</description><category>darts</category><category>fun</category><category>python</category><guid>https://virtuosi.alexalemi.com/posts/old/darts/</guid><pubDate>Thu, 13 Jan 2011 16:29:00 GMT</pubDate></item></channel></rss>

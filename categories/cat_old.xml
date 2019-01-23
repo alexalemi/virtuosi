@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about old)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/cat_old.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://virtuosi.alexalemi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/tgpp.jpg"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Recently I finished reading John Mearsheimer's excellent political science book
+The Tragedy of Great Power Politics. In this book, Mearscheimer lays out his
+``offensive realism'' theory of how countries interact with each other in the
+world. The book is quite readable and well-thought-out -- I'd recommend it to
+anyone who has an inkling for political history and geopolitics. However, as I
+was reading this book, I decided that there was a point of Mearsheimer's
+argument which could be improved by a little mathematical analysis.&lt;/p&gt;
+&lt;p&gt;The main tenant of the book is that states are rational actors who act to to
+maximize their standing in the international system. However, states don't seek
+to maximize their absolute power, but instead their relative power as compared
+to the other states in the system. In other words, according to this logic the
+United Kingdom position in the early 19th century -- when its army and navy
+could trounce most of the other countries on the globe -- was better than it is
+now -- when many other countries' armies and navies are comparable to that of
+the UK, despite the UK current army and navy being much better now than they
+were in the early 19th century. According to Mearsheimer, the main determinant
+of state's international actions is simply maximizing its relative power in its
+region. All other considerations -- capitalist or communist economy, democratic
+or totalitarian government, even desire for economic growth -- matter little in
+a state's choice of what actions it will take. (Perhaps it was this
+simplification of the problem which made the book really appeal to me as a
+physicist.)&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Most of Mearsheimer's book is spent exploring the logical corollaries of his
+main tenant, along with some historical examples. He claims that his idea has
+three different predictions for three different possible systems. 1) A balanced
+bipolar system (one where two states have roughly the same amount of power and
+no other state has much to speak of) is the most stable. War will probably not
+break out since, according to Mearsheimer, each state has little to gain from a
+war. (His example is the Cold War, which didn't see any actual conflict between
+the US and the USSR.) 2) A balanced multipolar system ($N&amp;gt;2$ states each share
+roughly the same amount of power) is more prone to war than a bipolar system,
+since a) there is a higher chance that two states are mismatched in power,
+allowing the more powerful to push the less around, and b) there are more
+states to fight. (One of his examples is Europe between 1815 and 1900, when
+there were several great-power wars but nothing that involved the entire
+continent at once.) 3) An unbalanced multipolar system ($N&amp;gt;2$ states with power,
+but one that has more power than the rest) is the most prone to war of all. In
+this case, the biggest state on the block is almost able to push all the other
+states around. The other states don't want that, so two or more of them collude
+to stop the big state from becoming a hegemon -- i.e. they start a war.
+Likewise, the big state is also looking to make itself more relatively
+powerful, so it tries to start wars with the little states, one at a time, to
+reduce their power. (His examples here are Europe immediately before and
+leading up to the Napoleonic Wars, WWI, and WWII.) There is another case, which
+is unipolarity -- one state has all the power -- but there's nothing
+interesting there. The big state does what it wants.&lt;/p&gt;
+&lt;p&gt;While I liked Mearsheimer's argument in general, something irked me about the
+statement about bipolarity being stable. I didn't think that the stability of
+bipolarity (corollary 1 above) actually followed from his main hypothesis.
+After spending some extra time thinking in the shower, I decided how I could
+model Mearsheimer's main tenant quantitatively, and that it actually suggested
+that bipolarity was actually unstable!!&lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Let's see if we can't quantify Mearsheimer's ideas with a model. Each state in
+the system has some power, which we'll call $P_i$. Obviously in reality there are
+plenty of different definitions of power, but in accordance with Mearsheimer's
+definition, we'll define power simply in a way that if State 1 has power 
+$P_1 &amp;gt; P_2$, the power of State 2, then State 1 can beat State 2 in a 
+war&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+Each state does not seek to maximize their total power $P_i$, but instead their
+relative power $R_i$, relative to the total power of the rest of the states, So
+the relative power $R_i$ would be&lt;/p&gt;
+&lt;p&gt;$$ R_i = P_i / \left( \sum_{j=1}^N P_j \right) \qquad , $$&lt;/p&gt;
+&lt;p&gt;where we take the sum over the relevant players in the system. If there was
+some action that changed the power of some of the players in the system (say a
+war), then the relative power would also change with time $t$:&lt;/p&gt;
+&lt;p&gt;$$ \frac{dR_i}{dt} = \frac{dP_i}{dt} \times \left( \sum_{j=1}^N P_j \right)^{-1} - P_i \times \left( \sum_{j=1}^N P_j \right)^{-2} \times \left(\sum_{j=1}^N \frac{dP_j}{dt} \right) \qquad (1) $$&lt;/p&gt;
+&lt;p&gt;A state will pursue an action that increases its relative power $R_i$. So if we
+want to decide whether or not State A will go to war with State B, we need to
+know how war affects a state's individual powers. While this seems intractable,
+since we can't even precisely define power, a few observations will help us
+narrow down the allowed possibilities to make definitive statements on when war
+is beneficial to a state:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;War always reduces a state's absolute power. This is simply a statement that
+in general, war is destructive. Many people die and buildings are bombed,
+neither of which is good for a state. Mathematically, this statement is that in
+wartime, $dP_i/dt &amp;lt; 0$ always. Note that this doesn't imply that that $dR_i/dt$
+is always negative.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The change in power of two states A &amp;amp; B in a war should depend only on
+how much power A &amp;amp; B have. In addition, it should be independent of the
+labeling of states. Mathematically, $dP_a / dt = f(P_a, P_b)$, and 
+$dP_b/dt = f(P_b, P_a)$ with the same function $f$&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If State A has more absolute power than State B, and both states are in a
+war, then State B will lose power more rapidly than State A. This is almost a
+re-statement of our definition of power. We defined power such that if State A
+has more absolute power than State B, then State A will win a war against State
+B. So we'd expect that power translates to the ability to reduce another
+state's power, and more power means the ability to reduce another state's power
+more rapidly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For simplicity, we'll also notice that the decrease of a State A's absolute
+power in wartime is largely dependent on the power of State B attacking it, and
+is not so much dependent on how much power State A has.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In general, I think that assumptions 1-3 are usually true, and assumption 4 is
+pretty reasonable. But to simplify the math a little more, I'm going to pick a
+definite form for the change of power. The simplest possible behavior that
+capture all 4 of the above assumptions is:&lt;/p&gt;
+&lt;p&gt;$$ \frac{dx}{dt} = -y \qquad \frac{dy}{dt} = -x \qquad (2) $$&lt;/p&gt;
+&lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
+where $x$ is the absolute power of State X and $y$ is the absolute power of State
+y. (I'm switching notation because I want to avoid using too many 
+subscripts&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I'm assuming that the rate of 
+change of State X's power is directly
+proportional to State Y's power, and depends on nothing else (including how
+much power State Y actually has). &lt;a id="note4"&gt;&lt;/a&gt;
+We'll also call $r$ the relative power of State
+X, and $s$ the relative power of State Y&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
+Now we're equipped to see when war
+is a good idea, according to our hypotheses.&lt;/p&gt;
+&lt;p&gt;Let's examine the case that was bothering me most -- a balanced bipolar system.
+Now we have only two states in the system, X and Y. For starters, let's address
+the case where both states start out with equal power $(x = y)$. If State X goes
+to war with State Y,  how will the relative powers $r =x/(x+y)$ &amp;amp; $s=y/(x+y)$
+change? Looking at Eq. (1), we see that by symmetry both states have to lose
+absolute power equally, so $x(t) = y(t)$ always, and thus $r(t) = s(t)$ always. In
+other words, from a relative power perspective it doesn't matter whether the
+states go to war! For our system to be stable against war, we'd expect that a
+state will get punished if it goes to war, which isn't what we have! So our
+system is a neutral equilibrium at best.&lt;/p&gt;
+&lt;p&gt;But it gets worse. For a real balanced bipolar system, both states won't have
+exactly the same power, but will instead be approximately equal. Let's say that
+the relative power between the two states differs by some small (positive)
+number $e$, such that $x(0) = x0$ and $y(0) = x0 + e$. Now what will happen? Looking
+at Eq. (2), we see that, at $t=0$,&lt;/p&gt;
+&lt;p&gt;$$ \frac{dr}{dt} = -(x_0 + e) / (2x_0 + e) + x_0(2x_0 + e) / (2x_0 + e)^2  = -e/(x_0 + e) $$&lt;/p&gt;
+&lt;p&gt;$$ \frac{ds}{dt} = -(x_0) / (2x_0 + e) + (x_0+e)(2x_0 + e) / (2x_0 + e)^2 = + e/(x_0 + e) \qquad .  $$&lt;/p&gt;
+&lt;p&gt;In other words, if the power balance is slightly upset, even by an
+infinitesimal amount, then the more powerful state should go to war! For a
+balanced bipolar system, peace is unstable, and the two countries should always
+go to war according to this simple model of Mearsheimer's realist world.&lt;/p&gt;
+&lt;p&gt;Of course, we've just considered the simplest possible case -- only two states
+in the system (whereas even in a bipolar world there are other, smaller states
+around) who act with perfect information (i.e. both know the power of the other
+state) and can control when they go to war. Also, we've assumed that relative
+power can change only through a decrease of absolute power, and in a
+deterministic way (as opposed to something like economic growth). To really say
+whether bipolarity is stable against war, we'd need to address all of these in
+our model. A little thought should convince you which of these either a) makes
+a bipolar system stable against war, and b) makes a bipolar system more or less
+stable compared to a multipolar system. Maybe I'll address these, as well as
+balanced and unbalanced multipolar systems, in another blog post if people are
+interested.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note1"&gt;^&lt;/a&gt; $P_i$ has some units (not watts). My definition of power is strictly
+comparative, so it might seem that any new scale of power $p_i = f(P_i)$ with an
+arbitrary monotonic function $f(x)$ would also be an appropriate definition.
+However, we would like a scale that facilitates power comparisons if multiple
+states gang up on another. So we would need a new scale such that &lt;/p&gt;
+&lt;p&gt;$$ p_{i+j} = f(P_i + P_j) = f(P_i) + f(P_j) = p_i + p_j $$ &lt;/p&gt;
+&lt;p&gt;for all $P_i, P_j$ . The only function that behaves like this is a linear function of 
+$P(p_i) = A \times P_i $, where A is some constant. So our definition of power is 
+basically fixed up to what "units" we choose. Of course, defining $P_i$ in terms 
+of tangibles (e.g. army size or GDP or population size or number of nuclear warheads) 
+would be a difficult task. Incidentally, I've also implicitly assumed here that there is a power scale,
+such that if $P_1 &amp;gt; P_2$, and $P_2 &amp;gt; P_3$, then $P_1 &amp;gt; P_3$. But I think
+that's a fairly benign assumption.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn't matter which state attacked the
+other, or where the war is taking place, or other things like that.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
+advantage that it is scale-free, which we might expect since there is no
+intrinsic "power scale" to the problem. Of course there are other forms with
+this property that follow some or all of the assumptions above. For instance,
+something of the form $dx/dt = -xy = dy/dt$ would also be i) scale-invariant, and
+ii) in line with assumptions 1 &amp;amp; 2 and partially inline with assumption 3.
+However I didn't use this since a) it's nonlinear, and hence a little harder to
+solve the resulting differential equations analytically, and b) the rate of
+decrease of both state's power is the same, in contrast to my intuitive feeling
+that the state with less power should lose power more rapidly.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
+4. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
+functional form for $dP_i/dt$ that follows assumptions 1-3 above does not change
+the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://virtuosi.alexalemi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Recently I have seen quite a few blog posts written about re-evaluating
+the points values assigned to the different letter tiles in the
+Scrabble™ brand Crossword Game. The premise behind these posts is that
+the creator and designer of the game assigned point values to the
+different tiles according to their relative frequencies of occurrence in
+words in English text, supplemented by information gathered while
+playtesting the game. The points assigned to different letters reflected
+how difficult it was to play those letters: common letters like E, A,
+and R were assigned 1 point, while rarer letters like J and Q were
+assigned 8 and 10 points, respectively. These point values were based on
+the English lexicon of the late 1930’s. Now, some 70 years later, that
+lexicon has changed considerably, having gained many new words (e.g.:
+EMAIL) and lost a few old ones. So, if one were to repeat the analysis
+of the game designer in the present day, would one come to different
+conclusions regarding how points should be assigned to various letters?
+&lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’ve decided to add my own analysis to the recent development because I
+have found most of the other blog posts to be unsatisfactory for a
+variety of reasons&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
+One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
+calculated letters’ relative frequencies by counting the number of times
+each letter appeared in each word in the Scrabble™ dictionary. But this
+analysis is faulty, since it ignores the probability with which
+different words actually appear in the game. One is far less likely to
+draw QI than AE during a Scrabble™ game (since there’s only one Q in the
+bag, but many A's and E's). Similarly, very long words like
+ZOOGEOGRAPHICAL have a vanishingly small probability of appearing in the
+game: the A’s in the long words and the A’s in the short words cannot be
+treated equally. A second &lt;a href="http://blog.useost.com/2012/12/30/valett/"&gt;article&lt;/a&gt; I saw calculated
+letter frequencies based on their occurrence in the Scrabble™ dictionary
+and did attempt to weight frequencies based on word length. The author
+of this second article also claimed to have quantified the extent to
+which a letter could “fit well” with the other tiles given to a player.
+Unfortunately, some of the steps in the analysis of this second article
+were only vaguely explained, so it isn’t clear how one could replicate
+the article’s conclusions. In addition, as far as I can tell, neither of
+these articles explicitly included the distribution of letters (how many
+A’s, how many B’s, etc) included in a Scrabble™ game. Also, neither of
+these articles accounted for the fact that there are blank tiles (that
+act as wild cards and can stand in for any letter) that appear in the
+game.&lt;/p&gt;
+&lt;p&gt;So, what does one need to do to improve upon the analyses already
+performed? We’re given the Scrabble™ dictionary and bag of &lt;a href="http://upload.wikimedia.org/wikipedia/commons/b/b8/Scrabble_tiles_en.jpg"&gt;100
+tiles&lt;/a&gt;
+with a set distribution, and we’re going to try to determine what a good
+pointing system would be for each letter in the alphabet. We’re also
+armed with the knowledge that each player is given 7 letters at a time
+in the game, making words longer than 8 letters very rare indeed. Let’s
+say for the sake of simplicity that words 9 letters long or shorter
+account for the vast majority of words that are possible to play in a
+normal game.&lt;/p&gt;
+&lt;p&gt;Based on these constraints, how can one best decide what points to
+assign the different tiles? As stated above, the game is designed to
+reward players for playing words that include letters that are more
+difficult to use. So, what makes an easy letter easy, and what makes a
+difficult letter difficult? Sure, the number of times the letter appears
+in the
+&lt;a href="http://scrabblehelper2.googlecode.com/svn-history/r3/trunk/src/scrabble/dictionary.txt"&gt;dictionary&lt;/a&gt;
+is important, but this does not account for whether or not, on a given
+rack of tiles (a rack of tiles is to Scrabble™ as a hand of cards is to
+poker), that letter actually can be used. The letter needs to combine
+with other tiles available either on the rack or on the board in order
+to form words. The letter Q is difficult to play not only because it is
+used relatively few times in the dictionary, but also because the
+majority of Q-words require the player to use the letter U in
+conjunction with it.&lt;/p&gt;
+&lt;p&gt;So, what criterion can one use to say how useful a particular tile is?
+Let’s say that letters that are useful have more potential to be used in
+the game: they provide more options for the players who draw them. Given
+a rack of tiles, one can generate a list of all of the words that are
+possible for the player to play. Then, one can count the number of times
+that each letter appears in that list. Useful letters, by this
+criterion, will combine more readily with other letters to form words
+and so appear more often in the list than un-useful letters.&lt;/p&gt;
+&lt;p&gt;(I would also like to take a moment to preempt &lt;a href="http://scrabbleplayers.org/w/Valett"&gt;criticism from the
+competitive Scrabble™ community&lt;/a&gt; by
+saying that strategic decisions made by the players need not be brought
+into consideration here. The point values of tiles are an engineering
+constraint of the game. Strategic decisions are made by the players,
+given the engineering constraints of the game. Words that are “available
+to be played” are different from “words that actually do get played.”
+The potential usefulness of individual letter tiles should reflect
+whether or not it is even possible to play them, not whether or not a
+player decides that using a particular group of tiles constitutes an
+optimal move.)&lt;/p&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
+To give an example, suppose I draw the rack BEHIWXY. I can 
+generate&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
+the full list of words available to be played given this rack: BE, BEY,
+BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY,
+WHY, WYE, XI, YE, YEH, YEW. Counting the number of occurrences of each
+letter, I see that the letter E appears 18 times, while the letter W
+only appears 7 times. This example tells me that the letter E is
+probably much more potentially useful than the letter W.&lt;/p&gt;
+&lt;p&gt;The example above is only one of the many, many possible racks that one
+can see in a game of Scrabble™. I can use a 
+&lt;a href="http://en.wikipedia.org/wiki/Monte_Carlo_method"&gt;Monte Carlo&lt;/a&gt;-type simulation
+to estimate the average usefulness of the different letters by drawing
+many example racks.
+&lt;a id="note3"&gt;&lt;/a&gt;
+Monte Carlo is a technique used to estimate
+numerical properties of complicated things without explicit calculation.
+For example, suppose I want to know the probability of drawing a
+straight flush in poker.&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
+explicitly by using combinatorics, or I can use a Monte Carlo method to
+deal a large number of hypothetical possible poker hands and count the
+number of straight flushes that appear. If I deal a large enough number
+of hands, the fraction of hands that are straight flushes will converge
+upon the correct analytic value. Similarly here, instead of explicitly
+calculating the usefulness of each letter, I use Monte Carlo to draw a
+large number of hypothetical racks and use them to count the number of
+times each letter can be used. Comparing the number of times that each
+tile is used over many, many possible racks will give a good
+approximation of how relatively useful each tile is on average. Note
+that this process accounts for the words acceptable in the Scrabble™
+dictionary, the number of available tiles in the bag, as well as the
+probability of any given word appearing.&lt;/p&gt;
+&lt;p&gt;In my simulation, I draw 10,000,000 racks, each with 9 tiles
+(representing the 7 letters the player actually draws plus two tiles
+available to be played through to form longer words). I perform the
+calculation two different ways: once with a 98-tile pool with no blanks,
+and once with a 100-tile pool that does include blanks. In the latter
+case, I make sure to not count the blanks used to stand in for different
+letters as instances of those letters appearing in the game. The results
+are summarized in the table below.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There are two key observations to be made here. First, it does not seem
+to matter whether or not there are blanks in the bag! The results are
+very similar in both cases. Second, it would be completely reasonable to
+keep the tile point values as they are. Only the Z, H, and U appear out
+of order. It’s only if one looks very carefully at the differences
+between the usefulness of these different tiles that one might
+reasonably justify re-pointing the different letters.&lt;/p&gt;
+&lt;p&gt;For fun, I have included in the table my own suggestions for what these
+tiles’ values might be changed to based on the simulation results.
+(&lt;strong&gt;Note&lt;/strong&gt;: here's where any pretensions of scientific rigor go out the
+window.) I have kept the scale of points between 1 and 10, as in the
+current pointing system. I have assigned groups of letters the same
+number of points based on whether they have a similar usefulness score.
+Here are the significant changes: L and U, which are significantly less
+useful than the other 1-point tiles may be bumped up to 2 points,
+comparable to the D and G. The letter V is clearly less useful than any
+of the other three 4-point tiles (W, Y, and F, all of which may be used
+to form 2-letter words while the V forms no 2-letter words), and so is
+undervalued. The H is comparable to the 3-point tiles, and so is
+currently overvalued. Similarly, the Z is overvalued when one considers
+how close to the J it is. Unlike in the previous two articles that I
+mentioned, I don't find any strong reason to change the value of the
+letter X compared to the other 8 point tiles. I suppose one could lower
+its value from 8 points to 7, but I have (somewhat arbitrarily) chosen
+not to do so.&lt;/p&gt;
+&lt;p&gt;One may also ask the question whether or not the fact that a letter
+forms 2- or 3-letter words is unfairly biasing that letter. In
+particular, is the low usefulness of the C and V compared to
+comparably-pointed tiles due to the fact that they form no 2-letter
+words? Performing the simulation again without 2-letter words, I found
+no changes in the results in any of the letters except for C, which
+increased in usefulness above the B and the H. The letter V's ranking,
+however, did not change at all, indicating that unlike the C the V is
+difficult to use even when combining with letters to make longer words.
+Repeating the simulation yet again without 2- or 3-letter words yielded
+the same results.&lt;/p&gt;
+&lt;p&gt;As a final note, I would like to respond directly to to Stefan Fatsis's
+&lt;a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html"&gt;excellent article&lt;/a&gt;
+about the so-called controversy surrounding re-calculating tile values
+and say that I am fully aware that this is indeed a "statistical
+exercise," motivated mostly by my desire to do the calculation made by
+others in a way that made sense in the context of the game of Scrabble.
+Similarly, I realize that these recommendations are unlikely to actually
+change anything. Given that the original points values of the tiles are
+still justifiably appropriate by my analysis, it's not like anybody at
+Hasbro is going to jump to "fix" the game. Lastly, my calculations have
+nothing to do with the strategy of the game whatsoever, and cannot be
+used to learn how to play the game any better. (If anything, I've only
+confirmed some things that many experienced Scrabble players already
+know about the game, such as that the V is a tricky tile, or that the H,
+X, and Z tiles, in spite of their high point values, are quite
+flexible.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
+4 years, and am quite familiar with the mechanics of the game, as well
+as contemporary strategy.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
+generate the list of available words given any set of tiles. Thanks
+Alemi!&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
+Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
+suffered a severe bout of encephalitis that resulted in an emergency
+trepanation. While recovering in the hospital, he played many games of
+solitaire and was intrigued by the question of how to calculate the
+probability that a given deal could result in a winnable game. The
+combinatorics required to answer this question proved staggeringly
+complex, so Ulam proposed the idea of generating many possible solitaire
+deals and merely counting how many of them resulted in victory. This
+proved to be much simpler than an explicit calculation, and the rest is
+history: Monte Carlo is used today in a wide variety of applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Additional References:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The photo at top of a Scrabble™ board was taken during the 2012 National
+Scrabble™ Championship. Check out the 9-letter double-blank BINOCULAR.&lt;/p&gt;
+&lt;p&gt;For anyone interested in learning more about the fascinating world of
+competitive Scrabble™, check out &lt;em&gt;Word Freak&lt;/em&gt;, also by Stefan Fatsis.
+This book has become more or less the definitive documentation upon this
+subculture. If you don't have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
+Wars&lt;/a&gt;, a documentary that
+follows many of the same people as Fatsis's book. (It still may be
+available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>The Skeleton Supporting Search Engine Ranking Systems</title><link>https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A lot of the research I’m interested in relates to networks – measuring
+the properties of networks and figuring out what those properties mean.
+While doing some background reading, I stumbled upon some discussion of
+the algorithm that search engines use to rank search results. The
+automatic ranking of the results that come up when you search for
+something online is a great example of how understanding networks (in
+this case, the World Wide Web) can be used to turn a very complicated
+problem into something simple.&lt;/p&gt;
+&lt;p&gt;Ranking search results relies on the assumption that there is some
+underlying pattern to how information is organized on the WWW- there are
+a few core websites containing the bulk of the sought-after information
+surrounded by a group of peripheral websites that reference the core.
+Recognizing that the WWW is a network representation of how information
+is organized and using the properties of the network to detect where
+that information is centered are the key components to figuring out what
+websites belong at the top of the search page.&lt;/p&gt;
+&lt;p&gt;Suppose you look something up on Google (looking for YouTube videos of
+your favorite band, &lt;a href="http://thephysicsvirtuosi.com/author/corky.html"&gt;looking for edifying science
+writing&lt;/a&gt;, tips on octopus pet care,
+etc): the search service returns a whole spate of results. Usually, the
+pages that Google recommends first end up being the most useful. How on
+earth does the search engine get it right?&lt;/p&gt;
+&lt;p&gt;First I’ll tell you exactly how Google does &lt;em&gt;not&lt;/em&gt; work. When you type in
+something into the search bar and hit enter, a message is &lt;em&gt;not&lt;/em&gt; sent to
+a guy who works for Google about your query. That guy does &lt;em&gt;not&lt;/em&gt; then
+look up all of the websites matching your search, does not visit each
+website to figure out which ones are most relevant to you, and does
+&lt;em&gt;not&lt;/em&gt; rank the pages accordingly before sending a ranked list back to
+you. That would be a very silly way to make a search engine work! It
+relies on an individual human ranking the search results by hand with
+each search that’s made. Maybe we can get around having to hire
+thousands of people by finding a clever way to automate this process.&lt;/p&gt;
+&lt;p&gt;So here’s how a search engine &lt;em&gt;does&lt;/em&gt; work. Search engines use robots
+that crawl around the World Wide Web (sometimes these robots are
+referred to as “spiders”) finding websites, cataloguing key words that
+appear on those webpages, and keeping track of all the other sites that
+link into or away from them. The search engine then stores all of these
+websites and lists of their keywords and neighbors in a big database.&lt;/p&gt;
+&lt;p&gt;Knowing which websites contain which keywords allows a search engine to
+return a list of websites matching a particular search. But simply
+knowing which websites contain which keywords is not enough to know how
+to order the websites according to their relevance or importance.
+Suppose I type “octopus pet care” into Google. The search yields 413,000
+results- far too many for me to comb through at random looking for the
+web pages that best describe what I’m interested in.&lt;/p&gt;
+&lt;p&gt;Knowing the ways that different websites connect to one another through
+hyperlinks is the key to how search engine rankings work. Thinking of a
+collection of websites as an ordinary list doesn’t say anything about
+how those websites relate to one another. It is more useful to think of
+the collection of websites as a network, where each website is a node
+and each hyperlink between two pages is a directed edge in the network.
+In a way, these networks are maps that can show us how to get from one
+website to another by clicking through links.&lt;/p&gt;
+&lt;p&gt;Here is an example of what a network visualization of a website map of a
+large portion of the WWW looks like. (Original full-size image
+&lt;a href="http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg"&gt;here&lt;/a&gt;&lt;a href="http://www.blogger.com/"&gt;&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/skeleton-search/Internet_map_1024.jpg" width="100%" alt="internet map" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here is a site map for a group of websites that connect to the main page
+of English Wikipedia. (Original image from
+&lt;a href="http://en.wikipedia.org/wiki/Site_map"&gt;here&lt;/a&gt;.) This smaller site map is
+closer to the type of site map used when making a search using a search
+engine.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/skeleton-search/Main_Page_Usability.png" width="100%" alt="internet map" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So, how does knowing the underlying network of the search results help
+one to find the best website on octopus care (or any other topic)? The
+search engine assumes that behind the seemingly random, hodgepodge
+collection of files on the WWW, there is some organization in the way
+they connect to one another. Specifically, the search engine assumes
+that finding the websites most central to the network of search results
+is the same as finding the search results with the best information.
+Think of a well-known, trusted source of information, like the New York
+Times. The NY Times website will have many other websites referencing it
+by linking to it. In addition, the NY Times website, being a trusted
+news source, is likely to refer to the best references for other sources
+that it wants to refer to, such as Reuters. High-quality references will
+also probably have many incoming links from websites that cite them. So
+not only does a website like the NY Times sit at the center of many
+other websites that link to it, but it also frequently connects to other
+websites that themselves are at the center of many other websites. It is
+these most central websites that are probably the best ones to look at
+when searching for information.&lt;/p&gt;
+&lt;p&gt;When I search for “octopus pet care” using Google I am necessarily
+assuming that the search results are organized according to this
+core-periphery structure, with a group of important core websites
+central to the network surrounded by many less important peripheral
+websites that link to the core nodes. The core websites may also connect
+to one another. There may also be websites disconnected from the rest,
+but these will probably be less important to the search simply because
+of the disconnection. Armed with the knowledge of the connections
+between the different relevant websites and the core-periphery network
+structure assumption, we may now actually find which of the websites are
+most central to the network (in the core), and therefore determine which
+websites to rank highly.&lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Let’s begin by assigning a quantitative “centrality” score to each of
+the nodes (websites) in the network, initially guessing that all of the
+search results are equally important. (This, of course, is probably not
+true. It’s just an initial guess.) Each node then transfers all of its 
+centrality score to its neighbors, dividing it evenly between 
+them&lt;a href="https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+(Starting with a centrality score of 1 with three neighbors, each of
+those neighbors receives 1/3.) Each node also receives a some centrality
+from each neighbor that links in to it. Following this first step, we
+find that nodes with many incoming edges will have higher centrality
+than nodes with few incoming edges. We can repeat this process of
+dividing and transferring centrality again. Nodes with many incoming
+links will have more centrality to share with their neighbors, and nodes
+with many incoming links will themselves also receive more centrality.&lt;/p&gt;
+&lt;p&gt;After repeating this process many times, we begin to see a difference
+between which nodes have the highest centrality scores: nodes with high
+centrality are the ones that have many incoming links, or have links to
+other central nodes, or both. This algorithm therefore differentiates
+between the periphery and the core of the network. Core nodes receive
+lots of centrality because they link to one another and because they
+have lots of incoming links from the periphery. Peripheral nodes have
+fewer incoming links and so receive less centrality than the nodes in
+the core. Knowing the centrality scores of search results on the WWW
+makes it pretty straightforward for us to quantitatively rank which of
+those websites belongs at the top of the list.&lt;/p&gt;
+&lt;p&gt;Of course, there are more complex ways that one can add to and improve
+this procedure. Google’s algorithm PageRank (named for founder Larry
+Page, not because it is used to rank web pages) and the HITS algorithm
+developed at Cornell are two examples of more advanced ways of ranking
+search engine results. We can go even further: a search engine can keep
+track of the links that users follow whenever a particular search is
+made. (This is almost the same as the company hiring someone to order
+sought-after web pages automatically whenever a search is made, except
+all the company lets the user do it for free.) Over time, search engines
+can improve their methods for helping us find what we need by learning
+directly from the way users themselves prioritize which search results
+they pursue. Still, these different search engine ranking systems may
+operate using slightly different methods, but all of them depend on
+understanding the list of search results within the context of a
+network.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#note1"&gt;^&lt;/a&gt; It's not always all - there are other variations where nodes only
+transfer a fraction of their centrality score at each step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources (and further reading)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to include no mathematics in
+this post simply because I cannot explain the mathematics behind these
+algorithms and their convergence properties better than my sources can.
+For those of you who want to see the mathematical side of the argument
+for yourselves (which involves treating the network adjacency matrix as
+a Markov process and finding its nontrivial steady state eigenvector),
+do consult the following two textbooks:&lt;/p&gt;
+&lt;p&gt;Easley, David, and Jon Kleinberg. &lt;em&gt;Networks, Crowds, and Markets:
+Reasoning about a Highly Connected World&lt;/em&gt;. Cambridge University Press,
+2010 (&lt;a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf"&gt;Chapter 14&lt;/a&gt;
+in particular) &lt;/p&gt;
+&lt;p&gt;Newman, Mark. &lt;em&gt;Networks: an Introduction&lt;/em&gt;. Oxford
+University Press, 2010 (Chapter 7 in particular)&lt;/p&gt;
+&lt;p&gt;A popular book on the early development of network science that contains
+a lot of information on the structure of the WWW:&lt;/p&gt;
+&lt;p&gt;Barabasi, Albert-Laszlo. &lt;em&gt;Linked: How Everything is Connected to
+Everything Else and What It Means&lt;/em&gt;. Plume, 2003.&lt;/p&gt;
+&lt;p&gt;A book on the history of modern computing that contains an interesting
+passage on how search engines learn adaptively from their users (that
+deserves a shout-out in this blog post).&lt;/p&gt;
+&lt;p&gt;Dyson, George. &lt;em&gt;Turing's Cathedral&lt;/em&gt;. Pantheon, 2012.&lt;/p&gt;&lt;/div&gt;</description><category>centrality measures</category><category>networks</category><category>octopodes</category><category>search engine ranking</category><category>search engines</category><guid>https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</guid><pubDate>Tue, 01 Jan 2013 19:09:00 GMT</pubDate></item><item><title>When will the Earth fall into the Sun? </title><link>https://virtuosi.alexalemi.com/posts/old/when-will-the-earth-fall-into-the-sun-/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;p style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/earth-fall-sun/BrianWastesHisTime.png" alt="the sun giveth, the sun taketh away" width="50%"&gt;
+  &lt;figcaption&gt;The time I spent making this poster could have been spent doing research&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Since December 2012 is coming up, I thought I'd help the Mayans out with
+a look at a possible end of the world scenario. (I know, it's not Earth
+Day yet, but we at the Virtuosi can only go so long without fantasizing
+about wanton destruction.) As the Earth zips around the Sun, it moves
+through the &lt;a href="http://en.wikipedia.org/wiki/Heliosphere"&gt;heliosphere&lt;/a&gt;,
+which is a collection of charged particles emitted by the Sun. Like any
+other fluid, this will exert drag on the Earth, slowly causing it to
+spiral into the Sun. Eventually, it will burn in a blaze of glory, in a
+bad-action-movie combination of Sunshine meets Armageddon. Before I get
+started, let me preface this by saying that I have no idea what the hell
+I'm talking about. But, in the spirit of being an arrogant physicist,
+I'm going to go ahead and make some back-of-the-envelope calculations,
+and expect that this post will be accurate to within a few orders of
+magnitude. Well, how long will the Earth rotate around the Sun before
+drag from the heliosphere stops it? This seems like a problem for fluid
+dynamics. How do we calculate what the drag is on the Earth? Rather than
+solve the fluid dynamics equations, let's make some arguments based on
+dimensional analysis. What can the drag of the Earth depend on? It
+certainly depends on the speed of the Earth v -- if an object isn't
+moving, there can't be any drag. We also expect that a wider object
+feels more drag, so the drag force should depend on the radius of the
+Earth R. Finally, the density of the heliosphere might have something to
+do with it. If we fudge around with these, we see that there is only 1
+combination that gives units of force: &lt;/p&gt;
+&lt;p&gt;$$ F_{drag} \sim \rho v^2 R^2 $$ &lt;/p&gt;
+&lt;p&gt;Now that we have the force, the energy dissipated from the Earth
+to the heliosphere after moving a distance $d$ is $E_\textrm{lost} = F\times d$. If
+the Earth moves with speed v for time t, then we can write 
+$E_\textrm{lost} = F v t$. So we can get an idea of the time scale over which the Earth
+starts to fall into the Sun by taking &lt;/p&gt;
+&lt;p&gt;$E_\textrm{lost} = E_\textrm{Earth} \sim 1/2 M_\textrm{Earth} v^2$. 
+Rearranging and dropping factors of 1/2 gives &lt;/p&gt;
+&lt;p&gt;$$ T_\textrm{Earth burns} \sim M_{Earth} v^2 / (F_{drag}\times v) \ 
+\qquad \sim M_{Earth} / (\rho R^2 v) $$ &lt;/p&gt;
+&lt;p&gt;Using the velocity of the Earth as $2\pi \times 1 \mbox{Astronomical unit/year}$, 
+Googlin' for some numbers, and taking the 
+&lt;a href="http://web.mit.edu/space/www/helio.review/axford.suess.html"&gt;density of the heliosphere&lt;/a&gt;
+to be $10^{-23}$ g/cc we get... &lt;/p&gt;
+&lt;p&gt;$$ T \approx 10^{19} \textrm{ years} $$&lt;/p&gt;
+&lt;p&gt;Looks like this won't be the cause of the Mayan apocalypse. (By comparison, the 
+&lt;a href="http://en.wikipedia.org/wiki/Sun#Life_cycle"&gt;Sun will burnout&lt;/a&gt; 
+after only $\sim10^9$ years.)&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/when-will-the-earth-fall-into-the-sun-/</guid><pubDate>Thu, 29 Nov 2012 22:58:00 GMT</pubDate></item><item><title>Creating an Earth</title><link>https://virtuosi.alexalemi.com/posts/old/creating-an-earth/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/creating-an-earth/116.png" alt="GAH!" width="50%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;GAAAAAAAAH&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A while ago I decided I wanted to create something that looks like the
+surface of a planet, complete with continents &amp;amp; oceans and all. Since
+I've only been on a small handful of planets, I decided that I'd
+approximate this by creating something like the Earth on the computer
+(without cheating and just copying the real Earth). Where should I
+start? Well, let's see what the facts we know about the Earth tell us
+about how to create a new planet on the computer. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 1&lt;/strong&gt;:
+Looking at a map of the Earth, we only see the heights of the surface.
+So let's describe just the heights of the Earth's surface. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 2&lt;/strong&gt;: 
+The Earth is a sphere. So (wait for it) we need to describe the
+height on a spherical surface. Now we can recast our problem of making
+an Earth more precisely mathematically. We want to know the heights of
+the planet's surface at each point on the Earth. So we're looking for
+field (the height of the planet) defined on the surface of a sphere (the
+different spots on the planet). Just like a function on the real line
+can be expanded in terms of its Fourier components, almost any function
+on the surface of a sphere can be expanded as a sum of spherical
+harmonics $Y_{lm}$. This means we can write the height $h$ of our planets
+surfaces as &lt;/p&gt;
+&lt;p&gt;$$ h(\theta, \phi) = \sum A_{lm}Y_l^m(\theta, \phi) \quad (1) $$ &lt;/p&gt;
+&lt;p&gt;If we figure out what the coefficients $A$ of the sum should
+be, then we can start making some Earths! Let's see if we can use some
+other facts about the Earth's surface to get get a handle on what
+coefficients to use. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 3&lt;/strong&gt;: 
+I don't know every detail of the Earth's surface, whose history 
+is impossibly complicated. I'll capture
+this lack-of-knowledge by describing the surface of our imaginary planet
+as some sort of random variable. Equation (1) suggests that we can do
+this by making the coefficients $A$ random variables. At some point we
+need to make an executive decision on what type of random variable we'll
+use. &lt;a id="note1"&gt;&lt;/a&gt;For various reasons,&lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; 
+I decided I'd use a Gaussian
+random variable with mean 0 and standard deviation $a_{lm}$: &lt;/p&gt;
+&lt;p&gt;$$ A_{lm} = a_{lm} N(0,1) $$ &lt;/p&gt;
+&lt;p&gt;(Here I'm using the notation that $N(m,v)$ is a normal
+or Gaussian random variable with mean $m$ and variance $v$. If you
+multiply a Gaussian random variable by a constant $a$, it's the same as
+multiplying the variance by $a^2$, so $a N(0,1)$ and $N(0,a^2)$ are
+the same thing.) &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 4&lt;/strong&gt;: 
+The heights of the surface of the
+Earth are more-or-less independent of their position on the Earth. In
+keeping with this, I'll try to use coefficients $a_{lm}$ that will give me
+a random field that is is isotropic on average. This seems hard at
+first, so let's just make a hand-waving argument. Looking at some
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;pretty pictures&lt;/a&gt; 
+of spherical harmonics, we can see that each spherical harmonic of degree $l$
+has about $l$ stripes on it, independent of $m$. &lt;a id="note2"&gt;&lt;/a&gt;
+So let's try using $a_{lm}$'s
+that depend only on $l$, and are constant if just 
+$m$ changes&lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. Just for convenience, 
+we'll pick this constant to be $l$ to some power $-p$: &lt;/p&gt;
+&lt;p&gt;$$ a_{lm} = l^{-p} \quad \textrm{ or} $$&lt;/p&gt;
+&lt;p&gt;$$ h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta, \phi) \quad (2) $$ &lt;/p&gt;
+&lt;p&gt;At this point I got bored &amp;amp; decided to see what a
+planet would look like if we didn't know what value of $p$ to use. So
+below is a movie of a randomly generated "planet" with a fixed choice of
+random numbers, but with the power $p$ changing.&lt;/p&gt;
+&lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
+As the movie starts ($p=0$), we see random uncorrelated heights on the
+surface.&lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; As the movie continues and $p$ increases, we see
+the surface smooth out rapidly. Eventually, after $p=2$ or so, the planet
+becomes very smooth and doesn't look at all like a planet. So the
+"correct" value for p is somewhere above 0 (too bumpy) and below 2 (too
+smooth). Can we use more observations about Earth to predict what a good
+value of $p$ should be? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 5&lt;/strong&gt;: 
+The elevation of the Earth's
+surface exists everywhere on Earth (duh). So we're going to need our sum
+to exist. How the hell are we going to sum that series though! Not only
+is it random, but it also depends on where we are on the planet! Rather
+than try to evaluate that sum everywhere on the sphere, I decided that
+it would be easiest to evaluate the sum at the "North Pole" at
+$\theta=0$. Then, if we picked our coefficients right, this should be
+statistically the same as any other point on the planet. Why do we want
+to look at $\theta = 0$? Well, if we look back at the 
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;wikipedia entry&lt;/a&gt; 
+for spherical harmonics, we see that &lt;/p&gt;
+&lt;p&gt;$$ Y_l^m = \sqrt{ \frac{2l +1}{4\pi}\frac{(l-m)!}{(l+m)!}} e^{im\phi}P^m_l(\cos\theta) \quad (3)$$ &lt;/p&gt;
+&lt;p&gt;That doesn't look too helpful -- we've just picked up
+another special function $P_l^m$ that we need to worry about. But there is a
+trick with these special functions $P_l^m$: at $\theta = 0$, $P_l^m$ is 0 if $m$
+isn't 0, and $P_l^0$ is 1. So at $\theta = 0$ this is simply: &lt;/p&gt;
+&lt;p&gt;$$ Y_l^m(\theta = 0) = \bigg { ^{\sqrt{(2l+1)/4\pi},\,m=0}_{0,\,m \ne 0} $$ &lt;/p&gt;
+&lt;p&gt;Now we just have, from every equation we've written down: &lt;/p&gt;
+&lt;p&gt;$$ h(\theta = 0) = \sum_l \times l^{-p} \times \sqrt{(2l+1)/4\pi }\times N(0,1) $$&lt;/p&gt;
+&lt;p&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \times \sum_l N(0,l^{-2p}(2l+1)) $$&lt;/p&gt;
+&lt;p&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \times N(0,\sum_l l^{-2p}(2l+1) ) $$ &lt;/p&gt;
+&lt;p&gt;$$ \quad \qquad = \times \frac{1}{\sqrt{4\pi}} \sqrt{\sum_l l^{-2p}(2l+1)} \times N(0,1) $$ &lt;/p&gt;
+&lt;p&gt;$$ \quad \qquad \sim \sqrt{\sum_l l^{-2p+1}} N(0,1) \qquad (4) $$ &lt;/p&gt;
+&lt;p&gt;So for the surface of our imaginary planet to exist, we had better have that sum
+converge, or $-2p+1 &amp;lt; -1 ~ (p &amp;gt; 1)$. And we've also learned something
+else!!! Our model always gives back a Gaussian height distribution on
+the surface. Changing the coefficients changes the variance of
+distribution of heights, but that's all it does to the distribution.
+Evidently if we want to get a non-Gaussian distribution of heights, we'd
+need to stretch our surface after evaluating the sum. Well, what does
+the height distribution look like from my simulated planets? Just for
+the hell of it, I went ahead and generated ${\sim}400$ independent surfaces at
+${\sim}40$ different values for the exponent $p$, looking at the first 22,499
+terms in the series. From these surfaces I reconstructed the measured
+distributions; I've combined them into a movie which you can see below.&lt;/p&gt;
+&lt;p&gt;As you can see from the movie, the distributions look like Gaussians.
+The fits from Eq. (4) are overlaid in black dotted lines. (Since I can't
+sum an infinite number of spherical harmonics with a computer, I've
+plotted the fit I'd expect from just the terms I've summed.) As you can
+see, they are all close to Gaussians. Not bad. Let's see what else we
+can get. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 6&lt;/strong&gt;: 
+According to some famous people, the Earth's surface is 
+&lt;a href="http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension"&gt;probably a fractal&lt;/a&gt;
+whose coastlines are non-differentiable. 
+This means that we want a value of $p$ that will make our surface rough
+enough so that its gradient doesn't exist (the derivative of the sum of
+Eq. (2) doesn't converge). At this point I'm getting bored with writing
+out calculations, so I'm just going to make some scaling arguments. From
+Eq. (3), we know that each of the spherical harmonics $Y_l^m$ is related to
+a polynomial of degree $l$ in $\cos \theta$. So if we take a derivative, I'd
+expect us to pick up another factor of $l$ each time. Following through
+all the steps of Eq. (4) we find &lt;/p&gt;
+&lt;p&gt;$$ \vec{\nabla}h \sim \sqrt{\sum_l l^{-2p+3}}\vec{N}(0,1) \quad , $$ &lt;/p&gt;
+&lt;p&gt;which converges for $p &amp;gt; 2$. So for our planet to be "fractal," we want $1&amp;lt;p&amp;lt;2$. 
+Looking at the first movie, this seems reasonable. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 7&lt;/strong&gt;: 
+70% of the Earth's surface is under water. On Earth, we can think of the points
+underwater as all those points below a certain threshold height. So
+let's threshold the heights on our sphere. If we want 70% of our
+generated planet's surface to be under water, Eq (4) and the 
+&lt;a href="http://en.wikipedia.org/wiki/Cumulative_distribution_function"&gt;cumulative distribution function&lt;/a&gt;
+of a 
+&lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;Gaussian distribution&lt;/a&gt; 
+tells us that we want to pick a critical height $H$ such that &lt;/p&gt;
+&lt;p&gt;$$ \frac{1}{2} \left[ 1 + \textrm{erf}(H \sqrt{2\sigma^2}) \right] = 0.7 \quad \textrm{or} $$ &lt;/p&gt;
+&lt;p&gt;$$ H = \sqrt{2\sigma^2}\textrm{erf}^{-1}(0.4) $$ &lt;/p&gt;
+&lt;p&gt;$$\sigma^2 = \frac 1 {4\pi} \sum_l l^{-2p}(2l+1) \quad (5)\, , $$&lt;/p&gt;
+&lt;p&gt;where $\textrm{erf}()$ is a special function called the error function, 
+and $\textrm{erf}^{-1}$ is its inverse. We can evaluate these numerically (or by using some
+&lt;a href="http://en.wikipedia.org/wiki/Error_Function#Asymptotic_expansion"&gt;dirty tricks&lt;/a&gt;
+if we're feeling especially masochistic). So for our generated planet,
+let's call all the points with a height larger than $H$ "land," and all
+the points with a height less than $H$ "ocean." Here is what it looks like
+for a planet with $p=0$, $p=1$, and $p=2$, plotted with the same 
+&lt;a href="http://en.wikipedia.org/wiki/Sinusoidal_projection"&gt;Sanson projection&lt;/a&gt; 
+as before.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/creating-an-earth/allContinents.png" width="50%" alt="allContinents" align="center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;
+Top to bottom: p=0, p=1, and p=2. I've colored all the "water" (positions with heights &amp;lt; $H$ as given in Eq. (5) ) blue and all the land (heights &amp;gt; $H$) green.
+&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;You can see that the the total amount of land area is roughly constant
+among the three images, but we haven't fixed how it's distributed.
+Looking at the map above for $p=0$, there are lots of small "islands"
+but no large contiguous land masses. For $p=2$, we see only one
+contiguous land mass (plus one 5-pixel island), and $p=1$ sits somewhere
+in between the two extremes. None of these look like the Earth, where
+there are a few large landmasses but many small islands. From our
+previous arguments, we'd expect something between $p=1$ and $p=2$ to look
+like the Earth, which is in line with the above picture. But how do we
+decide which value of p to use? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observation 8&lt;/strong&gt;: 
+The Earth has 7 continents This one is more vague than the others, but I think it's the
+coolest of all the arguments. How do we compare our generated planets to
+the Earth? The Earth has 7 continents that comprise 4 different
+contiguous landmasses. In order, these are 1) Europe-Asia-Africa, 2)
+North- and South- America, 3) Antartica, and 4) Australia, with a 5th
+Greenland barely missing out. In terms of fractions of the Earth's
+surface, Google tells us that Australia covers 0.15% of the Earth's
+total surface area, and Greenland covers 0.04%. So let's define a
+"continent" as any contiguous landmass that accounts for more than 0.1%
+of the planet's total area. Then we can ask: What value of &lt;em&gt;p&lt;/em&gt; gives us
+a planet with 4 continents? I have no idea how to calculate exactly what
+that number would be from our model, but I can certainly measure it from
+the simulated results. I went ahead and counted the number of continents
+in the generated planets.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/creating-an-earth/numContinents.png" width="50%" alt="allContinents" align="center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The results are plotted above. The solid red line is the median values
+of the number of continents, as measured over 400 distinct worlds at 40
+different values of $p$. The red shaded region around it is the band
+containing the upper and lower quartiles of the number of continents.
+For comparison, in black on the right y-axis I've also plotted the log
+of the total number of landmasses at the resolution I've used. The
+number of continents has a resonant value of $p$ -- if $p$ is too small,
+then there are many landmasses, but none are big enough to be
+continents. Conversely, if $p$ is too large, then there is only one huge
+landmass. Somewhere in the middle, around $p=0.5$, there are about 20
+continents, at least when only the first ${\sim}23000$ terms in the series are
+summed. Looking at the curve, we see that there are roughly two places
+where there are 4 continents in the world -- at $p=0.1$ and at $p=1.3$.
+Since $p=0.1$ doesn't converge, and since $p=0.1$ will have way too many
+landmasses, it looks like a generated Earth will look the best if we use
+a value of $p=1.3$ And that's it. &lt;a id="note4"&gt;&lt;/a&gt; 
+For your viewing pleasure, here is a video of three of these planets below, 
+complete with water, continents, and mountains.&lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#note1"&gt;^&lt;/a&gt; Since I wanted a random surface, I wanted to make the mean of each
+coefficient 0. Otherwise we'd get a deterministic part of our surface
+heights. I picked a distribution that's symmetric about 0 because on
+Earth the bottom of the oceans seem roughly similar in terms of changes
+in elevation. I wanted to pick a stable distribution &amp;amp; independent
+coefficients because it makes the sums that come up easier to evalutate.
+Finally, I picked a Gaussian, as opposed to another stable distribution
+like a Lorentzian, because the tallest points on Earth are finite, and I
+wanted the variance of the planet's height to be defined.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#note2"&gt;^&lt;/a&gt; We could make this rigorous by showing that a rotated spherical
+harmonic is orthogonal to other spherical harmonics of a different
+degree $l$, but you don't want to see me try.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#note3"&gt;^&lt;/a&gt; Actually $p=0$ should correspond to completely uncorrelated
+delta-function noise. (You can convince yourself by looking at the
+spherical harmonic expansion for a delta-function.) The reason that the
+bumps have a finite width is that I only summed the first 22,499 terms
+in the series ($l=150$ and below). So the size of the bumps gives a rough
+idea of my resolution.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
+4. &lt;a href="https://virtuosi.alexalemi.com/posts/old/creating-an-earth/#note4"&gt;^&lt;/a&gt; For those of you keeping score at home, it took me more than 6 days
+to figure out how to make these planets.&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/creating-an-earth/</guid><pubDate>Sat, 27 Oct 2012 19:07:00 GMT</pubDate></item><item><title>A Curious Footprint</title><link>https://virtuosi.alexalemi.com/posts/old/a-curious-footprint/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;figure style="float:center; margin:0px 0px 10px 0px" width="50%"&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/msl_laser.jpg" alt="msl laser"&gt;
+&lt;figcaption&gt; Lasers! &lt;i&gt;Credit: JPL/Caltech&lt;/i&gt; &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In less than two days, NASA's Mars Science Laboratory (MSL) / &lt;em&gt;Curiosity&lt;/em&gt; 
+rover will begin its harrowing descent to the Martian
+surface. If everything goes according to the
+kind-of-crazy-what-the-heck-is-a-sky-crane plan, this process will be
+referred to as "landing" (otherwise, more crashy/explodey gerunds will
+no doubt be used). The MSL mission is run through NASA's Jet Propulsion
+Laboratory where, by coincidence, I happen to be at the moment. Now, I'm
+not working on this project, so I don't have a lot to add that
+&lt;a href="http://mars.jpl.nasa.gov/msl/index.cfm"&gt;isn't&lt;/a&gt;
+&lt;a href="http://blogs.discovermagazine.com/badastronomy/2012/08/02/curiositys-chem-lab-on-mars/"&gt;available&lt;/a&gt;
+&lt;a href="http://scienceblogs.com/startswithabang/2012/07/20/43-years-later-were-seven-minutes-away-from-a-second-great-step-forward/"&gt;elsewhere&lt;/a&gt;.
+BUT I do feel an authority-by-proximity kind of fallacy kicking in, so
+how about a post why not?&lt;/p&gt;
+&lt;h4&gt;Preliminaries&lt;/h4&gt;
+&lt;p&gt;Before we get started, I feel obligated to link to NASA's 
+&lt;em&gt;&lt;a href="http://www.youtube.com/watch?v=Ki_Af_o9Q9s"&gt;Seven Minutes of Terror&lt;/a&gt;&lt;/em&gt;
+video. If you haven't seen it yet, I highly recommend watching it right now (my
+favorite part is the subtitles). It has over a million views on YouTube
+and seems to have done a pretty good job at generating interest in the
+mission. Although, it's a shame they had to interview the first guy in
+what appears to be a police interrogation room. Oh well.&lt;/p&gt;
+&lt;h4&gt;About the Rover&lt;/h4&gt;
+&lt;p&gt;This thing is &lt;em&gt;big&lt;/em&gt;. It's the size of a car and is jam-packed with
+&lt;a href="http://mars.jpl.nasa.gov/msl/mission/instruments/"&gt;scientific equipment&lt;/a&gt;. 
+There's a couple different spectrometers, a bunch of cameras, a drill for
+collecting rock samples, and radiation detectors. Probably the coolest
+instrument onboard &lt;em&gt;Curiosity&lt;/em&gt; is called the ChemCam. The ChemCam uses a
+laser to vaporize small regions of rock, which allows it to study the
+composition of things about 20 feet away.&lt;/p&gt;
+&lt;p&gt;In addition to the scientific payload, &lt;em&gt;Curiosity&lt;/em&gt; also needs some way
+to generate power. Previous rovers had been powered by solar panels, but
+there don't appear to be any here. Instead, &lt;em&gt;Curiosity&lt;/em&gt; is
+&lt;a href="http://www.ne.doe.gov/pdfFiles/MMRTG_Jan2008.pdf"&gt;powered&lt;/a&gt; 
+by the heat released from the radioactive decay of about 10 pounds of plutonium
+dioxide. This source will power the rover for 
+&lt;strike&gt;about a Martian year&lt;/strike&gt;
+well beyond the currently planned mission duration of one Martian year
+(about 687 Earth days) [Thanks to Nathan in the comments for pointing
+this out!].&lt;/p&gt;
+&lt;p&gt;To summarize, the rover is a nuclear-powered lab-on-wheels that 
+&lt;em&gt;shoots lasers out of its head&lt;/em&gt;. This is pretty cool.&lt;/p&gt;
+&lt;figure style="width:70%"&gt;
+    &lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/msl2.jpg" width="100%" alt="msl laser 2" align="center" style="margin:0px 0px 0px 0px"&gt;
+
+   &lt;figcaption&gt;In non-SI units, the MSL is roughly one handsome man (1 hm) tall&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;A Curious Footprint&lt;/h4&gt;
+&lt;p&gt;There's been a lot of preparation at JPL this week for the upcoming
+landing. All the shiny rover models have been taken out of the visitor's
+center and put in a tent outside, presumably so there will be a pretty
+backdrop for press reports and the like.&lt;/p&gt;
+&lt;p&gt;Anyway, I was out taking pictures of the rovers at the end of the day
+today when someone pointed out something cool about the tires on
+&lt;em&gt;Curiosity&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Here's a close-up:&lt;/p&gt;
+&lt;figure style="width:70%"&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/MSL_tire.jpg" width="100%" alt="msl tire" align="center" style="margin:0px 0px 0px 0px"&gt;
+  &lt;figcaption&gt; Hole-y Tires &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Each tire on the rover is has "JPL" punched out in 
+&lt;a href="http://en.wikipedia.org/wiki/File:International_Morse_Code.svg"&gt;Morse code&lt;/a&gt;!
+Makes sense, though. If you're going to spend $2.5 billion on something,
+you might as well put your name on it.&lt;/p&gt;
+&lt;h4&gt;Watch the Landing&lt;/h4&gt;
+&lt;p&gt;If you want to watch the landing, check out the 
+&lt;a href="http://www.nasa.gov/multimedia/nasatv/index.html"&gt;NASA TV stream&lt;/a&gt;. 
+The landing is scheduled for Sunday night at 10:31 pm PDT (1:31 am EDT). Until then,
+it looks like they are showing a lot of interviews and other cool
+behind-the-scenes kind of stuff.&lt;/p&gt;&lt;/div&gt;</description><category>curiosity</category><category>mars</category><category>MSL</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/a-curious-footprint/</guid><pubDate>Sat, 04 Aug 2012 04:56:00 GMT</pubDate></item><item><title>A Homemade Viscometer I</title><link>https://virtuosi.alexalemi.com/posts/old/a-homemade-viscometer-i/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;p&gt;Stirring a bowl of honey is much more difficult than stirring a bowl of
+water. But why? The mass density of the honey is about the same as that
+of water, so we aren't moving more material. If we were to write out
+Newton's equation, $ma$ would be about the same, but yet we still need
+to put in much more force. Why? And can we measure it? &lt;/p&gt;
+&lt;p&gt;The reason that
+honey is harder to stir is of course that the drag on our spoon depends
+on more than just the density of the fluid. The drag also depends on the
+viscosity of the fluid -- loosely speaking, how thick it is -- and the
+viscosity of honey is about 400 times that of water, depending on the
+conditions. In fact, a quick perusal of the Wikipedia article on
+&lt;a href="http://en.wikipedia.org/wiki/Viscosity"&gt;viscosity&lt;/a&gt; 
+shows that viscosities can vary by a fantastic amount -- some 13 orders of
+magnitude, from easy-to-move gases to 
+&lt;a href="http://en.wikipedia.org/wiki/Pitch_drop_experiment"&gt;thick pitch&lt;/a&gt; 
+that behaves like a solid except on
+long time scales. The situation is even more complicated than this, as
+&lt;a href="http://en.wikipedia.org/wiki/Non-Newtonian_fluid"&gt;some fluids&lt;/a&gt;
+can have a viscosity that changes depending on the flow. I wanted to
+find a way to measure the viscosities of the stuff around me, so I made
+the &lt;a href="http://en.wikipedia.org/wiki/Viscometer"&gt;viscometer&lt;/a&gt; pictured below
+for about $1.75 (the vending machines in Clark Hall are pretty
+expensive).&lt;/p&gt;
+&lt;div style="float: center"&gt;
+&lt;figure&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/viscometer1/visc_fig1.jpg" alt="A PLOT???" width="40%"&gt;
+&lt;figcaption&gt; My homemade viscometer, taking data on the viscosity of water. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To do this, I &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Enjoyed the crisp, refreshing taste of Diet Pepsi from a 20 oz 
+    bottle (come on, sponsorships).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cut the top and bottom off the bottle, so all that was left was a
+    straight tube.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mounted the bottle with on top of a small piece of flat plastic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mounted a single-tubed coffee stirrer horizontally out of the bottle
+    (I placed the end towards the middle of the bottle to avoid end
+    effects).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Epoxied or glued the entire edge shut.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Marked evenly-spaced lines on the side of the bottle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I can load my "sample" fluid in the top of the Pepsi bottle, and time
+how long it takes for the sample level to drop to a certain point. A
+more viscous fluid will take more time to leave the bottle, with the
+time directly proportional to the viscosity. (This is a consequence of
+Stokes flow and the equation for flow in a pipe. It will always be true,
+as long as my fluid is viscous enough and my apparatus isn't too big.)&lt;/p&gt;
+&lt;p&gt;So we're done! All we need to do is calibrate our viscometer with one
+sample, measure the times, and then we can go out and measure stuff in
+the world! No need to stick around for the boring calculations! We can
+do some fun science over the next few blog posts! &lt;/p&gt;
+&lt;p&gt;But this is a physics
+blog written by a bunch of grad students, so I'm assuming that a few of
+you want to see the details. (I won't judge you if you don't though.) If
+we think about the problem for a bit, we basically have flow of a liquid
+through a pipe (i.e. the coffee stirrer), plus a bunch of other crap
+which hopefully doesn't matter much. &lt;/p&gt;
+&lt;p&gt;We first need to think about how
+the fluid moves. We want to find the velocity of the fluid at every
+position. This is best cast in the language of vector calculus -- we
+have a (vector) velocity field $\vec{u}$ at a position $x$.
+There are two things we know: 1) We don't (globally) gain or lose any
+fluid, and 2) Newton's laws $F=ma$ hold. We can write these equations as
+the Navier-Stokes equations: &lt;/p&gt;
+&lt;p&gt;$$ \vec{\nabla}\cdot \vec{u} = 0 \quad (1) $$ &lt;/p&gt;
+&lt;p&gt;$$ \rho \left( \frac {\partial \vec{u}} {\partial t} + (\vec{u}\cdot\vec{\nabla})\vec{u} \right) = - \vec{\nabla}p + \eta \nabla^2 \vec{u} \quad (2) $$ &lt;/p&gt;
+&lt;p&gt;The first equation basically
+says that we don't have any fluid appearing or disappearing out of
+nowhere, and the second is basically $m \vec{a}=\vec{F}$, except written per
+unit volume. (The fluid's mass-per-unit-volume is $\rho$, the rate of
+change of our velocity is $\frac{d\vec{u}}{dt}$, and our force per unit volume is
+$\vec{\nabla}p$, plus a viscous term $\nabla^2 \vec{u}$. The only
+complication is that $\frac{d\vec{u}}{dt}$ is a total derivative, which we need to
+write as &lt;/p&gt;
+&lt;p&gt;$$ \frac{d\vec{u}}{dt} =  \frac{\partial \vec{u}}{\partial t} + \frac{\partial \vec{u}}{\partial x} \frac{d x}{d t}$$&lt;/p&gt;
+&lt;p&gt;I won't drag you through the 
+&lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory details&lt;/a&gt;,
+unless you want to see them, but it turns out that for my system the
+height of the fluid $h$ (measured from the coffee stirrer) versus time
+$t$ is &lt;/p&gt;
+&lt;p&gt;$$ h(t) = h(0)e^{-t/T}, \quad T= 60.7 \textrm{sec} \times [\eta / \textrm{1 mPa s}] \times [\textrm{ 1 g/cc} / \rho] $$ &lt;/p&gt;
+&lt;p&gt;[For my viscometer, the coffee stirrer has length 13.34 cm and inside
+diameter 2.4 mm, and the Pepsi bottle has a cross-sectional area of 36.3
+square centimeters (3.4 cm inner radius). You can see how the timescale
+scales with these properties in the 
+&lt;a href="http://www.4shared.com/office/y9ay-fNh/Homemade_viscometer_-gory_sect.html?refurl=d1url"&gt;gory details section&lt;/a&gt;.]&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/viscometer1/visc_fig2.png" alt="A PLOT" width="70%"&gt;
+&lt;figcaption style="font-size:small;"&gt;
+     A run with measured heights vs times &amp;amp; error bars. The
+     majority of the uncertainty turns out to come from not knowing the
+     exact proportions of the viscometer. I don't know exactly why the
+     heights are systematically deviating from the fit, but I suspect it's
+     that my gridlines aren't perfectly lined up with the bottom of my
+     viscometer (it looks like $\sim 5$ mm off would do it, which I can totally
+     believe looking at the picture of my viscometer). However, because of
+     the linearity of the equations for steady flow in a pipe, we know that
+     the time scales linearly with the viscosity, so we should be able to
+     accurately measure relative viscosities.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Well, how well does it work? Above is a plot of the height of water in
+my viscometer versus time, with a best-fit value from the equations
+above. To get a sense of my random errors (such as how good I am at
+timing the flow), I measured this curve 5 separate times. If I take into
+account the uncertainties in my apparatus setup as systematic errors, I
+find a value for my viscosity as &lt;/p&gt;
+&lt;p&gt;$$ \eta \approx 1.429 \textrm{mPa s} \pm 0.5 \% \textrm{Rand.} \pm 55\% \textrm{Syst.} $$ &lt;/p&gt;
+&lt;p&gt;The actual value of the viscosity of water at room temperature (T=25 C) is about
+$0.86~\textrm{mPa s}$, which is more-or-less within my systematic errors. So it
+looks like I won't be able to measure absolute values of viscosity
+accurately without a more precise apparatus. But if I look at the
+variation of my measured viscosity, I see that I should probably be able
+to measure changes in viscosity to 0.5% !! That's pretty good! Hopefully
+over the next couple weeks I'll try to use my viscometer to measure some
+interesting physics in the viscosity of fluids.&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/a-homemade-viscometer-i/</guid><pubDate>Tue, 24 Jul 2012 22:32:00 GMT</pubDate></item><item><title>Batman, Helicopters, and Center of Mass</title><link>https://virtuosi.alexalemi.com/posts/old/batman-helicopters-and-center-of-mass/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;div style="float: right; margin: 0px 0px 0px 10px"&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/batman/wiki_batman.jpg"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A couple weeks ago, I came home after a long day at work looking for a
+break. I thought to myself, "What’s more fun than physics?" &lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Batman.&lt;a href="https://virtuosi.alexalemi.com/posts/old/batman-helicopters-and-center-of-mass/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I sat down to play the &lt;a href="http://en.wikipedia.org/wiki/Arkham_City"&gt;latest Batman
+videogame&lt;/a&gt;, in which Batman’s
+current objective was to use his grappling hook to jump onto an enemy
+helicopter to steal an electronic MacGuffin. As awesome as this was, it
+occurred to me that something was very wrong about the way the
+helicopter moved while Batman zipped through the air. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://youtu.be/81qN-PHucqM?t=3m12s"&gt;See if you can spot it too&lt;/a&gt;. (Watch for about 5
+seconds after the video starts. Ignore the commentary. Note: The
+grunting noises are the sounds that Batman makes if you shoot him with
+bullets.) &lt;/p&gt;
+&lt;p&gt;What occurred to me was this: If the helicopter’s rotors
+provided enough lift to balance the force of gravity, wouldn’t Batman’s
+sudden additional weight cause the helicopter to fall out of the sky?
+Also, to get lifted up into the air, the helicopter must be pulling up
+on Batman: shouldn’t Batman also be pulling down on the helicopter? By
+how much should we expect to see the helicopter’s altitude change? &lt;/p&gt;
+&lt;p&gt;To address the first question, let's go to Newton's second law: &lt;/p&gt;
+&lt;p&gt;$$ \sum \vec{F} = m\vec{a} $$ &lt;/p&gt;
+&lt;p&gt;Let’s assume that the helicopter is hovering
+stationary, minding its own business, when Batman jumps onto it. Let's
+also assume the helicopter pilots are totally oblivious to Batman and
+make no flight corrections after Batman jumps onto it. In order to
+hover, the lift from the helicopter's rotors exactly matched the pull of
+gravity. &lt;/p&gt;
+&lt;p&gt;$$ \sum \vec{F} = \vec{F}&lt;em gravity&gt;{rotors} - \vec{F}&lt;/em&gt; = 0 $$ &lt;/p&gt;
+&lt;p&gt;Batman's sudden additional weight would cause the helicopter to
+start falling, as the forces would no longer balance: &lt;/p&gt;
+&lt;p&gt;$$ \sum \vec{F} = \vec{F}&lt;em gravity&gt;{rotors} - \vec{F}&lt;/em&gt; - \vec{F}_{Batman} &amp;lt; 0 $$&lt;/p&gt;
+&lt;p&gt;So the helicopter does accelerate (and move) when Batman jumps onto it.
+How much does it move? Let’s assume there are no crazy winds or other
+external forces acting on the helicopter or Batman while Batman grapples
+onto the helicopter. “No external forces” means that momentum of
+helicopter + Batman does not change during Batman's flight. &lt;/p&gt;
+&lt;p&gt;Let's make
+things a little simpler and assume that neither Batman nor the
+helicopter had any vertical momentum before Batman used his grappling
+hook. (I can choose to approach this problem from a reference frame
+where the center of mass is stationary. Choosing a frame where the
+center of mass moves won't change the results, it will just make the
+calculation more complicated.) Because the momentum of helicopter +
+Batman does not change, then the center of mass does not move while
+Batman zips through the air: &lt;/p&gt;
+&lt;p&gt;$$ \frac{d}{dt} y_{COM} = \frac{d}{dt} \frac{m_{Bat} y_{Bat} + m_{Copter} y_{Copter}}{m_{Bat} + m_{Copter}} = \frac{p}{m_{Bat} + m_{Copter}} = 0 $$&lt;/p&gt;
+&lt;p&gt;The center of mass must remain stationary, so we can find how much the
+helicopter's height changes by if Batman starts on the ground (y = 0)
+and both end up at the same height with Batman hanging from the
+helicopter: &lt;/p&gt;
+&lt;p&gt;$$ y_{COM} = \frac{m_{Copter} y_{Copter} + m_{Bat} (0)}{m_{Bat} + m_{Copter}} = \frac{m_{Copter} y_{final} + m_{Bat} y_{final}}{m_{Bat} + m_{Copter}} $$ &lt;/p&gt;
+&lt;p&gt;$$ \Delta y = y_{Copter} - y_{final} = \frac{m_{Bat}}{m_{Bat} + m_{Copter}} y_{Copter}$$&lt;/p&gt;
+&lt;p&gt;Now, some numbers: The police helicopters in the game are pretty small,
+probably about 
+&lt;a href="http://en.wikipedia.org/wiki/Bell_206"&gt;1500 kg&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Batman is a big guy who works out and probably weighs around 100 kg (220 lb).
+Plus, he’s wearing body armor (hence surviving when bullets hit him) and
+a utility belt and all of those other Bat-gadgets, which probably adds
+about 30 kg ($\sim 30$ lb for the gadgets, 
+$\sim30$ lb for the &lt;a href="http://www.nationaldefensemagazine.org/archive/2011/February/Pages/ManufacturersAnswerMilitary%E2%80%99sCalltoReduceBodyArmorWeight.aspx"&gt;armor&lt;/a&gt;).
+If Batman has to grapple onto a helicopter 30 meters above him, then the
+helicopter should drop out of the air by about 2.4 m. This is greater
+than the height of Batman himself, and would be noticeable if the
+helicopter physics in the game were perfect. Of course, if the
+helicopters appearing in the game were the giant army helicopters (they
+do carry rockets, after all), their mass would be much larger
+$(\sim 5000-10000~{\rm kg})$ so the effect of Batman’s additional weight would be
+much smaller. None of these considerations detracted from the fun I had
+playing the game, but it did seem odd that the helicopters appeared to
+be nailed to the sky instead of moving freely through the air. I’ll be
+writing the game developers a strongly-worded letter directly. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/batman-helicopters-and-center-of-mass/#note1"&gt;^&lt;/a&gt; The DC superhero, not the &lt;a href="http://en.wikipedia.org/wiki/Batman,_Turkey"&gt;city&lt;/a&gt;
+or the
+&lt;a href="http://www.newcritters.com/2007/01/23/the-batman-fish-otocinclus-batmani/"&gt;fish&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Batman</category><category>Center of Mass</category><guid>https://virtuosi.alexalemi.com/posts/old/batman-helicopters-and-center-of-mass/</guid><pubDate>Tue, 26 Jun 2012 11:10:00 GMT</pubDate></item><item><title>Tales from the Transit of Venus</title><link>https://virtuosi.alexalemi.com/posts/old/tales-from-the-transit-of-venus/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/venus-transit/sad_transit.png" alt="sad old sun" width="30%"&gt;
+  &lt;figcaption&gt;Sad Old Sun&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Today is the transit of Venus, which, aside from being a totally rad
+astronomical event, is also the perfect excuse to tell my favorite story
+of an unlucky Frenchman (I have many). This is by no means new and, if
+you've ever taken an astronomy course, you've probably already heard it.
+It is perhaps the closest thing Astronomy has to a ghost story, told
+though the glow of a flashlight on moonless nights to scare the
+children. This is the story of Guillaume Le Gentil, a dude that just
+couldn't catch a break.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Guillaume Joseph Hyacinthe Jean-Baptiste Le Gentil de la Galaisière was
+a Frenchman with an incredibly long name. He was also an astronomer,
+though he hadn't started out that way. Monsieur Le Gentil (as his
+friends called him and so, then, shall we) had originally intended to
+enter the priesthood. However, he soon began sneaking away to hear
+astronomy lectures and quickly switched from studies of Heaven to those
+heavens more readily observed in a telescope. Le Gentil happened to get
+into the astronomy game at a very exciting time. The next pair of Venus
+transits was imminent and astronomers were giddy with anticipation.
+Though the previous transit of 1639 had been predicted, it was met with
+little fanfare and only a few measurements. But the transits of 1761 and
+1769 would be different. People would be ready. And the stakes were
+higher this time, too. Soon after the 1639 transit, Edmund Halley (he of
+the-only-comet-people-can-name fame) calculated that with enough
+simultaneous measurements, the distance from the Earth to the Sun (the
+so-called astronomical unit, or AU) could be measured fairly accurately.
+Since almost all other astronomical distances were known in terms of the
+AU, knowing its precise value would essentially set the scale for the
+cosmos. Brand new telescopes in hand, the astronomers of Europe set sail
+for locations all over the world.&lt;/p&gt;
+&lt;p&gt;Le Gentil had been assigned to observe the transit from Pondicherry, a
+French holding on the eastern side of India. On March 26th, 1760, he
+began his long sea voyage around the Cape of Good Hope towards India.&lt;/p&gt;
+&lt;p&gt;The voyage from France to India was a bit too long for the ship Le
+Gentil hitched a ride on and he only made it as far as Mauritius (a
+small island off Madagascar). Dropped off with all his equipment, Le
+Gentil was left waiting for any ship at all to take him to Pondicherry.&lt;/p&gt;
+&lt;p&gt;Perhaps it was the Curse of the
+&lt;a href="http://en.wikipedia.org/wiki/Dodo"&gt;Dodo&lt;/a&gt; or perhaps it was just bad
+luck, but while he was waiting, Le Gentil learned that
+&lt;a href="http://en.wikipedia.org/wiki/Seven_Years'_War"&gt;war&lt;/a&gt; had broken out
+between the French and the British, making a trip to British India very
+difficult for a Frenchman.&lt;/p&gt;
+&lt;p&gt;Then the monsoon season started, meaning that even if he could find a
+ship, it would have to take a much longer route to India than initially
+planned and that it would be very difficult to make the journey before
+the transit occurred.&lt;/p&gt;
+&lt;p&gt;Then, he caught dysentery for the first time.&lt;/p&gt;
+&lt;p&gt;Finally, after months of waiting, Le Gentil (barely recovered from his
+illness) left Mauritius for India in February of 1761. Though time
+appeared to be running out, the captain of the ship he was on promised
+he would be there to observe the transit in June. About halfway to
+India, the winds switched directions and the ship was forced to turn
+back to Mauritius.&lt;/p&gt;
+&lt;p&gt;Le Gentil dutifully observed the transit of Venus in 1761 from a rocky
+ship in the middle of the Indian Ocean. The data were useless and he
+never attempted any analysis.&lt;/p&gt;
+&lt;p&gt;Although he missed the first transit, these things come in pairs
+separated by eight years. There was still another chance. And with all
+this time to prepare, there was no way he was going to miss the second
+one.&lt;/p&gt;
+&lt;p&gt;In fact, there was a bit &lt;em&gt;too much&lt;/em&gt; time. But as a world-traveling 18th
+century man of science, Le Gentil had plenty of other interests to fill
+his days. He was particularly interested in surveying the region around
+Madagascar.&lt;/p&gt;
+&lt;p&gt;So he made a really nice map of Madagascar. And then he ate some bad
+kind of some kind of animal and came down with a terrible sickness. He
+describes this illness and its "cure" in his journals:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;This sickness was a sort of violent stroke, of which several very
+copious blood-lettings made immediately on my arm and my foot, and
+emetic administered twelve hours afterwards, rid me of it quite
+quickly. But there remained for seven or eight days in my optic nerve
+a singular impression from this sickness; it was to see two objects in
+the place of one, beside each other; this illusion disappeared little
+by little as I regained my strength...&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After recovering from both his sickness and the treatment, Le Gentil
+decided to begin his preparations for the 1769 transit of Venus. He
+calculated that either Manila or the Mariana Islands would be the ideal
+spot to observe. The Sun would be relatively high in the sky at both
+places when Venus passed by, meaning that the view would be through less
+atmosphere with a reduced chance of clouds passing through the line of
+sight. Le Gentil packed up his stuff and headed off to Manila, where he
+could catch another ship to get to the Mariana Islands. Arriving in
+Manila in 1766, the astronomer found himself exhausted from months of
+sickness and sea-voyage. So, when he was offered passage on a ship
+heading to the Mariana Islands, he quickly declined. That he chose not
+to depart Manila at that time was perhaps his one stroke of good luck in
+the entire journey. The ship sunk. Writing in his journal, Le Gentil
+appears to have developed that particular sense of humor that generally
+accompanies constant disappointment:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;It is true that only three or four people were drowned, those who
+were the most eager to save themselves, which is what almost always
+happens in shipwrecks. I cannot answer that I would not have
+increased the number of persons eager to save themselves.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In any case, Le Gentil was in Manila with plenty of time to prepare for
+the next transit. Unfortunately, the astronomer may have over-prepared.
+Having arrived three years before the event, he now had three years to
+worry and second-guess his decision. It didn't help that the Spanish
+governor of Manila was kind of a crazy person. Not wanting to miss the
+observation of a lifetime owing to the whims of mildly insane strong
+man, Le Gentil packed up his stuff and headed to Pondicherry. Finally in
+Pondicherry, Le Gentil worked tirelessly to construct his observatory
+and make plenty of astronomical observations in preparation for the
+event. He had state of the art equipment and had fully calibrated and
+double checked everything. It was now nine years since his journey began
+and only a few days until the transit was scheduled to occur at sunrise
+on June 4th. The entire month of May was beautiful weather and pristine
+observing conditions, as were the first few days of June. Le Gentil
+likely went to bed on the 3rd of June fully confident that the next
+morning would be no different. He woke up early in the morning to begin
+preparations for his sunrise observations only to find clouds on the
+horizon. The clouds remained, obscuring the sun, all through the
+duration of the transit. A few hours after the end of the transit, the
+sun broke through the clouds and remained visible for the rest of the
+day. Le Gentil had missed his second transit in Pondicherry. He sums it
+up in his journal:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;That is the fate which often awaits astronomers. I had gone more
+than ten thousand leagues; it seemed that I had crossed such a great
+expanse of seas, exiling myself from my native land, only to be the
+spectator of a fatal cloud which came to place itself before the sun
+at the precise moment of my observation, to carry off from me the
+fruits of my pains and of my fatigues&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In Manila, the Sun rose in perfectly clear skies. Distraught, Le Gentil
+remained in bed for some weeks afterward. He soon caught a fever and
+missed the ship that was supposed to take him home. He recovered, but
+then came down with dysentery again. Barely recovered from his various
+illnesses, he managed to get a ride back to Mauritius. He caught a ship
+leaving the island in November of 1770. The ship was struck by a
+hurricane and almost completely destroyed. It managed to limp back to
+Mauritius. The second attempt proved more successful and Le Gentil
+finally "set foot on France at nine o'clock in the morning, after eleven
+years, six months and thirteen days of absence." Though he had finally
+made it home, he was not out of the woods quite yet. In his absence, Le
+Gentil's heirs had tried to declare him dead to gain their inheritance,
+his accountant had mishandled (and lost) a large chunk of his holdings,
+and the Academy of Sciences, which had sent him on his 11 year mission,
+had given his seat to someone else. It was not quite the welcome home he
+had hoped for. Despite his seemingly never-ending misfortune, things did
+turn around for Le Gentil. He married, had a daughter, and was
+reinstated into the Academy of Sciences. Presumably, he lived out the
+rest of his days in relative happiness. Le Gentil died in 1792. Keeping
+true to his style, this man who missed two of the most important
+astronomical events of his time fortunately managed to also miss the
+most important (and violent) &lt;a href="http://en.wikipedia.org/wiki/Reign_of_Terror"&gt;political
+event&lt;/a&gt; of his time.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have mainly used a very nice series of historical papers of Le
+Gentil's misadventures with the transit of Venus written by Helen Sawyer
+Hogg. The papers were originally published in the &lt;em&gt;Journal of the Royal
+Astronomical Society of Canada&lt;/em&gt; and can be accessed through NASA's ADS 
+(&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...37S"&gt;Part 1&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45...89S"&gt;Part2&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..127S"&gt;Part 3&lt;/a&gt;, 
+&lt;a href="http://adsabs.harvard.edu/abs/1951JRASC..45..173S"&gt;Part 4&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More Transit of Venus:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you want to see the Transit of Venus without having to go on an
+eleven year voyage (or even leaving your room), check out the NASA
+&lt;a href="http://sunearthday.nasa.gov/transitofvenus/"&gt;live-feed&lt;/a&gt; from Mauna Kea.&lt;/p&gt;&lt;/div&gt;</description><category>bummer</category><category>scott bakula</category><category>transit of venus</category><guid>https://virtuosi.alexalemi.com/posts/old/tales-from-the-transit-of-venus/</guid><pubDate>Tue, 05 Jun 2012 00:50:00 GMT</pubDate></item><item><title>How Cold is the Ground II</title><link>https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right; margin: 0px 0px 0px 10px"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/how-cold-is-the-ground-ii/mainImage.png" alt="GAH!" width="40%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Images &lt;a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG"&gt;from&lt;/a&gt;
+  &lt;a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg"&gt; Wikipedia
+  &lt;/a&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html"&gt;Last week&lt;/a&gt; 
+(ok, it was a little more than a few days ago...) I used
+dimensional analysis to figure out how the ground's temperature changes
+with time. But although dimensional analysis can give us information
+about the length scales in the problem, it doesn't tell us what the
+solution looks like. From dimensional analysis, we don't even know what
+the solution does at large times and distances. (Although we can usually
+see the asymptotic behavior directly from the equation.) So let's go
+ahead and solve the the heat equation exactly: &lt;/p&gt;
+&lt;p&gt;$$ \frac {\partial T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)$$ &lt;/p&gt;
+&lt;p&gt;Well, what type of solution do we want to this equation? We want the
+temperature at the Earth's surface $x=0$ to change with the days or the
+seasons. So let's start out modeling this with a sinusoidal dependence
+-- we'll look for a solution of the form &lt;/p&gt;
+&lt;p&gt;$$ T(x,t) = A(x)e^{i wt} $$&lt;/p&gt;
+&lt;p&gt;for some function $A(x)$, then we can take the real part for our
+solution. Plugging this into Eq. (1) gives 
+$A^{\prime\prime} = i\omega/a \times A$, or &lt;/p&gt;
+&lt;p&gt;$$ A(x) = e^{ \pm \sqrt{w/2a } (1+i) x} $$ &lt;/p&gt;
+&lt;p&gt;Since we have a second-order
+ordinary differential equation for $A$, we have two possible solutions,
+which are like $\exp(+x)$ or $\exp(-x)$. Which one do we choose? &lt;/p&gt;
+&lt;p&gt;&lt;a id="note1"&gt;&lt;/a&gt;
+Well, we want the temperature very far away from the surface of the ground to be
+constant, so we need the solution that decays with distance,
+$A\exp(-x)$. Taking the real part of this solution, we 
+find&lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;$$ T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x ) e^{-\sqrt{w/2a}x} \quad (2) $$ &lt;/p&gt;
+&lt;p&gt;Well, what does this solution &lt;em&gt;say&lt;/em&gt;?
+As we expected from our scaling arguments last week, the distance scale
+depends on the &lt;em&gt;square root&lt;/em&gt; of the time scale -- if we decrease our
+frequency by 4 (say, looking at changes over a season vs over a month),
+the ground gets cooler only $2{\times}$ deeper. We also see that the temperature
+oscillation drops off quite rapidly as we go deeper into the ground, and
+that there is a "lag" the farther you go into the ground. In particular,
+we see that at distances deep into the ground, the temperature drops to
+its average value at the surface. You can see this all in the pretty
+plot below (generated with Python):&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/how-cold-is-the-ground-ii/SingleFrequency.png" alt="GAH!" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Single frequency plot
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Let's recap. To model the temperature of the ground, we looked for a
+solution to the heat equation which had a sinusoidally oscillating
+temperature at $x=0$, and decayed to 0 at large $x$. We found a solution
+such a solution, and it shows that the temperature decays rapidly as we
+go far into the ground. At this point, there are two questions that pop
+into mind: &lt;/p&gt;
+&lt;p&gt;1) Is the solution that we found &lt;em&gt;unique&lt;/em&gt;? Or are there other
+possible solutions? &lt;/p&gt;
+&lt;p&gt;2) This is all well and good, but what if our days
+or seasons &lt;em&gt;aren't perfect sines&lt;/em&gt;? Can we find a solution that describes
+this behavior? &lt;/p&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
+I'll give one (1) VirtuosiPoint to the first commenter
+who can prove to what extent the above solution is 
+unique&lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. But how about the second point? Can we solve this
+for non-sinusoidal time variations? Well, at this point most of the
+readers are rolling their eyes and shouting "Use a 
+&lt;a href="http://en.wikipedia.org/wiki/Fourier_series"&gt;Fourier series&lt;/a&gt; and move on." So I
+will. Briefly, it turns out that (more or less) &lt;em&gt;any&lt;/em&gt; periodic function
+can be written as a sum of sines &amp;amp; cosines. So we can just add a bunch
+of sines and cosines together and construct our final solution. So just
+for fun, here is a plot of the temperature of the ground in Ithaca (data
+from &lt;a href="http://en.wikipedia.org/wiki/Ithaca,_New_York"&gt;Wikipedia&lt;/a&gt;) over a
+year. (I used a discrete Fourier transform to compute the coefficients.)&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/how-cold-is-the-ground-ii/IthacaTemp.png" alt="ithaca temp!" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  The temperature (colorbar) is in degrees C, assuming a=0.5 mm^2/s from &lt;a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html"&gt;before&lt;/a&gt;.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Looks pretty boring, but I swear that all the frequencies are in that
+plot. It just turns out that the seasons in Ithaca are pretty
+sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty
+constant 8 C. While I was postponing writing this, I wondered what the
+temperature on Mercury's rocks would be. If we dig deep enough, can we
+find an area with habitable temperatures? Some
+&lt;a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml"&gt;quick&lt;/a&gt;
+&lt;a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29"&gt;Googlin&lt;/a&gt;'
+shows that the daytime and nighttime temperatures on Mercury are
+${\sim}550-700~{\rm K}$ and ${\sim}110~{\rm K}$ at the "equator." 
+While I don't think that Mercury's temperature varies symmetrically, let's assume so for lack of
+better data.&lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; Then we'd expect that deep into the
+surface, the temperature would be fairly constant in time, at the
+average of these two extremes. Plugging in the numbers 
+(assuming $a\approx0.52~{\rm mm}^2 / s$ and using a Mercurial solar day as 176 days), we get&lt;/p&gt;
+&lt;p&gt;$T=94~{\rm C}$ at 2.75 meters into the surface.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#note1"&gt;^&lt;/a&gt; More precisely, since the heat equation is linear and real, if
+$T(x,t)$ is a solution to the equation, then so are $\frac{1}{2}(T+T^{&lt;em&gt;})$ or
+$\frac{1}{2i}(T-T^{&lt;/em&gt;})$.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#note2"&gt;^&lt;/a&gt; Hint: It's not unique. For instance, here is another solution that
+satisfies the constraints, with no internal heat sources or sinks 
+(I'll call it the "freshly buried" solution):&lt;/p&gt;
+&lt;div style="float: center;"&gt;
+&lt;figure&gt;
+  &lt;img src="https://virtuosi.alexalemi.com/images/how-cold-is-the-ground-ii/buriedAlive.png" alt="buried alive" width="60%"&gt;
+  &lt;figcaption style="text-align=center;"&gt;
+  Freshly buried.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Can you prove that all the other solutions decay to the original
+solution? Or is there a second or even a spectrum of steady state
+solutions?&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+[3] &lt;a href="https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/#note3"&gt;^&lt;/a&gt; If someone provides me with better data of the time variation of
+Mercury's surface at some specific latitude, I'll update with a full
+plot of the temperature as a function of depth and time.&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/</guid><pubDate>Sat, 26 May 2012 21:28:00 GMT</pubDate></item></channel></rss>

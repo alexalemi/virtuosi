@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about physics)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/physics.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lifetime of Liquid Water</title><link>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg"&gt;&lt;/a&gt;
+Apologies for the hiatus recently, it's been a busy time (when isn't
+it). I hope to get back to talking about experiments soon, but for now I
+wanted to write up a quick problem I thought up a while back. The
+question is this: how long does a molecule of H2O on earth remain in the
+liquid state, on average? I'm going to treat this purely as an order of
+magnitude problem. I'm also going to have to start with one assumption
+that is almost certainly inaccurate, but makes things a lot easier. I'm
+going to assume perfect mixing of all of the water on earth. Given that
+assumption, I really only need to figure out two things. The first is
+how much liquid water there is on earth. The second is now much liquid
+water leaves the liquid phase each year. Let's start with the total
+amount of liquid water on earth. This is relatively easy to estimate. I
+happen to know that about 70% of the earth's surface is covered in
+water. Most all of that is ocean. To an order of magnitude, the average
+depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km
+[1]. For a thin spherically shell, the volume of the shell is roughly $$
+4 \pi r_e^2 \Delta r $$ where r_e is the radius of the earth. Thus,
+the total volume of water on the earth is $$.7&lt;em&gt;4 \pi r_e^2 (1 km)$$
+Now, we need to figure out how much H20 leaves the liquid phase every
+year. To an order of magnitude, it rains 1 m everywhere on earth each
+year, it's not .1 m or 10 m [2]. I'm going to ignore any
+freezing/melting in the ice caps, assuming that is small fraction of the
+water that leaves the liquid phase each year. Since we have a closed
+system, all the water that rains must have left the liquid phase. So, on
+average, the total volume of water that leaves the liquid phase is $$4
+\pi r_e^2 (1 m) $$ Thus, the fraction of liquid water that changes
+phase per year is $$ \frac{4 \pi r_e^2 (1m)}{.7&lt;/em&gt;4\pi r_e^2 (1
+km)} = .0014 $$ This means that, given my assumption of perfect mixing,
+in somewhere around 1/.0014 = 700 yr all of the water on earth will have
+cycled through the vapor phase. Since we're only operating to an order
+of magnitude, I'll call this 1000 years. This is the answer to our
+question if every molecule has been in the vapor phase once in 1000
+years, then we expect a molecule to stay in the liquid phase for 1000
+years [1] According to wikipedia, this is really about 4 km, so we're
+underestimating a bit. [2] According to wikipedia, this is spot on (.99
+m on average).&lt;/p&gt;</description><category>fun</category><category>order of magnitude</category><category>physics</category><category>water</category><guid>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</guid><pubDate>Sun, 10 Jul 2011 22:07:00 GMT</pubDate></item><item><title>Anatomy of an Experiment I - The Question</title><link>https://virtuosi.alexalemi.com/posts/old/anatomy-of-an-experiment-i-the-question/</link><dc:creator>Jesse</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s1600/installation_of_world_largest_silicon_tracking_detector.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-V-68a5ev1W0/TcNG1UXmaBI/AAAAAAAAAEY/0f-Uq2EjMJY/s320/installation_of_world_largest_silicon_tracking_detector.jpg"&gt;&lt;/a&gt;
+  Warning: picture has little or no relation to this post.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I realized the other day that I've seen a lot of people talk about
+research results, but it is much more rare that I see someone talk about
+how we do research. I think that may be because, to us as scientists,
+the process is second nature. We've been doing it for years. Other folks
+may be less familiar with the process though. With this in mind, I'm
+going to do a short series of posts focused on how we do an experiment.
+Not the results, not so much the physics, but the process that we go
+through to create, setup, and carry out an experiment. As my example
+I'll use a short little experiment that I built from the ground up in
+the last few weeks, that I'm currently in the process of (hopefully)
+wrapping up. Today I'll talk about the driving force behind almost any
+experiment: The Question. It might be argued that there are two types of
+experiments. There are those that set out to answer a specific question,
+and those that set out to explore what happens under certain conditions
+(explore some part of phase space). An example of the first type that
+comes immediately to mind is the recently announced results from
+&lt;a href="http://science.nasa.gov/science-news/science-at-nasa/2011/04may_epic/"&gt;Gravity Probe
+B&lt;/a&gt;
+(GP-B). This was an experiment designed with one goal in mind, to test
+the validity of einstein's theory of general relativity, specifically
+geodesic precession and frame dragging. They asked the question, built
+the apparatus, and then got results. Here's a spoiler from the article:
+Einstein was right, to remarkable precision. I'm going to mostly ignore
+the second type of experiment. While very important, I argue that those
+exploratory experiments are (almost?) always done on experimental
+apparatus that was built for another experiment. You don't spend the
+time, money, and energy to build an experimental apparatus without
+having good evidence that it's worth doing, that is, without expecting
+to see something. This brings me to The Question. The name might be
+misleading, the motivation for an experiment might not be a question
+(though it can usually be phrased as one). One common motivation is to
+test theoretical predictions, as was the case with GP-B. Theory without
+experimental verification is empty. It may sound nice, but we can't
+trust it unless we've tested it against what nature actually does.
+Sometimes theory develops because of experimental results, for example
+the knowledge of the quantization of light came out of anomalous
+experimental effects of the photoelectric effect and blackbody radiation
+(among others). Other times, experiment develops to test theory, the
+GP-B and the Large Hadron Collider for example. Another common
+motivation is a question based on a physical observation, for example:
+&lt;a href="http://physicsbuzz.physicscentral.com/2011/04/small-insects-paddle-through-air.html"&gt;how does a fly
+fly&lt;/a&gt;?
+That question is, as these things go, very simply stated. For an idea of
+how complicated they can get, just take a look at any recent collection
+of articles from any physics journal, wherein we find things like the
+form and source of 'itinerant magnetism in FeAs' (grabbed from a recent
+Phys. Rev. B article). I classify a third type of question, one that is
+more process based: "How can we do X?". This third category is where the
+question that motivates (at least in the broad sense) the experiment I'm
+going to describe comes from. I can phrase it as: "How can we
+successfully cryopreserve biological samples?" For those unfamiliar with
+biological cryopreservation, this is something I discussed &lt;a href="http://thevirtuosi.blogspot.com/2010/05/cryopreservation.html"&gt;almost a
+year
+ago&lt;/a&gt;.
+From there, we get into smaller questions, most of those are type two,
+based on physical observations. This particular small experiment has
+grown out of my work on cryopreservation, and has more to do with the
+structure of water on freezing. Over the past year, one of the projects
+I've been working on has been to measure the so called critical warming
+rate of aqueous solutions. This is the rate at which you have to warm
+vitreous aqueous solutions (see my earlier cryopreservation post for
+more details) to prevent ice formation on warming. The question that has
+grown out of this work is: how does the cooling history of my vitreous
+sample affect the critical warming rate? Having arrived at the question,
+we'll next discuss the apparatus.&lt;/p&gt;&lt;/div&gt;</description><category>cryopreservation</category><category>experiment</category><category>physics</category><category>question</category><guid>https://virtuosi.alexalemi.com/posts/old/anatomy-of-an-experiment-i-the-question/</guid><pubDate>Thu, 05 May 2011 21:06:00 GMT</pubDate></item><item><title>Japan Nuclear Crisis</title><link>https://virtuosi.alexalemi.com/posts/old/japan-nuclear-crisis/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;Though I know that two posts in one day is recently unprecedented, I've
+been meaning to post about the Japan nuclear crisis for a few days. The
+various major news outlets are doing a good job, or so it seems, of
+keeping us informed of the events going on over there. However, I found
+myself rather puzzled over the physics of what was happening. From the
+news articles I was unable to figure out what was actually causing the
+meltdown, beyond some problem with the cooling. As a postdoc in my lab
+asked, "Isn't all they have to do drop the control rods and the reaction
+ends?" So I decided to do a little digging. I've found a couple of
+places that do a nice job of explain some of the physics of what is
+actually happening, &lt;a href="http://blogs.nature.com/news/thegreatbeyond/2011/03/fukushima_crisis_anatomy_of_a.html"&gt;nature
+news&lt;/a&gt;
+(not sure if the nature blogs are behind a paywall), and &lt;a href="http://www.scientificamerican.com/article.cfm?id=fukushima-core"&gt;scientific
+american&lt;/a&gt;
+(not up on current events, but a nice summary of what can/might go
+wrong). I'm sure there are many other places doing a good job of
+explaining things, but these are the ones and I found, and hopefully
+they help clarify what is actually happening.&lt;/p&gt;</description><category>crisis</category><category>japan</category><category>nuclear</category><category>physics</category><guid>https://virtuosi.alexalemi.com/posts/old/japan-nuclear-crisis/</guid><pubDate>Wed, 16 Mar 2011 10:36:00 GMT</pubDate></item><item><title>Falling Ice</title><link>https://virtuosi.alexalemi.com/posts/old/falling-ice/</link><dc:creator>Jesse</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s1600/shattered_windshield.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_SYZpxZOlcb0/TUINK4AQYVI/AAAAAAAAAEA/XWqewl-lS_o/s320/shattered_windshield.jpg"&gt;&lt;/a&gt;
+It's been a while since I posted anything, much to my shame. Hopefully
+this post marks a change in that streak. Today I'm going to consider a
+very practical application of all this physics stuff. One of my
+housemates parks his car on the side of the house, with the front of the
+car facing the house. Living in Ithaca, NY, the weather has been the
+usual cold and snowy, like the rest of the northeast USA this winter.
+Yet, early last week, we had some unusually warm weather, in the 30s
+(fahrenheit). A few days later, my housemate went out to his car, and
+discovered that falling chunks of ice had broken his windshield! Now, to
+be clear here, I'm not talking about icicles, I'm talking about large,
+block-like, chunks. My best guess is that during the warm days, snow on
+the roof turned into chunks of ice, and slid off the roof. The question
+I'm going to try to answer today is: How far from the house could these
+chunks possibly land? Put another way, what I want to know is, how far
+from the house would we have to park our cars to not risk broken
+windshields from falling ice? &lt;strong&gt;The First Attempt&lt;/strong&gt; We'll start with the
+simplest assumptions we can think of. First, we'll assume that there is
+no friction on the ice block as it slides down the roof. We'll also
+assume there's no air resistance slowing down the ice in the air. The
+maximum range will be given by a block of ice sliding from the top of
+the roof. Taking the height of the peak of the roof as h, relative to
+the edge of the roof, we can write down the magnitude of the velocity of
+the ice chunk when it reaches the edge of the roof. We start by setting
+the change in gravitational potential energy equal to the change in
+kinetic energy. Recalling the form for both of these, $$PE=mgh$$
+$$KE=\tfrac{1}{2}mv^2$$ we can set these equal and solve for v, $$mgh
+= \tfrac{1}{2}mv^2$$ so $$|v|=\sqrt{2gh}$$ This should be a familiar
+expression to anyone who went through introductory mechanics. Now, given
+that the roof is at an angle theta, we can write down the x (horizontal)
+and y (vertical) components of velocity, $$v_x=|v|\cos\theta$$
+$$v_y=-|v|\sin \theta$$ where I've introduced a minus sign in the y
+component of velocity to indicate that the ice chunk is falling. Now
+that we have the velocity, we have to call upon some more kinematics. To
+figure out how far the ice flies, we have to know how long it is in the
+air. So we start by considering the vertical motion. The distance
+traveled by an object with an initial velocity, v_0, and a constant
+acceleration, a, is given by $$\Delta y=\tfrac{1}{2}at^2+v_0t$$ In
+our case, the distance traveled is the height of the first two floors of
+my house. The acceleration is that of gravity, g, and the initial
+velocity is the y component of velocity we found above. We'd like to
+find the time it takes to travel this distance. We have to be a little
+careful with our minus signs, by our convention the acceleration is in
+the negative direction, and the change in position is negative. Working
+all of that out, and plugging in our known values, we get
+$$\tfrac{1}{2}gt^2+|v|\sin \theta t - l =0$$ where l is the height
+of the house. We can solve this for t, finding $$t=\frac{-|v|\sin
+\theta + \sqrt{(|v|\sin \theta)^2+2gl}}{g}$$ The horizontal
+distance traveled is simply the horizontal velocity times the time,
+$$x=\frac{|v|\cos\theta}{g}(-|v|\sin \theta + \sqrt{(|v|\sin
+\theta)^2+2gl})$$ a result that you may recognize as the 'projectile
+range formula' (particularly if I brought the minus on the v sine theta
+term into the sine, indicating that I'm firing at a negative angle, that
+is, downwards). Having found that result, lets plug in our velocity, and
+then some numbers. First,
+$$x=\frac{\sqrt{2gh}\cos\theta}{g}(\sqrt{2gh}\sin \theta +
+\sqrt{(2gh\sin^2 \theta+2gl})$$ Now, for some estimation. I'd say
+that the height of the roof peak is 10 ft, the height of the first two
+floors of the house is 20 ft, and the angle of the roof is 30 degrees.
+Having made those estimates, now I just have to plug in all the numbers,
+yielding $$x=5.2 m=17 ft$$ That's a very long range! Now, I didn't see
+any chunks of ice that were more than about 7 ft from the house. So we
+have to question what went wrong with the above derivation. Well, maybe
+nothing went wrong. I did calculate the &lt;em&gt;maximum&lt;/em&gt; range. It's quite
+possible none of these ice chunks were from the very top of the roof.
+Still, I'm inclined to think we may have overestimated. I'd say that our
+initial velocity was too high. The ice, as it comes down the roof, will
+have to push a bunch of snow out of the way. Even though it may not have
+much friction with the roof, all that snow will slow it down, and reduce
+the velocity with which it comes off. I'm just going to guess that about
+half of the potential energy it had is lost to the snow and roof, as a
+rough estimation. That would give a velocity $$|v| = \sqrt{gh}$$ and a
+maximum distance of $$x= 4m = 13ft$$ which is closer to what I observed.
+&lt;strong&gt;The Second Attempt&lt;/strong&gt; I'm still not completely satisfied with the
+previous work, the answer doesn't match my observation. As a wise man
+(Einstein) once said, "make things as simple as possible, but no
+simpler." I may be guilty of making the problem too simple here. So I'm
+going to add back in air resistance. In general, we physicists like to
+avoid this because it usually means we can't get nice, analytic
+expressions as answers (like the one I have above). Instead, we usually
+just have to calculate the result numerically. This isn't the end of the
+world, and often times it is actually a bit easier, but it's not as
+pretty looking. Still, to satisfy myself, and you, gentle reader, I will
+step into that realm. We start by writing down the force on our block of
+ice once it is falling. We've got gravity, and air resistance. Thus
+$$\vec{F}=-mg\hat{y}-bv^2\hat{v}$$ I've input a drag force that goes
+as v^2, and is in the opposite direction of v. The 'v direction' is a
+cop out, because I didn't want to do the explicit direction, so lets fix
+that. We'll have x and y components, and we note that the magnitude of v
+times the direction of v is the velocity vector. So,
+$$\vec{F}=-mg\hat{y}-bv\hat{v}_x-bv\hat{v}_y$$ Breaking this up
+into components we get $$a_x=-\frac{bv}{m}v_x$$
+$$a_y=-g-\frac{bv}{m}v_y$$ This is as far as we can take this work
+analytically. I'll say a little more about the coefficient b. This
+depends on the exact size and shape of the object, as well as the medium
+it is moving through. I'm going to use $$b=.4\rho A$$ because that's
+what we used for hay bales in my classical mechanics class years ago.
+Here, rho is the density of air, and A is the surface area of the
+object. I would estimate that the large face of the ice chunk is roughly
+one square foot, or .1 m^2. I'd estimate the mass of the ice was around
+2 kg. Now, for some magic. I've put all of this into mathematica, and
+asked it to solve this numerically. First we have the plot for the full
+initial velocity, $$v=\sqrt{2gh}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_SYZpxZOlcb0/TUILYLcLr3I/AAAAAAAAAD4/q_j8djBIPP0/s1600/Falling+Ice.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_SYZpxZOlcb0/TUILYLcLr3I/AAAAAAAAAD4/q_j8djBIPP0/s320/Falling+Ice.jpg"&gt;&lt;/a&gt;
+  The solid line is with air resistance, the dashed line without air resistance. The plot shows vertical vs. horizontal distance, and the units are meters. (click to enlarge)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Next we have the plot for the half initial velocity, $$v=\sqrt{gh}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUIMIxdlzLI/AAAAAAAAAD8/G3P9KWUB3mw/s1600/Falling+Ice2.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUIMIxdlzLI/AAAAAAAAAD8/G3P9KWUB3mw/s320/Falling+Ice2.jpg"&gt;&lt;/a&gt;
+  The solid line is with air resistance, the dashed line without air resistance. The plot shows vertical vs. horizontal distance, and the units are meters. (click to enlarge)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As you can see from the plots, in neither case does it make a large
+difference, about .2 m. &lt;strong&gt;The Third Round&lt;/strong&gt; The final thought that
+occurs to me is that perhaps I got the angle of the roof wrong. That
+would be quite easy. Humans are notoriously bad at estimating angles.
+I'll plot the results (with air resistance) for 15, 30, and 45 degree
+angles and the lower velocity.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUI5Q4qB5DI/AAAAAAAAAEE/9ydcM8EXzxA/s1600/Falling+Ice3.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_SYZpxZOlcb0/TUI5Q4qB5DI/AAAAAAAAAEE/9ydcM8EXzxA/s320/Falling+Ice3.jpg"&gt;&lt;/a&gt;
+  The plot shows vertical vs. horizontal distance, and the units are meters. The red line is 15 degrees, the blue line is 30 degrees, and the black line is 45 degrees. (click to enlarge)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In summary, the answer is unclear. What I really need to do is measure
+the angle of my roof better, because there's a significant angle
+dependence. It's also quite possible that we didn't see a maximum
+distance hit (thankfully!). In addition, air resistance doesn't seem to
+matter much in this particular problem, probably because the distance
+the thing falls is short enough that terminal velocity is not reached.
+Hopefully this gave you a bit of a taste of a more practical physics
+problem, and how to approach air resistance (if you want to see the
+mathematica code, let me know). The lesson here seems to be either don't
+park too close to roofs, or have insurance for your windshield!&lt;/p&gt;&lt;/div&gt;</description><category>air resistance</category><category>ice</category><category>physics</category><guid>https://virtuosi.alexalemi.com/posts/old/falling-ice/</guid><pubDate>Thu, 27 Jan 2011 22:41:00 GMT</pubDate></item><item><title>The Impossibility of Why</title><link>https://virtuosi.alexalemi.com/posts/old/the-impossibility-of-why/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;So I think we've all been rather busy here. Hence the lack of posts. I'm
+going to try to keep this one short but sweet. A lot of people think
+that physics tells us why things happen. Why is the sky blue? Why does
+the earth orbit the sun? Why does copper transmit electricity so well?
+These all seem like perfectly reasonable questions to ask. Questions
+that we, as physicists can answer. Yet, I entitled this post the
+impossibility of why. In general, questions about why are not good
+questions for physicists More accurately we answer questions about how.
+Or what. What phenomena causes use to see the sky as blue? What forces
+cause the earth to orbit the sun? How does copper transmit electricity
+so well? In general, we can't answer a question of why. A friend once
+asked me (at the end of a talk I gave, nonetheless) 'why can't two
+electrons be in the same quantum state, while two bosons can?'. That's
+an example of a question that we as physicists can't answer. We have no
+idea about why that is. The best answer we can give is 'I don't know.
+However, experiment tells us that's what happens.' In general, physics
+cannot be built in a vacuum. We cannot sit down and write down the laws
+of nature. Not without looking at nature. That is the difference between
+physics and mathematics. Mathematicians can construct arbitrary logical
+systems. Anything with a given set of logical axioms that is consistent
+can be a valid system of mathematics. Of course, only a few are useful
+systems. This allows mathematicians to generate exceedingly interesting
+playgrounds for the mind. Physics is meaningless without experiment. We
+have to test our theories against the world as we know it. We can no
+more explain why F = ma or the Pauli exclusion principle is the way of
+the world than we can answer why the universe exists. We can (at least
+we hope) tell you how the world works, what to expect, cause and effect.
+But why we found this particular set of rules and not another, different
+but consistent system, is something we can't, and usually don't try to
+answer. In many ways, I think this reduces much of the perceived
+conflict between religion and science. As long as one doesn't read God's
+(or gods, depending on your religion) word literally, religion is an
+attempt to explain why. Physics is an attempt to explain how. There's no
+inherent conflict in that. At least, that's my thinking.&lt;/p&gt;</description><category>physics</category><category>why</category><guid>https://virtuosi.alexalemi.com/posts/old/the-impossibility-of-why/</guid><pubDate>Thu, 01 Jul 2010 23:44:00 GMT</pubDate></item><item><title>Why Black Holes from the Large Hadron Collider Won't Destroy the World</title><link>https://virtuosi.alexalemi.com/posts/old/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world/</link><dc:creator>Nic Eggert</dc:creator><description>&lt;p&gt;Hi everyone. As this is my first post, I thought I'd introduce myself.
+Like the rest of the Virtuosi, I'm a graduate student in physics at
+Cornell University. I work in experimental particle physics, in
+particular on the Compact Muon Solenoid, one of the detectors at the
+Large Hadron Collider. I'll post more on what I actually do at some
+point in the future, but I thought I'd start with a post in the spirit
+of some of the other fun calculations that we've done. My goal is to
+convince you that black holes created by the LHC cannot possibly destroy
+the world.
+To start with, the main reason no one working on the LHC is too
+concerned about black holes is because of &lt;a href="http://en.wikipedia.org/wiki/Hawking_radiation"&gt;Hawking
+radiation&lt;/a&gt;. While we
+usually think of black holes as objects that nothing can escape from,
+Stephen Hawking predicted that black holes actually do emit some light,
+losing energy (and mass) in the process. In the case of the little bitty
+black holes that the LHC could produce, they should just evaporate in a
+shower of Hawking radiation.
+That's great you say, but Hawking radiation has never actually been
+observed. What if Hawking is wrong and the black holes won't evaporate?
+Well, the usual next argument is that &lt;a href="http://en.wikipedia.org/wiki/Cosmic_ray"&gt;cosmic
+rays&lt;/a&gt; from space bombard the
+earth all the time, producing collisions many times more energetic than
+what we'll be able to produce at the LHC. To me, this is a fairly
+convincing argument. However, let's pretend we don't know about these
+cosmic rays and that there's no Hawking radiation. We can calculate what
+effect black holes produced by the LHC would have on the earth if they
+do stick around.
+To start out with, the most massive black hole the LHC could produce
+would be around 10 Tera-electron-volts, or TeV. We're probably
+overestimating here. The eventual goal is for the LHC collisions to be
+14 TeV, but producing a particle with the entire collision energy is
+incredibly unlikely (see &lt;a href="http://www.scientificblogging.com/quantum_diaries_survivor/fascinating_new_higgs_boson_search_dzero_experiment"&gt;Tomasso Dorigo's
+post&lt;/a&gt;
+for more details on why, along with more details than you probably
+wanted to know about hadron colliders). However, we want to think about
+the worst case scenario here, and we're just going to do an order of
+magnitude calculation, so 10 TeV is a good number. Note that I'm using a
+particle physics convention here of giving masses in terms of energies
+using E=mc^2. For reference, 10 TeV is about 1000 times smaller than a
+small virus.
+Now from the mass of our black hole, we can get its size by calculating
+something called the &lt;a href="http://en.wikipedia.org/wiki/Schwarzschild_radius"&gt;Schwarzschild
+radius&lt;/a&gt;. The
+Schwarzchild radius for a black hole of mass m is given by
+$$r = \frac{2Gm}{c^2}\text{.}$$
+Here G is Newton's gravitational constant and c is the speed of light.
+Plugging our mass in gives us
+$$r = 10^{-50} \text{meters.}$$
+This is incredibly small! In fact as I was writing this, I realized that
+it's actually smaller than the Planck length, which means our equation
+for the Schwarzschild radius may be somewhat suspect. Nonetheless, let's
+hope that if we ever figure out quantum gravity, it gives us a
+correction of order one and proceed with our calculation, which is just
+an order-of-magnitude affair anyway.
+Now, anything that enters the Schwarzschild radius of the black hole is
+absorbed by it. The lightest thing that we could imagine the black hole
+swallowing is an electron. Let's figure out how long on average a black
+hole would have to travel through material with the density of the earth
+before it absorbs an electron. In the spirit of considering the worst
+case scenario, we'll have the black hole travel at the speed of light,
+and consider the earth to be the density of lead.
+We could do a complicated cross-section calculation to find the rate at
+which the black hole accumulates mass, but we can also get it right up
+to factors of pi through unit analysis. We know that the answer should
+involve the area of the black hole, the density of the earth, and the
+speed of the black hole. We want our answer to have units of mass per
+time to represent the mass accumulation rate of the black hole. The only
+combination that gives the right units is
+$$a=\frac{\text{mass}}{\text{time}} = \rho c
+r^2=\frac{10,000\text{kg}}{\text{m}^3}\frac{3\times 10^8
+\text{m}}{\text{s}}(10^{-50}\text{m})^2} =
+10^{-88}\text{kg/s}\text{.}$$
+Alright, now that we know how fast our black hole accumulates mass,
+let's figure out how long it takes it to accumulate an electron. The
+electron mass is
+$$m_e = 10^{-30}\text{kg,}$$
+so the time to accumulate an electron is
+$$t = \frac{m_e}{a} = 10^{50}\text{s.}$$
+Now, the current age of the universe is 10^17 seconds. The time it
+takes our black hole to accumulate an electron is longer than the age of
+the universe by many orders of magnitude! So, if the LHC produces black
+holes, and if Hawking is wrong, the black holes will just fly straight
+through the earth without interacting with anything. Even if we take the
+size of the black hole to be the Planck length, our black hole
+accumulates an electron in 10^25 seconds, which is still much longer
+than the age of the universe.
+So the moral of the story is that you should be excited about the new
+discoveries that the LHC might produce, and you don't need to worry
+about black holes.&lt;/p&gt;</description><category>end of the earth</category><category>LHC</category><category>physics</category><guid>https://virtuosi.alexalemi.com/posts/old/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world/</guid><pubDate>Sun, 16 May 2010 19:53:00 GMT</pubDate></item><item><title>Physics as Magic?</title><link>https://virtuosi.alexalemi.com/posts/old/physics-as-magic-/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;There's a &lt;a href="http://physicsbuzz.physicscentral.com/2010/05/iron-man-2-and-myth-of-physicist.html"&gt;nice
+post&lt;/a&gt;
+over at Physics Buzz that I thought I might draw your attention to. The
+central quote for me is: "Speaking strictly about technology - which is
+often the knowledge attained by physicists put into practical use by
+engineers - physics has created some pretty amazing things. Cars,
+planes, iphones, medical treatments, lasers, 3-D movies, and the Large
+Hadron Collider. We are constantly WOWED by science. Unfortunately, the
+less someone understands how these things work, the more they begin to
+believe anything is possible. In other words, if you don't understand
+the parameters that allow for amazing things (like jets!) you also don't
+understand the parameters that would prevent other things (like energy
+generating heart replacements). If you don't understand anything about
+physics and technology, then it appears to be nothing short of magic,
+and magic has no bounds..." I think this gets at some of the heart of
+what we're interested in doing here at the virtuosi. By trying to strip
+away some of the mysticism around physics, we hope to bring people to a
+better understand of what we do. Sure, we work fun problems, and discuss
+interesting topics (at least, so I hope). More importantly though, while
+doing so we display both the tools of physics, and how physicists think.
+The reason I got started on this blog is because I feel there is a huge
+gap in understanding between what physicists do and how we do it, and
+what the general public perceives us as doing. I don't think this gap is
+good for anyone, and I think part of the reason for that is very well
+articulated in the above quote. Of course, part of my hope for this blog
+is that if more people are comfortable with physics, when I tell people
+at a dinner party that I'm a physicist the response won't be either "Oh,
+I hated physics in high school" or "Oh, that's nice." End of
+conversation.&lt;/p&gt;</description><category>magic</category><category>physics</category><guid>https://virtuosi.alexalemi.com/posts/old/physics-as-magic-/</guid><pubDate>Mon, 03 May 2010 23:46:00 GMT</pubDate></item><item><title>Laser Launching</title><link>https://virtuosi.alexalemi.com/posts/old/laser-launching/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s1600/space-war-laser.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_SYZpxZOlcb0/S8-y4RmjAhI/AAAAAAAAABE/CueT0Sq1ZYc/s200/space-war-laser.jpg"&gt;&lt;/a&gt;
+Lasers seem to be on my mind recently. Just yesterday, the class I TA
+for (E&amp;amp;M for engineers) talked about the momentum carried by E&amp;amp;M waves.
+This called to mind a discussion I had with a housemate a few weeks
+back. He had heard somewhere that 'they' were thinking of launching
+satellites with lasers. &lt;em&gt;No way&lt;/em&gt;, I thought to myself. &lt;em&gt;Satellites are
+too heavy&lt;/em&gt;. However, his question has been hovering around in my mind,
+so I've decided to try and answer it: can we use a laser to launch a
+satellite into orbit? Let us begin with a few simplifying assumptions.
+I'm going to assume that we want our launched satellite to reach the
+escape velocity of the earth. Of course, we don't want a satellite to
+escape orbit, but escape velocity is calculated without considering any
+kind of drag forces on our launched object. To first order then, I
+expect achieving escape velocity will get our satellite into a
+relatively high orbit without actually escaping earth's gravity well.
+Second, I'm going to assume our laser is on the ground (reusable
+launching device!), and that our satellite is perfectly reflective, so
+we're not going to be melting it. Finally, I'm going to assume that the
+laser will remain effective at targeting our object up to 15 km above
+the surface, around the effective range for lasers used as guides for
+&lt;a href="http://en.wikipedia.org/wiki/Adaptive_optics"&gt;adaptive optics&lt;/a&gt; in
+telescopes.
+Now, to the meat of the problem. First, we need to find the escape
+velocity from the earth. This is defined as the velocity we would need
+to give an object to overcome the gravitational energy of the earth upon
+the object. This is found by setting the kinetic energy of the object
+equal to the change in gravitational potential energy from the earth's
+surface to infinity:
+$$ KE=\Delta PE $$ so
+$$\tfrac{1}{2}mv_{esc}^2 = \frac{GM_{earth}m}{R_{earth}}$$
+(for those interested, the gravitational potential energy at infinity is
+defined to be zero). We can easily solve this for v,
+$$ v_{esc}=\sqrt{\frac{2GM_{earth}}{R_{earth}}$$
+To me, the most remarkable feature of the escape velocity is that it is
+independent of the mass of the object! We can now plug in numbers, and
+find an escape velocity if \~11.2 km/s.
+We now make use of our constraint, that we have to achieve this escape
+velocity over 15 km. We assume the laser outputs a constant number of
+photons per second, n. The force the laser provides the satellite is the
+change in momentum with time,
+$$F=\frac{dp}{dt}$$
+How is our laser imparting momentum to our system? Well, light is
+composed of photons, tiny packets of light. Each photon has momentum.
+Assume each photon reflects perfectly, that is, straight backwards and
+with no energy loss. Then the photon has reversed its momentum. Since
+momentum is conserved, the satellite has gained a momentum of 2p. The
+momentum of a photon is
+$$p=\frac{h}{\lambda}$$
+where h is Planck's constant. This gives
+$$F=\frac{2nh}{\lambda}$$
+Given a constant force, the time taken to reach some velocity is just
+$$t=mv/F$$
+In our case the v is the escape velocity. Now, given a constant force,
+and no initial velocity, an object of mass m travels a distance d in a
+time t given by
+$$d=\frac{F}{2m}t^2$$
+We can substitute our expression for t into this expression, giving
+$$d=\left(\frac{F}{2m}\right)\left(\frac{mv}{F}\right)^2$$
+$$d=\frac{mv^2}{2F}$$
+What we are really interested in is n, the number of photons per second
+this process takes, so we substitute our expression for the force, and
+solve for n:
+$$d=\frac{mv^2\lambda}{4nh}$$
+s0
+$$n=\frac{mv^2\lambda}{4hd}$$
+Now that we have the number of photons per second our laser supplies,
+all that is left is to find the power of laser this would take. The
+power of a laser will be given by the number of photons per second times
+the energy per photon. The energy per photon is given by E=hf where f is
+the frequency of our light. So, the power, P, of our laser is
+$$P=nE$$ or
+$$P=\frac{mv_{esc}^2\lambda f}{4d}$$ so
+$$P=\frac{mv_{esc}^2 c}{4d}$$
+Where we have recognized that the frequency times the wavelength of a
+photon is just the speed of light, c.
+All that remains is to plug in numbers. A medium sized satellite might
+be about 750kg, giving a laser power of 4.7&lt;em&gt;10^14W. This is .5 PW.
+According to wikipedia, the greatest power output of a continuous
+operation laser is on the order of 1 kW, or \~10^12 times less than our
+necessary power! There's no way we're getting a normal sized satellite
+into orbit with a laser. What about a smaller satellite? In recent years
+picosatellites have proposed, with masses of \~.1kg. This gives a
+necessary power of 6.2&lt;/em&gt;10^10, or 620 TW. This is still \~10^8 times
+greater than our most powerful continuous laser. In fact, reversing the
+calculation, our laser could launch a satellite with a mass of \~1.6 mg.
+A little googling reveals this is the same order of magnitude as a grain
+of rice! Simply put, we're not going to be launching satellites with
+lasers anytime soon.&lt;/p&gt;</description><category>laser</category><category>launch</category><category>physics</category><category>satellite</category><guid>https://virtuosi.alexalemi.com/posts/old/laser-launching/</guid><pubDate>Wed, 21 Apr 2010 22:22:00 GMT</pubDate></item></channel></rss>

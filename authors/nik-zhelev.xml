@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Nik Zhelev)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/nik-zhelev.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Entropy and the Arrow of Time</title><link>https://virtuosi.alexalemi.com/posts/old/entropy-and-the-arrow-of-time/</link><dc:creator>Nik Zhelev</dc:creator><description>&lt;p&gt;Somebody I talked to yesterday about what should the topic of my post be
+suggested that I should write something about cosmology, in particular
+the Big Bang and the ultimate fate of the universe. Being mostly
+interested in condensed matter, I am by no means an expert in cosmology
+(I’ll leave that to Corky). However, I will not abandon the request, but
+instead, spin it in a more condensed matter direction, by talking about
+Entropy.
+Entropy is a quantity that measures disorder. The more ordered your
+system is, i.e. the less ways you can arrange the constituents of your
+system, the less entropy you have and vice versa. I like to use the
+example of how messy my room is to visualize this. When I clean my room,
+I would pick up the random articles of clothing, books, etc and put them
+in the places where they belong. Now imagine, I stopped cleaning my room
+for a couple of weeks. This would result in clothes on the ground, books
+on my bed, empty bottles on my desk, etc. anything can be anywhere. This
+means that there are more ways for my personal belongings to be arranged
+when my room is messy than when my room is clean (when everything would
+be at its place), so the entropy increases as the messiness of my room
+increases. Now, notice that left on its own (i.e. if I don’t put the
+conscious effort to put some order in my room once in a while) the
+entropy of the system that is my room increases with time. This is, in
+fact, the essence of one of the most fundamental (if not the most
+fundamental) laws of nature – The Second Law of Thermodynamics, which
+states that left on its own, the entropy of any system increases with
+time.
+I know what you are thinking, “What does this talk about the messiness
+of your room and the law of increasing entropy has to do with the
+universe, the Big Bang and the universe’s ultimate fate?” Ok, here you
+go, read this short story by the greatest sci-fi writer Isaac Asimov:
+&lt;a href="http://bit.ly/84LN"&gt;The Last Question.&lt;/a&gt;
+Now that you’ve read this story (if you haven’t, please do), we can
+discuss some physics (or actually, some philosophy, but you know,
+sometimes there isn’t that much difference between the two). Einstein,
+with his Theory of Relativity, showed that the concept of time is not
+absolute, and time can be treated simply as another coordinate, much
+like the three spatial coordinates that define the three dimensional
+space we are used to. (A more in-depth explanation of the Theory of
+Relativity will be the topic of one of the next posts.) However, despite
+the relativity of time, the arrow of time is always well-defined. We can
+always tell future from past by measuring the entropy and applying the
+Second Law of Thermodynamics. At the instance of the Big Bang, the
+entropy was zero. Since then (about 13.8 billion years ago) the entropy
+of the universe has been increasing until it will eventually reach its
+maximum value, at which point all the matter of the universe would be
+evenly distributed and no physical process would be possible. Time
+eventually stops, resulting in the “heat death” of the universe.
+I believe that one of the most unsettling parts of the Bing Bang theory
+is the question of what caused the Big Bang, and what was there before
+the Bing Bang. Having the arrow of time defined with regards to entropy,
+however, makes this question nonsensical… unless, of course, a Cosmic AC
+(or God) has managed to find the answer of how the entropy can be
+reversed.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/entropy-and-the-arrow-of-time/</guid><pubDate>Fri, 16 Apr 2010 21:27:00 GMT</pubDate></item><item><title>Physics for non-physicists</title><link>https://virtuosi.alexalemi.com/posts/old/physics-for-non-physicists/</link><dc:creator>Nik Zhelev</dc:creator><description>&lt;p&gt;This is my first (but certainly not the last) post in this blog, so let
+me introduce myself. My name is Nikolay, and as most of the others
+contributing to the blog, I am also a first-year graduate student in
+physics at Cornell.
+So, what is my motivation to join the team headed by Mr. Alemi in
+contributing to the blog? I happen to have many friends that are not in
+physics. In fact, probably due to the fact that I graduated from a
+liberal arts college, many of my friends have never taken any physics
+beyond that one class in high school, which due to both the inherent
+difficulty of teaching physics at introductory level and the lack of
+good high school physics teachers was often an unpleasant experience
+that scared them away from physics for life. Now, imagine what my
+difficulty is when on a daily basis I have to answer the question: “So
+what do you study/work on as a graduate student?” I usually try to come
+up with a sentence or two describing the essence of what I am doing
+without going into too many details, but even that is a daunting task.
+There seems to be a disconnect between the world in which a physicist
+lives and the general public. As Chad Orzel pointed out in the talk that
+motivated the creation of this blog, this is not the general public’s
+fault, but our fault as physicists of not really committing enough
+effort in relating our knowledge to the rest of the world.
+In short, my goal is to create a series of posts about physics geared to
+people with no physics background that would build upon each other and
+culminate with a post providing an answer to the question of what my
+research project is beyond the generic words I would often resort to
+that would rather leave most people confused. I plan to use as little
+math as possible, which will not be an easy task considering that math
+is the language of choice for physics. However, mathematics is just a
+tool, and physics is not about equations and complicated algebra, but
+about how nature works, which we should be able to formulate in plain
+English. I know I am embarking on a difficult task, so wish me luck, and
+please leave your thoughts in the remarks section of the blog, since any
+feedback would be appreciated.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/physics-for-non-physicists/</guid><pubDate>Fri, 16 Apr 2010 16:36:00 GMT</pubDate></item></channel></rss>

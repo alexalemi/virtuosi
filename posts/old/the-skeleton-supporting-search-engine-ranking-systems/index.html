@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Skeleton Supporting Search Engine Ranking Systems | The Virtuosi</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="DTC">
+<link rel="prev" href="../when-will-the-earth-fall-into-the-sun-/" title="When will the Earth fall into the Sun? " type="text/html">
+<link rel="next" href="../re-evaluating-the-values-of-the-tiles-in-scrabble/" title="Re-evaluating the values of the tiles in Scrabble™" type="text/html">
+<meta property="og:site_name" content="The Virtuosi">
+<meta property="og:title" content="The Skeleton Supporting Search Engine Ranking Systems">
+<meta property="og:url" content="https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/">
+<meta property="og:description" content="A lot of the research I’m interested in relates to networks – measuring
+the properties of networks and figuring out what those properties mean.
+While doing some background reading, I stumbled upon som">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2013-01-01T19:09:00Z">
+<meta property="article:tag" content="centrality measures">
+<meta property="article:tag" content="networks">
+<meta property="article:tag" content="octopodes">
+<meta property="article:tag" content="search engine ranking">
+<meta property="article:tag" content="search engines">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://virtuosi.alexalemi.com/">
+
+            <span id="blog-title">The Virtuosi</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.md" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="../../../categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../../rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The Skeleton Supporting Search Engine Ranking Systems</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    <a href="../../../authors/dtc/">DTC</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2013-01-01T19:09:00Z" itemprop="datePublished" title="2013-01-01 19:09">2013-01-01 19:09</time></a>
+            </p>
+            
+        <p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>
+<img src="../../../images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center"></p>
+
+<p>A lot of the research I’m interested in relates to networks – measuring
+the properties of networks and figuring out what those properties mean.
+While doing some background reading, I stumbled upon some discussion of
+the algorithm that search engines use to rank search results. The
+automatic ranking of the results that come up when you search for
+something online is a great example of how understanding networks (in
+this case, the World Wide Web) can be used to turn a very complicated
+problem into something simple.</p>
+<p>Ranking search results relies on the assumption that there is some
+underlying pattern to how information is organized on the WWW- there are
+a few core websites containing the bulk of the sought-after information
+surrounded by a group of peripheral websites that reference the core.
+Recognizing that the WWW is a network representation of how information
+is organized and using the properties of the network to detect where
+that information is centered are the key components to figuring out what
+websites belong at the top of the search page.</p>
+<p>Suppose you look something up on Google (looking for YouTube videos of
+your favorite band, <a href="http://thephysicsvirtuosi.com/author/corky.html">looking for edifying science
+writing</a>, tips on octopus pet care,
+etc): the search service returns a whole spate of results. Usually, the
+pages that Google recommends first end up being the most useful. How on
+earth does the search engine get it right?</p>
+<p>First I’ll tell you exactly how Google does <em>not</em> work. When you type in
+something into the search bar and hit enter, a message is <em>not</em> sent to
+a guy who works for Google about your query. That guy does <em>not</em> then
+look up all of the websites matching your search, does not visit each
+website to figure out which ones are most relevant to you, and does
+<em>not</em> rank the pages accordingly before sending a ranked list back to
+you. That would be a very silly way to make a search engine work! It
+relies on an individual human ranking the search results by hand with
+each search that’s made. Maybe we can get around having to hire
+thousands of people by finding a clever way to automate this process.</p>
+<p>So here’s how a search engine <em>does</em> work. Search engines use robots
+that crawl around the World Wide Web (sometimes these robots are
+referred to as “spiders”) finding websites, cataloguing key words that
+appear on those webpages, and keeping track of all the other sites that
+link into or away from them. The search engine then stores all of these
+websites and lists of their keywords and neighbors in a big database.</p>
+<p>Knowing which websites contain which keywords allows a search engine to
+return a list of websites matching a particular search. But simply
+knowing which websites contain which keywords is not enough to know how
+to order the websites according to their relevance or importance.
+Suppose I type “octopus pet care” into Google. The search yields 413,000
+results- far too many for me to comb through at random looking for the
+web pages that best describe what I’m interested in.</p>
+<p>Knowing the ways that different websites connect to one another through
+hyperlinks is the key to how search engine rankings work. Thinking of a
+collection of websites as an ordinary list doesn’t say anything about
+how those websites relate to one another. It is more useful to think of
+the collection of websites as a network, where each website is a node
+and each hyperlink between two pages is a directed edge in the network.
+In a way, these networks are maps that can show us how to get from one
+website to another by clicking through links.</p>
+<p>Here is an example of what a network visualization of a website map of a
+large portion of the WWW looks like. (Original full-size image
+<a href="http://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg">here</a><a href="http://www.blogger.com/"></a>.)</p>
+<p>
+<img src="../../../images/skeleton-search/Internet_map_1024.jpg" width="100%" alt="internet map" style="float:center"></p>
+
+<p>Here is a site map for a group of websites that connect to the main page
+of English Wikipedia. (Original image from
+<a href="http://en.wikipedia.org/wiki/Site_map">here</a>.) This smaller site map is
+closer to the type of site map used when making a search using a search
+engine.</p>
+<p>
+<img src="../../../images/skeleton-search/Main_Page_Usability.png" width="100%" alt="internet map" style="float:center"></p>
+
+<p>So, how does knowing the underlying network of the search results help
+one to find the best website on octopus care (or any other topic)? The
+search engine assumes that behind the seemingly random, hodgepodge
+collection of files on the WWW, there is some organization in the way
+they connect to one another. Specifically, the search engine assumes
+that finding the websites most central to the network of search results
+is the same as finding the search results with the best information.
+Think of a well-known, trusted source of information, like the New York
+Times. The NY Times website will have many other websites referencing it
+by linking to it. In addition, the NY Times website, being a trusted
+news source, is likely to refer to the best references for other sources
+that it wants to refer to, such as Reuters. High-quality references will
+also probably have many incoming links from websites that cite them. So
+not only does a website like the NY Times sit at the center of many
+other websites that link to it, but it also frequently connects to other
+websites that themselves are at the center of many other websites. It is
+these most central websites that are probably the best ones to look at
+when searching for information.</p>
+<p>When I search for “octopus pet care” using Google I am necessarily
+assuming that the search results are organized according to this
+core-periphery structure, with a group of important core websites
+central to the network surrounded by many less important peripheral
+websites that link to the core nodes. The core websites may also connect
+to one another. There may also be websites disconnected from the rest,
+but these will probably be less important to the search simply because
+of the disconnection. Armed with the knowledge of the connections
+between the different relevant websites and the core-periphery network
+structure assumption, we may now actually find which of the websites are
+most central to the network (in the core), and therefore determine which
+websites to rank highly.</p>
+<p><a id="note1"></a>
+Let’s begin by assigning a quantitative “centrality” score to each of
+the nodes (websites) in the network, initially guessing that all of the
+search results are equally important. (This, of course, is probably not
+true. It’s just an initial guess.) Each node then transfers all of its 
+centrality score to its neighbors, dividing it evenly between 
+them<a href="#fnote1"><sup>[1]</sup></a>.
+(Starting with a centrality score of 1 with three neighbors, each of
+those neighbors receives 1/3.) Each node also receives a some centrality
+from each neighbor that links in to it. Following this first step, we
+find that nodes with many incoming edges will have higher centrality
+than nodes with few incoming edges. We can repeat this process of
+dividing and transferring centrality again. Nodes with many incoming
+links will have more centrality to share with their neighbors, and nodes
+with many incoming links will themselves also receive more centrality.</p>
+<p>After repeating this process many times, we begin to see a difference
+between which nodes have the highest centrality scores: nodes with high
+centrality are the ones that have many incoming links, or have links to
+other central nodes, or both. This algorithm therefore differentiates
+between the periphery and the core of the network. Core nodes receive
+lots of centrality because they link to one another and because they
+have lots of incoming links from the periphery. Peripheral nodes have
+fewer incoming links and so receive less centrality than the nodes in
+the core. Knowing the centrality scores of search results on the WWW
+makes it pretty straightforward for us to quantitatively rank which of
+those websites belongs at the top of the list.</p>
+<p>Of course, there are more complex ways that one can add to and improve
+this procedure. Google’s algorithm PageRank (named for founder Larry
+Page, not because it is used to rank web pages) and the HITS algorithm
+developed at Cornell are two examples of more advanced ways of ranking
+search engine results. We can go even further: a search engine can keep
+track of the links that users follow whenever a particular search is
+made. (This is almost the same as the company hiring someone to order
+sought-after web pages automatically whenever a search is made, except
+all the company lets the user do it for free.) Over time, search engines
+can improve their methods for helping us find what we need by learning
+directly from the way users themselves prioritize which search results
+they pursue. Still, these different search engine ranking systems may
+operate using slightly different methods, but all of them depend on
+understanding the list of search results within the context of a
+network.</p>
+<hr>
+<p><strong>Notes</strong></p>
+<p><a id="fnote1"></a>
+1. <a href="#note1">^</a> It's not always all - there are other variations where nodes only
+transfer a fraction of their centrality score at each step.</p>
+<p><strong>Sources (and further reading)</strong></p>
+<p>I wanted to include no mathematics in
+this post simply because I cannot explain the mathematics behind these
+algorithms and their convergence properties better than my sources can.
+For those of you who want to see the mathematical side of the argument
+for yourselves (which involves treating the network adjacency matrix as
+a Markov process and finding its nontrivial steady state eigenvector),
+do consult the following two textbooks:</p>
+<p>Easley, David, and Jon Kleinberg. <em>Networks, Crowds, and Markets:
+Reasoning about a Highly Connected World</em>. Cambridge University Press,
+2010 (<a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch14.pdf">Chapter 14</a>
+in particular) </p>
+<p>Newman, Mark. <em>Networks: an Introduction</em>. Oxford
+University Press, 2010 (Chapter 7 in particular)</p>
+<p>A popular book on the early development of network science that contains
+a lot of information on the structure of the WWW:</p>
+<p>Barabasi, Albert-Laszlo. <em>Linked: How Everything is Connected to
+Everything Else and What It Means</em>. Plume, 2003.</p>
+<p>A book on the history of modern computing that contains an interesting
+passage on how search engines learn adaptively from their users (that
+deserves a shout-out in this blog post).</p>
+<p>Dyson, George. <em>Turing's Cathedral</em>. Pantheon, 2012.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/centrality-measures/" rel="tag">centrality measures</a></li>
+            <li><a class="tag p-category" href="../../../categories/networks/" rel="tag">networks</a></li>
+            <li><a class="tag p-category" href="../../../categories/octopodes/" rel="tag">octopodes</a></li>
+            <li><a class="tag p-category" href="../../../categories/search-engine-ranking/" rel="tag">search engine ranking</a></li>
+            <li><a class="tag p-category" href="../../../categories/search-engines/" rel="tag">search engines</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../when-will-the-earth-fall-into-the-sun-/" rel="prev" title="When will the Earth fall into the Sun? ">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../re-evaluating-the-values-of-the-tiles-in-scrabble/" rel="next" title="Re-evaluating the values of the tiles in Scrabble™">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:thephysicsvirtuosi@gmail.com">The Virtuosi</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

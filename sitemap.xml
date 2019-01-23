@@ -1,3394 +1,2028 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>http://thephysicsvirtuosi.com/index.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/archives.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tags.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/categories.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/pages/about-us.html</loc>
-<lastmod>2010-01-01T00:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/pages/contributors.html</loc>
-<lastmod>2010-01-01T00:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/special-brain.html</loc>
-<lastmod>2014-03-20T20:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism.html</loc>
-<lastmod>2013-09-23T00:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/modeling-international-war.html</loc>
-<lastmod>2013-06-23T23:48:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/trigonometric-derivatives.html</loc>
-<lastmod>2013-02-22T16:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble.html</loc>
-<lastmod>2013-01-20T22:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems.html</loc>
-<lastmod>2013-01-01T19:09:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-.html</loc>
-<lastmod>2012-11-29T22:58:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/creating-an-earth.html</loc>
-<lastmod>2012-10-27T19:07:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-curious-footprint.html</loc>
-<lastmod>2012-08-04T04:56:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-homemade-viscometer-i.html</loc>
-<lastmod>2012-07-24T22:32:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/batman-helicopters-and-center-of-mass.html</loc>
-<lastmod>2012-06-26T11:10:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/tales-from-the-transit-of-venus.html</loc>
-<lastmod>2012-06-05T00:50:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-ii.html</loc>
-<lastmod>2012-05-26T21:28:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html</loc>
-<lastmod>2012-05-18T00:20:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-vii-the-big-freeze.html</loc>
-<lastmod>2012-04-22T19:34:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-2012-escape-to-the-moon.html</loc>
-<lastmod>2012-04-22T15:12:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/money-for-almost-nothing.html</loc>
-<lastmod>2012-03-29T01:27:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/pi-storage.html</loc>
-<lastmod>2012-03-14T15:13:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/calculator-pi.html</loc>
-<lastmod>2012-03-14T14:16:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-clarification.html</loc>
-<lastmod>2012-03-14T12:20:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/pi-rithmetic.html</loc>
-<lastmod>2012-03-14T11:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/moving-pi-ctures.html</loc>
-<lastmod>2012-03-14T08:35:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi.html</loc>
-<lastmod>2012-03-14T08:22:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/primes-in-pi.html</loc>
-<lastmod>2012-03-14T03:14:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/f-91-revisited.html</loc>
-<lastmod>2012-03-12T00:57:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/proofiness-a-look-into-how-mathematics-relates-to-american-political-life.html</loc>
-<lastmod>2012-03-06T14:37:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/time-keeps-on-slippin-.html</loc>
-<lastmod>2012-02-12T22:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-stars-fell-on-abe-and-frederick.html</loc>
-<lastmod>2012-01-02T20:02:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-.html</loc>
-<lastmod>2012-01-01T20:46:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs.html</loc>
-<lastmod>2011-12-13T17:36:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-award-show-ii.html</loc>
-<lastmod>2011-11-06T23:22:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/betelgeuse-betelgeuse-betelgeuse-.html</loc>
-<lastmod>2011-11-05T01:25:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-update.html</loc>
-<lastmod>2011-10-31T22:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-linear-theory-of-battleship.html</loc>
-<lastmod>2011-10-03T00:48:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-ii-marty-mcphysics.html</loc>
-<lastmod>2011-09-05T14:16:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-tweet-is-worth-at-least-140-words.html</loc>
-<lastmod>2011-08-30T23:49:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/futurama-physics.html</loc>
-<lastmod>2011-08-22T23:44:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/fun-with-an-iphone-accelerometer.html</loc>
-<lastmod>2011-08-03T03:24:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-in-sports-the-fosbury-flop.html</loc>
-<lastmod>2011-08-01T01:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/grains-of-sand.html</loc>
-<lastmod>2011-07-18T11:33:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/lifetime-of-liquid-water.html</loc>
-<lastmod>2011-07-10T22:07:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/coriolis-effect-on-a-home-run.html</loc>
-<lastmod>2011-07-03T11:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/counting-critters.html</loc>
-<lastmod>2011-06-28T00:19:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/day-in-the-life-of-clicky.html</loc>
-<lastmod>2011-06-01T16:34:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/clicky-data-v1-0.html</loc>
-<lastmod>2011-05-31T11:36:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/clickin-the-night-away.html</loc>
-<lastmod>2011-05-31T00:07:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/anatomy-of-an-experiment-i-the-question.html</loc>
-<lastmod>2011-05-05T21:06:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-vi-nanobot-destruction.html</loc>
-<lastmod>2011-04-22T13:11:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-special-post-apocalyptic-literature.html</loc>
-<lastmod>2011-04-22T10:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-v-there-goes-the-sun.html</loc>
-<lastmod>2011-04-22T09:42:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-iv-shocking-destruction.html</loc>
-<lastmod>2011-04-22T07:54:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/matt-raises-clicky-from-the-dead.html</loc>
-<lastmod>2011-04-08T13:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-sense-of-scale-in-dollars-and-cents-.html</loc>
-<lastmod>2011-04-07T21:42:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/collective-wanderings.html</loc>
-<lastmod>2011-04-04T22:39:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/special-virtuosi-book-announcement-.html</loc>
-<lastmod>2011-04-01T01:41:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/nickel-gnomes.html</loc>
-<lastmod>2011-03-31T02:17:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/blown-away.html</loc>
-<lastmod>2011-03-24T17:46:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-challenge-award-show.html</loc>
-<lastmod>2011-03-17T23:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/japan-nuclear-crisis.html</loc>
-<lastmod>2011-03-16T10:36:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/apologies-saturn-.html</loc>
-<lastmod>2011-03-16T00:35:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/fun-fact-lebron-james-plays-basketball.html</loc>
-<lastmod>2011-02-07T12:37:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-month-gilligan-physics.html</loc>
-<lastmod>2011-02-06T12:55:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/life-in-the-infrared.html</loc>
-<lastmod>2011-02-06T00:47:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/free-data-set-of-the-month-imaging-spectroscopy.html</loc>
-<lastmod>2011-02-04T16:44:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/exploration-of-cameras-i.html</loc>
-<lastmod>2011-02-03T19:50:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-magnetar-credit-card-swipe.html</loc>
-<lastmod>2011-01-30T17:22:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/falling-ice.html</loc>
-<lastmod>2011-01-27T22:41:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/darts.html</loc>
-<lastmod>2011-01-13T16:29:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/holiday-hidden-message-revealed.html</loc>
-<lastmod>2011-01-03T23:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/benford-s-law.html</loc>
-<lastmod>2010-12-31T14:42:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/holiday-hidden-message.html</loc>
-<lastmod>2010-12-24T13:05:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-buffoon-s-toothpicks.html</loc>
-<lastmod>2010-12-18T17:33:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3-solution.html</loc>
-<lastmod>2010-12-15T02:01:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-law-and-large-numbers.html</loc>
-<lastmod>2010-12-09T22:34:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-short-thanksgiving-edition.html</loc>
-<lastmod>2010-11-29T18:51:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-2-solution.html</loc>
-<lastmod>2010-11-23T17:46:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-one-for-two-edition.html</loc>
-<lastmod>2010-11-22T11:12:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-3.html</loc>
-<lastmod>2010-11-22T03:53:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-2.html</loc>
-<lastmod>2010-11-14T16:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/pet-projects.html</loc>
-<lastmod>2010-11-14T12:38:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-dark-edition.html</loc>
-<lastmod>2010-11-08T15:46:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/problem-of-the-week-1.html</loc>
-<lastmod>2010-11-05T19:39:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-conformal-edition.html</loc>
-<lastmod>2010-11-01T17:58:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-fermionic-edition.html</loc>
-<lastmod>2010-10-25T11:56:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-3-with-a-vengence.html</loc>
-<lastmod>2010-10-21T14:32:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/your-week-in-seminars-intro-edition.html</loc>
-<lastmod>2010-10-18T12:50:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/four-fantastic-books-3-of-which-are-free-.html</loc>
-<lastmod>2010-10-16T00:50:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/caught-in-the-rain-ii.html</loc>
-<lastmod>2010-10-10T14:41:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/beards-and-pulsars.html</loc>
-<lastmod>2010-09-28T02:56:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-2-paradigm-shifter.html</loc>
-<lastmod>2010-09-19T23:55:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/breaking-intuition.html</loc>
-<lastmod>2010-09-19T16:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/visualizing-quantum-mechanics.html</loc>
-<lastmod>2010-09-14T20:06:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/microseconds-and-miles.html</loc>
-<lastmod>2010-09-12T23:04:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/quantum-chess-.html</loc>
-<lastmod>2010-09-08T21:48:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/paradigm-shifts-1.html</loc>
-<lastmod>2010-09-07T23:01:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/remembering-two-things.html</loc>
-<lastmod>2010-09-02T16:32:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/caught-in-the-rain.html</loc>
-<lastmod>2010-09-01T22:53:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/ringing-a-bridge.html</loc>
-<lastmod>2010-08-14T21:16:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/terminal-velocity-2-a-theorist-s-experimental-experiment.html</loc>
-<lastmod>2010-08-12T17:23:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/teminal-velocity.html</loc>
-<lastmod>2010-08-11T14:04:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-wrath-of-blotto.html</loc>
-<lastmod>2010-08-06T11:32:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/steak-dinner.html</loc>
-<lastmod>2010-08-03T21:20:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-death-of-karl-schwarzschild.html</loc>
-<lastmod>2010-07-24T23:54:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/something-bugging-me.html</loc>
-<lastmod>2010-07-20T23:24:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/zombpocalypse.html</loc>
-<lastmod>2010-07-01T23:48:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-impossibility-of-why.html</loc>
-<lastmod>2010-07-01T23:44:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-reflections.html</loc>
-<lastmod>2010-06-19T15:50:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-three.html</loc>
-<lastmod>2010-06-18T13:49:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-two.html</loc>
-<lastmod>2010-06-18T01:57:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/life-as-an-experimenter-day-one.html</loc>
-<lastmod>2010-06-17T13:53:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/how-long-can-you-balance-a-quantum-pencil.html</loc>
-<lastmod>2010-06-16T03:20:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/my-pepsi-challenge.html</loc>
-<lastmod>2010-06-08T01:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/memorial-day-distractions.html</loc>
-<lastmod>2010-05-31T13:12:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/cryopreservation.html</loc>
-<lastmod>2010-05-30T13:42:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/i-was-born-on-wednesday.html</loc>
-<lastmod>2010-05-26T03:17:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/why-is-the-grass-green-.html</loc>
-<lastmod>2010-05-25T23:29:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/flying-back.html</loc>
-<lastmod>2010-05-25T09:04:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/fishy-calculation-followup-new-contest.html</loc>
-<lastmod>2010-05-25T03:03:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/esoteric-physics-i-the-hall-effect.html</loc>
-<lastmod>2010-05-23T23:31:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-of-baseball-batting.html</loc>
-<lastmod>2010-05-19T18:21:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/cell-phone-brain-damage-part-deux.html</loc>
-<lastmod>2010-05-19T16:03:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-iii-because-two-just-isn-t-enough-.html</loc>
-<lastmod>2010-05-17T22:24:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/ask-a-physicist-volume-i.html</loc>
-<lastmod>2010-05-17T11:56:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-ii.html</loc>
-<lastmod>2010-05-17T01:15:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-i.html</loc>
-<lastmod>2010-05-16T23:29:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-addendum-i.html</loc>
-<lastmod>2010-05-16T23:28:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/solar-sails-addendum-ii.html</loc>
-<lastmod>2010-05-16T23:27:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world.html</loc>
-<lastmod>2010-05-16T19:53:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/freezing-in-space-ii-turn-on-the-sun-.html</loc>
-<lastmod>2010-05-13T23:38:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/freezing-in-space-i-blackest-night.html</loc>
-<lastmod>2010-05-12T22:26:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/human-radiation.html</loc>
-<lastmod>2010-05-09T00:24:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/letting-air-out-of-tires-ii.html</loc>
-<lastmod>2010-05-04T14:52:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-as-magic-.html</loc>
-<lastmod>2010-05-03T23:46:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/letting-air-out-of-tires.html</loc>
-<lastmod>2010-05-03T23:21:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-beer-diet.html</loc>
-<lastmod>2010-04-30T11:35:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/cell-phone-brain-damage-or-not-.html</loc>
-<lastmod>2010-04-27T19:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/some-of-the-best-advice-you-ll-ever-receive.html</loc>
-<lastmod>2010-04-25T20:29:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-physics-iii-asteroids-.html</loc>
-<lastmod>2010-04-22T18:45:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/earth-day-earth-units.html</loc>
-<lastmod>2010-04-22T16:18:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/nobody-really-gets-quantum.html</loc>
-<lastmod>2010-04-22T14:29:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/end-of-the-earth-ii-blaze-of-glory.html</loc>
-<lastmod>2010-04-22T14:26:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/laser-launching.html</loc>
-<lastmod>2010-04-21T22:22:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/laser-gun-recoil-follow-up.html</loc>
-<lastmod>2010-04-21T16:31:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/q-factors.html</loc>
-<lastmod>2010-04-21T00:38:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-end-of-earth-physics-i.html</loc>
-<lastmod>2010-04-17T16:25:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/entropy-and-the-arrow-of-time.html</loc>
-<lastmod>2010-04-16T21:27:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/physics-for-non-physicists.html</loc>
-<lastmod>2010-04-16T16:36:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/onsager-s-tour-de-force.html</loc>
-<lastmod>2010-04-15T20:22:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/another-reason-why-the-core-is-stupid.html</loc>
-<lastmod>2010-04-15T17:30:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/locating-the-sun-photo.html</loc>
-<lastmod>2010-04-14T02:21:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/the-malleability-of-theory.html</loc>
-<lastmod>2010-04-13T17:18:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/bubbles-.html</loc>
-<lastmod>2010-04-13T15:33:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-nature-of-many-penny-systems.html</loc>
-<lastmod>2010-04-11T01:08:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/on-the-superposition-of-hip-and-hop.html</loc>
-<lastmod>2010-04-09T17:42:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/fishy-calculation.html</loc>
-<lastmod>2010-04-09T14:26:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/would-a-laser-gun-recoil-.html</loc>
-<lastmod>2010-04-08T23:16:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/ask-a-physicist.html</loc>
-<lastmod>2010-04-08T13:28:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/lessons-in-prohibition-one.html</loc>
-<lastmod>2010-04-07T20:56:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/falling-water-hot-or-cold-.html</loc>
-<lastmod>2010-04-07T19:25:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/railguns.html</loc>
-<lastmod>2010-04-07T16:01:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/latex-test.html</loc>
-<lastmod>2010-04-06T10:37:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/a-new-beginning.html</loc>
-<lastmod>2010-04-06T00:37:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/about-us.html</loc>
-<lastmod>2010-01-01T00:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/posts/contributors.html</loc>
-<lastmod>2010-01-01T00:00:00-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/category/math.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/category/old.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/category/pages.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/category/physics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/canada.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/furlong-per-fortnight.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/koalas.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/radiation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/quantum-mechanics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/search-engine-ranking.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/scott-bakula.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/birthday.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/infrared.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/vampire.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/ants.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/search-engines.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/entropy.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/chess.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/lasers.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/mysticism.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/japan.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cold.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/tour-de-force.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/networks.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bridges.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/desperate-plea.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/dice.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/tire.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/conduction.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/graph.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/free-data-sets.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/thermodynamics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/charge.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/hall-effect.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/proofiness.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/molecules.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pennies.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/neutron-star.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/battleship.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/momentum.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/lattitude.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/rubber-bands.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/lhc.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sci-fi.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/python.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/exogenesis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/calories.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pencil-balancing.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/allan-variance.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/buffons-needle.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/faradays-law.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/electron.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/mad-beats.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pi-rithmetic.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/high-jump.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/onsager.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bubbles.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/saturn.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/qwerty.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gps.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/memorial-day.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/diet.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/end-of-the-earth.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gun.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/standards.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/hooray.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/not-absurdly-large-images.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/lebron-james.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/benford.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/zombies.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/jimmy-johns.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/steak.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/optics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/guestimation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/time-travel.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/particle-physics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/magic.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/hedonism-bot.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/storage.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/stats.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/human.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/witchcraft.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/twitter.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/paradigm-shift.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/nontransitive.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/freeze.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/approximation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/crc.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/books.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/summer.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/betelgeuse.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/measurement.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/apologies.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/how-do-i-get-free-stuff.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/primes.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/physics-challenge.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/trig.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/toto.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/book-review.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/dinosaur.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/culture.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/movie.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fun-water-rain-human.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/interference.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/ask-a-physicist.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/ice.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/moon.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/current.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/video.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/experiment.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pi-day.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/large-numbers.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/nuclear.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/free-fall.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/advice.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/math.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/em.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/do-the-dew.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/macguyver.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/day-month-year.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/power.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/higgs.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cryopreservation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/james-bond.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/coriolis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fun.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/magnetism.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/basketball.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/baseball.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gnomes.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pepsi.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/english.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/modeling.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/niagara-falls.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sho.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bad-physics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/well-spent-saturdays.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/dr-dre.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/accelerometer.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/launch.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/space.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/thin-films.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/trigonometry.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/schwarzschild.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/carl-sagan.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/dimensional-analysis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/games.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/green-power.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/logic.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/footnotes.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fourier.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/camera.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/blackbody.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/circle-of-life.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/intuition.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/megabucks.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/features.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/toothpicks.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/brain-damage.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/proton.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/why.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bruce-willis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fermi-problem.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/marvin-the-martian.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pulsar.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/megapixels-srsly.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/crisis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/picopixels.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/spectra.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/star-wars.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/statistics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/lottery.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/eurocentrism.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/site-news.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/equations.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/flying.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/question.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/manufactoria.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/long.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sports.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/toy-physics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/beer.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/asteroid.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/iphone.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/the-core.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/mars.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/book-reviews.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fish.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fantastic-contraption.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/census.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bummer.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/wiki.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/shorts.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/revisionist-history.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/esoteric.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/longfellow.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bike.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gilligan.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/glass.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/heat.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bohn.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/recoil.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/excessive-saluting.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bug.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/phone-data.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/bouncing-ball.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sound.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pendulum.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/laser.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cognitive-dissonance.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/linear-algebra.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/blotto.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/nanobots.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/elections.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/magnetar.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/war.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cards.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fermi.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/budget.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/autocorrelation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/office-hours.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/fosbury-flop.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/things-that-probs-wont-kill-you.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/summer-research.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sand.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/railgun.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/information-theory.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/monte-carlo.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/geonosian-solar-sailer.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/metric.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/centrality-measures.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/ungodly-large-images.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/q-factor.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/water.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/collision.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/quantum.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/msl.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/solar-sails.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/transit-of-venus.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/politics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/education.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/metaphysics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/paul-dirac.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/numerics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/contest.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/batman.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/chlorophyll-more-like-borophyll.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/great-scott.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/42.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gravity.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/order-of-magnitude.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/problem-of-the-week.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/busted.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/clicky.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/units.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/puns.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/dvorak.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/solar-system.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/simulation.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/calculus.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/picture.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/satellite.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/literature.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/octopodes.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/probability.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/gas.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/class.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/pineapple.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/orbits.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/nic-shout-outs.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/matt-magic.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cipher.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/curiosity.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/darts.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/footprint.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/cell-phone.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/data.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/model.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/long-day.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/reflection.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/credit-cards.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/potato.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/odds.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/earth-day.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/casio.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/analysis.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/center-of-mass.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/feynman.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/monty-hall.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/daylight-savings-time.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/scrabble.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/air-resistance.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/sun.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/physics-in-sports.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/hello-kitty.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/physics.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/tag/wind.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/alemi.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/alex.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/bohn.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/brian.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/corky.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/dtc.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/holmes.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/jared.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/jesse.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/js.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/matt.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/nic-eggert.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/nik-zhelev.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/sam.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/the-virtuosi.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>http://thephysicsvirtuosi.com/author/yariv.html</loc>
-<lastmod>2014-03-20T17:46:41-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+  <loc>https://virtuosi.alexalemi.com/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2010/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2011/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2012/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2013/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2014/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/2019/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/archive.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/alemi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/alex/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/bohn/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/brian/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/corky/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/dtc/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/holmes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/jared/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/jesse/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/js/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/matt/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/nic-eggert/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/nik-zhelev/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/sam/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/the-virtuosi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/authors/yariv/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/42/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/accelerometer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/advice/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/air-resistance/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/allan-variance/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/analysis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/ants/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/apologies/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/approximation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/ask-a-physicist/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/asteroid/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/autocorrelation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bad-physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/baseball/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/basketball/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/batman/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/battleship/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/beer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/benford/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/betelgeuse/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bike/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/birthday/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/blackbody/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/blotto/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bohn/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/book-review/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/book-reviews/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/books/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bouncing-ball/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/brain-damage/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bridges/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bruce-willis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bubbles/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/budget/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/buffons-needle/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bug/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/bummer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/busted/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/calculus/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/calories/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/camera/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/canada/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cards/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/carl-sagan/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/casio/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cat_math/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cat_old/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cat_physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cell-phone/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/census/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/center-of-mass/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/centrality-measures/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/charge/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/chess/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/chlorophyll-more-like-borophyll/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cipher/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/circle-of-life/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/class/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/clicky/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cognitive-dissonance/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cold/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/collision/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/conduction/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/contest/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/coriolis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/crc/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/credit-cards/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/crisis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/cryopreservation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/culture/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/curiosity/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/current/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/darts/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/data/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/day-month-year/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/daylight-savings-time/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/desperate-plea/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/dice/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/diet/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/dimensional-analysis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/dinosaur/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/do-the-dew/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/dr-dre/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/dvorak/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/earth-day/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/education/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/elections/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/electron/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/em/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/end-of-the-earth/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/english/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/entropy/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/equations/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/esoteric/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/eurocentrism/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/excessive-saluting/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/exogenesis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/experiment/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fantastic-contraption/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/faradays-law/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/features/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fermi-problem/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fermi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/feynman/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fish/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/flying/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/footnotes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/footprint/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fosbury-flop/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fourier/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/free-data-sets/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/free-fall/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/freeze/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fun-water-rain-human/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/fun/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/furlong-per-fortnight/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/games/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gas/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/geonosian-solar-sailer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gilligan/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/glass/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gnomes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gps/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/graph/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gravity/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/great-scott/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/green-power/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/guestimation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/gun/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/hall-effect/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/heat/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/hedonism-bot/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/hello-kitty/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/higgs/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/high-jump/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/hooray/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/how-do-i-get-free-stuff/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/human/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/ice/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/information-theory/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/infrared/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/interference/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/intuition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/iphone/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/james-bond/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/japan/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/jimmy-johns/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/koalas/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/large-numbers/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/laser/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/lasers/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/lattitude/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/launch/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/lebron-james/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/lhc/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/linear-algebra/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/literature/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/logic/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/long-day/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/long/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/longfellow/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/lottery/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/macguyver/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/mad-beats/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/magic/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/magnetar/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/magnetism/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/manufactoria/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/mars/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/marvin-the-martian/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/math/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/matt-magic/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/measurement/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/megabucks/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/megapixels-srsly/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/memorial-day/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/metaphysics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/metric/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/model/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/modeling/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/molecules/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/momentum/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/monte-carlo/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/monty-hall/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/moon/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/movie/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/msl/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/mysticism/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/nanobots/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/networks/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/neutron-star/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/niagara-falls/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/nic-shout-outs/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/nontransitive/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/not-absurdly-large-images/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/nuclear/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/numerics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/octopodes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/odds/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/office-hours/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/onsager/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/optics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/orbits/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/order-of-magnitude/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/paradigm-shift/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/particle-physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/paul-dirac/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pencil-balancing/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pendulum/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pennies/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pepsi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/phone-data/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/physics-challenge/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/physics-in-sports/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pi-day/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pi-rithmetic/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/picopixels/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/picture/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pineapple/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/politics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/potato/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/power/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/primes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/probability/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/problem-of-the-week/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/proofiness/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/proton/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/pulsar/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/puns/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/python/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/q-factor/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/quantum-mechanics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/quantum/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/question/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/qwerty/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/radiation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/railgun/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/recoil/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/reflection/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/revisionist-history/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/rubber-bands/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sand/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/satellite/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/saturn/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/schwarzschild/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sci-fi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/scott-bakula/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/scrabble/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/search-engine-ranking/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/search-engines/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sho/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/shorts/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/simulation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/site-news/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/solar-sails/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/solar-system/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sound/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/space/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/spectra/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sports/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/standards/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/star-wars/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/statistics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/stats/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/steak/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/storage/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/summer-research/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/summer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/sun/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/the-core/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/thermodynamics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/thin-films/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/things-that-probs-wont-kill-you/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/time-travel/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/tire/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/toothpicks/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/toto/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/tour-de-force/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/toy-physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/transit-of-venus/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/trig/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/trigonometry/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/twitter/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/ungodly-large-images/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/units/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/vampire/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/video/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/war/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/water/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/well-spent-saturdays/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/why/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/wiki/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/wind/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/witchcraft/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/categories/zombies/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/galleries/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-1.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-10.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-11.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-12.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-13.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-14.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-15.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-16.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-2.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-3.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-4.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-5.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-6.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-7.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-8.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/index-9.html</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/listings/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/pages/about/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/pages/authors/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/alemi/trigonometric-derivatives/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/dtc/quantum-mechanics-mysticism/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/dtc/special-brain/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-buffoon-s-toothpicks/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-clarification/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-curious-footprint/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-homemade-viscometer-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-new-beginning/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-sense-of-scale-in-dollars-and-cents-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-tweet-is-worth-at-least-140-words/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/a-very-small-slice-of-pi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/anatomy-of-an-experiment-i-the-question/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/another-reason-why-the-core-is-stupid/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/apologies-saturn-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist-volume-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/batman-helicopters-and-center-of-mass/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/beards-and-pulsars/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/benford-s-law/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/betelgeuse-betelgeuse-betelgeuse-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/blown-away/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/breaking-intuition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/bubbles-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/calculator-pi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/caught-in-the-rain-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/caught-in-the-rain/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/cell-phone-brain-damage-or-not-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/cell-phone-brain-damage-part-deux/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/clickin-the-night-away/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/clicky-data-v1-0/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/collective-wanderings/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/coriolis-effect-on-a-home-run/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/counting-critters/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/creating-an-earth/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/cryopreservation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/darts/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/day-in-the-life-of-clicky/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/earth-day-2012-escape-to-the-moon/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/earth-day-earth-units/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/earth-day-special-post-apocalyptic-literature/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-ii-blaze-of-glory/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-iv-shocking-destruction/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-physics-iii-asteroids-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-v-there-goes-the-sun/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vii-the-big-freeze/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/entropy-and-the-arrow-of-time/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/esoteric-physics-i-the-hall-effect/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/exploration-of-cameras-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/f-91-revisited/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/falling-ice/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/falling-water-hot-or-cold-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/fishy-calculation-followup-new-contest/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/fishy-calculation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/flying-back/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/free-data-set-of-the-month-imaging-spectroscopy/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/freezing-in-space-i-blackest-night/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/freezing-in-space-ii-turn-on-the-sun-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/fun-fact-lebron-james-plays-basketball/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/fun-with-an-iphone-accelerometer/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/futurama-physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/grains-of-sand/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message-revealed/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/how-cold-is-the-ground-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/how-long-can-you-balance-a-quantum-pencil/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/human-radiation/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/i-was-born-on-wednesday/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/japan-nuclear-crisis/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/laser-gun-recoil-follow-up/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/laser-launching/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/latex-test/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/lessons-in-prohibition-one/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/letting-air-out-of-tires-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/letting-air-out-of-tires/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/life-as-an-experimenter-day-one/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/life-as-an-experimenter-day-three/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/life-as-an-experimenter-day-two/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/life-as-an-experimenter-reflections/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/life-in-the-infrared/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/locating-the-sun-photo/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/matt-raises-clicky-from-the-dead/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/memorial-day-distractions/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/microseconds-and-miles/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/modeling-international-war/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/money-for-almost-nothing/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/moving-pi-ctures/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/my-pepsi-challenge/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/nickel-gnomes/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/nobody-really-gets-quantum/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/on-the-death-of-karl-schwarzschild/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/on-the-nature-of-many-penny-systems/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/on-the-superposition-of-hip-and-hop/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/onsager-s-tour-de-force/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-1/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-2-paradigm-shifter/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-3-with-a-vengence/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/pet-projects/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-as-magic-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-challenge-award-show-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-challenge-award-show/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-challenge-ii-marty-mcphysics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-challenge-update/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-for-non-physicists/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-in-sports-the-fosbury-flop/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/physics-of-baseball-batting/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/pi-rithmetic/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/pi-storage/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/primes-in-pi/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-1/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2-solution/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-3-solution/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-3/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/proofiness-a-look-into-how-mathematics-relates-to-american-political-life/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/q-factors/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/quantum-chess-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/railguns/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/remembering-two-things/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/report-from-the-trenches-a-cms-grad-student-s-take-on-the-higgs/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/ringing-a-bridge/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/solar-sails-addendum-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/solar-sails-addendum-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/solar-sails-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/solar-sails-ii/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/solar-sails-iii-because-two-just-isn-t-enough-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/some-of-the-best-advice-you-ll-ever-receive/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/something-bugging-me/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/special-virtuosi-book-announcement-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/steak-dinner/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/tales-from-the-transit-of-venus/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/teminal-velocity/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/terminal-velocity-2-a-theorist-s-experimental-experiment/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-beer-diet/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-end-of-earth-physics-i/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-impossibility-of-why/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-law-and-large-numbers/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-magnetar-credit-card-swipe/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-malleability-of-theory/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-stars-fell-on-abe-and-frederick/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/the-wrath-of-blotto/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/time-keeps-on-slippin-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/visualizing-quantum-mechanics/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/when-will-the-earth-fall-into-the-sun-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/why-black-holes-from-the-large-hadron-collider-won-t-destroy-the-world/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/why-is-the-grass-green-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/would-a-laser-gun-recoil-/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-conformal-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-dark-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-fermionic-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-intro-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-one-for-two-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-short-thanksgiving-edition/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/old/zombpocalypse/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://virtuosi.alexalemi.com/posts/testing/</loc>
+  <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
 </urlset>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about longfellow)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/longfellow.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Holiday Hidden Message Revealed</title><link>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message-revealed/</link><dc:creator>Corky</dc:creator><description>&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TSDGkyEUkPI/AAAAAAAAAIc/4rTQYB9jyNE/s1600/longfellow.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TSDGkyEUkPI/AAAAAAAAAIc/4rTQYB9jyNE/s320/longfellow.jpg"&gt;&lt;/a&gt;
+Here we present the solution to the Holiday Code (original post
+&lt;a href="http://thevirtuosi.blogspot.com/2010/12/holiday-hidden-message.html"&gt;here&lt;/a&gt;).
+The content of the message is from the creepy looking gentleman to the
+left, Henry Wadsworth Longfellow. He is perhaps most famous for writing
+the poem, "Paul Revere's Ride." I have taken another one of his popular
+poems, "&lt;a href="http://www.potw.org/archive/potw118.html"&gt;Christmas Bells&lt;/a&gt;,"
+and hidden its first verse in a huge mess of random letters. The
+message: "I heard the bells on Christmas Day Their old, familiar carols
+play, And wild and sweet The words repeat Of peace on earth, good-will
+to men!" Sounds pretty pleasant at the start. But it was written at the
+height of the Civil War and it gets pretty heavy towards the end.
+Longfellow was an ardent abolitionist and most of his poems contain
+allusions to the plight of slaves. He was also close friends with
+Senator Charles Sumner, whose own fiery oratory and opposition to
+slavery famously put him on the &lt;a href="http://en.wikipedia.org/wiki/Charles_Sumner#Antebellum_career_and_attack_by_Preston_Brooks"&gt;wrong
+side&lt;/a&gt;
+of a Southern cane. So how do we go about divining the message above
+from the mess of the original code? Well, the message is explicitly in
+there, it's just hidden by a bunch of randomly generated letters. To get
+the message out, one needs to know how the junk is distributed. To do
+that we use the first hint. The first hint was a list of pie fillings.
+So we will need to use pi to find out how the junk is filling the
+message:
+ybeinhhhzcezavdqfnrkutxyvqlzdwctagqdzbhderikeazrbcgjhwentgyqjnylvonrzobvclzeskypvscejbpftuzoladngzckwuhwcvdreyxrsmlwivrauuxssotmhakglmtawuahzdslwudvouxcasjaqzeynatsvzizxlhlxzbcrsziersohkirguobghmobedlwjwunozwdgptofdatcmgspjmrmprxepckiulxwiewniqgegzlzbpauntrzqvcsuscacpndngxjxyanvrrfqthhisomgnqxlsspnrufgljlhcwcywavxyaibvndjyonnfuxstkydsqpawrhpbjbwpeixkgblwcvddcrcofaipfdkkkgdnjkdrbaswfhqdypoevwrbezwtegtwnobuhtqnsyhethvoxhwcookyhahvaqrzquyoiduusrupmeqdefeypsyneoecpvvlatexnweorsufzhsaphcenptwpoywhuxqlrfprnaeusrqaqxdqrlqzcsnejaozjohxpnfccsemuavrltvafxoujhgjebvyyofehogomooljtoshbrdpeknoxdwwvrislevhplxyrzcfiotokrvjqlvwmvkgfdfedhqdin
+There are 3 junk letters before the first message letter, 1 before the
+next, then 4, 1, 5, ... So the number of junk letters before a message
+letter is given to you by pi. This
+&lt;a href="http://www.eveandersson.com/pi/digits/1000000"&gt;site&lt;/a&gt; may prove
+useful....&lt;/p&gt;</description><category>cipher</category><category>longfellow</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message-revealed/</guid><pubDate>Mon, 03 Jan 2011 23:52:00 GMT</pubDate></item><item><title>Holiday Hidden Message</title><link>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRTgRvmyQYI/AAAAAAAAAHw/Hg5dDp4N22I/s1600/robot-santa.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRTgRvmyQYI/AAAAAAAAAHw/Hg5dDp4N22I/s200/robot-santa.jpg"&gt;&lt;/a&gt;
+  Evil gun-wielding code-breaking robo-santa from Futurama&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Greetings and happy holidays! Everyone has gone home for the break, so
+we will be taking a break from the grossly misnamed "Problem of the
+Week" for a while. Instead, here's a "Christmas Code" I made up for a
+friend. Figure it out and win the respect of strangers on the Internet!
+Largely unhelpful hints after the break.
+ybeinhhhzcezavdqfnrkutxyvqlzdwctagqdzbhderikeazrbcgjhwentgyqjnylvonrzobvclzeskypvscejbpftuzoladngzckwuhwcvdreyxrsmlwivrauuxssotmhakglmtawuahzdslwudvouxcasjaqzeynatsvzizxlhlxzbcrsziersohkirguobghmobedlwjwunozwdgptofdatcmgspjmrmprxepckiulxwiewniqgegzlzbpauntrzqvcsuscacpndngxjxyanvrrfqthhisomgnqxlsspnrufgljlhcwcywavxyaibvndjyonnfuxstkydsqpawrhpbjbwpeixkgblwcvddcrcofaipfdkkkgdnjkdrbaswfhqdypoevwrbezwtegtwnobuhtqnsyhethvoxhwcookyhahvaqrzquyoiduusrupmeqdefeypsyneoecpvvlatexnweorsufzhsaphcenptwpoywhuxqlrfprnaeusrqaqxdqrlqzcsnejaozjohxpnfccsemuavrltvafxoujhgjebvyyofehogomooljtoshbrdpeknoxdwwvrislevhplxyrzcfiotokrvjqlvwmvkgfdfedhqdin
+Hint 1: Apple, pumpkin, pecan, ...
+Hint 2: Paul Revere&lt;/p&gt;&lt;/div&gt;</description><category>cipher</category><category>longfellow</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/holiday-hidden-message/</guid><pubDate>Fri, 24 Dec 2010 13:05:00 GMT</pubDate></item></channel></rss>

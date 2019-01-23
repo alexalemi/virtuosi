@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Things and Stuff.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Virtuosi (old posts, page 15) | The Virtuosi</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="https://virtuosi.alexalemi.com/index-15.html">
+<link rel="prev" href="index-16.html" type="text/html">
+<link rel="next" href="index-14.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://virtuosi.alexalemi.com/">
+
+            <span id="blog-title">The Virtuosi</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+    
+        
+
+    
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/how-cold-is-the-ground-ii/" class="u-url">How Cold is the Ground II</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/brian/">Brian</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/how-cold-is-the-ground-ii/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-05-26T21:28:00Z" itemprop="datePublished" title="2012-05-26 21:28">2012-05-26 21:28</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<div style="float: right; margin: 0px 0px 0px 10px">
+<figure><img src="images/how-cold-is-the-ground-ii/mainImage.png" alt="GAH!" width="40%"><figcaption style="text-align=center;">
+  Images <a href="http://en.wikipedia.org/wiki/File:Ithaca_Hemlock_Gorge.JPG">from</a>
+  <a href="http://en.wikipedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg"> Wikipedia
+  </a>
+  </figcaption></figure>
+</div>
+
+<p><a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html">Last week</a> 
+(ok, it was a little more than a few days ago...) I used
+dimensional analysis to figure out how the ground's temperature changes
+with time. But although dimensional analysis can give us information
+about the length scales in the problem, it doesn't tell us what the
+solution looks like. From dimensional analysis, we don't even know what
+the solution does at large times and distances. (Although we can usually
+see the asymptotic behavior directly from the equation.) So let's go
+ahead and solve the the heat equation exactly: </p>
+<p>$$ \frac {\partial T}{\partial t} = a \frac {\partial ^2 T}{\partial x^2} \quad (1)$$ </p>
+<p>Well, what type of solution do we want to this equation? We want the
+temperature at the Earth's surface $x=0$ to change with the days or the
+seasons. So let's start out modeling this with a sinusoidal dependence
+-- we'll look for a solution of the form </p>
+<p>$$ T(x,t) = A(x)e^{i wt} $$</p>
+<p>for some function $A(x)$, then we can take the real part for our
+solution. Plugging this into Eq. (1) gives 
+$A^{\prime\prime} = i\omega/a \times A$, or </p>
+<p>$$ A(x) = e^{ \pm \sqrt{w/2a } (1+i) x} $$ </p>
+<p>Since we have a second-order
+ordinary differential equation for $A$, we have two possible solutions,
+which are like $\exp(+x)$ or $\exp(-x)$. Which one do we choose? </p>
+<p><a id="note1"></a>
+Well, we want the temperature very far away from the surface of the ground to be
+constant, so we need the solution that decays with distance,
+$A\exp(-x)$. Taking the real part of this solution, we 
+find<a href="posts/old/how-cold-is-the-ground-ii/#fnote1"><sup>[1]</sup></a> </p>
+<p>$$ T(x,t) = T_0 \cos (wt + \sqrt{w/2a}\times x ) e^{-\sqrt{w/2a}x} \quad (2) $$ </p>
+<p>Well, what does this solution <em>say</em>?
+As we expected from our scaling arguments last week, the distance scale
+depends on the <em>square root</em> of the time scale -- if we decrease our
+frequency by 4 (say, looking at changes over a season vs over a month),
+the ground gets cooler only $2{\times}$ deeper. We also see that the temperature
+oscillation drops off quite rapidly as we go deeper into the ground, and
+that there is a "lag" the farther you go into the ground. In particular,
+we see that at distances deep into the ground, the temperature drops to
+its average value at the surface. You can see this all in the pretty
+plot below (generated with Python):</p>
+<div style="float: center;">
+<figure><img src="images/how-cold-is-the-ground-ii/SingleFrequency.png" alt="GAH!" width="60%"><figcaption style="text-align=center;">
+  Single frequency plot
+  </figcaption></figure>
+</div>
+
+<p>Let's recap. To model the temperature of the ground, we looked for a
+solution to the heat equation which had a sinusoidally oscillating
+temperature at $x=0$, and decayed to 0 at large $x$. We found a solution
+such a solution, and it shows that the temperature decays rapidly as we
+go far into the ground. At this point, there are two questions that pop
+into mind: </p>
+<p>1) Is the solution that we found <em>unique</em>? Or are there other
+possible solutions? </p>
+<p>2) This is all well and good, but what if our days
+or seasons <em>aren't perfect sines</em>? Can we find a solution that describes
+this behavior? </p>
+<p><a id="note2"></a>
+I'll give one (1) VirtuosiPoint to the first commenter
+who can prove to what extent the above solution is 
+unique<a href="posts/old/how-cold-is-the-ground-ii/#fnote2"><sup>[2]</sup></a>. But how about the second point? Can we solve this
+for non-sinusoidal time variations? Well, at this point most of the
+readers are rolling their eyes and shouting "Use a 
+<a href="http://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> and move on." So I
+will. Briefly, it turns out that (more or less) <em>any</em> periodic function
+can be written as a sum of sines &amp; cosines. So we can just add a bunch
+of sines and cosines together and construct our final solution. So just
+for fun, here is a plot of the temperature of the ground in Ithaca (data
+from <a href="http://en.wikipedia.org/wiki/Ithaca,_New_York">Wikipedia</a>) over a
+year. (I used a discrete Fourier transform to compute the coefficients.)</p>
+<div style="float: center;">
+<figure><img src="images/how-cold-is-the-ground-ii/IthacaTemp.png" alt="ithaca temp!" width="60%"><figcaption style="text-align=center;">
+  The temperature (colorbar) is in degrees C, assuming a=0.5 mm^2/s from <a href="http://thephysicsvirtuosi.com/posts/how-cold-is-the-ground-.html">before</a>.
+  </figcaption></figure>
+</div>
+
+<p>Looks pretty boring, but I swear that all the frequencies are in that
+plot. It just turns out that the seasons in Ithaca are pretty
+sinusoidal. So about 20 meters below Ithaca, the temperature is a pretty
+constant 8 C. While I was postponing writing this, I wondered what the
+temperature on Mercury's rocks would be. If we dig deep enough, can we
+find an area with habitable temperatures? Some
+<a href="http://hypertextbook.com/facts/2000/OlesyaNisanov.shtml">quick</a>
+<a href="http://en.wikipedia.org/wiki/Mercury_%28planet%29#Surface_conditions_and_.22atmosphere.22_.28exosphere.29">Googlin</a>'
+shows that the daytime and nighttime temperatures on Mercury are
+${\sim}550-700~{\rm K}$ and ${\sim}110~{\rm K}$ at the "equator." 
+While I don't think that Mercury's temperature varies symmetrically, let's assume so for lack of
+better data.<a href="posts/old/how-cold-is-the-ground-ii/#fnote3"><sup>[3]</sup></a> Then we'd expect that deep into the
+surface, the temperature would be fairly constant in time, at the
+average of these two extremes. Plugging in the numbers 
+(assuming $a\approx0.52~{\rm mm}^2 / s$ and using a Mercurial solar day as 176 days), we get</p>
+<p>$T=94~{\rm C}$ at 2.75 meters into the surface.</p>
+<p><a id="fnote1"></a>
+1. <a href="posts/old/how-cold-is-the-ground-ii/#note1">^</a> More precisely, since the heat equation is linear and real, if
+$T(x,t)$ is a solution to the equation, then so are $\frac{1}{2}(T+T^{<em>})$ or
+$\frac{1}{2i}(T-T^{</em>})$.</p>
+<p><a id="fnote2"></a>
+2. <a href="posts/old/how-cold-is-the-ground-ii/#note2">^</a> Hint: It's not unique. For instance, here is another solution that
+satisfies the constraints, with no internal heat sources or sinks 
+(I'll call it the "freshly buried" solution):</p>
+<div style="float: center;">
+<figure><img src="images/how-cold-is-the-ground-ii/buriedAlive.png" alt="buried alive" width="60%"><figcaption style="text-align=center;">
+  Freshly buried.
+  </figcaption></figure>
+</div>
+
+<p>Can you prove that all the other solutions decay to the original
+solution? Or is there a second or even a spectrum of steady state
+solutions?</p>
+<p><a id="fnote3"></a>
+[3] <a href="posts/old/how-cold-is-the-ground-ii/#note3">^</a> If someone provides me with better data of the time variation of
+Mercury's surface at some specific latitude, I'll update with a full
+plot of the temperature as a function of depth and time.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/how-cold-is-the-ground-/" class="u-url">How Cold is the Ground?</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/brian/">Brian</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/how-cold-is-the-ground-/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-05-18T00:20:00Z" itemprop="datePublished" title="2012-05-18 00:20">2012-05-18 00:20</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>It snowed in Ithaca a few weeks ago. Which sucked. But fortunately, it
+had been warm for the previous few days, and the ground was still warm
+so the snow melted fast. Aside from letting me enjoy the absurd
+arguments against global warming that snow in April birthed, this got me
+thinking: How cold is the ground throughout the year? At night vs.
+during the day? And the corollary: How cold is my basement? If I dig a
+deeper basement, can I save on heating and cooling? (I'm very cheap.)</p>
+<p>Well, we want to know the temperature distribution $T$ of the ground as
+a function of time $t$ and position $x$. So some googlin' or previous
+knowledge shows that we need to solve the 
+<a href="http://en.wikipedia.org/wiki/Heat_equation">heat equation</a>. </p>
+<p>For our purposes,
+we can treat the Earth as flat (I don't plan on digging a basement deep
+enough to see the curvature of the Earth), so we can assume the
+temperature only changes with the depth into the ground $x$: </p>
+<p>$$ \frac{\partial T}{\partial t} = a \frac{\partial^2 T}{\partial x^2}\qquad (1) $$ </p>
+<p>where $a$ is the thermal diffusivity of the material, in
+units of square meters per second. It looks like we're going to have to
+solve some partial differential equations! Or will we? We can get a very
+good estimate of how much the temperature changes with depth just by
+dimensional analysis. </p>
+<p>Let's measure our time $t$ in terms of a
+characteristic time of our problem $w$ 
+(it could be 1 year if we were trying to see the change in the ground's temperature from summer to winter, 
+or 1 day if we were looking at the change from day to night).
+Then we can write: </p>
+<p>$$ \frac{\partial T }{\partial t} = \frac{1}{w} \frac {\partial T} {\partial t/w} $$ </p>
+<p>plugging this in Eq. (1),
+rearranging, and calling $l= \sqrt{wa}$ gives.... </p>
+<p>$$ \frac{\partial T}{\partial (t/w)} = \frac{\partial ^2 T}{\partial (x/l )^2} $$ </p>
+<p>Now let's say we didn't know how to or didn't want to solve
+this equation. (Don't worry, we do &amp; we will). From rearranging this
+equation, we see right away there is only one "length scale" in the
+problem, $l$. So if we had to guess, we could guess that the ground
+changes temperature a distance $l$ into the ground. A quick look at
+Wikipedia for 
+<a href="http://en.wikipedia.org/wiki/Thermal_diffusivity">thermal diffusivities</a> 
+gives us the following table, for materials we'd find in the ground:</p>
+<table>
+<thead><tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>blloop</p>
+<table>
+<thead><tr>
+<th>Material</th>
+<th align="center">$a$ (${\rm mm}^2 / {\rm s}$)</th>
+<th align="center">$l$ ($\rm{cm}$, $1~{\rm day}$)</th>
+<th align="center">$l$  ($\rm{m}$, $1~{\rm year}$)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Polycrystalline Silica (glass, sand)</td>
+<td align="center">0.83</td>
+<td align="center">27</td>
+<td align="center">5.1</td>
+</tr>
+<tr>
+<td>Crystalline Silica (quartz)</td>
+<td align="center">1.4</td>
+<td align="center">35</td>
+<td align="center">6.6</td>
+</tr>
+<tr>
+<td>Sandstone</td>
+<td align="center">1.15</td>
+<td align="center">32</td>
+<td align="center">6.0</td>
+</tr>
+<tr>
+<td>Brick</td>
+<td align="center">0.52</td>
+<td align="center">21</td>
+<td align="center">4.0</td>
+</tr>
+<tr>
+<td><a href="http://soilphysics.okstate.edu/software/SoilTemperature/document.pdf">Soil</a></td>
+<td align="center">0.3-1.25</td>
+<td align="center">16-33</td>
+<td align="center">3.1-6.3</td>
+</tr>
+</tbody>
+</table>
+<p>So we would expect that the temperature of the ground doesn't change
+much on a daily basis a foot or so below the ground, and doesn't change
+ever about 15-20 feet into the ground. Just to pat ourselves on the back
+for our skills at dimensional analysis, a quick check shows that
+<a href="http://en.wikipedia.org/wiki/Permafrost#Time_to_form_deep_permafrost">permafrost</a>
+penetrates 14.6 feet into the ground after 1 year. So our dimensional
+estimates looks pretty good! In the next few days I'll solve this
+equation exactly and throw up a few pretty graphs, and maybe talk a
+little about PDE's and Fourier series in the process.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/end-of-the-earth-vii-the-big-freeze/" class="u-url">End of the Earth VII: The Big Freeze</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/jesse/">Jesse</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/end-of-the-earth-vii-the-big-freeze/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-04-22T19:34:00Z" itemprop="datePublished" title="2012-04-22 19:34">2012-04-22 19:34</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<hr>
+<p><a href="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s1600/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg"><img alt="image" src="http://1.bp.blogspot.com/-c8vJR4CVwZc/T5R7_62SLuI/AAAAAAAAAHU/POCT5Fhx-CQ/s320/Space_Scene_Frozen_Earth_WP_BG_by_PimArt.jpg"></a>
+  http://tinyurl.com/7rdj996</p>
+<hr>
+<p>It is traditional here at The Virtuosi to
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-i.html">plot</a>
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-ii-blaze-of-glory.html">the</a>
+<a href="http://thevirtuosi.blogspot.com/2010/04/end-of-earth-physics-iii-asteroids.html">destruction</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-iv-shocking-destruction.html">of</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-v-there-goes-sun.html">the</a>
+<a href="http://thevirtuosi.blogspot.com/2011/04/end-of-earth-vi-nanobot-destruction.html">earth</a>.
+We also are making secret plans for our volcano lair and death ray.
+However, since it is earth day, we will only share with you the plans
+for the total doom of the earth, not the cybernetically enhanced guard
+dogs we're building for our <a href="http://thevirtuosi.blogspot.com/2012/04/earth-day-2012-escape-to-moon.html">moon
+base</a>.
+The plan I reveal today is elegant in its simplicity. I intend to alter
+the orbit of the earth enough to cause the earth to freeze, thus ending
+life as we know it. According to the internet at large, the average
+surface temperature of the earth is \~15 C. This average surface
+temperature is directly related to the power output of the sun. More
+precisely, it is directly related to the radiated power from the sun
+that the earth absorbs. Assuming that the earth's temperature is not
+changing (true enough for our purposes), the then power radiated by the
+earth must be equal to the power absorbed from the sun. More precisely
+$$ P_{rad,earth}=P_{abs,sun}$$ Now, the radiated power goes as
+$$P_{rad}=\epsilon \sigma A_{earth} T^4 $$ where A_earth is the
+surface area of the earth, T is the temperature of the earth, and
+epsilon and sigma are constants. I'll be conservative and say that I
+want to cool the temperature of the earth down to 0 C. The ratio of the
+power the earth will emit is
+$$\frac{P_{new}}{P_{old}}=\frac{T_{new}^4}{T_{old}^4} \approx
+.81$$ Note that the temperature ratio must be done in Kelvin. The power
+radiated by the sun (or any star) drops off as the inverse square of the
+distance from the sun to the point of interest: $$P_{sun} \sim
+\frac{1}{r^2} $$ To reduce the power the earth receives from the sun
+to 81% of the current value would require
+$$\frac{P_{sun,new}}{P_{sun,old}}=\frac{r_{old}^2}{r_{new}^2}=.81
+$$ This tells us that the new earth-sun distance must be larger than the
+old (a good sanity check). In fact, it gives $$r_{new}=1.11 r_{old} $$
+So I'll need to move the earth by 11% of the current distance from the
+earth to the sun. No small task! The earth is in a circular orbit (or
+close enough). To change to a circular orbit of larger radius requires
+two applications of thrust at opposite points in the orbit It turns out
+that the required boost in speed (the ratio of the speeds just before
+and after applying thrust) for the first boost of an object changing
+orbits is given by
+$$\frac{v_{f}}{v_{i}}=\sqrt{\frac{2R_{f}}{R_i+R_f}}=1.026$$ To
+move from the transfer orbit to the final circular orbit requires
+$$\frac{v_{f}}{v_{i}}=\sqrt{\frac{R_{i}+R_f}{2R_i}}=1.027$$ Note
+that despite the fact that we boost the velocity at both points, the
+velocity of the final orbit is less than that of the initial. Now, how
+could we apply that much thrust? Well, the change in momentum for the
+earth from each stage is roughly (ignoring the slight velocity increase
+of the transfer orbit) $$\Delta p = .03M_E v_E $$ The mass of the
+earth is \~6<em>10^24 kg, the orbital velocity is \~30 km/s, so $$\Delta
+p = 5\cdot 10^{27} kg</em>m/s$$ A solid rocket booster (the booster
+rocket used for shuttle launches, when those still happened) can apply
+about 12 MN of force for 75 s (thank you wikipedia). That's a net
+momentum change of \~900 <em>10^9 kg</em>m/s (900 billion!). So we would
+only need $$\frac{2*5\cdot 10^{27}}{9\cdot 10^{11}}=12 \cdot
+10^{15}$$ That's right, only 12 million billion booster rockets! With
+those I can freeze the earth. I assure you that this plan is proceeding
+on schedule, and will be ready shortly after we have constructed our
+volcano lair.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/earth-day-2012-escape-to-the-moon/" class="u-url">Earth Day 2012: Escape to the Moon</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/brian/">Brian</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/earth-day-2012-escape-to-the-moon/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-04-22T15:12:00Z" itemprop="datePublished" title="2012-04-22 15:12">2012-04-22 15:12</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <p>It is now Earth Day 2012, and, according to the Mayan predictions, <a href="http://thevirtuosi.blogspot.com/search/label/end%20of%20the%20earth">The
+Virtuosi will destroy the
+earth</a>.
+In a futile attempt to fight my own mortality, I decided to send
+something to the Moon. It seems, for a poor graduate student trying to
+get to the Moon, the most difficult part is the Earth holding me back.
+So first I'll focus on escaping the Earth's gravitational potential
+well, and if that's possible, then I'll worry about more technical
+problems, such as actually hitting the moon. Moreover, in honor of the
+destructive spirit of The Virtuosi near Earth Day, I'll try to do this
+in the most Wiley-Coyote-esque way possible. <strong>Preliminaries</strong> If we
+want to get to the Moon, we need to first figure out how much energy
+we'll need to escape the Earth's gravitational pull. "That's easy!" you
+say. "We need to escape a gravitational well, and we know from Newton's
+law that the potential from a spherical mass <em>ME</em> 's gravity for a test
+mass <em>m</em> is : \begin{equation} \Phi = - \frac {G M_{E} m}{r}
+\label{eqn:gravpot} \end{equation} We're currently sitting at the
+radius of the Earth <em>RE</em>, so we simply need to plug this value in and
+we'll find out how much energy we need." This is all well and good, but
+i) I can never remember what the gravitational constant <em>G</em> is, and ii)
+I have no idea what the mass of the Earth <em>ME</em> is. So let's see if we
+can recast this in a form that's easier to do mental arithmetic in.
+Well, we know that the force of gravity is the related to the potential
+by: $$ \vec{F}(r) = - \vec{\nabla} \Phi = - \frac {d\Phi}{dr}
+\hat{r} \ \vec{F} = - \frac {G m M_E } {r^2}
+\label{eqn:gravforce} $$ Moreover, we all know that the force of
+gravity at the Earth's surface is <em>F(r=RE)=-mg</em>. Substituting this in
+gives: $$ \frac {G m M_E} {R_E^2} = m g \quad \textrm{, or} $$
+\begin{equation} \frac {G m M_E}{R_E} = m g {R_E} \quad .
+\label{eqn:betterDef} \end{equation} So the depth of the Earth's
+potential well at the Earth's surface is <em>mgRE</em>. If we use <em>g</em> = 9.8
+m/s^2 \~ 10 m/s^2 and <em>RE</em> = 6378 km \~ 6x10^6 m, then we can write
+this as \begin{equation} \Delta \Phi = m g {R_E} \approx m \times
+6 \times 10^7 \textrm{m}^2/\textrm{s}^2 \quad \textrm{(1)},
+\end{equation} give or take. How fast do we need to go if we're going
+to make it to the Moon? Well, at the minimum, we need the kinetic energy
+of our object to be equal to the depth of the potential well
+<a href="posts/old/earth-day-2012-escape-to-the-moon/#footnote-1">[1]</a>, or $$ \frac 1 2 m v^2 = 6 m \times 10^7
+\textrm{m}^2/\textrm{s}^2 \quad \textrm{or} \ v \approx 1.1
+\times 10^4 \textrm{ m/s (2)} . $$ So we need to go pretty fast --
+this is about Mach 33 (33 times the speed of sound in air). At this
+speed, we'd get from NYC to LA in under 7 minutes. Looks difficult, but
+let's see just how difficult it is. <strong>Attempt I: Shoot to the Moon</strong>
+What goes fast? Bullets go fast. Can we shoot our payload to the moon?
+Let's make some quick estimates. First, can we shoot a regular bullet to
+the moon? Well, we said that we need to go about Mach 33, and a fast
+bullet only goes about Mach 2, so we won't even get close. Since energy
+is proportional to velocity squared, we'll only have (2/33)^2 \~ 0.4 %
+of the necessary kinetic energy. <a href="posts/old/earth-day-2012-escape-to-the-moon/#footnote-2">[2]</a> So let's make a
+bigger bullet. How big does it need to be? Well, loosely speaking, we
+have the chemical potential energy of the powder being converted into
+kinetic energy of the bullet. Let's assume that the kinetic energy
+transfer ratio of the powder is constant. If a bullet receives kinetic
+energy <em>1/2mbvb^2</em> from a mass <em>mP</em> of powder, then for our payload to
+have kinetic energy <em>1/2 M V^2</em>, we need a mass of powder <em>MP</em> such
+that \begin{equation} \frac {M_P} {m_P} = \frac M {m_b} \times
+\frac {V^2}{v_b^2} \end{equation} A quick reference to Wikipedia
+for a <a href="http://en.wikipedia.org/wiki/7.62%C3%9751mm_NATO">7.62x51mm NATO
+bullet</a> shows that
+\~25 grams of powder propels a \~10 gram bullet at a speed of \~Mach
+2.5. We need to get our payload moving at Mach 33, so (<em>V/vb</em>)^2 \~
+175. If we send a 10 kg payload to the Moon, we have <em>M/mb</em> \~ 1000. So
+we'll need about 1.75 x 10^5 the amount of powder of a bullet to get us
+to the Moon, or about 4400 kg, which is 4.8 tons (English) of powder.
+That's a lot of gunpowder to get us to the Moon. For comparison, if we
+are going to construct a tube-like "case" for our 10 kg
+bullet-to-the-Moon, it will have to be about half a meter in diameter
+and 17 feet tall. So I'm not going to be able to shoot anything to the
+Moon anytime soon. <strong>Attempt II: Charge to the Moon</strong> OK, shooting
+something to the Moon is out. Can we use an electric field to propel
+something to the Moon? Well, we would need to pass a charged object
+through a potential difference such that \begin{equation} q \Delta
+\Phi_E = m g R_E = 6 m \times 10^7 \textrm{m}^2/\textrm{s}^2
+\quad . \label{eqn:chargepot} \end{equation} After the humiliation of
+the last section, let's start out small. Can we send an electron to the
+Moon? We could plug numbers into this equation, but I'm too lazy to look
+up all those values. Instead, we know that we need to get our electron
+(rest mass 511 keV) to a speed which is (Eq. 2) $$v \approx 1.1 \times
+10^4 \textrm{m/s} \approx 4 \times 10^{-5} c. $$ So an electron
+moving at this velocity will have a kinetic energy of $$ \textrm{KE} =
+m c^2 \times \frac 1 2 \frac {v^2}{c^2} = 511 \textrm{ keV}
+\times \frac 1 2 \frac {v^2}{c^2} \ \qquad \approx 511
+\textrm{ keV} \times 0.8 \times 10^{-9} \approx 0.4 \times
+10^{-3} eV. $$ So we can give an electron enough kinetic energy to get
+to the moon with a voltage difference of 0.4 mV, assuming it doesn't hit
+anything on the way up (it will). We can send an electron to the Moon!
+How about a proton? Well, the mass of a proton is 1836x that of an
+electron, but with the same charge, so we'd need 1836 * 0.4 mV \~ 0.73
+V to get a proton to the Moon -- again, pretty easy. Continuing this
+logic, we can send a singly-charged ion with mass 12 amu (<em>i.e.</em> C-)
+with a 9V battery, and a singly-charged ion with mass 150 amu (something
+like caprylic acid) using a 110V voltage drop. (Again, assuming these
+don't hit anything on the way up.) How about our 10 kg object? Let's say
+we can miraculously charge it with 0.01 C of charge. <a href="posts/old/earth-day-2012-escape-to-the-moon/#footnote-3">[3]</a>
+Then from Eq. (1), we'd need $$ 0.01 C \times \Delta \Phi_E \approx
+6 \times 10^8 \textrm{ J ,} $$ or a potential difference of $$
+\Delta \Phi_E = 6 \times 10^{10} \textrm{ V. } $$ That is a HUGE
+potential drop. For comparison, if we have 2 parallel plates with a
+surface charge of 0.01 C/m^2 (again, a huge charge density), they'd
+have to be a distance $$ d = 6 \times 10^{10} \textrm{V} \times
+\epsilon_0 / (0.01 \textrm{C/m}^2) \approx 53 \textrm{ meters
+apart} $$ It looks like I won't be able to send something to the Moon
+using tools from my basement anytime soon.
+[1] We'll ignore both air resistance and the Moon's gravitational
+attraction for simplicity.
+[2] Since the potential <em>U \~ - 1/r</em>, if we increase our potential
+energy by 0.4%, this is (to 1st order) the same as increasing <em>r</em> by
+0.4%. So we'll get 0.004 * 6378 km \~ 25 km above the Earth's surface.
+Of course <a href="http://scienceblogs.com/dotphysics/2009/09/how-high-does-a-bullet-go.php">air resistance slows it down a
+lot</a>.
+[3] According to Wikipedia, this is <a href="http://en.wikipedia.org/wiki/Orders_of_magnitude_%28charge%29">0.04% of the total charge of a
+thundercloud</a>.
+And if our object is uniformly charged with a radius of 1 m, it will
+have an electrical self-energy of ** $$ U = \frac 1 2 \int
+\epsilon_0 E^2 dV \approx 36 \textrm{kJ} $$</p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/money-for-almost-nothing/" class="u-url">Money for (almost) Nothing</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/corky/">Corky</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/money-for-almost-nothing/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-29T01:27:00Z" itemprop="datePublished" title="2012-03-29 01:27">2012-03-29 01:27</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<hr>
+<p><a href="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s1600/mega_millions.png"><img alt="image" src="http://4.bp.blogspot.com/-j1vgDeAaElw/T3O5K09X6XI/AAAAAAAAAW0/b3uIqmdtPl4/s320/mega_millions.png"></a>
+  Five Hundred Mega Dollars, to be precise. (Image from Wikipedia)</p>
+<hr>
+<p>I am not typically interested in lotteries. They seem silly and I am
+seriously beginning to question their usefulness in bringing about a
+<a href="http://en.wikipedia.org/wiki/The_Lottery">good harvest</a>. But this
+morning I read in the news that the Mega Millions lottery currently has
+a <a href="http://en.wikipedia.org/wiki/Mega_Millions#Record_jackpots_.28listed_by_cash_value.29">world
+record</a>
+jackpot up for grabs. In fact, the jackpot is so big...</p>
+<p>Tonight Show Audience: <em>HOW BIG IS IT?</em></p>
+<p>**</p>
+<p>It is <em>so big</em> that I decided to do a little bit of analysis on the
+expected returns. Zing!</p>
+<h3>Some Background</h3>
+<p>First, a little background. The Mega Millions lottery is an aptly named
+lottery in which numbered ping pong balls are pulled from a giant
+rotating tub of randomization. Five of these are drawn from one tub of
+56 balls, with no replacement. The sixth ball (the so-called "Mega
+Ball") is drawn from a <em>separate</em>tub of 46 balls. To play, one picks 5
+different numbers (1-56) for the regular draws and one number (1-46) for
+the Mega Ball. The first five can match in any order, but the last ball
+has to match with the Mega Ball. Prizes are given out based on how many
+numbers you match. Stolen from the Mega Millions website, the prizes and
+odds are given in the table below. The current jackpot is listed at $500
+million (if taken in annuity) or $359 million if taken in an up-front
+lump sum. It costs $1 dollar to play.</p>
+<hr>
+<p><a href="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s1600/crummy_table.gif"><img alt="image" src="http://3.bp.blogspot.com/-Zi3rSfNqtuI/T3PHTEaXmvI/AAAAAAAAAXE/y9Hs7fqWrgs/s320/crummy_table.gif"></a>
+  Don't worry about the asterisk. It just says CA is lame. (Source: <a href="http://www.megamillions.com/howto/">Mega Millions</a>)</p>
+<hr>
+<p>Hot diggity daffodil, we're ready to get going!</p>
+<h3>Expected Winnings</h3>
+<p>Alright, so it costs $1 to play and we could potentially win $500
+million. It sure <em>feels</em> like it is worth it to play (what's the harm?).
+But we can do better than feelings, we have... MATH!</p>
+<p>Since we have an exhaustive list of outcomes and their probabilities
+(which is just the inverse of the big number in the "chances" column),
+we can calculate the expectation value for our winnings. The expectation
+value is just the sum over all the possible prize values times the
+probability of winning that prize. In other words,</p>
+<p>$$\langle W \rangle = \sum_i W_i \times p_i, $$</p>
+<p>where we denote our expected winnings in angled brackets.</p>
+<p>In essence, this value represents the average prize you would win if you
+played this lottery over and over and over again (or played all the
+combinations of numbers).</p>
+<p>Setting the jackpot to $500 million, we can now compute the expected
+winnings as</p>
+<p>$$ \langle W \rangle = \frac{\$ 500,000,000}{175,711,536} +
+\frac{\$ 250,000}{3,904,701} +\frac{\$ 10,000}{689,065} + \frac{\$
+150}{15,313} + \frac{\$ 150}{13,781} $$</p>
+<p>$$+ \frac{\$ 10}{844} + \frac{\$ 7}{306} + \frac{\$ 3}{141} +
+\frac{\$ 2}{75}$$</p>
+<p>A few flicks of the abacus later, we find that the expectation value of
+our prize is</p>
+<p>$$\langle W \rangle = \$ 3.02,$$</p>
+<p>which means that after we subtract the dollar we paid for the ticket,
+our expected return is $2.02.</p>
+<p>But what if we had chosen to take our winnings as a lump sum of $359
+million instead of the $500 million paid out over a span of 26 years? In
+that case we find</p>
+<p>$$\langle W \rangle = \$ 2.22,$$</p>
+<p>which results in a $1.22 gain when we subtract the dollar we paid for
+the ticket.</p>
+<p>At least in a statistical sense for this particular jackpot, one is
+better off playing than not playing. But are we forgetting anything?</p>
+<h3>The Taxman</h3>
+<p>If you win a $500 million jackpot, do you <em>really</em> get a $500 million
+jackpot? Well, no. For winnings in a lottery over $5000, the IRS
+<a href="http://www.irs.gov/instructions/iw2g/ar02.html#d0e401">withholds</a> 25%
+in federal income taxes. Additionally, the winnings are subject to state
+taxes as well. For example, if I were to win, the great state of New
+York would be entitled to about 6.8% (apparently also just for winnings
+above $5000).</p>
+<p>After applying federal and state taxes to the prizes above $5000, we now
+have an expected winnings of</p>
+<p>$$ \langle W \rangle = \left[1-(0.25 +
+0.068)\right]\times\left(\frac{\mbox{Jackpot}}{175,711,536} +
+\frac{\$ 250,000}{3,904,701} +\frac{\$ 10,000}{689,065}\right) $$</p>
+<p>$$+ \frac{\$ 150}{15,313} + \frac{\$ 150}{13,781}+ \frac{\$
+10}{844} + \frac{\$ 7}{306} + \frac{\$ 3}{141} + \frac{\$
+2}{75},$$</p>
+<p>which gives an expected net win (minus the $1 for the ticket) of $1.10
+for the $500 million annuity prize and $0.55 for the $359 million
+up-front lump sum.</p>
+<p>We're still in the black, but it's slowly slipping away. Is there
+anything else we need to factor in? Well, yes. For one thing, winning
+the jackpot qualifies us for the top tax bracket, so most of the
+winnings would be taxed at the top marginal tax rate of 35%. Welcome to
+the 1%, kids! <a href="posts/old/money-for-almost-nothing/#note">[1]</a>.</p>
+<p>Changing the federal tax rate on the jackpot from 25% to 35% and
+recalculating, we find net expected winnings of $0.81 for the $500
+million annuity and $0.34 for the $359 million lump sum. Surprisingly,
+it is still worth it in a statistical sense.</p>
+<h3>Is it always like this?</h3>
+<p>One thing to keep in mind as we make these estimates is that this is a
+<em>historically large</em> jackpot. So even though it may be favorable to play
+this time, this will not always be the case. In fact, we can find the
+minimum jackpot value for which this is the case.</p>
+<p>The condition in which our expected return is a gain (rather than a
+loss) is</p>
+<p>$$ \langle W \rangle - \$1.00 &gt; 0. $$</p>
+<p>For simplicity, let's ignore the top marginal tax rate and just factor
+in the 25% withholding and the 6.8% state tax. Solving for the minimum
+jackpot using the expression for we found in the last section, we see
+that</p>
+<p>$$ \mbox{Jackpot}_{min} = \$217\~\mbox{million}.$$</p>
+<p>Technically, this would have to be the amount actually awarded by the
+payment method of your choice. The <em>stated</em> jackpot is always the
+annuity method (because it looks higher). The lump sum offering is <em>at
+most</em> about 70% of the stated jackpot. So if you want to take the lump
+sum offering the <em>stated</em> jackpot will need to be</p>
+<p>$$ \mbox{Jackpot}_{min} = \$217\~\mbox{million} / 0.7 =
+\$310\~\mbox{million}.$$</p>
+<p>In fact, these values are likely a bit low, since we have not included
+the increase to the marginal tax rate, nor have we included other
+effects like having to split a prize (which seems to happen a lot) or
+inflation effects if you take the prize in yearly installments.</p>
+<p>In any case, a quick look through the <a href="http://www.megamillions.com/winners/jackpothistory.asp">jackpot
+history</a> shows
+that these threshold values are only met occasionally. An eyeball
+estimate puts about one jackpot per year that exceeds the (absolute)
+minimum $217 million threshold.</p>
+<h3>So am I going to win?</h3>
+<p>No. No, you will not. BUT if you played record setting lotteries
+hundreds of millions of times, you might see decent (\~10%) returns.
+Although, it may just be easiest to, you know, <em>invest</em> that money.</p>
+<h5>Only One Useless Footnote</h5>
+<p>[1] Although, to be fair, the top marginal tax rate is currently at
+<a href="http://en.wikipedia.org/wiki/File:MarginalIncomeTax.svg">historical
+lows</a>. It could
+always be worse... <a href="posts/old/money-for-almost-nothing/#back">[back]</a></p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/pi-storage/" class="u-url">Pi storage</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/alemi/">Alemi</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/pi-storage/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-14T15:13:00Z" itemprop="datePublished" title="2012-03-14 15:13">2012-03-14 15:13</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p><a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"><img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"></a></p>
+<p>Let me share my worst "best idea ever" moment. Sometime during my
+undergraduate I thought I had solved all the world's problems. You see,
+on this fateful day, my hard drive was full. I hate it when my hard
+drive fills up, it means I have to go and get rid of some of my stuff. I
+hate getting rid of my stuff. But what can someone do? And then it hit
+me, I had the bright idea:</p>
+<blockquote>
+<p>What if we didn't have to <em>store</em> things, what if we could just
+<em>compute</em> files whenever we wanted them back?</p>
+</blockquote>
+<p>Sounds like an awesome idea, right? I know. But how could we compute our
+files? Well, as you may know pi is conjectured to be a <a href="http://en.wikipedia.org/wiki/Normal_number">normal
+number</a>, meaning its digits
+are probably random. We also know that it is irrational, meaning pi
+never ends.... Since its digits are random, and they never end, in
+principle any sequence you could ever imagine should show up in pi
+eventually. In fact there is a nifty website
+<a href="http://pi.nersc.gov/">here</a> that will let you search for arbitrary
+strings (using a 5-bit format) in first 4 billion digits, for example
+"alemi" <a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;format=char">seems to show
+up</a> at around
+digit 3149096356. So in principle, I could send you just an index, and a
+length, and you could compute the resulting file. But wait you cry,
+isn't computing digits of pi hard, don't people work really hard to
+compute pi farther and farther? Hold on I claim, first of all, I'm
+imagining a future where computation is cheap. Secondly, there is a
+really neat algorithm, the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula">BBP
+algorithm</a>,
+that enables you to compute the kth binary digit of pi without knowing
+any of the preceding digits. In other words, in principle if you wanted
+to know the 4 billionth digit of pi, you can compute it without having
+to first compute the first 4 billion other digits. Cool, this is
+beginning to sound like a really good idea. What's the catch? Perhaps
+you've already gotten a taste of it. Let's try to estimate just how far
+along in pi we would have to look before our message of interest shows
+up. Let's assume we have written our file in binary, and are computing
+pi in binary e.g.</p>
+<blockquote>
+<ol>
+<li>00100100 00111111 01101010 10001000 10000101 10100011 00001000
+11010011</li>
+</ol>
+</blockquote>
+<p>etc. So, if the sequence is random, there is a 1/2 chance that at any
+point we get the right starting bit of our file, and then a 1/2 chance
+we get the next one, etc. So the chance that we would create our file if
+we were randomly flipping coins would be $$ P = \left( \frac{1}{2}
+\right)^N = 2^{-N} $$ if our file was N bits long. So where do we
+expect this sequence to first show up in the digits of pi? Well, this
+turns out to be a <a href="http://mathworld.wolfram.com/CoinTossing.html">subtle
+problem</a>, but we can get
+a feel for it by assuming that we compute N digits of pi at a time and
+see if its right or not. If its not, we move on to the next group of N
+digits, if its right, we're done. If this were the case, we should
+expect to have to draw about $$ \frac{1}{P} = 2^N $$ times until we
+have a success, and since each trial ate up N digits, we should expect
+to see our file show up after about $$ N 2^N $$ digits of pi. Great, so
+instead of handing you the file, I could just hand you the index the
+file is located. But how many bits would I need to tell you that index.
+Well, just like we know that 10^3 takes 4 digits to express in decimal,
+and 6 x 10^7 takes 8 digits to express, in general it takes $$ d =
+\log_b x + 1 $$ digits to express a number in base b, in this case it
+takes $$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N
++ \log_2 N + 1 $$ digits to express this index in binary. And there's
+the rub. Instead of sending you N bits of information contained in the
+file, all my genius compression algorithm has manged to do is replace N
+bits of information in the file, with a number that takes ( \~ N +
+\log_2 N ) bits to express. I've actually managed to make the files
+larger not smaller! You may have noticed above, that even for the simple
+case of "alemi", all I managed to do was swap the binary message</p>
+<blockquote>
+<p>alemi -&gt; 0000101100001010110101001 with the index 3149096356 -&gt;
+10111011101100110110010110100100</p>
+</blockquote>
+<p>which is longer in binary! As an aside, you may have felt uncomfortable
+with my estimation for how long we have to wait to see our message, and
+you would be right. Just because all N digits I draw at a time don't
+match up doesn't mean that the second half isn't useful. For instance if
+I was looking for 010, lets say some of the digits are 101,010. While
+both of those sequences didn't match, if I was looking at every digit at
+a time, I would have found a match. And you'd be right. <a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf">Smarter people
+than I</a> have
+computed just how long you should have to wait, and end up with the
+better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
+pretty darn close to our silly estimate.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/calculator-pi/" class="u-url">Calculator Pi</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/alemi/">Alemi</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/calculator-pi/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-14T14:16:00Z" itemprop="datePublished" title="2012-03-14 14:16">2012-03-14 14:16</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p>There is a very fast converging algorithm for computing pi that you can
+do on a desktop calculator.</p>
+<ul>
+<li>Set x = 3</li>
+<li>Now set x = x + sin(x)</li>
+<li>Repeat</li>
+</ul>
+<p>This converges ridiculously fast, after 1 step you get 4 digits right,
+after 2 steps you get 11 correct, in general we find:</p>
+<hr>
+<p># steps   Digits right
+  1          4
+  2          11
+  3          33
+  4          100
+  5          301
+  6          903
+  7          2708
+  8          8124</p>
+<hr>
+<p>of course on a pocket calculator, you only need to do 2 steps to have an
+accuracy greater than the calculator can display. To make this chart I
+had to trick a computer into doing high precision arithmetic, the code
+is <a href="https://gist.github.com/2038329">here</a>. Granted, this approximation
+is really cheating, since sin is a hard function to compute, and
+basically being able to compute sin means you know what pi is already.
+Really, this is just <a href="http://en.wikipedia.org/wiki/Newton's_method">Newton's
+method</a> for computing the
+root of sin(x) in disguise</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/a-clarification/" class="u-url">A Clarification</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/yariv/">Yariv</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/a-clarification/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-14T12:20:00Z" itemprop="datePublished" title="2012-03-14 12:20">2012-03-14 12:20</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <p>As there seems to be some
+<a href="http://en.wikipedia.org/wiki/Date_format#Date_format">confusion</a> among
+my fellow Virtuosi, I wanted to point out that Pi day occurs on July
+22nd or, in the year 4159, on January 3rd. Today is in fact <a href="http://en.wikipedia.org/wiki/Waring%27s_problem">Seventh
+Power Day</a>.</p>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/pi-rithmetic/" class="u-url">Pi-rithmetic</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/alemi/">Alemi</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/pi-rithmetic/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-14T11:52:00Z" itemprop="datePublished" title="2012-03-14 11:52">2012-03-14 11:52</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<p><a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg"><img alt="image" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg"></a></p>
+<p>Fun fact: pi squared is very close to 10. How close? Well, <a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2">Wolfram
+Alpha</a>
+tells me that it is only about 1% off. I first realized this fact when
+looking at my slide rule, pictured to the left (click to embiggen), just
+another reason why slide rules are awesome. It turns out I use this fact
+all of the time. How's that you ask? Well, I use this fast to enable me
+to do very quick mental arithmetic. It goes like this. For every number
+you come across in a calculation, drop all of the information save two
+parts, first, what's its order of magnitude, that is, how many digits
+does it have, and second, is it closest to 1, pi, or 10? The first part
+amounts to thinking of every number you come across as it looks in
+scientific notation, so a number like 2342 turns into 2.342 x 10^3, so
+that I've captured its magnitude in a power of 10. As for the next part,
+the rules I usually use are:</p>
+<ul>
+<li>If the remaining bit is between 1 and 2, make it 1</li>
+<li>If its between 2 and 6.5 make it pi</li>
+<li>if its bigger than 6.5, make it another 10</li>
+</ul>
+<p>Another way to think of this is to estimate every number to be a power
+of ten, and then either 1, a few, or 10. The reason I choose pi is
+because if I use pi, I know how the rest of the arithmetic should work,
+namely, I only need to know a few rules, plus when I use this to
+estimate answers of physics formulae, making a bunch of pis show up
+tends to help me cancel other natural pis that are in the formulae.</p>
+<p>$$ \pi \times \pi \sim10 \qquad \frac{1}{\pi} \sim
+\frac{\pi}{10} \qquad \sqrt{10} \sim \pi $$</p>
+<p>Which you might notice is just the same approximation written in 3
+different ways.</p>
+<p>Let's work an example</p>
+<p>$$ \begin{align<em>} 23 \times 78 / 13 \times 2133 &amp;= ? \ \pi
+\times 10 \times 100 / 10 \times \pi \times 10^3 &amp;= ? \ \pi^2
+\times 10^5 &amp;\sim 10^6 \ \end{align</em>}$$</p>
+<p>of course the <a href="http://www.wolframalpha.com/input/?i=23+*+78%2F13+*+2133">real
+answer</a> is
+294,354, so you'll notice I got the answer wrong, but I only got it
+wrong by a factor of 3, which is pretty good for mental arithmetic, and
+in particular mental arithmetic that takes no time flat.</p>
+<p>In fact, the average error I introduce by using this approximation is
+just 30% or so for each number, which I've shown below [the script that
+produced this plot for those interested is
+<a href="https://gist.github.com/2037431">here</a>].</p>
+<p><a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png"><img alt="image" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png"></a></p>
+<p>So, there you go, now you can impress all of your friends with a simple
+mental arithmetic that gets you within a factor of 3 or so on average.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/old/moving-pi-ctures/" class="u-url">Moving Pi-ctures</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        <a href="authors/corky/">Corky</a>
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/old/moving-pi-ctures/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-03-14T08:35:00Z" itemprop="datePublished" title="2012-03-14 08:35">2012-03-14 08:35</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
+<hr>
+<p><a href="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s1600/tv_pi.jpg"><img alt="image" src="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s320/tv_pi.jpg"></a>
+  My TV celebrates without me.</p>
+<hr>
+<p>Today, as I'm sure you're aware, is Pi Day - a day for the festive
+consumption of pies and quiet self-reflection. In the spirit of the
+holiday, I'd like to present a point for discussion: <em>Everyone has a
+great talent for at least one thing.</em> That this is true for at least
+<em>some</em> people is seen through even a cursory glance at a history book:
+George Washington was really good at leading revolutions, Michelangelo
+was an outstanding ceiling painter <a href="posts/old/moving-pi-ctures/#note1">[1]</a>, and Batman was the
+best at solving complex riddles (especially in English, pero
+<em>especialmente</em> <a href="http://www.youtube.com/watch?v=RY1U_pXUxUo&amp;feature=related">en
+español</a>).
+But I'm certain that this holds for everyone. What's your talent? Mine,
+as those of you who read this blog should know very well by now, is
+certainly <em>not</em> doing physics. Nope, my talent is watching TV. Seriously
+guys, I watch TV like a boss <a href="posts/old/moving-pi-ctures/#note2">[2]</a>. In light of this talent, I
+thought I would describe a few instances in which I have seen pi
+represented (for better or for worse) in TV and movies. Over the last
+few months, I have been re-watching a lot of the TV show
+<em><a href="http://en.wikipedia.org/wiki/Psych">Psych</a></em> with my good friend and
+fellow Virtuosi contributor, Matt "TT" Showbiz <a href="posts/old/moving-pi-ctures/#note3">[3]</a>. For the
+uninitiated, <em>Psych</em> is a detective show where the main characters
+(Shawn and Gus) run a (fake) psychic detective agency, which allows them
+to solve mysteries, engage in various shenanigans, and make an
+inordinate number of references to <em>Tears for Fears</em> frontman Curt Smith
+<a href="posts/old/moving-pi-ctures/#note4">[4]</a>. In one of the episodes, Shawn and Gus enter a room where
+a long train of digits is written across the top of the wall. It soon
+becomes evident that these are the digits of pi and the camera is sure
+to zoom in on the famous first few digits to reassure us. But there are
+hundreds of digits written out and I have very little faith in TV prop
+people when it comes to background mathematical expressions. So I
+decided to check it out.</p>
+<hr>
+<p><a href="http://4.bp.blogspot.com/-sIqwUS9wlog/T17KQ7mU7nI/AAAAAAAAAV4/1hiiMuN-yxA/s1600/pi_psych1.png"><img alt="image" src="http://4.bp.blogspot.com/-sIqwUS9wlog/T17KQ7mU7nI/AAAAAAAAAV4/1hiiMuN-yxA/s400/pi_psych1.png"></a>
+  Pi on the Wall (click to enhance for texture)</p>
+<hr>
+<p>Using a neat little pi <a href="http://www.angio.net/pi/piquery">searcher</a>, I
+checked to see if (and where) this sequence appeared in pi. Turns out
+it's legit and (almost!) correct. The first 105 digits of pi (counting
+after the three) are:</p>
+<blockquote>
+<p>3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706<strong>798</strong>2148</p>
+</blockquote>
+<p>where I have underlined the 99th, 100th, and 101st digits. Looking back
+at the writing on the wall, we see that the 100th digit has been
+duplicated.</p>
+<hr>
+<p><a href="http://1.bp.blogspot.com/-6vQ2gmfNULw/T17Nb29jAvI/AAAAAAAAAWA/2hMW9vdU3S0/s1600/pi_psych.png"><img alt="image" src="http://1.bp.blogspot.com/-6vQ2gmfNULw/T17Nb29jAvI/AAAAAAAAAWA/2hMW9vdU3S0/s400/pi_psych.png"></a>
+  Very Almost Pi</p>
+<hr>
+<p>So close! Oh well, nobody is perfect. Even though there is an error
+here, I very much appreciate that whoever was doing the set design
+decided to use the <em>actual</em> digits of pi. All too often I see
+nonsensical equations in the background of TV shows and movies when it
+would take <em>exactly the same</em> amount of work to put real equations
+there. So congratulations to you, O nameless prop-making intern!, for
+giving an accurate (well, to a part in 10^100) value of pi. Neat, so
+are there any other TV shows or movies that have pi in them? Well,
+there's <a href="http://www.youtube.com/watch?v=jo18VIoR2xU">Pi</a>. <em>Pi</em> is film
+by Darren Aronofsky (<em>Requiem for a Dream</em>, etc) about a mathematician
+looking for patterns in the stock market. It's a pretty good movie with
+a really cool
+<a href="http://www.youtube.com/watch?v=9Cq_QO_4Cx4&amp;feature=player_embedded">soundtrack</a>
+by Clint Mansell. It also appears to display the digits of pi in the
+opening credits. But does it? To the Youtube-mobile! You can watch the
+opening credits <a href="http://www.youtube.com/watch?v=L61x5mbE-jc">here</a> if
+you like and here is a still image of the relevant section.</p>
+<hr>
+<p><a href="http://4.bp.blogspot.com/-pEbkgRx-PFw/T17UHYdfhwI/AAAAAAAAAWI/vsyzWd139pg/s1600/sad_pi.png"><img alt="image" src="http://4.bp.blogspot.com/-pEbkgRx-PFw/T17UHYdfhwI/AAAAAAAAAWI/vsyzWd139pg/s400/sad_pi.png"></a>
+  Pi?</p>
+<hr>
+<p>Looks pretty cool, huh? But once we get past the slick aesthetics, we
+see that something doesn't seem right. This number they are showing
+appears at first glance to be our good friend pi, but after the 8th
+digit the cover is blown and we see that this is actually some impostor
+number!</p>
+<hr>
+<p><a href="http://2.bp.blogspot.com/-5afmhwZOhWk/T17U-d1okrI/AAAAAAAAAWQ/KB7NHwwOvQg/s1600/verysadpi.png"><img alt="image" src="http://2.bp.blogspot.com/-5afmhwZOhWk/T17U-d1okrI/AAAAAAAAAWQ/KB7NHwwOvQg/s400/verysadpi.png"></a>
+  More like Darren Aron-wrong-sky.</p>
+<hr>
+<p>Now, I fully understand that this has no bearing whatsoever on the film
+and, in the grand scheme of things, is not a Big Deal. But it would have
+been just as easy to put the <em>real</em> digits of pi here instead of just
+random filler. The only way that this could possibly be better than the
+real deal would be if it is actually a secret code. I have not yet ruled
+this out, as the movie is entirely about looking for meaning in
+seemingly random numbers. Unfortunately, the difficulty in transcribing
+the numbers from the screen greatly outweighs the very small chance that
+this isn't just gibberish. Four hundred Quatloos to anyone who can tell
+me if this is a code or not!</p>
+<p>[1] And an above average Ninja Turtle to boot. <a href="posts/old/moving-pi-ctures/#back1">[back]</a></p>
+<p>[2] Yes, I am putting my TV watching skills on par with the talents of
+George Washington. In fact, the stoic way in which I persevered through
+the entirety of <em><a href="http://en.wikipedia.org/wiki/Terminator:_The_Sarah_Connor_Chronicles">The Sarah Connor
+Chronicles</a></em>in
+under two weeks was described by historian David McCullough as
+"Washingtonian." These are simply facts. <a href="posts/old/moving-pi-ctures/#back2">[back]</a></p>
+<p>[3] The extra "T" is for extra talent. <a href="posts/old/moving-pi-ctures/#back3">[back]</a></p>
+<p>[4] A duo can <em>absolutely</em> have a frontman. For evidence, feel free to
+ask the not-George-Michael-guy from <em>Wham!</em> or the not-Paul-Simon-guy
+from <em>Simon &amp; Garfunkel</em>. <a href="posts/old/moving-pi-ctures/#back4">[back]</a></p>
+</div>
+                </div>
+            </article>
+</div>
+    
+        <ul class="pager postindexpager clearfix">
+<li class="previous"><a href="index-16.html" rel="prev">Newer posts</a></li>
+            <li class="next"><a href="index-14.html" rel="next">Older posts</a></li>
+        </ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha256-ExtbCSBuYA7kq1Pz362ibde9nnsHYPt6JxuxYeZbU+c=" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:thephysicsvirtuosi@gmail.com">The Virtuosi</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

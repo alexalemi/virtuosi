@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Jared)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/jared.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Life in the Infrared</title><link>https://virtuosi.alexalemi.com/posts/old/life-in-the-infrared/</link><dc:creator>Jared</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4egR75ENI/AAAAAAAAAJU/eEFirBEL2xY/s1600/authors.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4egR75ENI/AAAAAAAAAJU/eEFirBEL2xY/s320/authors.jpg"&gt;&lt;/a&gt;
+  Corky, Matt, and Jared, with the experimental apparatus.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;There's a place where TV remotes are flashlights, Wii's are torches, and
+Snuggies are translucent. It's our kitchen. We modified a 3 dollar
+webcam to view in the infrared portion of the electromagnetic spectrum.
+We'll show you how, and what you can do with it. First, a little bit of
+background. If you read the previous post by Alex, you'd know that
+visible light waves are the same kind of waves as radio waves,
+microwaves, and x-rays; they just wave at different frequencies. Light
+that has a frequency just below what we can see is called "infrared",
+which apparently derives from the latin &lt;em&gt;infra--&lt;/em&gt;below red (thanks
+wikipedia!). So we know that if we get an object hot enough, it will
+glow visibly. However, warm objects (say, humans, cars, tanks) while not
+emitting enough visible light to glow, will emit easily detectable
+infrared light. This makes infrared imaging a handy technology for
+finding warm things in the dark. And, since many opaque things in the
+visible are transparent in the infrared (or vice versa), you can dream
+up a lot of fun to be had if you could only see in the infrared. Well,
+it turns out that the CCDs in many common webcams are sensitive to the
+infrared (IR). However, since an infrared signal would make for a weird
+looking visible light picture, it is simply filtered out. Well, we
+(mostly Matt) got our hands on such a
+&lt;a href="http://www.amazon.com/gp/product/B0019WF4FE/ref=oss_product"&gt;webcam&lt;/a&gt;,
+for a whopping 3 dollars, and removed the filter. Then we turned the
+tables, and inserted a visible light filter. For this we used the
+darkest part of a developed film roll, and while not getting rid of all
+the visible, it did a pretty good job with the lights down low. You can
+get a junk roll from your local Rite Aid photo center for free, just ask
+for Sue. She is very helpful. So we took some pictures of whatever we
+could find that was a strong IR source. It turns out that our particular
+camera wasn't sensitive to detect the signal of a warm human (or a cold
+one for that matter). We had to get something just a little hotter. So
+we lit a stick on fire, and then blew it out. Here's what it looks like
+in the now very pedestrian visible spectrum, with the lights out:
+&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4e6vuACII/AAAAAAAAAJY/gD53zNX1nDI/s1600/stick+visible.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4e6vuACII/AAAAAAAAAJY/gD53zNX1nDI/s320/stick+visible.jpg"&gt;&lt;/a&gt;
+It's just barely glowing. Now, let's look at it in what I'll call
+"enhanced" visible with the lights on, meaning that it's sensitive to
+both IR and visible at the same time.
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4ff9P0ljI/AAAAAAAAAJc/X5a75LQKr-Q/s1600/stick+enhanced.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4ff9P0ljI/AAAAAAAAAJc/X5a75LQKr-Q/s320/stick+enhanced.jpg"&gt;&lt;/a&gt;
+The infared obviously dominates the output. It looks like an IR
+sparkler. Now, let's shut the lights off, and see only IR:
+&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4g8q5tiZI/AAAAAAAAAJk/qLct2HN-ZuQ/s1600/stick+infra.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4g8q5tiZI/AAAAAAAAAJk/qLct2HN-ZuQ/s320/stick+infra.jpg"&gt;&lt;/a&gt;
+It's bright enough to "light up" my hand, which it certainly couldn't do
+in the visible. Okay, so we had to light this thing on fire, and it was
+already glowing. Well, my response to that is...this spoon:
+&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4iF8qPjjI/AAAAAAAAAJo/kywO7JDYG3Q/s1600/hot+spoon+vis.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4iF8qPjjI/AAAAAAAAAJo/kywO7JDYG3Q/s400/hot+spoon+vis.jpg"&gt;&lt;/a&gt;
+Normal spoon. But actually we heated it up a bit on the stove. Here it
+is in enhanced visible:
+&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4iR1HraFI/AAAAAAAAAJs/qjk-xDgyFkM/s1600/hot+spoon+enhanced.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4iR1HraFI/AAAAAAAAAJs/qjk-xDgyFkM/s320/hot+spoon+enhanced.jpg"&gt;&lt;/a&gt;
+And now, lights off, infrared only:
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4ikGGMEfI/AAAAAAAAAJw/gYsusNx8RNw/s1600/hot+spoon+dark.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4ikGGMEfI/AAAAAAAAAJw/gYsusNx8RNw/s320/hot+spoon+dark.jpg"&gt;&lt;/a&gt;
+Apparently we only heated up the tip significantly.
+Now, we have a super high tech flashlight that has three modes. It can
+produce green LED light, white LED light, or incandescent white light.
+Corky pointed each one at me. White LED light, visible:
+&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4jmRe24EI/AAAAAAAAAJ0/c4h7wMdW_7c/s1600/jared+white.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4jmRe24EI/AAAAAAAAAJ0/c4h7wMdW_7c/s320/jared+white.jpg"&gt;&lt;/a&gt;
+Creepy, eh? It's the shaved head.
+Now, white LED light in the IR:
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4kEKAtnEI/AAAAAAAAAJ4/RKKCmhRxu5Q/s1600/dark.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4kEKAtnEI/AAAAAAAAAJ4/RKKCmhRxu5Q/s320/dark.jpg"&gt;&lt;/a&gt;
+Nuthin' doin'. Similarly for green LED light. This is included only for
+its creepiness. First, in the visible:
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4kTWeT2-I/AAAAAAAAAJ8/ZAJ3aUCC2qY/s1600/jared+green.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4kTWeT2-I/AAAAAAAAAJ8/ZAJ3aUCC2qY/s320/jared+green.jpg"&gt;&lt;/a&gt;
+Corky calls this "the most palatable [pronounced incorrectly] picture of
+Jared we could find." In the IR, nada:
+&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4kkgkjufI/AAAAAAAAAKA/I8kV2SZKpiE/s1600/dark+2.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4kkgkjufI/AAAAAAAAAKA/I8kV2SZKpiE/s320/dark+2.jpg"&gt;&lt;/a&gt;
+But for incandescent white, in visible:
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4kvV7Z5fI/AAAAAAAAAKE/0jHh-_5huRg/s1600/jared+incan.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4kvV7Z5fI/AAAAAAAAAKE/0jHh-_5huRg/s320/jared+incan.jpg"&gt;&lt;/a&gt;
+And IR:
+&lt;a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4k7_LZAbI/AAAAAAAAAKI/eTZdYYArUdc/s1600/jared+infra.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TU4k7_LZAbI/AAAAAAAAAKI/eTZdYYArUdc/s320/jared+infra.jpg"&gt;&lt;/a&gt;
+I am aglow! Matt is clearly shocked. This happens because light
+generated by LED's occurs because of electrons hopping around
+semi-definite energy states of a material, making semi-definite
+frequencies of light. However, incandescent light is due to the filament
+being glowing hot, emitting radiation over a wide range of frequencies,
+and we know that it's got a strong contribution in the IR.
+So much for hot things. You have a bunch of IR dedicated sources around
+your house that maybe you didn't know about. One such source is many TV
+remote controls. Here we are, in the visible, with the lights low,
+pointing remotes at our faces.
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4mbYxxVWI/AAAAAAAAAKM/bR-WdOFTQ0o/s1600/remotes+vis.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4mbYxxVWI/AAAAAAAAAKM/bR-WdOFTQ0o/s320/remotes+vis.jpg"&gt;&lt;/a&gt;
+This is actually a promo pic for our 80's new wave band. Here's what
+this looks like, with buttons depressed, in the IR:
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4nENHKUoI/AAAAAAAAAKQ/waQc1sh3AS4/s1600/remotes+infra.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4nENHKUoI/AAAAAAAAAKQ/waQc1sh3AS4/s320/remotes+infra.jpg"&gt;&lt;/a&gt;
+A personal favorite.
+These remotes weren't the brightest source we could find. It turns out
+that the Wii sensor bar (which actually transmits, rather than receives
+data) is a freakin' beacon (say that out loud). Here it is, on top of
+our TV, which Corky is apparently flying towards.
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4oAdkkSQI/AAAAAAAAAKU/HVn-di40lSA/s1600/corky+flying.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4oAdkkSQI/AAAAAAAAAKU/HVn-di40lSA/s320/corky+flying.jpg"&gt;&lt;/a&gt;
+Unassuming little guy in the visible. But with the Wii on and in IR
+mode:
+&lt;a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4ocjPYcBI/AAAAAAAAAKY/eJkV5XE4GAs/s1600/wii+dark.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TU4ocjPYcBI/AAAAAAAAAKY/eJkV5XE4GAs/s320/wii+dark.jpg"&gt;&lt;/a&gt;
+There's a person in there too, IR bathing. But I promised you
+translucent Snuggies. (Yes, we own a Snuggie, and highly recommend
+them.) Here's Matt hiding behind one, whilst I angrily supervise:
+&lt;a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4o-dCYcdI/AAAAAAAAAKc/ppkhs3o9nKc/s1600/snuggie+visible.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TU4o-dCYcdI/AAAAAAAAAKc/ppkhs3o9nKc/s320/snuggie+visible.jpg"&gt;&lt;/a&gt;
+Now, let's look behind the curtain with IR:
+&lt;a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4pM05CabI/AAAAAAAAAKg/lNEwZMLrL2g/s1600/snuggie+infra.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TU4pM05CabI/AAAAAAAAAKg/lNEwZMLrL2g/s320/snuggie+infra.jpg"&gt;&lt;/a&gt;
+Look, I told you it was a Snuggie, the sleeve is visible! Now, if we had
+more resolution, we could even pick out a person in a dark room, and
+look at the temperature variations of objects. However, with
+approximately an hour of fiddling and 3 dollars, I think we did pretty
+good. We're not hard to entertain, but this definitely did the trick.&lt;/p&gt;&lt;/div&gt;</description><category>camera</category><category>infrared</category><category>well-spent saturdays</category><guid>https://virtuosi.alexalemi.com/posts/old/life-in-the-infrared/</guid><pubDate>Sun, 06 Feb 2011 00:47:00 GMT</pubDate></item><item><title>Ask a Physicist: Volume I</title><link>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist-volume-i/</link><dc:creator>Jared</dc:creator><description>&lt;p&gt;&lt;a href="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif"&gt;&lt;/a&gt;We
+have received our first &lt;em&gt;Ask a Physicist&lt;/em&gt; e-query! An entity known only
+to us as "Hungry" writes:
+"We had a dispute at a dinner party about whether blowing on hot food
+actually makes it cool down faster, or only gives you something to do
+while you wait for your food to cool."
+While it is questionable whether or not I am indeed a physicist (but
+people do pay me to do physics) and whether I will answer definitively
+(there'll be some hand-waving), I'll give it my darndest.
+Let's imagine a hot baked potato you just sliced open. The mass of
+potato is capable of transferring energy as heat to the surrounding air
+(and therefore cooling down) via a number of mechanisms. The most common
+we hear about are conduction, radiation, and convection. Conduction is
+the process by which two objects in intimate contact exchange heat.
+Radiation is a bit more mysterious, but in the same way that a poker in
+the fire can glow white hot, all things at non-zero temperature emit
+electromagnetic radiation, which carries away energy from your potato.
+Convection is even more complicated, but is one of the most important
+processes by which solids exchange heat with gases. Convection in our
+case occurs when the potato heats up the gas at its surface. The random
+motion of air molecules (now a little hotter) will "randomly" dissipate
+heat. However, the hotter gas is less dense than the room temperature
+gas, and buoyant forces (think Helium balloon) will create a current of
+hot gas upwards from the potato surface. Both of these processes
+constitute convection.
+Convection is REALLY hard to describe with physical models. You can do
+some computer simulations of the motion of the gas in convection. I
+found this cool picture on Wikipedia of someone who did just that:
+&lt;a href="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif"&gt;&lt;img alt="image" src="http://upload.wikimedia.org/wikipedia/commons/6/67/Convection-snapshot.gif"&gt;&lt;/a&gt;
+Pretty cool. Now! To actually answer your question. To get a qualitative
+answer, we don't even need to consider models of convection, etc. Isaac
+Newton was kind enough to find an empirical relation for the process of
+cooling, aptly named "Newton's law of cooling". If we call the amount of
+heat transferred from the potato Q, the found that the rate of heat
+being lost by the potato is proportional to the temperature difference
+between the surrounding gas and the potato itself:
+$$ \text{Rate of Heat Loss}=\frac{\text{Amount of Heat
+Loss}}{\text{Amount of time}}=\frac{\Delta Q}{\Delta t} \propto
+T_{\text{Potato}}-T_{\text{Air }} $$ So the quantity which is of
+primary importance is the temperature difference between your potato and
+the surrounding air. Now we can answer the question. If you let your
+potato cool down naturally, then the potato heats the air which then
+starts to convect. This means that the air immediately above the potato
+is quite hot. If you blow on the potato, however, you get the air
+circulating faster than it would by convection alone, effectively
+replacing the hot air with slightly cooler air. And since the cooling
+rate is proportional to to temperature difference; this will result in a
+faster cooling rate. To first order, blowing on your food should help.
+So, Hungry, feel free to blow on your food, Miss Manners be damned.&lt;/p&gt;</description><category>ask a physicist</category><category>conduction</category><category>potato</category><guid>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist-volume-i/</guid><pubDate>Mon, 17 May 2010 11:56:00 GMT</pubDate></item><item><title>Lessons in Prohibition: One</title><link>https://virtuosi.alexalemi.com/posts/old/lessons-in-prohibition-one/</link><dc:creator>Jared</dc:creator><description>&lt;div&gt;&lt;p&gt;"Holy lack of self control, Batman!"
+Cornell University Department of Physics-A P6510 Auxiliary Report
+&lt;strong&gt;Introduction:&lt;/strong&gt;
+I feel terrible. Batman made me feel terrible. Batman also cost me 20
+bucks.
+&lt;strong&gt;Theoretical Background:&lt;/strong&gt;
+You see, it's pretty natural for humans to place the mind and body
+within hypothetical constraints. "What would it be like to be
+deaf/blind? What if you didn't have an arm? What if you were forced to
+watch reruns of Quantum Leap for 24 hours straight?". I guess this is in
+some way a thinking-man's survival instinct. It's always prudent to be
+prepared, even if just emotionally, and Scott Bakula can be kinda pushy.
+We here at the Virtuosi believe in preparation. That's why we've decided
+to convert one of our own (me) into a guinea pig. It is our goal to
+apply some actual constraints to a real mind (mine) and to observe the
+results, thereby gleaning valuable insights into how humans (me) respond
+to adverse conditions (psychological torture).
+&lt;strong&gt;Experimental Procedure:&lt;/strong&gt;
+This week we started small. My task was the simple omission of a single
+word from my written and spoken vocabulary. The word should be innocuous
+enough that I wouldn't usually say it, but common enough not to be
+obscure. The word chosen was BATMAN. I was to expressly abstain from the
+use of BATMAN, else risk a monetary penalty (20 bucks), and if I were
+successful after 1 week, I would gain a monetary reward (20 bucks). This
+experiment (bet) began two days ago. I have obviously failed.
+&lt;strong&gt;Data Tables:&lt;/strong&gt;
+Data in this case, and always, will be presented with the utmost
+objectivity (stream of consciousness).
+&lt;strong&gt;Day one:&lt;/strong&gt;
+Ha This is really easy Everybody keeps mentioning Shatfan&lt;strong&gt; though I
+don't even know what we're testing I do kinda wanna say it though 20
+bucks Shatfan feels kinda dirty Whatever this is dumb I have homework
+maybe I should just stop thinking about Shatfan Nah This is kinda fun I
+don't wanna lose 20 bucks I liked Val Kilmer as Shatfan, I can't believe
+Nic disagrees Catban Batmatt HA thought I lost it there NOWP there are
+so many alternatives Shut the hell up Corky [possessor of said $20] Oh
+man everybody knows about this bet I might lose What if someone asks me
+about fratcan in class?
+&lt;/strong&gt;Day two:&lt;strong&gt;
+I actually feel kinda gross thinking about Shatfan he's like in my mouth
+please get him out this is all people talk about when I'm around oh yeah
+thanks for that this week will at least be comical hey this might offset
+the 500 bucks I owe corky maybe I could just say it and not tell anybody
+ah but no that's not science and this is very obviously science&lt;em&gt;manbat
+tabnam batfarm man of bats shatbat&lt;/em&gt; oh hey dad whats up yea we're doing
+this thing where I cant say BATMAN...
+Dad: oops! uh....
+Me: crap. I have phone calls to make. I'll talk to you later dad.
+&lt;em&gt;click&lt;/em&gt;
+&lt;/strong&gt;Post Failure Data:**
+Batman is dirty. I don't even want to say it now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Shatfan is the preferred euphemism for BATMAN.
+&lt;/strong&gt;Analysis:&lt;strong&gt;
+We therefore conclude it is impossible (for me) not to say BATMAN for
+longer than approximately two days. It was assumed by observers that the
+continual substitution of Shatfan and derivatives (highlighted above)
+for BATMAN was purely cavalier. This is false. While a bit of joviality
+was included in the experiment, a vast majority of euphemisms used were
+to assuage psychological tension. This was accompanied by laughter to
+maximize psychological relief. Obviously experimental procedures must be
+altered. We propose now an alternate method of success, via locking the
+subject in his office for a week.
+&lt;/strong&gt;Conclusions:&lt;strong&gt;
+In this report we find that I am a weakling, and that the experiment was
+kind of lame. However, as a test run for future Prohibitive Tests (PTs)
+we find the concept promising, in that when Scott Bakula comes around,
+I'll be the only one ready to take him on.
+Current developments in PTs include subject which are not fit for print,
+and thus the authors invite suggestions in which a mundane aspect of my
+life will be removed for the greater good of mankind.
+&lt;/strong&gt;Acknowledgements:**
+The authors would like to acknowledge that Corky is a shatfan. Stay
+tuned for more.
+-Jared&lt;/p&gt;&lt;/div&gt;</description><category>Batman</category><category>cognitive dissonance</category><guid>https://virtuosi.alexalemi.com/posts/old/lessons-in-prohibition-one/</guid><pubDate>Wed, 07 Apr 2010 20:56:00 GMT</pubDate></item></channel></rss>

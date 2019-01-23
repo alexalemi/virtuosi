@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Holmes)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/holmes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Problem of the Week #2: Solution</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2-solution/</link><dc:creator>Holmes</dc:creator><description>&lt;p&gt;Thanks to all who sent in solutions! We are very happy with the vast
+number of responses, and we will put up a leader board shortly! Solution
+Let A be the fraction of the rubber band that the ant has traversed.
+$$A\left(t\right)=\frac{x\left(t\right)}{L+vt}.$$ The ant's
+velocity relative to any point along the rubber band is equal to the
+length of the rubber band times the first time derivative of A:
+$$u=\left(L+vt\right)\frac{dA}{dt}=\left(L+vt\right)\left[\frac{\dot{x}}{L+vt}-\frac{vx}{\left(L+vt\right)^{2}}\right]=\dot{x}-\frac{vx}{L+vt}.$$
+This gives us an inseparable, first-order differential equation for
+x(t). The general differential equation of this type,
+$$\dot{x}+p\left(t\right)x=q\left(t\right),$$ has the general
+solution $$x\left(t\right)=e^{-\int_{0}^{t}
+p\left(t\right)dt}\int_{0}^{t} q\left(t\right)e^{\int_{0}^{t}
+p\left(t\right)dt}dt.$$ In our case,
+$$p\left(t\right)=-\frac{v}{L+vt},\quad q\left(t\right)=u.$$
+Therefore, $$x\left(t\right)&amp;amp;=&amp;amp;e^{\int\frac{v}{L+vt}dt}\int
+ue^{-\int\frac{v}{L+vt}dt}dt=\frac{u}{v}\left(L+vt\right)\ln\left(1+\frac{vt}{L}\right).$$
+When the ant has reached the other side, x(t) = L + vt, so
+$$x\left(t\right)=L+vt=\frac{u}{v}\left(L+vt\right)\ln\left(1+\frac{vt}{L}\right).$$
+Solving for t, we get $$t=\frac{L}{v}\left(e^{v/u}-1\right).$$ So
+the ant always makes it to the other side (unless u = 0)! In the limit
+as v -&amp;gt; 0, we get $$t\approx\frac{L}{u},$$ which is exactly what we
+would expect. We can show that the ant will reach the other side without
+doing any calculations. As the ant moves across the rubber band, the
+velocity of the point on the rubber band that the ant is currently
+walking on increases from 0 to v. Therefore, the ant is accelerating.
+Since the other end of the rubber band is moving at a constant velocity,
+the accelerating ant will always eventually catch up to the far end.
+Another way to see this is that since the ant is accelerating, if it
+makes it halfway, it will make it all the way to the other side; if it
+makes it one-quarter of the way, it will make it halfway, and so on. We
+know that since the ant is traveling at some nonzero velocity, it must
+make it some nonzero fraction of the way to the other side. Therefore,
+it must make it twice that far, and so on, all the way to the other
+side. Thanks to Frank for pointing this out!&lt;/p&gt;</description><category>problem of the week</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2-solution/</guid><pubDate>Tue, 23 Nov 2010 17:46:00 GMT</pubDate></item><item><title>Problem of the Week #2</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2/</link><dc:creator>Holmes</dc:creator><description>&lt;p&gt;&lt;em&gt;As always, we welcome you to send in solutions, or even any ideas you
+have about how to solve the problems
+to&lt;/em&gt;&lt;a href="mailto:the.physics.virtuosi@gmail.com"&gt;&lt;em&gt;the.physics.virtuosi@gmail.com&lt;/em&gt;&lt;/a&gt;&lt;em&gt;with
+“problem of the week” in the subject line. We will keep track of the top
+Virtuosi problem solvers.&lt;/em&gt;Why did the ant cross the rubber band?**
+A rubber band is held fixed at one end. The other end is pulled at a
+velocity v. At time t = 0, the rubber band has a length of L, and an ant
+starts crawling from one end to the other at velocity u. Does the ant
+reach the other side? If so, how long does it take to get there? Assume
+that the rubber band is able to be stretched indefinitely without
+breaking.&lt;/p&gt;</description><category>ants</category><category>problem of the week</category><category>rubber bands</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-2/</guid><pubDate>Sun, 14 Nov 2010 16:30:00 GMT</pubDate></item><item><title>Problem of the Week #1</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-1/</link><dc:creator>Holmes</dc:creator><description>&lt;p&gt;&lt;em&gt;I thought we could spice things up a bit with a more interactive post
+on The Virtuosi. Starting this week, a new problem of the week will be
+posted each week. Solutions will be posted the following week. These
+problems will be a collection of physics and math problems and riddles,
+and although hopefully challenging enough to be fun and interesting,
+they should mostly be solvable using concepts from introductory
+undergraduate physics and math classes.&lt;/em&gt;
+&lt;em&gt;We welcome you to ponder these problems, and send in solutions, or even
+any ideas you have about how to solve the problems
+to&lt;/em&gt;&lt;a href="mailto:the.physics.virtuosi@gmail.com"&gt;&lt;em&gt;the.physics.virtuosi@gmail.com&lt;/em&gt;&lt;/a&gt;&lt;em&gt;with
+“problem of the week” in the subject line. We will keep track of the top
+Virtuosi problem solvers.&lt;/em&gt;
+&lt;em&gt;Here it goes…&lt;strong&gt;&lt;em&gt;Maximizing Gravity&lt;/em&gt;*
+&lt;/strong&gt;
+You are given a blob of Play-Doh (with a fixed mass and uniform density)
+that you can shape however you choose. How can you shape it to maximize
+the gravitational force at a given point &lt;/em&gt;P* on the surface of the
+Play-Doh?
+Solution
+In cylindrical coordinates, where the point P is taken to be the origin,
+the z-component of the gravitational field due to any point (s, z) felt
+at the origin, is proportional to
+$$\frac{1}{s^{2}+z^{2}}\frac{z}{\sqrt{s^{2}+z^{2}}},$$
+where the second factor is necessary to take the z-component. If we have
+azimuthal symmetry, the magnitude of the gravitational field is given by
+the sum of all the z-components of the forces due to all points in the
+planet. For a given contour
+$$\frac{z}{\left(s^{2}+z^{2}\right)^{3/2}}=C,$$
+&lt;a href="http://3.bp.blogspot.com/_kdZd6FJQtZQ/TN9Jgv8f9gI/AAAAAAAAAAM/qdRknJVbCT0/s1600/maxgravity.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_kdZd6FJQtZQ/TN9Jgv8f9gI/AAAAAAAAAAM/qdRknJVbCT0/s320/maxgravity.jpg"&gt;&lt;/a&gt;
+for some constant C, each point on the interior contributes more to the
+total gravitational field than each point on the exterior. Thus, the
+gravitational field is maximized if the surface of the planet takes the
+shape of one of these contours. Solving for s(z), we
+get$$s\left(z\right)=\sqrt{\left(\frac{z}{C}\right)^{2/3}-z^{2}}.$$
+If the length of the planet in the z-direction is $$z_0,$$ we can
+replace C in the above expression to get
+$$s\left(z\right)=\sqrt{\left(z_{0}^{4}z^{2}\right)^{1/3}-z^{2}}.$$
+As can be seen by the plot above, this shape looks a lot like a sphere,
+but slightly smushed toward the point of interest P. We can rigorously
+compare the field of the maximal gravity solid to that of a sphere with
+the same volume. The volume of the maximal solid is given by
+$$V=\pi\int_{0}^{z_{0}}s^{2}\left(z\right)dz=\pi\int_{0}^{z_{0}}\left[\left(z_{0}^{4}z^{2}\right)^{1/3}-z^{2}\right]dz=\frac{4\pi}{15}z_{0}^{3}$$
+The volume of a sphere of radius r is of course $$V=\frac{4}{3}\pi
+r^{3},$$ so in order for the volumes to be the same, the sphere must
+have a radius of $$r=z_{0}/5^{1/3}.$$
+The acceleration due to the maximal solid is proportional to
+$$a_{max}=\int dVa_{z}=2\pi
+G\rho\int_{0}^{z_{0}}dz\int_{0}^{s\left(z\right)}sds\frac{z}{\left(s^{2}+z^{2}\right)^{3/2}}=\frac{4\pi
+G\rho z_{0}}{5},$$
+while the acceleration due to the sphere is just
+$$a_{sphere}=\frac{G\rho\frac{4}{3}\pi r^{3}}{r^{2}}=\frac{4\pi
+G\rho z_{0}}{3\cdot5^{1/3}}.$$
+Thus, we have
+$$\frac{F_{max}}{F_{sphere}}=\frac{4\pi G\rho z_{0}/5}{4\pi
+G\rho
+z_{0}/\left(3\cdot5^{1/3}\right)}=\frac{3}{5^{2/3}}\approx1.026.$$
+So the solid that gives the maximum gravitational field at a point is
+only about 3% better than a sphere.
+For a more detailed discussion, see &lt;a href="http://pages.physics.cornell.edu/%7Eaalemi/random/planet.pdf"&gt;Alemi's
+solution&lt;/a&gt;.&lt;/p&gt;</description><category>gravity</category><category>problem of the week</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-week-1/</guid><pubDate>Fri, 05 Nov 2010 19:39:00 GMT</pubDate></item></channel></rss>

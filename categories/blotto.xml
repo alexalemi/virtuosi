@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about blotto)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/blotto.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Wrath of Blotto</title><link>https://virtuosi.alexalemi.com/posts/old/the-wrath-of-blotto/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;You may remember &lt;a href="http://thevirtuosi.blogspot.com/2010/05/memorial-day-distractions.html"&gt;when I
+invited&lt;/a&gt;
+everyone to play &lt;a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php"&gt;my
+webform&lt;/a&gt;
+version of &lt;a href="http://en.wikipedia.org/wiki/Colonel_Blotto"&gt;Colonel
+Blotto&lt;/a&gt;. Well, its still up
+and has been up for some time, but hasn't seen any action for a while so
+I thought it might be time to take a look at the results. Colonel Blotto
+is an interesting game. It seems to me, that much of this interest
+derives from the fact that how well your strategy performs is very much
+a function of which strategies exist in the pool. There is not a clear
+cut winning strategy, you need to feel out the existing pool and adapt
+accordingly. So to stir things up a little bit, in what follows I will
+share some data from the existing database, refraining myself from
+commenting too much. Basically, stay tuned for a bunch of pretty
+pictures which will hopefully get your gears turning. The game is still
+up, feel free to try to game it now that this information is out. Might
+be interesting to see what kind of effect releasing the leaderboard will
+have on the leaderboard.&lt;/p&gt;
+&lt;h4&gt;Leader Board&lt;/h4&gt;
+&lt;p&gt;347 Strategies were submitted since the game went live. Lets try and
+take a look at what kind of strategies were submitted. Below are the top
+25 ranking strategies in the database as of yesterday, along with the
+actual strategy, its points, and full record.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Rank   Name              Strategy                   Wins   Losses   Ties   Points
+  1      PygmyGrouse       2,3,4,5,19,22,7,20,12,6    210    74       61     481
+  2      eighth            4,4,19,19,4,19,4,4,19,4    209    74       62     480
+  3      tg1i6             3,4,5,11,19,18,17,18,4,1   190    58       97     477
+  4      centerfold3       2,2,17,17,20,20,17,1,2,2   178    55       112    468
+  5      goose             17,15,5,3,16,18,4,16,3,3   165    43       137    467
+  6      StrawMan2         2,3,4,5,19,22,7,22,11,5    202    81       62     466
+  7      blackbird         17,16,5,2,16,18,4,16,3,3   169    49       127    465
+  8      hawk              3,3,5,3,16,18,17,16,15,4   157    38       150    464
+  8      fairandbalanced   2,3,4,16,18,18,17,17,3,2   164    45       136    464
+  10     nightingale       17,14,5,4,16,18,4,16,3,3   173    55       117    463
+  10     finch             17,3,5,15,16,18,4,16,3,3   172    54       119    463
+  12     foxnews           1,3,3,17,18,18,18,17,3,2   159    44       142    460
+  12     D                 15,16,17,18,19,1,2,3,4,5   154    39       152    460
+  14     notgonnawin16     2,2,2,19,19,20,16,16,2,2   185    71       89     459
+  15     bluebird          17,5,3,15,16,18,4,16,3,3   171    58       116    458
+  16     Poitiers          3,20,4,3,20,3,20,4,3,20    200    89       56     456
+  17     StrawMan1         2,3,3,3,22,22,7,20,12,6    196    86       63     455
+  17     tg1e16            4,16,4,14,2,17,2,17,5,19   150    40       155    455
+  19     Guadalcanal       18,2,2,18,18,2,18,18,2,2   146    37       162    454
+  20     centerfold2       2,1,17,18,20,20,18,1,1,2   156    48       141    453
+  20     Culloden          3,3,21,3,3,20,21,3,20,3    201    93       51     453
+  22     parrot            3,3,5,3,16,18,4,16,15,17   142    35       168    452
+  22     tg1f1             4,16,1,14,2,18,2,18,5,20   154    47       144    452
+  24     eagle             3,3,5,15,16,18,4,16,3,17   149    43       153    451
+  25     robin             17,16,5,15,16,18,4,3,3,3   160    57       128    448&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Soldier Distribution&lt;/h4&gt;
+&lt;p&gt;Next, lets try and take a look at all the strategies at once. Lets start
+with the soldier distributions among the different slots. I will remind
+you that the rules of the game are slot independent, i.e. if machines
+were trying to play this game against one another you would expect the
+soldier distribution to be more or less uniform between slots, any
+deviation from uniformity probably says something deep and profound
+about how humans think.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TFrK2Sfe9zI/AAAAAAAAAM4/OTL-Nzonw54/s1600/soldierdistbox.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TFrK2Sfe9zI/AAAAAAAAAM4/OTL-Nzonw54/s400/soldierdistbox.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a &lt;a href="http://en.wikipedia.org/wiki/Box_and_whisker"&gt;box and whiskers
+plot&lt;/a&gt; of all strategies,
+looking at the number of soldiers in each slot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/TFsIEnlnYPI/AAAAAAAAAOA/RjihpzKWRf0/s1600/soldierdist.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/TFsIEnlnYPI/AAAAAAAAAOA/RjihpzKWRf0/s400/soldierdist.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This plot is fun. It shows the full distribution of all of the
+strategies. I went through the database, and for every strategy, added
+one to the box that held true. I.e. for each slot (the slots are along
+the x axis), the y axis marks how many strategies in the database have
+that many soldiers in that slot. Should be fun to try and think about
+what the non-uniformities mean. Colorbar is on the side to make the
+colors quantitative.&lt;/p&gt;
+&lt;h4&gt;Point Distribution&lt;/h4&gt;
+&lt;p&gt;So, how well do all of the strategies do... lets take a look.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrKwJ2wATI/AAAAAAAAAMw/Zm9oCju3964/s1600/pointshist.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrKwJ2wATI/AAAAAAAAAMw/Zm9oCju3964/s400/pointshist.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a histogram of all the scores for all the strategies in the
+database. It has some interesting features. Definitely not singly
+peaked. What do you think is going on on the far left?&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFsILm1CC9I/AAAAAAAAAOI/jJrgQA3xe4E/s1600/scoredist.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFsILm1CC9I/AAAAAAAAAOI/jJrgQA3xe4E/s400/scoredist.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this plot, I again went through all of the strategies in the
+database, and this time, every square reflects the average score for all
+strategies that have that many soldiers (y axis) in that slot (x axis).&lt;/p&gt;
+&lt;h4&gt;Strategies Layout&lt;/h4&gt;
+&lt;p&gt;Lets drill down a bit and look at how each strategy performs.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrK_cjwa6I/AAAAAAAAANA/TM0z0lXeoMA/s1600/winvlossesareatie.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrK_cjwa6I/AAAAAAAAANA/TM0z0lXeoMA/s400/winvlossesareatie.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This scatter plot has a point for each strategy in the database, the x
+coordinate giving its number of wins, the y coordinate its number of
+losses. The area of the circle is scaled to its number of ties, and the
+color is scaled to its total score. Is there a clear trend? Why does it
+fan out?&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/TFrLG9Jz7EI/AAAAAAAAANI/dGD2srkuJjw/s1600/winvtiearea.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/TFrLG9Jz7EI/AAAAAAAAANI/dGD2srkuJjw/s400/winvtiearea.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Similar plot as above but this time, x coordinate is Wins, Y is ties,
+size is losses and color score.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLL825x5I/AAAAAAAAANQ/ihuUuyOmoH4/s1600/lossesvtie.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLL825x5I/AAAAAAAAANQ/ihuUuyOmoH4/s400/lossesvtie.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One more, this time x coordinate is losses, y is ties, color is score.&lt;/p&gt;
+&lt;h4&gt;Fitness Landscapes&lt;/h4&gt;
+&lt;p&gt;So, what should you do if you wanted to design a winning strategy? Lets
+first take a look at the fitness landscape. Now, this is difficult to do
+for the whole game, with 10 slots and something like 40 reasonable
+choices for each, this is some huge 10 dimensional space, which is
+difficult to visualize, so instead lets take a look at the fitness
+landscape for some lower dimensional cuts.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/TFrLR8oPRhI/AAAAAAAAANY/nVG1t0uisq4/s1600/energy456matshowjet.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/TFrLR8oPRhI/AAAAAAAAANY/nVG1t0uisq4/s400/energy456matshowjet.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So in the above plot, what I've done is constructed a whole bunch of
+strategies. First I started with 8 soldiers in all slots but the ones
+listed in the title, namely slots 4,5,6 (starting with 1). So with only
+3 slots free, and with the constraint that we have to have 100 soldiers
+total, I can parametrize a whole bunch of strategies with only two
+numbers, in this case the number of soldiers in slot 5 (x axis) and slot
+6 (y axis). The color represents the score that the resulting strategy
+has when run against all of the previously existing strategies in the
+database. This was created without adding all of these strategies to the
+database itself as that would have changed the results.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLVmy2N3I/AAAAAAAAANg/zID_NyC00Q0/s1600/energy568matshowjet.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLVmy2N3I/AAAAAAAAANg/zID_NyC00Q0/s400/energy568matshowjet.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Similar plot, this time changing the soldiers in slots 5,6 and 8 with x
+axis the number of soldiers in slot 6 and the y axis the number of
+soldiers in slot 8.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrLZDDNo1I/AAAAAAAAANo/beYQagxYO6A/s1600/energy123matshowjet.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrLZDDNo1I/AAAAAAAAANo/beYQagxYO6A/s400/energy123matshowjet.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another one, hopefully my labels make enough sense now that I don't have
+to spell it out. I think this one has an interesting shape. What's going
+on?&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLcW834jI/AAAAAAAAANw/Opwx0CqiqBs/s1600/energy127matshowjet.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TFrLcW834jI/AAAAAAAAANw/Opwx0CqiqBs/s400/energy127matshowjet.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;One more.&lt;/p&gt;
+&lt;h4&gt;Random Strategies&lt;/h4&gt;
+&lt;p&gt;So, lets say you are trying to construct winning strategies. The first
+thing you might try to do is construct random strategies, by randomly
+dropping 100 soldiers each into one of the slots at random. Doing so and
+running these strategies against the database I got an idea of how
+effective that would be.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrLiuvLW-I/AAAAAAAAAN4/X-RmiGeA7R4/s1600/randomhist.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TFrLiuvLW-I/AAAAAAAAAN4/X-RmiGeA7R4/s400/randomhist.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a histogram of the random strategies' scores. Not so good.
+Looks like humans playing the game are better than randomly guessing.&lt;/p&gt;
+&lt;h4&gt;Best Strategy?&lt;/h4&gt;
+&lt;p&gt;So lets say you wanted to make the best strategy, what could you look
+at? Well, for starters you might be interested in a question like the
+following? 'If I put N soldiers in slot X, what percentage of the
+existing strategies in the database would I beat in that slot?" The next
+graph answers this question.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TFsK-VC2qRI/AAAAAAAAAOY/UTtTyvyxhT4/s1600/strategychooserspectral.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TFsK-VC2qRI/AAAAAAAAAOY/UTtTyvyxhT4/s400/strategychooserspectral.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here I have attempted to show for every X,Y coordinate the following.
+With Y soldiers in slot X, what percentage of the existing strategies do
+you beat in slot X. I changed the color scaling to make it more refined,
+so you can better read it quantitatively.&lt;/p&gt;
+&lt;h4&gt;Go Forth&lt;/h4&gt;
+&lt;p&gt;So, there you have it. You are not fueled with what is probably way more
+information than you were hoping for. Hopefully these graphs are more
+than just pretty, and get you thinking a bit. That is a lot of what
+science is about. Make some observations and then attempt to explain the
+results with your own models. You can then test your models with
+experiment. I've provided you with a bunch of observations and invited
+you to construct your own explinations. Now I invite you to perform an
+experiment. Think you know whats going on in the game? Then try and beat
+it. The link to play is the &lt;a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php"&gt;same as
+before&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>blotto</category><category>fun</category><category>games</category><category>graph</category><guid>https://virtuosi.alexalemi.com/posts/old/the-wrath-of-blotto/</guid><pubDate>Fri, 06 Aug 2010 11:32:00 GMT</pubDate></item><item><title>Memorial Day Distractions</title><link>https://virtuosi.alexalemi.com/posts/old/memorial-day-distractions/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s1600/manufactoria.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TAPt33D8YYI/AAAAAAAAALQ/oUokdNNFupw/s200/manufactoria.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Summer is upon us. That means summer research, and online games. In
+order to help you through this three day weekend and beyond, I thought
+I'd share some of the more physics inspired games I've been playing
+lately to pass the time. I really enjoy physics based games. When done
+right, I think they can not only be fun and engaging but have the
+opportunity to teach you something.&lt;/p&gt;
+&lt;h4&gt;Colonel Blotto&lt;/h4&gt;
+&lt;p&gt;First up is a web Colonel Blotto tournament that I coded up, which you
+can find
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/blotto/index.php"&gt;here&lt;/a&gt;.
+&lt;a href="http://en.wikipedia.org/wiki/Colonel_Blotto"&gt;Colonel Blotto&lt;/a&gt; is a silly
+little game theoretic game where you try and assign one hundred soldiers
+between 10 different fields. Opponents do the same. Neither side knows
+what the other side is going to do. The game turns out to have some very
+interesting dynamics. Apparently for more than 12 soldiers, the game
+does not have a deterministic optimal strategy, so you're guess is as
+best as mine for how to beat the other players in the pool. Its worth
+checking out. Feel free to try your hand at the pool. Once the
+participation has settled down, I want to try and analyze the strategies
+that people employ and see if I can do any interesting statistical
+physics with it. I spent a good chunk of this weekend working out the
+bugs, so it should run smoothly now, but be sure to let me know if you
+discover any errors.&lt;/p&gt;
+&lt;h4&gt;Manufactoria&lt;/h4&gt;
+&lt;p&gt;This game has been sucking up a lot of my evenings lately.
+&lt;a href="http://pleasingfungus.com/"&gt;Manufactoria&lt;/a&gt; is one of the most pleasing
+puzzle games I've played in a long time. It pretends to be about
+selecting robots that meat specification, but really its about
+programming finite state machines. I've really enjoyed this game a lot.
+It has a real engineering type bent, but unlike a lot of games that
+require critical thinking to solve a puzzle, once you know how to solve
+it, it isn't tedious to do so. A great game, and I highly recommend it.
+One of the best games I've played in a while, although maybe I'm so into
+it because I'm reading through &lt;a href="http://books.google.com/books?id=-olQAAAAMAAJ&amp;amp;q=feynman+lectures+on+computation&amp;amp;dq=feynman+lectures+on+computation&amp;amp;ei=qOoDTIntCqCszQSc-cyODA&amp;amp;cd=1"&gt;The Feynman Lectures on
+Computation&lt;/a&gt;
+right now. He gives as exercises very similar problems to the ones in
+the game. Its also in regards to these types of problems specifically
+that he gives &lt;a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html"&gt;this
+quote&lt;/a&gt;.
+A few tips. (1) You can use asdf or the arrow keys to rotate the pieces.
+(2) Space bar switches the chirality of the gates (swaps red for blue).
+(3) In order to round corners, you just make the conveyors meet at a T
+(4) You don't have to enter the gates on the open side. (5) During
+tests, move the slider in the bottom left to the right to speed up time.
+If you manage to solve all of the puzzles, three bonus ones will appear
+at the bottom.&lt;/p&gt;
+&lt;h4&gt;Fantastic Contraption&lt;/h4&gt;
+&lt;p&gt;This one is old. Its been on the internet for a while now, but if you
+haven't seen &lt;a href="http://www.kongregate.com/games/inXile_Ent/fantastic-contraption?acomplete=fantastic"&gt;Fantastic
+Contraption&lt;/a&gt;
+you should check it out. Its a very free form game. You need to get the
+pink block into the goal, but in order to do so, you can build any
+contraption you desire out of wheels and sticks. Its a great time. Most
+impressive of course is the level that some kids have taken it to. Once
+you've played with the game a bit, be sure to search &lt;a href="http://www.youtube.com/results?search_query=fantastic+contraption&amp;amp;page=&amp;amp;utm_source=opensearch"&gt;youtube for
+fantastic
+contraption&lt;/a&gt;,
+and marvel at the engineering insight some of these kids show. I like
+this game a lot, but it can get a bit tedious to get your design to work
+out just right.&lt;/p&gt;
+&lt;h4&gt;Splitter 2&lt;/h4&gt;
+&lt;p&gt;This one is neat. As a kid I read the &lt;a href="http://en.wikipedia.org/wiki/His_Dark_Materials"&gt;His Dark
+Materials&lt;/a&gt; trilogy
+(which started with &lt;a href="http://en.wikipedia.org/wiki/Golden_Compass"&gt;The Golden
+Compass&lt;/a&gt;). Anyway the
+second book in the series is &lt;a href="http://en.wikipedia.org/wiki/The_Subtle_Knife"&gt;The Subtle
+Knife&lt;/a&gt; which stars a
+knife, the subtle knife in fact, which can cut through anything like
+butter, and I mean anything, including the fabric between worlds. This
+led to many day dreams as a kid, and I've spent a lot of time thinking
+about what a knife like that could actually do. Anyway, &lt;a href="http://www.kongregate.com/games/CasualCollective/splitter-2"&gt;Splitter
+2&lt;/a&gt; is a
+puzzle game that works along those lines. You have to get a ball do the
+goal, but do so by cutting through pieces of wood on the stage. A neat
+game. Worth a look.&lt;/p&gt;
+&lt;h4&gt;Phun&lt;/h4&gt;
+&lt;p&gt;While I'm hear, I can't help but mention
+&lt;a href="http://www.phunland.com/wiki/Home"&gt;Phun&lt;/a&gt;. While not strictly a game.
+Phun is a physics sandbox similar in style to Fantastic Contraption, but
+with a whole lot more features. This one is loads of fun to play with,
+and I think could really serve as a learning tool for some classes.
+Worth the download. If you know of any other physics type games, drop
+them in the comments. I'm always on the look out for good ones.&lt;/p&gt;&lt;/div&gt;</description><category>blotto</category><category>fantastic contraption</category><category>games</category><category>manufactoria</category><category>memorial day</category><guid>https://virtuosi.alexalemi.com/posts/old/memorial-day-distractions/</guid><pubDate>Mon, 31 May 2010 13:12:00 GMT</pubDate></item></channel></rss>

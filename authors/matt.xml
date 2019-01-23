@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Matt)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/matt.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Day in the life of Clicky</title><link>https://virtuosi.alexalemi.com/posts/old/day-in-the-life-of-clicky/</link><dc:creator>Matt</dc:creator><description>&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s1600/soslow.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-og-KOzfbR1s/TeepA_j_e3I/AAAAAAAAB64/jboORBAZGsQ/s400/soslow.png"&gt;&lt;/a&gt;Remember
+when you first learned about other planets and their many fun facts? You
+were probably bombarded by such truisms as: "Jupiter is approximately
+the mass of 318 Earths, has a orbital period that is 4,300 Earth days,
+is made out of pure love, and is mostly transparent." Well, I was
+curious about what Clicky's day was like in terms of Earth days. When
+did Clicky get to sleep, when did he eat dinner, what is his orbital
+radius and eccentricity? To do this, I looked at only the 3rd column of
+the data that you may or may not have downloaded yesterday from
+&lt;a href="http://thevirtuosi.blogspot.com/2011/05/clickin-night-away.html"&gt;here&lt;/a&gt;.
+Starting out, it should be noted that this is not an ordinary time
+series where you have some value measured at given intervals. It is
+actually a series of time points at which a click was entered. I thought
+it would be most natural to go ahead and bins these to give a sense of
+the access to Clicky over the past two months. It looks something like
+this:
+&lt;a href="http://4.bp.blogspot.com/-CGv4NMXIA_Y/TeenyMR2SEI/AAAAAAAAB6g/_GymFecaR4c/s1600/rawtimehist.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-CGv4NMXIA_Y/TeenyMR2SEI/AAAAAAAAB6g/_GymFecaR4c/s400/rawtimehist.png"&gt;&lt;/a&gt;
+Well, that wasn't as informative as I had hoped. We see some spikes here
+and there with a general trend toward neglect and abandonment towards
+the end of the second month. What if we take these days and bin them
+into one single day worth of traffic? We get this:
+&lt;a href="http://1.bp.blogspot.com/-bmZb_JtN4yg/TefICYE6zMI/AAAAAAAAB7I/xqsCiUjBtQE/s1600/oneday-hist.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-bmZb_JtN4yg/TefICYE6zMI/AAAAAAAAB7I/xqsCiUjBtQE/s400/oneday-hist.png"&gt;&lt;/a&gt;
+Again, not so informative yet, but we are definitely starting to see
+some structure in the day. In particular, there is a lot of activity in
+the afternoon and evening with a definite lull around 5pm. There is also
+a distinct minima around 5am. It appears that Clicky is on the average
+most active between noon and 9pm, getting a break through most of the
+night.
+Next, let's look at the autocorrelation of the times. For standard time
+series, the autocorrelation is defined to be
+$$ C_{ss}(\tau) = \int_{-\infty}^{\infty}s(t) * \bar s(t-\tau)
+dt $$
+which measures the amount of similarity in a signal as a function of the
+time separation between two points. Again, we don't have a continuous
+signal, so our autocorrelation function is instead a histogram of the
+all-pairs differences in the data points that we do have. That is, start
+at the first time point and subtract it from all of the other time
+points in the series. Then, move to the next data point and subtract it
+from all the subsequent times while keeping tracking of all of these
+differences. This is our autocorrelation in real space.
+&lt;a href="http://2.bp.blogspot.com/-TcTlLQL4ccw/TefSgRN3KrI/AAAAAAAAB7Q/aLHgDXT-ZOU/s1600/time-time2-raw.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-TcTlLQL4ccw/TefSgRN3KrI/AAAAAAAAB7Q/aLHgDXT-ZOU/s400/time-time2-raw.png"&gt;&lt;/a&gt;
+We can also zoom in and smooth the data a bit
+&lt;a href="http://2.bp.blogspot.com/-VRWxWGORJt0/TefSrrD-DHI/AAAAAAAAB7Y/FncLYViZ3Jw/s1600/time-time2.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-VRWxWGORJt0/TefSrrD-DHI/AAAAAAAAB7Y/FncLYViZ3Jw/s400/time-time2.png"&gt;&lt;/a&gt;Ah,
+now there we go. We see a distinct over-abundance of time differences
+around 1 day, 2 days, etc. What is the primary oscillation we see in the
+correlation? To see that, let's look at the frequency space
+autocorrelation and plot its power, or square.
+&lt;a href="http://2.bp.blogspot.com/-CKFrfzY37Uc/TefTfvhS5pI/AAAAAAAAB7g/njevnB4JPac/s1600/time-time-power.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-CKFrfzY37Uc/TefTfvhS5pI/AAAAAAAAB7g/njevnB4JPac/s400/time-time-power.png"&gt;&lt;/a&gt;Finally,
+we get the primary component of the variation of Clicky's visits
+throughout the 2 month period that he was in operation. It occurs, to
+within error, at 1 day. No very surprising at all. I'm sure we could
+look more closely at the peak and its width, but I am satisfied to say
+that Clicky's day is defined by the Earth day to within a few percent.
+*In response to more messages in Clicky, we agree that it is "So slow."
+Rest assured, management is looking into the problem.&lt;/p&gt;</description><category>autocorrelation</category><category>clicky</category><category>fourier</category><guid>https://virtuosi.alexalemi.com/posts/old/day-in-the-life-of-clicky/</guid><pubDate>Wed, 01 Jun 2011 16:34:00 GMT</pubDate></item><item><title>Clicky Data v1.0</title><link>https://virtuosi.alexalemi.com/posts/old/clicky-data-v1-0/</link><dc:creator>Matt</dc:creator><description>&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s1600/snap.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-2c6Bjhd3XmI/TeUNGvesUiI/AAAAAAAAB6I/5ndWL1d8AXQ/s400/snap.png"&gt;&lt;/a&gt;
+As we sift through the Clicky data Corky presented yesterday, let us not
+forget the Clicky that came before.
+Let us not forget the Great Server Move of 2011 and the great pains we
+felt while waiting for Clicky to come back to us: Corky sat in his room
+crying into his pillow, Alex was pressing his arrow keys longingly, and
+I just couldn't seem to get up in the morning. Let us not forget the
+many hours in which untold numbers of anonymous internet users tried in
+vain to spell simple words using only discrete steps on a finite
+lattice. Let us not forget the Great Server Crash that caused the
+physics department to be charged extra for data usage. Let us not forget
+Clicky v1.0.
+So today we remember him, our beloved Clicky v1.0, by releasing his data
+as well. It can be found close to the other Clicky data dump from
+yesterday at this location:
+&lt;a href="http://www.mattbierbaum.com/clicky/clickydat2.tar.bz2"&gt;Download Clicky
+v1.0&lt;/a&gt;
+Be warned, this was actually available to the anonymous internet and
+there are a few things that may surprise you. That being said, the last
+half of this data set is actually comprised of multiple users
+interacting with Clicky at once so it should have different statistics
+than yesterday's data, though we have yet to sort through that too. More
+of our analysis is to follow..
+Also, props to whoever made the dinosaur.&lt;/p&gt;</description><category>clicky</category><category>not absurdly large images</category><category>picopixels</category><guid>https://virtuosi.alexalemi.com/posts/old/clicky-data-v1-0/</guid><pubDate>Tue, 31 May 2011 11:36:00 GMT</pubDate></item><item><title>Exploration of Cameras I</title><link>https://virtuosi.alexalemi.com/posts/old/exploration-of-cameras-i/</link><dc:creator>Matt</dc:creator><description>&lt;div&gt;&lt;p&gt;In the next posts, I'd like to attempt to make a camera from 'scratch.'
+And by that, I mean explore the creation of cameras from their
+components and then create a very primitive one from readily available
+materials.&lt;/p&gt;
+&lt;p&gt;In terms of history and simplicity, we should start with the pinhole
+camera. I've heard stories that Newton used a pinhole camera to look at
+the sun though I don't know if this was before or after he stared
+directly at it for 8 minutes. The pinhole is neat because it is so
+simple. With a pinhole, light is focused simply by restricting the paths
+which an incident ray may take to hit our film. Typically, diffuse and
+specular scattering sends light bouncing every which way off an object.
+The pinhole just restricts which directions hit the film. I think a
+picture is a better guide to this concept.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_qY9DSyjj8Ro/TUtOYzRfZAI/AAAAAAAAB3Y/MoKfumAjRTs/s400/pinholes2.png"&gt;&lt;/p&gt;
+&lt;p&gt;For a small hole (aperture) there is approximately one area of the
+object that will send rays to a particular part of the image. Of course
+there is a very small angle of error for pinhole cameras made with
+millimeter sized pins. As the hole increases in size, more rays are
+incident to the same section of film. And finally, when the hole is big
+enough for the whole object to be seen through it (think window), no
+cohesive image is formed.&lt;/p&gt;
+&lt;p&gt;So if we make the hole small enough, then we can have all the clarity we
+want, right? Well, I guess so. It would have to be a very circular hole
+and it would only let in a very tiny amount of light making exposure
+times long. How to fix this?&lt;/p&gt;
+&lt;p&gt;Yea, you guessed it. A lens is the answer. It is able to focus light on
+its own. Now we can collect more light and still make clear images. But
+the catch is that it only works for a range of distances. So again, lets
+consider a lens and the images of two objects at different distances.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TUtO6Js1a6I/AAAAAAAAB3g/6s0Nh2XYoFY/s1600/lenses2.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TUtO6Js1a6I/AAAAAAAAB3g/6s0Nh2XYoFY/s400/lenses2.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ray drawing can be done with 3 simple rules (though two are needed in
+practice).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rays that go in parallel to the axis go out through the focal point&lt;/li&gt;
+&lt;li&gt;rays that go in through the focal point go out parallel (time
+    reversal symmetry)&lt;/li&gt;
+&lt;li&gt;rays that go through the center are not altered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using these rules, the first object which is at the proper distance for
+the film position and focal length of the lens is in focus. However, the
+rays from the object further away do not converge at the film and so are
+out of focus.&lt;/p&gt;
+&lt;p&gt;Here its time for two experiments.&lt;/p&gt;
+&lt;p&gt;\1) &lt;strong&gt;The Window Camera&lt;/strong&gt; Go to a room with a single window and cover it
+with thick paper that has a single hole in it. Given enough light, you
+should see an image on the far wall. If not, hold a piece of white paper
+up close to the hole. [Edit: I just learned this has a name: &lt;a href="http://en.wikipedia.org/wiki/Camera_obscura"&gt;camera
+obscura&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;\2) &lt;strong&gt;The Doorway Camera&lt;/strong&gt; Now, find a lens and a doorway. In one room,
+leave the light on and go to the far wall in the dark room. Bring the
+lens to the wall until you can see an image. The doorway is the
+aperature, lens the lens, and wall the film. This demonstration is very
+simple and not too surprising. BUT SO COOL. I encourage it &lt;em&gt;vigorously&lt;/em&gt;.
+The following pictures were taken of my images in case you can't find a
+lens. [Edit: I guess this falls under camera obscura too]&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_qY9DSyjj8Ro/TUtR0FcieuI/AAAAAAAAB3o/AETwbMrWO_A/s1600/bailey-real.JPG"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_qY9DSyjj8Ro/TUtR0FcieuI/AAAAAAAAB3o/AETwbMrWO_A/s400/bailey-real.JPG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bailey Hall through a window in the physics building.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_qY9DSyjj8Ro/TUtSCaBSQZI/AAAAAAAAB3w/YePJ9Jy-Qj0/s1600/bailey-lens.JPG"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_qY9DSyjj8Ro/TUtSCaBSQZI/AAAAAAAAB3w/YePJ9Jy-Qj0/s400/bailey-lens.JPG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Same scene as imaged with a lens using the window as an aperture.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_qY9DSyjj8Ro/TUtS-MYX9RI/AAAAAAAAB34/VSLnyE4Gbs8/s1600/light%2Bfixture.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_qY9DSyjj8Ro/TUtS-MYX9RI/AAAAAAAAB34/VSLnyE4Gbs8/s320/light%2Bfixture.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Image of a ceiling light with a smaller lens&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_qY9DSyjj8Ro/TUtTSBzC1LI/AAAAAAAAB4A/W6xD0OEykkk/s1600/psb.JPG"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_qY9DSyjj8Ro/TUtTSBzC1LI/AAAAAAAAB4A/W6xD0OEykkk/s320/psb.JPG"&gt;&lt;/a&gt;Physical
+Sciences Building imaged on wood.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TUtTqmUzTPI/AAAAAAAAB4I/rDMMFj5AsJE/s1600/small.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TUtTqmUzTPI/AAAAAAAAB4I/rDMMFj5AsJE/s320/small.jpg"&gt;&lt;/a&gt;An
+extra small image (\~1cm on a side) from the lens that will be in next
+post's camera.&lt;/p&gt;
+&lt;p&gt;Together, these two elements – aperture and lens – make a very good
+camera. The lens is able to collect a lot of light and focus it on the
+film. The aperture can enhance clarity by reducing the number of paths
+that light rays can take to your lens. It also provides higher order
+corrections that come from the fact that the lens is probably not
+perfect. That is, lenses are notorious for misbehaving around the edges
+and introduce displacements in the whole image as well as between the
+colors. The aperture helps keep light from traveling through these
+edges.&lt;/p&gt;
+&lt;p&gt;Next time, a very simple camera.&lt;/p&gt;&lt;/div&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/exploration-of-cameras-i/</guid><pubDate>Thu, 03 Feb 2011 19:50:00 GMT</pubDate></item><item><title>Zombpocalypse</title><link>https://virtuosi.alexalemi.com/posts/old/zombpocalypse/</link><dc:creator>Matt</dc:creator><description>&lt;p&gt;Here at the Virtuosi, we're concerned. We are concerned that perhaps the
+world is really not ready for a zombie apocalypse. You know, the kind of
+zombie apocalypse that you may have seen in such classics as "Night of
+the Living Dead", "Shaun of the Dead", or perhaps the even more recent
+"Zombieland" (sweet cameo by the way). The kind of zombpocalypse that
+could leave major cities void of life and the country plagued with the
+undead.
+Well, Alemi and I were curious as to how likely such a pandemic was to
+occur and what it would look like in the simplest of models. In typical
+Virtuosi fashion, we threw some physics at it and this is what we came
+up with.
+&lt;strong&gt;The Model&lt;/strong&gt;:
+Taking cues from the epidemiologists, we feel that the spread of
+zombie-ism might fall into a &lt;a href="http://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology"&gt;compartmental
+model&lt;/a&gt;
+that is much like the heavily studied SIR model. Here, there are
+susceptibles, S, that get infected, I, and can subsequently infect other
+susceptibles or recover, R, and not play a part in the disease dynamics
+anymore. Our analogous model is the SZR model in which there are
+susceptibles, S, once again that can be bitten by a zombie to become
+another zombie, Z. However, this is a huge difference - a susceptible
+must then kill a zombie (by destroying the brain of cause) to make it
+removed, R. Hence, we have the SZR disease model.
+Like with the compartmental models, one can write down a set of
+differential equations that govern the dynamics of disease in a
+population. However, these might not be the best option for simulation
+as the population is represented as a continuous variable. After all,
+there can't be 1/100th of a zombie roaming around biting ankles causing
+a new epidemic after all of this partners have been killed off. To get
+around this, we set up a discrete contact network where each node is one
+of the three states of the model and there are set probabilities of the
+three states interacting when they are neighbors. In particular if there
+is a susceptible with a zombie neighbor then there is a probability
+&lt;strong&gt;b&lt;/strong&gt; that the zombie will bite the susceptible turning the node into a
+zombie. In the same time step, there is a probability &lt;strong&gt;k&lt;/strong&gt; that the
+susceptible will kill the zombie putting it in the removed class. Both
+of these actions can happen in one time step of the simulation. However,
+the two actions can't happen sequentially to the same node. That is, a
+newly bitten susceptible must be a zombie for at least one time step
+before it can be removed adding a latent period for the infection.
+&lt;strong&gt;Simulations:&lt;/strong&gt;
+With these rules, we created networks with average connectivity k=8
+(probably way too low) with up to N=40,000 susceptibles. Patient zero
+was seeded at a random location and the simulation run until there were
+no more susceptible - zombie neighbor pairs.
+A typical simulation looks something like:
+Here, the blue represent the susceptibles and red zombies. More subtly,
+the removed are shown in black. You may also notice that the zombies
+actually wrap around as they spread due to periodic boundary conditions.
+And so we ran many of these simulations for various values of N, b, and
+k to see what type of dynamics arise. As the ratio of b/k is increased
+and zombies become proportionally better at biting susceptibles than
+they are at killing the zombies, we see a transition from little to no
+infection to mass pandemic in what appears to be a sort of percolation
+transition.
+&lt;a href="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s1600/cp.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_qY9DSyjj8Ro/TC1xAXdRNKI/AAAAAAAAB04/4_SC8vFPUF0/s320/cp.png"&gt;&lt;/a&gt;
+In the figure red is the fraction of zombies in the final population and
+green is the amount of time that the simulation took to run. The spike
+in time around the critical point shows critical slowing down as also
+seen in the length of the movie above. Also, the ending configuration of
+zombies shows a fractal like structure near the critical point. Using
+the
+&lt;a href="http://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension"&gt;box-counting&lt;/a&gt;
+method, we actually calculated the fractal dimension:
+&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s1600/fractal.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/TC1zP2doE3I/AAAAAAAAB1I/Hfsl9e-TIaI/s320/fractal.png"&gt;&lt;/a&gt;
+This helps us pinpoint the epidemic transition at a ratio of b/k = 1.4.
+This means for our particular network type and assumptions on the
+infectious nature of zombie-ism that zombies must be 40% better at
+biting than we are at lopping heads for an epidemic to take off. Even
+then, there must be a much larger ratio of b/k for more than 50% of the
+population to become part of the undead.
+I trust that we the living would be at least as capable as the undead so
+any potential zombie scenario would seem to be stifled in our model. But
+then again, what about fast zombies? Now those things are scary.
+&lt;strong&gt;Update:&lt;/strong&gt;
+I had a quick thought that mobile zombies might be a bit more realistic.
+I made a quick movie where zombies pursue the closest susceptible while
+the susceptibles run away from the zombies at the same speed. You will
+see an area clear around the initial infection as the zombies give
+chase. By accident, two zombies will collide providing the spark for an
+epidemic. An explosion of zombies results. More to follow!&lt;/p&gt;</description><category>monte carlo</category><category>simulation</category><category>video</category><category>zombies</category><guid>https://virtuosi.alexalemi.com/posts/old/zombpocalypse/</guid><pubDate>Thu, 01 Jul 2010 23:48:00 GMT</pubDate></item><item><title>Bubbles!</title><link>https://virtuosi.alexalemi.com/posts/old/bubbles-/</link><dc:creator>Matt</dc:creator><description>&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s1600/good-small.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_qY9DSyjj8Ro/S8TMvnGGX6I/AAAAAAAABzU/_o0PHaRQLmg/s320/good-small.jpg"&gt;&lt;/a&gt;
+Ever wonder why don't you see a standard rainbow when looking at a thin
+film such as soap stretched across a membrane ready for bubble making?
+Well, I encountered this problem when I presented my intro physics
+section with a quiz question today. Properly stated, the question was...
+"Suppose white light is incident on a thin film (a soap bubble of
+n=1.33) hanging vertically inside of a square loop. The minimum
+thickness of the film at the top of the loop is 900nm and it increases
+linearly (due to gravity) to 1300nm by the bottom of the loop which is
+10cm away. This means that the thickness as a function of distance from
+the top of the loop is
+$$ d(x) = \text{900nm} + \text{400nm} * \left(
+\frac{x}{\text{10cm}} \right) $$
+What wavelengths will be most strongly reflected as a function of
+distance along our bubble film?"
+So I got to thinking - don't the partially interfering wavelengths also
+contribute to the image that our eyes see? Isn't there a better mass
+profile to use such as an exponential? Linear is just silly.
+As for the first question, if you consider a single ray entering the
+thin film and reflecting off both the first interface as well as the
+second, then there is a phase difference between the two reflected
+waves,
+$$ \Delta \phi = \pi + 2\pi * \frac{2d}{\lambda} $$
+where d is the thickness of the film and lambda is the wavelength. If we
+consider these two waves as two standing waves added together with a
+phase then we see that the superposition of their electric fields, for
+example, is
+$$ E_{tot} = E_0 \cos(\omega t) + E_0 \cos(\omega t + \Delta
+\phi) $$
+$$ E_{tot} = E_0 \sin(\omega t) \cos(\Delta \phi) $$
+The intensity that our eyes see then goes like the square of this giving
+an effective damping to certain wavelengths as given by
+$$ \delta = \cos^2(\Delta \phi) $$
+Using a more realistic exponential mass profile and this damping factor
+for wavelengths in the visible spectrum, I created the top image using
+OpenIL (maybe it's called DevIL, hard to say).&lt;/p&gt;</description><category>bubbles</category><category>interference</category><category>thin films</category><guid>https://virtuosi.alexalemi.com/posts/old/bubbles-/</guid><pubDate>Tue, 13 Apr 2010 15:33:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about probability)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/probability.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pi storage</title><link>https://virtuosi.alexalemi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let me share my worst "best idea ever" moment. Sometime during my
+undergraduate I thought I had solved all the world's problems. You see,
+on this fateful day, my hard drive was full. I hate it when my hard
+drive fills up, it means I have to go and get rid of some of my stuff. I
+hate getting rid of my stuff. But what can someone do? And then it hit
+me, I had the bright idea:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What if we didn't have to &lt;em&gt;store&lt;/em&gt; things, what if we could just
+&lt;em&gt;compute&lt;/em&gt; files whenever we wanted them back?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds like an awesome idea, right? I know. But how could we compute our
+files? Well, as you may know pi is conjectured to be a &lt;a href="http://en.wikipedia.org/wiki/Normal_number"&gt;normal
+number&lt;/a&gt;, meaning its digits
+are probably random. We also know that it is irrational, meaning pi
+never ends.... Since its digits are random, and they never end, in
+principle any sequence you could ever imagine should show up in pi
+eventually. In fact there is a nifty website
+&lt;a href="http://pi.nersc.gov/"&gt;here&lt;/a&gt; that will let you search for arbitrary
+strings (using a 5-bit format) in first 4 billion digits, for example
+"alemi" &lt;a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;amp;format=char"&gt;seems to show
+up&lt;/a&gt; at around
+digit 3149096356. So in principle, I could send you just an index, and a
+length, and you could compute the resulting file. But wait you cry,
+isn't computing digits of pi hard, don't people work really hard to
+compute pi farther and farther? Hold on I claim, first of all, I'm
+imagining a future where computation is cheap. Secondly, there is a
+really neat algorithm, the &lt;a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula"&gt;BBP
+algorithm&lt;/a&gt;,
+that enables you to compute the kth binary digit of pi without knowing
+any of the preceding digits. In other words, in principle if you wanted
+to know the 4 billionth digit of pi, you can compute it without having
+to first compute the first 4 billion other digits. Cool, this is
+beginning to sound like a really good idea. What's the catch? Perhaps
+you've already gotten a taste of it. Let's try to estimate just how far
+along in pi we would have to look before our message of interest shows
+up. Let's assume we have written our file in binary, and are computing
+pi in binary e.g.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;00100100 00111111 01101010 10001000 10000101 10100011 00001000
+11010011&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;etc. So, if the sequence is random, there is a 1/2 chance that at any
+point we get the right starting bit of our file, and then a 1/2 chance
+we get the next one, etc. So the chance that we would create our file if
+we were randomly flipping coins would be $$ P = \left( \frac{1}{2}
+\right)^N = 2^{-N} $$ if our file was N bits long. So where do we
+expect this sequence to first show up in the digits of pi? Well, this
+turns out to be a &lt;a href="http://mathworld.wolfram.com/CoinTossing.html"&gt;subtle
+problem&lt;/a&gt;, but we can get
+a feel for it by assuming that we compute N digits of pi at a time and
+see if its right or not. If its not, we move on to the next group of N
+digits, if its right, we're done. If this were the case, we should
+expect to have to draw about $$ \frac{1}{P} = 2^N $$ times until we
+have a success, and since each trial ate up N digits, we should expect
+to see our file show up after about $$ N 2^N $$ digits of pi. Great, so
+instead of handing you the file, I could just hand you the index the
+file is located. But how many bits would I need to tell you that index.
+Well, just like we know that 10^3 takes 4 digits to express in decimal,
+and 6 x 10^7 takes 8 digits to express, in general it takes $$ d =
+\log_b x + 1 $$ digits to express a number in base b, in this case it
+takes $$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N
++ \log_2 N + 1 $$ digits to express this index in binary. And there's
+the rub. Instead of sending you N bits of information contained in the
+file, all my genius compression algorithm has manged to do is replace N
+bits of information in the file, with a number that takes ( \~ N +
+\log_2 N ) bits to express. I've actually managed to make the files
+larger not smaller! You may have noticed above, that even for the simple
+case of "alemi", all I managed to do was swap the binary message&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alemi -&amp;gt; 0000101100001010110101001 with the index 3149096356 -&amp;gt;
+10111011101100110110010110100100&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;which is longer in binary! As an aside, you may have felt uncomfortable
+with my estimation for how long we have to wait to see our message, and
+you would be right. Just because all N digits I draw at a time don't
+match up doesn't mean that the second half isn't useful. For instance if
+I was looking for 010, lets say some of the digits are 101,010. While
+both of those sequences didn't match, if I was looking at every digit at
+a time, I would have found a match. And you'd be right. &lt;a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf"&gt;Smarter people
+than I&lt;/a&gt; have
+computed just how long you should have to wait, and end up with the
+better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
+pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://virtuosi.alexalemi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>I was born on Wednesday</title><link>https://virtuosi.alexalemi.com/posts/old/i-was-born-on-wednesday/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;Probability is a tricky thing. There are a lot of nonsensical answers to
+be had. I just read &lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;an
+article&lt;/a&gt;
+about the recent &lt;a href="http://www.g4g4.com/"&gt;Gathering for Gardner&lt;/a&gt; meeting
+that took place. Gathering for Gardner is a unique meeting for
+mathematicians, magicians and puzzle makers where they get together and
+talk about interesting things. The meetings were inspired by &lt;a href="http://en.wikipedia.org/wiki/Martin_Gardner"&gt;Martin
+Gardner&lt;/a&gt;, one of the
+awesomest dudes of our time, who unfortunately just passed away. The
+question put to the floor was the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"I have two children. One is a boy born on a Tuesday. What is the
+probability I have two boys?"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Think about that for a moment. Not too hard though. The answer turns out
+to be surprising. Upon reading the question, I thought about it for a
+long time and managed to confused myself entirely. Thinking I had gone
+crazy, I wrote a little python script to test the riddle, which only
+left me more convinced I had gone insane. I've spent most of the night
+thinking about it, and after making it half way to crazy, I've come
+around and am momentarily convinced the puzzle makes perfect sense. I'm
+going to attempt to convince you it makes perfect sense, but I plan on
+doing it in steps so as to reduce the bewilderment.&lt;/p&gt;
+&lt;h4&gt;Playing Cards&lt;/h4&gt;
+&lt;p&gt;Forget the question. Lets play a game of cards. You shuffle a deck and
+deal me two cards:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I accidentally flip one of them over.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s1600/23.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zCuZ4KiQI/AAAAAAAAALA/cNa3n-rjuTg/s320/23.png"&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Whats the probability that my other card is red? Well, that ones easy,
+its about half. Sure, its not exactly a half, knowing that the deck is
+finite and that the draws are done without replacement, knowing that the
+card showing is a red one means that there are only 52/2 - 1= 26 -1 = 25
+red cards out of a deck of 52-1 = 51 cards giving a probability of 49%.
+But its basically a half. Lets do over, deal me two cards:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Darn, I flipped one of them over again:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s1600/5.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/S_zDlNQLJyI/AAAAAAAAALI/WPBCX9i-Pk0/s320/5.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Whats the probability that my other card is red? About a half still.&lt;em&gt;
+(&lt;/em&gt;Sure, this time its really 26/51 = 51%). Nothing mysterious going on.
+Do over again. Deal me two cards:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;a href="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s1600/b2fv.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/_YOjDhtygcuA/S_zCNBPs3KI/AAAAAAAAAK4/WdtzaW_A6pk/s320/b2fv.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This time I'll ask a little trickier question. Whats the probability
+that both my cards are red? Ah, well its about 1/2 * 1/2 or about 1/4 =
+25%. (The real answer is 24.5%) Alright smarty pants. Whats the
+probability that I had a red card and a black one? Well, that ought to
+be about 1/2 (Real answer 51%). All in all, I could have a red card,
+then a black one (RB), or a black one, then a red one (BR), or a red one
+then a red one (RR) or a black one then a black one (BB). 4 distinct
+possibilities, each of which are equally likely, so the above two
+answers make complete sense. There is only one way in four to get both
+red cards, but two ways out of four to have both a red and a black. So
+far so good. Lets ask a different question. Now I'm going to get a bit
+obtuse. You deal me two cards. Now you ask me.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hey Alemi, do you have a red card?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Meaning, do I have at least one red card. I respond, "Yes." Now, go with
+your gut. You know I have at least one red card. What do you reckon the
+color of the other one is? Probably black you say? You'd be correct.
+Looking at our breakdown above, I could have gotten RR, RB, BR, or BB as
+my cards dealt. Each was equally likely, but now you know something
+else. You know that I have at least one red card, so we only have three
+possibilities left, I either have RR, RB, or BR. Each of which was
+equally likely. So whats the probability that my other card is black?
+About 2/3 or 67%. (Real answer: 67.5%) Alright, same situation. You deal
+me two cards, I reveal that I have at least one red one. Whats the
+probability that my other card is red? Well, obviously 1/3 or 33%
+(Actually 32.5%) since this is the opposite question to the one directly
+above, and follows from the same reasoning. Fine. No problems. All of
+this makes sense.&lt;/p&gt;
+&lt;h4&gt;Offspring&lt;/h4&gt;
+&lt;p&gt;Instead of playing cards, lets return to offspring. Lets first look at a
+classic probability riddle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have exactly two children. At least one of them is a boy. What is
+the probability that the other one is a boy?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If I were to give you this question straightaway, most people would have
+said the probability would be a 1/2. Their reasoning being that boys and
+girls are equally likely. But having just led you through the playing
+cards, hopefully now it makes some sense how the true answer to this
+question is 1/3 or 33%. Originally my family could have been BB,BG,GB,or
+GG. Each of which was equally likely. Telling you I have at least one
+boy means now we are dealing with only the situations BB, BG or GB,
+still all equally likely, making the probability 1/3. Fine. Now, lets
+reexamine the true question at hand:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"I have two children. One is a boy born on a Tuesday. What is the
+probability I have two boys?"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Is it a half? Is it 1/3? What do you reckon? At first thought, it seems
+like the Tuesday bit shouldn't enter into it at all, but on second
+thought, I've just revealed a lot more information than I did in the
+previous question. I've told you something specific about one of my
+children. This is analogous to when I accidently flipped over one of my
+cards, revealing not only its color but its count as well. Hopefully it
+makes sense that the probability ought to be much closer to a half than
+to a third. In fact the answer is 13/27 = 48.1%. With a little thought,
+you should be able to come up with that number yourself. Otherwise, see
+&lt;a href="http://www.newscientist.com/article/dn18950-magic-numbers-a-meeting-of-mathemagical-tricksters.html?full=true"&gt;the
+article&lt;/a&gt;
+I mentioned at the beginning of this post. They have a nice breakdown at
+the bottom. Hopefully, at this point if you've read this far, you'd
+should be wondering why this question was so mysterious to begin with,
+and if thats the case, I did my job. If you think the question is
+obvious, and think it would have been obvious even without the card
+analogy, try and ask the boy-born-on-a-tuesday question by itself to one
+of your friends. I guarantee they'll be bewildered. Its a fun problem,
+and one that illustrates just how strange and counterintuitive
+probability can be. If you want some other mind twisting mathematical
+puzzles, try your hand at the &lt;a href="http://en.wikipedia.org/wiki/Two_envelopes_problem"&gt;Two envelopes
+problem&lt;/a&gt;, or
+&lt;a href="http://en.wikipedia.org/wiki/Bertrand's_box_paradox"&gt;Bertrands' box
+paradox&lt;/a&gt;, or &lt;a href="http://en.wikipedia.org/wiki/Birthday_problem"&gt;the
+Birthday problem&lt;/a&gt;, or
+everyone's favorite &lt;a href="http://en.wikipedia.org/wiki/Monty_Hall_problem"&gt;the Monty Hall
+problem&lt;/a&gt;. &lt;a href="http://thevirtuosi.blogspot.com/2010/04/some-of-best-advice-youll-ever-receive.html"&gt;Remember
+though&lt;/a&gt;,
+try your hand at the problem before reading the answer. Super fun bonus
+homework question: Lets do cards again. You deal me two cards, and I
+reveal that I have a red heart. Whats the probability that my other card
+is red?&lt;/p&gt;&lt;/div&gt;</description><category>birthday</category><category>cards</category><category>fun</category><category>monty hall</category><category>odds</category><category>probability</category><guid>https://virtuosi.alexalemi.com/posts/old/i-was-born-on-wednesday/</guid><pubDate>Wed, 26 May 2010 03:17:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about fun)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/fun.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Recently I have seen quite a few blog posts written about re-evaluating
+the points values assigned to the different letter tiles in the
+Scrabble™ brand Crossword Game. The premise behind these posts is that
+the creator and designer of the game assigned point values to the
+different tiles according to their relative frequencies of occurrence in
+words in English text, supplemented by information gathered while
+playtesting the game. The points assigned to different letters reflected
+how difficult it was to play those letters: common letters like E, A,
+and R were assigned 1 point, while rarer letters like J and Q were
+assigned 8 and 10 points, respectively. These point values were based on
+the English lexicon of the late 1930’s. Now, some 70 years later, that
+lexicon has changed considerably, having gained many new words (e.g.:
+EMAIL) and lost a few old ones. So, if one were to repeat the analysis
+of the game designer in the present day, would one come to different
+conclusions regarding how points should be assigned to various letters?
+&lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’ve decided to add my own analysis to the recent development because I
+have found most of the other blog posts to be unsatisfactory for a
+variety of reasons&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
+One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
+calculated letters’ relative frequencies by counting the number of times
+each letter appeared in each word in the Scrabble™ dictionary. But this
+analysis is faulty, since it ignores the probability with which
+different words actually appear in the game. One is far less likely to
+draw QI than AE during a Scrabble™ game (since there’s only one Q in the
+bag, but many A's and E's). Similarly, very long words like
+ZOOGEOGRAPHICAL have a vanishingly small probability of appearing in the
+game: the A’s in the long words and the A’s in the short words cannot be
+treated equally. A second &lt;a href="http://blog.useost.com/2012/12/30/valett/"&gt;article&lt;/a&gt; I saw calculated
+letter frequencies based on their occurrence in the Scrabble™ dictionary
+and did attempt to weight frequencies based on word length. The author
+of this second article also claimed to have quantified the extent to
+which a letter could “fit well” with the other tiles given to a player.
+Unfortunately, some of the steps in the analysis of this second article
+were only vaguely explained, so it isn’t clear how one could replicate
+the article’s conclusions. In addition, as far as I can tell, neither of
+these articles explicitly included the distribution of letters (how many
+A’s, how many B’s, etc) included in a Scrabble™ game. Also, neither of
+these articles accounted for the fact that there are blank tiles (that
+act as wild cards and can stand in for any letter) that appear in the
+game.&lt;/p&gt;
+&lt;p&gt;So, what does one need to do to improve upon the analyses already
+performed? We’re given the Scrabble™ dictionary and bag of &lt;a href="http://upload.wikimedia.org/wikipedia/commons/b/b8/Scrabble_tiles_en.jpg"&gt;100
+tiles&lt;/a&gt;
+with a set distribution, and we’re going to try to determine what a good
+pointing system would be for each letter in the alphabet. We’re also
+armed with the knowledge that each player is given 7 letters at a time
+in the game, making words longer than 8 letters very rare indeed. Let’s
+say for the sake of simplicity that words 9 letters long or shorter
+account for the vast majority of words that are possible to play in a
+normal game.&lt;/p&gt;
+&lt;p&gt;Based on these constraints, how can one best decide what points to
+assign the different tiles? As stated above, the game is designed to
+reward players for playing words that include letters that are more
+difficult to use. So, what makes an easy letter easy, and what makes a
+difficult letter difficult? Sure, the number of times the letter appears
+in the
+&lt;a href="http://scrabblehelper2.googlecode.com/svn-history/r3/trunk/src/scrabble/dictionary.txt"&gt;dictionary&lt;/a&gt;
+is important, but this does not account for whether or not, on a given
+rack of tiles (a rack of tiles is to Scrabble™ as a hand of cards is to
+poker), that letter actually can be used. The letter needs to combine
+with other tiles available either on the rack or on the board in order
+to form words. The letter Q is difficult to play not only because it is
+used relatively few times in the dictionary, but also because the
+majority of Q-words require the player to use the letter U in
+conjunction with it.&lt;/p&gt;
+&lt;p&gt;So, what criterion can one use to say how useful a particular tile is?
+Let’s say that letters that are useful have more potential to be used in
+the game: they provide more options for the players who draw them. Given
+a rack of tiles, one can generate a list of all of the words that are
+possible for the player to play. Then, one can count the number of times
+that each letter appears in that list. Useful letters, by this
+criterion, will combine more readily with other letters to form words
+and so appear more often in the list than un-useful letters.&lt;/p&gt;
+&lt;p&gt;(I would also like to take a moment to preempt &lt;a href="http://scrabbleplayers.org/w/Valett"&gt;criticism from the
+competitive Scrabble™ community&lt;/a&gt; by
+saying that strategic decisions made by the players need not be brought
+into consideration here. The point values of tiles are an engineering
+constraint of the game. Strategic decisions are made by the players,
+given the engineering constraints of the game. Words that are “available
+to be played” are different from “words that actually do get played.”
+The potential usefulness of individual letter tiles should reflect
+whether or not it is even possible to play them, not whether or not a
+player decides that using a particular group of tiles constitutes an
+optimal move.)&lt;/p&gt;
+&lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
+To give an example, suppose I draw the rack BEHIWXY. I can 
+generate&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
+the full list of words available to be played given this rack: BE, BEY,
+BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY,
+WHY, WYE, XI, YE, YEH, YEW. Counting the number of occurrences of each
+letter, I see that the letter E appears 18 times, while the letter W
+only appears 7 times. This example tells me that the letter E is
+probably much more potentially useful than the letter W.&lt;/p&gt;
+&lt;p&gt;The example above is only one of the many, many possible racks that one
+can see in a game of Scrabble™. I can use a 
+&lt;a href="http://en.wikipedia.org/wiki/Monte_Carlo_method"&gt;Monte Carlo&lt;/a&gt;-type simulation
+to estimate the average usefulness of the different letters by drawing
+many example racks.
+&lt;a id="note3"&gt;&lt;/a&gt;
+Monte Carlo is a technique used to estimate
+numerical properties of complicated things without explicit calculation.
+For example, suppose I want to know the probability of drawing a
+straight flush in poker.&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
+explicitly by using combinatorics, or I can use a Monte Carlo method to
+deal a large number of hypothetical possible poker hands and count the
+number of straight flushes that appear. If I deal a large enough number
+of hands, the fraction of hands that are straight flushes will converge
+upon the correct analytic value. Similarly here, instead of explicitly
+calculating the usefulness of each letter, I use Monte Carlo to draw a
+large number of hypothetical racks and use them to count the number of
+times each letter can be used. Comparing the number of times that each
+tile is used over many, many possible racks will give a good
+approximation of how relatively useful each tile is on average. Note
+that this process accounts for the words acceptable in the Scrabble™
+dictionary, the number of available tiles in the bag, as well as the
+probability of any given word appearing.&lt;/p&gt;
+&lt;p&gt;In my simulation, I draw 10,000,000 racks, each with 9 tiles
+(representing the 7 letters the player actually draws plus two tiles
+available to be played through to form longer words). I perform the
+calculation two different ways: once with a 98-tile pool with no blanks,
+and once with a 100-tile pool that does include blanks. In the latter
+case, I make sure to not count the blanks used to stand in for different
+letters as instances of those letters appearing in the game. The results
+are summarized in the table below.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There are two key observations to be made here. First, it does not seem
+to matter whether or not there are blanks in the bag! The results are
+very similar in both cases. Second, it would be completely reasonable to
+keep the tile point values as they are. Only the Z, H, and U appear out
+of order. It’s only if one looks very carefully at the differences
+between the usefulness of these different tiles that one might
+reasonably justify re-pointing the different letters.&lt;/p&gt;
+&lt;p&gt;For fun, I have included in the table my own suggestions for what these
+tiles’ values might be changed to based on the simulation results.
+(&lt;strong&gt;Note&lt;/strong&gt;: here's where any pretensions of scientific rigor go out the
+window.) I have kept the scale of points between 1 and 10, as in the
+current pointing system. I have assigned groups of letters the same
+number of points based on whether they have a similar usefulness score.
+Here are the significant changes: L and U, which are significantly less
+useful than the other 1-point tiles may be bumped up to 2 points,
+comparable to the D and G. The letter V is clearly less useful than any
+of the other three 4-point tiles (W, Y, and F, all of which may be used
+to form 2-letter words while the V forms no 2-letter words), and so is
+undervalued. The H is comparable to the 3-point tiles, and so is
+currently overvalued. Similarly, the Z is overvalued when one considers
+how close to the J it is. Unlike in the previous two articles that I
+mentioned, I don't find any strong reason to change the value of the
+letter X compared to the other 8 point tiles. I suppose one could lower
+its value from 8 points to 7, but I have (somewhat arbitrarily) chosen
+not to do so.&lt;/p&gt;
+&lt;p&gt;One may also ask the question whether or not the fact that a letter
+forms 2- or 3-letter words is unfairly biasing that letter. In
+particular, is the low usefulness of the C and V compared to
+comparably-pointed tiles due to the fact that they form no 2-letter
+words? Performing the simulation again without 2-letter words, I found
+no changes in the results in any of the letters except for C, which
+increased in usefulness above the B and the H. The letter V's ranking,
+however, did not change at all, indicating that unlike the C the V is
+difficult to use even when combining with letters to make longer words.
+Repeating the simulation yet again without 2- or 3-letter words yielded
+the same results.&lt;/p&gt;
+&lt;p&gt;As a final note, I would like to respond directly to to Stefan Fatsis's
+&lt;a href="http://www.slate.com/articles/sports/gaming/2013/01/scrabble_tile_values_why_it_s_a_mistake_to_change_the_point_value_of_the.single.html"&gt;excellent article&lt;/a&gt;
+about the so-called controversy surrounding re-calculating tile values
+and say that I am fully aware that this is indeed a "statistical
+exercise," motivated mostly by my desire to do the calculation made by
+others in a way that made sense in the context of the game of Scrabble.
+Similarly, I realize that these recommendations are unlikely to actually
+change anything. Given that the original points values of the tiles are
+still justifiably appropriate by my analysis, it's not like anybody at
+Hasbro is going to jump to "fix" the game. Lastly, my calculations have
+nothing to do with the strategy of the game whatsoever, and cannot be
+used to learn how to play the game any better. (If anything, I've only
+confirmed some things that many experienced Scrabble players already
+know about the game, such as that the V is a tricky tile, or that the H,
+X, and Z tiles, in spite of their high point values, are quite
+flexible.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
+1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
+4 years, and am quite familiar with the mechanics of the game, as well
+as contemporary strategy.&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
+2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
+generate the list of available words given any set of tiles. Thanks
+Alemi!&lt;/p&gt;
+&lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
+3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
+Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
+suffered a severe bout of encephalitis that resulted in an emergency
+trepanation. While recovering in the hospital, he played many games of
+solitaire and was intrigued by the question of how to calculate the
+probability that a given deal could result in a winnable game. The
+combinatorics required to answer this question proved staggeringly
+complex, so Ulam proposed the idea of generating many possible solitaire
+deals and merely counting how many of them resulted in victory. This
+proved to be much simpler than an explicit calculation, and the rest is
+history: Monte Carlo is used today in a wide variety of applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Additional References:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The photo at top of a Scrabble™ board was taken during the 2012 National
+Scrabble™ Championship. Check out the 9-letter double-blank BINOCULAR.&lt;/p&gt;
+&lt;p&gt;For anyone interested in learning more about the fascinating world of
+competitive Scrabble™, check out &lt;em&gt;Word Freak&lt;/em&gt;, also by Stefan Fatsis.
+This book has become more or less the definitive documentation upon this
+subculture. If you don't have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
+Wars&lt;/a&gt;, a documentary that
+follows many of the same people as Fatsis's book. (It still may be
+available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>Pi storage</title><link>https://virtuosi.alexalemi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let me share my worst "best idea ever" moment. Sometime during my
+undergraduate I thought I had solved all the world's problems. You see,
+on this fateful day, my hard drive was full. I hate it when my hard
+drive fills up, it means I have to go and get rid of some of my stuff. I
+hate getting rid of my stuff. But what can someone do? And then it hit
+me, I had the bright idea:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What if we didn't have to &lt;em&gt;store&lt;/em&gt; things, what if we could just
+&lt;em&gt;compute&lt;/em&gt; files whenever we wanted them back?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds like an awesome idea, right? I know. But how could we compute our
+files? Well, as you may know pi is conjectured to be a &lt;a href="http://en.wikipedia.org/wiki/Normal_number"&gt;normal
+number&lt;/a&gt;, meaning its digits
+are probably random. We also know that it is irrational, meaning pi
+never ends.... Since its digits are random, and they never end, in
+principle any sequence you could ever imagine should show up in pi
+eventually. In fact there is a nifty website
+&lt;a href="http://pi.nersc.gov/"&gt;here&lt;/a&gt; that will let you search for arbitrary
+strings (using a 5-bit format) in first 4 billion digits, for example
+"alemi" &lt;a href="http://pi.nersc.gov/cgi-bin/pi.cgi?word=alemi&amp;amp;format=char"&gt;seems to show
+up&lt;/a&gt; at around
+digit 3149096356. So in principle, I could send you just an index, and a
+length, and you could compute the resulting file. But wait you cry,
+isn't computing digits of pi hard, don't people work really hard to
+compute pi farther and farther? Hold on I claim, first of all, I'm
+imagining a future where computation is cheap. Secondly, there is a
+really neat algorithm, the &lt;a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula"&gt;BBP
+algorithm&lt;/a&gt;,
+that enables you to compute the kth binary digit of pi without knowing
+any of the preceding digits. In other words, in principle if you wanted
+to know the 4 billionth digit of pi, you can compute it without having
+to first compute the first 4 billion other digits. Cool, this is
+beginning to sound like a really good idea. What's the catch? Perhaps
+you've already gotten a taste of it. Let's try to estimate just how far
+along in pi we would have to look before our message of interest shows
+up. Let's assume we have written our file in binary, and are computing
+pi in binary e.g.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;00100100 00111111 01101010 10001000 10000101 10100011 00001000
+11010011&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;etc. So, if the sequence is random, there is a 1/2 chance that at any
+point we get the right starting bit of our file, and then a 1/2 chance
+we get the next one, etc. So the chance that we would create our file if
+we were randomly flipping coins would be $$ P = \left( \frac{1}{2}
+\right)^N = 2^{-N} $$ if our file was N bits long. So where do we
+expect this sequence to first show up in the digits of pi? Well, this
+turns out to be a &lt;a href="http://mathworld.wolfram.com/CoinTossing.html"&gt;subtle
+problem&lt;/a&gt;, but we can get
+a feel for it by assuming that we compute N digits of pi at a time and
+see if its right or not. If its not, we move on to the next group of N
+digits, if its right, we're done. If this were the case, we should
+expect to have to draw about $$ \frac{1}{P} = 2^N $$ times until we
+have a success, and since each trial ate up N digits, we should expect
+to see our file show up after about $$ N 2^N $$ digits of pi. Great, so
+instead of handing you the file, I could just hand you the index the
+file is located. But how many bits would I need to tell you that index.
+Well, just like we know that 10^3 takes 4 digits to express in decimal,
+and 6 x 10^7 takes 8 digits to express, in general it takes $$ d =
+\log_b x + 1 $$ digits to express a number in base b, in this case it
+takes $$ d = \log_2 ( N 2^N ) + 1= \log_2 2^N + \log_2 N + 1 = N
++ \log_2 N + 1 $$ digits to express this index in binary. And there's
+the rub. Instead of sending you N bits of information contained in the
+file, all my genius compression algorithm has manged to do is replace N
+bits of information in the file, with a number that takes ( \~ N +
+\log_2 N ) bits to express. I've actually managed to make the files
+larger not smaller! You may have noticed above, that even for the simple
+case of "alemi", all I managed to do was swap the binary message&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alemi -&amp;gt; 0000101100001010110101001 with the index 3149096356 -&amp;gt;
+10111011101100110110010110100100&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;which is longer in binary! As an aside, you may have felt uncomfortable
+with my estimation for how long we have to wait to see our message, and
+you would be right. Just because all N digits I draw at a time don't
+match up doesn't mean that the second half isn't useful. For instance if
+I was looking for 010, lets say some of the digits are 101,010. While
+both of those sequences didn't match, if I was looking at every digit at
+a time, I would have found a match. And you'd be right. &lt;a href="http://www.cs.elte.hu/~mori/cikkek/Expectation.pdf"&gt;Smarter people
+than I&lt;/a&gt; have
+computed just how long you should have to wait, and end up with the
+better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
+pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://virtuosi.alexalemi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>The Linear Theory of Battleship</title><link>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recently I set out to hold a
+&lt;a href="http://en.wikipedia.org/wiki/Battleship_(game)"&gt;Battleship&lt;/a&gt; programming
+tournament here among some of the undergraduates. Naturally, I myself
+wanted to win. So, I got to thinking about the game, and developed what
+I like to call "the linear theory of battleship". A demonstration of the
+fruits of my efforts can be found
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;here&lt;/a&gt;. Below, my
+aim is to guide you through how I developed this theory, as an exercise
+in using physics to solve an interesting unknown problem. This is one of
+the things I really love about physics, the fact that obtaining an
+education in physics is essentially an education in reasoning and
+thinking through complicated problems, along with an honestly short list
+of tips and tricks that have proven successful for tackling a wide range
+of problems. So, how do we develop the linear theory of battleship?
+First we need to quantify what we know, and what we want to know.&lt;/p&gt;
+&lt;h4&gt;The Goal&lt;/h4&gt;
+&lt;p&gt;So, how does one win Battleship? Since the game is about sinking your
+opponents ships before they can sink yours, it would seem that a good
+strategy would be to try to maximize your probability of getting a hit
+every turn. Or, if we knew the probabilities of there being a hit on
+every square, we could guess each square with that probability, to keep
+things a little random. So, let's try to represent what we are after. We
+are after a whole set of numbers $$ P_{i,\alpha} $$ where i ranges
+from 0 to 99 and denotes a particular square on the board, and alpha can
+take the values C,B,S,D,P for carrier, battleship, submarine, destroyer,
+and patrol boat respectively. This matrix should tell us the probability
+of there being the given ship on the given square. E.g. $$ P_{53,B} $$
+would be the probability of there being a battleship on the 53rd square.
+If we had such a matrix, we could figure out the probability of there
+being at hit on every square by summing over all of the ships we have
+left, i.e. $$ P_i = \sum_{\text{ships left}} P_{i, \alpha } $$&lt;/p&gt;
+&lt;h4&gt;The Background&lt;/h4&gt;
+&lt;p&gt;Alright, we seem to have a goal in mind, now we need to quantify what we
+have to work with. Minimally, we should try to measure the probabilities
+for the ships to be on each square given a random board configuration.
+Let's codify that information in another matrix $$ B_{i,\alpha} $$
+where B stands for 'background', i runs from 0 to 99, and alpha is
+either C,B,S,D, or P again, and stands for a ship. This matrix should
+tell us the probability of a particular ship being on a particular spot
+on the board assuming our opponent generated a completely random board.
+This is something we can measure. In fact, I wrote a little code to
+generate random Battleship boards, and counted where each of the ships
+appeared. I did this billions of times to get good statistics, and what
+I ended up with is a little interesting. You can see the results for
+yourself over at my &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;results exploration
+page&lt;/a&gt; by changing
+the radio buttons for the ship you are interested in, but I have some
+screen caps below. Click on any of them to embiggen.&lt;/p&gt;
+&lt;h5&gt;All&lt;/h5&gt;
+&lt;p&gt;First of all, lets look at the sum of all of the ship probabilities, so
+that we have the probability of getting a hit on any square for any ship
+given a random board configuration, or in our new parlance $$ B_i =
+\sum_{\alpha={C,B,S,D,P} } B_{i,\alpha} $$ The results:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s1600/all.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-G-vGF0DUOgM/Tokf-JE6AAI/AAAAAAAAAXU/Oyk1qlj3tKQ/s200/all.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;shouldn't be too surprising. Notice first that we can see that my
+statistics are fairly good, because our probabilities look more or less
+smooth, as they ought to be, and show nice left/right up/down symmetry,
+which it ought to have. But as you'll notice, on the whole there is
+greater probability to get a hit near the center of the board than near
+the edges, an especially low probability of getting a hit in the
+corners. Why is that? Well, there are a lot more ways to lay down a ship
+such that there is a hit in a center square than there are ways to lay a
+ship so that it gives a hit in a corner. In fact, for a particular ship
+there are only two ways to lay it so that it registers a hit in the
+corner. But, for a particular square in the center, for the Carrier for
+example there are 5 different ways to lay it horizontally to register a
+hit, and 5 ways to lay it vertically, or 10 ways total. Neat. We see
+entropy in action.&lt;/p&gt;
+&lt;h5&gt;Carrier&lt;/h5&gt;
+&lt;p&gt;Next let's look just at the Carrier:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s1600/carrier.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-CPYGjQCZbgA/Tokf-e0oKPI/AAAAAAAAAXk/hjfU3YgFkQk/s200/carrier.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Woah. This time the center is very heavily favored versus the edges.
+This reflects the fact that the Carrier is a large ship, occupying 5
+spaces, basically no matter how you lay it, it is going to have a part
+that lies near the center.&lt;/p&gt;
+&lt;h5&gt;Battleship&lt;/h5&gt;
+&lt;p&gt;Now for the Battleship:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s1600/battleship.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-6On4gLpSBUM/Tokf-EyNHZI/AAAAAAAAAXc/lp5mxbYeAo0/s200/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is interesting. This time, the most probable squares are not the
+center ones, but the not quite center ones. Why is that? Well, we saw
+that for the Carrier, the probability of finding it in the center was
+very large, and so respectfully, our battleship cannot be in the center
+as often, as a lot of the time it would collide with the Carrier. Now,
+this is not because I lay down the Carrier first, my board generation
+algorithm assigns all of the boards at once, and just weeds out invalid
+ones, this is a real entropic effect. So here we begin to see some
+interesting Ship-Ship interactions in our probability distributions. But
+notice again that on the whole, the battleship should also be found near
+the center as it is also a large ship.&lt;/p&gt;
+&lt;h5&gt;Sub / Destroyer&lt;/h5&gt;
+&lt;p&gt;Next let's look at the sub / destroyer. First thing to note is that our
+plot should be the same for both of these ships as they are both the
+same length.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s1600/sub.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-hF3iyCrPVq8/Tokf-p_R5_I/AAAAAAAAAXs/FxaAiGmzq4Q/s200/sub.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here we see an even more pronounced effect near the center. The Subs and
+Destroyers are 'pushed' out of the center because the Carriers and
+Battleships like to be there. This is a sort of entropic repulsion.&lt;/p&gt;
+&lt;h5&gt;Patrol Boat&lt;/h5&gt;
+&lt;p&gt;Finally, let's look at the patrol boat:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s1600/patrol.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-i8FNLK7mPII/Tokf-vkEtHI/AAAAAAAAAX0/FcIr6D9zNCo/s200/patrol.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The patrol boat is a tiny ship. At only two squares long, it can fit in
+just about anywhere, and so we see it being strongly affected by the
+affection the other ships have for the center. Neat stuff. So, we've
+experimentally measured where we are likely to find all of the
+battleship ships if we have a completely random board configuration.
+Already we could use this to make our game play a little more effective,
+but I think we can do better.&lt;/p&gt;
+&lt;h4&gt;The Info&lt;/h4&gt;
+&lt;p&gt;In fact, as a game of battleship unfolds, we learn a good deal of
+information about the board. In fact on every turn we get a great deal
+of information about a particular spot on the board, our guess. Can we
+incorporate this information into our theory of battleship? Of course we
+can, but first we need to come up with a good way to represent this
+information. I suggest we invent another matrix! Let's call this one $$
+I_{j,\beta} $$ Where I is for 'information', j goes from 0 to 99 and
+beta marks the kind of information we have about a square, let's let it
+take the values M,H,C,B,S,D,P, where M means a miss, H means a hit, but
+we don't know which ship, and CBSDP mark a particular ship hit, which we
+would know once we sink a ship. This matrix will be a binary one, where
+for any particular value of j, the elements will all be 0 or 1, with
+only one 1 sitting at the spot marking our information about the square,
+if we have any. That was confusing. What do I mean? Well, let's say its
+the start of the game and we don't know a darn thing about spot 34 on
+the board, then I would set $$
+I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0
+$$ that is, all of the columns are zero because we don't have any
+information. Now let's say we guess spot 34 and are told we missed, now
+that row of our matrix would be $$ I_{34,M} = 1 \quad
+I_{34,H}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$ so that
+we put a 1 in the column we know is right, instead, if we were told it
+was a hit, but don't know which ship it was: $$ I_{34,H} = 1 \quad
+I_{34,M}=I_{34,C}=I_{34,B}=I_{34,S}=I_{34,D}=I_{34,P}=0 $$ and
+finally, lets say a few turns later we sink our opponents sub, and we
+know that spot 34 was one of the spots the sub occupied, we would set:
+$$ I_{34,S} = 1 \quad
+I_{34,M}=I_{34,H}=I_{34,C}=I_{34,B}=I_{34,D}=I_{34,P}=0 $$ This
+may seem like a silly way to codify the information, but I promise it
+will pay off. As far as my &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Battleship Data
+Explorer&lt;/a&gt; goes,
+you don't have to worry about all this nonsense, instead you can just
+click on squares to set their information content. Note: shift-clicking
+will let you cycle through the particular ships, if you just regular
+click it will let you shuffle between no information, hit, and miss.&lt;/p&gt;
+&lt;h4&gt;The Theory&lt;/h4&gt;
+&lt;p&gt;Alright if we decide to go with my silly way of codifying the
+information, at this point we have two pieces of data, $$ B_{i,\alpha}
+$$ our background probability matrix, and $$ I_{j,\beta} $$ our
+information matrix, where what we want is $$ P_{i,\alpha} $$ the
+probability matrix. Here is where the linear part comes in. Why don't we
+adopt the time honored tradition in science of saying that the
+relationship between all of these things is just a linear one? In matrix
+language that means we will choose our theory to be $$ P_{i,\alpha} =
+B_{i,\alpha} + \sum_{j=[0,..,99],\beta={M,H,C,B,S,D,P}}
+W_{i,\alpha,j,\beta} I_{j,\beta} $$ Whoa! What the heck is that!?
+Well, that is my linear theory of battleship. What the equation is
+trying to say is that I will try to predict the probability of a
+particular ship being in a particular square by (1) noting the
+background probability of that being true, and (2) adding up all of the
+information I have, weighting it by the appropriate factor. So here, P
+is our probability matrix, B is our background info matrix, I is our
+information matrix, and W is our weight matrix, which is supposed to
+apply the appropriate weights. That W guy seems like quite the monster.
+It has four indexes! It does, so let's try to walk through what they all
+mean. Here: $$ W_{i,\alpha,j,\beta} $$ is supposed to tell us: "the
+extra probability of there being ship alpha at location i, given the
+fact that we have the situation beta going on at location j" Read that
+sentence a few times. I'm sorry its confusing, but it is the best way I
+could come up with explaining W in english. Perhaps a visual would help.
+Behold the following: (click to embiggen)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s1600/W1.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-3yG2fZ0Shbw/Tokz-Sj3NHI/AAAAAAAAAYM/dAwvv-d7Fy4/s400/W1.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That is a picture of $$ W_{i,C,33,M} $$ that is, that is a picture of
+the extra probabilities for each square (i is all of them), of there
+being a carrier, (alpha=C) given that we got a miss (beta=M) on square
+33, (j=33). You'll notice that the fact that we saw a miss affects some
+of the squares nearby. In fact, knowing that there was a miss on square
+33 means that the probability that the carrier will be found on the
+adjacent squares is a little lower (notice on the scale that the nearby
+values are negative), because there are now fewer ways the carrier could
+be on those squares without it overlapping over into square 33. Let's
+try another:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s1600/W2.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-QyHjW6mNlQY/Tokp1FryPpI/AAAAAAAAAYE/8hXRtZZblE0/s400/W2.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That is a picture of $$ W_{i,S,65,H} $$ that is, it's showing the extra
+probability of there being a submarine (alpha=S), at each square (i is
+all of them, since its a picture with 100 squares), given that we
+registered a hit (beta=H) on square 65 (j=65). Here you'll notice that
+since we marked a hit on square 65, it is very likely that we will also
+get hits on the squares just next to this one, as we could have
+suspected. In the end, by assuming our theory has this linear form, the
+benefit we gain is that by doing the same sort of simulations I did to
+generate the background information, I can back out what the proper
+values should be for this W matrix. By doing billions and billions of
+simulations, I can ask, for any particular set of information, I, what
+the probabilities are P, and solve for W. Given that the problem is
+linear, this solving step is particularly easy for me to do.&lt;/p&gt;
+&lt;h4&gt;The Results&lt;/h4&gt;
+&lt;p&gt;In the end, this is exactly what I did. I had my computer create
+billions of different battleship boards, and figure out what the proper
+values of B and W should be for every square of the matrix. I put all of
+those results together in a way that I hope is easy to explore up at the
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Fancy Battleship Results
+Page&lt;/a&gt;, where you
+are free to explore all of the results yourself. In fact, the way it's
+set up, you can even use the &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Superduper Results
+Page&lt;/a&gt; as a sort of
+Battleship Cheat Sheet. Have it open while you play a game of
+battleship, and it will show you the probabilities associated with all
+of the squares, helping you make your next guess. I've used the page
+while playing a few games of battleship online, and have had some
+success, winning 9 of the 10 games I played against the computer player.
+Of course, this linear theory isn't everything...&lt;/p&gt;
+&lt;h4&gt;Why Linear isn't everything&lt;/h4&gt;
+&lt;p&gt;But at the end of the day, we've made a pretty glaring assumption about
+the game of battleship, namely that all of the information on the board
+adds in a linear way. Another way to say that is that in our theory of
+battleship, we have a principle of superposition. Another way to say
+that is that in this theory, what you think is happening in a particular
+square is just the sum of the results from all of the squares,
+independent of one another. Another way to say that is to show it with
+another picture. Consider the following:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s1600/nonlin.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-ZS2W4c9TfFc/Tok1UPt6OzI/AAAAAAAAAYk/Eia8LvwdAIU/s400/nonlin.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here, I've specified a bunch of misses, and am asking for the
+probability of there being a Carrier on all of the positions of the
+board. If you look in the center of that cluster of misses, especially
+in the inner left of the bunch, you'll see that the linear theory tells
+me that there is a small but finite chance that the Carrier is located
+on those squares. But if you stop to look at the board a little bit,
+you'll notice that I've arranged the misses such that there is a large
+swatch of squares in the center of the cluster where the Carrier is
+strictly forbidden. There is no way it can fit such that it touches a
+lot of those central squares. This is an example of the failure of the
+linear model. All the linear model knows is that in the spots nearby
+misses there is a lower probability of the ship being there, but what it
+doesn't know to do is look at the arrangement of misses and check to see
+whether there is any possible way the ship can fit. This is a nonlinear
+effect, involving information at more than one square at a time. It is
+these kinds of effects that this theory will miss, but as you'll notice,
+it still does pretty well. Even though it reports a finite positive
+probability of the Carrier being inside the cluster, the value it
+reports is a very small one, about 1 percent at most. So the linear
+theory will have corrections at the 1 percent level or so, but that's
+pretty good if you ask me.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;p&gt;And so it is. I've tried to develop a linear theory for the game
+Battleship, and display the results in a &lt;a href="http://pages.physics.cornell.edu/~aalemi/battleship/"&gt;Handy Dandy Data
+Explorer&lt;/a&gt;. I
+encourage you to play around with the website, use it to win games of
+Battleship, and in the comments, point out interesting effects, things
+you think I've missed, or ideas for how to come up with linear theories
+of other things.&lt;/p&gt;&lt;/div&gt;</description><category>battleship</category><category>fun</category><category>linear algebra</category><guid>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</guid><pubDate>Mon, 03 Oct 2011 00:48:00 GMT</pubDate></item><item><title>Lifetime of Liquid Water</title><link>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg"&gt;&lt;/a&gt;
+Apologies for the hiatus recently, it's been a busy time (when isn't
+it). I hope to get back to talking about experiments soon, but for now I
+wanted to write up a quick problem I thought up a while back. The
+question is this: how long does a molecule of H2O on earth remain in the
+liquid state, on average? I'm going to treat this purely as an order of
+magnitude problem. I'm also going to have to start with one assumption
+that is almost certainly inaccurate, but makes things a lot easier. I'm
+going to assume perfect mixing of all of the water on earth. Given that
+assumption, I really only need to figure out two things. The first is
+how much liquid water there is on earth. The second is now much liquid
+water leaves the liquid phase each year. Let's start with the total
+amount of liquid water on earth. This is relatively easy to estimate. I
+happen to know that about 70% of the earth's surface is covered in
+water. Most all of that is ocean. To an order of magnitude, the average
+depth of the ocean must be 1 km, as it is certainly not 100 m or 10 km
+[1]. For a thin spherically shell, the volume of the shell is roughly $$
+4 \pi r_e^2 \Delta r $$ where r_e is the radius of the earth. Thus,
+the total volume of water on the earth is $$.7&lt;em&gt;4 \pi r_e^2 (1 km)$$
+Now, we need to figure out how much H20 leaves the liquid phase every
+year. To an order of magnitude, it rains 1 m everywhere on earth each
+year, it's not .1 m or 10 m [2]. I'm going to ignore any
+freezing/melting in the ice caps, assuming that is small fraction of the
+water that leaves the liquid phase each year. Since we have a closed
+system, all the water that rains must have left the liquid phase. So, on
+average, the total volume of water that leaves the liquid phase is $$4
+\pi r_e^2 (1 m) $$ Thus, the fraction of liquid water that changes
+phase per year is $$ \frac{4 \pi r_e^2 (1m)}{.7&lt;/em&gt;4\pi r_e^2 (1
+km)} = .0014 $$ This means that, given my assumption of perfect mixing,
+in somewhere around 1/.0014 = 700 yr all of the water on earth will have
+cycled through the vapor phase. Since we're only operating to an order
+of magnitude, I'll call this 1000 years. This is the answer to our
+question if every molecule has been in the vapor phase once in 1000
+years, then we expect a molecule to stay in the liquid phase for 1000
+years [1] According to wikipedia, this is really about 4 km, so we're
+underestimating a bit. [2] According to wikipedia, this is spot on (.99
+m on average).&lt;/p&gt;</description><category>fun</category><category>order of magnitude</category><category>physics</category><category>water</category><guid>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</guid><pubDate>Sun, 10 Jul 2011 22:07:00 GMT</pubDate></item><item><title>End of the Earth VI: Nanobot destruction</title><link>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let's destroy the earth with technology. A while ago, I read the novel
+&lt;em&gt;Postsingular&lt;/em&gt; by Rudy Rucker, and in the first chapter the Earth gets
+destroyed, and then undestroyed, and then the novel unfolds and the
+Earth's likelihood is threatened again, and it looks like the Earth will
+be destroyed, but it isn't. How does all of this craziness happen you
+might ask: nanobots! The story revolves around little self-replicating
+robots. The story explores what it would be like to live in a world
+where every surface on Earth was coated in little computers, all of
+which were networked together. It's certainly a neat idea, but whenever
+you have self-replicating things, you need to worry a bit about what
+might happen if they get out of control. So, let's assume we, evil
+scientists that we are, have managed to create a little self-replicating
+nanobot. This little guy can scurry around, running off something
+ubiquitous, probably some combination of solar, and some kind of
+infrared photovoltaics. This little guy, call him Bob, his only mission
+in life is to create a friend. He scurries around collecting the various
+ingredients necessary, and using his little robot arms, he slices and
+dices up the pieces and welds them together to create another copy of
+himself, Rob. Not satisfied with his work; Bob found Rob quite the bore,
+and honestly Rob didn't too much like Bob either, both of them part ways
+and try to fashion a new friend. How long until Bob and Rob and their
+cohorts manage to chew through all of the material on Earth? What we
+have here is the setup to a problem in &lt;a href="http://en.wikipedia.org/wiki/Exponential_growth"&gt;Exponential
+Growth&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Exponential Growth&lt;/h4&gt;
+&lt;p&gt;Let's simplify things a bit and assume that the nanobots always take a
+fixed amount to time to make a new copy of themselves, call that time T.
+We'll start with one guy, so we know that at t =0, we have 1 bot $$ N(t
+=0 ) = 1 $$ And we know that after T seconds we should have 2 $$ N(T) =
+2 $$ and after 2T seconds, we've managed to double twice and get 4 $$
+N(2T) = 4 $$ after 3T seconds we'll double again to 8, etc. In fact,
+after nT seconds, so m repetitions we should have doubled m times $$
+N(nT) = 2^n $$ So if we want to describe all times, we need only ask
+how many doublings can fit into t seconds $$ t = n T $$ which gives us
+$$ N(t) = 2^{t/T} $$ At this point you might object, as this formula
+doesn't always give an integer, so we could ask things like how many
+bots are there after 0.5T seconds? We know the true answer is still 1,
+Bob hasn't finished Rob yet, but our formula tells us the answer is
+1.414... What we've done is made a continuous approximation to a
+discrete function. Certainly, we've paid a price, in that our new
+formula doesn't get answers right in fractions of T, but its a small
+price to pay for the mathematical simplicity afforded by the nice
+continuous function, and as long as we don't really care about time
+scales smaller than T in the long run, we haven't done any real harm.
+These kinds of approximations show up all over the place in physics, and
+going both ways too. Sometimes it is advantageous to treat some discrete
+quantity as continuous, and sometimes it might be beneficial to treat
+some continuous quantity as discrete. These kinds of approximations are
+more than adequate, provided you don't really take the answers they give
+you in the cases where your approximation starts to break too seriously.
+In this case, as long as we don't try to seriously predict the number of
+nanobots to an exact count in time scales less than a fraction of their
+doubling time, we will have a nice prediction of the number of bots
+running around.&lt;/p&gt;
+&lt;h4&gt;Earth Destruction&lt;/h4&gt;
+&lt;p&gt;As promised, we wanted to calculate the time it would take the nanobots
+to devour the earth. For this we need a little bit more to our model.
+How will the nanobots eat the earth, I reckon it will be through using
+up its mass. Assuming the bots are made out of elements that are rich
+enough, something like iron, they ought to have a field day on Earth,
+seeing as it's composed of about 5% iron on the surface, and with an
+interior that is probably about 32% iron overall
+&lt;a href="http://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements#Abundance_of_elements_in_the_Earth"&gt;[ref]&lt;/a&gt;.
+So, we need to estimate the mass of a single nanobot. Let's say the
+nanobot is roughly a 1 micron sized cube, made out of iron. This gives
+us a nanobot mass of $$ m = (\text{ density of iron }) * (\text{ 1
+micron} )^3 = \rho_{\text{Fe}} L^3 \sim 8 \text{ picograms} $$
+From here we can estimate the time it would take to chew through the
+earth, as the time for the nanobots to be as massive as the earth. $$
+\frac{M_{\oplus}}{\rho_{\text{Fe}} L^3 } = N(t) = 2^{t/T} $$
+Solving for t we obtain $$ t = T \log_2 \frac{ M_{\oplus}}{
+\rho_{\text{Fe}} L^3 } $$&lt;/p&gt;
+&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Let's say it takes Bob one month to make Rob, which I don't think is a
+completely unrealistic time for nanobot replication, assuming Bob and
+Rob and all of their cohorts are 1 micron in size, I calculate that in
+10 years time they would chew through the Earth. The power of
+exponential growth! Even with a 1 month gestation, if left unabashed,
+the self-replicating robots would eat the entire earth in 10 years time.
+They could eat through Mars in about 2. In fact in &lt;em&gt;Postsingular&lt;/em&gt; this
+is what the humans planned. They wanted a Dyson sphere, so they sent
+some self-replicating robots to Mars, let them chew through it a couple
+years, and they had 10^37 little robots to do their bidding. That is of
+course until the nants set their sites on Earth as their next target...
+In order to let you play around with the doubling time and bot size,
+I've created a Wolfram Alpha widget that solves the above equation, feel
+free to play around with the parameters and see how long Earth would
+survive.&lt;/p&gt;
+&lt;p&gt;The widget should be right above this text. If it isn't working for some
+reason, here's a
+&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>earth day</category><category>end of the earth</category><category>fun</category><category>nanobots</category><guid>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</guid><pubDate>Fri, 22 Apr 2011 13:11:00 GMT</pubDate></item><item><title>Collective Wanderings</title><link>https://virtuosi.alexalemi.com/posts/old/collective-wanderings/</link><dc:creator>Corky</dc:creator><description>&lt;p&gt;&lt;em&gt;Update [04/04/11]: It seems Clicky got too popular for our bandwidth
+limits on the physics servers. Hopefully we'll be able to fix this
+sometime soon...&lt;/em&gt; &lt;em&gt;&lt;em&gt; &lt;/em&gt;Update [04/02/11]: We made the code faster, so
+check out the new and improved Clicky!&lt;/em&gt; Hey, kids! Would you like to be
+a bit player in a grand experiment with poorly thought out objectives?
+If so, then check
+&lt;a href="http://pages.physics.cornell.edu/~aalemi/clicky/"&gt;this&lt;/a&gt; out. It's a
+little interactive "game" [1] that Alemi and Matt coded up. When you
+click on the link, you will be redirected to a page showing something
+like this:
+&lt;a href="http://4.bp.blogspot.com/-FYqCFtPrbT0/TZaZF4ubmPI/AAAAAAAAAMM/5Hf-_v0wTrY/s1600/clicky1.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-FYqCFtPrbT0/TZaZF4ubmPI/AAAAAAAAAMM/5Hf-_v0wTrY/s400/clicky1.png"&gt;&lt;/a&gt;
+Using the arrow keys on your keyboard or by clicking on the arrow
+buttons on the screen, you can move the dot around. Sound fun yet? Well,
+the interesting bit comes in with the fact that anyone who wants to can
+move the same dot at the same time. The plot will update automatically,
+so if you're really bored you can sit around and watch someone else move
+the dot around. Heck, you could even give the dot a cute name like Mr.
+Dottington and tell it how your day was. We won't judge you. [2] Anyway,
+check it out if you've got a bit of time to kill. Explore the space and
+we'll get back to you with the "results" of this "experiment" sometime
+in the "future." [1] There are no objectives and "winning" is undefined
+(for a contrary argument, however, see Sheen et. al (2011)) [2] But Mr.
+Dottington will.&lt;/p&gt;</description><category>clicky</category><category>fun</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/collective-wanderings/</guid><pubDate>Mon, 04 Apr 2011 22:39:00 GMT</pubDate></item><item><title>Problem of the Month: Gilligan Physics</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s1600/coconut.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s320/coconut.jpg"&gt;&lt;/a&gt;
+So, some of us over here at Virtuosi Central have organized a challenge
+problem for the physics community here at Cornell. Well, we thought we
+would open up the challenge to the great wide world. The more
+submissions the merrier. The deadline is March 1, and submissions can be
+sent to our email. Details can be found at
+&lt;a href="http://bit.ly/physicschallenge"&gt;bit.ly/physicschallenge&lt;/a&gt;. Good luck and
+happy hunting.&lt;/p&gt;</description><category>CRC</category><category>fun</category><category>gilligan</category><category>physics challenge</category><category>standards</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</guid><pubDate>Sun, 06 Feb 2011 12:55:00 GMT</pubDate></item><item><title>Darts</title><link>https://virtuosi.alexalemi.com/posts/old/darts/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Over break I went out with a buddy of mine and played some darts. This
+got me to thinking, where exactly should someone aim in order to get the
+largest expected number of points? Now, obviously when you are playing a
+game like &lt;a href="http://en.wikipedia.org/wiki/Cricket_(darts)"&gt;Cricket&lt;/a&gt;, where
+you should aim is fairly obvious, you are trying to hit particular
+numbers on the board, but in the most popular darts game
+-&lt;a href="http://en.wikipedia.org/wiki/Darts#Playing_darts"&gt;501&lt;/a&gt;, for most of
+the game you are just trying to accumulate points. So, where should you
+shoot on the board to get the most points? Well, something that I didn't
+quite realize before I started this adventure is that while the double
+bullseye in the center is worth 50 points, the triple 20 is worth more:
+60 points. For the uninitiated, in games like 501 you score points based
+on where the dart falls. The center is the bullseye, where the inner
+most circle is worth 50 and the ring around it is worth 25, after that
+you score depending on which of the pie slice things you fall in, the
+points being the number on the slice. The little ring around the outside
+is worth double points, and the little ring at about half the board
+radius is worth triple points. So perhaps the triple 20 is where you
+should be aiming all the time. But you'll notice that to the left and
+right of the 20 section are low numbers 1 and 5. So you might suspect
+that if you can't throw all that accurately, you'll be paying a price
+for shooting at the triple 20.&lt;/p&gt;
+&lt;h4&gt;The Model&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s1600/dartsdistsig1p0.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9mjSvWVMI/AAAAAAAAAPk/Q3dKlgTH47M/s320/dartsdistsig1p0.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In order to answer a question like that, we need to develop a model for
+dart throwing. In this case, I thought it was safe to assume that dart
+throws are &lt;a href="http://en.wikipedia.org/wiki/Normal_distribution"&gt;normally
+distributed&lt;/a&gt; about the
+place you aim, with some sigma determined by your skill level. To the
+left is an example of what normally-distributed dart throws look like
+when the aim is at the center, and with a 1 inch standard deviation in
+the throws. The dashed line marks a one inch ring to give a sense of how
+scattered darts can be from 1 standard deviation.&lt;/p&gt;
+&lt;h4&gt;Results&lt;/h4&gt;
+&lt;p&gt;So, off I went, having drawn a dart board (to regulation) in Gimp, and
+coloring each section in gray scale according to its point values, I
+used python to perform all of the necessary computations (using
+primarily the ndimage package in scipy). The result can be seen below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s1600/dartscircleplusdot.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9j9ivNItI/AAAAAAAAAPU/QtuSM7MZr48/s400/dartscircleplusdot.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This image shows the optimal position on the board to aim for as a
+function of how good of a player you are. The rings denote the sigmas,
+and the dots the center point to aim for. The colorscale gives a
+quantitative measure of the sigma, in inches. As you can see, the best
+players should (and do according to youtube) aim for the triple 20,
+since they are good enough to hit it most of the time, but once you're
+throw is at about a 1 inch sigma, you should be aiming for the triple 19
+in the bottom left. As you can see on the numbered board at the top, the
+triple 19 is buffered on either side by the 3 and the 7, which are both
+2 points above the 20 section's neighbors (1 and 5). So as you might
+expect if you have a reasonable chance of hitting the sections to either
+side, the triple 19 offers a higher expected score in the long run. The
+other limit we can understand is the limit of really bad throws. If you
+have a nontrivial chance of missing the board altogether, then obviously
+you should just aim for the center of the board, in the hopes that you
+at least hit the thing. But interestingly, in between the track that the
+optimal aiming point takes is a little interesting. It tends to the
+center (as we should expect), but it takes a curvy sort of root along
+the bottom left quadrant of the board. Neat.&lt;/p&gt;
+&lt;h4&gt;Heat Maps&lt;/h4&gt;
+&lt;p&gt;In order to get a little better of a feel for why the track takes the
+path it does, I decided to look at the heat maps for the expected score
+at every location on the board for a set of given sigmas. So, in the
+images below, the colors above the board indicate the relative score
+expected if you aimed at that point.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s1600/darts-sig0p25flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9piZleQaI/AAAAAAAAAPs/xKR1XVK4oM0/s200/darts-sig0p25flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is for a quarter inch sigma throw [Click to zoom]. Notice that the
+triple 20 is the place to hit, as expected.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s1600/darts-sig0p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9pwXSiutI/AAAAAAAAAP0/UW-U3zETxkU/s200/darts-sig0p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a half inch sigma throw. The triple 20 is still in the lead,
+but not by a whole lot. You can really see how if your aim is as good as
+a half inch sigma, you can really still see the triple spots as true
+features.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s1600/darts-sig1p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9qDpBCjOI/AAAAAAAAAP8/nnP8us-V3yU/s200/darts-sig1p00flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1 inch sigma throw. Now the lower left hand quadrant has
+taken over as the optimal place to throw. Notice that both the triple 16
+and triple 19 make decent targets. The triple 14 also makes a showing,
+due probably to its large neighbors.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s1600/darts-sig1p50flair.png"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9qf0GXLiI/AAAAAAAAAQE/64Jua-PBMtE/s200/darts-sig1p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Above is a 1.5" sigma. The triple 20 is nearly gone as a place of
+interest on the board, since we are no longer good enough to really
+capitalize on it. The lower left hand portion of the board is the place
+to be. We've really sort of lost any distinct features of the triple
+spots, and now are just looking at quadrants of the board as a whole.
+Our aim seems to tend to center a bit, as we are now in a little danger
+of falling off the board.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s1600/darts-sig2p00flair.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TS9rAU2TGsI/AAAAAAAAAQM/uqIvzG_jqoE/s200/darts-sig2p00flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At 2" sigma, we can really only hope to aim left-of-center.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s1600/darts-sig2p50flair.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TS9rLG9LRKI/AAAAAAAAAQU/1cz6YZer9Bs/s200/darts-sig2p50flair.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At 2.5" sigma, we really just want to hit the board.&lt;/p&gt;
+&lt;h4&gt;Lesson&lt;/h4&gt;
+&lt;p&gt;So, now I know, personally, I really just ought to aim just left of
+center.&lt;/p&gt;&lt;/div&gt;</description><category>darts</category><category>fun</category><category>python</category><guid>https://virtuosi.alexalemi.com/posts/old/darts/</guid><pubDate>Thu, 13 Jan 2011 16:29:00 GMT</pubDate></item><item><title>Four Fantastic Books (3 of which are free)</title><link>https://virtuosi.alexalemi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248"&gt;&lt;/a&gt;Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
+&lt;/p&gt;&lt;h4&gt;Street Fighting Mathematics - Sanjoy Mahajan &lt;/h4&gt;&lt;h5&gt;The art of educated guessing and opportunistic problem solving &lt;/h5&gt;&lt;div&gt;&lt;a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&amp;amp;tid=12156"&gt;Link to MIT Press Site&lt;/a&gt;
+&lt;p&gt;You know that feeling you get when it's the second half of January and you put on new clothes that have just come out of the dryer?  This book is like a cross between that and a kick in the face.  &lt;/p&gt;
+&lt;p&gt;The warm fuzzy-clothes-out-of-the-dryer feeling will come from the realization that you can wield unsurmountable power.  The kick in the face will come when you realize you're not doing it yet.
+&lt;a name="more"&gt;&lt;/a&gt;
+The premise of the book is something along the lines of:  We've all been taught how to solve math problem exactly.  Science isn't exact.  Turns out when you realize this, you can do a heck of a lot.  Let Sanjoy show you how.&lt;/p&gt;
+&lt;p&gt;As an undergrad, I had the supreme fortune of taking some life changing courses.  One of the ones that has struck me the deepest was Ph 101: Order of Magnitude Physics.  It did a remarkable job building my confidence.  It's one thing to go through your classes and complete the homework assignments.  It's another thing entirely to feel as you can take a stab at just about any question anyone can ask.&lt;/p&gt;
+&lt;p&gt;This book is the handbook that will introduce you to the techniques and ways of thinking you'll need in order to tackle the most general of questions.  The first chapter is Dimensional Analysis, something that every high school student should be exposed to. I love Dimensional Analysis.  The rest of the book goes on to estimate Integrals, Sums and Differential Equations, thinking about limiting cases and scaling, and thinking pictorially.  &lt;/p&gt;
+&lt;p&gt;The best part:  it's available in a creative commons version, i.e. for free.  Just follow the creative common pdf link in the left sidebar.&lt;/p&gt;
+&lt;p&gt;One of the biggest flaws I see in modern physics teaching is that physics courses have a tendency of being reduced to plugging numbers into highlighted and yellow boxed equations.  That's not physics!  Physics is a way of thinking about the world.  It's the delight you obtain when you understand something for the first time.  It's the power you can wield by being able to properly predict phenomenon that only minutes ago you found baffling.  In a word: it's awesome.  In order to be able to see past all of the equations, you need to have an appreciation for how powerful intelligent approximations can be.&lt;/p&gt;
+&lt;p&gt;The amazing fact is that with a proper introductory physics course, you are capable of understanding a huge deal of the world around you. &lt;/p&gt;
+&lt;p&gt;If physics classes were taught the way Sanjoy would like them to be taught, if they relied fundamentally on the kinds of techniques he discusses, I think students would like physics a lot more.  I think the world would be a better place.&lt;br&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;h4&gt;Why Things Break  - Mark E. Eberhart &lt;/h4&gt;
+
+&lt;h5&gt;Understanding the world by the way it comes apart &lt;/h5&gt;
+
+&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://2.bp.blogspot.com/_YOjDhtygcuA/TLkXVqJBxlI/AAAAAAAAAOs/WEGJaROjFhI/s1600/4115MFY61ML._SS500_.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"&gt;&lt;img border="0" height="320" src="http://2.bp.blogspot.com/_YOjDhtygcuA/TLkXVqJBxlI/AAAAAAAAAOs/WEGJaROjFhI/s320/4115MFY61ML._SS500_.jpg" width="320"&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://books.google.com/books?id=wo9wGKk9MVsC&amp;amp;printsec=frontcover&amp;amp;dq=Why+Things+Break&amp;amp;hl=eo&amp;amp;ei=4Be5TJ6jPIL48Aa2uKzPDg&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CCUQ6AEwAA#v=onepage&amp;amp;q&amp;amp;f=false"&gt;Link to Google Books Page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This book was mentioned to me by someone in my group.  I decided to check it out, and read the first 70% of it in one sitting.  I think that says something about it.  &lt;/p&gt;
+&lt;p&gt;This is a really fun read.  It's a popular science book, but on something you've probably never read about before - material science.&lt;/p&gt;
+&lt;p&gt;Mixing very interesting history, science, and biography, Eberhart takes you on a journey attempting to answer the question: Why do things break?  Which he is quick to point out is probably not the question you think it is.  His life goal is not to answer what happens when things break, or which materials break sooner than others (which he manages to mention along the way anyway), but he is primarily interested in answergin why things even break in the first place, a rather subtle and non-trivial question when you think about it.&lt;/p&gt;
+&lt;p&gt;I actually learned quite a lot from this book.  It's full of really interesting accounts and digressions.  I can't recommend it enough.  Very fun read.&lt;/p&gt;
+&lt;h4&gt;Soap Bubbles - C. V. Boys &lt;/h4&gt;
+
+&lt;h5&gt;Their colours and the forces which mold them &lt;/h5&gt;
+
+&lt;p&gt;&lt;a href="http://books.google.com/books?id=EcgCKTPYqCIC&amp;amp;printsec=frontcover&amp;amp;source=gbs_atb#v=onepage&amp;amp;q&amp;amp;f=false"&gt;Link to Google Books page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I found this book by accident, but boy am I glad I found it.  It's a printing of a series of lectures the author gave to some children near the close of the 19th century about bubbles.&lt;/p&gt;
+&lt;p&gt;This goes into the drawer of happy little discoveries I've made of old science literature for which the copyright has expired.  Meaning its free on Google Books as a pdf download.  &lt;/p&gt;
+&lt;p&gt;I don't know what it is, but I find basically anything written before about 1950 at least an order of magnitude easier to understand than anything since.  Sure, some of it has to do with the fact that older science literature is necessarily dated, while new physics can tend to be a lot more complicated, and you could point out that there is a clear selection bias in the old texts that I manage to find, but I really believe there is something more to it than that.  Old science authors wrote to be understood.  You get the distinct impression that most of these guys really loved their craft and really wanted to explain their findings to others.  Sometimes I get the impression that modern articles are written less to be understood and more as the modern version of mailing your patent idea to yourself in a closed envelope - as a way to get a stamp on your lab notebook to prove you did something first.&lt;/p&gt;
+&lt;p&gt;That said, this little gem was not what I thought it was going to be.  Going in, I thought it would be a bunch of cool things you could do with bubbles.  Oh but it's so much more.  Boys manages in these three little lectures to give one of the clearest introductions to some basic fluid dynamics and electricity I've seen.  Boys manages to teach, and while using bubbles.&lt;/p&gt;
+&lt;p&gt;I recommend it.  If not for the science and cool bubble tricks, I think it can serve as another find indicating that physics education doesn't need to be boring in order to get real ideas planted.&lt;/p&gt;
+&lt;h4&gt;Calculus Made Easy - Silvanus Phillips Thompson &lt;/h4&gt;
+
+&lt;h5&gt;Being a very-simplest introduction to those beautiful methods of reckoning which are generally called by the terrifying names of the DIFFERENTIAL CALCULUS and INTEGRAL CALCULUS&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=Calculus+Made+Easy&amp;amp;hl=eo&amp;amp;ei=WRu5TKDJLsT38Ab4wNiaDw&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q&amp;amp;f=false"&gt;Google Books Link&lt;/a&gt; - another freebie&lt;/p&gt;
+&lt;p&gt;I have to admit, I didn't just read this one.  I read it a while ago, but while writing up the other ones I could let such a fantastical book as this pass by without mention.&lt;/p&gt;
+&lt;p&gt;Another book I found by accident for free on Google Books.  If I remember correctly, this one was pure serendipity.  But it has to be the best introductory calculus book ever written.  Seriously.  I don't joke about these things.  I fell in love with it as soon as I finished reading the subtitle (and the author's name).&lt;/p&gt;
+&lt;p&gt;This. book. rocks.  If nothing else, do yourself a favor and read the first couple chapters of this bad boy.  It's free.  I won't hurt.&lt;/p&gt;
+&lt;p&gt;It's so good, I read it online.  Then I checked it out from the library.  Then I bought the &lt;a href="http://www.amazon.com/Calculus-Made-Easy-CALCULUS-MADE/dp/B001TIKS36/ref=sr_1_4?ie=UTF8&amp;amp;qid=1287200177&amp;amp;sr=8-4"&gt;shiny new edition&lt;/a&gt; because I needed to have it on my shelf.  Turns out I'm not the only one in love with the book.  Martin Gardner so loved it as to release the shiny edition with recreational problems and his commentary.&lt;/p&gt;
+&lt;p&gt;This is not Calculus crib notes.  This is not spark notes or Calculus for Dummies.  This is not just a condensed version of the calculus book you used in highschool.  This isn't just a list of formulas.  This book &lt;i&gt;explains&lt;/i&gt; what calculus is.  You do not understand what I meant by the sentence.  You will not understand until you read Calculus Made Easy.&lt;/p&gt;
+&lt;p&gt;This is another book that just makes me sad at the current state of education.  Calculus is one of those things that's feared by the general public.  It's feared because it's misunderstood.  Calculus isn't hard.  And I don't mean to just sound like a jerk when I say that.  It isn't meant to be hard at least.  As the opening proverb of Calculus Made Easy says:
+&lt;/p&gt;&lt;blockquote&gt;What one fool can do, another can.&lt;/blockquote&gt;
+All it really takes to understand calculus is the ability to imagine a very little bit of something.  That and a caring and skilled tutor to lead you on your way.  What name can you think of that sounds more caring and skillful than Silvanus Phillips Thompson.  
+&lt;p&gt;I can think of no legitimate reason this book isn't used in each and every high school calculus in America.  Seriously.&lt;/p&gt;&lt;/div&gt;</description><category>bad physics</category><category>book review</category><category>fun</category><category>math</category><guid>https://virtuosi.alexalemi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</guid><pubDate>Sat, 16 Oct 2010 00:50:00 GMT</pubDate></item><item><title>Visualizing Quantum Mechanics</title><link>https://virtuosi.alexalemi.com/posts/old/visualizing-quantum-mechanics/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;Or how I learned to stop worrying and love the computer. [Note: There's
+a neat video below the fold. ]&lt;/p&gt;
+&lt;h4&gt;A Confession&lt;/h4&gt;
+&lt;p&gt;I was recently rereading the &lt;a href="http://books.google.com/books?id=_6XvAAAAMAAJ&amp;amp;q=Feynman+lectures+on+physics&amp;amp;dq=Feynman+lectures+on+physics&amp;amp;hl=en&amp;amp;ei=6wmQTPzsDIG78gbAp_joDQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=2&amp;amp;ved=0CDgQ6AEwAQ"&gt;Feynman Lectures on
+Physics&lt;/a&gt;.
+If you haven't read them lately, I highly recommend them. Feynman is
+always a pleasure to read. As usual, I was surprised. This time the
+surprise came in lecture 9, which the way the course was laid out meant
+that this was something like the last lecture in the third week that
+these students had ever received of university level physics. The
+lecture is on Newton's laws of dynamics. The start is of course Newton's
+&lt;del&gt;first&lt;/del&gt; (second) law, $$ F = \frac{d }{dt } (mv ) $$ which, provided
+the mass is constant takes the more familiar form $$ F = ma $$ After
+discussing the meaning of the equation and how in general it can give
+you a set of equations to solve, he naturally uses an example to
+illustrate the kinds of problems you can solve. What system does he
+choose to use as the first illustration of a dynamical system? The Solar
+System. That's right. Let that settle for a second. The sad thing is
+that if you caught me off guard before I read the lecture, caught me in
+an honest moment and asked me how you would solve the solar system, I
+would probably have launched into a discussion of the &lt;a href="http://en.wikipedia.org/wiki/N-body_problem"&gt;N-body
+problem&lt;/a&gt; and how there is
+no closed form solution to newtonian gravity that involves 3 or more
+bodies. (Depending on who you are, I might have then mentioned the
+&lt;a href="http://adsabs.harvard.edu/abs/1991CeMDA..50...73W"&gt;recent caveat&lt;/a&gt;,
+namely that there is a closed form solution to the N-body problem, but
+that it involves a very very very slowly convergent series). Now, how
+can Feynman use the Solar System as his first example of solving
+Newtonian dynamics and I have told you that it's impossible as my first
+words on the subject? Well, the answer of course is that Feynman was
+much smarter than I am. Perhaps another way to say it is that in a lot
+of ways Feynman was a more contemporary physicist than I am.&lt;/p&gt;
+&lt;h4&gt;A Realization&lt;/h4&gt;
+&lt;p&gt;Physics education has changed very little in the last 50 years or so.
+Now in some ways this isn't a problem. The laws of nature also haven't
+changed in the last 50 years. What's unfortunate is that the tools
+available to physicists to answer their questions have changed
+remarkably. Namely, computers. Computers are great. They permeate daily
+life nowadays. They are capable of performing millions of computations
+per second. This is great for physics. You see, a lot of the time, as
+you all know, the way you achieve answers to specific questions about
+the evolution of a system is to do a lot of computation. So what did
+physicists do before computers? Well, a lot of time they would have to
+do a lot of calculations out by hand, but no one enjoys that, so a lot
+of times you would have to make sacrifices, make assumptions that meant
+that your analytical investigations were simple enough to yield tiddy
+little equations. This is reflected in the kinds of problems we still
+solve in our physics classes. I never solved the solar system in my
+mechanics class. I never did it because there isn't a closed form
+analytical solution to the solar system. But you know what... that
+doesn't matter. It doesn't matter in the least. Because while there
+doesn't exist a closed form solution to the problem, it is very easy to
+come up with a numerical approximation scheme (see &lt;a href="http://en.wikipedia.org/wiki/Euler_method"&gt;Euler
+Method&lt;/a&gt;). You see, the point
+of physics is to get answers to questions. And the fact of the matter is
+that those answers don't have to be 'exact', they don't have to be
+perfect. They need to be good enough that we can't tell the difference
+between them being 'exact' and them being an approximation. To do this
+numerically with a pad of paper and a pencil is a heroic task. Do do
+this with a computer takes a couple of lines of python code and a couple
+seconds.&lt;/p&gt;
+&lt;h4&gt;An example&lt;/h4&gt;
+&lt;p&gt;As an example of the neat things you can do with a few lines of python
+code and a few minutes on your hand, check this out.
+&lt;a href="http://www.youtube.com/watch?v=J4Wg_b8bVm8"&gt;and&lt;/a&gt;
+&lt;a href="http://www.youtube.com/watch?v=idpQOJKOh6Y"&gt;there's&lt;/a&gt;
+&lt;a href="http://www.youtube.com/watch?v=Z9121zwpbBs"&gt;more&lt;/a&gt; This video depicts
+time dependent quantum mechanics. I set up a gaussian wavepacket, inside
+of a potential that includes a hard wall on the sides and is
+proportional to x. That sounds fancy but what it means is that this is
+the quantum mechanics equivalent of a bouncing ball. The amplitude of
+the wave function corresponds to the probability of finding the particle
+at any location. That is, imagine picking one of the colored pixels at
+random. If you pick any of the colored pixels at random, and look down
+at the x position, that is what measuring the position of the particle
+would do. But what are the colors? Quantum mechanical wave functions are
+complex. This means you can represent them either with a real and
+imaginary part, or with a magnitude and a phase. Here it's the latter.
+Like I said the amplitude is shown with the height (actually the
+amplitude squared). The color corresponds to the phase, where the phase
+is mapped to a location on the color wheel, just like the one that pops
+up in Photoshop or GIMP. And theres sound too! The sound is what the
+wave function would sound like if it was making noise. Its the real part
+of the wave function played as a sound. To that end, in this video it is
+very low frequency, because I made the movie slow enough to see the
+colors changing well. Its fun to watch the video and listen to the
+sound. For this movie the sound correlates nicely to when the 'ball'
+reaches its maximum height. Whats also cool is that you can hear the
+'ball' delocalize after each bounce. The sound and function start off
+being nice and sharp, but after a few bounces it starts to spread out.
+You can also see how momentum is encoded in quantum mechanics. Funny
+thing is that instead of being something separate that you need to
+specify like in classical mechanics, in quantum mechanics the wave
+function is a complete description of the evolution of the system. I.e.
+if I showed you just one frame of this bouncing ball, you would be able
+to recreate the entire movie. If I showed you just one frame of a
+classical basketball, you'd have no idea what frame came next since
+you'd only know its position, not its velocity. In quantum mechanics the
+momentum gets encoded in the wave function, and as you can tell its
+encoded as a complex twist. A phase gradient. A crazy rainbow. If you
+look closely, you can even see that you can tell the difference between
+whether the particle is falling left or right. When it goes left the
+rainbow pattern goes (reading left to right) blue red green. When its
+moving right it goes blue green red. It twists one way then the other in
+the complex plane. The colors are a little hard to see in this one,
+they're a little easier to see in this one: This second one I dressed up
+a bit, labelling the axes with units, putting a time counter,
+superimposing the potential I was talking about, and marking the average
+expected position with a tracer black dot on the bottom.&lt;/p&gt;
+&lt;h4&gt;A Call to Arms&lt;/h4&gt;
+&lt;p&gt;Any student who has taken a first course in quantum mechanics knows
+enough physics to make these movies. The physics isn't complicated. But
+the movies really neat, right? More than neat. Making these videos
+taught me things about quantum mechanics I should have learned a long
+time ago. I really think computers are underestimated in physics
+education. They can be a great tool. A picture is worth a thousand
+words, so a movie must be worth millions&lt;em&gt;. &lt;/em&gt;: denotes stolen quote
+More than just as an illustrative tool, the fact that even students in
+the first introductory mechanics physics course can solve for something
+like the solar system shouldn't be hidden from them. Classical mechanics
+after all is the physics of pretty much every object we can see and
+touch, but classics mechanics classes only ever talk about &lt;a href="http://en.wikipedia.org/wiki/Atwood_machine"&gt;Atwood
+machines&lt;/a&gt; and frictionless
+planes. Often the closest they come to realism is in discussing
+projectile motion, where the laws you learn in the book (neglecting air
+resistance) are very good at describing the trajectories of very dense
+large objects (i.e. cannonballs). I can't remember the last time I've
+fired a cannon. But air resistance serves little trouble to my computer.
+Or &lt;a href="http://www.wired.com/wiredscience/tag/air-resistance/"&gt;Rhett's&lt;/a&gt; (of
+Dot Physics, which has just moved to Wired). Basically, if you give a
+student an intro physics course and an intro programming course,
+suddenly you have a human being who is better equipped to answer
+questions about natural phenomenon than 99% of human beings that have
+ever lived. So lets take a tip from Feynman and teach physics students
+how to solve the solar system.&lt;/p&gt;
+&lt;h4&gt;Code&lt;/h4&gt;
+&lt;p&gt;As per request, here is the python code I used to generate the videos.
+Its rather messy, so I apologize in advance.
+&lt;a href="https://docs.google.com/leaf?id=0B8Il0b2saix4NzYzMmRhZDUtODFhZS00YTE1LTgzZWYtMzVhODI5YzRhNWJm&amp;amp;hl=en&amp;amp;authkey=CPrk9IUM"&gt;schrod.py&lt;/a&gt;
+- A general script which finds the eigenvalues and eigenbasis for a 1D
+particle with an arbitrary potential.
+&lt;a href="https://docs.google.com/leaf?id=0B8Il0b2saix4ZDYxZmFlNzQtYzdkNC00YTVkLWJhNWMtN2IxM2ZmZDg4Mzg4&amp;amp;hl=en&amp;amp;authkey=CJ3m4ogJ"&gt;qmsolver-bouncy.py&lt;/a&gt;
+- Code to generate the movie. You need to create a directory with the
+same name as the name in the script in the save folder as the script.
+The last two lines make the sound and the directory full of images. I
+used ffmpeg to wrap the two together.&lt;/p&gt;&lt;/div&gt;</description><category>bouncing ball</category><category>feynman</category><category>fun</category><category>movie</category><category>quantum mechanics</category><category>solar system</category><guid>https://virtuosi.alexalemi.com/posts/old/visualizing-quantum-mechanics/</guid><pubDate>Tue, 14 Sep 2010 20:06:00 GMT</pubDate></item></channel></rss>

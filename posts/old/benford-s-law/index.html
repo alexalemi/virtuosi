@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benford's Law | The Virtuosi</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="https://virtuosi.alexalemi.com/posts/old/benford-s-law/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Corky">
+<link rel="prev" href="../holiday-hidden-message/" title="Holiday Hidden Message" type="text/html">
+<link rel="next" href="../holiday-hidden-message-revealed/" title="Holiday Hidden Message Revealed" type="text/html">
+<meta property="og:site_name" content="The Virtuosi">
+<meta property="og:title" content="Benford's Law">
+<meta property="og:url" content="https://virtuosi.alexalemi.com/posts/old/benford-s-law/">
+<meta property="og:description" content="Given a large set of data (bank accounts, river lengths, populations,
+etc) what is the probability that the first non-zero digit is a one? My
+first thought was that it would be 1/9. There are nine non">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-12-31T14:42:00Z">
+<meta property="article:tag" content="benford">
+<meta property="article:tag" content="scott bakula">
+<meta property="article:tag" content="statistics">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://virtuosi.alexalemi.com/">
+
+            <span id="blog-title">The Virtuosi</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.md" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="../../../categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../../rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Benford's Law</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    <a href="../../../authors/corky/">Corky</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2010-12-31T14:42:00Z" itemprop="datePublished" title="2010-12-31 14:42">2010-12-31 14:42</time></a>
+            </p>
+            
+        <p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>Given a large set of data (bank accounts, river lengths, populations,
+etc) what is the probability that the first non-zero digit is a one? My
+first thought was that it would be 1/9. There are nine non-zero numbers
+to choose from and they should be uniformly distributed, right? Turns
+out that for almost all data sets naturally collected, this is not the
+case. In most cases, one occurs as the first digit most frequently, then
+two, then three, etc. That this seemingly paradoxical result should be
+the case is the essence of Benford's Law. Benford's Law [1] states that
+for most real-life lists of data, the first significant digit in the
+data is distributed in a specific way, namely: $$ P(d) =
+\mbox{log}<em>{10}\left(1 + \frac{1}{d}\right) $$ The probabilities
+for leading digits are roughly P(1) = 0.30, P(2) = 0.18, P(3) = 0.12,
+P(4) = 0.10, P(5) = 0.08, P(6) = 0.07, P(7) = 0.06, P(8) = 0.05, P(9) =
+0.04. So we would expect the first significant digit to be a one almost
+30% of the time! But where would such a distribution come from? Well, it
+turns out that it comes from a distribution that is logarithmically
+uniform. We can map the interval [1,10) to the interval [0,1) by just
+taking a logarithm (base ten). These logarithms are then distributed
+uniformly on the interval [0,1). We can now get some grasp for why one
+should occur as the first digit more often in a uniform log
+distribution. In the figure below, I have plotted 1-10 on a logarithm
+scale. In a uniform log distribution, a given point is equally likely to
+be found anywhere on the line. So the probability of getting any
+particular first digit is just its length along that line. Clearly, the
+intervals get smaller as the numbers get bigger.
+<a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s1600/logscale.png"><img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TR4s91iaKKI/AAAAAAAAAIU/uxYE4eqknCY/s400/logscale.png"></a>
+But we can quantify this, too. For a first digit on the interval [1,10),
+the probability that the first digit is <em>d</em> is given by:
+$$ P(d) = \frac{\mbox{log}</em>(d+1)
+-\mbox{log}<em>{10}(d)}{\mbox{log}</em>(10) -\mbox{log}<em>{10}(1)} $$
+which is just $$ P(d) =\mbox{log}</em>(d+1) -\mbox{log}<em>{10}(d) $$
+or $$ P(d) = \mbox{log}</em>\left( 1 + \frac{1}{d} \right) $$ which
+is the distribution of Benford's Law. So how well do different data sets
+follow Benford's Law? I decided to test it out on a couple easily
+available data sets: pulsar periods, U.S. city populations, U.S. county
+sizes and masses of plant genomes. Let's start first with pulsar
+periods. I took 1875 pulsar periods from the ATNF Pulsar Database (found
+<a href="http://www.atnf.csiro.au/research/pulsar/psrcat/">here</a>). The results
+are plotted below. The bars represent the fraction of numbers that start
+with a given digit and the red dots are the fractions predicted by
+Benford's Law.
+<a href="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s1600/benford_pulsar.png"><img alt="image" src="http://4.bp.blogspot.com/_fa6AZDCsHnY/TRpObM6LxrI/AAAAAAAAAH8/tz9WQ98H258/s400/benford_pulsar.png"></a>
+From this plot, we see that the pulsar period data shows the general
+trend of Benford's Law, but not exactly. Now let's try U.S. city
+populations. This data was taken from the U.S. census bureau from the
+2009 census and contains population data for over 81,000 U.S. cities. We
+see from the chart below that there is a near exact correspondence
+between the observed first-digit distribution and Benford's Law.
+<a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s1600/benford_uscities09.png"><img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TRpQhzrSFmI/AAAAAAAAAIA/ZP3YTbWiiM4/s400/benford_uscities09.png"></a>
+Also from the U.S. census bureau, I got the data for the land area of
+over 3000 U.S. counties. These data also conform fairly well to
+Benford's Law.
+<a href="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s1600/benford_land.png"><img alt="image" src="http://2.bp.blogspot.com/_fa6AZDCsHnY/TRpSE9pHC1I/AAAAAAAAAII/dqG382dqoCw/s400/benford_land.png"></a>
+Finally, I found
+<a href="http://data.kew.org/cvalues/CvalServlet?querytype=1">this</a> neat website
+that catalogs the genome masses of over 2000 different species of
+plants. I'm not totally sure <em>why</em> they do this, but it provided a ton
+of easy-to-access data, so why not?
+<a href="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s1600/benford_plant.png"><img alt="image" src="http://1.bp.blogspot.com/_fa6AZDCsHnY/TRpR82I2X1I/AAAAAAAAAIE/XdFQozbC7eY/s400/benford_plant.png"></a>
+Neat, so we see that wide variety of natural data follow Benford's Law
+(some more examples
+<a href="http://mathworld.wolfram.com/BenfordsLaw.html">here</a>). But why should
+they? Well, as far as I have gathered, there are a few reasons for this.
+The first two come from a paper published by Jeff Boyle [2]. Boyle makes
+(and proves) two claims about this distribution. First, he claims that
+"the log distribution [Benford's Law] is the limiting distribution when
+random variables are repeatedly multiplied, divided, or raised to
+integer powers." Second, he claims that once such a distribution is
+achieved, it "persists under all further multiplications, divisions and
+raising to integer powers." Since most data we accumulate (scientific,
+financial, gambling,...) is the result of many mathematical operations,
+we would expect that they would tend towards the logarithmic
+distribution as described by Boyle. Another reason for why natural data
+should fit Benford's Law is given by Roger Pinkham (in <a href="http://www.williams.edu/go/math/sjmiller/public_html/BrownClasses/197/benford/Pinkham_FirstDigit.pdf">this
+paper</a>).
+Pinkham proves that<em>"</em>the only distribution for the first significant
+digits which is invariant under scale change of the underlying
+distribution" is Benford's Law. This means that if we have some data,
+say the lengths of rivers in feet, it will have some distribution in the
+first digit. If we require that this distribution remain the same under
+unit conversion (to meters, yards, cubits, ... ), the only distribution
+that satisfies this distribution would be the uniform logarithmic
+distribution of Benford's Law. This "scale-invariant" rationale for this
+first digit law is probably the most important when it comes to data
+that we actually measure. If we find some distribution for the first
+digit, we would like it to be the same no matter what units we have
+used. But this should also be really easy to test. The county size data
+used above was given in square miles, so let's try some new units.
+First, we can try square kilometers.
+<a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s1600/benford_landkm.png"><img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR09Vq1jCAI/AAAAAAAAAIM/1Yz5gp0-7CY/s400/benford_landkm.png"></a>
+Slightly different than square miles, but still a very good fit. Now how
+about square furlongs?
+<a href="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s1600/benford_landfurlong.png"><img alt="image" src="http://3.bp.blogspot.com/_fa6AZDCsHnY/TR093IwIt8I/AAAAAAAAAIQ/ern61I_MJQ0/s400/benford_landfurlong.png"></a>
+Neat! Seems like the distribution holds true regardless of the units we
+have used. So it seems like a wide range of data satisfy Benford's Law.
+But is this useful in any way or is it just a statistical curiosity?
+Well, it's mainly just a curiosity. But people have found some pretty
+neat applications. One field in which it has found use is <a href="http://en.wikipedia.org/wiki/Forensic_accounting">Forensic
+Accounting</a>, which I
+can only assume is a totally rad bunch of accountants that dramatically
+remove sunglasses as they go over tax returns. Since certain types of
+financial data (for example, see
+<a href="http://www.uic.edu/classes/actg/actg593/Readings/Auditing/The-Effective-Use-Of-Benford's-Law-To-Assist-In-Detecting-Fraud-In-Accounting-Data.pdf">here</a>)
+should follow Benford's Law, inconsistencies in financial returns can be
+found if the data is faked or manipulated in any way. Moral of the
+story: If you're going to cook the books, remember Benford! [1]
+Benford's Law, in the great tradition of <a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy">Stigler's
+Law,</a> was
+discovered by Simon Newcomb. [2] Paper can be found
+<a href="http://www.jstor.org/pss/2975136">here</a>. Unfortunately, this is only a
+preview as the full version isn't publicly available without a library
+license. The two points that I use from this paper are at least stated
+in this preview.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/benford/" rel="tag">benford</a></li>
+            <li><a class="tag p-category" href="../../../categories/scott-bakula/" rel="tag">scott bakula</a></li>
+            <li><a class="tag p-category" href="../../../categories/statistics/" rel="tag">statistics</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../holiday-hidden-message/" rel="prev" title="Holiday Hidden Message">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../holiday-hidden-message-revealed/" rel="next" title="Holiday Hidden Message Revealed">Next post</a>
+            </li>
+        </ul></nav></aside><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha256-ExtbCSBuYA7kq1Pz362ibde9nnsHYPt6JxuxYeZbU+c=" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:thephysicsvirtuosi@gmail.com">The Virtuosi</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

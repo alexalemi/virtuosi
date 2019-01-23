@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Yariv)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/yariv.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Clarification</title><link>https://virtuosi.alexalemi.com/posts/old/a-clarification/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;As there seems to be some
+&lt;a href="http://en.wikipedia.org/wiki/Date_format#Date_format"&gt;confusion&lt;/a&gt; among
+my fellow Virtuosi, I wanted to point out that Pi day occurs on July
+22nd or, in the year 4159, on January 3rd. Today is in fact &lt;a href="http://en.wikipedia.org/wiki/Waring%27s_problem"&gt;Seventh
+Power Day&lt;/a&gt;.&lt;/p&gt;</description><category>day-month-year</category><category>Eurocentrism</category><category>pi day</category><guid>https://virtuosi.alexalemi.com/posts/old/a-clarification/</guid><pubDate>Wed, 14 Mar 2012 12:20:00 GMT</pubDate></item><item><title>Your Week in Seminars: Short Thanksgiving edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-short-thanksgiving-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;Good Monday evening all, and welcome to another edition of Your Week in
+Seminars. Last week was a half week here in Cornell, but we still
+managed two talks, the general colloquium and the
+Wednseday-talk-on-Tuesday. Monday we had Charles Marcus of Harvard talk
+about Building Schrödinger's Chip. This was a quantum computing talk. We
+don't actually have a quantum computing group in Cornell, but I've taken
+a couple of courses on it back home, and it's an interesting subject,
+although I've been a bit disillusion by the notable lack of problems
+solvable by quantum computers. Marcus started by talking about the
+wonders and insanities of quantum mechanics - the usual spiel about the
+two slit experiment, electrons passing through walls, and Schrödinger's
+cat. He said he dubbed the talk Schrödinger's chip because unlike cats,
+that appear to break when we put them in the kind of low-temperature
+vacuum conditions we like to do quantum experiments in, chips keep
+working pretty well. Next he introduced the concept of entanglement,
+which is at the basis of the whole concept of quantum computing.
+Entangled particles are two or more particles that do not have a
+definite quantum state, but are definitely in the same quantum state. If
+I take them apart and measure their state - say, spin up or down - then
+I do not know the answer, but as soon one turns up, the other is up as
+well, and if one is down the other is immediately down as well. The
+experimental side of quantum computing is all about making little
+quantum boxes that contain a small number of states (like up or down)
+and then making it possible to entangle two of those boxes together. Add
+up enough boxes, under some criteria that were posited a decade ago but
+still not achieved, and you have a quantum computer. The majority of the
+talk was a survey of the various state of the art boxes and the methods
+used to make them. For those keeping track, 15 is still the largest
+number factored by a quantum computer. On Tuesday, I came in just in
+time for the second half of John Terning's talk on Monopoles, Anomalies,
+and Electroweak Symmetry Breaking. It's not really ideal to go into the
+second half of a talk in Newman 311, and this one actually sounded like
+I missed some interesting stuff. The part that I heard was about adding
+magnetic monopoles to the standard model., Those lovely magnetic
+equivalents of the electric point charge that we all heard about in our
+undergraduate E&amp;amp;M course turn out to be surprisingly hard to integrate
+into basic particle theories, which is perhaps for the best as we have
+not detected them so far. The gist of what I got from the second half of
+the talk was that it is not enough to add a magnetic counterpart to the
+electric part of the standard model, but in fact one needs a magnetic
+QCD and Weak force as well. Under some conditions, this kind of
+configuration can work, and predict magnetic monopoles with TeV-scale
+masses - the kind we might see in the LHC. Terning also talked about how
+these could be detected in the LHC. It turns out this isn't simple,
+because at TeV we would be producing monopole-anti-monopole pairs just
+barely, and so without a lot of kinetic energy they would tend to
+collapse back on themselves and annihilate, creating what is essentially
+an omnidirectional shower of photons. He mentioned that one of the big
+detectors at the LHC - the CMS - was equipped to detect these kind of
+photon bursts, and so this another prediction or possibility that we can
+look forward to seeing or not seeing soon. That's it for last week, kind
+of on the short side due to the holiday and so on. This week is our last
+normal one, as the semester ends, but I'll have a couple more particle
+talks the week after that, as well.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-short-thanksgiving-edition/</guid><pubDate>Mon, 29 Nov 2010 18:51:00 GMT</pubDate></item><item><title>Your Week in Seminars: One for Two Edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-one-for-two-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;Hello everyone and welcome to another week of talks here at the physics
+department. I was out of Ithaca for a bit this past week, so in this
+very special edition I'm going to present a full week's worth of
+seminars (one from last week and two from the previous week) in one post
+covering two weeks. The Colloquium two weeks ago was given by our own
+Csaba Csaki, who talked about Electroweak Symmetry Breaking and the
+Physics of the TeV Scale. This was essentially an overview of
+beyond-the-standard-model physics and the kind of things we expect out
+of the LHC. Csaba started off by reminding us of the Standard Model, our
+very successful model of particle physics that's withstood nearly every
+test over the last thirty or forty years. The Standard Model is a set of
+three gauge theories - three forces that a relayed by massless particles
+- along with the theory of electroweak symmetry breaking that explains
+why one of these powers, the Weak one, is relayed by massive particles.
+This theory is well-backed by experiment, with the exception of the
+crucial Higgs boson, the one that gives mass to those previously
+massless W and Z, which we hope to see soon in the LHC. There are a few
+problems with the Standard Model, and the big one is the Hierarchy
+problem. Given what we know of symmetry breaking and how the W and Z get
+their masses, we expect elementary particles to have masses that
+correlate with the energy scale of the interaction that gives them this
+mass. Since that interaction is not one we see at low energies, we
+expect the elementary particles to be very massive. Since they are not,
+we conclude that there must be some symmetry that keeps them massless or
+nearly so. Some solutions to this was mentioned, beginning with
+current-favorite supersymmetry. This extra symmetry relation bosons to
+fermions and vice versa works well to solve the original problem, but
+creates a few of its own, like the Little Hierarchy Problem - if there's
+all this new physics at energies just a little higher than we've been
+exploring, why don't we see its effects on the low energy physics? In
+other words, why does the non-sypersymmetry Standard Model work so well?
+Csaba went on to mention some ways of solving these problems, such as
+burying the Higgs by allowing it to decay only in very specific ways. He
+also talked about a few more, like no-Higgs theories that accomplish
+electroweak symmetry breaking by different means, and extra-dimensional
+theories that allow us to give different energy scales to different
+forces. And the exciting thing about all of this is that we are likely
+to know a great deal of the answers soon, within the next few years,
+once the LHC starts giving data. On Wednesday after it we had Sven
+Krippendorf from Cambridge talk about Particle Physics from local
+D-brane models at toric singularities. This was a heavy string theory
+talk and I couldn't follow much of it. The question at hand was how to
+get the Standard Model, or parts of it, out of string theory models, and
+the gist of the talk revolved around toric singularities in the
+spacetime that the string theory lives in. No, I'm not entirely sure
+what makes a singularity toric. There were a lot of colorful graphs and
+some explanations. At the end there seemed to be some analogy made
+between different types of singularities on the manifold in string
+theory language and different gauge theories in the quantum field theory
+language, with a way to map them to each other. Possibly exciting, but
+you'd have to ask a proper string theorist about it. Then just this last
+Friday, we had Rachel Rosen from Stockholm University talk about Phase
+Transitions of Charged Scalars and White Dwarf Stars. This was a
+blackboard talk, which is always exciting and is usually more
+illustrative than Power Point ones. The subject was the thermodynamics
+of white dwarf stars - stars that are very dense and old, where fusion
+has mostly stopped and the only thing preventing the collapse of the
+star upon itself is the fermionic pressure of the electrons, that cannot
+fall into the same quantum states. The physical description of these
+stars is one of relatively free positive ions, specifically helium ions
+in this case, floating through a background of fermions. They are
+described by a quantum condensate, which has a good theory explaining
+it, but with the addition of Coulombic interaction between the ions.
+This state applies, specifically, to a subgroup of these stars that are
+mostly made of helium. This kind of ion condensate tends to crystallize
+depending on the ratio between the kinetic and potential Coulombic
+energy. Quantum effects, on the other hand, depend on some ratios of
+mass and charge between the ions. The only material where this applies
+turns to be helium, but luckily there are plenty of these helium-made
+white dwarfs. The derivation, as Rosen showed it, starts with a neutral
+Bose-Einstein condensate, which has a simple phase diagram - uncondensed
+above some critical temperature, and increasing condensation as the
+temperature is lowered to zero. The charged condensate introduces
+photons as it is usually done in field theory and follows the
+consequences. The result is a more complicated phase diagram. Under the
+old Tc, the ions still condense, but things change above it. There is
+now some higher temperature above which there is no condensation, but in
+between there are two solutions to the equations of motions, a
+condensate and a non-condensed state, and both a local energy minima.
+This means that the transition into a condensate is not continuous, and
+this is a first order phase transition. The nice thing here is that we
+have such white dwarf stars to observe and we can compare this theory to
+observations. That's it for these last two weeks. All you Americans out
+there have a good Thanksgiving, and I'll see you next week with two new
+seminars.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-one-for-two-edition/</guid><pubDate>Mon, 22 Nov 2010 11:12:00 GMT</pubDate></item><item><title>Your Week in Seminars Dark Edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-dark-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;Good afternoon everyone, and welcome to another week of seminars here in
+the physics department. Our theme of the week is dark matter - where
+does it come from, how do we see it, and why is there so much of it.
+Along with that we have a little more AdS/CFT, seemingly continuing last
+week's subjects theme. All in all, it looks like seminars on similar
+subjects tend to condense here in the department. We start with the
+Monday Colloquium, where Richard Schnee from Syracuse University told us
+about What's the Matter in the Universe? Direct Searches for WIMP Dark
+Matter. Dark matter, we'll recall, is the astrophysics name for any kind
+of matter that doesn't emit light - one that is not inside stars. Our
+knowledge of our own solar system, which has its mass concentrated
+almost entirely inside the sun, led us to expect that mass in the
+universe in general would behave similarly. It turns out that the motion
+of observed galaxies is not consistent with the mass we measure them to
+have, and so we hypothesize the existence of non-luminary matter around
+us. These days dark matter is an object of interest not only for
+astrophysicists but for particle theorists as well. With our variety of
+beyond-the-standard models of the universe we try to account for dark
+matter, guess at its properties and explains why it is dark. That last
+quality is rather easy to explain, in fact. Our expectation of dark
+matter is simply that it does not interact electromagnetically, and so
+does not emit photons. If we also posit that it does not interact
+strongly, we are left with a particle that can only decay weakly, and so
+we might expect a lot of it to stick around. Of course, the particle
+must also have a mass, which is the original property we postulated for
+it, and so we are looking for the WIMP, the Weakly Interacting Massive
+Particle. Schnee talked about the various ways we hope to see WIMPs in
+the coming decade, focusing on two avenues, the LHC and passive
+detectors trying to pick up cosmic particles passing through the Earth.
+WIMPs are by definitions hard to detect, because they interact only
+Weakly and thus only weakly. This means that we can't actually see them
+directly in our detectors, and we have to look for either missing energy
+in accelerator results, which we deduce has gone to them, or their
+effects on detectable particles in large particle reservoir, much as we
+would detect neutrinos. Of course, when we have such weak signals the
+art is in reducing the background noise, by putting them underground,
+using the least radioactive materials we can find, and so on. The last
+part of the talk revolved around two events in his own detector that
+seemed to be far enough above background level to be WIMPs . Schnee then
+explained how statistical analysis proved in fact these many statistical
+outliers were, well, statistically expected, which I found very
+interesting. There was also a mention at the very end, of another
+experiment called DAMA, which is looking for a "WIMP wind", checking for
+signals as the Earth moves through space in opposite directions, in a
+kind of modern parallel of the Michelson-Morley experiment. This one has
+actually shown a positive signal, though this is of course still
+controversial. On Wednesday we had a local postdoc, Enrico Pajer, talk
+about Striped holographic superonductor. I mentioned AdS/CFT last week,
+and how it's induced some crossover between the condensed matter study
+of high-temperature superconductors and particle physics. This was one
+of those crossover seminars, with a few CM people in the audience.
+Enrico spent about half of the talk introducing the audience to the
+basics of superconductors - there were a lot of discontent as people
+asked questions or had objections to statements which I imagine would
+have gone over more smoothly with a condensed matter crowd . The bottom
+line of the first half were three important attributes of
+high-temperature superconductors, being a strong coupling between the
+electrons, the existence of a quantum critical point and an
+inhomogeneity of the material. There was then another general
+introduction of the AdS/CFT duality, and I'll send you to last week's
+summary (or the rest of the internet) if you want to hear more about
+that. Enrico was working on a field theory in AdS space and trying to
+apply the results to superconductors through the duality. In particular,
+strong coupling and quantum criticalities are known features of the AdS
+theory, and the addition here was of striped inhomogeneity, where things
+change alone one axis only. This is incorporated into the AdS space by
+applying boundary conditions, in particularl to the gauge field in the
+relevant field theory, and reading the results by applying Einstein's,
+Maxwells and the Klein-Gordon equations, in the bulk of the theory. One
+interesting feature that was reproduced from other, non-AdS theories,
+was the dependence of the critical temperature Tc on the inhomogeneity.
+This is the temperature where superconductors turn into normal
+conductors, and previous work had shown that it would to drop as the
+scale of the inhomogeneity grows either very large or very small, and
+have some maximum point for a finite scale of inhomogeneity. Enrico's
+work showed a dropoff in Tc for inhomogeneity on very small scales,
+giving the same qualitative behavior albeit with an exponential rather
+than logarithmic dropoff. There were more details and math then, as they
+studied these inhomogeneities in the AdS model, trying to determine the
+conductivity along the stripes and perpendicular to them and so on,
+producing some promising results and promising to produce some more.
+Finally on Friday we had Kuver Sinha of Texas A&amp;amp;M talk about The
+Cosmological Moduli Problem and Non-thermal Histories of the Universe.
+As mentioned above, this talk revolved around dark matter as well,
+though from a particle theory perspective. The trick in particle physics
+is always making sure that your solution to one problem, in this case
+dark matter, does not interfere with our solution to another problem.
+The other problem here was the baryon asymmetry, or the overabundance of
+matter compared with antimatter in the universe. In particle physics the
+two are generally sides of the same coin and we have no reason to prefer
+one or the other, and so we must have some reason that we only observe
+regular matter in the universe. There is a well-established model for
+this, called nucleosynthesis, and now when we explain the amount of dark
+matter in the universe we have to keep from interfering with it. And
+while we're at it, we might solve a third problem - why is the density
+of dark matter and regular matter in the universe on the same order of
+magnitude? Sinha went through this, presenting two models of baryon
+genesis, occurring at different times in the history of the universe,
+each with their own features problems. Finally, he suggested one
+solution to the coincidence problem that is non-thermal - that is,
+rather than configuring the equilibrium point of matter and dark matter
+to be similar separately, we have them coming from the same source with
+similar decay rate. And that was that for last week, as dark matter
+obscures the better-lit one. This week have a sweeping overview of
+particle physics, toric singularities on branes, and possibly some news
+from the LHC. See you in seven.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-dark-edition/</guid><pubDate>Mon, 08 Nov 2010 15:46:00 GMT</pubDate></item><item><title>Your Week in Seminars: Conformal Edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-conformal-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;Another week has gone by here in Cornell. The last leaves are turning
+red, a hint of snow passed us on the weekend, and the undergrads have
+hit the streets and parties in minimal clothing, then did the same again
+next day wearing a set of cat ears. And in the physics department, we
+had the usual three talks. On Monday, the colloquium speaker was Holger
+Müller from UC Berkeley, talking about Gravitational Redshift,
+Equivalence Principle, and Matter Waves. The center of the talk was
+Muller's experimental device, an atom interferometer. Many of you will
+remember the Michelson-Morley interferometer, the device used to
+disprove the existence of the ether. A light-interferometer essentially
+takes a beam of light, splits it in two and then merges it back again,
+using the result of the interference between the two parts to learn
+something about the relative difference between the optical paths taken
+by the two. The atom interferometer, then, performs a similar function
+with atom wavefunctions. An atom is shot up into the air and a laser is
+directed towards it and calibrated to interact with the atom half the
+time. The atom's wavefunction is split two trajectories, at the end of
+which another laser is calibrated to bring the two paths back together.
+The detector can then measure the path difference between the two
+trajectories, and as we have excellent ways of measuring time and the
+mass and energy of the atom, this amounts to a very accurate measurement
+of g, the free-fall constant. Muller went on to show how his team has
+been using the interferometer to perform very accurate measurements of
+General Relativity, from its isotropy to the universality of free fall
+motion for objects of different masses. There were some neat tricks
+described, and they mentioned the ability to measure those &lt;a href="http://thevirtuosi.blogspot.com/2010/09/microseconds-and-miles_7470.html"&gt;minute
+differences&lt;/a&gt;
+in gravity experienced by moving the system one meter upwards. It's
+always a little difficult to get excited about tests that confirm an
+accepted theory, especially one like General Relativity, but I think
+this is important work. To paraphrase the words of fellow Virtuos Jared,
+GR is always going to be right up until we find where it breaks. On
+Wednesday, David Kaplan talked about Conformality Lost. This talk was
+about QCD, but not about QCD. One of the features of QCD, or really
+field theories in general, is the running of the coupling constants.
+Where in classical theories the strength of the interaction between two
+particles is constant and depends only on the distance between them,
+field theory shows us how the strength of the interaction changes with
+the energy of the participating particles. This is crucial, for
+instance, for theories of grand unification that posit that the known
+forces are all the same at very high energies. In QCD, in particular,
+the running of the constant also has to with confinement and asymptotic
+freedom. Confinement is the notion that quarks can never break free of
+each other, and so we never observe them alone in nature, only within
+particles such as protons, neutrons, baryons and mesons. Asymptotic
+freedom is the notion that at high energies, if we collide another
+particle with a quark, it behaves as if it was free of other influence.
+If we associate long distances with low energy and short distances with
+high energy, we can see how the coupling must flow from very small at
+one end to very large at the other end. One of the interesting things
+about the running of the coupling is that it defines a scale for the
+theory. If the coupling is different for particles of energy E~1~ and
+E~2~, then we can choose some value of the coupling and describe our
+energy in relation to the energy relative to this scale. Theories
+without running coupling are called conformal and have no natural scale.
+QCD, it seems, behave this way if you take it all the way to asymptotic
+freedom. Kaplan talked about the investigation of this conformal stage
+of the theory, its existence and inexistence. As an analog he showed a
+quantum-mechanical system of a particle in a Coulombic, potential. The
+minimum energy of this system is given by solution of a quadratic
+equation, which can have either two solutions, one or none, depending on
+the relation between the mass of the particle and the strength of the
+potential. A scale exists in this case only if there are two solutions:
+a single energy is meaningless, of course, because we can always add a
+constant, but if there's two of them then the difference defines a
+scale. This toy model, it turns out, can be analogous to a QCD with the
+equivalent parameter being the relative number of flavors (kind of
+particles) and colors (different charges in the theory, red, blue and
+green in our regular QCD). There were a number of interesting results
+from this model, the most exciting one, perhaps, being the possible
+existence of a "mirror" QCD theory beyond the conformal point of QCD, a
+sort of theory with a different number of colors and different gauge
+groups. Kaplan ended his talk by talking of at least one possible
+candidate for this mirror theory that they had recently found. Finally,
+on Friday, we had Ami Katz from Boston University talk about CFT/AdS.
+AdS/CFT has been a big buzzword for the last decade or so. The CFT here
+stands for conformal field theory of the kind mentioned in the previous
+summary, and AdS stands for Anti-de Sitter space, a geometry of
+spacetime possible in general relativity. The slash in between stands
+for a duality that allows results from one theory to be interpreted in
+the other and vice versa. This has some exciting implications since it
+allows us to use each theory in the regime where we can solve it.
+Particle theorists are, in general, trying to use the CFT to solve for
+high-energy theories that behave like AdS. Katz had apparently rewritten
+the duality as CFT/AdS, to signal that he was asking the opposite
+question, starting with a CFT and asking whether it is a good fit for
+the duality. A large part of the talk was dedicated to making an analogy
+from CFTs into conventional field theories. We know pretty well when a
+field theory is a good description of reality and when it tends to break
+down. This has to do, usually, with some cutoff energy, a scale at which
+new physics comes into play. As long as we stay at energies far below
+that cutoff, the effects of the unknown physics will be a small
+correction to the calculations we make with our known physics. In CFTs,
+we had just said, there is no energy scale, and so the question must be
+different. The relevant question, apparently, is the dimensionality of
+operators - not what their energy scale is, but how they scale with a
+change of energy. For instance, a derivative behaves like inverse
+distance, and distance behaves like inverse energy, so a single
+derivative scales linearly in energy, while a double derivative scale
+quadratically. I didn't understand much past the half-point of this
+lecture, but the bottom line appeared to be that a well-behaved CFT has
+a gap in its operators dimensionality, allowing us to focus on one
+operator and plenty of its derivatives before coming to the scaling of
+the next operator. This kind of gap allows our perturbative corrections
+to remain perturbative when we go to the AdS side. That's it for last
+week, with its conformal ups and down. As usual, we're past the first
+seminar of the new week, which was non-wimpy talk about WIMPs. Still
+ahead this week are superconductors (and more AdS/CFT, presumably) and
+some non-thermal histories of the universe. (that is, of course, if I
+don't freeze first - temperatures have dropped below zero already. It's
+so much colder when you work in Celsius)&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-conformal-edition/</guid><pubDate>Mon, 01 Nov 2010 17:58:00 GMT</pubDate></item><item><title>Your Week in Seminars Fermionic Edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-fermionic-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;Good evening, and welcome to the second edition of YWiS. Last week I
+took in the full range of seminars, from colloquium to Friday lunch. I
+don't know if I can say I took in the full content of these talks as
+well, but let's see what I learned On Monday we had Andrew Millis from
+Columbia University talk about Materials with Strong Electronic
+Correlations: The (Theoretical) End of the Beginning? (I think the
+subtitle wasn't actually there in the talk itself). This was a condensed
+matter theory talk, and like all condensed matter talks it started off
+with the phase diagram for cuprates and a mention of the illustrious
+pseudogap, the Dark Energy of condensed matter. The pseudogap is a phase
+of cuprates - the materials that make high-temperature superconductors -
+that occurs at about the same concentration of defects as
+superconductivity but at a higher temperature. It is a little-understood
+phase that sits between two well-understood phases (antiferromagnetism
+and Fermi liquid) and perhaps holds some answers to the nature of
+high-temperature superconductivity. Millis started with the pseudogap
+picture and a short overview of the current state of condensed matter
+theory. He claimed that perhaps some of the phases of matter in question
+have local, short-range ordering, but no overarching long-range order in
+the system, and that the investigation of these phases should take this
+into account. At the end of this introduction he asked why we cannot
+easily solve the problems of condensed matter. The basic equations that
+govern the interactions in the field are known - the electromagnetic
+potential and Schrödinger's equation - and we should be able to just
+plug them into a computer and calculate away. The trouble, as Millis
+presented it, comes from the fermionic nature of the problem. What we're
+trying to calculate, in metals, is the behavior of the electrons running
+through the bulk of the metal. Electrons are fermions, which means that
+no two can have the same quantum numbers, that is no two can be in the
+same place with the same momentum and spin. It turns out that the
+configurations with lowest energies tend to be symmetric, with many
+particles in the same position. Finding low-energy configurations that
+put every particle in a different place is much harder. I didn't get a
+lot more from this talk. Millis went on to suggest a method that avoids
+tackling the problem directly, but rather solves an analogous one that
+we can translate to into a solution. I believe that there was some talk
+of a local, rather than global, solution, and of the Hubbard model,
+which is a popular approximation used in modeling electrons in a solid.
+I phased in and out of this talk, but I'd peg my Understanding at 25
+minutes, and my Interest at about 35 minutes. The Wedenesday particle
+talk was by Jesse Thaler from MIT. He talked about Aspects of Goldstini.
+Goldstini is the Italian plural form of goldstino, which is the
+fermionic version - we put "ino" at the end of fermionic particles,
+influenced by the neutrino - of the Goldstone boson. A Goldstone boson
+is a massless particle that we find in theories of spontaneous symmetry
+breaking. Spontaneous symmetry breaking is a popular concept in particle
+physics, which springs from the concept of an unstable energy maximum.
+Imagine a pencil standing on its tip, a system which is symmetric in
+every direction. The pencil is unstable, though, and left by itself it
+would fall down in any one of the equivalent directions around it. Once
+it has fallen, it's broken the symmetry and created one preferred
+direction. Thus the symmetry of the system is broken when one direction
+is chosen spontaneously. This sort of thing is at the bottom of our
+understanding the electroweak force, and pops up quite a bit in particle
+physics. When it does, we expect a Goldstone boson, a massless particle
+that roughly corresponds to spinning the fallen-down pencil around its
+tip. The goldstini is the fermionic version of that particle which
+springs from the breaking of supersymmetry - the symmetry that relates
+fermions and bosons. The goldstino, then, is well known and accepted in
+common theories of supersymmetry. It breaks supersymmetry, and then
+interacts with the gravitino - another fermion, which mediates the force
+of gravity - to become massless. Thaler's work posits more than one
+goldstino, hence, goldstini. How can we have more than one goldstino? By
+breaking supersymmetry more than once. We do this by imagining several
+"sectors" in our theory, different sets of fields (particles) that break
+supersymmetry but don't interact with each other significantly. When you
+work through this model it turns out that you can have several
+goldstini. Also, as the original goldstini lost its mass by giving it to
+the gravitino, and the gravitino is now satisfied, the new goldstini get
+to keep their mass, which turns out to be exactly twice that of the
+(satisfied) gravitino. Thaler then discussed three possible scenarios
+for this mass, and what we would expect to see at the LHC in each case.
+The important thing, it turns out, is how this mass compares with that
+of the lightest ordinary superpartner, the first supersymmetry-related
+particle we expect to see in the LHC. If the mass of the goldstini is
+very small, they will not come into play as the LOSP will decay into
+particles we already know. If the mass of the goldstini is too large,
+then the LOSP cannot decay into it. But if the mass is in some
+goldstinilocks region in-between, things become interesting and we can
+expect to see evidence of the gravitino and the goldstini, and
+distinctly see one having double the mass of the other. I followed a
+good portion of this talk, with Understanding of 30 minutes all in all,
+and perhaps 45 minutes of interest. Finally, the Friday particle theory
+lunch had a talk by our own David Curtin, one of Csaba's grad students.
+He talked about Solving the gaugino mass problem in Direct Gauge
+Mediation. I came into this one to follow more of it, on account of the
+speaker being a student, but ended up following very little as it was
+technical and above my level. It revolved, again, around supersymmetry
+breaking. David does model building, which means he starts out with some
+acceptable results, i.e. the universe as we know it, and tries to tinker
+up a combination of particles and interactions that would reproduce it,
+one portion at a time. What he was trying to build this time was a
+metastable level in the broken supersymmetric potential. If we think
+back to our pencil, we had an unstable maximum, the pencil standing on
+its tip, and a minimum point, the pencil laying on the table, from which
+it cannot fall. But we can also imagine a midpoint - perhaps resting one
+side of the pencil on a book. It can't fall any further right away, but
+there is another, preferred position lying flat on the table. That's
+what we call a metastable energy level. As it turns out, the metastable
+level has some desirable outcomes within the context of supersymmetry,
+and the talk revolved around the ways we have of getting the right
+energy structure to our system while avoiding things we don't want in
+our models - arbitrary particle masses, a large number of new particles,
+or anything blatantly unphysical. My Understanding here was quite close
+to 0, as the technicalities were beyond me. (in fact, the pre-seminar
+discussion was about soccer, so one might say my understanding was
+negative). I probably kept trying to follow for about half the talk, or
+30 minutes. That's it for last week. This week we can expect gravity,
+(heavy!) Conformality Lost (literary!) and CFT/AdS (buzzwordy!). And
+hopefully less headscratching and more nodding in a agreement.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-fermionic-edition/</guid><pubDate>Mon, 25 Oct 2010 11:56:00 GMT</pubDate></item><item><title>Your Week in Seminars Intro Edition</title><link>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-intro-edition/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;We've done a lot of talking over the past few months here on the
+Virtuosi, but one important subject has not come up so far. An issue
+that is central to the day to day life of the average grad student. The
+subject of free food. The average graduate student in an American
+university shops for food 0.7 times per semester, paying a total of
+$13.22. He eats an average of three vegetables and one fruit, all at
+home during Thanksgiving. He turns his oven on once per year while
+trying to ascertain if the power is out or the light bulb in the kitchen
+needs to be replaced. The rest of his nutrition is made up entirely of
+free donuts, bagels and pizza. The place to get all this free food,
+naturally, is various department talks and seminars. And while we're
+there, we may as well try to learn some physics. With that noble goal in
+mind, I'd like to welcome you to the first edition of Your Week in
+Seminars, where I shall endeavor to relay the content of the weekly
+seminars I attend in Cornell. On an average week this will be one
+general interest colloquium and two particle theory talks. One of my
+colleagues may want to take up the LASSP (Condensed Matter) talk or any
+of the other seminars going around in the department I'll try to relate
+what I got out of each talk, with more words than equations and with no
+figures. I'll aim for a general audience level but I think I'm likely to
+end up at a physics undergrad or a popular-science-savvy level, as
+technical terms are bound to be thrown about. If there's one you don't
+know, feel free to ask over in the comments or take this as an
+opportunity to delve into Wikipedia. I'll also provide two handy metrics
+to the quality of the talk, my Interest Level, defined as the amount of
+time before I start playing with my phone, and my Comprehension level,
+defined as the amount of time where I was still following the speaker.
+Last week there was no colloquium due to Fall break, so this post will
+cover just the Wednesday and Friday &lt;a href="http://lepp.cornell.edu/Events/ParticleTheory/WebHome.html"&gt;particle
+seminars&lt;/a&gt;.
+On Wednesday we had David Kagan from Columbia University tell us about
+Conifunneling - Stringy Tunneling Between Flux Vacua. As you may know,
+string theory demands that our universe have a large number of
+dimensions, generally 10 or 11, to avoid such nastiness mass particles.
+To bridge the gap between the theoretical and observed number of
+dimensions (four) one has to "compactify" the extra dimensions, that is,
+to posit that they have some shape and size and write down an effective
+four-dimensional theory that takes their presence into account. This
+compactification creates an energy surface, or some effective potential
+in space. What we call "vacuum", the ground state of the universe, rests
+in one of the minimum points of that potential, as ground levels are
+wont to do. But it need not be the absolute minimum, just a local one,
+and where there are local minima in a quantum theory we know that there
+is also tunneling. Kagan, then, talks of tunneling between these local
+energy minima created by compactification of the extra dimensions of
+string theory. This tunneling, from what I gathered, can be described as
+an evolution in time of the manifold, the geometric layout of spacetime.
+The main conceit of the talk was that this evolution takes the manifold
+into the form of a "conifold", which is a manifold with a conic
+singularity. This conifold then nucleates a 5d-brane; branes are a
+objects in string theory that have some dimensionality less than that of
+the entire spacetime. After creating this object, the conifold
+transforms back into a non-singular manifold, but one where the vacuum
+is in another energy minimum. We can visualize this process by thinking
+of spacetime as an elastic sheet of of sorts, pinched at a point and
+pulled. It is deformed, creating an elongated cone-like area, until
+finally it tears, emitting a five-dimensional brane, and reverting back
+to its original form. There was some discussion at the end which mostly
+went over my head, but at some point Henry Tye, Liam and Maxim were
+trying to figure out whether the tunneling is necessarily done via a
+conifold or whether Kagan was just describing what happens if it does.
+The conclusion, I believe, was that it is the latter case, though Kagan
+said they have some good arguments on why the conifold tunneling had to
+happen. Interest: 40 minutes. Understanding: 20 minutes. On Friday we
+had Zvi Lipkin from the Weizmann Institute tell us about Heavy quark
+hadrons and exotics, a challenge for QCD. This talk revolved around the
+constituent quark model for QCD. Our usual picture of hadrons is one of
+two or three valence quarks sitting in a sea of gluons and virtual
+quark-antiquark pairs, due to the strong interactions of Strong
+Interaction. Lipkin's work focuses on trying to abstract this sea away
+and focus on the valence quarks as if we were discussing a
+hydrogen-atom-like system of two particles and a potential between them.
+This kind of treatment allows us to maximize the use of flavor
+symmetries. Flavor is QCD-speak for "type of particle", that is, up,
+down, strange, charm and bottom quarks. Using the constituent quark
+model we may be able to say things like "the difference between the
+B^0^~s~ and the B^0^ (mesons made up of an anti-b and an s or d quark,
+respectively) is the same as the difference between the Ξ^0^ and the
+Σ^0^" (baryons made up of uss and uds quarks, respectively). (Don't take
+that last example too seriously - I made it up by looking at lists of
+baryons and mesons. But that was the gist of the talk) Lipkin showed
+done by him and Marek Karliner, (who taught me differential equations in
+Tel Aviv) including lots of numbers nicely matching between their theory
+and experiment as well as a less-convincing attempt to characterize the
+two-body potential in this two-body problem. At the end of the talk he
+also mentioned the X(3872) seen by the Belle experiment. This is a
+particle that does not seem to fit into our regular models as either a
+baryon or a meson, and Lipkin suggested that this might be a
+"tetraquark," a combination of two quarks and two antiquarks. This kind
+of exotic hadron has been talked about for a long time, and there was
+some excitement a few years ago with the discovery and eventual
+un-discovery of the Θ^+^ pentaquark. (made up of four quarks and an
+antiquark) Interest: 60 minutes. (I was sitting in the front and could
+not politely take out the phone) Understanding: 60 minutes.&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/your-week-in-seminars-intro-edition/</guid><pubDate>Mon, 18 Oct 2010 12:50:00 GMT</pubDate></item><item><title>Remembering two things</title><link>https://virtuosi.alexalemi.com/posts/old/remembering-two-things/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;One of my professors, &lt;a href="http://www.physics.cornell.edu/people/faculty/?page=website/faculty&amp;amp;action=show/id=80" title="who is now mentioned in two blogs in this context"&gt;Yuval
+Grossman&lt;/a&gt;,
+was talking about the zoology of particle physics in class the other
+day. Trying to get us to remember such trivia as the mass of the B
+meson, he noted that it's easier to remember two things than it is to
+remember one - and as it happens, the mass of the B meson is about 5280
+MeV, which is also the length of a mile in feet (an equally obscure
+piece of trivia, if you ask me). This reminded of one of my first
+calculus classes back home where another professor (Mikhail Sodin)
+chided us for not knowing the value of e, 2.71828. This is easy to
+remember, he said because 1828 is the year Lev Tolstoy was born. Then
+again, when I came to write this post, I could neither remember e, nor
+Tolstoy's year of birth - or even that it was Tolstoy, rather than
+Dostoevsky or some other Russian author. So perhaps two things are not
+easier to remember than one after all.&lt;/p&gt;</description><category>class</category><category>particle physics</category><category>shorts</category><guid>https://virtuosi.alexalemi.com/posts/old/remembering-two-things/</guid><pubDate>Thu, 02 Sep 2010 16:32:00 GMT</pubDate></item><item><title>Terminal Velocity 2: A Theorist's Experimental Experiment</title><link>https://virtuosi.alexalemi.com/posts/old/terminal-velocity-2-a-theorist-s-experimental-experiment/</link><dc:creator>Yariv</dc:creator><description>&lt;div&gt;&lt;p&gt;Yesterday we rode down Ithaca's hills in an attempt to estimate the
+terminal velocity of a bike rider braving the city's potholes. But
+estimations are easy, and we relied on a number of factors - the drag
+coefficient and area of the bicyclist, in particular - to get them. To
+see how well we did, it's time to move on to the experimental portion
+this exercise. Our tools? My bike (figure 1), and my beloved
+accelerometer (figure 2), with Google's &lt;a href="http://mytracks.appspot.com/"&gt;My
+Tracks&lt;/a&gt; app installed.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s1600/bike.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRzmU_-t0I/AAAAAAAACFA/6JFhG9Z9YiA/s200/bike.jpg"&gt;&lt;/a&gt;Figure
+1: Our vehicle&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s1600/Droid+2.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRn_JN3A6I/AAAAAAAACEQ/b02aLvN9_ys/s200/Droid+2.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Figure 2: Our instrumentation&lt;/p&gt;
+&lt;p&gt;I took data twelve times while driving down two paths (&lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=University+and+Cornell,+Ithaca+NY&amp;amp;sll=42.44395,-76.485014&amp;amp;sspn=0.016721,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=University+Ave+%26+Cornell+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.447243,-76.493082&amp;amp;spn=0.01672,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;University
+avenue&lt;/a&gt;
+and &lt;a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=State+and+Stewart,+Ithaca,+NY&amp;amp;sll=42.447243,-76.493082&amp;amp;sspn=0.01672,0.038581&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=E+State+St+%26+Stewart+Ave,+Ithaca+College,+Tompkins,+New+York+14850&amp;amp;ll=42.439262,-76.489692&amp;amp;spn=0.016722,0.038581&amp;amp;t=p&amp;amp;z=15"&gt;State
+street&lt;/a&gt;),
+measuring both the speed and elevation as a function of time. I came up
+with a lot of noisy data, some of it useful and a lot of it not. A
+typical plot out of the software looks something like (figure 3); out of
+those I identified moments of what seemed to be free acceleration, where
+I was not applying the brakes. I then calculated the slope and the
+acceleration at each point by subtracting subsequent measurements; this
+resulted in much noisier data, as seen on (figure 4).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s1600/University7.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRoiavSb4I/AAAAAAAACEY/3Yee3_k-TiY/s400/University7.png"&gt;&lt;/a&gt;Figure
+3: Typical data riding downhill
+&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s1600/University7DiffFocus.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRo0pVcbSI/AAAAAAAACEg/qdGFWsUS4X8/s400/University7DiffFocus.png"&gt;&lt;/a&gt;Figure
+4: Derivatives&lt;/p&gt;
+&lt;p&gt;The next question was what to fit these graphs to. I can't compare
+directly to the formula I had for terminal velocity, since I don't
+believe I achieve it at any point and we never see the velocity graph
+plateau. What we do have is the formula for the acceleration, which
+depends on both the angle and the velocity: $$ a = g\sin\theta -
+\frac{1}{2}\frac{\rho A C_d}{m} v^2. $$ It's a little hard to plot
+three-dimensional surfaces like this, but I can try to plot the
+acceleration as a function of the velocity squared. Assuming that the
+slope of each of my routes is constant and that they are both different,
+this should give me two straight lines offset by a constant. Seen in
+(figure 5), this yields less than optimal result. A first correction
+would be to account for the differing slope at different measurement
+points. Once we do that the data looks a little more linear, and we can
+fit a line through it, as seen in (figure 6).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s1600/avv.png"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGRpFDSXYbI/AAAAAAAACEo/pce7SNz6s_U/s400/avv.png"&gt;&lt;/a&gt;Figure
+5: Acceleration vs. velocity&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s1600/avvfixed.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_JIGLe2C6VxI/TGRpIHtielI/AAAAAAAACEw/-MuDiahJbxg/s400/avvfixed.png"&gt;&lt;/a&gt;Figure
+6: Adjusted for slope and fitted&lt;/p&gt;
+&lt;p&gt;The fits are given by: $$ a = (1.022 \rm{m}) - (0.00427 \rm{1/m})
+v^2\;\; \rm{(University)} $$ $$ a = (1.465 \rm{m}) - (0.00572
+\rm{1/m}) v^2\;\; \rm{(State)} $$ and we can quickly extract the
+terminal velocity out of the coefficients to get a factor of 47.9 m/s
+for the first line and 41.4 m/s for the second. These both fall within
+20% of our initial estimate, which is quite satisfying considering how
+bad the data looks. A few final thoughts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is the data so noisy? I can think of a lot of reasons. My Droid
+    phone is not quite a scientific measuring device to begin with, and
+    we did some numerical derivation of the initial data we got from it.
+    On top of that, the way I sit on the bike, the weight of the bag I
+    carry with me and other factors like the wind changed from ride to
+    ride.&lt;/li&gt;
+&lt;li&gt;I tried to avoid biasing the analysis and I was quite relieved when
+    the final numbers came out so close to my original estimate. I did
+    play around a little with a different presentation that didn't look
+    linear at all, but other than that I think what I did was pretty
+    straightforward.&lt;/li&gt;
+&lt;li&gt;The one thing that I don't like about the final results is the
+    constant addition to both acceleration fits, or put another way, the
+    fact that after subtracting the gravitational pull from the
+    acceleration I still get positive numbers, while the drag force
+    should work to reduce it. I suspect this implies that my
+    cancellation of the sinθ term was less than perfect.&lt;/li&gt;
+&lt;li&gt;Can you figure out what the trajectory the bike as a function of
+    time looks like? There's a (non-trivial) analytic expression.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>bike</category><category>data</category><category>fun</category><category>measurement</category><guid>https://virtuosi.alexalemi.com/posts/old/terminal-velocity-2-a-theorist-s-experimental-experiment/</guid><pubDate>Thu, 12 Aug 2010 17:23:00 GMT</pubDate></item><item><title>Teminal Velocity</title><link>https://virtuosi.alexalemi.com/posts/old/teminal-velocity/</link><dc:creator>Yariv</dc:creator><description>&lt;div&gt;&lt;p&gt;The impetus for this post lies with three facts. First, I like to bike
+to work. Second, Cornell sits on a
+&lt;a href="http://www.cornell.edu/search/index.cfm?tab=facts&amp;amp;q=&amp;amp;id=272"&gt;hill&lt;/a&gt;. And
+finally, I'm not very brave. As a result of all of these, along with
+Ithaca's less-than-optimal road maintenance, my semi-daily rides home
+tend to produce a lot of wear on my brakes as I cruise downhill at what
+appears to me to be very high speeds. I began to ponder just how high
+this speed really is, and if I could reduce my use of the brakes or if
+I'm going to end up using them anyway at the bottom of the hill.
+&lt;img alt="image" src="http://2.bp.blogspot.com/_JIGLe2C6VxI/TGLwOVisUAI/AAAAAAAACD4/V9TvWzmEv9k/s200/200px-Free_body.svg.png"&gt;&lt;/p&gt;
+&lt;p&gt;Figure 1: An inclined plane&lt;/p&gt;
+&lt;p&gt;So, I asked myself, what do I remember about bikes going down the hill?
+Well, I remember the good old inclined plane (figure 1), and I remember
+that air resistance is proportional to velocity, so that the equation of
+motion is given by $$ ma = mg\sin\theta - \alpha v. $$ I had no idea
+what α was, though. My first stop in considering it was naturally
+Wikipedia. A quick
+&lt;a href="http://en.wikipedia.org/wiki/Terminal_velocity"&gt;search&lt;/a&gt; came up with
+the formula $$m a = mg\sin\theta - \frac{1}{2}\rho A C_d v^2$$
+where ρ is the density of air, A the projected area of the body and C~d~
+the drag coefficient The first thing to notice here is that I was wrong
+- drag in a fluid acts like the velocity squared, and not the velocity.
+Second, we can easily determine terminal velocity out of this formula -
+it's the speed at which the sum of the forces equals to zero, or $$v_t
+= \sqrt{\frac{2mg\sin\theta}{\rho A C_d}}.$$ We can throw in some
+numbers into that. ρ = 1.2 kg/m^3^ for air; Wikipedia estimates C~d~ =
+0.9 for a &lt;a href="http://en.wikipedia.org/wiki/Drag_coefficient"&gt;cyclist&lt;/a&gt;. For
+the mass, we need to add up mine (\~75 kg), the bike's (15-20 kg) and my
+bag's (let's say 5 kg). We come to about 100 kg, give or take 5%. A is a
+little harder to estimate, but height times width gives me an initial
+guess of 0.62 m^2^, which I'll revise to 0.7 m^2^ to account for the
+bike, flailing arms and fashionable helmet, up to about 10% accuracy.
+We're left with sinθ, which varies by road, but in general we expect the
+terminal velocity to look like $$v_t \approx \left(50 \pm 3
+\rm{m/s}\right) \sqrt{\sin\theta}.$$ This appears not-unreasonable.
+For an 8% grade like we have down University avenue this yields about 50
+km/h and for a 13% grade like we have down Buffalo street this will
+bring us up to a respectable 65
+&lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383#miles" title="That's - sigh - about 30 mph and 40 mph, respectively, in crazy units"&gt;km/h&lt;/a&gt;.
+Both, incidentally, are faster than I'm willing to go down a badly
+maintained, not entire straight road. So we have some numbers, and I
+begin to feel justified about pressing those breaks often, but all of
+this is really an introduction for the next post, in which I go against
+all my theorist instincts and take some data in the field. Stay tuned.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.blogger.com/post-edit.g?blogID=8807287158334608095&amp;amp;postID=6743488546064317383"&gt;&lt;/a&gt;That's&lt;ul&gt;
+&lt;li&gt;sigh - about 30 mph and 40 mph, respectively, in crazy units&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>analysis</category><category>bike</category><category>equations</category><category>guestimation</category><category>wiki</category><guid>https://virtuosi.alexalemi.com/posts/old/teminal-velocity/</guid><pubDate>Wed, 11 Aug 2010 14:04:00 GMT</pubDate></item></channel></rss>

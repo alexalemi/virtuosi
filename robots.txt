@@ -1,0 +1,4 @@
+Sitemap: https://virtuosi.alexalemi.com/sitemapindex.xml
+
+User-Agent: *
+Host: virtuosi.alexalemi.com

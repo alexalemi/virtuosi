@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about site news)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/site-news.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ask a Physicist</title><link>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;We've added a new feature here at the Virtuosi. Ask a Physicist. To the
+right in the sidebar you will see a link to our shared email account.
+Feel free to send us email asking any question you desire. We will do
+our best as starting PhD Graduate students to answer. Wondering about
+some physics principle? Want to know what life as a grad student is
+like? Want to know our favorite music? Ask away.&lt;/p&gt;</description><category>features</category><category>site news</category><guid>https://virtuosi.alexalemi.com/posts/old/ask-a-physicist/</guid><pubDate>Thu, 08 Apr 2010 13:28:00 GMT</pubDate></item><item><title>LaTeX Test</title><link>https://virtuosi.alexalemi.com/posts/old/latex-test/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Hopefully $$ \LaTeX $$ is now enabled thanks to the tip at:
+&lt;a href="http://watchmath.com/vlog/?p=438"&gt;WatchMath&lt;/a&gt;. This is a test. $$ E =
+mc^2 $$ $$ \frac{1}{\sqrt{2 \pi \sigma^2} }
+\int_{-\infty}^\infty dx\ \exp \left( -\frac{ (x-\mu)^2 }{ 2
+\sigma^2 } \right) = 1 $$ Continue about your day. EDIT: Fixed dx&lt;/p&gt;</description><category>features</category><category>site news</category><guid>https://virtuosi.alexalemi.com/posts/old/latex-test/</guid><pubDate>Tue, 06 Apr 2010 10:37:00 GMT</pubDate></item><item><title>A New Beginning</title><link>https://virtuosi.alexalemi.com/posts/old/a-new-beginning/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Being inspired by a Colloquium given today at Cornell by Chad Orzel over
+at &lt;a href="http://scienceblogs.com/principles/"&gt;Uncertain Principles&lt;/a&gt;, I'm
+going to try and resurect this old beast and begin anew. The general
+plan is that I will try and read more scientific papers, translating
+them into plainer english, as well as solve little problems or puzzles
+that I dream up. Wish me luck, perhaps I will get some of my friends
+involved.&lt;/p&gt;</description><category>site news</category><guid>https://virtuosi.alexalemi.com/posts/old/a-new-beginning/</guid><pubDate>Tue, 06 Apr 2010 00:37:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts by Sam)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/authors/sam.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Paradigm Shifts 3: With a Vengence</title><link>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-3-with-a-vengence/</link><dc:creator>Sam</dc:creator><description>&lt;p&gt;The last shift I wanted to present is best explained at
+&lt;a href="http://tauday.com/"&gt;http://tauday.com/&lt;/a&gt; . There you will find a
+manifesto (yes, a manifesto) about why we should change from using $$
+\pi = \text{180 degrees} $$ as the circle constant to $$ \tau = 2
+\pi = \text{360 degrees} $$ It's quite a convincing argument, and it's
+a shift that can easily be made. Check the website for more. TAU VS PI
+&lt;a href="http://tauday.com/images/figures/tau-angles.png"&gt;&lt;img alt="image" src="http://tauday.com/images/figures/tau-angles.png"&gt;&lt;/a&gt;&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-3-with-a-vengence/</guid><pubDate>Thu, 21 Oct 2010 14:32:00 GMT</pubDate></item><item><title>Paradigm Shifts 2: Paradigm ShiftER</title><link>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-2-paradigm-shifter/</link><dc:creator>Sam</dc:creator><description>&lt;div&gt;&lt;p&gt;Last time, I presented reasons why it would be economically infeasible
+for the US to switch to the metric system. This time, I'd like to talk
+about a change that could relatively easily be brought about soon. A
+change that would barely cost a thing, but could improve efficiency
+dramatically in many jobs and in every day life for many people. A
+change of this type would be very handy. Puns aside though, what I'm
+talking about is this: DVORAK SIMPLIFIED KEYBOARD (again lots from
+Wikipedia)
+&lt;a href="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/500px-KB_United_States_Dvorak.svg.png"&gt;&lt;img alt="image" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/500px-KB_United_States_Dvorak.svg.png"&gt;&lt;/a&gt;&lt;a href="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/1000px-KB_United_States_Dvorak.svg.png"&gt;&lt;/a&gt;
+&lt;a href="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/1000px-KB_United_States_Dvorak.svg.png"&gt;&lt;/a&gt;
+&lt;a href="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/1000px-KB_United_States_Dvorak.svg.png"&gt;&lt;/a&gt;
+Look down at your keyboard. Chances are very good that if you bought
+your keyboard in an English speaking country, you're using the QWERTY
+keyboard layout. You'll also probably know (or else you'll learn from
+me) that the letter "E" is the most common in the English language. You
+might wonder then, why it's not in the "home row" (the row of keys in
+the middle of the keyboard that would be right under your fingers if
+you're typing in the standard way). You might also wonder why other
+common letters like "T" were exiled to the top row while less common
+letters like "J" and "K" sit right under your fingertips as they rest
+idle. You may then think about how slow it is to type words like
+"December" which require you to use the same finger for consecutive
+letters. You may even get to thinking that a lot of words require using
+the same hand for consecutive letters, but it would be much nicer to
+alternate hands as you type. The reasons for the slow speed of QWERTY
+are not entirely clear. There are stories floating around about the
+inventor of the typewriter deliberately laying out the keyboard this way
+to keep typing speeds down so that the mechanical keys wouldn't jam. The
+authenticity of these stories are disputed, but you'd be hard pressed to
+argue that QWERTY is the most efficient layout there could be. One
+competitor for the title that has stood out is called Dvorak, named
+after its creator. Some statistics from Wikipedia (sources given there):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"the Dvorak layout uses about 63% of the finger motion required by
+    QWERTY"&lt;/li&gt;
+&lt;li&gt;"the vast majority of the Dvorak layout's key strokes (70%) are done
+    in the home row" whereas QWERTY "has only 32% of the strokes done in
+    the home row"&lt;/li&gt;
+&lt;li&gt;"The QWERTY layout has more than 3,000 words that are typed on the
+    left hand alone and about 300 words that are typed on the right hand
+    alone", but "with the Dvorak layout, only a few words can be typed
+    on the left hand and not one syllable can be typed with the right
+    hand alone, much less a word."&lt;/li&gt;
+&lt;li&gt;"On QWERTY keyboards, 56% of the typing strokes are done by the left
+    hand. As the left hand is weaker for the majority of people, the
+    Dvorak keyboard puts the more often used keys on the right hand
+    side, thereby having 56% of the typing strokes done by the right
+    hand."&lt;/li&gt;
+&lt;li&gt;"Because the Dvorak layout requires less finger motion from the
+    typist compared to QWERTY, many users with repetitive strain
+    injuries have reported that switching from QWERTY to Dvorak
+    alleviated or even eliminated their repetitive strain injury."&lt;/li&gt;
+&lt;li&gt;"The fastest English language typist in the world, according to The
+    Guinness Book of World Records" achieved "a peak speed of 212 wpm"
+    using Dvorak&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Okay, so maybe by now you see that Dvorak can be more efficient. So why
+hasn't it been implemented yet? Well, back in the typewriter era, it was
+one layout or the other, and people picked QWERTY. Look at Wikipedia for
+a summary. But now, assuming you're not using a typewriter or a 386 or
+something equivalently ancient, it's actually quite easy to switch back
+and forth between QWERTY and Dvorak. Check out your control panel if
+you're on a PC (or the equivalent on a mac or linux or what have you)
+and I bet you'll find the setting for changing the keyboard layout
+pretty easily, and I bet that Dvorak will be one of the layouts you can
+choose. So it's easy enough to switch all the devices to the new system,
+with pretty much no cost. The problem is of course that hardly anybody
+can type with Dvorak. Everybody is used to QWERTY! And I'm sure there
+are people out there who are happy to try to learn Dvorak, but I'm not
+one of them. I'm used to QWERTY and I'm pretty sure if I tried to
+switch, I'd get confused and completely jumble the two systems. I just
+can't see the slight increase in my typing speed being worth the hassle.
+Maybe some can, but I'm sure that many feel the same way I do,
+especially those who, like me, don't do a lot of transcribing or the
+like, and so rarely need to type very fast. The key? (sorry, no more
+puns, I promise) Get 'em while they're young. That's right, all the
+young typists out there can be trained on Dvorak instead of QWERTY. If
+they never learn QWERTY, they'll never be confused. And they can use the
+same keyboards as everyone else. All that we'd have to do is make it
+easier to switch the keyboard layout (put something a little closer than
+the control panel, maybe right on the keyboard), and print two sets of
+characters on the keyboard when they are made (note that I've neglected
+cell phones and other devices that also have keyboards, but they can be
+updated in the same way). It would be as easy as that to implement the
+change. Give it maybe 5-10 years to phase in keyboards and operating
+systems with the easy-switch built in (in this case, it's nice that
+computers have such short life spans), then have schools start teaching
+kids to use Dvorak in typing classes. In a generation, hardly anyone
+will even remember QWERTY except as a weird hiccup along the way to
+efficiency.&lt;/p&gt;&lt;/div&gt;</description><category>Dvorak</category><category>puns</category><category>QWERTY</category><guid>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-2-paradigm-shifter/</guid><pubDate>Sun, 19 Sep 2010 23:55:00 GMT</pubDate></item><item><title>Quantum Chess!</title><link>https://virtuosi.alexalemi.com/posts/old/quantum-chess-/</link><dc:creator>Sam</dc:creator><description>&lt;p&gt;&lt;a href="http://www.showiphonewallpapers.com/iPhonewallpapers/20102/iphonewallpapers/Chess-20100726.jpg"&gt;&lt;img alt="image" src="http://www.showiphonewallpapers.com/iPhonewallpapers/20102/iphonewallpapers/Chess-20100726.jpg"&gt;&lt;/a&gt;
+Ever find out when you're playing chess that the Queen you reached for
+is actually a pawn? Probably not. But most chess games aren't affected
+by the weirdness of the quantum world. This one is:
+&lt;a href="http://research.cs.queensu.ca/Parallel/QuantumChess/QuantumChess.html"&gt;http://research.cs.queensu.ca/Parallel/QuantumChess/QuantumChess.html&lt;/a&gt;&lt;/p&gt;</description><guid>https://virtuosi.alexalemi.com/posts/old/quantum-chess-/</guid><pubDate>Wed, 08 Sep 2010 21:48:00 GMT</pubDate></item><item><title>Paradigm Shifts 1</title><link>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-1/</link><dc:creator>Sam</dc:creator><description>&lt;p&gt;Hi everybody, I'm Sam, and this will be my first contribution to the
+blog! (cue applause) It will not be a physical modeling exercise;
+instead I will be writing a little bit about about paradigm shifts in a
+series of a few posts. I hope it will provoke some interesting
+discussion. "But Sam," you ask, "Isn't 'paradigm shift' just a buzzword
+that people use to sound important?" Well, maybe, but it's also useful
+phrase used to describe a substantial change in the way something is
+done. Consider, for example, THE METRIC SYSTEM (many details from
+&lt;a href="http://en.wikipedia.org/wiki/Metric_system"&gt;Wikipedia&lt;/a&gt;)
+&lt;a href="http://www.debateitout.com/wp-content/uploads/2009/11/metric-system.jpg"&gt;&lt;img alt="image" src="http://www.debateitout.com/wp-content/uploads/2009/11/metric-system.jpg"&gt;&lt;/a&gt;
+In 1791, in the wake of revolution, France became the first country to
+adopt the recently developed metric system. Since then, every nation in
+the world has officially adopted the metric system except Liberia,
+Burma, and the United States. It is the standard measurement system for
+most physical science, even in the US (as far as I know, no other unit
+system even has a measurement for quantities like electric field or
+magnetic field) (also, when I say metric, I of course include cgs and
+mks and ignore systems that are not meant for measurement, like natural
+units and Planck units). It has the advantages of easy unit conversion
+(1 km = 1000 m vs 1 mile = 5280 ft, a value which I had to look up from
+&lt;a href="http://thevirtuosi.blogspot.com/2010/09/remembering-two-things.html"&gt;Yariv's
+post&lt;/a&gt;),
+and lack of ambiguity in units (mass = kg, force = N vs mass = lbs_mass
+or stones, force = lbs_force). The strong preference of scientists for
+the metric system is evident from past experiences: From
+&lt;a href="http://www.cnn.com/TECH/space/9909/30/mars.metric.02/"&gt;CNN&lt;/a&gt;, September
+1999: "NASA lost a $125 million Mars orbiter because a Lockheed Martin
+engineering team used English units of measurement while the agency's
+team used the more conventional metric system for a key spacecraft
+operation" This story also illustrates the equally strong preference of
+engineers for the English system. Ah, and herein lies the problem. You
+see, when the metric system was first adopted in Europe, it created a
+standardized unit system. This proved useful to merchants selling their
+wares by weight, but more relevant to myself as a scientist, it provided
+a means for creating scientific recipes, for providing the utterly
+essential aspect of reproducibility to scientific experiments. However,
+now the standardization exists even with the English system, given a
+simple unit conversion. But why not adopt the metric system to avoid
+situations like the Mars orbiter and make me less confused when I cross
+the border to Canada and see speed limit signs telling me to do 80?
+&lt;em&gt;Because it would be too huge of a paradigm shift&lt;/em&gt;. Allow me to
+illustrate my point.
+One of the most (if not the most) strongly affected groups by a change
+in measurement systems is manufacturers, ie people who make stuff. I
+will use a typical example of a manufacturer, the kind who I interact
+with in my lab: the noble machinist (keep in mind that machinists are
+very important, as they are required to make many, many products). If
+you have ever worked with a machinist in the states, chances are he or
+she will be totally confused if you try to give them dimensions in
+millimeters (I have done this, and they weren't very happy with me
+because it meant they had to convert all the dimensions I gave them into
+English). It would be extremely difficult to retrain people who have
+used the English system all their lives. It would be like learning a new
+language. Inevitably, it would cause a large number of mistakes. More
+significantly, they would have to get ENTIRELY new equipment. Every
+machine shop would have to completely replace their tools (drill bits,
+screwdrivers, wrenches etc) and materials (standardized sizes of bolts,
+nuts, sheet and bulk material, pipes, connectors, cables, etc etc). You
+could say, "Come on, it wouldn't be so bad! Listen, we could gradually
+phase out the old English equipment and just make everything in metric
+from now on!" However, I would counter that this is not a realistic
+plan. For starters, there's the problem of having to keep around two
+sets of equipment (one for the old English stuff and one for the new
+metric stuff), which would require double the space and double the
+maintenance. Second, there would be compatibility issues between new and
+old equipment (e.g. my old 3/4" ipod port wouldn't mate with my new 2 cm
+connector). Third, the previous two problems would likely be around for
+a long time, considering the age of some of the equipment that I've seen
+in labs and elsewhere.
+And I haven't even mentioned the economics. If basic parts manufacturers
+(the people who make the screws, the bolts, and the sheet metal that
+will later be made into products) began to offer metric parts (now that
+I think about it, maybe they already do?), I doubt anybody would buy
+them. It would cost them too much to replace all their machinery
+infrastructure. There would be no market for them. Maybe you would then
+ask "Well, what if the government made everybody switch to metric?"
+Well, other than the backlash this would cause towards whichever
+administration suggested this, it would likely hurt and maybe even
+bankrupt companies who were forced to switch. As far as I can tell, it
+would definitely hurt the US economy in the short term (but it might
+help other countries who could sell their metric wares here) and not
+help it at all in the long term. To me, the economic loss (not to
+mention the difficulty in convincing the US population to swallow the
+change) outweighs the advantages of switching. At this point, exhausted
+from my challenging you at every turn, you may finally say, "Well hey,
+SPEAKING of Canada, they changed to the metric system only in 1973. How
+did THEY do it??" The answer is that, well, they didn't. Not entirely
+anyway. Sure, the country may package food and make road signs in metric
+(which the US could probably do, if people could somehow be convinced to
+go along with it), but in fact their engineering materials, which mostly
+come from the states, are still in English units. Even Canada couldn't
+justify completely converting to the metric system Which just goes to
+show how difficult it is to pull off a paradigm shift. Next time, I'll
+present an example of a paradigm shift that I think COULD work.&lt;/p&gt;</description><category>Canada</category><category>English</category><category>metric</category><category>Paradigm shift</category><guid>https://virtuosi.alexalemi.com/posts/old/paradigm-shifts-1/</guid><pubDate>Tue, 07 Sep 2010 23:01:00 GMT</pubDate></item></channel></rss>
