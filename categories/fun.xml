@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about fun)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/fun.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about fun)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/fun.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 23:01:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Recently I have seen quite a few blog posts written about re-evaluating
@@ -21,7 +21,7 @@ conclusions regarding how points should be assigned to various letters?
 &lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I’ve decided to add my own analysis to the recent development because I
 have found most of the other blog posts to be unsatisfactory for a
-variety of reasons&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
+variety of reasons&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
 One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
 calculated letters’ relative frequencies by counting the number of times
 each letter appeared in each word in the Scrabble™ dictionary. But this
@@ -90,7 +90,7 @@ player decides that using a particular group of tiles constitutes an
 optimal move.)&lt;/p&gt;
 &lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
 To give an example, suppose I draw the rack BEHIWXY. I can 
-generate&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
+generate&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
 the full list of words available to be played given this rack: BE, BEY,
 BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY,
 WHY, WYE, XI, YE, YEH, YEW. Counting the number of occurrences of each
@@ -106,7 +106,7 @@ many example racks.
 Monte Carlo is a technique used to estimate
 numerical properties of complicated things without explicit calculation.
 For example, suppose I want to know the probability of drawing a
-straight flush in poker.&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
+straight flush in poker.&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
 explicitly by using combinatorics, or I can use a Monte Carlo method to
 deal a large number of hypothetical possible poker hands and count the
 number of straight flushes that appear. If I deal a large enough number
@@ -129,7 +129,7 @@ case, I make sure to not count the blanks used to stand in for different
 letters as instances of those letters appearing in the game. The results
 are summarized in the table below.&lt;/p&gt;
 &lt;p&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
 &lt;p&gt;There are two key observations to be made here. First, it does not seem
@@ -187,15 +187,15 @@ flexible.)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
 4 years, and am quite familiar with the mechanics of the game, as well
 as contemporary strategy.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
 generate the list of available words given any set of tiles. Thanks
 Alemi!&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
 properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
 Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
 suffered a severe bout of encephalitis that resulted in an emergency
@@ -217,7 +217,7 @@ This book has become more or less the definitive documentation upon this
 subculture. If you don't have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
 Wars&lt;/a&gt;, a documentary that
 follows many of the same people as Fatsis's book. (It still may be
-available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>Pi storage</title><link>https://virtuosi.alexalemi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>Pi storage</title><link>https://thephysicsvirtuosi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Let me share my worst "best idea ever" moment. Sometime during my
 undergraduate I thought I had solved all the world's problems. You see,
 on this fateful day, my hard drive was full. I hate it when my hard
@@ -302,7 +302,7 @@ a time, I would have found a match. And you'd be right. &lt;a href="http://www.c
 than I&lt;/a&gt; have
 computed just how long you should have to wait, and end up with the
 better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
-pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://virtuosi.alexalemi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>The Linear Theory of Battleship</title><link>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
+pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://thephysicsvirtuosi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>The Linear Theory of Battleship</title><link>https://thephysicsvirtuosi.com/posts/old/the-linear-theory-of-battleship/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s1600/battleship.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-_6JxttjO_hA/Tm_XKW58W_I/AAAAAAAAAXM/n2xdgZCvVAc/s400/battleship.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Recently I set out to hold a
 &lt;a href="http://en.wikipedia.org/wiki/Battleship_(game)"&gt;Battleship&lt;/a&gt; programming
 tournament here among some of the undergraduates. Naturally, I myself
@@ -551,7 +551,7 @@ Explorer&lt;/a&gt;. I
 encourage you to play around with the website, use it to win games of
 Battleship, and in the comments, point out interesting effects, things
 you think I've missed, or ideas for how to come up with linear theories
-of other things.&lt;/p&gt;&lt;/div&gt;</description><category>battleship</category><category>fun</category><category>linear algebra</category><guid>https://virtuosi.alexalemi.com/posts/old/the-linear-theory-of-battleship/</guid><pubDate>Mon, 03 Oct 2011 00:48:00 GMT</pubDate></item><item><title>Lifetime of Liquid Water</title><link>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg"&gt;&lt;/a&gt;
+of other things.&lt;/p&gt;&lt;/div&gt;</description><category>battleship</category><category>fun</category><category>linear algebra</category><guid>https://thephysicsvirtuosi.com/posts/old/the-linear-theory-of-battleship/</guid><pubDate>Mon, 03 Oct 2011 00:48:00 GMT</pubDate></item><item><title>Lifetime of Liquid Water</title><link>https://thephysicsvirtuosi.com/posts/old/lifetime-of-liquid-water/</link><dc:creator>Jesse</dc:creator><description>&lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s1600/water_drop.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-fyjvPBm_INs/ThpaZFszL5I/AAAAAAAAAFw/6sJBTUj905c/s320/water_drop.jpg"&gt;&lt;/a&gt;
 Apologies for the hiatus recently, it's been a busy time (when isn't
 it). I hope to get back to talking about experiments soon, but for now I
 wanted to write up a quick problem I thought up a while back. The
@@ -587,7 +587,7 @@ question if every molecule has been in the vapor phase once in 1000
 years, then we expect a molecule to stay in the liquid phase for 1000
 years [1] According to wikipedia, this is really about 4 km, so we're
 underestimating a bit. [2] According to wikipedia, this is spot on (.99
-m on average).&lt;/p&gt;</description><category>fun</category><category>order of magnitude</category><category>physics</category><category>water</category><guid>https://virtuosi.alexalemi.com/posts/old/lifetime-of-liquid-water/</guid><pubDate>Sun, 10 Jul 2011 22:07:00 GMT</pubDate></item><item><title>End of the Earth VI: Nanobot destruction</title><link>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png"&gt;&lt;/a&gt;&lt;/p&gt;
+m on average).&lt;/p&gt;</description><category>fun</category><category>order of magnitude</category><category>physics</category><category>water</category><guid>https://thephysicsvirtuosi.com/posts/old/lifetime-of-liquid-water/</guid><pubDate>Sun, 10 Jul 2011 22:07:00 GMT</pubDate></item><item><title>End of the Earth VI: Nanobot destruction</title><link>https://thephysicsvirtuosi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s1600/612px-C60a.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-hGkMD-tB1RY/TbGfhRvcA6I/AAAAAAAAAQ4/eCaG-z1Zarc/s320/612px-C60a.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Let's destroy the earth with technology. A while ago, I read the novel
 &lt;em&gt;Postsingular&lt;/em&gt; by Rudy Rucker, and in the first chapter the Earth gets
 destroyed, and then undestroyed, and then the novel unfolds and the
@@ -678,7 +678,7 @@ free to play around with the parameters and see how long Earth would
 survive.&lt;/p&gt;
 &lt;p&gt;The widget should be right above this text. If it isn't working for some
 reason, here's a
-&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>earth day</category><category>end of the earth</category><category>fun</category><category>nanobots</category><guid>https://virtuosi.alexalemi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</guid><pubDate>Fri, 22 Apr 2011 13:11:00 GMT</pubDate></item><item><title>Collective Wanderings</title><link>https://virtuosi.alexalemi.com/posts/old/collective-wanderings/</link><dc:creator>Corky</dc:creator><description>&lt;p&gt;&lt;em&gt;Update [04/04/11]: It seems Clicky got too popular for our bandwidth
+&lt;a href="http://developer.wolframalpha.com/widgets/gallery/view.jsp?id=6a645314f9be6be7b902d4cc1f776d00"&gt;link&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>earth day</category><category>end of the earth</category><category>fun</category><category>nanobots</category><guid>https://thephysicsvirtuosi.com/posts/old/end-of-the-earth-vi-nanobot-destruction/</guid><pubDate>Fri, 22 Apr 2011 13:11:00 GMT</pubDate></item><item><title>Collective Wanderings</title><link>https://thephysicsvirtuosi.com/posts/old/collective-wanderings/</link><dc:creator>Corky</dc:creator><description>&lt;p&gt;&lt;em&gt;Update [04/04/11]: It seems Clicky got too popular for our bandwidth
 limits on the physics servers. Hopefully we'll be able to fix this
 sometime soon...&lt;/em&gt; &lt;em&gt;&lt;em&gt; &lt;/em&gt;Update [04/02/11]: We made the code faster, so
 check out the new and improved Clicky!&lt;/em&gt; Hey, kids! Would you like to be
@@ -700,14 +700,14 @@ check it out if you've got a bit of time to kill. Explore the space and
 we'll get back to you with the "results" of this "experiment" sometime
 in the "future." [1] There are no objectives and "winning" is undefined
 (for a contrary argument, however, see Sheen et. al (2011)) [2] But Mr.
-Dottington will.&lt;/p&gt;</description><category>clicky</category><category>fun</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/collective-wanderings/</guid><pubDate>Mon, 04 Apr 2011 22:39:00 GMT</pubDate></item><item><title>Problem of the Month: Gilligan Physics</title><link>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s1600/coconut.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s320/coconut.jpg"&gt;&lt;/a&gt;
+Dottington will.&lt;/p&gt;</description><category>clicky</category><category>fun</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/collective-wanderings/</guid><pubDate>Mon, 04 Apr 2011 22:39:00 GMT</pubDate></item><item><title>Problem of the Month: Gilligan Physics</title><link>https://thephysicsvirtuosi.com/posts/old/problem-of-the-month-gilligan-physics/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s1600/coconut.jpg"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/_YOjDhtygcuA/TU7ghJWo1oI/AAAAAAAAAQg/PCnPJ4aM9Ig/s320/coconut.jpg"&gt;&lt;/a&gt;
 So, some of us over here at Virtuosi Central have organized a challenge
 problem for the physics community here at Cornell. Well, we thought we
 would open up the challenge to the great wide world. The more
 submissions the merrier. The deadline is March 1, and submissions can be
 sent to our email. Details can be found at
 &lt;a href="http://bit.ly/physicschallenge"&gt;bit.ly/physicschallenge&lt;/a&gt;. Good luck and
-happy hunting.&lt;/p&gt;</description><category>CRC</category><category>fun</category><category>gilligan</category><category>physics challenge</category><category>standards</category><guid>https://virtuosi.alexalemi.com/posts/old/problem-of-the-month-gilligan-physics/</guid><pubDate>Sun, 06 Feb 2011 12:55:00 GMT</pubDate></item><item><title>Darts</title><link>https://virtuosi.alexalemi.com/posts/old/darts/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+happy hunting.&lt;/p&gt;</description><category>CRC</category><category>fun</category><category>gilligan</category><category>physics challenge</category><category>standards</category><guid>https://thephysicsvirtuosi.com/posts/old/problem-of-the-month-gilligan-physics/</guid><pubDate>Sun, 06 Feb 2011 12:55:00 GMT</pubDate></item><item><title>Darts</title><link>https://thephysicsvirtuosi.com/posts/old/darts/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s1600/dart_target.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TS9kYgpoSMI/AAAAAAAAAPc/2xDWZVjOGC8/s320/dart_target.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Over break I went out with a buddy of mine and played some darts. This
 got me to thinking, where exactly should someone aim in order to get the
 largest expected number of points? Now, obviously when you are playing a
@@ -799,7 +799,7 @@ of falling off the board.&lt;/p&gt;
 &lt;p&gt;At 2.5" sigma, we really just want to hit the board.&lt;/p&gt;
 &lt;h4&gt;Lesson&lt;/h4&gt;
 &lt;p&gt;So, now I know, personally, I really just ought to aim just left of
-center.&lt;/p&gt;&lt;/div&gt;</description><category>darts</category><category>fun</category><category>python</category><guid>https://virtuosi.alexalemi.com/posts/old/darts/</guid><pubDate>Thu, 13 Jan 2011 16:29:00 GMT</pubDate></item><item><title>Four Fantastic Books (3 of which are free)</title><link>https://virtuosi.alexalemi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248"&gt;&lt;/a&gt;Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
+center.&lt;/p&gt;&lt;/div&gt;</description><category>darts</category><category>fun</category><category>python</category><guid>https://thephysicsvirtuosi.com/posts/old/darts/</guid><pubDate>Thu, 13 Jan 2011 16:29:00 GMT</pubDate></item><item><title>Four Fantastic Books (3 of which are free)</title><link>https://thephysicsvirtuosi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s1600/9780262514293-f30.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="320" src="http://4.bp.blogspot.com/_YOjDhtygcuA/TLkO7BNOPnI/AAAAAAAAAOo/uIuwbUHkVtU/s320/9780262514293-f30.jpg" width="248"&gt;&lt;/a&gt;Well, we just had our fall break, which means I get a bit of a break, coincidently enough.  Somehow I've managed to read three books in the last two days, and each of them were excellent enough that I need to tell people about them.
 &lt;/p&gt;&lt;h4&gt;Street Fighting Mathematics - Sanjoy Mahajan &lt;/h4&gt;&lt;h5&gt;The art of educated guessing and opportunistic problem solving &lt;/h5&gt;&lt;div&gt;&lt;a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&amp;amp;tid=12156"&gt;Link to MIT Press Site&lt;/a&gt;
 &lt;p&gt;You know that feeling you get when it's the second half of January and you put on new clothes that have just come out of the dryer?  This book is like a cross between that and a kick in the face.  &lt;/p&gt;
 &lt;p&gt;The warm fuzzy-clothes-out-of-the-dryer feeling will come from the realization that you can wield unsurmountable power.  The kick in the face will come when you realize you're not doing it yet.
@@ -846,7 +846,7 @@ The premise of the book is something along the lines of:  We've all been taught 
 &lt;p&gt;This is another book that just makes me sad at the current state of education.  Calculus is one of those things that's feared by the general public.  It's feared because it's misunderstood.  Calculus isn't hard.  And I don't mean to just sound like a jerk when I say that.  It isn't meant to be hard at least.  As the opening proverb of Calculus Made Easy says:
 &lt;/p&gt;&lt;blockquote&gt;What one fool can do, another can.&lt;/blockquote&gt;
 All it really takes to understand calculus is the ability to imagine a very little bit of something.  That and a caring and skilled tutor to lead you on your way.  What name can you think of that sounds more caring and skillful than Silvanus Phillips Thompson.  
-&lt;p&gt;I can think of no legitimate reason this book isn't used in each and every high school calculus in America.  Seriously.&lt;/p&gt;&lt;/div&gt;</description><category>bad physics</category><category>book review</category><category>fun</category><category>math</category><guid>https://virtuosi.alexalemi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</guid><pubDate>Sat, 16 Oct 2010 00:50:00 GMT</pubDate></item><item><title>Visualizing Quantum Mechanics</title><link>https://virtuosi.alexalemi.com/posts/old/visualizing-quantum-mechanics/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;Or how I learned to stop worrying and love the computer. [Note: There's
+&lt;p&gt;I can think of no legitimate reason this book isn't used in each and every high school calculus in America.  Seriously.&lt;/p&gt;&lt;/div&gt;</description><category>bad physics</category><category>book review</category><category>fun</category><category>math</category><guid>https://thephysicsvirtuosi.com/posts/old/four-fantastic-books-3-of-which-are-free-/</guid><pubDate>Sat, 16 Oct 2010 00:50:00 GMT</pubDate></item><item><title>Visualizing Quantum Mechanics</title><link>https://thephysicsvirtuosi.com/posts/old/visualizing-quantum-mechanics/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;Or how I learned to stop worrying and love the computer. [Note: There's
 a neat video below the fold. ]&lt;/p&gt;
 &lt;h4&gt;A Confession&lt;/h4&gt;
 &lt;p&gt;I was recently rereading the &lt;a href="http://books.google.com/books?id=_6XvAAAAMAAJ&amp;amp;q=Feynman+lectures+on+physics&amp;amp;dq=Feynman+lectures+on+physics&amp;amp;hl=en&amp;amp;ei=6wmQTPzsDIG78gbAp_joDQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=2&amp;amp;ved=0CDgQ6AEwAQ"&gt;Feynman Lectures on
@@ -991,4 +991,4 @@ particle with an arbitrary potential.
 - Code to generate the movie. You need to create a directory with the
 same name as the name in the script in the save folder as the script.
 The last two lines make the sound and the directory full of images. I
-used ffmpeg to wrap the two together.&lt;/p&gt;&lt;/div&gt;</description><category>bouncing ball</category><category>feynman</category><category>fun</category><category>movie</category><category>quantum mechanics</category><category>solar system</category><guid>https://virtuosi.alexalemi.com/posts/old/visualizing-quantum-mechanics/</guid><pubDate>Tue, 14 Sep 2010 20:06:00 GMT</pubDate></item></channel></rss>
+used ffmpeg to wrap the two together.&lt;/p&gt;&lt;/div&gt;</description><category>bouncing ball</category><category>feynman</category><category>fun</category><category>movie</category><category>quantum mechanics</category><category>solar system</category><guid>https://thephysicsvirtuosi.com/posts/old/visualizing-quantum-mechanics/</guid><pubDate>Tue, 14 Sep 2010 20:06:00 GMT</pubDate></item></channel></rss>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about Scrabble)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/scrabble.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about Scrabble)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/scrabble.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 23:01:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Recently I have seen quite a few blog posts written about re-evaluating
@@ -21,7 +21,7 @@ conclusions regarding how points should be assigned to various letters?
 &lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I’ve decided to add my own analysis to the recent development because I
 have found most of the other blog posts to be unsatisfactory for a
-variety of reasons&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
+variety of reasons&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
 One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
 calculated letters’ relative frequencies by counting the number of times
 each letter appeared in each word in the Scrabble™ dictionary. But this
@@ -90,7 +90,7 @@ player decides that using a particular group of tiles constitutes an
 optimal move.)&lt;/p&gt;
 &lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
 To give an example, suppose I draw the rack BEHIWXY. I can 
-generate&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
+generate&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
 the full list of words available to be played given this rack: BE, BEY,
 BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY,
 WHY, WYE, XI, YE, YEH, YEW. Counting the number of occurrences of each
@@ -106,7 +106,7 @@ many example racks.
 Monte Carlo is a technique used to estimate
 numerical properties of complicated things without explicit calculation.
 For example, suppose I want to know the probability of drawing a
-straight flush in poker.&lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
+straight flush in poker.&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
 explicitly by using combinatorics, or I can use a Monte Carlo method to
 deal a large number of hypothetical possible poker hands and count the
 number of straight flushes that appear. If I deal a large enough number
@@ -129,7 +129,7 @@ case, I make sure to not count the blanks used to stand in for different
 letters as instances of those letters appearing in the game. The results
 are summarized in the table below.&lt;/p&gt;
 &lt;p&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble_tiles_table.jpg" width="80%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
 &lt;p&gt;There are two key observations to be made here. First, it does not seem
@@ -187,15 +187,15 @@ flexible.)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
 4 years, and am quite familiar with the mechanics of the game, as well
 as contemporary strategy.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
 generate the list of available words given any set of tiles. Thanks
 Alemi!&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
 properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
 Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
 suffered a severe bout of encephalitis that resulted in an emergency
@@ -217,4 +217,4 @@ This book has become more or less the definitive documentation upon this
 subculture. If you don't have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
 Wars&lt;/a&gt;, a documentary that
 follows many of the same people as Fatsis's book. (It still may be
-available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://virtuosi.alexalemi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item></channel></rss>
+available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item></channel></rss>

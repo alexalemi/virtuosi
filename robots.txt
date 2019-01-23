@@ -1,4 +1,4 @@
-Sitemap: https://virtuosi.alexalemi.com/sitemapindex.xml
+Sitemap: https://thephysicsvirtuosi.com/sitemapindex.xml
 
 User-Agent: *
-Host: virtuosi.alexalemi.com
+Host: thephysicsvirtuosi.com

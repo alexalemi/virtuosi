@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about books)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/books.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://virtuosi.alexalemi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/tgpp.jpg"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about books)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/books.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 23:01:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/tgpp.jpg"&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Recently I finished reading John Mearsheimer's excellent political science book
@@ -63,7 +63,7 @@ the system has some power, which we'll call $P_i$. Obviously in reality there ar
 plenty of different definitions of power, but in accordance with Mearsheimer's
 definition, we'll define power simply in a way that if State 1 has power 
 $P_1 &amp;gt; P_2$, the power of State 2, then State 1 can beat State 2 in a 
-war&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+war&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 Each state does not seek to maximize their total power $P_i$, but instead their
 relative power $R_i$, relative to the total power of the rest of the states, So
 the relative power $R_i$ would be&lt;/p&gt;
@@ -91,7 +91,7 @@ is always negative.&lt;/li&gt;
 &lt;p&gt;The change in power of two states A &amp;amp; B in a war should depend only on
 how much power A &amp;amp; B have. In addition, it should be independent of the
 labeling of states. Mathematically, $dP_a / dt = f(P_a, P_b)$, and 
-$dP_b/dt = f(P_b, P_a)$ with the same function $f$&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+$dP_b/dt = f(P_b, P_a)$ with the same function $f$&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If State A has more absolute power than State B, and both states are in a
@@ -116,12 +116,12 @@ capture all 4 of the above assumptions is:&lt;/p&gt;
 &lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
 where $x$ is the absolute power of State X and $y$ is the absolute power of State
 y. (I'm switching notation because I want to avoid using too many 
-subscripts&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I'm assuming that the rate of 
+subscripts&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I'm assuming that the rate of 
 change of State X's power is directly
 proportional to State Y's power, and depends on nothing else (including how
 much power State Y actually has). &lt;a id="note4"&gt;&lt;/a&gt;
 We'll also call $r$ the relative power of State
-X, and $s$ the relative power of State Y&lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
+X, and $s$ the relative power of State Y&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
 Now we're equipped to see when war
 is a good idea, according to our hypotheses.&lt;/p&gt;
 &lt;p&gt;Let's examine the case that was bothering me most -- a balanced bipolar system.
@@ -158,7 +158,7 @@ stable compared to a multipolar system. Maybe I'll address these, as well as
 balanced and unbalanced multipolar systems, in another blog post if people are
 interested.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note1"&gt;^&lt;/a&gt; $P_i$ has some units (not watts). My definition of power is strictly
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note1"&gt;^&lt;/a&gt; $P_i$ has some units (not watts). My definition of power is strictly
 comparative, so it might seem that any new scale of power $p_i = f(P_i)$ with an
 arbitrary monotonic function $f(x)$ would also be an appropriate definition.
 However, we would like a scale that facilitates power comparisons if multiple
@@ -172,10 +172,10 @@ would be a difficult task. Incidentally, I've also implicitly assumed here that 
 such that if $P_1 &amp;gt; P_2$, and $P_2 &amp;gt; P_3$, then $P_1 &amp;gt; P_3$. But I think
 that's a fairly benign assumption.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn't matter which state attacked the
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn't matter which state attacked the
 other, or where the war is taking place, or other things like that.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
 advantage that it is scale-free, which we might expect since there is no
 intrinsic "power scale" to the problem. Of course there are other forms with
 this property that follow some or all of the assumptions above. For instance,
@@ -186,6 +186,6 @@ solve the resulting differential equations analytically, and b) the rate of
 decrease of both state's power is the same, in contrast to my intuitive feeling
 that the state with less power should lose power more rapidly.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
-4. &lt;a href="https://virtuosi.alexalemi.com/posts/old/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
+4. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
 functional form for $dP_i/dt$ that follows assumptions 1-3 above does not change
-the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://virtuosi.alexalemi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item></channel></rss>
+the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item></channel></rss>

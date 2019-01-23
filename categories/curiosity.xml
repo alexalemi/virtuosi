@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about curiosity)</title><link>https://virtuosi.alexalemi.com/</link><description></description><atom:link href="https://virtuosi.alexalemi.com/categories/curiosity.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 22:55:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Curious Footprint</title><link>https://virtuosi.alexalemi.com/posts/old/a-curious-footprint/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;figure style="float:center; margin:0px 0px 10px 0px" width="50%"&gt;
-&lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/msl_laser.jpg" alt="msl laser"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about curiosity)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/curiosity.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 23:01:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Curious Footprint</title><link>https://thephysicsvirtuosi.com/posts/old/a-curious-footprint/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;figure style="float:center; margin:0px 0px 10px 0px" width="50%"&gt;
+&lt;img src="https://thephysicsvirtuosi.com/images/a-curious-footprint/msl_laser.jpg" alt="msl laser"&gt;
 &lt;figcaption&gt; Lasers! &lt;i&gt;Credit: JPL/Caltech&lt;/i&gt; &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -46,7 +46,7 @@ this out!].&lt;/p&gt;
 &lt;p&gt;To summarize, the rover is a nuclear-powered lab-on-wheels that 
 &lt;em&gt;shoots lasers out of its head&lt;/em&gt;. This is pretty cool.&lt;/p&gt;
 &lt;figure style="width:70%"&gt;
-    &lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/msl2.jpg" width="100%" alt="msl laser 2" align="center" style="margin:0px 0px 0px 0px"&gt;
+    &lt;img src="https://thephysicsvirtuosi.com/images/a-curious-footprint/msl2.jpg" width="100%" alt="msl laser 2" align="center" style="margin:0px 0px 0px 0px"&gt;
 
    &lt;figcaption&gt;In non-SI units, the MSL is roughly one handsome man (1 hm) tall&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -61,7 +61,7 @@ today when someone pointed out something cool about the tires on
 &lt;em&gt;Curiosity&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Here's a close-up:&lt;/p&gt;
 &lt;figure style="width:70%"&gt;
-  &lt;img src="https://virtuosi.alexalemi.com/images/a-curious-footprint/MSL_tire.jpg" width="100%" alt="msl tire" align="center" style="margin:0px 0px 0px 0px"&gt;
+  &lt;img src="https://thephysicsvirtuosi.com/images/a-curious-footprint/MSL_tire.jpg" width="100%" alt="msl tire" align="center" style="margin:0px 0px 0px 0px"&gt;
   &lt;figcaption&gt; Hole-y Tires &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -74,4 +74,4 @@ you might as well put your name on it.&lt;/p&gt;
 &lt;a href="http://www.nasa.gov/multimedia/nasatv/index.html"&gt;NASA TV stream&lt;/a&gt;. 
 The landing is scheduled for Sunday night at 10:31 pm PDT (1:31 am EDT). Until then,
 it looks like they are showing a lot of interviews and other cool
-behind-the-scenes kind of stuff.&lt;/p&gt;&lt;/div&gt;</description><category>curiosity</category><category>mars</category><category>MSL</category><category>scott bakula</category><guid>https://virtuosi.alexalemi.com/posts/old/a-curious-footprint/</guid><pubDate>Sat, 04 Aug 2012 04:56:00 GMT</pubDate></item></channel></rss>
+behind-the-scenes kind of stuff.&lt;/p&gt;&lt;/div&gt;</description><category>curiosity</category><category>mars</category><category>MSL</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/a-curious-footprint/</guid><pubDate>Sat, 04 Aug 2012 04:56:00 GMT</pubDate></item></channel></rss>
