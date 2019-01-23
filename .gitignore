@@ -5,6 +5,11 @@ site/output/
 *.pid
 tools/old-content/
 old-copy/
+cache
+.doit.db*
+.mypy_cache
+__pycache__
+output
 
 # Except
 !site/output/.gitkeep
