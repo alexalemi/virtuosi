@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about news)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/cat_news.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 07:25:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reborn</title><link>https://thephysicsvirtuosi.com/posts/reborn/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Consider the site reborn.  After nearly a decade hiatus, let's see if we can
+get this old engine purring again. This time the site is being built statically
+with &lt;a href="https://getnikola.com"&gt;Nikola&lt;/a&gt;, exists as a &lt;a href="https://github.com/alexalemi/virtuosi/"&gt;github
+repo&lt;/a&gt; and is being served on &lt;a href="https://pages.github.com/"&gt;github
+pages&lt;/a&gt;. Still need to edit some of the old posts 
+for correctness and need to develop the theme more, but consider this a 
+new beginning.&lt;/p&gt;</description><category>site news</category><guid>https://thephysicsvirtuosi.com/posts/reborn/</guid><pubDate>Wed, 23 Jan 2019 20:38:22 GMT</pubDate></item></channel></rss>

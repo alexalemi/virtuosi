@@ -35,7 +35,7 @@
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/archive.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/authors/</loc>
@@ -107,7 +107,7 @@
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/categories/</loc>
-  <lastmod>2019-01-23T22:55:00Z</lastmod>
+  <lastmod>2019-01-24T07:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/categories/42/</loc>
@@ -292,6 +292,10 @@
  <url>
   <loc>https://thephysicsvirtuosi.com/categories/cat_math/</loc>
   <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/categories/cat_news/</loc>
+  <lastmod>2019-01-24T07:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/categories/cat_old/</loc>
@@ -1295,67 +1299,267 @@
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-1.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-10.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-11.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-12.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-13.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-14.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-15.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-16.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-2.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-3.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-4.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-5.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-6.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-7.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-8.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/index-9.html</loc>
-  <lastmod>2019-01-24T07:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/%40plugins_snapshot.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/_ast.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/_ast.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/_importlib_modulespec.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/_importlib_modulespec.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/abc.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/abc.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/ast.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/ast.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/builtins.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/builtins.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/codecs.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/codecs.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/collections/</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/collections/__init__.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/collections/__init__.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/collections/abc.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/collections/abc.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/hello.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/hello.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/__init__.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/__init__.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/abc.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/abc.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/machinery.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/machinery.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/util.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/importlib/util.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/io.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/io.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/mmap.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/mmap.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/os/</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/os/__init__.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/os/__init__.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/os/path.data.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/os/path.meta.json.html</loc>
+  <lastmod>2019-01-24T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/posix.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/posix.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/sys.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/sys.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/types.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/types.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/typing.data.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/.mypy_cache/3.7/typing.meta.json.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/listings/hello.py.html</loc>
+  <lastmod>2019-01-24T07:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/pages/about/</loc>
@@ -2012,6 +2216,10 @@
  <url>
   <loc>https://thephysicsvirtuosi.com/posts/old/zombpocalypse/</loc>
   <lastmod>2019-01-23T22:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://thephysicsvirtuosi.com/posts/reborn/</loc>
+  <lastmod>2019-01-24T07:21:00Z</lastmod>
  </url>
  <url>
   <loc>https://thephysicsvirtuosi.com/posts/testing/</loc>
