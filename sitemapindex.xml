@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/authors/alemi.xml</loc>
-  <lastmod>2019-01-23T23:01:00Z</lastmod>
+  <lastmod>2019-01-24T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/authors/alex.xml</loc>
@@ -60,10 +60,6 @@
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/authors/sam.xml</loc>
   <lastmod>2019-01-23T23:01:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://thephysicsvirtuosi.com/authors/the-virtuosi.xml</loc>
-  <lastmod>2019-01-24T07:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/authors/yariv.xml</loc>
@@ -255,7 +251,7 @@
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/categories/cat_news.xml</loc>
-  <lastmod>2019-01-24T07:22:00Z</lastmod>
+  <lastmod>2019-01-24T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/categories/cat_old.xml</loc>
@@ -1091,7 +1087,7 @@
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/categories/site-news.xml</loc>
-  <lastmod>2019-01-24T07:22:00Z</lastmod>
+  <lastmod>2019-01-24T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/categories/solar-sails.xml</loc>
@@ -1259,10 +1255,10 @@
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/rss.xml</loc>
-  <lastmod>2019-01-24T07:22:00Z</lastmod>
+  <lastmod>2019-01-24T07:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://thephysicsvirtuosi.com/sitemap.xml</loc>
-  <lastmod>2019-01-24T07:22:00Z</lastmod>
+  <lastmod>2019-01-24T07:33:00Z</lastmod>
  </sitemap>
 </sitemapindex>
