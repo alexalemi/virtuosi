@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about pi day)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/pi-day.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 23:01:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pi storage</title><link>https://thephysicsvirtuosi.com/posts/old/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about pi day)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/pi-day.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 14:55:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pi storage</title><link>https://thephysicsvirtuosi.com/posts/pi-storage/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s1600/floppies.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-4x2fD-exJns/T2DAEJqroqI/AAAAAAAAAbI/8_9quiDP4p0/s320/floppies.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Let me share my worst "best idea ever" moment. Sometime during my
 undergraduate I thought I had solved all the world's problems. You see,
 on this fateful day, my hard drive was full. I hate it when my hard
@@ -84,11 +84,11 @@ a time, I would have found a match. And you'd be right. &lt;a href="http://www.c
 than I&lt;/a&gt; have
 computed just how long you should have to wait, and end up with the
 better estimation $$ \text{wait time} \sim 2^N N \log 2 $$ which is
-pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://thephysicsvirtuosi.com/posts/old/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>A Clarification</title><link>https://thephysicsvirtuosi.com/posts/old/a-clarification/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;As there seems to be some
+pretty darn close to our silly estimate.&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>pi day</category><category>probability</category><category>storage</category><guid>https://thephysicsvirtuosi.com/posts/pi-storage/</guid><pubDate>Wed, 14 Mar 2012 15:13:00 GMT</pubDate></item><item><title>A Clarification</title><link>https://thephysicsvirtuosi.com/posts/a-clarification/</link><dc:creator>Yariv</dc:creator><description>&lt;p&gt;As there seems to be some
 &lt;a href="http://en.wikipedia.org/wiki/Date_format#Date_format"&gt;confusion&lt;/a&gt; among
 my fellow Virtuosi, I wanted to point out that Pi day occurs on July
 22nd or, in the year 4159, on January 3rd. Today is in fact &lt;a href="http://en.wikipedia.org/wiki/Waring%27s_problem"&gt;Seventh
-Power Day&lt;/a&gt;.&lt;/p&gt;</description><category>day-month-year</category><category>Eurocentrism</category><category>pi day</category><guid>https://thephysicsvirtuosi.com/posts/old/a-clarification/</guid><pubDate>Wed, 14 Mar 2012 12:20:00 GMT</pubDate></item><item><title>Pi-rithmetic</title><link>https://thephysicsvirtuosi.com/posts/old/pi-rithmetic/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+Power Day&lt;/a&gt;.&lt;/p&gt;</description><category>day-month-year</category><category>Eurocentrism</category><category>pi day</category><guid>https://thephysicsvirtuosi.com/posts/a-clarification/</guid><pubDate>Wed, 14 Mar 2012 12:20:00 GMT</pubDate></item><item><title>Pi-rithmetic</title><link>https://thephysicsvirtuosi.com/posts/pi-rithmetic/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s1600/IMAG0200.jpg"&gt;&lt;img alt="image" src="http://2.bp.blogspot.com/-7rfL9Iby34A/T2C3LhSj_6I/AAAAAAAAAa0/rXTR30c77bk/s320/IMAG0200.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Fun fact: pi squared is very close to 10. How close? Well, &lt;a href="http://www.wolframalpha.com/input/?i=%2810+-pi%5E2+%29%2Fpi%5E2"&gt;Wolfram
 Alpha&lt;/a&gt;
 tells me that it is only about 1% off. I first realized this fact when
@@ -133,7 +133,7 @@ produced this plot for those interested is
 &lt;a href="https://gist.github.com/2037431"&gt;here&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s1600/pierr.png"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-uwGlV6y_pps/T2C90lPhmQI/AAAAAAAAAbA/k_Hl8H-y2ys/s320/pierr.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;So, there you go, now you can impress all of your friends with a simple
-mental arithmetic that gets you within a factor of 3 or so on average.&lt;/p&gt;&lt;/div&gt;</description><category>approximation</category><category>order of magnitude</category><category>pi day</category><category>pi-rithmetic</category><guid>https://thephysicsvirtuosi.com/posts/old/pi-rithmetic/</guid><pubDate>Wed, 14 Mar 2012 11:52:00 GMT</pubDate></item><item><title>Moving Pi-ctures</title><link>https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+mental arithmetic that gets you within a factor of 3 or so on average.&lt;/p&gt;&lt;/div&gt;</description><category>approximation</category><category>order of magnitude</category><category>pi day</category><category>pi-rithmetic</category><guid>https://thephysicsvirtuosi.com/posts/pi-rithmetic/</guid><pubDate>Wed, 14 Mar 2012 11:52:00 GMT</pubDate></item><item><title>Moving Pi-ctures</title><link>https://thephysicsvirtuosi.com/posts/moving-pi-ctures/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 &lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s1600/tv_pi.jpg"&gt;&lt;img alt="image" src="http://4.bp.blogspot.com/-YJBJw29pxZk/T1ribOQLS-I/AAAAAAAAAVA/xsJ-KAOJt5w/s320/tv_pi.jpg"&gt;&lt;/a&gt;
   My TV celebrates without me.&lt;/p&gt;
 &lt;hr&gt;
@@ -143,24 +143,24 @@ holiday, I'd like to present a point for discussion: &lt;em&gt;Everyone has a
 great talent for at least one thing.&lt;/em&gt; That this is true for at least
 &lt;em&gt;some&lt;/em&gt; people is seen through even a cursory glance at a history book:
 George Washington was really good at leading revolutions, Michelangelo
-was an outstanding ceiling painter &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#note1"&gt;[1]&lt;/a&gt;, and Batman was the
+was an outstanding ceiling painter &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#note1"&gt;[1]&lt;/a&gt;, and Batman was the
 best at solving complex riddles (especially in English, pero
 &lt;em&gt;especialmente&lt;/em&gt; &lt;a href="http://www.youtube.com/watch?v=RY1U_pXUxUo&amp;amp;feature=related"&gt;en
 español&lt;/a&gt;).
 But I'm certain that this holds for everyone. What's your talent? Mine,
 as those of you who read this blog should know very well by now, is
 certainly &lt;em&gt;not&lt;/em&gt; doing physics. Nope, my talent is watching TV. Seriously
-guys, I watch TV like a boss &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#note2"&gt;[2]&lt;/a&gt;. In light of this talent, I
+guys, I watch TV like a boss &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#note2"&gt;[2]&lt;/a&gt;. In light of this talent, I
 thought I would describe a few instances in which I have seen pi
 represented (for better or for worse) in TV and movies. Over the last
 few months, I have been re-watching a lot of the TV show
 &lt;em&gt;&lt;a href="http://en.wikipedia.org/wiki/Psych"&gt;Psych&lt;/a&gt;&lt;/em&gt; with my good friend and
-fellow Virtuosi contributor, Matt "TT" Showbiz &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#note3"&gt;[3]&lt;/a&gt;. For the
+fellow Virtuosi contributor, Matt "TT" Showbiz &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#note3"&gt;[3]&lt;/a&gt;. For the
 uninitiated, &lt;em&gt;Psych&lt;/em&gt; is a detective show where the main characters
 (Shawn and Gus) run a (fake) psychic detective agency, which allows them
 to solve mysteries, engage in various shenanigans, and make an
 inordinate number of references to &lt;em&gt;Tears for Fears&lt;/em&gt; frontman Curt Smith
-&lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#note4"&gt;[4]&lt;/a&gt;. In one of the episodes, Shawn and Gus enter a room where
+&lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#note4"&gt;[4]&lt;/a&gt;. In one of the episodes, Shawn and Gus enter a room where
 a long train of digits is written across the top of the wall. It soon
 becomes evident that these are the digits of pi and the camera is sure
 to zoom in on the famous first few digits to reassure us. But there are
@@ -225,17 +225,17 @@ seemingly random numbers. Unfortunately, the difficulty in transcribing
 the numbers from the screen greatly outweighs the very small chance that
 this isn't just gibberish. Four hundred Quatloos to anyone who can tell
 me if this is a code or not!&lt;/p&gt;
-&lt;p&gt;[1] And an above average Ninja Turtle to boot. &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#back1"&gt;[back]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[1] And an above average Ninja Turtle to boot. &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#back1"&gt;[back]&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[2] Yes, I am putting my TV watching skills on par with the talents of
 George Washington. In fact, the stoic way in which I persevered through
 the entirety of &lt;em&gt;&lt;a href="http://en.wikipedia.org/wiki/Terminator:_The_Sarah_Connor_Chronicles"&gt;The Sarah Connor
 Chronicles&lt;/a&gt;&lt;/em&gt;in
 under two weeks was described by historian David McCullough as
-"Washingtonian." These are simply facts. &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#back2"&gt;[back]&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[3] The extra "T" is for extra talent. &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#back3"&gt;[back]&lt;/a&gt;&lt;/p&gt;
+"Washingtonian." These are simply facts. &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#back2"&gt;[back]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] The extra "T" is for extra talent. &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#back3"&gt;[back]&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[4] A duo can &lt;em&gt;absolutely&lt;/em&gt; have a frontman. For evidence, feel free to
 ask the not-George-Michael-guy from &lt;em&gt;Wham!&lt;/em&gt; or the not-Paul-Simon-guy
-from &lt;em&gt;Simon &amp;amp; Garfunkel&lt;/em&gt;. &lt;a href="https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/#back4"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>pi day</category><category>pineapple</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/moving-pi-ctures/</guid><pubDate>Wed, 14 Mar 2012 08:35:00 GMT</pubDate></item><item><title>A Very Small Slice of Pi</title><link>https://thephysicsvirtuosi.com/posts/old/a-very-small-slice-of-pi/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+from &lt;em&gt;Simon &amp;amp; Garfunkel&lt;/em&gt;. &lt;a href="https://thephysicsvirtuosi.com/posts/moving-pi-ctures/#back4"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>pi day</category><category>pineapple</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/moving-pi-ctures/</guid><pubDate>Wed, 14 Mar 2012 08:35:00 GMT</pubDate></item><item><title>A Very Small Slice of Pi</title><link>https://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 &lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s1600/rhubarb.JPG"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-q37nqPUh_t0/T2AJgUmFLKI/AAAAAAAAAWY/0rvkqKzmDBs/s320/rhubarb.JPG"&gt;&lt;/a&gt;
   Rhubarb pie (Source: Wikipedia)&lt;/p&gt;
 &lt;hr&gt;
@@ -263,7 +263,7 @@ d = \pi \delta d = C \frac{\delta d}{d}, $$ where d is the diameter
 and C is the circumference. In other words, the fractional uncertainty
 in the circumference is just $$\frac{\delta C}{C} = \frac{\delta
 d}{d}. $$ Using a femtometer for the size of a proton and 90 billion
-light years for the size of the Universe &lt;a href="https://thephysicsvirtuosi.com/posts/old/a-very-small-slice-of-pi/#note"&gt;[1]&lt;/a&gt;, we get
+light years for the size of the Universe &lt;a href="https://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi/#note"&gt;[1]&lt;/a&gt;, we get
 $$\frac{\delta C}{C} = \frac{\delta d}{d} =
 \frac{10^{-15}\mbox{m}}{(90\times10^9)(3\times10^7\mbox{s})(3\times10^8\mbox{m
 s}^{-1})} \sim\frac{10^{-15}}{10^{27}}\sim10^{-42}.$$ Alright, so
@@ -283,7 +283,7 @@ for me.&lt;/p&gt;
 &lt;p&gt;[1] "But I thought the Universe was only 13.7 billion years! What voodoo
 is this!?" Yeah, I know. See
 &lt;a href="http://scienceblogs.com/startswithabang/2011/01/q_a_how_is_the_universe_so_big.php"&gt;here&lt;/a&gt;
-for a nice explanation.&lt;a href="https://thephysicsvirtuosi.com/posts/old/a-very-small-slice-of-pi/#back"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>42</category><category>pi day</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/a-very-small-slice-of-pi/</guid><pubDate>Wed, 14 Mar 2012 08:22:00 GMT</pubDate></item><item><title>Primes in Pi</title><link>https://thephysicsvirtuosi.com/posts/old/primes-in-pi/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s1600/repunit.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s320/repunit.png"&gt;&lt;/a&gt;&lt;/p&gt;
+for a nice explanation.&lt;a href="https://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi/#back"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>42</category><category>pi day</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/a-very-small-slice-of-pi/</guid><pubDate>Wed, 14 Mar 2012 08:22:00 GMT</pubDate></item><item><title>Primes in Pi</title><link>https://thephysicsvirtuosi.com/posts/primes-in-pi/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s1600/repunit.png"&gt;&lt;img alt="image" src="http://1.bp.blogspot.com/-zr3Ex0CiRk4/T2DBK9RBX-I/AAAAAAAAAbQ/7SA_87njptE/s320/repunit.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Recently, I've been concerned with the fact that I don't know many large
 primes. Why? I don't know. This has led to a search for easy to remember
 prime numbers. I've found a few goods ones, namely&lt;/p&gt;
@@ -307,4 +307,4 @@ one, with 6 digits, is: 314159 Found a rounded one with 12 digits, is:
 31415926535897932384626433832795028841&lt;/p&gt;
 &lt;p&gt;I think it's usual for most science geeks to know pi to at least
 3.14159, if you're one of those people, now you know a 6 digit prime!
-for free!&lt;/p&gt;&lt;/div&gt;</description><category>pi day</category><category>primes</category><guid>https://thephysicsvirtuosi.com/posts/old/primes-in-pi/</guid><pubDate>Wed, 14 Mar 2012 03:14:00 GMT</pubDate></item></channel></rss>
+for free!&lt;/p&gt;&lt;/div&gt;</description><category>pi day</category><category>primes</category><guid>https://thephysicsvirtuosi.com/posts/primes-in-pi/</guid><pubDate>Wed, 14 Mar 2012 03:14:00 GMT</pubDate></item></channel></rss>

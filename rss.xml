@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi</title><link>https://thephysicsvirtuosi.com/</link><description>Things and Stuff.</description><atom:link href="https://thephysicsvirtuosi.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 07:58:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reborn</title><link>https://thephysicsvirtuosi.com/posts/reborn/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Consider the site reborn.  After nearly a decade hiatus, let's see if we can
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi</title><link>https://thephysicsvirtuosi.com/</link><description>Things and Stuff.</description><atom:link href="https://thephysicsvirtuosi.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 14:55:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reborn</title><link>https://thephysicsvirtuosi.com/posts/reborn/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Consider the site reborn.  After nearly a decade hiatus, let's see if we can
 get this old engine purring again. This time the site is being built statically
 with &lt;a href="https://getnikola.com"&gt;Nikola&lt;/a&gt;, exists as a &lt;a href="https://github.com/alexalemi/virtuosi/"&gt;github
 repo&lt;/a&gt; and is being served on &lt;a href="https://pages.github.com/"&gt;github
 pages&lt;/a&gt;. Still need to edit some of the old posts 
 for correctness and need to develop the theme more, but consider this a 
-new beginning.&lt;/p&gt;</description><category>site news</category><guid>https://thephysicsvirtuosi.com/posts/reborn/</guid><pubDate>Wed, 23 Jan 2019 20:38:22 GMT</pubDate></item><item><title>Special Brain</title><link>https://thephysicsvirtuosi.com/posts/old/special-brain/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;A colleague (and friend) of mine &lt;a href="https://www.youtube.com/user/thephysicsfactor"&gt;(hereafter referred to as Katie Mack the Physics Hack)&lt;/a&gt; 
+new beginning.&lt;/p&gt;</description><category>site news</category><guid>https://thephysicsvirtuosi.com/posts/reborn/</guid><pubDate>Wed, 23 Jan 2019 20:38:22 GMT</pubDate></item><item><title>Special Brain</title><link>https://thephysicsvirtuosi.com/posts/special-brain/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;A colleague (and friend) of mine &lt;a href="https://www.youtube.com/user/thephysicsfactor"&gt;(hereafter referred to as Katie Mack the Physics Hack)&lt;/a&gt; 
 produced a fun video last year that tried to show how people sometimes react when she 
 tells them that she studies physics:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/AAA25XQKCbY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -24,7 +24,7 @@ modeling &lt;a href="http://en.wikipedia.org/wiki/Cytokinesis"&gt;cell division&
 roommate responded, "You must have a special kind of brain for that."&lt;/p&gt;
 &lt;p align="center"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/special_brain/profx.jpg" alt="A special brain." id="back_up1"&gt; 
-  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;A special brain. &lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;A special brain. &lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;p&gt;This anecdote has stuck with me for a couple of reasons-- first because
@@ -62,7 +62,7 @@ research, working as a scientist is not so special.&lt;/p&gt;
 &lt;p align="center"&gt;
 &lt;a href="http://www.imdb.com/title/tt0021884/"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/special_brain/frankenstein.jpg" alt="My office definitely does not look like this." width="100%" height="auto" id="back_up2"&gt;&lt;/a&gt; 
-  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;I work in a cubicle. Not here.&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;I work in a cubicle. Not here.&lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#footnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Another reaction that I get when I say I study physics is one of apprehensive
@@ -84,7 +84,7 @@ scientists that appear in popular culture. "You're just like Sheldon Cooper!"
 is a comment I've heard more times than I care to say. I know that The Big Bang
 Theory is a popular show, but frankly I dislike being associated I with
 characters that are cartoonishly depicted as condescending and socially
-tone-deaf &lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;. Now, I appreciate that some
+tone-deaf &lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#footnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;. Now, I appreciate that some
 people, when meeting others for the first time, like to demonstrate familiarity
 with others' jobs, but to me it just seems that making a pop culture references
 to another person's profession is just a bad way to go. I find this to be a
@@ -140,19 +140,19 @@ you do in the comments below.&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up1"&gt;^&lt;/a&gt; 
+&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#back_up1"&gt;^&lt;/a&gt; 
 Image from New X-Men #121, written by Grant Morrison with art by Frank Quitely.
  You can see some more of this particularly trippy story &lt;a href="https://marswillsendnomore.wordpress.com/2011/09/04/inside-the-twisted-mind-of-the-professor/"&gt;
 here&lt;/a&gt;.
 &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote2"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up2"&gt;^&lt;/a&gt;
+&lt;li&gt;&lt;p id="footnote2"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#back_up2"&gt;^&lt;/a&gt;
 All of the imagery of Frankenstein's monster being brought to life with electricity
 comes from James Whale's &lt;a href="http://www.imdb.com/title/tt0021884/"&gt;Frankenstein from 1931.&lt;/a&gt; Mary Shelley's original book contained no mention of 
 electricity, and instead remained eerily vague about the mechanisms for creating life.
 &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote3"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up3"&gt;^&lt;/a&gt;
+&lt;li&gt;&lt;p id="footnote3"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/special-brain/#back_up3"&gt;^&lt;/a&gt;
 &lt;a href="http://scitation.aip.org/content/aip/magazine/physicstoday/news/10.1063/PT.4.0293"&gt;
 Here &lt;/a&gt; is a really level-headed critique of The Big Bang Theory that I like a
 lot.  There isn't a ton of hand-wringing, and the author does talk about what the
@@ -171,10 +171,10 @@ I'll just say that &lt;i&gt;nobody&lt;/i&gt; is acting appropriately in this vid
 (Sorry, lawyers.)
 &lt;/li&gt;
 
-&lt;/ol&gt;&lt;/div&gt;</description><category>culture</category><guid>https://thephysicsvirtuosi.com/posts/old/special-brain/</guid><pubDate>Thu, 20 Mar 2014 20:00:00 GMT</pubDate></item><item><title>Quantum Mechanics: Trying to Sort the Physical from the Mystical</title><link>https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p align="center"&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>culture</category><guid>https://thephysicsvirtuosi.com/posts/special-brain/</guid><pubDate>Thu, 20 Mar 2014 20:00:00 GMT</pubDate></item><item><title>Quantum Mechanics: Trying to Sort the Physical from the Mystical</title><link>https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p align="center"&gt;
 &lt;a href="http://xkcd.com/1240/"&gt;
 &lt;img src="http://imgs.xkcd.com/comics/quantum_mechanics.png" title="You can also just ignore any science assertion where 'quantum mechanics' is the most complicated phrase in it." alt="You can also just ignore any science assertion where 'quantum mechanics' is the most complicated phrase in it." id="back_up1"&gt; 
-&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;
+&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A friend of mine (I’ll call him Ron), who knows that I study physics, 
@@ -223,12 +223,12 @@ quantum effects are negligible.  The human body is more than a meter long,
 usually weighs around 50-100 kilograms and, if healthy, maintains a toasty 
 98 degrees Fahrenheit.  Quantum mechanics is important at the atomic level, 
 but on the scales at which people interact with the world it hardly shows up 
-at all.  So, even if Ron's leg heals as he said it did, I wouldn't give credit to quantum mechanics.&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;span id="back_up2"&gt;&lt;/span&gt;&lt;/p&gt;
+at all.  So, even if Ron's leg heals as he said it did, I wouldn't give credit to quantum mechanics.&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;span id="back_up2"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;I have been studying physics for years and still quantum mechanics 
 remains utterly baffling to me.  The fact that such an abstract theory can tell us so 
 much about the world feels a little bit like a miracle.  Quantum mechanics carries 
 with it a number of counterintuitive ideas like the 
-&lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt;uncertainty principle&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; &lt;span id="back_up3"&gt;&lt;/span&gt;
+&lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt;uncertainty principle&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; &lt;span id="back_up3"&gt;&lt;/span&gt;
 entanglement, or &lt;a href="http://en.wikipedia.org/wiki/Many-worlds_interpretation"&gt;parallel universes&lt;/a&gt;.
  These ideas are so abstracted from every day life that the subject begins to take 
  on a supernatural quality.  Physics no longer seems like physics- 
@@ -270,22 +270,22 @@ I will react skeptically when I hear that healing has anything to do with quantu
 &lt;hr&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up1"&gt;^&lt;/a&gt; Credit where credit is due: I took this from XKCD.  This may be one of 
+&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#back_up1"&gt;^&lt;/a&gt; Credit where credit is due: I took this from XKCD.  This may be one of 
 my favorite comics Randall Munroe has ever done.  That it came out while 
 I was thinking about this piece was a great coincidence.  (A cosmic 
 coincidence explainable through quantum entanglement?  Probably not.) &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up2"&gt;^&lt;/a&gt; Quantum mechanics may be just as mundane as any other materialistic physical 
+&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#back_up2"&gt;^&lt;/a&gt; Quantum mechanics may be just as mundane as any other materialistic physical 
 theory, but that doesn’t make it any less amazing.  My favorite example is 
 how quantum mechanics allows us to understand &lt;a href="http://www.youtube.com/watch?v=gS1dpowPlE8/"&gt; why the sun works. &lt;/a&gt; &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up3"&gt;^&lt;/a&gt; In case you didn't take the time to click on the link: Seriously, do 
+&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/#back_up3"&gt;^&lt;/a&gt; In case you didn't take the time to click on the link: Seriously, do 
 yourself a favor and click on the &lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt; link &lt;/a&gt;. It's an essay from The Stone that very elegantly describes
 how the uncertainty principle is far less cosmically mind-blowing than you 
 may have come to believe.  It does a beautiful job bringing us back down to 
 earth and carefully explaining the scope of the principle.  I must give it credit
 for having inspired this piece in no small way. &lt;/p&gt; &lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>metaphysics</category><category>mysticism</category><category>quantum mechanics</category><guid>https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/</guid><pubDate>Mon, 23 Sep 2013 00:00:00 GMT</pubDate></item><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>metaphysics</category><category>mysticism</category><category>quantum mechanics</category><guid>https://thephysicsvirtuosi.com/posts/quantum-mechanics-mysticism/</guid><pubDate>Mon, 23 Sep 2013 00:00:00 GMT</pubDate></item><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://thephysicsvirtuosi.com/posts/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/tgpp.jpg"&gt;
 &lt;/div&gt;
 
@@ -349,7 +349,7 @@ the system has some power, which we'll call $P_i$. Obviously in reality there ar
 plenty of different definitions of power, but in accordance with Mearsheimer's
 definition, we'll define power simply in a way that if State 1 has power 
 $P_1 &amp;gt; P_2$, the power of State 2, then State 1 can beat State 2 in a 
-war&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+war&lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 Each state does not seek to maximize their total power $P_i$, but instead their
 relative power $R_i$, relative to the total power of the rest of the states, So
 the relative power $R_i$ would be&lt;/p&gt;
@@ -377,7 +377,7 @@ is always negative.&lt;/li&gt;
 &lt;p&gt;The change in power of two states A &amp;amp; B in a war should depend only on
 how much power A &amp;amp; B have. In addition, it should be independent of the
 labeling of states. Mathematically, $dP_a / dt = f(P_a, P_b)$, and 
-$dP_b/dt = f(P_b, P_a)$ with the same function $f$&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+$dP_b/dt = f(P_b, P_a)$ with the same function $f$&lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If State A has more absolute power than State B, and both states are in a
@@ -402,12 +402,12 @@ capture all 4 of the above assumptions is:&lt;/p&gt;
 &lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
 where $x$ is the absolute power of State X and $y$ is the absolute power of State
 y. (I'm switching notation because I want to avoid using too many 
-subscripts&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I'm assuming that the rate of 
+subscripts&lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;). Here I'm assuming that the rate of 
 change of State X's power is directly
 proportional to State Y's power, and depends on nothing else (including how
 much power State Y actually has). &lt;a id="note4"&gt;&lt;/a&gt;
 We'll also call $r$ the relative power of State
-X, and $s$ the relative power of State Y&lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
+X, and $s$ the relative power of State Y&lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;. 
 Now we're equipped to see when war
 is a good idea, according to our hypotheses.&lt;/p&gt;
 &lt;p&gt;Let's examine the case that was bothering me most -- a balanced bipolar system.
@@ -444,7 +444,7 @@ stable compared to a multipolar system. Maybe I'll address these, as well as
 balanced and unbalanced multipolar systems, in another blog post if people are
 interested.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note1"&gt;^&lt;/a&gt; $P_i$ has some units (not watts). My definition of power is strictly
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#note1"&gt;^&lt;/a&gt; $P_i$ has some units (not watts). My definition of power is strictly
 comparative, so it might seem that any new scale of power $p_i = f(P_i)$ with an
 arbitrary monotonic function $f(x)$ would also be an appropriate definition.
 However, we would like a scale that facilitates power comparisons if multiple
@@ -458,10 +458,10 @@ would be a difficult task. Incidentally, I've also implicitly assumed here that 
 such that if $P_1 &amp;gt; P_2$, and $P_2 &amp;gt; P_3$, then $P_1 &amp;gt; P_3$. But I think
 that's a fairly benign assumption.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn't matter which state attacked the
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#note2"&gt;^&lt;/a&gt; This implicity assumes that it doesn't matter which state attacked the
 other, or where the war is taking place, or other things like that.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#note3"&gt;^&lt;/a&gt; Incidentally this form for the rate-of-change of the power also has the
 advantage that it is scale-free, which we might expect since there is no
 intrinsic "power scale" to the problem. Of course there are other forms with
 this property that follow some or all of the assumptions above. For instance,
@@ -472,9 +472,9 @@ solve the resulting differential equations analytically, and b) the rate of
 decrease of both state's power is the same, in contrast to my intuitive feeling
 that the state with less power should lose power more rapidly.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
-4. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
+4. &lt;a href="https://thephysicsvirtuosi.com/posts/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
 functional form for $dP_i/dt$ that follows assumptions 1-3 above does not change
-the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item><item><title>Trigonometric Derivatives</title><link>https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
+the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://thephysicsvirtuosi.com/posts/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item><item><title>Trigonometric Derivatives</title><link>https://thephysicsvirtuosi.com/posts/trigonometric-derivatives/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
 where he responded to a post over at 
 &lt;a href="http://mathmamawrites.blogspot.com/2013/02/derivatives-of-sine-and-cosine.html"&gt;Math Mama Writes&lt;/a&gt;
 about teaching the derivatives of the trigonometric functions.&lt;/p&gt;
@@ -483,7 +483,7 @@ about teaching the derivatives of the trigonometric functions.&lt;/p&gt;
 &lt;a href="http://en.wikipedia.org/wiki/Calculus"&gt;Calculus&lt;/a&gt; is always best taught
 in terms of infinitesimals, as in 
 &lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=calculus+made+easy&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;amp;ved=0CD4Q6AEwAA"&gt;Thompson's Book&lt;/a&gt;, 
-(which I've &lt;a href="https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/%7Cfilename%7C../old/four-fantastic-books-3-of-which-are-free.md"&gt;already talked about&lt;/a&gt; ) 
+(which I've &lt;a href="https://thephysicsvirtuosi.com/posts/trigonometric-derivatives/%7Cfilename%7C../old/four-fantastic-books-3-of-which-are-free.md"&gt;already talked about&lt;/a&gt; ) 
 and &lt;a href="http://en.wikipedia.org/wiki/Trigonometry"&gt;Trigonometry&lt;/a&gt; is best taught using 
 the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;.
 Marrying these two together, we can give a simple geometric proof of the basic trigonometric derivatives:&lt;/p&gt;
@@ -521,7 +521,7 @@ $$ \frac{d}{d\alpha} \sin \alpha = \cos \alpha $$&lt;/p&gt;
 $$ d(\cos \alpha) = -\sin\alpha \ d\alpha $$
 and we even get the sign right.  &lt;/p&gt;
 &lt;p&gt;From here, the other trigonometric derivates are easy to obtain, either by making similar pictures al la the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;,
-or by using the regular rules relating all of the trigonometric function to one another.&lt;/p&gt;&lt;/div&gt;</description><category>calculus</category><category>trig</category><category>trigonometry</category><guid>https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/</guid><pubDate>Fri, 22 Feb 2013 16:52:00 GMT</pubDate></item><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+or by using the regular rules relating all of the trigonometric function to one another.&lt;/p&gt;&lt;/div&gt;</description><category>calculus</category><category>trig</category><category>trigonometry</category><guid>https://thephysicsvirtuosi.com/posts/trigonometric-derivatives/</guid><pubDate>Fri, 22 Feb 2013 16:52:00 GMT</pubDate></item><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
@@ -543,7 +543,7 @@ conclusions regarding how points should be assigned to various letters?
 &lt;a id="note1"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I’ve decided to add my own analysis to the recent development because I
 have found most of the other blog posts to be unsatisfactory for a
-variety of reasons&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
+variety of reasons&lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
 One &lt;a href="http://deadspin.com/5975490/h-y-and-z-as-concealed-weapons-we-apply-google+inspired-math-to-scrabbles-flawed-points-system"&gt;article&lt;/a&gt;
 calculated letters’ relative frequencies by counting the number of times
 each letter appeared in each word in the Scrabble™ dictionary. But this
@@ -612,7 +612,7 @@ player decides that using a particular group of tiles constitutes an
 optimal move.)&lt;/p&gt;
 &lt;p&gt;&lt;a id="note2"&gt;&lt;/a&gt;
 To give an example, suppose I draw the rack BEHIWXY. I can 
-generate&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
+generate&lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt; 
 the full list of words available to be played given this rack: BE, BEY,
 BI, BY, BYE, EH, EX, HE, HEW, HEX, HEY, HI, HIE, IBEX, WE, WEB, WHEY,
 WHY, WYE, XI, YE, YEH, YEW. Counting the number of occurrences of each
@@ -628,7 +628,7 @@ many example racks.
 Monte Carlo is a technique used to estimate
 numerical properties of complicated things without explicit calculation.
 For example, suppose I want to know the probability of drawing a
-straight flush in poker.&lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
+straight flush in poker.&lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;  I can calculate that probability
 explicitly by using combinatorics, or I can use a Monte Carlo method to
 deal a large number of hypothetical possible poker hands and count the
 number of straight flushes that appear. If I deal a large enough number
@@ -709,15 +709,15 @@ flexible.)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#note1"&gt;^&lt;/a&gt; To state my own credentials, I have played Scrabble™competitively for
 4 years, and am quite familiar with the mechanics of the game, as well
 as contemporary strategy.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#note2"&gt;^&lt;/a&gt; Credit where credit is due: Alemi provided the code used to
 generate the list of available words given any set of tiles. Thanks
 Alemi!&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/#note3"&gt;^&lt;/a&gt; Monte Carlo has a long history of being used to estimate the
 properties of games. As recounted by George Dyson in &lt;em&gt;Turing’s
 Cathedral&lt;/em&gt;, in 1948 while at Los Alamos the mathematician Stanislaw Ulam
 suffered a severe bout of encephalitis that resulted in an emergency
@@ -739,7 +739,7 @@ This book has become more or less the definitive documentation upon this
 subculture. If you don't have enough time to read, check out &lt;a href="http://en.wikipedia.org/wiki/Word_Wars"&gt;Word
 Wars&lt;/a&gt;, a documentary that
 follows many of the same people as Fatsis's book. (It still may be
-available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>The Skeleton Supporting Search Engine Ranking Systems</title><link>https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+available streaming on Netflix if you hurry.)&lt;/p&gt;&lt;/div&gt;</description><category>fun</category><category>monte carlo</category><category>Scrabble</category><guid>https://thephysicsvirtuosi.com/posts/re-evaluating-the-values-of-the-tiles-in-scrabble/</guid><pubDate>Sun, 20 Jan 2013 22:52:00 GMT</pubDate></item><item><title>The Skeleton Supporting Search Engine Ranking Systems</title><link>https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center"&gt;
 &lt;/p&gt;
 
@@ -848,7 +848,7 @@ the nodes (websites) in the network, initially guessing that all of the
 search results are equally important. (This, of course, is probably not
 true. It’s just an initial guess.) Each node then transfers all of its 
 centrality score to its neighbors, dividing it evenly between 
-them&lt;a href="https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+them&lt;a href="https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 (Starting with a centrality score of 1 with three neighbors, each of
 those neighbors receives 1/3.) Each node also receives a some centrality
 from each neighbor that links in to it. Following this first step, we
@@ -886,7 +886,7 @@ network.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#note1"&gt;^&lt;/a&gt; It's not always all - there are other variations where nodes only
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/#note1"&gt;^&lt;/a&gt; It's not always all - there are other variations where nodes only
 transfer a fraction of their centrality score at each step.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sources (and further reading)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I wanted to include no mathematics in
@@ -909,7 +909,7 @@ Everything Else and What It Means&lt;/em&gt;. Plume, 2003.&lt;/p&gt;
 &lt;p&gt;A book on the history of modern computing that contains an interesting
 passage on how search engines learn adaptively from their users (that
 deserves a shout-out in this blog post).&lt;/p&gt;
-&lt;p&gt;Dyson, George. &lt;em&gt;Turing's Cathedral&lt;/em&gt;. Pantheon, 2012.&lt;/p&gt;&lt;/div&gt;</description><category>centrality measures</category><category>networks</category><category>octopodes</category><category>search engine ranking</category><category>search engines</category><guid>https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</guid><pubDate>Tue, 01 Jan 2013 19:09:00 GMT</pubDate></item><item><title>When will the Earth fall into the Sun? </title><link>https://thephysicsvirtuosi.com/posts/old/when-will-the-earth-fall-into-the-sun-/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;p style="float: center;"&gt;
+&lt;p&gt;Dyson, George. &lt;em&gt;Turing's Cathedral&lt;/em&gt;. Pantheon, 2012.&lt;/p&gt;&lt;/div&gt;</description><category>centrality measures</category><category>networks</category><category>octopodes</category><category>search engine ranking</category><category>search engines</category><guid>https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/</guid><pubDate>Tue, 01 Jan 2013 19:09:00 GMT</pubDate></item><item><title>When will the Earth fall into the Sun? </title><link>https://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;p style="float: center;"&gt;
 &lt;figure&gt;
   &lt;img src="https://thephysicsvirtuosi.com/images/earth-fall-sun/BrianWastesHisTime.png" alt="the sun giveth, the sun taketh away" width="50%"&gt;
   &lt;figcaption&gt;The time I spent making this poster could have been spent doing research&lt;/figcaption&gt;
@@ -957,7 +957,7 @@ to be $10^{-23}$ g/cc we get... &lt;/p&gt;
 &lt;p&gt;$$ T \approx 10^{19} \textrm{ years} $$&lt;/p&gt;
 &lt;p&gt;Looks like this won't be the cause of the Mayan apocalypse. (By comparison, the 
 &lt;a href="http://en.wikipedia.org/wiki/Sun#Life_cycle"&gt;Sun will burnout&lt;/a&gt; 
-after only $\sim10^9$ years.)&lt;/p&gt;&lt;/div&gt;</description><guid>https://thephysicsvirtuosi.com/posts/old/when-will-the-earth-fall-into-the-sun-/</guid><pubDate>Thu, 29 Nov 2012 22:58:00 GMT</pubDate></item><item><title>Creating an Earth</title><link>https://thephysicsvirtuosi.com/posts/old/creating-an-earth/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: center;"&gt;
+after only $\sim10^9$ years.)&lt;/p&gt;&lt;/div&gt;</description><guid>https://thephysicsvirtuosi.com/posts/when-will-the-earth-fall-into-the-sun-/</guid><pubDate>Thu, 29 Nov 2012 22:58:00 GMT</pubDate></item><item><title>Creating an Earth</title><link>https://thephysicsvirtuosi.com/posts/creating-an-earth/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: center;"&gt;
 &lt;figure&gt;
   &lt;img src="https://thephysicsvirtuosi.com/images/creating-an-earth/116.png" alt="GAH!" width="50%"&gt;
   &lt;figcaption style="text-align=center;"&gt;GAAAAAAAAH&lt;/figcaption&gt;
@@ -997,7 +997,7 @@ this lack-of-knowledge by describing the surface of our imaginary planet
 as some sort of random variable. Equation (1) suggests that we can do
 this by making the coefficients $A$ random variables. At some point we
 need to make an executive decision on what type of random variable we'll
-use. &lt;a id="note1"&gt;&lt;/a&gt;For various reasons,&lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; 
+use. &lt;a id="note1"&gt;&lt;/a&gt;For various reasons,&lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; 
 I decided I'd use a Gaussian
 random variable with mean 0 and standard deviation $a_{lm}$: &lt;/p&gt;
 &lt;p&gt;$$ A_{lm} = a_{lm} N(0,1) $$ &lt;/p&gt;
@@ -1017,7 +1017,7 @@ of spherical harmonics, we can see that each spherical harmonic of degree $l$
 has about $l$ stripes on it, independent of $m$. &lt;a id="note2"&gt;&lt;/a&gt;
 So let's try using $a_{lm}$'s
 that depend only on $l$, and are constant if just 
-$m$ changes&lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. Just for convenience, 
+$m$ changes&lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#fnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;. Just for convenience, 
 we'll pick this constant to be $l$ to some power $-p$: &lt;/p&gt;
 &lt;p&gt;$$ a_{lm} = l^{-p} \quad \textrm{ or} $$&lt;/p&gt;
 &lt;p&gt;$$ h(\theta, \phi) = \sum_{l,m} N_{lm}(0,1) l^{-p} Y_l^m(\theta, \phi) \quad (2) $$ &lt;/p&gt;
@@ -1027,7 +1027,7 @@ below is a movie of a randomly generated "planet" with a fixed choice of
 random numbers, but with the power $p$ changing.&lt;/p&gt;
 &lt;p&gt;&lt;a id="note3"&gt;&lt;/a&gt;
 As the movie starts ($p=0$), we see random uncorrelated heights on the
-surface.&lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; As the movie continues and $p$ increases, we see
+surface.&lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#fnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; As the movie continues and $p$ increases, we see
 the surface smooth out rapidly. Eventually, after $p=2$ or so, the planet
 becomes very smooth and doesn't look at all like a planet. So the
 "correct" value for p is somewhere above 0 (too bumpy) and below 2 (too
@@ -1164,11 +1164,11 @@ Since $p=0.1$ doesn't converge, and since $p=0.1$ will have way too many
 landmasses, it looks like a generated Earth will look the best if we use
 a value of $p=1.3$ And that's it. &lt;a id="note4"&gt;&lt;/a&gt; 
 For your viewing pleasure, here is a video of three of these planets below, 
-complete with water, continents, and mountains.&lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+complete with water, continents, and mountains.&lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#fnote4"&gt;&lt;sup&gt;[4]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#note1"&gt;^&lt;/a&gt; Since I wanted a random surface, I wanted to make the mean of each
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#note1"&gt;^&lt;/a&gt; Since I wanted a random surface, I wanted to make the mean of each
 coefficient 0. Otherwise we'd get a deterministic part of our surface
 heights. I picked a distribution that's symmetric about 0 because on
 Earth the bottom of the oceans seem roughly similar in terms of changes
@@ -1178,19 +1178,19 @@ Finally, I picked a Gaussian, as opposed to another stable distribution
 like a Lorentzian, because the tallest points on Earth are finite, and I
 wanted the variance of the planet's height to be defined.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote2"&gt;&lt;/a&gt;
-2. &lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#note2"&gt;^&lt;/a&gt; We could make this rigorous by showing that a rotated spherical
+2. &lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#note2"&gt;^&lt;/a&gt; We could make this rigorous by showing that a rotated spherical
 harmonic is orthogonal to other spherical harmonics of a different
 degree $l$, but you don't want to see me try.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote3"&gt;&lt;/a&gt;
-3. &lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#note3"&gt;^&lt;/a&gt; Actually $p=0$ should correspond to completely uncorrelated
+3. &lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#note3"&gt;^&lt;/a&gt; Actually $p=0$ should correspond to completely uncorrelated
 delta-function noise. (You can convince yourself by looking at the
 spherical harmonic expansion for a delta-function.) The reason that the
 bumps have a finite width is that I only summed the first 22,499 terms
 in the series ($l=150$ and below). So the size of the bumps gives a rough
 idea of my resolution.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
-4. &lt;a href="https://thephysicsvirtuosi.com/posts/old/creating-an-earth/#note4"&gt;^&lt;/a&gt; For those of you keeping score at home, it took me more than 6 days
-to figure out how to make these planets.&lt;/p&gt;&lt;/div&gt;</description><guid>https://thephysicsvirtuosi.com/posts/old/creating-an-earth/</guid><pubDate>Sat, 27 Oct 2012 19:07:00 GMT</pubDate></item><item><title>A Curious Footprint</title><link>https://thephysicsvirtuosi.com/posts/old/a-curious-footprint/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;figure style="float:center; margin:0px 0px 10px 0px" width="50%"&gt;
+4. &lt;a href="https://thephysicsvirtuosi.com/posts/creating-an-earth/#note4"&gt;^&lt;/a&gt; For those of you keeping score at home, it took me more than 6 days
+to figure out how to make these planets.&lt;/p&gt;&lt;/div&gt;</description><guid>https://thephysicsvirtuosi.com/posts/creating-an-earth/</guid><pubDate>Sat, 27 Oct 2012 19:07:00 GMT</pubDate></item><item><title>A Curious Footprint</title><link>https://thephysicsvirtuosi.com/posts/a-curious-footprint/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;figure style="float:center; margin:0px 0px 10px 0px" width="50%"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/a-curious-footprint/msl_laser.jpg" alt="msl laser"&gt;
 &lt;figcaption&gt; Lasers! &lt;i&gt;Credit: JPL/Caltech&lt;/i&gt; &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1265,4 +1265,4 @@ you might as well put your name on it.&lt;/p&gt;
 &lt;a href="http://www.nasa.gov/multimedia/nasatv/index.html"&gt;NASA TV stream&lt;/a&gt;. 
 The landing is scheduled for Sunday night at 10:31 pm PDT (1:31 am EDT). Until then,
 it looks like they are showing a lot of interviews and other cool
-behind-the-scenes kind of stuff.&lt;/p&gt;&lt;/div&gt;</description><category>curiosity</category><category>mars</category><category>MSL</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/a-curious-footprint/</guid><pubDate>Sat, 04 Aug 2012 04:56:00 GMT</pubDate></item></channel></rss>
+behind-the-scenes kind of stuff.&lt;/p&gt;&lt;/div&gt;</description><category>curiosity</category><category>mars</category><category>MSL</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/a-curious-footprint/</guid><pubDate>Sat, 04 Aug 2012 04:56:00 GMT</pubDate></item></channel></rss>
