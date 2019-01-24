@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi</title><link>https://thephysicsvirtuosi.com/</link><description>Things and Stuff.</description><atom:link href="https://thephysicsvirtuosi.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 07:25:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reborn</title><link>https://thephysicsvirtuosi.com/posts/reborn/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Consider the site reborn.  After nearly a decade hiatus, let's see if we can
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi</title><link>https://thephysicsvirtuosi.com/</link><description>Things and Stuff.</description><atom:link href="https://thephysicsvirtuosi.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 07:58:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reborn</title><link>https://thephysicsvirtuosi.com/posts/reborn/</link><dc:creator>Alemi</dc:creator><description>&lt;p&gt;Consider the site reborn.  After nearly a decade hiatus, let's see if we can
 get this old engine purring again. This time the site is being built statically
 with &lt;a href="https://getnikola.com"&gt;Nikola&lt;/a&gt;, exists as a &lt;a href="https://github.com/alexalemi/virtuosi/"&gt;github
 repo&lt;/a&gt; and is being served on &lt;a href="https://pages.github.com/"&gt;github
 pages&lt;/a&gt;. Still need to edit some of the old posts 
 for correctness and need to develop the theme more, but consider this a 
-new beginning.&lt;/p&gt;</description><category>site news</category><guid>https://thephysicsvirtuosi.com/posts/reborn/</guid><pubDate>Wed, 23 Jan 2019 20:38:22 GMT</pubDate></item><item><title>Special Brain</title><link>https://thephysicsvirtuosi.com/posts/dtc/special-brain/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;A colleague (and friend) of mine &lt;a href="https://www.youtube.com/user/thephysicsfactor"&gt;(hereafter referred to as Katie Mack the Physics Hack)&lt;/a&gt; 
+new beginning.&lt;/p&gt;</description><category>site news</category><guid>https://thephysicsvirtuosi.com/posts/reborn/</guid><pubDate>Wed, 23 Jan 2019 20:38:22 GMT</pubDate></item><item><title>Special Brain</title><link>https://thephysicsvirtuosi.com/posts/old/special-brain/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;A colleague (and friend) of mine &lt;a href="https://www.youtube.com/user/thephysicsfactor"&gt;(hereafter referred to as Katie Mack the Physics Hack)&lt;/a&gt; 
 produced a fun video last year that tried to show how people sometimes react when she 
 tells them that she studies physics:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/AAA25XQKCbY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -24,7 +24,7 @@ modeling &lt;a href="http://en.wikipedia.org/wiki/Cytokinesis"&gt;cell division&
 roommate responded, "You must have a special kind of brain for that."&lt;/p&gt;
 &lt;p align="center"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/special_brain/profx.jpg" alt="A special brain." id="back_up1"&gt; 
-  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;A special brain. &lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;A special brain. &lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;p&gt;This anecdote has stuck with me for a couple of reasons-- first because
@@ -62,7 +62,7 @@ research, working as a scientist is not so special.&lt;/p&gt;
 &lt;p align="center"&gt;
 &lt;a href="http://www.imdb.com/title/tt0021884/"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/special_brain/frankenstein.jpg" alt="My office definitely does not look like this." width="100%" height="auto" id="back_up2"&gt;&lt;/a&gt; 
-  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;I work in a cubicle. Not here.&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#footnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/p&gt;&lt;p style="text-align: center; color: #999"&gt;I work in a cubicle. Not here.&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote2"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Another reaction that I get when I say I study physics is one of apprehensive
@@ -84,7 +84,7 @@ scientists that appear in popular culture. "You're just like Sheldon Cooper!"
 is a comment I've heard more times than I care to say. I know that The Big Bang
 Theory is a popular show, but frankly I dislike being associated I with
 characters that are cartoonishly depicted as condescending and socially
-tone-deaf &lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#footnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;. Now, I appreciate that some
+tone-deaf &lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#footnote3"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt;. Now, I appreciate that some
 people, when meeting others for the first time, like to demonstrate familiarity
 with others' jobs, but to me it just seems that making a pop culture references
 to another person's profession is just a bad way to go. I find this to be a
@@ -140,19 +140,19 @@ you do in the comments below.&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#back_up1"&gt;^&lt;/a&gt; 
+&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up1"&gt;^&lt;/a&gt; 
 Image from New X-Men #121, written by Grant Morrison with art by Frank Quitely.
  You can see some more of this particularly trippy story &lt;a href="https://marswillsendnomore.wordpress.com/2011/09/04/inside-the-twisted-mind-of-the-professor/"&gt;
 here&lt;/a&gt;.
 &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote2"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#back_up2"&gt;^&lt;/a&gt;
+&lt;li&gt;&lt;p id="footnote2"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up2"&gt;^&lt;/a&gt;
 All of the imagery of Frankenstein's monster being brought to life with electricity
 comes from James Whale's &lt;a href="http://www.imdb.com/title/tt0021884/"&gt;Frankenstein from 1931.&lt;/a&gt; Mary Shelley's original book contained no mention of 
 electricity, and instead remained eerily vague about the mechanisms for creating life.
 &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote3"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/special-brain/#back_up3"&gt;^&lt;/a&gt;
+&lt;li&gt;&lt;p id="footnote3"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/special-brain/#back_up3"&gt;^&lt;/a&gt;
 &lt;a href="http://scitation.aip.org/content/aip/magazine/physicstoday/news/10.1063/PT.4.0293"&gt;
 Here &lt;/a&gt; is a really level-headed critique of The Big Bang Theory that I like a
 lot.  There isn't a ton of hand-wringing, and the author does talk about what the
@@ -171,10 +171,10 @@ I'll just say that &lt;i&gt;nobody&lt;/i&gt; is acting appropriately in this vid
 (Sorry, lawyers.)
 &lt;/li&gt;
 
-&lt;/ol&gt;&lt;/div&gt;</description><category>culture</category><guid>https://thephysicsvirtuosi.com/posts/dtc/special-brain/</guid><pubDate>Thu, 20 Mar 2014 20:00:00 GMT</pubDate></item><item><title>Quantum Mechanics: Trying to Sort the Physical from the Mystical</title><link>https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p align="center"&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>culture</category><guid>https://thephysicsvirtuosi.com/posts/old/special-brain/</guid><pubDate>Thu, 20 Mar 2014 20:00:00 GMT</pubDate></item><item><title>Quantum Mechanics: Trying to Sort the Physical from the Mystical</title><link>https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p align="center"&gt;
 &lt;a href="http://xkcd.com/1240/"&gt;
 &lt;img src="http://imgs.xkcd.com/comics/quantum_mechanics.png" title="You can also just ignore any science assertion where 'quantum mechanics' is the most complicated phrase in it." alt="You can also just ignore any science assertion where 'quantum mechanics' is the most complicated phrase in it." id="back_up1"&gt; 
-&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;
+&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A friend of mine (I’ll call him Ron), who knows that I study physics, 
@@ -223,12 +223,12 @@ quantum effects are negligible.  The human body is more than a meter long,
 usually weighs around 50-100 kilograms and, if healthy, maintains a toasty 
 98 degrees Fahrenheit.  Quantum mechanics is important at the atomic level, 
 but on the scales at which people interact with the world it hardly shows up 
-at all.  So, even if Ron's leg heals as he said it did, I wouldn't give credit to quantum mechanics.&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;span id="back_up2"&gt;&lt;/span&gt;&lt;/p&gt;
+at all.  So, even if Ron's leg heals as he said it did, I wouldn't give credit to quantum mechanics.&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[2]&lt;/sup&gt;&lt;/a&gt;&lt;span id="back_up2"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;I have been studying physics for years and still quantum mechanics 
 remains utterly baffling to me.  The fact that such an abstract theory can tell us so 
 much about the world feels a little bit like a miracle.  Quantum mechanics carries 
 with it a number of counterintuitive ideas like the 
-&lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt;uncertainty principle&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; &lt;span id="back_up3"&gt;&lt;/span&gt;
+&lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt;uncertainty principle&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#footnote-1"&gt;&lt;sup&gt;[3]&lt;/sup&gt;&lt;/a&gt; &lt;span id="back_up3"&gt;&lt;/span&gt;
 entanglement, or &lt;a href="http://en.wikipedia.org/wiki/Many-worlds_interpretation"&gt;parallel universes&lt;/a&gt;.
  These ideas are so abstracted from every day life that the subject begins to take 
  on a supernatural quality.  Physics no longer seems like physics- 
@@ -270,22 +270,22 @@ I will react skeptically when I hear that healing has anything to do with quantu
 &lt;hr&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#back_up1"&gt;^&lt;/a&gt; Credit where credit is due: I took this from XKCD.  This may be one of 
+&lt;li&gt;&lt;p id="footnote1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up1"&gt;^&lt;/a&gt; Credit where credit is due: I took this from XKCD.  This may be one of 
 my favorite comics Randall Munroe has ever done.  That it came out while 
 I was thinking about this piece was a great coincidence.  (A cosmic 
 coincidence explainable through quantum entanglement?  Probably not.) &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#back_up2"&gt;^&lt;/a&gt; Quantum mechanics may be just as mundane as any other materialistic physical 
+&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up2"&gt;^&lt;/a&gt; Quantum mechanics may be just as mundane as any other materialistic physical 
 theory, but that doesn’t make it any less amazing.  My favorite example is 
 how quantum mechanics allows us to understand &lt;a href="http://www.youtube.com/watch?v=gS1dpowPlE8/"&gt; why the sun works. &lt;/a&gt; &lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/#back_up3"&gt;^&lt;/a&gt; In case you didn't take the time to click on the link: Seriously, do 
+&lt;li&gt;&lt;p id="footnote-1"&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/#back_up3"&gt;^&lt;/a&gt; In case you didn't take the time to click on the link: Seriously, do 
 yourself a favor and click on the &lt;a href="http://opinionator.blogs.nytimes.com/2013/07/21/nothing-to-see-here-demoting-the-uncertainty-principle/"&gt; link &lt;/a&gt;. It's an essay from The Stone that very elegantly describes
 how the uncertainty principle is far less cosmically mind-blowing than you 
 may have come to believe.  It does a beautiful job bringing us back down to 
 earth and carefully explaining the scope of the principle.  I must give it credit
 for having inspired this piece in no small way. &lt;/p&gt; &lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>metaphysics</category><category>mysticism</category><category>quantum mechanics</category><guid>https://thephysicsvirtuosi.com/posts/dtc/quantum-mechanics-mysticism/</guid><pubDate>Mon, 23 Sep 2013 00:00:00 GMT</pubDate></item><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>metaphysics</category><category>mysticism</category><category>quantum mechanics</category><guid>https://thephysicsvirtuosi.com/posts/old/quantum-mechanics-mysticism/</guid><pubDate>Mon, 23 Sep 2013 00:00:00 GMT</pubDate></item><item><title>Tragedy of Great Power Politics? Modeling International War</title><link>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</link><dc:creator>Brian</dc:creator><description>&lt;div&gt;&lt;div style="float: right;"&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/tgpp.jpg"&gt;
 &lt;/div&gt;
 
@@ -474,7 +474,7 @@ that the state with less power should lose power more rapidly.&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote4"&gt;&lt;/a&gt;
 4. &lt;a href="https://thephysicsvirtuosi.com/posts/old/modeling-international-war/#note4"&gt;^&lt;/a&gt; Homework for those who are not satisfied with my assumptions: Show that any
 functional form for $dP_i/dt$ that follows assumptions 1-3 above does not change
-the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item><item><title>Trigonometric Derivatives</title><link>https://thephysicsvirtuosi.com/posts/alemi/trigonometric-derivatives/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
+the stability of a balanced bipolar system.&lt;/p&gt;&lt;/div&gt;</description><category>books</category><category>modeling</category><category>war</category><guid>https://thephysicsvirtuosi.com/posts/old/modeling-international-war/</guid><pubDate>Sun, 23 Jun 2013 23:48:00 GMT</pubDate></item><item><title>Trigonometric Derivatives</title><link>https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/</link><dc:creator>Alemi</dc:creator><description>&lt;div&gt;&lt;p&gt;I was recently reading &lt;a href="http://www.johndcook.com/blog/2013/02/11/differentiating-bananas-and-co-bananas/"&gt;The Endeavour&lt;/a&gt; 
 where he responded to a post over at 
 &lt;a href="http://mathmamawrites.blogspot.com/2013/02/derivatives-of-sine-and-cosine.html"&gt;Math Mama Writes&lt;/a&gt;
 about teaching the derivatives of the trigonometric functions.&lt;/p&gt;
@@ -483,7 +483,7 @@ about teaching the derivatives of the trigonometric functions.&lt;/p&gt;
 &lt;a href="http://en.wikipedia.org/wiki/Calculus"&gt;Calculus&lt;/a&gt; is always best taught
 in terms of infinitesimals, as in 
 &lt;a href="http://books.google.com/books?id=BrhBAAAAYAAJ&amp;amp;printsec=frontcover&amp;amp;dq=calculus+made+easy&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=vu8nUZ-MGcW20AHknICgCw&amp;amp;ved=0CD4Q6AEwAA"&gt;Thompson's Book&lt;/a&gt;, 
-(which I've &lt;a href="https://thephysicsvirtuosi.com/posts/alemi/trigonometric-derivatives/%7Cfilename%7C../old/four-fantastic-books-3-of-which-are-free.md"&gt;already talked about&lt;/a&gt; ) 
+(which I've &lt;a href="https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/%7Cfilename%7C../old/four-fantastic-books-3-of-which-are-free.md"&gt;already talked about&lt;/a&gt; ) 
 and &lt;a href="http://en.wikipedia.org/wiki/Trigonometry"&gt;Trigonometry&lt;/a&gt; is best taught using 
 the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;.
 Marrying these two together, we can give a simple geometric proof of the basic trigonometric derivatives:&lt;/p&gt;
@@ -521,7 +521,7 @@ $$ \frac{d}{d\alpha} \sin \alpha = \cos \alpha $$&lt;/p&gt;
 $$ d(\cos \alpha) = -\sin\alpha \ d\alpha $$
 and we even get the sign right.  &lt;/p&gt;
 &lt;p&gt;From here, the other trigonometric derivates are easy to obtain, either by making similar pictures al la the &lt;a href="http://tricochet.com/math/pdfs/completetriangle.pdf"&gt;complete triangle&lt;/a&gt;,
-or by using the regular rules relating all of the trigonometric function to one another.&lt;/p&gt;&lt;/div&gt;</description><category>calculus</category><category>trig</category><category>trigonometry</category><guid>https://thephysicsvirtuosi.com/posts/alemi/trigonometric-derivatives/</guid><pubDate>Fri, 22 Feb 2013 16:52:00 GMT</pubDate></item><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+or by using the regular rules relating all of the trigonometric function to one another.&lt;/p&gt;&lt;/div&gt;</description><category>calculus</category><category>trig</category><category>trigonometry</category><guid>https://thephysicsvirtuosi.com/posts/old/trigonometric-derivatives/</guid><pubDate>Fri, 22 Feb 2013 16:52:00 GMT</pubDate></item><item><title>Re-evaluating the values of the tiles in Scrabble™</title><link>https://thephysicsvirtuosi.com/posts/old/re-evaluating-the-values-of-the-tiles-in-scrabble/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/scrabble/scrabble.jpg" width="100%" alt="Scrabble Tiles" style="float:center"&gt;
 &lt;/p&gt;
 
