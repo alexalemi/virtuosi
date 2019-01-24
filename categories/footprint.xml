@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about footprint)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/footprint.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 14:55:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How Long Will a Bootprint Last on the Moon?</title><link>https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about footprint)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/footprint.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 15:05:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How Long Will a Bootprint Last on the Moon?</title><link>https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/</link><dc:creator>Corky</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 &lt;p&gt;&lt;a href="http://3.bp.blogspot.com/-gEyp9bylwcQ/Tv5v7PlugjI/AAAAAAAAARU/OnVdFTPRGkI/s1600/bootprint_buzz.jpg"&gt;&lt;img alt="image" src="http://3.bp.blogspot.com/-gEyp9bylwcQ/Tv5v7PlugjI/AAAAAAAAARU/OnVdFTPRGkI/s320/bootprint_buzz.jpg"&gt;&lt;/a&gt;
   Buzz Aldrin's bootprint (source: Wikipedia)&lt;/p&gt;
 &lt;hr&gt;
@@ -17,7 +17,7 @@ right bootprint (shown, incidentally, to the left) will last on the
 Moon. Since the Moon has no atmosphere, the wind and rain that would
 weather away a similar bootprint here on Earth are not present and it
 seems as though the print would last a really long time. But how long?
-Let's try to quantify it &lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#footnote-yariv"&gt;[1]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Pick Your Poison
+Let's try to quantify it &lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#footnote-yariv"&gt;[1]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Pick Your Poison
 Before we get going, we need to figure out what physical process would
 be most important in erasing a bootprint from the Moon. Although the
 Moon lacks the conventional "weathering" we experience on Earth (due to
@@ -25,7 +25,7 @@ wind, rain, etc), it does experience something called "&lt;a href="http://en.wik
 weathering&lt;/a&gt;." Space
 weathering is the changing of the lunar surface due to cosmic rays,
 micrometeorite collisions, regular meteorite collisions, and the solar
-wind &lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#footnote-wind"&gt;[2]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Of these phenomena, the most apparent
+wind &lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#footnote-wind"&gt;[2]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Of these phenomena, the most apparent
 and well-studied would be the meteorites which have covered the Moon in
 craters. We adopt the meteorite impact as our primary means of wiping
 out a bootprint and restate our question as follows: "How long would it
@@ -36,7 +36,7 @@ size distribution of the craters on the Moon. We could count up all the
 craters on the Moon (or a particular region of interest) and tabulate
 their sizes. This would give us the size distribution. It would also
 give us a headache and potentially drive us to lunacy
-&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#footnote-forced"&gt;[3]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Luckily, someone has beat us to it. &lt;a href="http://adsabs.harvard.edu/abs/1966MNRAS.134..245C"&gt;Cross
+&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#footnote-forced"&gt;[3]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Luckily, someone has beat us to it. &lt;a href="http://adsabs.harvard.edu/abs/1966MNRAS.134..245C"&gt;Cross
 (1966)&lt;/a&gt; used images
 from the Ranger 7 and 8 missions to count craters and determine the size
 distribution of craters in three regions of the Moon. The data for the
@@ -123,15 +123,15 @@ have bootprints on the Moon without a Moon). Current
 Sun will expand into a red giant and (potentially) destroy the Earth
 (and the Moon) in about 5 billion years. So a record of the Apollo
 astronauts' boot sizes could potentially last as long as the Moon
-&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#footnote-nixon"&gt;[4]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Not bad. Footnotes and Such
+&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#footnote-nixon"&gt;[4]&lt;/a&gt;&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/"&gt;&lt;/a&gt;. Not bad. Footnotes and Such
 [1] Now with linked footnotes so Yariv doesn't have to scroll!
-&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#back-yariv"&gt;[back]&lt;/a&gt;
+&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#back-yariv"&gt;[back]&lt;/a&gt;
 [2] There was a fairly recent press release about Coronal Mass Ejections
 from the Sun "sandblasting" the lunar surface. For more info, check
 &lt;a href="http://www.nasa.gov/topics/solarsystem/features/dream-cme.html"&gt;here&lt;/a&gt;,
 and note the acronymic acrobatics needed to make them the "DREAM team."
-But it's totally worth it. &lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#back-wind"&gt;[back]&lt;/a&gt;
+But it's totally worth it. &lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#back-wind"&gt;[back]&lt;/a&gt;
 [3] A horribly forced pun. But it's totally worth it.
-&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#back-forced"&gt;[back]&lt;/a&gt;
+&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#back-forced"&gt;[back]&lt;/a&gt;
 [4] Also, &lt;a href="http://en.wikipedia.org/wiki/Lunar_plaque"&gt;Nixon&lt;/a&gt;
-&lt;a href="https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/#back-nixon"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>footprint</category><category>moon</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/how-long-will-a-bootprint-last-on-the-moon-/</guid><pubDate>Sun, 01 Jan 2012 20:46:00 GMT</pubDate></item></channel></rss>
+&lt;a href="https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/#back-nixon"&gt;[back]&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>footprint</category><category>moon</category><category>scott bakula</category><guid>https://thephysicsvirtuosi.com/posts/old/how-long-will-a-bootprint-last-on-the-moon-/</guid><pubDate>Sun, 01 Jan 2012 20:46:00 GMT</pubDate></item></channel></rss>

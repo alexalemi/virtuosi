@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about centrality measures)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/centrality-measures.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 14:55:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Skeleton Supporting Search Engine Ranking Systems</title><link>https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Virtuosi (Posts about centrality measures)</title><link>https://thephysicsvirtuosi.com/</link><description></description><atom:link href="https://thephysicsvirtuosi.com/categories/centrality-measures.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:thephysicsvirtuosi@gmail.com"&gt;The Virtuosi&lt;/a&gt; </copyright><lastBuildDate>Thu, 24 Jan 2019 15:05:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Skeleton Supporting Search Engine Ranking Systems</title><link>https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</link><dc:creator>DTC</dc:creator><description>&lt;div&gt;&lt;p&gt;
 &lt;img src="https://thephysicsvirtuosi.com/images/skeleton-search/Skeleton_image_1.jpg" width="100%" alt="octopus google" title="Octosearch!" style="float:center"&gt;
 &lt;/p&gt;
 
@@ -108,7 +108,7 @@ the nodes (websites) in the network, initially guessing that all of the
 search results are equally important. (This, of course, is probably not
 true. It’s just an initial guess.) Each node then transfers all of its 
 centrality score to its neighbors, dividing it evenly between 
-them&lt;a href="https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
+them&lt;a href="https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#fnote1"&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.
 (Starting with a centrality score of 1 with three neighbors, each of
 those neighbors receives 1/3.) Each node also receives a some centrality
 from each neighbor that links in to it. Following this first step, we
@@ -146,7 +146,7 @@ network.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a id="fnote1"&gt;&lt;/a&gt;
-1. &lt;a href="https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/#note1"&gt;^&lt;/a&gt; It's not always all - there are other variations where nodes only
+1. &lt;a href="https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/#note1"&gt;^&lt;/a&gt; It's not always all - there are other variations where nodes only
 transfer a fraction of their centrality score at each step.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sources (and further reading)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I wanted to include no mathematics in
@@ -169,4 +169,4 @@ Everything Else and What It Means&lt;/em&gt;. Plume, 2003.&lt;/p&gt;
 &lt;p&gt;A book on the history of modern computing that contains an interesting
 passage on how search engines learn adaptively from their users (that
 deserves a shout-out in this blog post).&lt;/p&gt;
-&lt;p&gt;Dyson, George. &lt;em&gt;Turing's Cathedral&lt;/em&gt;. Pantheon, 2012.&lt;/p&gt;&lt;/div&gt;</description><category>centrality measures</category><category>networks</category><category>octopodes</category><category>search engine ranking</category><category>search engines</category><guid>https://thephysicsvirtuosi.com/posts/the-skeleton-supporting-search-engine-ranking-systems/</guid><pubDate>Tue, 01 Jan 2013 19:09:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Dyson, George. &lt;em&gt;Turing's Cathedral&lt;/em&gt;. Pantheon, 2012.&lt;/p&gt;&lt;/div&gt;</description><category>centrality measures</category><category>networks</category><category>octopodes</category><category>search engine ranking</category><category>search engines</category><guid>https://thephysicsvirtuosi.com/posts/old/the-skeleton-supporting-search-engine-ranking-systems/</guid><pubDate>Tue, 01 Jan 2013 19:09:00 GMT</pubDate></item></channel></rss>

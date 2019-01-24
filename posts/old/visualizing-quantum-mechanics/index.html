@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visualizing Quantum Mechanics | The Virtuosi</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="https://thephysicsvirtuosi.com/posts/old/visualizing-quantum-mechanics/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-15719155-6"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15719155-6');
+</script><meta name="author" content="Alemi">
+<link rel="prev" href="../microseconds-and-miles/" title="Microseconds and Miles" type="text/html">
+<link rel="next" href="../breaking-intuition/" title="Breaking Intuition" type="text/html">
+<meta property="og:site_name" content="The Virtuosi">
+<meta property="og:title" content="Visualizing Quantum Mechanics">
+<meta property="og:url" content="https://thephysicsvirtuosi.com/posts/old/visualizing-quantum-mechanics/">
+<meta property="og:description" content="Or how I learned to stop worrying and love the computer. [Note: There's
+a neat video below the fold. ]
+A Confession
+I was recently rereading the Feynman Lectures on
+Physics.
+If you haven't read them l">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-09-14T20:06:00Z">
+<meta property="article:tag" content="bouncing ball">
+<meta property="article:tag" content="feynman">
+<meta property="article:tag" content="fun">
+<meta property="article:tag" content="movie">
+<meta property="article:tag" content="quantum mechanics">
+<meta property="article:tag" content="solar system">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://thephysicsvirtuosi.com/">
+
+            <span id="blog-title">The Virtuosi</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.md" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="../../../categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../../rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Visualizing Quantum Mechanics</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    <a href="../../../authors/alemi/">Alemi</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2010-09-14T20:06:00Z" itemprop="datePublished" title="2010-09-14 20:06">2010-09-14 20:06</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="#disqus_thread" data-disqus-identifier="cache/posts/old/visualizing-quantum-mechanics.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Or how I learned to stop worrying and love the computer. [Note: There's
+a neat video below the fold. ]</p>
+<h4>A Confession</h4>
+<p>I was recently rereading the <a href="http://books.google.com/books?id=_6XvAAAAMAAJ&amp;q=Feynman+lectures+on+physics&amp;dq=Feynman+lectures+on+physics&amp;hl=en&amp;ei=6wmQTPzsDIG78gbAp_joDQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=2&amp;ved=0CDgQ6AEwAQ">Feynman Lectures on
+Physics</a>.
+If you haven't read them lately, I highly recommend them. Feynman is
+always a pleasure to read. As usual, I was surprised. This time the
+surprise came in lecture 9, which the way the course was laid out meant
+that this was something like the last lecture in the third week that
+these students had ever received of university level physics. The
+lecture is on Newton's laws of dynamics. The start is of course Newton's
+<del>first</del> (second) law, $$ F = \frac{d }{dt } (mv ) $$ which, provided
+the mass is constant takes the more familiar form $$ F = ma $$ After
+discussing the meaning of the equation and how in general it can give
+you a set of equations to solve, he naturally uses an example to
+illustrate the kinds of problems you can solve. What system does he
+choose to use as the first illustration of a dynamical system? The Solar
+System. That's right. Let that settle for a second. The sad thing is
+that if you caught me off guard before I read the lecture, caught me in
+an honest moment and asked me how you would solve the solar system, I
+would probably have launched into a discussion of the <a href="http://en.wikipedia.org/wiki/N-body_problem">N-body
+problem</a> and how there is
+no closed form solution to newtonian gravity that involves 3 or more
+bodies. (Depending on who you are, I might have then mentioned the
+<a href="http://adsabs.harvard.edu/abs/1991CeMDA..50...73W">recent caveat</a>,
+namely that there is a closed form solution to the N-body problem, but
+that it involves a very very very slowly convergent series). Now, how
+can Feynman use the Solar System as his first example of solving
+Newtonian dynamics and I have told you that it's impossible as my first
+words on the subject? Well, the answer of course is that Feynman was
+much smarter than I am. Perhaps another way to say it is that in a lot
+of ways Feynman was a more contemporary physicist than I am.</p>
+<h4>A Realization</h4>
+<p>Physics education has changed very little in the last 50 years or so.
+Now in some ways this isn't a problem. The laws of nature also haven't
+changed in the last 50 years. What's unfortunate is that the tools
+available to physicists to answer their questions have changed
+remarkably. Namely, computers. Computers are great. They permeate daily
+life nowadays. They are capable of performing millions of computations
+per second. This is great for physics. You see, a lot of the time, as
+you all know, the way you achieve answers to specific questions about
+the evolution of a system is to do a lot of computation. So what did
+physicists do before computers? Well, a lot of time they would have to
+do a lot of calculations out by hand, but no one enjoys that, so a lot
+of times you would have to make sacrifices, make assumptions that meant
+that your analytical investigations were simple enough to yield tiddy
+little equations. This is reflected in the kinds of problems we still
+solve in our physics classes. I never solved the solar system in my
+mechanics class. I never did it because there isn't a closed form
+analytical solution to the solar system. But you know what... that
+doesn't matter. It doesn't matter in the least. Because while there
+doesn't exist a closed form solution to the problem, it is very easy to
+come up with a numerical approximation scheme (see <a href="http://en.wikipedia.org/wiki/Euler_method">Euler
+Method</a>). You see, the point
+of physics is to get answers to questions. And the fact of the matter is
+that those answers don't have to be 'exact', they don't have to be
+perfect. They need to be good enough that we can't tell the difference
+between them being 'exact' and them being an approximation. To do this
+numerically with a pad of paper and a pencil is a heroic task. Do do
+this with a computer takes a couple of lines of python code and a couple
+seconds.</p>
+<h4>An example</h4>
+<p>As an example of the neat things you can do with a few lines of python
+code and a few minutes on your hand, check this out.
+<a href="http://www.youtube.com/watch?v=J4Wg_b8bVm8">and</a>
+<a href="http://www.youtube.com/watch?v=idpQOJKOh6Y">there's</a>
+<a href="http://www.youtube.com/watch?v=Z9121zwpbBs">more</a> This video depicts
+time dependent quantum mechanics. I set up a gaussian wavepacket, inside
+of a potential that includes a hard wall on the sides and is
+proportional to x. That sounds fancy but what it means is that this is
+the quantum mechanics equivalent of a bouncing ball. The amplitude of
+the wave function corresponds to the probability of finding the particle
+at any location. That is, imagine picking one of the colored pixels at
+random. If you pick any of the colored pixels at random, and look down
+at the x position, that is what measuring the position of the particle
+would do. But what are the colors? Quantum mechanical wave functions are
+complex. This means you can represent them either with a real and
+imaginary part, or with a magnitude and a phase. Here it's the latter.
+Like I said the amplitude is shown with the height (actually the
+amplitude squared). The color corresponds to the phase, where the phase
+is mapped to a location on the color wheel, just like the one that pops
+up in Photoshop or GIMP. And theres sound too! The sound is what the
+wave function would sound like if it was making noise. Its the real part
+of the wave function played as a sound. To that end, in this video it is
+very low frequency, because I made the movie slow enough to see the
+colors changing well. Its fun to watch the video and listen to the
+sound. For this movie the sound correlates nicely to when the 'ball'
+reaches its maximum height. Whats also cool is that you can hear the
+'ball' delocalize after each bounce. The sound and function start off
+being nice and sharp, but after a few bounces it starts to spread out.
+You can also see how momentum is encoded in quantum mechanics. Funny
+thing is that instead of being something separate that you need to
+specify like in classical mechanics, in quantum mechanics the wave
+function is a complete description of the evolution of the system. I.e.
+if I showed you just one frame of this bouncing ball, you would be able
+to recreate the entire movie. If I showed you just one frame of a
+classical basketball, you'd have no idea what frame came next since
+you'd only know its position, not its velocity. In quantum mechanics the
+momentum gets encoded in the wave function, and as you can tell its
+encoded as a complex twist. A phase gradient. A crazy rainbow. If you
+look closely, you can even see that you can tell the difference between
+whether the particle is falling left or right. When it goes left the
+rainbow pattern goes (reading left to right) blue red green. When its
+moving right it goes blue green red. It twists one way then the other in
+the complex plane. The colors are a little hard to see in this one,
+they're a little easier to see in this one: This second one I dressed up
+a bit, labelling the axes with units, putting a time counter,
+superimposing the potential I was talking about, and marking the average
+expected position with a tracer black dot on the bottom.</p>
+<h4>A Call to Arms</h4>
+<p>Any student who has taken a first course in quantum mechanics knows
+enough physics to make these movies. The physics isn't complicated. But
+the movies really neat, right? More than neat. Making these videos
+taught me things about quantum mechanics I should have learned a long
+time ago. I really think computers are underestimated in physics
+education. They can be a great tool. A picture is worth a thousand
+words, so a movie must be worth millions<em>. </em>: denotes stolen quote
+More than just as an illustrative tool, the fact that even students in
+the first introductory mechanics physics course can solve for something
+like the solar system shouldn't be hidden from them. Classical mechanics
+after all is the physics of pretty much every object we can see and
+touch, but classics mechanics classes only ever talk about <a href="http://en.wikipedia.org/wiki/Atwood_machine">Atwood
+machines</a> and frictionless
+planes. Often the closest they come to realism is in discussing
+projectile motion, where the laws you learn in the book (neglecting air
+resistance) are very good at describing the trajectories of very dense
+large objects (i.e. cannonballs). I can't remember the last time I've
+fired a cannon. But air resistance serves little trouble to my computer.
+Or <a href="http://www.wired.com/wiredscience/tag/air-resistance/">Rhett's</a> (of
+Dot Physics, which has just moved to Wired). Basically, if you give a
+student an intro physics course and an intro programming course,
+suddenly you have a human being who is better equipped to answer
+questions about natural phenomenon than 99% of human beings that have
+ever lived. So lets take a tip from Feynman and teach physics students
+how to solve the solar system.</p>
+<h4>Code</h4>
+<p>As per request, here is the python code I used to generate the videos.
+Its rather messy, so I apologize in advance.
+<a href="https://docs.google.com/leaf?id=0B8Il0b2saix4NzYzMmRhZDUtODFhZS00YTE1LTgzZWYtMzVhODI5YzRhNWJm&amp;hl=en&amp;authkey=CPrk9IUM">schrod.py</a>
+- A general script which finds the eigenvalues and eigenbasis for a 1D
+particle with an arbitrary potential.
+<a href="https://docs.google.com/leaf?id=0B8Il0b2saix4ZDYxZmFlNzQtYzdkNC00YTVkLWJhNWMtN2IxM2ZmZDg4Mzg4&amp;hl=en&amp;authkey=CJ3m4ogJ">qmsolver-bouncy.py</a>
+- Code to generate the movie. You need to create a directory with the
+same name as the name in the script in the save folder as the script.
+The last two lines make the sound and the directory full of images. I
+used ffmpeg to wrap the two together.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/bouncing-ball/" rel="tag">bouncing ball</a></li>
+            <li><a class="tag p-category" href="../../../categories/feynman/" rel="tag">feynman</a></li>
+            <li><a class="tag p-category" href="../../../categories/fun/" rel="tag">fun</a></li>
+            <li><a class="tag p-category" href="../../../categories/movie/" rel="tag">movie</a></li>
+            <li><a class="tag p-category" href="../../../categories/quantum-mechanics/" rel="tag">quantum mechanics</a></li>
+            <li><a class="tag p-category" href="../../../categories/solar-system/" rel="tag">solar system</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../microseconds-and-miles/" rel="prev" title="Microseconds and Miles">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../breaking-intuition/" rel="next" title="Breaking Intuition">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="thephysicsvirtuosi",
+            disqus_url="https://thephysicsvirtuosi.com/posts/old/visualizing-quantum-mechanics/",
+        disqus_title="Visualizing Quantum Mechanics",
+        disqus_identifier="cache/posts/old/visualizing-quantum-mechanics.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha256-ExtbCSBuYA7kq1Pz362ibde9nnsHYPt6JxuxYeZbU+c=" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        
+delimiters: [
+    {left: "$$", right: "$$", display: true},
+    {left: "\\[", right: "\\]", display: true},
+    {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+]
+
+                    }
+                );
+            </script></article><script>var disqus_shortname="thephysicsvirtuosi";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:thephysicsvirtuosi@gmail.com">The Virtuosi</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
