@@ -1,0 +1,16 @@
+python3.7/site-packages/nikola/data/themes/bootstrap4/templates
+
+copy with `nikola theme -c name.tmpl`
+
+full list
+
+authors.tmpl
+base.tmpl
+index_helper.tmpl
+pagination_helper.tmpl
+tags.tmpl
+base_helper.tmpl
+gallery.tmpl
+listing.tmpl
+post.tmpl
+ui_helper.tmpl

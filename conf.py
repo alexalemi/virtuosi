@@ -175,7 +175,9 @@ THEME_CONFIG = {
         # Strip HTML from featured post text.
         'featured_strip_html': False,
         # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
+        'sidebar': '',
+        # Has custom css
+        'has_custom_css': True,
     }
 }
 
